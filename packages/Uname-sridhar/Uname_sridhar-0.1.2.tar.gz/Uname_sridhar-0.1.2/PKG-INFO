@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: Uname_sridhar
+Version: 0.1.2
+Summary: Uname_sridhar is a wrapper of uname Command
+Home-page: https://git.selfmade.ninja/SRIDHARDSCV/package_uname
+Author: Sridhar
+Author-email: dcsvsridhar@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+## Uname_sridhar is a wrapper of uname Linux Command
+
+#### Prerequisites
+
+
+On Ubuntu/Debian:
+
+```
+sudo apt install update
+sudo apt install upgrade
+```
+
+
+
+#### Usage
+
+To get all available info about Linux Commands and Type of Linux Commands
+```
+ Uname [Option..]
+
+```
+
+
