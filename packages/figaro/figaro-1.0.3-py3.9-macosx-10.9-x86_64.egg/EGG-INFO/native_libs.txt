@@ -1,0 +1,2 @@
+figaro/cosmology.cpython-39-darwin.so
+figaro/cumulative.cpython-39-darwin.so
