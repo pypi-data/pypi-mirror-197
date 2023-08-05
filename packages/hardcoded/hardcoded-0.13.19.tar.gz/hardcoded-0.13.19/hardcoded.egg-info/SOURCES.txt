@@ -1,0 +1,13 @@
+README.md
+setup.py
+hardcoded/__init__.py
+hardcoded/cli.py
+hardcoded/git.py
+hardcoded/logic.py
+hardcoded.egg-info/PKG-INFO
+hardcoded.egg-info/SOURCES.txt
+hardcoded.egg-info/dependency_links.txt
+hardcoded.egg-info/entry_points.txt
+hardcoded.egg-info/not-zip-safe
+hardcoded.egg-info/requires.txt
+hardcoded.egg-info/top_level.txt

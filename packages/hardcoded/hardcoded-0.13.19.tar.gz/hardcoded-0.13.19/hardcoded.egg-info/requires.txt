@@ -1,0 +1,7 @@
+Click>=8.0.1
+pyyaml
+python-gnupg
+
+[encryption_without_pgp]
+cryptography>=39.0.0
+cffi>=1.15.1
