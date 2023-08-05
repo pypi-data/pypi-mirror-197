@@ -1,0 +1,8 @@
+bctools/__init__.py,sha256=G1u8J-haOEKuZsWzzBmMKEnnHbwtwijBU0lhS0Feg58,97
+bctools/plots.py,sha256=WmRqDCRv1lyIswHCkvGASqHrbV-NalYN-AxOYe0nb_Y,88274
+bctools/thresholds.py,sha256=0-65-fPGtpm2IsEy8GthDG8AuCTmj3I2KP5Pp73kj-U,20365
+bctools/utilities.py,sha256=qUoLAVDiEw6goxqOdRmxWR5AxBSQMJZXZP_NDsE32Yc,20506
+binclass_tools-1.1.2.dist-info/METADATA,sha256=RewBx8-ZFiSWr4zfWq659NXBYrqqFnAFyfs9HY60omE,40656
+binclass_tools-1.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+binclass_tools-1.1.2.dist-info/top_level.txt,sha256=Qw9YEBwYaMcE2vJioNhsSLdWjvJPNu7TsSQq1fAnH0w,8
+binclass_tools-1.1.2.dist-info/RECORD,,
