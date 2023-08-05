@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ArqPdf/__init__.py
+ArqPdf/infoPdf.py
+ArqPdf.egg-info/PKG-INFO
+ArqPdf.egg-info/SOURCES.txt
+ArqPdf.egg-info/dependency_links.txt
+ArqPdf.egg-info/requires.txt
+ArqPdf.egg-info/top_level.txt

@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: ArqPdf
+Version: 0.0.1
+Summary: Traduzir paginas de um pdf e leitura do arquivo com voz do sistema
+Home-page: UNKNOWN
+Author: Francisco Aparicio & Pedro Tercio
+Author-email: faparicionc1996@gmail.com
+License: MIT License
+Description: ### Um script Python que le e traduz arquivos PDF para texto e audio usando as bibliotecas PyPDF2, pdfplumber, ### pyttsx3 e googletrans. Ele contÃ©m a classe InfoPdf que tem dois metodos: SayThis e Translator.
+        
+        ### O mÃ©todo SayThis lÃª o conteÃºdo do arquivo PDF especificado e reproduz em audio usando a biblioteca pyttsx3. Ele usa o pdfplumber para extrair o texto do arquivo PDF e adiciona o nÃºmero da pÃ¡gina em que o texto foi encontrado. Depois disso, usa a biblioteca pyttsx3 para converter o texto em voz.
+        
+        ### O metodo Translator traduz o conteÃºdo de uma pÃ¡gina especifica do arquivo PDF para lingua especifica e salva em um arquivo de texto. Ele usa a biblioteca PyPDF2 para abrir o arquivo PDF e extrair o texto da pÃ¡gina especificada. Depois disso, usa a biblioteca googletrans para traduzir o texto para o inglÃªs e salva o resultado em um arquivo de texto.
+        
+        ### Para usar este script, basta criar um objeto da classe InfoPdf e chamar os mÃ©todos SayThis e Translator com os parÃ¢metros necessÃ¡rios. Certifique-se de instalar as bibliotecas necessÃ¡rias antes de executar o script.
+        
+        ### Exemplo de uso:
+        
+        from ArqPdf import infoPdf
+        
+        pdf = infoPdf.infoPdf()
+        
+        # Ler e reproduzir em audio o arquivo PDF
+        
+        # 0 ou 1 indica o que fazer, onde 0 ler uma pagina especifica e 1 a leitura do arquivo todo
+        
+        pdf.SayThis(nome_pdf (string), 0 ou 1 (int), numero da pagina (int))
+        
+        # Traduzir a pÃ¡gina, informando numero da pagina e a lingua que deseja traduzir
+        
+        pdf.Translator(nome_pdf (string), pagina (int), lingua(string))
+        
+Keywords: Pdf
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
