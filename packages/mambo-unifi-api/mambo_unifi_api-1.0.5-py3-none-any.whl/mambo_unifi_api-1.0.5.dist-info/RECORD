@@ -1,0 +1,11 @@
+unifi_api/__init__.py,sha256=dfsxc4fnB8iLOugXiCgWpkaf6zL7FqzKdRhwG91U9XQ,163
+unifi_api/api.py,sha256=hR2wtqb9BMunrxuPUUBKvoatPafQhnbLgCHO4ByQuU0,44133
+unifi_api/base_api.py,sha256=rSliWjVC8Mc7d-yKtSxeLsaP6vJa5weSAMBAFQko-FQ,2565
+unifi_api/utils/__init__.py,sha256=JN1YwtGqp6YeBLmVTTP1TbsrzVFOhLgukLiApwTSIUA,31
+unifi_api/utils/decorators.py,sha256=84jkUIuHD6bwIWREMN4hTG1YNarJyaSRQW32zUtmqKY,1811
+unifi_api/utils/exceptions.py,sha256=lcJlOF8fjdlNl-I3iwzK--jOUsfrQvn4NMKeQR82Smw,127
+unifi_api/utils/models.py,sha256=zpC--RZtZKYvN0R6PZ43KyC3iNeA2GLUPnl90_52VwI,3461
+mambo_unifi_api-1.0.5.dist-info/METADATA,sha256=TO1YaIPFGIXCDUb65nzI9g2Efl6j42TPY9unj2bGd8o,582
+mambo_unifi_api-1.0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mambo_unifi_api-1.0.5.dist-info/top_level.txt,sha256=L8tTnJiL5ZIl5pzc0R54CVy1SWHTo8ZdZFeGStlhZRA,10
+mambo_unifi_api-1.0.5.dist-info/RECORD,,
