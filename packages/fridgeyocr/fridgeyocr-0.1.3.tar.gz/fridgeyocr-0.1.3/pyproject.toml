@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "fridgeyocr"
+version = "0.1.3"
+authors = [
+  { name="jihye lee", email="1109penguin@gmail.com" },
+]
+description = "Hangul centric recipt ocr package"
+
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/CAPSTONE369"
+
+[testpypi]
+username = "mnxxi"
+password = "pypi-AgENdGVzdC5weXBpLm9yZwIkNWUxODZjNjYtYTFlZC00MTc4LThjZWYtZDNiMDc2OTUwOThhAAIqWzMsImYwODUyM2YwLTFjN2QtNDg3Yy05MDAxLTBkOWI2MmRlMmEzMSJdAAAGIHYZ-Zkq9cCc_WNePrrA4sisupoe2hv4QDoiparmBaiH"
