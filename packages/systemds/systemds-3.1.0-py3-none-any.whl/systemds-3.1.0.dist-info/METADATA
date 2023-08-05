@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: systemds
+Version: 3.1.0
+Summary: Apache SystemDS - An open source ML system for the end-to-end data science lifecycle
+Home-page: https://github.com/apache/systemds
+Author: SystemDS
+Author-email: dev@systemds.apache.org
+License: Apache 2.0
+Platform: Microsoft :: Windows
+Platform: POSIX
+Platform: Unix
+Platform: MacOS
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: numpy (>=1.8.2)
+Requires-Dist: py4j (>=0.10.9)
+Requires-Dist: requests (>=2.24.0)
+Requires-Dist: pandas (>=1.2.2)
+
+This package provides a Pythonic interface for working with Apache SystemDS.
+
+Apache SystemDS is an open source ML system for the end-to-end data science lifecycle from data integration,
+cleaning, and feature engineering, over efficient, local and distributed ML model training,
+to deployment and serving.
+To facilitate this, bindings from different languages and different system abstractions provide help for:
+
+1. The different tasks of the data-science lifecycle, and
+2. users with different expertise.
+
+These high-level scripts are compiled into hybrid execution plans of local, in-memory CPU and GPU operations,
+as well as distributed operations on Apache Spark. In contrast to existing systems - that either
+provide homogeneous tensors or 2D Datasets - and in order to serve the entire
+data science lifecycle, the underlying data model are DataTensors, i.e.,
+tensors (multi-dimensional arrays) whose first dimension may have a heterogeneous and nested schema.
+
