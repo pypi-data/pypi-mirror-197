@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "denemesonuc"
+version = "0.1.4"
+description = "orbim ölçme değerlendirme şeyi için bir modül"
+authors = ["insanolanbiri <erenakgun2007@hotmail.com>"]
+license = "GPL-3.0-only"
+readme = "README.md"
+repository = "https://github.com:/insanolanbiri/denemesonuc"
+classifiers = [
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+selenium = "^4.8.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

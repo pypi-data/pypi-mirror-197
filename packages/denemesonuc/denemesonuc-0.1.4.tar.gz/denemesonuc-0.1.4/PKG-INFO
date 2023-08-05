@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: denemesonuc
+Version: 0.1.4
+Summary: orbim ölçme değerlendirme şeyi için bir modül
+Home-page: https://github.com:/insanolanbiri/denemesonuc
+License: GPL-3.0-only
+Author: insanolanbiri
+Author-email: erenakgun2007@hotmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: selenium (>=4.8.2,<5.0.0)
+Project-URL: Repository, https://github.com:/insanolanbiri/denemesonuc
+Description-Content-Type: text/markdown
+
+# denemesonuc
+orbim ölçme değerlendirme şeyi için bir modül.
+
