@@ -1,0 +1,10 @@
+pyproject.toml
+tests/test_sf_workflow.py
+upload2sf/__init__.py
+upload2sf/load_environment_variables.py
+upload2sf/sf_utils.py
+upload2sf/upload_to_sf.py
+upload2sf.egg-info/PKG-INFO
+upload2sf.egg-info/SOURCES.txt
+upload2sf.egg-info/dependency_links.txt
+upload2sf.egg-info/top_level.txt

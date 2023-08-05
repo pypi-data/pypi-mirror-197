@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "upload2sf"
+version = "0.0.6"
+authors = [
+  { name="Paul Ogier", email="ogier.paul@gmail.com" },
+]
+description = "A small wrapper to upload files to Snowflake"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+homepage = "https://github.com/ogierpaul/upload2sf"
+
+[tool.pytest.ini_options]
+pythonpath = "upload2sf"
