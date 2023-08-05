@@ -1,0 +1,3 @@
+exclude tests/*
+include nr_metadata/**/*.yaml
+include nr_metadata/**/*.json
