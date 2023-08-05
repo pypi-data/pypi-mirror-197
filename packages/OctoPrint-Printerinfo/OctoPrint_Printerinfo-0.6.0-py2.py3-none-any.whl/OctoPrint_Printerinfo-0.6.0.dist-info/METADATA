@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: OctoPrint-Printerinfo
+Version: 0.6.0
+Summary: Retrieves printer info and calls API for lab manager application 'MiddleMan'
+Home-page: https://github.com/AlexTarpley/OctoPrint-Printerinfo
+Author: Alex Tarpley
+Author-email: tarpleysu@gmail.com
+License: AGPLv3
+Platform: UNKNOWN
+Requires-Python: >=3,<4
+Requires-Dist: OctoPrint
+
+UNKNOWN
+
