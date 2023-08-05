@@ -1,0 +1,13 @@
+pyCftool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyCftool/cftooloptions.ui,sha256=JVnpZTxfUxDHuuSYA17TfVuwOXqMhpBSMJR53DSjuh0,1589
+pyCftool/export.py,sha256=ji3uQTTwcEaEVy48VlLSUJdXXGwM7obPQRkmIupY374,1768
+pyCftool/loadgui.py,sha256=Eq8OgfSOSuHzKSvnuHm-cvUYmOuMNWFQ0QdtcaIZS-s,350
+pyCftool/mplwidget.py,sha256=B4FyEsOk5yYMoZB523xj1jjsErOMVFIwQeJABN3XCIg,828
+pyCftool/options.py,sha256=LO0l4WxtxnH24-YNWm8evwoU1TmTbOAQfuLT4mdUr8A,2165
+pyCftool/pyCftool.py,sha256=es3OMzw-VzQlqZyw9rPIP9GYKLG4bG4xbVBf2P1_QhA,22042
+pyCftool/pycftoolGUI.ui,sha256=oeOuQ7yjdjUmVflv131EFlXbwFX2vCv_KErGnBm2-sI,18599
+pyCftool-0.0.19.dist-info/LICENSE.txt,sha256=4NYT5kK_Zb_XgI6Hsny0bGuW6IULbQNpns2TMeOGw1o,1084
+pyCftool-0.0.19.dist-info/METADATA,sha256=RkWmvgyP1_YvWcaL71TvtIAS9Mwg4kJja7LXJ4dP_kQ,8777
+pyCftool-0.0.19.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyCftool-0.0.19.dist-info/top_level.txt,sha256=W7hZuYCE6FP_YgkkaX81nIIba2mUKyvMox_3phfxTow,9
+pyCftool-0.0.19.dist-info/RECORD,,
