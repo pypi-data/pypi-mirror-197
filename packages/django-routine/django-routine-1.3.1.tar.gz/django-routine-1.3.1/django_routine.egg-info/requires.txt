@@ -1,0 +1,12 @@
+djangorestframework
+django
+django-rest-swagger
+drf_yasg
+djangorestframework-simplejwt
+django-filter
+faker
+gunicorn
+psycopg2-binary
+django-celery-beat
+django-celery-results
+python-dotenv
