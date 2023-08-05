@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: distrunner
+Version: 0.0.43
+Summary: This library allows for the easy construction and management of Dask clusters from a Git repository via a simple context manager.
+Home-page: https://gitlab.com/crossref/labs/distrunner
+Author: Martin Paul Eve
+Author-email: meve@crossref.org
+Maintainer-email: Martin Paul Eve <meve@crossref.org>
+License: Copyright &copy; 2023 Crossref
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: homepage, https://labs.crossref.org
+Project-URL: documentation, https://labs.crossref.org
+Project-URL: repository, https://gitlab.com/crossref/labs/distrunner
+Project-URL: changelog, https://gitlab.com/crossref/labs/distrunner/-/blob/main/CHANGELOG.md
+Keywords: distributed computing
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: dask-cloudprovider[aws] (==2022.10.0)
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: cryptography
+Requires-Dist: botocore (~=1.27.59)
+Requires-Dist: distributed (~=2023.3.0)
+Requires-Dist: dask (~=2023.3.0)
+Requires-Dist: GitPython
+Requires-Dist: requests
+
+# Distributed Runner
+This library allows for the easy construction and management of Dask clusters from a Git repository via a simple context manager.
+
+![license](https://img.shields.io/gitlab/license/crossref/labs/distrunner) ![activity](https://img.shields.io/gitlab/last-commit/crossref/labs/distrunner) <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
+
+![Dask](https://img.shields.io/badge/dask-%23092E20.svg?style=for-the-badge&logo=dask&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23121011.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+
+## Installation
+
+    pip install distrunner
+
+## Usage
+
+In your scheduler (Airfow etc.) use this:
+
+    from distrunner import DistRunner
+
+    with DistRunner(
+        workers=5,
+        python_version="3.10",
+        repo="https://gitlab.com/crossref/labs/task-test.git",
+        entry_module="task",
+        entry_point="entry_point",
+        requirements_file="requirements.txt",
+        local=False,
+        retries=3,
+        worker_memory=16384,
+        worker_cpus=4096,
+    ) as dr:
+        logging.basicConfig(level=logging.INFO)
+
+        dr.run()
+
+The "local" flag will determine whether a remote cluster is created.
+
+The code in the git repository at the module and entry point that you specify will be called, passing the DaskRunner object. You can use this, then, to obtain a Dask client by calling cldr.client.
+
+You will need to set the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables to use the Fargate clusters.
+
+## Features
+* Context manager handling of Dask Fargate clusters with scale-to-zero on complete
+* Easy ability to switch between local and distributed/remote development
+* Simple deployment from a git repository including all requirements
+* Bugfixes to Dask AWS 2022.10.0 to suppress errors in weakref finalizers
+
+## What it Does
+This library allows you to bootstrap a git repository into a distributed computation environment. It will install all the needed dependencies into the current virtual environment and sync these with workers. Your code's entrypoint will be called with access to a Dask Client object.
+
+## Credits
+
+* [AWS/Boto](https://github.com/boto/botocore)
+* [Dask](https://www.dask.org/)
+* [Git](https://git-scm.com/)
+* [GitPython](https://github.com/gitpython-developers/GitPython)
+
+Copyright &copy; Crossref 2023 
