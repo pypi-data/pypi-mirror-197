@@ -1,0 +1,5 @@
+requests
+pyttsx3
+PyPDF2
+pdfplumber
+googletrans

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+DataInfoPdf/__init__.py
+DataInfoPdf/arqPdf.py
+DataInfoPdf.egg-info/PKG-INFO
+DataInfoPdf.egg-info/SOURCES.txt
+DataInfoPdf.egg-info/dependency_links.txt
+DataInfoPdf.egg-info/requires.txt
+DataInfoPdf.egg-info/top_level.txt
