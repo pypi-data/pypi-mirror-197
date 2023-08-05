@@ -1,0 +1,7 @@
+LICENSE.txt
+setup.py
+py4math/__init__.py
+py4math.egg-info/PKG-INFO
+py4math.egg-info/SOURCES.txt
+py4math.egg-info/dependency_links.txt
+py4math.egg-info/top_level.txt
