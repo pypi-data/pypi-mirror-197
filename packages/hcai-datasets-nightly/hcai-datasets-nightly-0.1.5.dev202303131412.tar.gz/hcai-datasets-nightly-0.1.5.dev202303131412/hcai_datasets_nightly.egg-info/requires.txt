@@ -1,0 +1,17 @@
+pymongo==3.12
+opencv-python
+torch
+numba
+tensorflow-datasets==4.4.0
+
+[:platform_machine == "AMD64"]
+decord
+
+[:platform_system == "Darwin"]
+tensorflow-macos==2.7
+
+[:platform_system == "Linux"]
+tensorflow==2.7
+
+[:sys_platform == "win32"]
+tensorflow==2.7
