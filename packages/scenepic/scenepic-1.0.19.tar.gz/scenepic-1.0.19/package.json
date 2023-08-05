@@ -1,0 +1,41 @@
+{
+  "name": "scenepic",
+  "version": "1.0.19",
+  "description": "3D Visualization Made Easy",
+  "author": "ScenePic Team",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/scenepic"
+  },
+  "keywords": [
+    "3D",
+    "visualization"
+  ],
+  "scripts": {
+    "compile": "tsc -p .",
+    "build": "node bundle.js",
+    "debug": "node debug.js",
+    "watch": "node watch.js"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.5",
+    "@types/node": "^18.7.13",
+    "@types/pako": "^2.0.0",
+    "browserify": "^17.0.0",
+    "browserify-derequire": "^1.1.1",
+    "exorcist": "^2.0.0",
+    "file-saver": "^2.0.5",
+    "fs": "0.0.2",
+    "gl-matrix": "^3.4.3",
+    "jszip": "^3.10.1",
+    "make-dir": "^3.1.0",
+    "minify-stream": "^2.1.0",
+    "pako": "^1.0.11",
+    "tsify": "^5.0.4",
+    "typescript": "^4.7.4",
+    "watchify": "^4.0.0",
+    "npm": "^8.18.0"
+  }
+}

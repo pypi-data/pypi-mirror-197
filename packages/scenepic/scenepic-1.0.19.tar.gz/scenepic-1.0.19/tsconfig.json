@@ -1,0 +1,21 @@
+{
+    "include": [
+        "tssrc/**/*.ts"
+    ],
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "allowJs": false,
+        "declaration": true,
+        "rootDir": ".",
+        "outDir": "build",
+        "types": [
+            "node",
+            "gl-matrix"
+        ]
+    }
+}
