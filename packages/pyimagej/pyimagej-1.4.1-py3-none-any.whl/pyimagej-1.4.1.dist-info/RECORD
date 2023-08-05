@@ -1,0 +1,13 @@
+imagej/__init__.py,sha256=wZaE9cgKtJp3gZKK70IZ1Knq39pxKIo5bi1JjJWio0c,53747
+imagej/_java.py,sha256=J4MLVgcalovj_52Udiv_zqHVHbCYlhedOpooCznapxg,2891
+imagej/convert.py,sha256=3Zekm2kw_vFsIA96dm-kry9CGQ1k-uHrZ-IVDFcgkzE,19513
+imagej/dims.py,sha256=r2W0EIrNuzfRrRF6NCKHJaBGWBln-y3_rJdTQ1pRy8w,14791
+imagej/doctor.py,sha256=tMQDMG0gHmN-CWpFICcKMPR7UW8R7SKCge55I8JjImE,5911
+imagej/images.py,sha256=PmK7EzI1Dhp-OfQaTqJH4xxG_xN34oJaJQUPlTJpBPA,8619
+imagej/stack.py,sha256=VR7dkdanh57Sje3fV0ApRAy7LSdosD5_WslqULRSIrY,2123
+pyimagej-1.4.1.dist-info/LICENSE.txt,sha256=8KTXwd9U_uVD7Yja8q85z9q1FDJsQJoO6VNuVUjIk5U,609
+pyimagej-1.4.1.dist-info/METADATA,sha256=YPadEygXfumifGJB9AWRkq5mkzH-qXdw5LxW088tRTM,9017
+pyimagej-1.4.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyimagej-1.4.1.dist-info/entry_points.txt,sha256=_j8398HtbbcxAkWrEYf_urANdZztSiMJ_JbwzddlTwU,46
+pyimagej-1.4.1.dist-info/top_level.txt,sha256=cQzxc8BKa_zh8_wZ2jWF28p5CeBojwxJOpdP_LZ1jgo,7
+pyimagej-1.4.1.dist-info/RECORD,,
