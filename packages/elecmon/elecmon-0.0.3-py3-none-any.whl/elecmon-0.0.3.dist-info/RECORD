@@ -1,0 +1,7 @@
+elecmon/__init__.py,sha256=o9QHmIkh0my-oQQgSu3Lzk88__cMnyt01g61yyaLh58,40
+elecmon/config-template.yml,sha256=_JtzyrjFnvN30_3ujmwsuLApWF6vhApZSCWiJ2TWx-o,51
+elecmon/elecmon.py,sha256=AwjRSts-GjxB7-KHzUucf65cGxSq2ezQadgAqj-IilY,12789
+elecmon-0.0.3.dist-info/METADATA,sha256=D5WEKHIJHxrrinuhwKdZwFa3cmyEl6PMOB64gtFxfmE,569
+elecmon-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+elecmon-0.0.3.dist-info/top_level.txt,sha256=hJ_V5CWgEA1mtqZeDs9qdu-MrvcaYp1sd802aG_Qi8Y,8
+elecmon-0.0.3.dist-info/RECORD,,
