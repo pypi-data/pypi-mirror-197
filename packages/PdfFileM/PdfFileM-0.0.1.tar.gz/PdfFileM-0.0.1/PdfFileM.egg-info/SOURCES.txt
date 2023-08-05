@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PdfFileM/__init__.py
+PdfFileM/infoPdf.py
+PdfFileM.egg-info/PKG-INFO
+PdfFileM.egg-info/SOURCES.txt
+PdfFileM.egg-info/dependency_links.txt
+PdfFileM.egg-info/requires.txt
+PdfFileM.egg-info/top_level.txt
