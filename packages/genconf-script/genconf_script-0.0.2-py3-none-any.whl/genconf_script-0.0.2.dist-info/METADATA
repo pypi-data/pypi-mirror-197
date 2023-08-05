@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: genconf-script
+Version: 0.0.2
+Summary: A simple, proof-of-concept package allowing users to find general conference talks containing particular scriptures
+Home-page: UNKNOWN
+Author: Andrew Allen
+Author-email: andrewallen42@gmail.com
+License: UNLICENSED
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: regex
+Requires-Dist: beautifulsoup4
+Requires-Dist: pandas
+
+UNKNOWN
+
+
