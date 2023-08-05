@@ -1,0 +1,7 @@
+pip
+psutil>=5.4.5
+json2html
+py-cpuinfo
+termcolor
+numpy
+tabulate
