@@ -1,0 +1,10 @@
+pyperspectral/__init__.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+pyperspectral/classes.py,sha256=ieXWF1Bu0s8KHo64slKfVQIHBOoU7qsHXQ_4TH-zSms,2627
+pyperspectral/constants.py,sha256=MQSGnwMe96zC48kIhPSQ_dsEaLuvIoyiCsrzx1Csb9k,47
+pyperspectral/load.py,sha256=evIF4TO9iXhZ52rov3W0kyyb9ZUY7QCCaUq6bmfczzM,1228
+pyperspectral/preprocessing.py,sha256=CqrneVCjfhgwesclJWpHz44NsrV4AywI2x-XvaG5ifc,117
+pyperspectral/utils.py,sha256=D1_WtUtpyEwC1hVAfXqQQXGyZkvcTmCLloD7CjCzu-Y,1147
+pyperspectral-0.0.1.dist-info/METADATA,sha256=9CFcXLJl_Ke87yD_ru2F3TvMv2HfliFaxfd8bnvxHmE,109
+pyperspectral-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyperspectral-0.0.1.dist-info/top_level.txt,sha256=8qZUvH5fRgyyIfS_hF_vsv3WRpBX0lgyYCgm3R45aSo,14
+pyperspectral-0.0.1.dist-info/RECORD,,
