@@ -1,0 +1,7 @@
+rabbitmq_subprocess_client/__init__.py,sha256=7N-sTCqq8XgZepoM_o8VhQu-gztLKFUrUCiRwYe5Us0,138
+rabbitmq_subprocess_client/consumer.py,sha256=pqsIAyvWzZ6fmr2rFmtsgbj3U6Mh3BKlBv_Krn9ThFc,14134
+rabbitmq_subprocess_client/runner.py,sha256=iUsVzKBoJ5wgy1Wx3iS3YgmBZPeMsbig32SEEfI7Ieo,2139
+rabbitmq_subprocess_client/utils.py,sha256=9Adh5wKpRquOo7j7W5RYRwrkinC0SiPAqrnlPuSWw7g,356
+rabbitmq_subprocess_client-1.0.0.dist-info/METADATA,sha256=d8sPaQ-jQgBFEaclvYSgx90iCQaeHfOwZNKxbyGj-rw,2334
+rabbitmq_subprocess_client-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+rabbitmq_subprocess_client-1.0.0.dist-info/RECORD,,
