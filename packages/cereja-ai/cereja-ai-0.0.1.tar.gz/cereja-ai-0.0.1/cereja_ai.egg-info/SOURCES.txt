@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+cereja_ai/__init__.py
+cereja_ai.egg-info/PKG-INFO
+cereja_ai.egg-info/SOURCES.txt
+cereja_ai.egg-info/dependency_links.txt
+cereja_ai.egg-info/requires.txt
+cereja_ai.egg-info/top_level.txt
