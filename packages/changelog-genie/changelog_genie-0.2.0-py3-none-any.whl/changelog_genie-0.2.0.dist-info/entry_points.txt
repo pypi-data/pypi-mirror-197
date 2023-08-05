@@ -1,0 +1,3 @@
+[console_scripts]
+changelog_genie=changelog_genie.cli:cli
+
