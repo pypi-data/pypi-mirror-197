@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pyflybygen
+Version: 0.2.0.dev1
+Summary: generate project pyflyby configurations
+Project-URL: Documentation, https://github.com/waylonwalker/pyflybygen#readme
+Project-URL: Issues, https://github.com/waylonwalker/pyflybygen/issues
+Project-URL: Source, https://github.com/waylonwalker/pyflybygen
+Project-URL: Changelog, https://github.com/waylonwalker/pyflybygen
+Author-email: "Waylon S. Walker" <waylon@waylonwalker.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: anyconfig
+Requires-Dist: more-itertools
+Requires-Dist: pathspec
+Requires-Dist: rich
+Requires-Dist: textual
+Requires-Dist: tree-sitter-languages
+Requires-Dist: typer
+Description-Content-Type: text/markdown
+
+# PyFlyByGen
+
+Generates pyflyby configurations for your project based on existing imports.
+
+[![PyPI - Version](https://img.shields.io/pypi/v/pyflybygen.svg)](https://pypi.org/project/pyflybygen)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyflybygen.svg)](https://pypi.org/project/pyflybygen)
+
+---
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install pyflybygen
+```
+
+## License
+
+`pyflybygen` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
