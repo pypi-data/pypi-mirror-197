@@ -1,0 +1,3 @@
+from . import errors
+from .__about__ import __version__
+from ._agg import _tQiXy as adapt_doi_urls, _DzMA6 as Crossref, _mNbmU as Dblp, _W1uaI as journal_abbrev, _k2xAE as check_retractions, _wU65z as sync, _DMSoY as bibtex_to_unicode, _PNlNr as convert_entry_to_latex, _ukk9k as dict_to_string, _flF8Z as doi_from_url, _MaKwK as get_short_doi, _sQwvs as merge, _35jAX as pybtex_to_bibtex_string, _zO0Rz as pybtex_to_dict, _NJw3o as translate_month, _UFyxW as translate_title
