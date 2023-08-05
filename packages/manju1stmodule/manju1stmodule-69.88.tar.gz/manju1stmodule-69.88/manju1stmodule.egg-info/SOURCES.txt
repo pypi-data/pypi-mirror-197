@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+botcode/__init__.py
+botcode/bot.py
+manju1stmodule.egg-info/PKG-INFO
+manju1stmodule.egg-info/SOURCES.txt
+manju1stmodule.egg-info/dependency_links.txt
+manju1stmodule.egg-info/top_level.txt
