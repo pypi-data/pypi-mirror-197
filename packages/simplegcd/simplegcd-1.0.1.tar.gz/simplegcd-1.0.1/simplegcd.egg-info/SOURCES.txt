@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+simplegcd/Deployer.py
+simplegcd/__init__.py
+simplegcd.egg-info/PKG-INFO
+simplegcd.egg-info/SOURCES.txt
+simplegcd.egg-info/dependency_links.txt
+simplegcd.egg-info/requires.txt
+simplegcd.egg-info/top_level.txt
