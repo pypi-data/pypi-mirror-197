@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: leia_api_sdk
+Version: 1.1.1
+Summary: LEIA RESTful API for AI
+Home-page: 
+Author: OpenAPI Generator community
+Author-email: contact@leia.io
+Keywords: OpenAPI,OpenAPI-Generator,LEIA RESTful API for AI
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+    Leia API  # noqa: E501
+    
