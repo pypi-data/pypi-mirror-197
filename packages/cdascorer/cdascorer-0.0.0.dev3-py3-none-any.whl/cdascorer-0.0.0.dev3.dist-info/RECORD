@@ -1,0 +1,12 @@
+cdascorer/__init__.py,sha256=582XqNJTPHePZDyy2NXPYrrvow_G_rw25VEk2qPpNfM,56
+cdascorer/cdametadata.py,sha256=niMXLO0wsqtuNNpuGcIGdk7Kasc-0PxZIBpliiYnl-Y,5138
+cdascorer/tkinterwindow.py,sha256=nMdrotYuz_7OsuM7rGNhlbvCqEF_O3Etg20AsQJBs0o,24692
+cdascorer-0.0.0.dev3.data/scripts/cdascorer-run,sha256=QOwAOZDjnUK4Cn1x0J4FHvnM1XkwjnDCkszFmh-gC24,3951
+cdascorer-0.0.0.dev3.data/scripts/cdascorer-test,sha256=HiM02N3dx8e6VUb3AIw-jOs2U9rAabLuQgI3VCbHLZo,211
+cdascorer-data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdascorer-data/lesion_score_key.jpg,sha256=K5uwm8TpGX8FylyfXHx6cWEL-60dOlBhLDGVqI4cSzQ,771312
+cdascorer-data/test_cda_img.jpg,sha256=gLCz9yWrPXhseDJNVEszRIB9JdDTAt4qXRpabkOGrWs,184626
+cdascorer-0.0.0.dev3.dist-info/METADATA,sha256=1okavmgvqYB2leWr7x1mXfghJmF9jz-ypKVIzvxpFag,543
+cdascorer-0.0.0.dev3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cdascorer-0.0.0.dev3.dist-info/top_level.txt,sha256=Gez0aSwQ0go82yORo6QIiG-ksnzirxSR4SOXKLH1xVs,25
+cdascorer-0.0.0.dev3.dist-info/RECORD,,
