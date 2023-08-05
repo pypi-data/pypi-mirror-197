@@ -1,0 +1,8 @@
+[invenio_base.api_apps]
+nr_vocabularies = nr_vocabularies.ext:NRVocabulariesExt
+
+[invenio_base.apps]
+nr_vocabularies = nr_vocabularies.ext:NRVocabulariesExt
+
+[oarepo.fixtures]
+nr_vocabularies = nr_vocabularies.fixtures
