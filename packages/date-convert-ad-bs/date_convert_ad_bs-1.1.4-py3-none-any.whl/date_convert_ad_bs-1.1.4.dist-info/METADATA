@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: date-convert-ad-bs
+Version: 1.1.4
+Summary: Convert AD to BS and vice versa
+Home-page: https://github.com/Ulleri-Tech/date-convert-AD-BS
+Author: Ulleri Tech (Binij Shrestha)
+Author-email: <uller@ulleri.tech>
+License: MIT
+Keywords: python,Convert Date,AD to BS,BS to AD
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+
+# Date-convert-AD-BS
+
+A Lightweight package that allows to convert AD to BS and vice versa.
+
+## Installation
+
+You can install the package using pip:
+
+```
+pip install date-convert-ad-bs
+
+or
+
+pip3 install date-convert-ad-bs
+
+```
+
+## Usage
+
+To use the package, simply import it and call its functions:
+
+```python
+from dateconvert import DateConvert
+
+converter = DateConvert()
+
+print(converter.ad_to_bs(1993,5,29))
+print(converter.bs_to_ad(2050,2,11))
+```
