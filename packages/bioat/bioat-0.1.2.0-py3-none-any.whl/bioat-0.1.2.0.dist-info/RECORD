@@ -1,0 +1,17 @@
+bioat/__init__.py,sha256=AlSGztqujKnvTvW6Ja-Vb1EkExYJo7r6MScCrZ7rONY,327
+bioat/_exceptions.py,sha256=TzEMbaVbgjN5s7qC9GkBuISZRAPB148K15lMJ6BvrPY,63
+bioat/about.py,sha256=u1T0sXNX8AYHBIT-ypKw5LJkFy54RrCR33ofxMlPUAs,464
+bioat/cli.py,sha256=OhgNR5mvJkSWIn942QkO-aiXWMwWlavXCBmXa_skskg,979
+bioat/fastx.py,sha256=OLfCqiALzISo_ilrrYBabMR45gqAV_F4xe-dVNX3CXM,11016
+bioat/genome.py,sha256=JWRjdh5dRYaLwjFvSDh6iMGtroYmBx5Z0sBevknunBo,818
+bioat/hic.py,sha256=FHIQHV3bIIvpzQ6d4Uf51bFxJeasBRec_sjUr4TexZs,3945
+bioat/logger.py,sha256=XkiCzm26qDpeBm34eJLOJ2PWrEl_cwHpf_B748d2ln0,1084
+bioat/mgi.py,sha256=1cEVg0pwJZHyOg1YZJeUXxgZNnfVm3HSgQC879xiD3A,682
+bioat/system.py,sha256=RuBZf_yjwnIBuQck8WpGT9thj8hpGnVYqBwn6g57huU,5629
+bioat/table.py,sha256=h3SbGftXxugk2LMNRTmWROSvPcWtAyAmklT83R2CW3Y,1505
+bioat/version.py,sha256=2MU2QDhBfNEgcJgQBGC2Q-r84I0TKJJCtpght6M5A7g,181
+bioat-0.1.2.0.dist-info/LICENSE,sha256=9HdjXk7LuPBEaeQcZ6PP1TpnEDMhEPhzbEXDm1gF_mY,1080
+bioat-0.1.2.0.dist-info/METADATA,sha256=y8BHPinnWsTRS9Kmo95f46vaqI3BsHdlHg_71jp1Gi0,1438
+bioat-0.1.2.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+bioat-0.1.2.0.dist-info/entry_points.txt,sha256=DTkVZvq3QwahMqyuUhGfxxXf-2Mo2HcOVTczv3_K29M,40
+bioat-0.1.2.0.dist-info/RECORD,,
