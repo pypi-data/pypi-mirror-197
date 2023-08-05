@@ -1,0 +1,728 @@
+<!--
+
+              RelaxNG schema of the EDXML document format
+                   Part of the EDXML specification
+
+                              edxml.org
+
+                     Copyright 2009 D.H.J. Takken
+                      (d.h.j.takken@xs4all.nl)
+
+                  Copyright 2020 the EDXML foundation
+                       (foundation@edxml.org)
+
+           This file is licensed under the Creative Commons
+               Attribution-NoDerivs 3.0 Unported License.
+                 To view a copy of this license, visit
+
+        http://creativecommons.org/licenses/by-nd/3.0/legalcode
+
+-->
+
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <element name="edxml" ns="http://edxml.org/edxml">
+      <attribute name="version">
+        <data type="token">
+          <param name="pattern">3\.0\.[0-9]+</param>
+        </data>
+      </attribute>
+      <zeroOrMore>
+        <ref name="foreign-element"/>
+      </zeroOrMore>
+      <zeroOrMore>
+        <ref name="ontology-node"/>
+        <zeroOrMore>
+          <choice>
+            <ref name="foreign-element"/>
+            <ref name="event-node"/>
+          </choice>
+        </zeroOrMore>
+      </zeroOrMore>
+    </element>
+  </start>
+  <define name="event-node">
+    <element name="event" ns="http://edxml.org/edxml">
+      <ref name="foreign-attributes-ns"/>
+      <attribute name="event-type">
+        <ref name="event-type-name"/>
+      </attribute>
+      <attribute name="source-uri">
+        <ref name="source-uri"/>
+      </attribute>
+      <optional>
+        <attribute name="parents">
+          <data type="normalizedString">
+            <param name="pattern">([0-9a-f]{40})(,[0-9a-f]{40})*</param>
+          </data>
+        </attribute>
+      </optional>
+      <element name="properties">
+        <oneOrMore>
+          <element>
+            <anyName/>
+            <text/>
+          </element>
+        </oneOrMore>
+      </element>
+      <optional>
+        <element name="attachments">
+        <zeroOrMore>
+          <element>
+            <anyName/>
+            <text/>
+            <attribute name="id">
+            </attribute>
+          </element>
+        </zeroOrMore>
+        </element>
+      </optional>
+    </element>
+  </define>
+  <define name="ontology-node">
+    <element name="ontology" ns="http://edxml.org/edxml">
+      <element name="object-types">
+        <zeroOrMore>
+          <element name="object-type">
+            <attribute name="version">
+              <data type="unsignedInt">
+                <param name="minInclusive">1</param>
+              </data>
+            </attribute>
+            <attribute name="data-type">
+              <choice>
+                <value type="string">number:tinyint</value>
+                <value type="string">number:tinyint:signed</value>
+                <value type="string">number:smallint</value>
+                <value type="string">number:smallint:signed</value>
+                <value type="string">number:mediumint</value>
+                <value type="string">number:mediumint:signed</value>
+                <value type="string">number:int</value>
+                <value type="string">number:int:signed</value>
+                <value type="string">number:bigint</value>
+                <value type="string">number:bigint:signed</value>
+                <value type="string">number:float</value>
+                <value type="string">number:float:signed</value>
+                <value type="string">number:double</value>
+                <value type="string">number:double:signed</value>
+                <value type="string">geo:point</value>
+                <value type="string">file</value>
+                <value type="string">ip:v4</value>
+                <value type="string">ip:v6</value>
+                <value type="string">datetime</value>
+                <value type="string">sequence</value>
+                <value type="string">uuid</value>
+                <value type="string">boolean</value>
+                <data type="token">
+                  <param name="pattern">enum:.*</param>
+                </data>
+                <data type="token">
+                  <param name="pattern">number:currency</param>
+                </data>
+                <data type="token">
+                  <param name="pattern">number:decimal:[0-9]+:[0-9]+</param>
+                </data>
+                <data type="token">
+                  <param name="pattern">number:decimal:[0-9]+:[0-9]+:signed</param>
+                </data>
+                <data type="token">
+                  <param name="pattern">hex:[0-9]+(:[0-9]+:.)?</param>
+                </data>
+                <data type="token">
+                  <param name="pattern">string:[0-9]+:(mc|lc|uc)(:[ru]+)?</param>
+                </data>
+                <data type="token">
+                  <param name="pattern">uri:.</param>
+                </data>
+                <data type="token">
+                  <param name="pattern">base64:[0-9]+</param>
+                </data>
+              </choice>
+            </attribute>
+            <attribute name="name">
+              <ref name="object-type-name"/>
+            </attribute>
+            <attribute name="display-name-singular">
+              <data type="token">
+                <param name="minLength">1</param>
+                <param name="maxLength">32</param>
+              </data>
+            </attribute>
+            <attribute name="display-name-plural">
+              <data type="token">
+                <param name="minLength">1</param>
+                <param name="maxLength">32</param>
+              </data>
+            </attribute>
+            <attribute name="description">
+              <data type="token">
+                <param name="minLength">1</param>
+                <param name="maxLength">128</param>
+              </data>
+            </attribute>
+            <optional>
+              <attribute name="unit-name">
+                <data type="token">
+                  <param name="minLength">1</param>
+                  <param name="maxLength">32</param>
+                </data>
+              </attribute>
+              <attribute name="unit-symbol">
+                <data type="token">
+                  <param name="minLength">1</param>
+                  <param name="maxLength">8</param>
+                </data>
+              </attribute>
+              <optional>
+                <attribute name="prefix-radix">
+                  <choice>
+                    <value type="string">2</value>
+                    <value type="string">10</value>
+                    <value type="string">60</value>
+                  </choice>
+                </attribute>
+              </optional>
+            </optional>
+            <optional>
+              <attribute name="fuzzy-matching">
+                <data type="token">
+                  <param name="pattern">(phonetic)|(substring:.*)|(\[[0-9]{1,2}:\])|(\[:[0-9]{1,2}\])</param>
+                </data>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="xref">
+                <data type="string">
+                  <param name="minLength">1</param>
+                </data>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="compress">
+                <choice>
+                  <value type="string">true</value>
+                  <value type="string">false</value>
+                </choice>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="regex-hard">
+                <data type="string">
+                  <param name="minLength">1</param>
+                  <param name="maxLength">128</param>
+                </data>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="regex-soft">
+                <data type="string">
+                  <param name="minLength">1</param>
+                  <param name="maxLength">128</param>
+                </data>
+              </attribute>
+            </optional>
+          </element>
+        </zeroOrMore>
+      </element>
+      <element name="concepts">
+        <zeroOrMore>
+          <element name="concept">
+            <attribute name="version">
+              <data type="unsignedInt">
+                <param name="minInclusive">1</param>
+              </data>
+            </attribute>
+            <attribute name="name">
+              <ref name="concept-name"/>
+            </attribute>
+            <attribute name="display-name-singular">
+              <data type="token">
+                <param name="minLength">1</param>
+                <param name="maxLength">32</param>
+              </data>
+            </attribute>
+            <attribute name="display-name-plural">
+              <data type="token">
+                <param name="minLength">1</param>
+                <param name="maxLength">32</param>
+              </data>
+            </attribute>
+            <attribute name="description">
+              <data type="token">
+                <param name="minLength">1</param>
+                <param name="maxLength">128</param>
+              </data>
+            </attribute>
+          </element>
+        </zeroOrMore>
+      </element>
+      <element name="event-types">
+        <zeroOrMore>
+          <element name="event-type">
+            <attribute name="version">
+              <data type="unsignedInt">
+                <param name="minInclusive">1</param>
+              </data>
+            </attribute>
+            <attribute name="name">
+              <ref name="event-type-name"/>
+            </attribute>
+            <attribute name="display-name-singular">
+              <data type="token">
+                <param name="minLength">1</param>
+                <param name="maxLength">32</param>
+              </data>
+            </attribute>
+            <attribute name="display-name-plural">
+              <data type="token">
+                <param name="minLength">1</param>
+                <param name="maxLength">32</param>
+              </data>
+            </attribute>
+            <attribute name="description">
+              <data type="token">
+                <param name="minLength">1</param>
+                <param name="maxLength">128</param>
+              </data>
+            </attribute>
+            <attribute name="summary">
+              <data type="token">
+                <param name="minLength">1</param>
+              </data>
+            </attribute>
+            <attribute name="story">
+              <data type="string">
+                <param name="minLength">1</param>
+              </data>
+            </attribute>
+            <optional>
+              <attribute name="timespan-start">
+                <ref name="property-name"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="timespan-end">
+                <ref name="property-name"/>
+              </attribute>
+            </optional>
+            <optional>
+              <attribute name="sequence">
+                 <ref name="property-name"/>
+             </attribute>
+            </optional>
+            <optional>
+              <attribute name="event-version">
+                <ref name="property-name"/>
+              </attribute>
+            </optional>
+            <optional>
+              <element name="parent">
+                <attribute name="event-type">
+                  <ref name="event-type-name"/>
+                </attribute>
+                <attribute name="property-map">
+                  <data type="string">
+                    <param name="pattern">[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)*:[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)*(,[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)*:[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)*)*</param>
+                  </data>
+                </attribute>
+                <attribute name="parent-description">
+                  <data type="token">
+                    <param name="minLength">1</param>
+                    <param name="maxLength">128</param>
+                  </data>
+                </attribute>
+                <attribute name="siblings-description">
+                  <data type="token">
+                    <param name="minLength">1</param>
+                    <param name="maxLength">128</param>
+                  </data>
+                </attribute>
+              </element>
+            </optional>
+            <element name="properties">
+              <oneOrMore>
+                <element name="property">
+                  <attribute name="object-type">
+                    <ref name="object-type-name"/>
+                  </attribute>
+                  <attribute name="optional">
+                    <choice>
+                      <value type="string">true</value>
+                      <value type="string">false</value>
+                    </choice>
+                  </attribute>
+                  <attribute name="multivalued">
+                    <choice>
+                      <value type="string">true</value>
+                      <value type="string">false</value>
+                    </choice>
+                  </attribute>
+                  <attribute name="name">
+                    <ref name="property-name"/>
+                  </attribute>
+                  <attribute name="description">
+                    <data type="token">
+                      <param name="minLength">1</param>
+                      <param name="maxLength">128</param>
+                    </data>
+                  </attribute>
+                  <attribute name="confidence">
+                    <data type="unsignedByte">
+                      <param name="minInclusive">1</param>
+                      <param name="maxInclusive">10</param>
+                    </data>
+                  </attribute>
+                  <optional>
+                    <attribute name="similar">
+                      <data type="token">
+                        <param name="maxLength">64</param>
+                      </data>
+                    </attribute>
+                  </optional>
+                  <optional>
+                    <attribute name="merge">
+                      <choice>
+                        <value type="string">any</value>
+                        <value type="string">add</value>
+                        <value type="string">set</value>
+                        <value type="string">replace</value>
+                        <value type="string">min</value>
+                        <value type="string">max</value>
+                        <value type="string">match</value>
+                      </choice>
+                    </attribute>
+                  </optional>
+                  <zeroOrMore>
+                    <element name="property-concept">
+                      <attribute name="name">
+                        <ref name="concept-name"/>
+                      </attribute>
+                      <attribute name="confidence">
+                        <data type="unsignedByte">
+                          <param name="minInclusive">0</param>
+                          <param name="maxInclusive">10</param>
+                        </data>
+                      </attribute>
+                      <attribute name="cnp">
+                        <data type="unsignedByte"/>
+                      </attribute>
+                      <optional>
+                        <attribute name="attr-extension">
+                          <data type="token">
+                            <param name="minLength">1</param>
+                            <param name="maxLength">16</param>
+                            <param name="pattern">[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)*</param>
+                          </data>
+                        </attribute>
+                        <optional>
+                          <attribute name="attr-display-name-singular">
+                            <data type="token">
+                              <param name="minLength">1</param>
+                              <param name="maxLength">32</param>
+                            </data>
+                          </attribute>
+                          <attribute name="attr-display-name-plural">
+                            <data type="token">
+                              <param name="minLength">1</param>
+                              <param name="maxLength">32</param>
+                            </data>
+                          </attribute>
+                        </optional>
+                      </optional>
+                    </element>
+                  </zeroOrMore>
+                </element>
+              </oneOrMore>
+            </element>
+            <optional>
+              <element name="relations">
+                <zeroOrMore>
+                  <choice>
+                    <element name="inter">
+                      <attribute name="source">
+                        <ref name="property-name"/>
+                      </attribute>
+                      <attribute name="target">
+                        <ref name="property-name"/>
+                      </attribute>
+                      <attribute name="source-concept">
+                        <ref name="concept-name"/>
+                      </attribute>
+                      <attribute name="target-concept">
+                        <ref name="concept-name"/>
+                      </attribute>
+                      <attribute name="description">
+                        <data type="token">
+                          <param name="minLength">1</param>
+                          <param name="maxLength">255</param>
+                        </data>
+                      </attribute>
+                      <attribute name="predicate">
+                        <data type="token">
+                          <param name="maxLength">32</param>
+                        </data>
+                      </attribute>
+                      <attribute name="confidence">
+                        <data type="unsignedByte">
+                          <param name="minInclusive">0</param>
+                          <param name="maxInclusive">10</param>
+                        </data>
+                      </attribute>
+                    </element>
+                    <element name="intra">
+                      <attribute name="source">
+                        <ref name="property-name"/>
+                      </attribute>
+                      <attribute name="target">
+                        <ref name="property-name"/>
+                      </attribute>
+                      <attribute name="source-concept">
+                        <ref name="concept-name"/>
+                      </attribute>
+                      <attribute name="target-concept">
+                        <ref name="concept-name"/>
+                      </attribute>
+                      <attribute name="description">
+                        <data type="token">
+                          <param name="minLength">1</param>
+                          <param name="maxLength">255</param>
+                        </data>
+                      </attribute>
+                      <attribute name="predicate">
+                        <data type="token">
+                          <param name="maxLength">32</param>
+                        </data>
+                      </attribute>
+                      <attribute name="confidence">
+                        <data type="unsignedByte">
+                          <param name="minInclusive">0</param>
+                          <param name="maxInclusive">10</param>
+                        </data>
+                      </attribute>
+                    </element>
+                    <element name="other">
+                      <attribute name="source">
+                        <ref name="property-name"/>
+                      </attribute>
+                      <attribute name="target">
+                        <ref name="property-name"/>
+                      </attribute>
+                      <attribute name="description">
+                        <data type="token">
+                          <param name="minLength">1</param>
+                          <param name="maxLength">255</param>
+                        </data>
+                      </attribute>
+                      <attribute name="predicate">
+                        <data type="token">
+                          <param name="maxLength">32</param>
+                        </data>
+                      </attribute>
+                      <attribute name="confidence">
+                        <data type="unsignedByte">
+                          <param name="minInclusive">0</param>
+                          <param name="maxInclusive">10</param>
+                        </data>
+                      </attribute>
+                    </element>
+                    <element name="name">
+                      <attribute name="source">
+                        <ref name="property-name"/>
+                      </attribute>
+                      <attribute name="target">
+                        <ref name="property-name"/>
+                      </attribute>
+                    </element>
+                    <element name="description">
+                      <attribute name="source">
+                        <ref name="property-name"/>
+                      </attribute>
+                      <attribute name="target">
+                        <ref name="property-name"/>
+                      </attribute>
+                    </element>
+                    <element name="container">
+                      <attribute name="source">
+                        <ref name="property-name"/>
+                      </attribute>
+                      <attribute name="target">
+                        <ref name="property-name"/>
+                      </attribute>
+                    </element>
+                    <element name="original">
+                      <attribute name="source">
+                        <ref name="property-name"/>
+                      </attribute>
+                      <attribute name="target">
+                        <ref name="property-name"/>
+                      </attribute>
+                    </element>
+                  </choice>
+                </zeroOrMore>
+              </element>
+            </optional>
+            <optional>
+              <element name="attachments">
+                <zeroOrMore>
+                  <element name="attachment">
+                    <attribute name="name">
+                      <data type="token">
+                        <param name="minLength">1</param>
+                        <param name="maxLength">64</param>
+                        <param name="pattern">[a-z][a-z0-9-]*</param>
+                      </data>
+                    </attribute>
+                    <attribute name="display-name-singular">
+                      <data type="token">
+                        <param name="minLength">1</param>
+                        <param name="maxLength">32</param>
+                      </data>
+                    </attribute>
+                    <attribute name="display-name-plural">
+                      <data type="token">
+                        <param name="minLength">1</param>
+                        <param name="maxLength">32</param>
+                      </data>
+                    </attribute>
+                    <attribute name="description">
+                      <data type="token">
+                        <param name="minLength">1</param>
+                        <param name="maxLength">128</param>
+                      </data>
+                    </attribute>
+                    <attribute name="media-type">
+                      <data type="normalizedString">
+                        <param name="minLength">1</param>
+                        <param name="maxLength">128</param>
+                        <param name="pattern">[0-9A-Za-z!#$%&amp;'*+.^_`|~-]+/[0-9A-Za-z!#$%&amp;'*+.^_`|~-]+</param>
+                      </data>
+                    </attribute>
+                    <attribute name="encoding">
+                      <choice>
+                        <value type="string">unicode</value>
+                        <value type="string">base64</value>
+                      </choice>
+                    </attribute>
+                  </element>
+                </zeroOrMore>
+              </element>
+            </optional>
+          </element>
+        </zeroOrMore>
+      </element>
+      <element name="sources">
+        <zeroOrMore>
+          <element name="source">
+            <attribute name="version">
+              <data type="unsignedInt">
+                <param name="minInclusive">1</param>
+              </data>
+            </attribute>
+            <attribute name="uri">
+              <ref name="source-uri"/>
+            </attribute>
+            <attribute name="description">
+              <data type="normalizedString">
+                <param name="minLength">1</param>
+                <param name="maxLength">128</param>
+              </data>
+            </attribute>
+            <optional>
+            <attribute name="date-acquired">
+              <data type="normalizedString">
+                <param name="maxLength">8</param>
+                <param name="pattern">[0-9]{8}</param>
+              </data>
+            </attribute>
+            </optional>
+          </element>
+        </zeroOrMore>
+      </element>
+    </element>
+  </define>
+  <define name="anything">
+    <zeroOrMore>
+      <choice>
+        <element>
+          <anyName/>
+          <zeroOrMore>
+            <attribute>
+              <anyName/>
+            </attribute>
+          </zeroOrMore>
+          <ref name="anything"/>
+        </element>
+        <text/>
+      </choice>
+    </zeroOrMore>
+  </define>
+  <define name="foreign-element">
+    <element>
+      <anyName>
+        <except>
+          <nsName ns=""/>
+          <nsName ns="http://edxml.org/edxml"/>
+        </except>
+      </anyName>
+      <ref name="foreign-attributes"/>
+      <ref name="anything"/>
+    </element>
+  </define>
+  <define name="foreign-attributes">
+    <zeroOrMore>
+      <attribute>
+        <anyName>
+          <except>
+            <nsName ns="http://edxml.org/edxml"/>
+          </except>
+        </anyName>
+      </attribute>
+    </zeroOrMore>
+  </define>
+  <define name="foreign-attributes-ns">
+    <zeroOrMore>
+      <attribute>
+        <anyName>
+          <except>
+            <nsName ns=""/>
+            <nsName ns="http://edxml.org/edxml"/>
+          </except>
+        </anyName>
+      </attribute>
+    </zeroOrMore>
+  </define>
+  <define name="event-type-name">
+    <data type="token">
+      <param name="minLength">1</param>
+      <param name="maxLength">64</param>
+      <param name="pattern">[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)*</param>
+    </data>
+  </define>
+  <define name="property-name">
+    <data type="token">
+      <param name="minLength">1</param>
+      <param name="maxLength">64</param>
+      <param name="pattern">[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)*</param>
+    </data>
+  </define>
+  <define name="concept-name">
+    <data type="token">
+      <param name="minLength">1</param>
+      <param name="maxLength">255</param>
+      <param name="pattern">[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)*</param>
+    </data>
+  </define>
+  <define name="object-type-name">
+    <data type="token">
+      <param name="minLength">1</param>
+      <param name="maxLength">64</param>
+      <param name="pattern">[a-z][a-z0-9-]*(\.[a-z][a-z0-9-]*)*</param>
+    </data>
+  </define>
+  <define name="source-uri">
+    <data type="token">
+      <param name="minLength">1</param>
+      <param name="pattern">(/[a-z0-9-]+)*/</param>
+    </data>
+  </define>
+</grammar>

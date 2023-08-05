@@ -1,0 +1,8 @@
+README.rst
+setup.py
+edxml_schema/__init__.py
+edxml_schema.egg-info/PKG-INFO
+edxml_schema.egg-info/SOURCES.txt
+edxml_schema.egg-info/dependency_links.txt
+edxml_schema.egg-info/top_level.txt
+edxml_schema/schema/edxml-schema-3.0.0.rng
