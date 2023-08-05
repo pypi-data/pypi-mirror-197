@@ -1,0 +1,9 @@
+black
+intake-parquet
+moto
+mypy
+pre-commit
+pytest
+ruff
+s3fs
+yamllint
