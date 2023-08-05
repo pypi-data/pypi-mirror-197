@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+ShellPride/__init__.py
+ShellPride.egg-info/PKG-INFO
+ShellPride.egg-info/SOURCES.txt
+ShellPride.egg-info/dependency_links.txt
+ShellPride.egg-info/entry_points.txt
+ShellPride.egg-info/requires.txt
+ShellPride.egg-info/top_level.txt
+ShellPride/colors/__init__.py
+ShellPride/flags/__init__.py
+ShellPride/messages/__init__.py
