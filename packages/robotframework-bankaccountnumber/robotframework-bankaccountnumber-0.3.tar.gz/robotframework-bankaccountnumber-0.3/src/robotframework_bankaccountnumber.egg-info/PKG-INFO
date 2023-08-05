@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: robotframework-bankaccountnumber
+Version: 0.3
+Summary: Bank Account Number Generator
+Home-page: https://github.com/bennyvw/robotframework-bankaccountnumber
+Author: Anne Kootstra
+Author-email: kootstra@hotmail.com
+Maintainer: Benny van Wijngaarden
+Maintainer-email: benny@smaragd-it.nl
+License: MIT License
+Keywords: robotframework,iban,bankaccount
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Robot Framework :: Library
+Classifier: Topic :: Software Development :: Testing
+Classifier: Development Status :: 4 - Beta
+Description-Content-Type: text/x-rst
+
+Robot Framework Library for generating (mainly Dutch) IBAN bank account numbers. The Account Numbers pass the mod 11 and mod 97 checks.
