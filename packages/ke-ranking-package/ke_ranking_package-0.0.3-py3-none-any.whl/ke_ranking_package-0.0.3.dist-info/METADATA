@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ke-ranking-package
+Version: 0.0.3
+Summary: Useful Functions for search & ranking
+Home-page: https://github.com/KazanExpress/ke_ranking_package
+License-File: LICENSE.md
+Requires-Dist: clickhouse-driver (~=0.2.4)
+Requires-Dist: elasticsearch (~=8.4.1)
+Requires-Dist: fastparquet (~=2022.12.0)
+Requires-Dist: joblib (~=1.1.0)
+Requires-Dist: numpy (~=1.21.0)
+Requires-Dist: psycopg2-binary (~=2.9.3)
+
