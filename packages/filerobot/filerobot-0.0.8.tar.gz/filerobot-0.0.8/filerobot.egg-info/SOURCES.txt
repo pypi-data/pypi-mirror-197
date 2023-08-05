@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+filerobot/__init__.py
+filerobot/filerobot.py
+filerobot.egg-info/PKG-INFO
+filerobot.egg-info/SOURCES.txt
+filerobot.egg-info/dependency_links.txt
+filerobot.egg-info/requires.txt
+filerobot.egg-info/top_level.txt
