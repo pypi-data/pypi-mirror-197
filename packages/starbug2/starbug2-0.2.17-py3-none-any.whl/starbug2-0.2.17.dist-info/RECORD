@@ -1,0 +1,13 @@
+starbug2/__init__.py,sha256=yYM-yEGcYRgX7tcjJBwaEYiVuDGZ5gKR7me3ivelPpE,4173
+starbug2/matching.py,sha256=F-hBwbY1gsmMLWa0Yip4c91LV77HoiRlslX60NjvDoM,13892
+starbug2/misc.py,sha256=zNKnJqvb4_1t9tqXxjcXx1WnMpUJITXqJVGSatnTQAI,3918
+starbug2/routines.py,sha256=4378FITncKCKMIbvlR8qTFzWRKdh8y-VNa85LGQvm_g,23916
+starbug2/starbug.py,sha256=4VVZVeqDk1qnKiO-ZnlEZYbOKb1MMu5017r6qsBJmuc,25887
+starbug2/utils.py,sha256=jneMZNK7HUeYeUnvgX5oJzJi7wS86xLxPAFt0F3oWbk,9370
+starbug2/param/default.param,sha256=FDSEJjYNkkxf37UKVYvTTmMXLL5b0umrzP6povrIAOs,3317
+starbug2-0.2.17.data/scripts/starbug2,sha256=Clg8ORRinYuWYL8VyHi-NvTFvjjDAe8XpuvOkOI9YBk,10579
+starbug2-0.2.17.data/scripts/starbug2-match,sha256=hHw6NRf7uk8hFRIL8QGitwVwQN1RddPKOR7pDvIqFXw,3314
+starbug2-0.2.17.dist-info/METADATA,sha256=ERbkUIQzftCKzRNJuoOwPzKqCK_xmBihPyYG2jbX5VQ,4100
+starbug2-0.2.17.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+starbug2-0.2.17.dist-info/top_level.txt,sha256=U2bHeJ_Enh0neEfMLiuVLZlxklIUURy_lvTGNDQkGPA,9
+starbug2-0.2.17.dist-info/RECORD,,
