@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.cfg
+src/distrunner/__init__.py
+src/distrunner/distrunner.py
+src/distrunner.egg-info/PKG-INFO
+src/distrunner.egg-info/SOURCES.txt
+src/distrunner.egg-info/dependency_links.txt
+src/distrunner.egg-info/requires.txt
+src/distrunner.egg-info/top_level.txt
+tests/test_dist_runner.py
