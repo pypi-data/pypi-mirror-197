@@ -1,0 +1,6 @@
+[console_scripts]
+randuser = randuser.cli:randuser
+
+[nbdev]
+randuser = randuser._modidx:d
+

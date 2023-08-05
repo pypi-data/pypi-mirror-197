@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+randuser/__init__.py
+randuser/_modidx.py
+randuser/cli.py
+randuser/core.py
+randuser.egg-info/PKG-INFO
+randuser.egg-info/SOURCES.txt
+randuser.egg-info/dependency_links.txt
+randuser.egg-info/entry_points.txt
+randuser.egg-info/not-zip-safe
+randuser.egg-info/requires.txt
+randuser.egg-info/top_level.txt
