@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ark-api
+Version: 1.2.5
+Summary: Python API for ark automation
+Author-email: Kenny Hommel <kennyhommel36@gmail.com>
+Project-URL: Homepage, https://github.com/kennyhml/ark.py
+Project-URL: Bug Tracker, https://github.com/kennyhml/ark.py/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dacite
+Requires-Dist: requests
+Requires-Dist: pyautogui
+Requires-Dist: pydirectinput
+Requires-Dist: pynput
+Requires-Dist: pytesseract
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+Requires-Dist: numpy
+Requires-Dist: mss
+Requires-Dist: pywin32
+Requires-Dist: screeninfo
+Requires-Dist: pygetwindow
+Requires-Dist: psutil
+Requires-Dist: keyboard
+Requires-Dist: mouse
+Requires-Dist: python-a2s
+
+# ark.py
+Python API for ARK automation
