@@ -1,0 +1,8 @@
+setup.py
+Uname_sridhar.egg-info/PKG-INFO
+Uname_sridhar.egg-info/SOURCES.txt
+Uname_sridhar.egg-info/dependency_links.txt
+Uname_sridhar.egg-info/entry_points.txt
+Uname_sridhar.egg-info/top_level.txt
+uname/__init__.py
+uname/uname.py
