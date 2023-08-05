@@ -1,0 +1,2 @@
+[console_scripts]
+ocdsindex = ocdsindex.__main__:main

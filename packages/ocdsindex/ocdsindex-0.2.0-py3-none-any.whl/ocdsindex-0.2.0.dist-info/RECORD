@@ -1,0 +1,12 @@
+ocdsindex/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocdsindex/__main__.py,sha256=5C-acyI1eofC6oUzCd9Ms59w5JusXrxgMVKsMdk_Urc,5988
+ocdsindex/allow.py,sha256=cFUMhX8z4fTv6HkjOYxnkZjnIx7MrdEUDmn0SYHNTg4,342
+ocdsindex/crawler.py,sha256=KWCOUCKHaZoqUHEE4tjJttYqVCHvXw9-VVsw_L5QEKg,2436
+ocdsindex/exceptions.py,sha256=LjdZJSvge6BmJoVBrpr0nlDdFK0okjWyVjQMEJOEcxM,204
+ocdsindex/extract.py,sha256=x0nnnYb0M-vVTBh41AenEqhdUB7p9I3lpOzahYeDx24,2954
+ocdsindex-0.2.0.dist-info/LICENSE,sha256=ZeBaGZ5bxityZ1g178Vw7xBez9mIFo2CrjItNeQcJUg,1528
+ocdsindex-0.2.0.dist-info/METADATA,sha256=CtzujmduuhiPp0cIGtqK_zDBirALfjTmCIY90QQpFsk,2223
+ocdsindex-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ocdsindex-0.2.0.dist-info/entry_points.txt,sha256=raqGKAf3sj8JpJp-9Ptu_0ZIY-vg27CorXvUoCj5iFc,54
+ocdsindex-0.2.0.dist-info/top_level.txt,sha256=7-ass1hOGSESJnyCkp91UoKPesPpJ2meFV1Ai3PI37c,10
+ocdsindex-0.2.0.dist-info/RECORD,,
