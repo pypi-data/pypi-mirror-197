@@ -1,0 +1,15 @@
+transformers>=4.26.0
+optimum
+
+[quality]
+black
+ruff
+hf_doc_builder
+
+[tests]
+pytest
+psutil
+parameterized
+GitPython
+sentencepiece
+datasets
