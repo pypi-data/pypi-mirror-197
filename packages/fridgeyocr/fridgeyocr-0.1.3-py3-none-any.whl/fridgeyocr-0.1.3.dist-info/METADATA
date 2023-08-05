@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fridgeyocr
+Version: 0.1.3
+Summary: Hangul centric recipt ocr package
+Author-email: jihye lee <1109penguin@gmail.com>
+Project-URL: Homepage, https://github.com/CAPSTONE369
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+
