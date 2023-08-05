@@ -1,0 +1,15 @@
+sciopy/__init__.py,sha256=tyxIAdyYLpEy0q0kkNJkvem7811irGUqaSgFb0m0UtM,3945
+sciopy/com_handling.py,sha256=6ZkobujBOEH4aBNNYzos9JzwaXHLKzDwVQc4m4nz73Q,2424
+sciopy/configurations.py,sha256=f_cTxIsLgQ0VcQObOD49EfhIwcFU2ghQQD09QhLWVgo,37872
+sciopy/doteit.py,sha256=Y0EJsnaQOfkdNe2aXMQ0nSDKVKDTfN0QVMkmyTJPiyY,4607
+sciopy/npztocsv.py,sha256=2vluozu89svJTBFIQj1Jy98swiHdzz3_fO8uJFk5CtI,8962
+sciopy/prepare_data.py,sha256=3Jg8LL8igylQ58Dj424HV6CbJ1cRwMCQq5JEamH01r4,6798
+sciopy/print_command_info.py,sha256=H11dvdt_QJLOyLR82mVi_g6HdjL_1OMxpUReeqR7fSA,4489
+sciopy/sciopy_dataclasses.py,sha256=_5DfezZc3vQcPu5IHAuiLKEE2sojr1Qk7uNc_jB29X0,3525
+sciopy/setup_m.py,sha256=U3vxA16EQJa03w6l_br56Tcn6WxQ36LzbW3Cp9I6sNo,21234
+sciopy/visualization.py,sha256=H4qQeyDplFq6GWUzHa30qenMokeqTEq4aHkHAyCAlB8,5741
+sciopy-0.6.1.dist-info/LICENSE,sha256=sQmL6D9fBTXsXNtLtpiDBQX8uV7YevgehRAQw99w0LE,1080
+sciopy-0.6.1.dist-info/METADATA,sha256=lP3rFenILQ6XtPQaphdGh1PY362i05D-fxrQMAiJqdg,2665
+sciopy-0.6.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sciopy-0.6.1.dist-info/top_level.txt,sha256=Yfokv5CD23A5gda5ZEjDy0YfFwrFeo_EOXJLRv-QoEU,7
+sciopy-0.6.1.dist-info/RECORD,,
