@@ -1,0 +1,4 @@
+[console_scripts]
+certoraRun = certora_cli.certoraRun:entry_point
+mutationTest = certora_cli.mutationTest:ext_gambit_entry_point
+
