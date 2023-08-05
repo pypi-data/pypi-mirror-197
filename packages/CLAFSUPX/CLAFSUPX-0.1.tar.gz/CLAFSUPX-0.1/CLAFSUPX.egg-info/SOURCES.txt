@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+CLAFSUPX/CLAFSUPX.py
+CLAFSUPX/__init__.py
+CLAFSUPX.egg-info/PKG-INFO
+CLAFSUPX.egg-info/SOURCES.txt
+CLAFSUPX.egg-info/dependency_links.txt
+CLAFSUPX.egg-info/requires.txt
+CLAFSUPX.egg-info/top_level.txt
