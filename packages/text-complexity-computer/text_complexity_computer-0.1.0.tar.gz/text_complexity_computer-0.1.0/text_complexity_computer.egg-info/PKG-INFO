@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: text-complexity-computer
+Version: 0.1.0
+Summary: A library for evaluate text difficulty.
+Author: le-smog
+Author-email: le-smog@gmx.com
+License: LGPLv3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+![iid-logo](https://iid.ulaval.ca/wp-content/themes/iid/images/logo-iid-Institut-intelligence-donnees.svg "IID")
+# TextStatComplexity
+
+Here some examples:
+
+    from TextComplexityComputer import TextComplexityComputer
+
+    tcc = TextComplexityComputer()
+    print(tcc.get_metrics_scores("Alibaba et les 40 voleurs."))
+
