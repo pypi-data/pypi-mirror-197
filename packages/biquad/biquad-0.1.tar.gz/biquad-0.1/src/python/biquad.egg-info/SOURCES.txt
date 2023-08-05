@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/python/biquad/__init__.py
+src/python/biquad/biquad.py
+src/python/biquad.egg-info/PKG-INFO
+src/python/biquad.egg-info/SOURCES.txt
+src/python/biquad.egg-info/dependency_links.txt
+src/python/biquad.egg-info/requires.txt
+src/python/biquad.egg-info/top_level.txt
