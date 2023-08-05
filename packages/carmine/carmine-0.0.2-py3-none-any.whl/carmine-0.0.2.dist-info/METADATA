@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: carmine
+Version: 0.0.2
+Summary: An opinionated Python toolchain.
+License: Apache-2.0
+Author-email: David Seaward <david@librem.one>
+Requires-Python: >=3.10
+Requires-Dist: black~=23.0
+Requires-Dist: coverage>=7.2.1
+Requires-Dist: mdformat>=0.7.16
+Requires-Dist: pytest>=7.2.2
+Requires-Dist: reuse>=1.1.2
+Description-Content-Type: text/markdown
+
+# Carmine toolchain
+
+An opinionated Python toolchain. Carmine is a pigment made by crushing bugs.
+
+## Usage
+
+Add `carmine` as a developer dependency, and all the included tools will be
+available for linting and testing.
+
+### Linting
+
+- [black](https://black.readthedocs.io/en/stable/)
+
+- [mdformat](https://mdformat.readthedocs.io/en/stable/)
+
+- [reuse](https://reuse.software)
+
+### Testing
+
+- [coverage](https://coverage.readthedocs.io/en/stable/)
+
+- [pytest](https://docs.pytest.org/en/stable/)
+
+For more details on intended use see `syllabub`.
+
+<!-- start @generated footer -->
+
+# Sharing and contributions
+
+```
+Carmine toolchain
+https://lofidevops.neocities.org
+Copyright 2023 David Seaward and contributors
+SPDX-License-Identifier: Apache-2.0
+```
+
+Shared under Apache-2.0. We adhere to the Contributor Covenant 2.1, and certify
+origin per DCO 1.1 with a signed-off-by line. Contributions under the same
+terms are welcome.
+
+Submit security and conduct issues as private tickets. Sign commits with
+`git commit --signoff`. For a software bill of materials run `reuse sbom`. For
+more details see CONDUCT, COPYING and CONTRIBUTING.
+
