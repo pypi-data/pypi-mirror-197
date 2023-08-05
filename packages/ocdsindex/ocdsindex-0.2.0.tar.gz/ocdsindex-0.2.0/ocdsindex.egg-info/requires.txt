@@ -1,0 +1,13 @@
+click
+elasticsearch[requests]<9,>=8
+lxml
+
+[docs]
+furo
+sphinx
+sphinx-autobuild
+
+[test]
+coveralls
+pytest
+pytest-cov
