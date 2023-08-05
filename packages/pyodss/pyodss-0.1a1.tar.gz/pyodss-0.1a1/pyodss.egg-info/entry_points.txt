@@ -1,0 +1,2 @@
+[console_scripts]
+pyodss = pyodss.__main__:main
