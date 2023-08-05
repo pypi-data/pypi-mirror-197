@@ -1,0 +1,57 @@
+on:
+  pull_request:
+
+  push:
+
+  schedule:
+    - cron: "0 12 */3 * *"
+
+name: Check
+
+jobs:
+  test-run:
+    name: Test VKMS - ${{ matrix.os }}
+    if: github.actor != 'dependabot[bot]'
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+          - macos-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install VKMS
+        run: pip install .
+      - name: Run VKMS
+        run: |
+          vkms -i ${{ secrets.VKMS_INCLUDE }} dump --token ${{ secrets.VKMS_ACCESS_TOKEN }} --export-json
+          vkms -i ${{ secrets.VKMS_INCLUDE }} parse -f txt
+          vkms -i ${{ secrets.VKMS_INCLUDE }} parse -f html
+          vkms -i ${{ secrets.VKMS_INCLUDE }} atch
+      - name: Zip artifacts with password
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        run: |
+          zip -r result.zip vkms-result/ 1>/dev/null
+          zip -P '${{ secrets.ZIP_PASSWORD }}' enc_result.zip result.zip
+      - name: Upload artifacts
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: VKMS result
+          path: enc_result.zip
+          if-no-files-found: error
+      - name: Clear artifacts
+        if: ${{ matrix.os == 'ubuntu-latest' }}
+        run: rm -rf vkms-result/ result.zip enc_result.zip
