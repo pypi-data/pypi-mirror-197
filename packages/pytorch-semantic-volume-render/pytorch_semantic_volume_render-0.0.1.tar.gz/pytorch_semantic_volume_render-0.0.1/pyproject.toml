@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytorch_semantic_volume_render"
+version = "0.0.1"
+authors = [
+  { name="Jan Nogga", email="nogga@ais.uni-bonn.de" },
+]
+description = "Extension library to render semantic-density fields using PyTorch."
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "GNU General Public License v3 (GPLv3)"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # list of folders that contain the packages (["."] by default)
+include = ["*"]  # package names should match these glob patterns (["*"] by default)
+exclude = []  # exclude packages matching these glob patterns (empty by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+[tool.setuptools.dynamic]
+version = {attr = "pytorch_semantic_volume_render.VERSION"}
+readme = {file = ["README.md"]}
+
+[project.urls]
+"Homepage" = "https://github.com/JanNogga/pytorch_semantic_volume_render"
+"Bug Tracker" = "https://github.com/JanNogga/pytorch_semantic_volume_render/issues"
+

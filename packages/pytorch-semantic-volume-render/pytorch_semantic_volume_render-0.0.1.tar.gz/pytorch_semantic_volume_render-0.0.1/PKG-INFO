@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pytorch_semantic_volume_render
+Version: 0.0.1
+Summary: Extension library to render semantic-density fields using PyTorch.
+Author-email: Jan Nogga <nogga@ais.uni-bonn.de>
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Homepage, https://github.com/JanNogga/pytorch_semantic_volume_render
+Project-URL: Bug Tracker, https://github.com/JanNogga/pytorch_semantic_volume_render/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyTorch Semantic Volume Render
+
+An extension library to render semantic-density fields using PyTorch.
+
+## Requirements:
+
+* [PyTorch](https://pytorch.org/)
+* [PyTorch Scatter](https://github.com/rusty1s/pytorch_scatter)
