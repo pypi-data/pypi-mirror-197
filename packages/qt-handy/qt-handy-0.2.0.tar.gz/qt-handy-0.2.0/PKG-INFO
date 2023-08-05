@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: qt-handy
+Version: 0.2.0
+Summary: A collection of useful Qt utilities and event filters for PyQt/PySide
+Home-page: https://github.com/plotlyst/qt-handy
+Author: Zsolt Kovari
+Author-email: zsolt@kovaridev.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Provides-Extra: core
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: all
+License-File: LICENSE
+
+[![Test](https://github.com/plotlyst/qt-handy/actions/workflows/test.yml/badge.svg)](https://github.com/plotlyst/qt-handy/actions/workflows/test.yml)
+[![Coverage Status](https://coveralls.io/repos/github/plotlyst/qt-handy/badge.svg?branch=main)](https://coveralls.io/github/plotlyst/qt-handy?branch=main)
+![PyPI](https://img.shields.io/pypi/v/qt-handy)
+
+# qt-handy
