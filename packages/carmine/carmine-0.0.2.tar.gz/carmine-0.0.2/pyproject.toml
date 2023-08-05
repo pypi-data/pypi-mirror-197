@@ -1,0 +1,36 @@
+[project]
+name = "carmine"
+version = "0.0.2"
+description = "An opinionated Python toolchain."
+authors = [
+    { name = "David Seaward", email = "david@librem.one" },
+]
+dependencies = [
+    "black ~= 23.0",
+    "coverage>=7.2.1",
+    "mdformat>=0.7.16",
+    "pytest>=7.2.2",
+    "reuse>=1.1.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.scripts]
+carmine = "carmine.cli:invoke"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.syllabub.project]
+conduct = "contributor-covenant-2.1"
+copyright = "Copyright 2023 David Seaward and contributors"
+origin = "DCO-1.1-git-signoff"
+sbom = "reuse sbom"
+title = "Carmine toolchain"
+url = "https://lofidevops.neocities.org"
