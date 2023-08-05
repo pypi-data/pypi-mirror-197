@@ -1,0 +1,2 @@
+[console_scripts]
+ck8s = ck8s.cli:main
