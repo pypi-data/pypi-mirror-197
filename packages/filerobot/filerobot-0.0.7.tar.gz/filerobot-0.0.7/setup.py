@@ -1,0 +1,50 @@
+from setuptools import setup, find_packages
+
+classifiers = [
+    'Development Status :: 1 - Planning',
+    'Intended Audience :: Developers',
+    'Operating System :: MacOS',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3'
+]
+
+setup(
+    name='filerobot',
+    version='0.0.7',
+    description='A filerobot library which interacts with filerobot API',
+    long_description_content_type='text/markdown',
+    long_description= open('README.md').read() + '\n\n' + open("CHANGELOG.txt").read(),
+    url='',
+    author='Scaleflex',
+    author_email='',
+    license='MIT',
+    classifiers=classifiers,
+    keywords='',
+    packages=find_packages(),
+    install_requires=['bleach==6.0.0',
+                      'build==0.10.0',
+                      'certifi==2022.12.7',
+                      'charset-normalizer==3.0.1',
+                      'docutils==0.19',
+                      'idna==3.4',
+                      'importlib-metadata==6.0.0',
+                      'jaraco.classes==3.2.3',
+                      'keyring==23.13.1',
+                      'markdown-it-py==2.1.0',
+                      'mdurl==0.1.2',
+                      'more-itertools==9.0.0',
+                      'packaging==23.0',
+                      'pkginfo==1.9.6',
+                      'Pygments==2.14.0',
+                      'pyproject_hooks==1.0.0',
+                      'readme-renderer==37.3',
+                      'requests==2.28.2',
+                      'requests-toolbelt==0.10.1',
+                      'rfc3986==2.0.0',
+                      'rich==13.3.1',
+                      'six==1.16.0',
+                      'twine==4.0.2',
+                      'urllib3==1.26.14',
+                      'webencodings==0.5.1',
+                      'zipp==3.13.0']
+)
