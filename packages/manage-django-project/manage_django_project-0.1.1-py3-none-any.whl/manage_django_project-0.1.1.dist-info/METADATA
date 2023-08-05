@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: manage-django-project
+Version: 0.1.1
+Summary: Helper to develop Django projects.
+Author-email: Jens Diemer <git@jensdiemer.de>
+Project-URL: Documentation, https://github.com/jedie/manage_django_project
+Project-URL: Source, https://github.com/jedie/manage_django_project
+Requires-Python: <4,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django-tools
+Requires-Dist: manageprojects
+Requires-Dist: bx-py-utils
+Requires-Dist: django-rich
+Provides-Extra: dev
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: darker (>=1.7) ; extra == 'dev'
+Requires-Dist: autopep8 ; extra == 'dev'
+Requires-Dist: pyupgrade ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flynt ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pyflakes ; extra == 'dev'
+Requires-Dist: codespell ; extra == 'dev'
+Requires-Dist: EditorConfig ; extra == 'dev'
+Requires-Dist: safety ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: tomli ; extra == 'dev'
+Requires-Dist: typing-extensions (>=3.10) ; (python_version < "3.10") and extra == 'dev'
+
+# manage_django_project
+
+[![tests](https://github.com/jedie/manage_django_project/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/jedie/manage_django_project/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/github/jedie/manage_django_project/branch/main/graph/badge.svg)](https://app.codecov.io/github/jedie/manage_django_project)
+[![manage_django_project @ PyPi](https://img.shields.io/pypi/v/manage_django_project?label=manage_django_project%20%40%20PyPi)](https://pypi.org/project/manage_django_project/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/manage_django_project)](https://github.com/jedie/manage_django_project/blob/main/pyproject.toml)
+[![License GPL-3.0-or-later](https://img.shields.io/pypi/l/manage_django_project)](https://github.com/jedie/manage_django_project/blob/main/LICENSE)
+
+Helper to develop Django projects.
+
+
+## How to use it
+
+TBD
+
+
+## Start hacking
+
+Just clone the project and start `./manage.py` to bootstrap a virtual environment:
+
+```
+# Install base requirements for bootstraping:
+~$ sudo apt install python3-pip python3-venv
+
+# Get the sources:
+~$ git clone https://github.com/jedie/manage_django_project.git
+~$ cd manage_django_project/
+
+# Just call manage.py:
+~/manage_django_project$ ./manage.py --help
+...
+[manage_django_project]
+    code_style
+    coverage
+    install
+    project_info
+    run_dev_server
+    safety
+    tox
+    update_req
+...
+
+# start local dev. web server:
+~/django-for-runners$ ./manage.py run_dev_server
+
+# run tests:
+~/django-for-runners$ ./manage.py test
+# or with coverage
+~/django-for-runners$ ./manage.py coverage
+# or via tox:
+~/django-for-runners$ ./manage.py tox
+```
+
+
+## history
+
+* [**dev**](https://github.com/jedie/manage_django_project/compare/v0.1.1...main)
+  * TBC
+* [v0.1.1 - 13.03.2023](https://github.com/jedie/manage_django_project/compare/v0.1.0...v0.1.1)
+  * Add `ProjectInfo.distribution_name` and set if from `pyproject.toml`
+  * publish command: Use `distribution_name` in publish call
+  * publish command: Display used settings for `publish_package()`
+* [v0.1.0 - 12.03.2023](https://github.com/jedie/manage_django_project/compare/v0.0.1...v0.1.0)
+  * publish command: Bugfix test run before publishing: use the "test" settings
+  * coverage command: Remove a existing `.coverage` before create a new one
+* v0.0.1 - 12.03.2023
+  * Init first version
