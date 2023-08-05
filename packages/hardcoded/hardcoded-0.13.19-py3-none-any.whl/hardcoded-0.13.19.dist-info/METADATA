@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hardcoded
+Version: 0.13.19
+Summary: For everything that you really should not be hardcoding.
+Home-page: https://pypi.org/project/hardcoded/
+Author: moizuo
+Author-email: no_spam@example.com
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Dist: Click (>=8.0.1)
+Requires-Dist: pyyaml
+Requires-Dist: python-gnupg
+Provides-Extra: encryption_without_pgp
+Requires-Dist: cryptography (>=39.0.0) ; extra == 'encryption_without_pgp'
+Requires-Dist: cffi (>=1.15.1) ; extra == 'encryption_without_pgp'
+

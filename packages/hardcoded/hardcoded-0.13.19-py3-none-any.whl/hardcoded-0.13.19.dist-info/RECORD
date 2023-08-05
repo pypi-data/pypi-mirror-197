@@ -1,0 +1,9 @@
+hardcoded/__init__.py,sha256=6eKd1JlFMBMa8CYxyNLVzn0zP93Sozg6c6svO3J_GCk,1112
+hardcoded/cli.py,sha256=8Ehcfjf_U5xu9xmX5KtWZDNX1sMJwX-kZbgtXLmBpSU,2229
+hardcoded/git.py,sha256=88gF0iu0M8jk_kGaBA83bahDpVAJp32XVGJG-jRQlrg,1396
+hardcoded/logic.py,sha256=2b21hnESJqPPSlxxiTgCiL3hc-uGrTQs9enhKuSACAQ,19747
+hardcoded-0.13.19.dist-info/METADATA,sha256=0Zva_6g2Y9IUGJfUhEcvWWL_5rG6NbiuZd1_1rD6Sak,575
+hardcoded-0.13.19.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hardcoded-0.13.19.dist-info/entry_points.txt,sha256=h6hwCYYo7WwfLtRRXBdHcHD5Y-1Aitzb0FZyg3MkO1A,44
+hardcoded-0.13.19.dist-info/top_level.txt,sha256=Fw2m7K_WCcDNDFtBIlMIa29OW5kC0KNxuE7-N8REyUw,10
+hardcoded-0.13.19.dist-info/RECORD,,
