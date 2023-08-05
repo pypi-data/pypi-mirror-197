@@ -1,0 +1,3 @@
+[console_scripts]
+Uname = uname.uname:main
+
