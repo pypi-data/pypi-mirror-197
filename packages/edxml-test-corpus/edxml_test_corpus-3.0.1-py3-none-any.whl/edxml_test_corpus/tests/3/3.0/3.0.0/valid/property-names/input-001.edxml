@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Test if properties containing dashes and dots are accepted in all contexts.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="1" data-type="string:64:mc"/>
+    </object-types>
+    <concepts>
+      <concept name="a" version="1" description="a" display-name-singular="a" display-name-plural="a"/>
+    </concepts>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="a" story="a" version="1">
+        <parent event-type="b" property-map="a.x-y:a.x-y" parent-description="in" siblings-description="in"/>
+        <properties>
+          <property name="a.x-y" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match"/>
+        </properties>
+        <relations/>
+      </event-type>
+      <event-type name="b" description="b" display-name-singular="b" display-name-plural="b" summary="b" story="b" version="1">
+        <properties>
+          <property name="a.x-y" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match">
+            <property-concept name="a" confidence="0" cnp="128"/>
+          </property>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+</edxml>

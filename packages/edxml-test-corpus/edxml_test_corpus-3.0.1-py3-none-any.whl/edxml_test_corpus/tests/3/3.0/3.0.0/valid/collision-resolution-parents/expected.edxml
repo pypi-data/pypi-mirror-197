@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="1" data-type="string:255:mc"/>
+    </object-types>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="a" story="a" version="1">
+        <properties>
+          <property name="a" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources>
+      <source uri="/test/" description="a" version="1"/>
+    </sources>
+  </ontology>
+  <event event-type="a" source-uri="/test/" parents="e9d71f5ee7c92d6dc9e92ffdad17b8bd49418f98,84a516841ba77a5b4648de2cd0dfcb30ea46dbb4,86f7e437faa5a7fce15d1ddcb9eaeaea377667b8">
+    <properties>
+      <a>a</a>
+    </properties>
+  </event>
+</edxml>

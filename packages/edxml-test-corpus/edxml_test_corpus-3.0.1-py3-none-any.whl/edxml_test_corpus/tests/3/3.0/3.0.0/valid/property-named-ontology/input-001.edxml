@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Test if XML containing properties that are named 'ontology' does not confuse the parser.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="1" compress="true" data-type="string:10:mc"/>
+    </object-types>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[ontology]]" story="[[ontology]]" version="1">
+        <properties>
+          <property name="ontology" object-type="a" description="a" optional="true" multivalued="true" confidence="10" merge="match"/>
+        </properties>
+        <relations/>
+        <attachments/>
+      </event-type>
+    </event-types>
+    <sources>
+        <source uri="/a/" description="a" version="1"/>
+    </sources>
+  </ontology>
+  <event event-type="a" source-uri="/a/">
+    <properties>
+      <ontology>test</ontology>
+    </properties>
+    <attachments/>
+  </event>
+</edxml>

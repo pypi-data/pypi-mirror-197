@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Test if upgrading of an event source works as expected.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types/>
+    <sources>
+      <source uri="/a/" description="a" version="1"/>
+    </sources>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types/>
+    <sources>
+      <!-- No changes, only a version increment. -->
+      <source uri="/a/" description="a" version="2"/>
+    </sources>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types/>
+    <sources>
+      <source uri="/a/" description="changed-description" version="3"/>
+    </sources>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types/>
+    <sources>
+      <source uri="/a/" description="changed-description" version="4"/>
+    </sources>
+  </ontology>
+</edxml>

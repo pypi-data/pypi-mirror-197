@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Test if upgrading of properties of an event type works as expected.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="1" compress="true" data-type="string:10:mc"/>
+    </object-types>
+    <concepts>
+      <concept name="a" version="1" description="a" display-name-singular="a" display-name-plural="a"/>
+    </concepts>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="1">
+        <properties>
+          <property name="a" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <!-- No changes, only a version increment. -->
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="2">
+        <properties>
+          <property name="a" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="3">
+        <properties>
+          <property name="a" object-type="a" description="changed-description" optional="false" multivalued="false" confidence="10" merge="match"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="4">
+        <properties>
+          <!-- Make property optional -->
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="false" confidence="10" merge="match"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="5">
+        <properties>
+          <!-- Make property multi-valued -->
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="10" merge="match"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="6">
+        <properties>
+          <!-- Set similar attribute -->
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="10" merge="match" similar="test"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="7">
+        <properties>
+          <!-- Change similar attribute -->
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="10" merge="match" similar="changed-similar"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="8">
+        <properties>
+          <!-- Change confidence attribute -->
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="1" merge="match" similar="changed-similar"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="9">
+        <properties>
+          <!-- Add concept association -->
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="1" merge="match" similar="changed-similar">
+            <property-concept name="a" confidence="8" cnp="8" attr-extension="ext"/>
+          </property>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="10">
+        <properties>
+          <!-- Change concept confidence -->
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="1" merge="match" similar="changed-similar">
+            <property-concept name="a" confidence="9" cnp="8" attr-extension="ext"/>
+          </property>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="11">
+        <properties>
+          <!-- Change concept CNP -->
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="1" merge="match" similar="changed-similar">
+            <property-concept name="a" confidence="9" cnp="9" attr-extension="ext"/>
+          </property>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types>
+      <!-- We update the display name of the object type. While the concept attribute defined in the event type
+           inherits it, because it does not define a custom display name, the change to the object type must
+           not be considered a change to the event type. Below we change the object type while duplicating
+           the event type to test if this is indeed the case.
+       -->
+      <object-type name="a" description="a" display-name-singular="changed-dn-singular" display-name-plural="changed-dn-plural" version="2" compress="true" data-type="string:10:mc"/>
+    </object-types>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="11">
+        <properties>
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="1" merge="match" similar="changed-similar">
+            <property-concept name="a" confidence="9" cnp="9" attr-extension="ext"/>
+          </property>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="12">
+        <properties>
+          <!-- Change concept attribute display name -->
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="1" merge="match" similar="changed-similar">
+            <property-concept name="a" confidence="9" cnp="9" attr-extension="ext" attr-display-name-singular="singular" attr-display-name-plural="plural"/>
+          </property>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="13">
+        <properties>
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="1" merge="match" similar="changed-similar">
+            <property-concept name="a" confidence="9" cnp="9" attr-extension="ext" attr-display-name-singular="singular" attr-display-name-plural="plural"/>
+          </property>
+          <!-- Added property -->
+          <property name="b" object-type="a" description="b" optional="true" multivalued="true" confidence="10" merge="match"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+</edxml>
