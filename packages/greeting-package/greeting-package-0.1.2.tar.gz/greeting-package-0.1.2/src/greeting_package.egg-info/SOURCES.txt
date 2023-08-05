@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/greeting_package/__init__.py
+src/greeting_package/greeting.py
+src/greeting_package.egg-info/PKG-INFO
+src/greeting_package.egg-info/SOURCES.txt
+src/greeting_package.egg-info/dependency_links.txt
+src/greeting_package.egg-info/top_level.txt
+src/greeting_package/tests/__init__.py
+src/greeting_package/tests/test_greeting.py
