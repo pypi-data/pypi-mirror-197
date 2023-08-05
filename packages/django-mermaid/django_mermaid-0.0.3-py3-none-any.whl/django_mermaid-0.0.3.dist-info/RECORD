@@ -1,0 +1,9 @@
+django_mermaid/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+django_mermaid/apps.py,sha256=quPnsXTskNd0b_ZDxh-03g6BkwcX2UfkPZQt1esuq00,871
+django_mermaid/templatetags/__init__.py,sha256=oNmECFFgH_VyiRdXLigK2aExM3SOPqazxC_7WztWOWg,180
+django_mermaid/templatetags/mermaid.py,sha256=IgIcKH1gQOnmyBDUHJXXYw9i3y9vdJa3K2MczuEELAk,743
+django_mermaid-0.0.3.dist-info/LICENSE,sha256=QYf8kAs_zfwaYbq6Qj7yv6GEHXkohOQEarOmCr05xsI,1071
+django_mermaid-0.0.3.dist-info/METADATA,sha256=0BMYN6HX1bUS3ZEqrfCoUzRN7GXV8BcB9og58uiCaTQ,2400
+django_mermaid-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_mermaid-0.0.3.dist-info/top_level.txt,sha256=1Z45RapxMSsQsWLyFCD3GhC0mntKHwY04tuiEa4rjzA,15
+django_mermaid-0.0.3.dist-info/RECORD,,
