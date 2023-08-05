@@ -1,0 +1,12 @@
+.DS_Store,sha256=G4GYyZLZ3u9EoUfitj7gYO0uF0tTYbdtmGTJD2nDtGw,8196
+aniachi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aniachi/stringUtils.py,sha256=5ZXKuQA084UnUpr8RvDWZRpeA4HBv4l16rZv64-HJQg,4435
+aniachi/systemUtils.py,sha256=1Afek8BCKArO2JY_CTy4kj-62-Enc6JEVsyIsrXZ63s,10495
+aniachi/timeUtils.py,sha256=pWRZbNxX2Aow17QyZnEdQsxoox7OzjVSTXyrS2CFcGs,1291
+py_common_fetch-0.332.data/scripts/stringUtils.py,sha256=5ZXKuQA084UnUpr8RvDWZRpeA4HBv4l16rZv64-HJQg,4435
+py_common_fetch-0.332.data/scripts/systemUtils.py,sha256=1Afek8BCKArO2JY_CTy4kj-62-Enc6JEVsyIsrXZ63s,10495
+py_common_fetch-0.332.data/scripts/timeUtils.py,sha256=pWRZbNxX2Aow17QyZnEdQsxoox7OzjVSTXyrS2CFcGs,1291
+py_common_fetch-0.332.dist-info/METADATA,sha256=eA0DAZ2l1Jc8ORJtIppY5Lr_qi9IEpUr7G6whMrqjw0,1707
+py_common_fetch-0.332.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+py_common_fetch-0.332.dist-info/top_level.txt,sha256=o42-SSQEqQ5_ENVsCZ12wP2Lj6jAf7SyVhuehy0DluQ,8
+py_common_fetch-0.332.dist-info/RECORD,,
