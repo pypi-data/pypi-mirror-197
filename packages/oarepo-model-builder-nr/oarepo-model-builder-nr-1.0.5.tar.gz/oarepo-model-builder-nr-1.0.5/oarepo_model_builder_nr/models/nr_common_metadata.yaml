@@ -1,0 +1,234 @@
+
+CommonMetadata:
+  $id: CommonMetadata
+  marshmallow:
+    schema-class: nr_metadata.common.services.records.schema.NRCommonMetadataSchema
+    imports:
+      - import: nr_metadata.common.services.records.schema.NRCommonMetadataSchema
+  ui:
+    marshmallow:
+      schema-class: nr_metadata.common.services.records.ui_schema.NRCommonMetadataUISchema
+    imports:
+      - import: nr_metadata.common.services.records.ui_schema.NRCommonMetadataUISchema
+
+  properties:
+    title:
+      type: fulltext+keyword # Main (original) title of the object/work.
+      required: true
+      label.cs: Název
+      label.en: Title    
+
+    additionalTitles[]:
+      # Additional titles of the object/work such as subtitle, translatedTitle and alternativeTitle.
+      ^uniqueItems: true
+      properties:
+        # TODO: zvazit, jestli preci jenom neprejit na pole extenzi langstringu, abychom byli datacite (a rdm)
+        # primo kompatibilni
+        title:
+          type: fulltext            # i18nStr
+          required: true
+        titleType:
+          type: keyword
+          required: true
+          enum: [translatedTitle, alternativeTitle, subtitle, other]
+      marshmallow:
+        schema-class: nr_metadata.common.services.records.schema.AdditionalTitlesSchema
+        imports:
+          - import: nr_metadata.common.services.records.schema.AdditionalTitlesSchema
+      ui:
+        detail: additionalTitle
+        marshmallow:
+          schema-class: nr_metadata.common.services.records.ui_schema.AdditionalTitlesUISchema
+        imports:
+          - import: nr_metadata.common.services.records.ui_schema.AdditionalTitlesUISchema
+
+    creators[]:
+      ^minItems: 1
+      ^uniqueItems: true
+      ^required: true
+      ^label.cs: Autoři
+      ^label.en: Authors
+
+      use: 'nr-datatypes#NRAuthority'
+      ui:
+        detail: creator
+      properties:
+        affiliations[]:
+          type: vocabulary
+          vocabulary-type: creator_affiliations
+
+    contributors[]:
+      use: 'nr-datatypes#NRAuthority'
+      ^uniqueItems: true
+      ui:
+        detail: contributor
+      properties:
+        role:
+          use: 'nr-datatypes#NRAuthorityRole'
+        affiliations[]:
+          type: vocabulary
+          vocabulary-type: contributor_affiliations
+
+    resourceType:
+      # Taxonomy driven typology of objects that's possible to store in the repository
+      use: 'nr-datatypes#NRResourceType'
+      required: true
+
+    dateAvailable:
+      # The date the resource is publicly available in a repository.
+      #
+      # týká se dokumentu, nikoliv metadat!!!
+      # stejně jako pro data, budou se přes něj řídit přístupy - embargo
+      use: 'nr-datatypes#NRDate'
+      sample:
+        faker: date
+      label.cs: Datum zveřejnění
+      label.en: Date available
+
+    dateModified:
+      # The date of the last update to the resource, not metadata
+      #
+      # týká se dokumentu/obsahu, nikoliv metadat!!!
+      # neukazuje se ve vkládacím formuláři. jen při editaci záznamu!
+      use: 'nr-datatypes#NRDate'
+      sample:
+        faker: date
+      label.cs: Datum změny zdroje
+      label.en: Date modified
+
+    subjects[]:
+      # subject by vocabularies or free-form keywords created by author(s)
+      use: 'nr-datatypes#NRSubject'
+      ^uniqueItems: true
+
+    publishers[]:
+      # volný zápis vydavatele
+      type: fulltext
+      ^uniqueItems: true
+      sample:
+        faker: company
+      label.cs: Vydavatel
+      label.en: Publisher
+
+    subjectCategories[]:
+      # FRASCATI oborové třídění - může sloužit jako podklad pro oborové filtrování
+      use: 'nr-datatypes#NRSubjectCategory'
+      ^uniqueItems: true
+
+    languages[]:
+      # ISO 639-2 B in slug, ISO 639-2 T in alias, ISO 639-1 as Alpha2.
+      use: 'nr-datatypes#NRLanguage'
+      ^minItems: 1
+      required: true
+      ^uniqueItems: true
+
+    notes[]:
+      # Free-form note for any comment that couldn't be inserted in any other fields.
+      type: fulltext
+      ^uniqueItems: true
+      ^label.cs: Poznámky
+      ^label.en: Notes
+
+    abstract:
+      # fulltext            # i18nStr abstract description for record (may contain HTML).
+      type: fulltext            # i18nStr
+      label.cs: Abstrakt
+      label.en: Abstract
+
+    methods:
+      # fulltext            # i18nStr methodology employed for the study or research.(may contain HTML)
+      type: fulltext            # i18nStr
+      label.cs: Metodologie
+      label.en: Methods
+
+    technicalInfo:
+      # fulltext            # i18nStr detailed information that may be associated with
+      # design, implementation, operation, use, and/or maintenance of a process
+      # or system.(may contain HTML)
+      type: fulltext            # i18nStr
+      label.cs: Technické informace
+      label.en: Technical information
+
+    rights[]:
+      # Any license or copyright information for this resource. Taxonomy field.
+      use: 'nr-datatypes#NRAccessRights'
+      ^uniqueItems: true
+
+    accessRights:
+      # Taxonomy driven list of possible access to the document - open,
+      # embargoed, restirected and metadata only access. Based on COAR
+      # vocabulary - http://vocabularies.coar-repositories.org/documentation/access_rights/",
+      use: 'nr-datatypes#NRAccessRights'
+
+    relatedItems[]:
+      use: 'nr-datatypes#NRRelatedItem'
+      ^uniqueItems: true
+
+    fundingReferences[]:
+      use: 'nr-datatypes#NRFundingReference'
+      ^uniqueItems: true
+
+    version:
+      # verze obsahu, nikoliv záznamu. hodnota ve formuláři není editovatelná.
+      type: keyword
+      sample: ['1.0', '1.1', '2.0', '2.1', '2.2']
+      label.cs: Verze zdroje
+      label.en: Resource version
+
+    geoLocations[]:
+      use: 'nr-datatypes#NRGeoLocation'
+      ^uniqueItems: true
+
+    accessibility:
+      # textové vyjádření dostupnosti souborů, primárně pro harvestované zdroje.
+      # nastavuje se pro každý zdroj zvlášť během konverze podle dostupnosti souborů
+      # ve zdrojovém systému. ve vkládacím formuláři by bylo pouze pro restricted access
+      type: fulltext            # i18nStr
+      label.cs: Dostupnost zdroje
+      label.en: Resource accessibility
+
+    series[]:   # TODO: NRSeries
+      # edice; tématicky sdružuje podobné věci, nemusí se jednat o pravou edici,
+      # ale tagování/grupování podobných záznamů
+      ^uniqueItems: true
+      use: "nr-datatypes#NRSeries"
+
+    externalLocation: # TODO: NRExternalLocation
+      use: "nr-datatypes#NRExternalLocation"
+
+    originalRecord:
+      # odkaz na původní záznam, zobrazovat koncovému uživateli v detailu záznamu
+      # jako původní místo uložení. objevuje se jen u harvestu
+      type: url
+      sample:
+        faker: url
+      label.cs: Odkaz na původní záznam
+      label.en: Original record URL
+
+    objectIdentifiers[]:
+      # Persistent identifier/s of object as ISBN, DOI, etc. + assigned by National Repository.
+      use: 'nr-datatypes#NRObjectPID'
+      ^uniqueItems: true
+
+    systemIdentifiers[]:
+      use: 'nr-datatypes#NRSystemIdentifier'
+
+    events[]:
+      use: 'nr-datatypes#NREvent'
+
+CommonModel:
+  $id: CommonModel
+  marshmallow:
+    schema-class: nr_metadata.common.services.records.schema.NRCommonRecordSchema
+    imports:
+      - import: nr_metadata.common.services.records.schema.NRCommonRecordSchema
+  ui:
+    marshmallow:
+      schema-class: nr_metadata.common.services.records.ui_schema.NRCommonRecordUISchema
+      imports:
+        - import: nr_metadata.common.services.records.ui_schema.NRCommonRecordUISchema
+  use: [invenio]
+
+  properties:
+    metadata:
+      use: ["nr-common-metadata#CommonMetadata"]
