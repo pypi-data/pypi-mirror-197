@@ -1,0 +1,7 @@
+versionator/__init__.py,sha256=Ht295BRjo8hC0lwasZ6Pi--8XXI0E1z-w74k6ksoHS8,64
+versionator/core.py,sha256=lrZlWAp5kKzAKRE_7S82GfoFGubL5R6ZO9e7-9wsRv8,11352
+versionator/middleware.py,sha256=OkBHdsvcn28ptBUz83IRkeinug7Ueylwvphu-jPFnEM,1158
+django_versionator-0.0.1b0.dist-info/METADATA,sha256=oNoZNeTs40CNdDygUpxVnS87ZXQFWt_5Kny_Y-DvkY4,369
+django_versionator-0.0.1b0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_versionator-0.0.1b0.dist-info/top_level.txt,sha256=deUopx2DMaSsvrMcRj4CEtOniE8oQ6GRH_sIaZKn8nk,12
+django_versionator-0.0.1b0.dist-info/RECORD,,
