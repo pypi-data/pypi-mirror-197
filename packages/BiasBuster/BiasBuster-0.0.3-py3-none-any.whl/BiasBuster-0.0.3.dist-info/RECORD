@@ -1,0 +1,13 @@
+metric_abroca/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metric_abroca/abroca.py,sha256=zolMmRQsnDIOLQH9vcs9zJNWDT67lmiEvdUNmzqQ1ak,604
+metric_equal_opportunity/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metric_equal_opportunity/equal_opportunity.py,sha256=GnjtN_FJAvClcjeCsboenYvcfrkjs1ftQbsFGVWIDj8,659
+metric_predictive_equality/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metric_predictive_equality/predictive_equality.py,sha256=XcK-cV8jxZMcmBy_oKoYRDHOue8OZVNtG1xUnGH1vtA,755
+metric_predictive_parity/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metric_predictive_parity/predictive_parity.py,sha256=ltbVC1sd2cBs_vUa6TJFDK5dJRYLnDGahGtdNpPNjkU,682
+BiasBuster-0.0.3.dist-info/LICENSE.txt,sha256=EKYEIomUcbUyAEUKUBJ1BAOdzOYBUylnG5TDwrhay2o,1080
+BiasBuster-0.0.3.dist-info/METADATA,sha256=XYAmCr2NOlatVB378zgZPQpV_w9jdF5gfdWGtIwF_Mk,2500
+BiasBuster-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+BiasBuster-0.0.3.dist-info/top_level.txt,sha256=rtNn5aTE6SBNvCL8QVKyopQ7F54w0QDWlWzMJMSn5F4,91
+BiasBuster-0.0.3.dist-info/RECORD,,
