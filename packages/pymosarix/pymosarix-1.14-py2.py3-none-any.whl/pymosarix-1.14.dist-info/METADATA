@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: pymosarix
+Version: 1.14
+Summary: MOSARIX data treatment python package, (r) Iyas ISMAIL, LCPMR-CNRS 2023 
+Home-page: http://github.com/iyas77/pymosarix
+Author: Iyas ISMAIL
+Author-email: iyas.ismail@upmc.fr
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: tqdm
+
