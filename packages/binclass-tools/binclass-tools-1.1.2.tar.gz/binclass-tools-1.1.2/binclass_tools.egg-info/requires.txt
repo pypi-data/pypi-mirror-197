@@ -1,0 +1,6 @@
+numpy
+pandas
+scikit-learn>=0.22.1
+matplotlib
+plotly>=5.5.0
+nbformat>=4.2.0
