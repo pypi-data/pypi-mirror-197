@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shape-warrior-t.lusbir"
+version = "1.0.0"
+authors = [
+    {name="Bonan Luan", email="bl.swt1@gmail.com"},
+]
+description = "An alternative conception of integer ranges in Python."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools]
+py-modules = ["lusbir"]
+
+[project.urls]
+"GitHub" = "https://github.com/shape-warrior-t/lusbir"
