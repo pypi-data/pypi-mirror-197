@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+pipcolor/__init__.py
+pipcolor/color.py
+pipcolor.egg-info/PKG-INFO
+pipcolor.egg-info/SOURCES.txt
+pipcolor.egg-info/dependency_links.txt
+pipcolor.egg-info/top_level.txt
