@@ -1,0 +1,6 @@
+opencv-python-headless>=4.6.0.66
+dataclass_wizard>=0.21.0
+pillow>=9.3.0
+
+[all]
+boto3
