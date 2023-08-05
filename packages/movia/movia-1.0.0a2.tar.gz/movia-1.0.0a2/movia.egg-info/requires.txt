@@ -1,0 +1,15 @@
+av
+black
+click
+networkx
+numpy>=1.22
+opencv-contrib-python-headless
+pdoc3
+pygraphviz
+pyqt6
+sympy
+unidecode
+
+[dev]
+pylint
+pytest
