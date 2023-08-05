@@ -1,0 +1,14 @@
+rembg/__init__.py,sha256=_H6rtp_OBRGSfL0nF9_98s4Kn2KLMsTxBv3Yp-eXCwI,138
+rembg/_version.py,sha256=kuPSB4lIfmRiJNaOYaCoHr2PQubmY5zQo_l2qiRH6bE,497
+rembg/bg.py,sha256=sjeZ4qklGqH7znSCDtvRAJpid3moK4qdz1tt1nou-Ns,5121
+rembg/cli.py,sha256=v9DMJ4icUB2mi1fvgNAsjqg2RryZSv8yaCGRMZn1qB4,12604
+rembg/session_base.py,sha256=wowDTTUhNmusNP1FHNbg8W7CmTC_LKKCUW0yPdBMVq8,1203
+rembg/session_cloth.py,sha256=EoCCQWDDQtSDiniK5F1xB6PTKfVCzZBsfrhiwKQe-Sc,1663
+rembg/session_factory.py,sha256=e3b7q4Yd6Qd8fx40QRTJSc6oeTHN4bDHuiSEGRbgWcw,1078
+rembg/session_simple.py,sha256=ImSK2dMbBo39laQ7EczPdCB4CljVKJ6MWDzADizM0qY,741
+rembg/u2net.onnx,sha256=jRDS87t1rjttUnx3lE_F59zZSymAnUenOaenKKkStJE,175997641
+rembg_aws_lambda-0.1.0.dist-info/LICENSE.txt,sha256=gUAcLa_jrEHc5BZJKWmnut5UQ6fKHp3jwp_JKuHzER0,1099
+rembg_aws_lambda-0.1.0.dist-info/METADATA,sha256=kbYsabNv3w_LJScoFvmWUsnYaXeILaY1YGvDJVHasIc,8737
+rembg_aws_lambda-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+rembg_aws_lambda-0.1.0.dist-info/top_level.txt,sha256=dn_SejwIU9edjs7y-85RIaGES58zX9TQNpLz_Sw-oH0,6
+rembg_aws_lambda-0.1.0.dist-info/RECORD,,
