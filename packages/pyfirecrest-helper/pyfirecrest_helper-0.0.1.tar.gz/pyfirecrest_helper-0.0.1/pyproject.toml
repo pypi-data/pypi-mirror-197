@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyfirecrest_helper"
+version = "0.0.1"
+authors = [
+  { name="Julia Gustavsen", email="julia.gustavsen@agroscope.admin.ch" },
+]
+description = "A small helper package to transfer files via pyFIRECREST api"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pyfirecrest",
+    "requests",
+    "hatchling",
+    "setuptools"
+]
+
+
+[project.scripts]
+pyfirecrest_helper = "pyfirecrest_helper.pyfirecrest_helper:main"
+
+[project.urls]
+"Homepage" = "https://juliagustavsenagroscope@dev.azure.com/juliagustavsenagroscope/Allegra_Pilot/_git/pyfirecrest_helper"
