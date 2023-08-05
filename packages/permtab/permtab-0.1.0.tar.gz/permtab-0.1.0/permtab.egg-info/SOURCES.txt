@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+permtab/__init__.py
+permtab/core.py
+permtab/exceptions.py
+permtab/fileedit.py
+permtab.egg-info/PKG-INFO
+permtab.egg-info/SOURCES.txt
+permtab.egg-info/dependency_links.txt
+permtab.egg-info/top_level.txt
+test/test.py
