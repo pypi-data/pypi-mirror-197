@@ -1,0 +1,10 @@
+numpy
+pandas
+pyyaml
+python-dateutil
+
+[:python_version < "3.9.0"]
+backports.zoneinfo
+
+[bloscpack]
+bloscpack
