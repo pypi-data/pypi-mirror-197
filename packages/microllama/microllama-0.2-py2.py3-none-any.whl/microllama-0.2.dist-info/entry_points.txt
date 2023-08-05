@@ -1,0 +1,4 @@
+[console_scripts]
+ml_index=microllama:index
+ml_serve=microllama:serve
+
