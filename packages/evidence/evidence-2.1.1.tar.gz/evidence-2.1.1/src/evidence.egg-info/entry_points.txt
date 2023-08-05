@@ -1,0 +1,2 @@
+[console_scripts]
+evidence = evidence.__main__:main
