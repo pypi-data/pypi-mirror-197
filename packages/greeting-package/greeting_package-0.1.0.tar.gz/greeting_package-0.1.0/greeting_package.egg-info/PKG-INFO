@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: greeting-package
+Version: 0.1.0
+Summary: A package for generating greeting messages
+Author: Jeff Osundwa
+Author-email: mulamajeff@tuta.io
+Description-Content-Type: text/markdown
+
+# greeting_package

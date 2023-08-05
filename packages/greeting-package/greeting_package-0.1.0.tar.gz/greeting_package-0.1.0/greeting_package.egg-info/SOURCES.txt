@@ -1,0 +1,8 @@
+README.md
+setup.py
+greeting_package/__init__.py
+greeting_package/greetings.py
+greeting_package.egg-info/PKG-INFO
+greeting_package.egg-info/SOURCES.txt
+greeting_package.egg-info/dependency_links.txt
+greeting_package.egg-info/top_level.txt
