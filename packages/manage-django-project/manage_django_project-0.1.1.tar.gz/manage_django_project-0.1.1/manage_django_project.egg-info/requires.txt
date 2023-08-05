@@ -1,0 +1,25 @@
+django-tools
+manageprojects
+bx_py_utils
+django-rich
+
+[dev]
+pip-tools
+tox
+coverage
+darker>=1.7
+autopep8
+pyupgrade
+isort
+flynt
+flake8
+pyflakes
+codespell
+EditorConfig
+safety
+mypy
+twine
+tomli
+
+[dev:python_version < "3.10"]
+typing-extensions>=3.10
