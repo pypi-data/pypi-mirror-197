@@ -1,0 +1,11 @@
+dsnparse
+prompt-toolkit
+pygments
+tabulate
+cryptography
+cffi<=1.15.0
+google-auth<=2.6
+protobuf<=3.19.1
+google-api-python-client
+google-api-core<2.9
+googleapis-common-protos<1.57.0
