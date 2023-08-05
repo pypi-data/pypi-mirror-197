@@ -1,0 +1,9 @@
+README.md
+setup.py
+ghanaweb/__init__.py
+ghanaweb/scraper.py
+ghanaweb_scraper.egg-info/PKG-INFO
+ghanaweb_scraper.egg-info/SOURCES.txt
+ghanaweb_scraper.egg-info/dependency_links.txt
+ghanaweb_scraper.egg-info/requires.txt
+ghanaweb_scraper.egg-info/top_level.txt
