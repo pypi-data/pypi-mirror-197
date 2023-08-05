@@ -1,0 +1,11 @@
+pyodss/__init__.py,sha256=56lwtdeaI5_sLjNqNNUVUJoKVhnsWpsj9Rnf5zeFvH4,212
+pyodss/__main__.py,sha256=768GTFCIAycDn2WSvv_J4zGntPlsrR3nfeG42qZwD_Q,7460
+pyodss/_version.py,sha256=YuSBNAuw1WATpqceM6xDzlCLyoInWyH-G27Seo0F14o,157
+pyodss/base.py,sha256=Z_Dake5A1VvfzaEWw1PYmSZqE2JrYaBdZJs-1QyqeP8,3253
+pyodss/config.py,sha256=wXqVBIC7FGj0hM_L8YpF2vZlHlcaysQKRa1ivELM0Yg,582
+pyodss-0.1a1.dist-info/LICENSE,sha256=Mhf5MImRYP06a1EPVJCpkpTstOOEfGajN3T_Fz4izMg,1074
+pyodss-0.1a1.dist-info/METADATA,sha256=WkEKhpTD5uVKu_GSSTqn0d7s8O_bmIRVFnuEvIv1VQI,1666
+pyodss-0.1a1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyodss-0.1a1.dist-info/entry_points.txt,sha256=qsdVd71aS9rvSEmEUiMFWQwRrgjH5_3nv-hw7T_QbAk,48
+pyodss-0.1a1.dist-info/top_level.txt,sha256=54BUAVjJS-XCj1LWnfpQVwUcFWivxxza2WtvkiFKntc,7
+pyodss-0.1a1.dist-info/RECORD,,
