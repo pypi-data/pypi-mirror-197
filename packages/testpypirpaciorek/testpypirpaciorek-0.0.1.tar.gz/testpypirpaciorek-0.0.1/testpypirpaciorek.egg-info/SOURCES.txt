@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+testpypirpaciorek/__init__.py
+testpypirpaciorek/m_mod_rp.py
+testpypirpaciorek.egg-info/PKG-INFO
+testpypirpaciorek.egg-info/SOURCES.txt
+testpypirpaciorek.egg-info/dependency_links.txt
+testpypirpaciorek.egg-info/requires.txt
+testpypirpaciorek.egg-info/top_level.txt
