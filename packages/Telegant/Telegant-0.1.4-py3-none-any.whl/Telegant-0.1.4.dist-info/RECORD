@@ -1,0 +1,11 @@
+telegant/__init__.py,sha256=oXZ6fTGgw3gE1DH03Y4CDH0R2ntdWAoFbLxvmL62rJ8,27
+telegant/api.py,sha256=pFb5JZdrmxbgwWyKyug_5q4Fphd8_gK3GGIyLDOUsHU,612
+telegant/decorator.py,sha256=IOcjSusQB47cj30PCEQQDUjXVZPSgG2IZqxwNtZeQlY,1229
+telegant/handler.py,sha256=MgBewypU7A06AEsETtcAKqQBugsNcrvhw_i-TOdwkFE,1982
+telegant/helper.py,sha256=mSxR7FqN5gGZWZrR8TbFAjnJCzS9AVBFA5EwGdLt-78,1038
+telegant/telegant.py,sha256=XMESItu7106qA9bxSyQguXc0cR05plqauQ-Phtshu84,1754
+Telegant-0.1.4.dist-info/LICENSE,sha256=wgUg4VPeYef4FfwMUMzf8KW6TceKDeRL7tKx46Uoaxc,1086
+Telegant-0.1.4.dist-info/METADATA,sha256=S9_DyLYKvejjB5SdjlaKzeiTGgS0QcDai-pQX5WqwmM,4232
+Telegant-0.1.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Telegant-0.1.4.dist-info/top_level.txt,sha256=Vd5cWJz5iElYJQRSvscCSbw9obp9k4CP2a3kpiClIBk,9
+Telegant-0.1.4.dist-info/RECORD,,
