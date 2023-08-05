@@ -1,0 +1,27 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "declback"
+version = "0.0.1"
+description = "Declarative backend framework"
+readme = "README.md"
+authors = [{ name = "Kamaletdinov Karim", email = "450906k@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["feed", "reader", "tutorial"]
+dependencies = []
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = ["pytest", "twine", "build"]
+
+[project.urls]
+Homepage = "https://github.com/declback/declback-py"
