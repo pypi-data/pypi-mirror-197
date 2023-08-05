@@ -1,0 +1,3 @@
+[console_scripts]
+semslides = slides.semslides:main
+smwsync = smwsync.synccmd:main
