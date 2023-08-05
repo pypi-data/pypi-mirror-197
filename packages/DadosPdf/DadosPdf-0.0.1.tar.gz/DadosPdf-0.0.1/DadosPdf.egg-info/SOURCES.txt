@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+DadosPdf/__init__.py
+DadosPdf/arqPdf.py
+DadosPdf.egg-info/PKG-INFO
+DadosPdf.egg-info/SOURCES.txt
+DadosPdf.egg-info/dependency_links.txt
+DadosPdf.egg-info/requires.txt
+DadosPdf.egg-info/top_level.txt
