@@ -1,0 +1,6 @@
+dnspython
+pyyaml
+
+[dev]
+pytest
+pytest-cov
