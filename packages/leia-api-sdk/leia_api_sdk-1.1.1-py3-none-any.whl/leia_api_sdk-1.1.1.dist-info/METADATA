@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: leia-api-sdk
+Version: 1.1.1
+Summary: LEIA RESTful API for AI
+Home-page: 
+Author: OpenAPI Generator community
+Author-email: contact@leia.io
+Keywords: OpenAPI,OpenAPI-Generator,LEIA RESTful API for AI
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: python-dateutil (>=2.5.3)
+Requires-Dist: pydantic (>=1.10.2)
+Requires-Dist: aenum (>=3.1.11)
+
+    Leia API  # noqa: E501
+    
