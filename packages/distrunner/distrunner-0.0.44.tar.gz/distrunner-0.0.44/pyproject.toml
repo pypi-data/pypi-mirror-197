@@ -1,0 +1,41 @@
+[project]
+name = "distrunner"
+version = "0.0.44"
+description = "This library allows for the easy construction and management of Dask clusters from a Git repository via a simple context manager."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE.md"}
+keywords = ["distributed computing"]
+authors = [
+  {email = "meve@crossref.org"},
+  {name = "Martin Paul Eve"}
+]
+maintainers = [
+  {name = "Martin Paul Eve", email = "meve@crossref.org"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+dependencies = [
+    "dask-cloudprovider[aws]==2022.10.0",
+    "pandas",
+    "numpy",
+    "cryptography",
+    "botocore~=1.27.59",
+    "distributed~=2023.3.0",
+    "dask~=2023.3.0",
+    "GitPython",
+    "requests",
+]
+
+[project.urls]
+homepage = "https://labs.crossref.org"
+documentation = "https://labs.crossref.org"
+repository = "https://gitlab.com/crossref/labs/distrunner"
+changelog = "https://gitlab.com/crossref/labs/distrunner/-/blob/main/CHANGELOG.md"
+
+[build-system]
+requires = ['setuptools>=40.8.0', 'wheel']
+build-backend = 'setuptools.build_meta:__legacy__'
