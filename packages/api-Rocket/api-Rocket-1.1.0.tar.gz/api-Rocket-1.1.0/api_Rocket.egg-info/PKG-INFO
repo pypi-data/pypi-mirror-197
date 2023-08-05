@@ -1,0 +1,284 @@
+Metadata-Version: 2.1
+Name: api-Rocket
+Version: 1.1.0
+Summary: Api for Ton Rocket
+Home-page: UNKNOWN
+Author: Redpiar
+Author-email: regeonwix@gmail.com
+License: UNKNOWN
+Description: # api_Rocket
+        
+        Библиотека для быстрого взаимодействия с криптой
+        > Демо
+        
+        | Languages       | Added          | 
+        | ------------- |:-------------:|
+        | ``` Russian ``` |✔|
+        | ```English ``` |❌| 
+        | ```Ukrainian ``` |❌|
+        > Делитель
+        
+        | Information       | Return          | 
+        | ------------- |:-------------:|
+        | ``` Author ``` |[Redpiar](https://t.me/Redpiar)|
+        | ```Telegram ``` |[Telegram](https://t.me/BotesForTelegram)| 
+        | ```Version ``` |1.1.0|
+        | ```Functions ``` |13/24|
+        
+        > Делитель
+        
+        | Team       | User         | 
+        | ------------- |:-------------:|
+        | ``` Programmer ``` |[Redpiar](https://t.me/Redpiar)|
+        | ```Designer ``` |[Sobolev](https://t.me/Qsobolev)| 
+        
+        > Делитель
+        
+        | Раздели        |
+        | ------------- |
+        | ``` Установка ``` |
+        | ``` Команды  ``` |
+        | ``` Примеры  ``` | 
+        
+        > 1. ***Установка***
+        
+        Чтобы установить нашу библиотеку пишем в ***CMD*** или в ***Терминале*** "pip install api-Rocket" после чего напишем маленькиий пример регистра
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        ver = app.api_version()
+        print(ver) # получаем версию апи
+        ```
+        А чтобы получить ***Токен*** выполняем следующие действия:
+          1. Заходим в телеграмм бота **"@tonRocketBot"**
+          2. Пишем **"/start"**
+          3. Нажимаем кнопку **"Rocket Pay"**
+          4. Потом нажимаем кнопку **"Создать"**
+          5. После создания нажимаем **"API Token"**
+        
+        > 2. ***Команды***
+        
+        | Commands       | valid         | 
+        | ------------- |:-------------:|
+        | ``` api_version ``` |valid|
+        | ``` info ``` |valid|
+        | ``` transfer ``` |valid|
+        | ``` create_multi_Cheques ``` |valid|
+        | ``` check_multi_Cheques ``` |valid|
+        | ``` info_multi_Cheques ``` |valid|
+        | ``` edit_multi_Cheques ``` |valid|
+        | ``` delete_multi_Cheques ``` |valid|
+        | ``` check_currency ``` |valid|
+        | ``` create_invoice ``` |valid|
+        | ``` check_invoices ``` |valid|
+        | ``` get_invoice ``` |valid|
+        | ``` delete_invoice ``` |valid|
+        
+        > 3. ***Примеры***
+        
+        [1] Пример
+        
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        ver = app.api_version()
+        print(ver) # получаем версию апи
+        ```
+        
+        [2] Пример 
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        info = api.info()
+        print(info) # получаем информацию про наш кошелек
+        ```
+        
+        [2] Пример 
+        
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        data = {
+          "userid": 123456789, #Юзер айди пользователя из тг в формате int
+          "currency": "TONCOIN", # пишем название валюты которую будем отправлять формат str
+          "amount": 0.5, # кол-во которое будем отправлять
+          "comment": "Comment?" # комментарий переводу
+        }
+        
+        trasfer = api.transfer(data=data)
+        print(transfer) # возвращает данные о переводе
+        ```
+        
+        [3] Пример
+        
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        info = app.info()
+        print(info) # возвращает всю информацию)
+        ```
+        
+        [4] Пример 
+        
+        ```python
+        import api_Rocket as api
+        app = api.Client(token="your token")
+        
+        data = {
+          "currency": "TONCOIN",
+          "chequePerUser": 0.005, #цена за одного юзера
+          "usersNumber": 10, #колво активаций
+          "refProgram": 1, #если человек приглосит одного пользователя то он сможет использовать чек
+          "password": "psw", #пароль на чек
+          "telegramResurce": int # Айди на канал/группу
+        }
+        
+        multi = app.create_multi_Cheques(data=data)
+        print(multi)
+        #возвращает данные про создание мульти чека
+        ```
+        
+        [5] Пример
+        
+        ```python
+        import api_Rocket as api
+        app = api.Client(token="your token")
+        
+        check = app.check_multi_Cheques()
+        print(check)
+        
+        #or
+        
+        check = app.check_multi_Cheques(limit=100, offset=0)
+        print(check)
+        #возвращает данные про все ваши мулти чеки
+        
+        ```
+        
+        [6] Пример
+        
+        ```python
+        import api_Rocket as api
+        app = api.Client(token="your token")
+        
+        info = app.info_multi_Cheques(id=123456890) #айди чека
+        print(info) 
+        
+        ```
+        
+        [7] Пример
+        
+        ```python
+        import api_Rocket as api
+        app = api.Client(token="your token")
+        
+        data = {
+          "password": str, #пароль вашего чека
+          "telegramResurce": int # изменяем айди
+        }
+        info = app.edit_multi_Cheques(id=123456890, data=data) #айди чека
+        print(info) 
+        
+        ```
+        
+        [8] Пример 
+        
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        delete = app.delete_multi_Cheques(id=int) #айди вашего чека
+        print(delete) # удаляет чек
+        ```
+        
+        [9] Пример 
+        
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        check = app.check_currency()
+        print(check) #Показывает валидный баланс
+        
+        ```
+        
+        [10] Пример 
+        
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        data ={
+          "amount": 0.001, #сколько человек заплатит(оплата проходит через токен получателя который в app)
+          "numPayments": 1, #количество активаций
+          "currency": "TONCOIN", #валюта
+          "description": "test", #описание
+          "message": "hello", #сообщение которое будет показано после активации
+          "url": "https://t.me/Redpiar", #ссылка для кнопки(которая будет после активации)
+          "expired": 0 #время действия счета
+        }
+        
+        create = app.create_invoice(data=data)
+        print(create) #показывает данные
+        
+        ```
+        
+        [11] Пример 
+        
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        check = app.check_invoices()
+        print(check) #показывает все счета созданные для этого токена
+        
+        or
+        
+        check = app.check_invoices(limit=100, offset=0)
+        print(check) #показывает все счета созданные для этого токена
+        
+        ```
+        
+        [12] Пример 
+        
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        check = app.get_invoice(id=123456789) #айди счета
+        print(check) #Показывает определенный счет по айди
+        
+        ```
+        
+        [13] Пример 
+        
+        ```python
+        import api_Rocket as api
+        
+        app = api.Client(token="Your Token")
+        
+        check = app.delete_invoice(id=123456789) #айди счета
+        print(check) #удаляет определенный счет по айди
+        
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
