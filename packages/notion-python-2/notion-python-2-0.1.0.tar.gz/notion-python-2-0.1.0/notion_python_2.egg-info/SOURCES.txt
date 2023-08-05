@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+notion/__init__.py
+notion/client.py
+notion/exceptions.py
+notion_python_2.egg-info/PKG-INFO
+notion_python_2.egg-info/SOURCES.txt
+notion_python_2.egg-info/dependency_links.txt
+notion_python_2.egg-info/not-zip-safe
+notion_python_2.egg-info/requires.txt
+notion_python_2.egg-info/top_level.txt
