@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+pyCftool/__init__.py
+pyCftool/cftooloptions.ui
+pyCftool/export.py
+pyCftool/loadgui.py
+pyCftool/mplwidget.py
+pyCftool/options.py
+pyCftool/pyCftool.py
+pyCftool/pycftoolGUI.ui
+pyCftool.egg-info/PKG-INFO
+pyCftool.egg-info/SOURCES.txt
+pyCftool.egg-info/dependency_links.txt
+pyCftool.egg-info/requires.txt
+pyCftool.egg-info/top_level.txt
