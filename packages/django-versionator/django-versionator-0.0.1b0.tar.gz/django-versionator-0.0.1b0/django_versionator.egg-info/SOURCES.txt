@@ -1,0 +1,11 @@
+README.md
+setup.py
+django_versionator.egg-info/PKG-INFO
+django_versionator.egg-info/SOURCES.txt
+django_versionator.egg-info/dependency_links.txt
+django_versionator.egg-info/top_level.txt
+tests/test_edited_by_versioning.py
+tests/test_versioning.py
+versionator/__init__.py
+versionator/core.py
+versionator/middleware.py
