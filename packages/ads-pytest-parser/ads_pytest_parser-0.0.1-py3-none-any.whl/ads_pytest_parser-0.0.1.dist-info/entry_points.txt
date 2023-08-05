@@ -1,0 +1,2 @@
+[console_scripts]
+ads-pytest-parser = ads_pytest_parser.assoc_devops_testcase_pytest_results:main

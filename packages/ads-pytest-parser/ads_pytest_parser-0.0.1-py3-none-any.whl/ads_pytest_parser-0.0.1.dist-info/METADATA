@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ads-pytest-parser
+Version: 0.0.1
+Summary: Associate DevOps test cases with pytest XML results
+Author-email: VisualLabs Kft <aron.paljakab@visuallabs.hu>, Aron Pal-Jakab <aron.paljakab@visuallabs.hu>
+Project-URL: Homepage, https://github.com/VisualLabs-Kft/vl-ads-pytest-parser
+Project-URL: Bug Tracker, https://github.com/VisualLabs-Kft/vl-ads-pytest-parser/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+
+# Pytest Parser to Azure DevOps Test Case
+Associate DevOps test cases with pytest XML results
+
+
+## Usage
+The parser should be run on an Azure DevOps ```pytest-azurepipelines``` generated XML file, because it searches for the following attributes:
+- testcase
+  - name
+  - result
+
+The Python script requires the following arguments:
+- org: Azure DevOps organization name
+- project: Azure DevOps project name
+- plan: Azure DevOps test plan name
+- suite: Azure DevOps test suite name
+- auth: Azure DevOps personal access token
+- xml: pytest-azurepipelines generated XML file
+
+For example:
+```
+ads-pytest-parser org project planID suiteID authToken test.xml
+```
+
+The script will then associate the test cases with the test results - for the test cases the outcome will be set.
