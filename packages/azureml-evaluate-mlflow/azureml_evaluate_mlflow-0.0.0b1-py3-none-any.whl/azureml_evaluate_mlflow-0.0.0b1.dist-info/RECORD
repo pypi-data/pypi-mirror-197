@@ -1,0 +1,8 @@
+azureml/__init__.py,sha256=ybCtCrXNS3six25SvldGKjcl-9eR9CzOMgoUjbRBdBQ,249
+azureml/evaluate/__init__.py,sha256=ybCtCrXNS3six25SvldGKjcl-9eR9CzOMgoUjbRBdBQ,249
+azureml/evaluate/mlflow/__init__.py,sha256=ybCtCrXNS3six25SvldGKjcl-9eR9CzOMgoUjbRBdBQ,249
+azureml_evaluate_mlflow-0.0.0b1.dist-info/LICENSE.txt,sha256=FOfkEEz4uS7g278F9Rq12rqKF3lLyBUZhVpLetuZrTg,1021
+azureml_evaluate_mlflow-0.0.0b1.dist-info/METADATA,sha256=ivm1Q7Wy5TW1W9Ai8PM5E5Ef7JTvqESR7n-leOpt94w,401
+azureml_evaluate_mlflow-0.0.0b1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+azureml_evaluate_mlflow-0.0.0b1.dist-info/top_level.txt,sha256=ZOeEa0TAXo6i5wOjwBoqfIGEuxOcKuscGgNSpizqREY,8
+azureml_evaluate_mlflow-0.0.0b1.dist-info/RECORD,,
