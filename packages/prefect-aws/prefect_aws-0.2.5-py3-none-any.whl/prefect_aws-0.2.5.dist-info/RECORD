@@ -1,0 +1,15 @@
+prefect_aws/__init__.py,sha256=4DMdMqqsTvr1YGdwX77Xh3KOT3aIlQwARf8feYBpuuc,351
+prefect_aws/_version.py,sha256=N-TaKMLQgvd0IY1bXygPuxUDjFUq8iE_laTB3EG2ZCc,497
+prefect_aws/batch.py,sha256=L0f2ODFJjhj8cipR50V_OLonMjt4K1rSMG2Bt8bs0TA,2181
+prefect_aws/client_parameters.py,sha256=45zXBbvFwp5D-LBDJmou5kl64_gNS96NVCE4ZhFnKO4,5542
+prefect_aws/client_waiter.py,sha256=nIKDbO98Hb_AtphksOciVFpCi_Cl_xpwhmN45dOXXi0,2710
+prefect_aws/credentials.py,sha256=9q1fN9ipS6g0ely553bgsKJqDS9_RZuvu550czrThfo,8200
+prefect_aws/ecs.py,sha256=L1EMPZJ8ncktuZWBICFFYP2mi_vNoMsNxSOtb5e6wz8,56791
+prefect_aws/s3.py,sha256=vdOTe8zmkoWAxph-hkO0IewxTjcYyHJavd4E9iiaMeA,39001
+prefect_aws/secrets_manager.py,sha256=IkotQEG5P8IduKMXUQVfw4ndrQxpCT256dnbIR6OTg8,17074
+prefect_aws-0.2.5.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+prefect_aws-0.2.5.dist-info/METADATA,sha256=pSS5BFIY1qv0g2j_OCpdgmN2PZy2xtDxSFXs98obrxo,7938
+prefect_aws-0.2.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+prefect_aws-0.2.5.dist-info/entry_points.txt,sha256=GuhMRz4NOp_bf-xIGAOspECgBEfyrmMoIhFopPgD21I,48
+prefect_aws-0.2.5.dist-info/top_level.txt,sha256=fxJxxFAd2635lYsoNYcfoxM6kBZ0mKx8G2TyXqFljAU,12
+prefect_aws-0.2.5.dist-info/RECORD,,
