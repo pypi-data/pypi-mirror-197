@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/ads_pytest_parser/__init__.py
+src/ads_pytest_parser/assoc_devops_testcase_pytest_results.py
+src/ads_pytest_parser.egg-info/PKG-INFO
+src/ads_pytest_parser.egg-info/SOURCES.txt
+src/ads_pytest_parser.egg-info/dependency_links.txt
+src/ads_pytest_parser.egg-info/entry_points.txt
+src/ads_pytest_parser.egg-info/requires.txt
+src/ads_pytest_parser.egg-info/top_level.txt
