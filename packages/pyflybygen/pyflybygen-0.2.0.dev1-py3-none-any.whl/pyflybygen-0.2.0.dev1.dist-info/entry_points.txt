@@ -1,0 +1,2 @@
+[console_scripts]
+pyflybygen = pyflybygen.cli.app:app
