@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: rx-tools
+Version: 0.0.2
+Summary: Project containing tools for RX measurement
+Requires-Dist: tensorflow-cpu
+Requires-Dist: zfit
+Requires-Dist: numexpr
+
