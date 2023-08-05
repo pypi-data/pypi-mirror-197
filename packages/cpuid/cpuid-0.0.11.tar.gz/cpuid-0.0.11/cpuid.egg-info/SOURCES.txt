@@ -1,0 +1,16 @@
+.appveyor.yml
+.cirrus.yml
+.travis.yml
+LICENSE
+README.md
+README.rst
+build_and_upload_pkg.sh
+cpuid.py
+setup.py
+.github/workflows/wheels.yml
+.travis/entrypoint.sh
+cpuid.egg-info/PKG-INFO
+cpuid.egg-info/SOURCES.txt
+cpuid.egg-info/dependency_links.txt
+cpuid.egg-info/requires.txt
+cpuid.egg-info/top_level.txt
