@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: tldream
+Version: 0.5.2
+Summary: A tiny little diffusion drawing app
+Home-page: https://github.com/Sanster/tldream
+Author: PanicByte
+Author-email: cwq1913@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=1.13.1)
+Requires-Dist: opencv-contrib-python
+Requires-Dist: transformers (>=4.26.1)
+Requires-Dist: diffusers (>=0.14.0)
+Requires-Dist: accelerate (>=0.16.0)
+Requires-Dist: omegaconf (==2.1.1)
+Requires-Dist: einops (==0.3.0)
+Requires-Dist: addict (==2.4.0)
+Requires-Dist: yapf (==0.32.0)
+Requires-Dist: fastapi[all]
+Requires-Dist: python-multipart
+Requires-Dist: typer
+Requires-Dist: rich
+Requires-Dist: loguru
+Requires-Dist: python-socketio
+Requires-Dist: safetensors
+Requires-Dist: xformers
+Requires-Dist: gradio
+Requires-Dist: httpx[socks]
+
+<p align="center">
+<div align="center">
+  <img height=96 src="https://user-images.githubusercontent.com/3998421/222906944-40a06042-e6d5-48f5-905e-b635469e7005.svg"/> 
+  <h1>tldream</h1>
+</div>
+</p>
+
+<p align="center">A tiny little diffusion drawing app</p>
+
+<p align="center">
+  <a href="https://github.com/Sanster/tldream">
+    <img alt="total download" src="https://pepy.tech/badge/tldream" />
+  </a>
+  <a href="https://pypi.org/project/tldream/">
+    <img alt="version" src="https://img.shields.io/pypi/v/tldream" />
+  </a>
+   <a href="https://colab.research.google.com/drive/1m1qBE3N8VWDqE__8zRP8hvEE0JPzk7rp?usp=sharing">
+    <img alt="Open in Colab" src="https://colab.research.google.com/assets/colab-badge.svg" />
+  </a>
+</p>
+
+
+https://user-images.githubusercontent.com/3998421/223580181-6375fc76-414a-4837-b7ab-4fb07509afd3.mp4
+
+
+### Quick Start
+
+```bash
+pip install tldream
+tldream --model runwayml/stable-diffusion-v1-5 --device cuda
+```
+
+### Command line arguments
+
+* `--listen / --no-listen`: If true, start server at 0.0.0.0  [default: no-listen]
+* `--port INTEGER`: [default: 4242]
+* `--device TEXT`: Device to use (cuda, cpu or mps)  [default: cuda]
+* `--model TEXT`: Any HuggingFace Stable Diffusion model id. Or local ckpt/safetensors path  [default: runwayml/stable-diffusion-v1-5]
+* `--low-vram / --no-low-vram`: Use low vram mode  [default: no-low-vram]
+* `--fp32 / --no-fp32`: Use float32 mode  [default: no-fp32]
+* `--nsfw-filter / --no-nsfw-filter`: [default: nsfw-filter]
+* `--cache-dir TEXT`: Model cache directory, by default model downloaded to ~/.cache/huggingface/hub
+* `--local-files-only / --no-local-files-only`: Not connect to HuggingFace server, add this flag if model has been downloaded  [default: no-local-files-only]
+
