@@ -1,0 +1,5 @@
+pandas
+pywencai
+tushare
+backtrader
+joblib
