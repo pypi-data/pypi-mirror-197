@@ -1,0 +1,10 @@
+README.md
+setup.py
+chatgpthon/__init__.py
+chatgpthon/integration.py
+chatgpthon.egg-info/PKG-INFO
+chatgpthon.egg-info/SOURCES.txt
+chatgpthon.egg-info/dependency_links.txt
+chatgpthon.egg-info/not-zip-safe
+chatgpthon.egg-info/requires.txt
+chatgpthon.egg-info/top_level.txt
