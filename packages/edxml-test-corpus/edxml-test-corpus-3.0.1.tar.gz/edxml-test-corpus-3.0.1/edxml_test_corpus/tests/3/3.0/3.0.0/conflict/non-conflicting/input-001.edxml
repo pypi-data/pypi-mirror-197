@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Testing event conflict detection.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="1" data-type="string:0:mc"/>
+      <object-type name="b" description="b" display-name-singular="b" display-name-plural="b" version="1" data-type="string:0:mc"/>
+      <object-type name="c" description="c" display-name-singular="c" display-name-plural="c" version="1" data-type="sequence"/>
+    </object-types>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="a" story="a" version="1" event-version="c">
+        <properties>
+          <property name="a" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match"/>
+          <property name="b" object-type="b" description="b" optional="false" multivalued="true" confidence="10" merge="add"/>
+          <property name="c" object-type="c" description="c" optional="false" multivalued="false" confidence="10" merge="max"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources>
+      <source uri="/test/" description="a" version="1"/>
+    </sources>
+  </ontology>
+  <!-- Below we define two physical instances of the same logical
+       event (a == a) both of which having the same version (2 == 2)
+       and having a the same set of values for property b. The only
+       difference is the ordering, which is insignificant and as such
+       does not constitute a conflict -->
+  <event event-type="a" source-uri="/test/">
+    <properties>
+      <a>a</a>
+      <b>one</b>
+      <b>two</b>
+      <b>three</b>
+      <b>four</b>
+      <b>five</b>
+      <b>six</b>
+      <c>2</c>
+    </properties>
+  </event>
+  <event event-type="a" source-uri="/test/">
+    <properties>
+      <a>a</a>
+      <b>three</b>
+      <b>two</b>
+      <b>six</b>
+      <b>five</b>
+      <b>one</b>
+      <b>four</b>
+      <c>2</c>
+    </properties>
+  </event>
+</edxml>

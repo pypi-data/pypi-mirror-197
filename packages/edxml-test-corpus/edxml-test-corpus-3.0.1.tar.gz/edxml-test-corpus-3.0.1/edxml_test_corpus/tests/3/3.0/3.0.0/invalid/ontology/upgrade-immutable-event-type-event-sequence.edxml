@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Test if upgrading the event sequence property of an event type is refused.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="1" data-type="sequence"/>
+    </object-types>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" sequence="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="1">
+        <properties>
+          <property name="a" object-type="a" description="a" optional="false" multivalued="false" confidence="10"/>
+          <property name="b" object-type="a" description="a" optional="false" multivalued="false" confidence="10"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" sequence="b" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="2">
+        <properties>
+          <property name="a" object-type="a" description="a" optional="false" multivalued="false" confidence="10"/>
+          <property name="b" object-type="a" description="a" optional="false" multivalued="false" confidence="10"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+</edxml>

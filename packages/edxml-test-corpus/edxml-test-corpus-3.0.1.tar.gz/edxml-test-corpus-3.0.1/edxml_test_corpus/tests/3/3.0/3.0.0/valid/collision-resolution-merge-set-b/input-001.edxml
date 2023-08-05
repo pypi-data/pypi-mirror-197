@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Testing if event collision resolution involving the 'set' merge strategy works as expected.
+
+Note that we do not test scenarios where multiple event instances disagree on the object
+set, as implementations may choose to either accept or reject the events.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="1" data-type="string:255:mc"/>
+      <object-type name="b" description="b" display-name-singular="b" display-name-plural="b" version="1" data-type="string:255:mc"/>
+      <object-type name="v" description="v" display-name-singular="v" display-name-plural="d" version="1" data-type="sequence"/>
+    </object-types>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" event-version="v" display-name-singular="a" display-name-plural="a" summary="a" story="a" version="1">
+        <properties>
+          <property name="a" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match"/>
+          <property name="b" object-type="b" description="b" optional="true" multivalued="false" confidence="10" merge="set"/>
+          <property name="v" object-type="v" description="v" optional="false" multivalued="false" confidence="10" merge="max"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources>
+      <source uri="/test/" description="a" version="1"/>
+    </sources>
+  </ontology>
+  <event event-type="a" source-uri="/test/">
+    <properties>
+      <a>a</a>
+      <b>foo</b>
+      <v>0</v>
+    </properties>
+  </event>
+  <event event-type="a" source-uri="/test/">
+    <properties>
+      <a>a</a>
+      <v>1</v>
+    </properties>
+  </event>
+</edxml>

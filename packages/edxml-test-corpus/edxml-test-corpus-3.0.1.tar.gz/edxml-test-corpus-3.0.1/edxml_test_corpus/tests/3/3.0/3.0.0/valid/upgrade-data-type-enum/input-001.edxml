@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Test if upgrading of an enum data type works as expected.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="description" display-name-singular="display-name-singular" display-name-plural="display-name-plural" version="1" data-type="enum:yes:no"/>
+    </object-types>
+    <concepts/>
+    <event-types/>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types>
+      <object-type name="a" description="description" display-name-singular="display-name-singular" display-name-plural="display-name-plural" version="2" data-type="enum:yes:no:maybe"/>
+    </object-types>
+    <concepts/>
+    <event-types/>
+    <sources/>
+  </ontology>
+</edxml>

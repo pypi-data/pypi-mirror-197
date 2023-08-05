@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Test if a property name containing an invalid character is rejected.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="1" data-type="string:10:mc"/>
+    </object-types>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[xml.foo]]" story="[[xml.foo]]" version="1">
+        <properties>
+          <property name="xml.foo" object-type="a" description="a" optional="true" multivalued="true" merge="match" confidence="10"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+</edxml>

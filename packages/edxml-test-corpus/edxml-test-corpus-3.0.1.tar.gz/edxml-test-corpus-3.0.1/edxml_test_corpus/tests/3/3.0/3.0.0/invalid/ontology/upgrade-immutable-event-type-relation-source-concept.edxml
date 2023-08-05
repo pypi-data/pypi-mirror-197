@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Test if changing the source-concept attribute of a property relation is refused.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="1" data-type="datetime"/>
+    </object-types>
+    <concepts>
+      <concept name="a" description="a" display-name-singular="a" display-name-plural="a" version="1"/>
+      <concept name="b" description="a" display-name-singular="a" display-name-plural="a" version="1"/>
+      <concept name="c" description="a" display-name-singular="a" display-name-plural="a" version="1"/>
+    </concepts>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="1">
+        <properties>
+          <property name="a" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match">
+            <property-concept name="a" confidence="8" cnp="8"/>
+            <property-concept name="b" confidence="8" cnp="8"/>
+          </property>
+          <property name="b" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match">
+            <property-concept name="b" confidence="8" cnp="8"/>
+          </property>
+        </properties>
+        <relations>
+          <inter source="a" target="b" source-concept="a" target-concept="c" description="[[a]] linked to [[b]]" confidence="2" predicate="linked"/>
+        </relations>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types/>
+    <concepts/>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="2">
+        <properties>
+          <property name="a" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match">
+            <property-concept name="a" confidence="8" cnp="8"/>
+            <property-concept name="b" confidence="8" cnp="8"/>
+          </property>
+          <property name="b" object-type="a" description="a" optional="false" multivalued="false" confidence="10" merge="match">
+            <property-concept name="b" confidence="8" cnp="8"/>
+          </property>
+        </properties>
+        <relations>
+          <inter source="a" target="b" source-concept="b" target-concept="c" description="[[a]] linked to [[b]]" confidence="2" predicate="linked"/>
+        </relations>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+</edxml>

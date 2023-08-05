@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Test if upgrading an enum data type by swapping and extending components is rejected.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="1" data-type="enum:yes:no"/>
+    </object-types>
+    <concepts/>
+    <event-types/>
+    <sources/>
+  </ontology>
+  <ontology>
+    <object-types>
+      <!-- Data type is changed -->
+      <object-type name="a" description="a" display-name-singular="a" display-name-plural="a" version="2" data-type="enum:no:yes:maybe"/>
+    </object-types>
+    <concepts/>
+    <event-types/>
+    <sources/>
+  </ontology>
+</edxml>

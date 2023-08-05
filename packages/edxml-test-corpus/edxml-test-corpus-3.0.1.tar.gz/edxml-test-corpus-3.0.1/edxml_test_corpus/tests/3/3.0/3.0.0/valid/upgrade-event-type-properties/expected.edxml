@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~                                                                           ~
+  ~                     Copyright (c) 2020 the EDXML Foundation               ~
+  ~                                                                           ~
+  ~                                  http://edxml.org                         ~
+  ~                                                                           ~
+  ~                    This file is part of the EDXML Test Corpus             ~
+  ~                      and is released under the MIT License:               ~
+  ~                        https://opensource.org/licenses/MIT                ~
+  ~                                                                           ~
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--
+Test if upgrading of properties of an event type works as expected.
+-->
+<edxml xmlns="http://edxml.org/edxml" version="3.0.0">
+  <ontology>
+    <object-types>
+      <object-type name="a" description="a" display-name-singular="changed-dn-singular" display-name-plural="changed-dn-plural" version="2" compress="true" data-type="string:10:mc"/>
+    </object-types>
+    <concepts>
+      <concept name="a" version="1" description="a" display-name-singular="a" display-name-plural="a"/>
+    </concepts>
+    <event-types>
+      <event-type name="a" description="a" display-name-singular="a" display-name-plural="a" summary="[[a]]" story="[[a]]" version="13">
+        <properties>
+          <property name="a" object-type="a" description="changed-description" optional="true" multivalued="true" confidence="1" merge="match" similar="changed-similar">
+            <property-concept name="a" confidence="9" cnp="9" attr-extension="ext" attr-display-name-singular="singular" attr-display-name-plural="plural"/>
+          </property>
+          <property name="b" object-type="a" description="b" optional="true" multivalued="true" confidence="10" merge="match"/>
+        </properties>
+        <relations/>
+      </event-type>
+    </event-types>
+    <sources/>
+  </ontology>
+</edxml>
