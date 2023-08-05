@@ -1,0 +1,9 @@
+ndclient/__init__.py,sha256=JlBV_7GlRmZJnHt02dmFllg0Zvwd4zUAjuYHbk_WMhg,42
+ndclient/client.py,sha256=cU4C-9qYEBIlZM2GeK5zGrGyacK5qySUaNvL1N1CoH8,5062
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_api.py,sha256=k-ZJJAZqf4XTW2uHnIcZqCb3wj7agDgIFkC4x_uwSl4,1944
+ndclient-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ndclient-0.1.1.dist-info/METADATA,sha256=pL0eES-_Wg8IFzuEbtfqMLs13nmcRkZXcHOhaqMb27Q,630
+ndclient-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ndclient-0.1.1.dist-info/top_level.txt,sha256=10sn44RFAxAxCHabLdFo5a1nsKfx5ow8OV8JzPG3cbc,15
+ndclient-0.1.1.dist-info/RECORD,,

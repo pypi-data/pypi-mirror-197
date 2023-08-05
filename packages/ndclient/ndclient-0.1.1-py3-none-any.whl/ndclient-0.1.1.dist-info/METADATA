@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ndclient
+Version: 0.1.1
+Summary: Python RESTAPI client for Cisco Nexus Dashboard
+Author-email: Shangxin Du <shdu@cisco.com>
+Project-URL: Homepage, https://github.com/dsx1123/ndclient
+Project-URL: Bug Tracker, https://github.com/dsx1123/ndclient/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+# ndclient
+Python RESTAPI Client for Cisco Nexus Dashboard
