@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/json_normalize/__init__.py
+src/json_normalize/key_joiners.py
+src/json_normalize/main.py
+src/json_normalize.egg-info/PKG-INFO
+src/json_normalize.egg-info/SOURCES.txt
+src/json_normalize.egg-info/dependency_links.txt
+src/json_normalize.egg-info/top_level.txt
+tests/test_combine_lists.py
+tests/test_drop_nodes.py
+tests/test_freeze_nodes.py
+tests/test_general_functionality.py
+tests/test_key_joiner.py
+tests/test_other_input_types.py
