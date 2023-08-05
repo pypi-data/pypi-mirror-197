@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+OctoPrint_Printerinfo.egg-info/PKG-INFO
+OctoPrint_Printerinfo.egg-info/SOURCES.txt
+OctoPrint_Printerinfo.egg-info/dependency_links.txt
+OctoPrint_Printerinfo.egg-info/entry_points.txt
+OctoPrint_Printerinfo.egg-info/not-zip-safe
+OctoPrint_Printerinfo.egg-info/requires.txt
+OctoPrint_Printerinfo.egg-info/top_level.txt
+octoprint_printerinfo/__init2__.py
+octoprint_printerinfo/__init__.py
