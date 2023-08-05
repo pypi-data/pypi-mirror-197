@@ -1,0 +1,14 @@
+applesoss
+astropy
+bottleneck
+corner
+exotic_ld
+juliet
+jwst
+matplotlib
+numpy
+pandas
+ray
+scipy
+tqdm
+pyyaml
