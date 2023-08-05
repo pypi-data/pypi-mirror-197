@@ -1,0 +1,19 @@
+Index: pyproject.toml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[build-system]\r\nrequires = [\"hatchling\"]\r\nbuild-backend = \"hatchling.build\"\r\n\r\n[project]\r\nname = \"aars\"\r\nversion = \"0.2.3\"\r\nauthors = [\r\n  { name=\"Mike Hukiewitz\", email=\"mike.hukiewitz@robotter.ai\" },\r\n]\r\ndescription = \"Experimental Object-Document-Mapper using pydantic to store objects on Aleph.im\"\r\nreadme = \"README.md\"\r\nrequires-python = \">=3.7\"\r\nclassifiers = [\r\n    \"Programming Language :: Python :: 3\",\r\n    \"License :: OSI Approved :: MIT License\",\r\n    \"Operating System :: OS Independent\",\r\n]\r\n\r\n[dependencies]\r\npydantic = \"^1.8.2\"\r\naleph_client = \"^0.5.0\"\r\n\r\n[project.urls]\r\n\"Homepage\" = \"https://github.com/aleph-im/active-record-sdk\"\r\n\"Bug Tracker\" = \"https://github.com/aleph-im/active-record-sdk/issues\"
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pyproject.toml b/pyproject.toml
+--- a/pyproject.toml	(revision 8d60d0c1fcac20535200744f9565d68d34be5fdd)
++++ b/pyproject.toml	(date 1678115688274)
+@@ -4,7 +4,7 @@
+ 
+ [project]
+ name = "aars"
+-version = "0.2.3"
++version = "0.4.0"
+ authors = [
+   { name="Mike Hukiewitz", email="mike.hukiewitz@robotter.ai" },
+ ]
