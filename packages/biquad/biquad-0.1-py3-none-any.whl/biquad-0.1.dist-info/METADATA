@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: biquad
+Version: 0.1
+Summary: Collection of alterable digital biquad filters for dynamic audio effect creation
+Home-page: https://github.com/jurihock/biquad
+Author: Juergen Hock
+Author-email: juergen.hock@jurihock.de
+License: MIT
+Keywords: digital,audio,signal,processing,dasp,dafx,effects,filter,equalizer,eq,biquad,frequency,phase,spectrum,algorithms,analysis,synthesis,c,cpp,python
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Education
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Topic :: Multimedia :: Sound/Audio :: Sound Synthesis
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numba
+Requires-Dist: numpy
+
+# Alterable Biquad Filters
+
+![language](https://img.shields.io/badge/languages-C%2B%2B%20Python-blue)
+![license](https://img.shields.io/github/license/jurihock/biquad?color=green)
+![pypi](https://img.shields.io/pypi/v/biquad?color=gold)
+
+This will be a collection of digital biquad filters whose parameters can be varied at runtime.
+
+See also: [Cookbook formulae for audio equalizer biquad filter coefficients](https://webaudio.github.io/Audio-EQ-Cookbook/audio-eq-cookbook.html)
