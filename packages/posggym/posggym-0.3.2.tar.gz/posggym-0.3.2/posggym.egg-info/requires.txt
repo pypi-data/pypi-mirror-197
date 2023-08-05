@@ -1,0 +1,24 @@
+gymnasium>=0.26
+numpy>=1.21.0
+typing-extensions>=4.3.0
+
+[:python_version < "3.10"]
+importlib-metadata>=4.8.0
+
+[all]
+pygame>=2.0
+
+[continuous]
+pygame>=2.0
+
+[grid-world]
+pygame>=2.0
+
+[pettingzoo]
+pettingzoo>=1.22
+
+[rllib]
+ray[rllib]>=2.3
+
+[testing]
+pytest>=7.2
