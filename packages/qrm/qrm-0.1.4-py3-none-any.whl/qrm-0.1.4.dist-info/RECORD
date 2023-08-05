@@ -1,0 +1,9 @@
+qrm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qrm/cli.py,sha256=zScS5LrCWTrSz_m4VkRIXGlXEl3Kf8jM3hGPNjViXJM,2821
+qrm/qrm.ui,sha256=6N7BDbs1Ucybu9ZEZid7QIhLWX2NfBDdx9-fl0jspTo,1338
+qrm/qrm_common.py,sha256=9YahQMAPC5RwKBwu4XzZe23ylTDD5eNOzydPngWL01w,5001
+qrm/ui.py,sha256=_Ql_ZZWqo6S9fQlhxjtv8_-eSa-eNEBDsVkLc4ibl5g,4067
+qrm-0.1.4.dist-info/METADATA,sha256=M3JgNk-IgBHg_XCNM2lxq3s8sizQ4LzD-sQPPPZ7Q1k,2305
+qrm-0.1.4.dist-info/entry_points.txt,sha256=X3kjxooGxi8ayosqADnMQZ1OJk0qhOcqYEDRlYXHZaU,36
+qrm-0.1.4.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+qrm-0.1.4.dist-info/RECORD,,
