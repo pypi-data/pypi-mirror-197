@@ -1,0 +1,8 @@
+upload2sf/__init__.py,sha256=eYAWecUq2pelCNjynUpDwgPYdVstTCckY4bpD_UZq5I,175
+upload2sf/load_environment_variables.py,sha256=zPkzWu0UqaaKbJxPoxQp9qZZs_ENKfWY9UBSVgbDoDI,1447
+upload2sf/sf_utils.py,sha256=M6CGD7jRpkxffrWWqlQI79PxStANL4w_Eo1LDN4Dtwk,5647
+upload2sf/upload_to_sf.py,sha256=IlEwySLH7BG7EPb-r_Gtkg-VG3zBSa1i5eBBkuhGEuU,1099
+upload2sf-0.0.6.dist-info/METADATA,sha256=G7ZrjlOkREHXEx2VSXSBSYXizB1HeUMCzL8ABRG3JXU,427
+upload2sf-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+upload2sf-0.0.6.dist-info/top_level.txt,sha256=pMkjQFBTcEUhCFBPANNZe3rE813fNCcT47IVr9DLpYY,10
+upload2sf-0.0.6.dist-info/RECORD,,
