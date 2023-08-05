@@ -1,0 +1,10 @@
+randuser/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+randuser/_modidx.py,sha256=HZ7Cgvxi7ehl9wov64ILs2e4aDsalQUFJzpyHQk6afU,491
+randuser/cli.py,sha256=0zJ-p395QZNeCYwBsblffTYac7ZhOx5D0BmxnMcy3xQ,532
+randuser/core.py,sha256=U4uAuhgt9b1Eyqz3Dg4PSXPlmCgvEE3JNZ5A7NKQl5M,595
+randuser-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+randuser-0.0.1.dist-info/METADATA,sha256=1rMW-A4GPVwpIm6KBsQUMvZRTPF9d5PtERv6g6y3KX4,3634
+randuser-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+randuser-0.0.1.dist-info/entry_points.txt,sha256=LEAMZ4VkjHiqdsX0te7wjCxLrZmsMjAefleAsU7CEek,91
+randuser-0.0.1.dist-info/top_level.txt,sha256=-YRG7x7PvfwsclBoJC57s23D3mqVLe9Udpsvwzi8IXk,9
+randuser-0.0.1.dist-info/RECORD,,
