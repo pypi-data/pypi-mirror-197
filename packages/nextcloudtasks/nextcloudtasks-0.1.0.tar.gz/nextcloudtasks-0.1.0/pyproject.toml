@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nextcloudtasks"
+version = "0.1.0"
+authors = [
+  { name="Manuel Mancera", email="manu@unam.re" },
+]
+license =  {text = "GPL-3.0-or-later"}
+description = "A Nextcloud Tasks API wrapper with some useful examples for CLI"
+keywords = ["nextcloud", "todo", "nextcloud tasks"]
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+  "caldav",
+  "prettytable"
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sinkmanu/nextcloud-tasks"
+"Source" = "https://github.com/sinkmanu/nextcloud-tasks"
+"Bug Tracker" = "https://github.com/sinkmanu/nextcloud-tasks/issues"

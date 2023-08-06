@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+examples/nc-tasks.py
+src/nextcloudtasks/__init__.py
+src/nextcloudtasks/nextcloudtasks.py
+src/nextcloudtasks.egg-info/PKG-INFO
+src/nextcloudtasks.egg-info/SOURCES.txt
+src/nextcloudtasks.egg-info/dependency_links.txt
+src/nextcloudtasks.egg-info/requires.txt
+src/nextcloudtasks.egg-info/top_level.txt
+tests/test_todo.py
