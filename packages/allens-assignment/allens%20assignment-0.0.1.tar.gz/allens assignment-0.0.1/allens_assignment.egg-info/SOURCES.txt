@@ -1,0 +1,7 @@
+LICENSE.txt
+README.txt
+setup.py
+allens_assignment.egg-info/PKG-INFO
+allens_assignment.egg-info/SOURCES.txt
+allens_assignment.egg-info/dependency_links.txt
+allens_assignment.egg-info/top_level.txt
