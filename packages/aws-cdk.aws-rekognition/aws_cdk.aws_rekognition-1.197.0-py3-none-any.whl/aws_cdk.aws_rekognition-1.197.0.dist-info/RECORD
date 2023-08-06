@@ -1,0 +1,10 @@
+aws_cdk/aws_rekognition/__init__.py,sha256=ZgXnU70gQ9Swi5_8BcBdWxO4v-us7YqgbkkPjNIL33U,121212
+aws_cdk/aws_rekognition/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_rekognition/_jsii/__init__.py,sha256=OZunFTj2tGekejgFQAur6-R2eiHWU3ofLIahpsHhDBY,428
+aws_cdk/aws_rekognition/_jsii/aws-rekognition@1.197.0.jsii.tgz,sha256=SLFMI8LXN5qpHMptPtsP2Yy5jZ2upwNQQVP3xQNROqg,60370
+aws_cdk.aws_rekognition-1.197.0.dist-info/LICENSE,sha256=YA6CL2YE08NgoURWXRTrec3mNy-KAR-_UNdiMqgNVMI,11391
+aws_cdk.aws_rekognition-1.197.0.dist-info/METADATA,sha256=KOmtj9JEhuYn3EYZSR6LCAvHlfaog9Pb_gKjIeVCe4I,3208
+aws_cdk.aws_rekognition-1.197.0.dist-info/NOTICE,sha256=XtGET2JQh3C41orQUenLTefWItOqLmu2N-mGwW7t3Fo,113
+aws_cdk.aws_rekognition-1.197.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aws_cdk.aws_rekognition-1.197.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_rekognition-1.197.0.dist-info/RECORD,,
