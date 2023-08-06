@@ -1,0 +1,6 @@
+include requirements.txt
+recursive-include basicsr *
+recursive-include facelib *
+recursive-include codeformer *
+recursive-include weights .gitkeep
+recursive-exclude * *.pth
