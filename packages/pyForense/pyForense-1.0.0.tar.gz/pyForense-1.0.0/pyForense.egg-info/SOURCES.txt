@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pyForense/__init__.py
+pyForense/pyForense.py
+pyForense.egg-info/PKG-INFO
+pyForense.egg-info/SOURCES.txt
+pyForense.egg-info/dependency_links.txt
+pyForense.egg-info/requires.txt
+pyForense.egg-info/top_level.txt
