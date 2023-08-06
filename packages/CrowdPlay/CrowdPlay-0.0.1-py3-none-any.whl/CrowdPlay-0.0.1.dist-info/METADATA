@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: CrowdPlay
+Version: 0.0.1
+Summary: A web based platform for collecting human actions in reinforcement learning environments
+Author-email: Farama Foundation <contact@farama.org>
+Project-URL: Homepage, https://github.com/farama-Foundation/crowdplay
+Project-URL: Bug Tracker, https://github.com/Farama-Foundation/CrowdPlay/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
