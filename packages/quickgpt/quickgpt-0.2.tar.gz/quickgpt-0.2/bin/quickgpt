@@ -1,0 +1,68 @@
+#!/usr/bin/env python3
+
+from quickgpt import QuickGPT
+from quickgpt.thread.messagetypes import *
+
+import argparse
+import json
+import os
+
+if __name__ == "__main__":
+    # Set up storage
+    config_path = os.path.expanduser("~/.config/quickgpt")
+
+    if not os.path.exists(config_path):
+        os.makedirs(config_path)
+
+    # Parse cmd arguments with argparse
+    parser = argparse.ArgumentParser(
+        prog = "ChatGPT CLI",
+        description = "Quick access to ChatGPT using the CLI")
+
+    parser.add_argument("-k", "--api-key",
+        help="Specify an API key to use with OpenAI",
+        dest="api_key")
+
+    parser.add_argument("-t", "--thread",
+        help="Specify a name for the conversation (aka thread) to use, and recall it on start")
+
+    parser.add_argument("-p", "--prompt",
+        help="Specify the initial prompt",
+        default="Assist the user with their questions.")
+
+    parser.add_argument("-n", "--no-initial-prompt",
+        help="Disables the initial prompt, and uses the User's first input as the prompt",
+        action="store_true",
+        dest="no_prompt")
+
+    args = parser.parse_args()
+
+    # If --api-key is specified, use this instead of the environment variable
+    api_key = args.api_key
+
+    # Create a chat instance
+    chat = QuickGPT(api_key=api_key)
+
+    # Start a new conversational thread
+    thread = chat.new_thread()
+
+    # Initial prompt
+    if not args.no_prompt:
+        thread.feed(
+            System(args.prompt)
+        )
+
+    while True:
+        if len(thread) > 0:
+            response = thread.run()
+            print("Bot: %s" % response.message)
+
+            thread.feed(
+                Assistant(response.message)
+            )
+
+        prompt = input("You: ")
+
+        thread.feed(
+            User(prompt)
+        )
