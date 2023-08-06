@@ -1,0 +1,10 @@
+compartmental/__init__.py,sha256=L8k2-XnZrf9dF3A3HbrUGnGdo3KDU5JLgD5z5Ki5mvw,1061
+compartmental/generic_model.py,sha256=XNBAnEiV9Naz0uGii9HE6rFUTvhPSdRrMWJJEb27vj8,8254
+compartmental/util.py,sha256=7QxkZr0HyBNvnGeVDjhcaAY1TO0yy0N1LC1GQQzbjoo,6995
+compartmental/parameters/__init__.py,sha256=HU2EvBeM6OEiV0JurUexU8mcFosNfbLQe1xIlDmFAmE,629
+compartmental/parameters/parameters_manager.py,sha256=IQlZUxfZUg9Y7qxvIL-BKVFctDpv53UAQIqVx4MzqRo,3296
+compartmental-0.0.1.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+compartmental-0.0.1.dist-info/METADATA,sha256=FKDso2Sfvg0Ht_b9AmMeh-DXIMZcU6djjAKYHpzeKY0,462
+compartmental-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+compartmental-0.0.1.dist-info/top_level.txt,sha256=pvutUDRzZX4Xq2xqduGm81TP3R1ZkcmZlMoID2sV6qQ,14
+compartmental-0.0.1.dist-info/RECORD,,
