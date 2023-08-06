@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: iocextract
+Version: 1.15.0
+Summary: Advanced Indicator of Compromise (IOC) extractor.
+Home-page: https://github.com/InQuest/python-iocextract
+Author: InQuest Labs
+Author-email: labs@inquest.net
+License: GPL
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Internet
+License-File: LICENSE
+Requires-Dist: regex
+Requires-Dist: ipaddress ; python_version <= "2.7"
+
+README.md
