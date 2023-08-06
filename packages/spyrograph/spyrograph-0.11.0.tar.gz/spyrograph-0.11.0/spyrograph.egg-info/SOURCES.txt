@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+spyrograph.egg-info/PKG-INFO
+spyrograph.egg-info/SOURCES.txt
+spyrograph.egg-info/dependency_links.txt
+spyrograph.egg-info/top_level.txt
