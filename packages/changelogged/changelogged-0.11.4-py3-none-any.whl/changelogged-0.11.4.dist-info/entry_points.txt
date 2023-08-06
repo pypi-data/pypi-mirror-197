@@ -1,0 +1,4 @@
+[console_scripts]
+changelogger=changelogger.__main__:app
+cl=changelogger.__main__:app
+
