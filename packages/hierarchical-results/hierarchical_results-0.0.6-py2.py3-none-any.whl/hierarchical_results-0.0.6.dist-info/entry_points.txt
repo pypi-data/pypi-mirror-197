@@ -1,0 +1,2 @@
+[console_scripts]
+hierarchical_results = hierarchical_results.cli:main
