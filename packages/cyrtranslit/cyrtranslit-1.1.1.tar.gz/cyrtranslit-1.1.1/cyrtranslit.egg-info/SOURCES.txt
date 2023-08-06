@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+cyrtranslit/__init__.py
+cyrtranslit/cyrtranslit.py
+cyrtranslit/mapping.py
+cyrtranslit.egg-info/PKG-INFO
+cyrtranslit.egg-info/SOURCES.txt
+cyrtranslit.egg-info/dependency_links.txt
+cyrtranslit.egg-info/entry_points.txt
+cyrtranslit.egg-info/top_level.txt
