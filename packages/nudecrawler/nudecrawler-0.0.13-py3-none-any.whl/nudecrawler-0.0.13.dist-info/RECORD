@@ -1,0 +1,11 @@
+nudecrawler/__init__.py,sha256=Yha4xXHw6wEoaEnLkSfLXzP-qCLkp1A2n3YVcD2tZgM,95
+nudecrawler/page.py,sha256=67AomlsLRGzLXCbfxaQCDAsXVkRpnEEG9V04knwieJY,3514
+nudecrawler/remoteimage.py,sha256=5x2k2GUHgCP_DY1g1_5wTs5pEhS9RyGonrPRlCWug2Y,1634
+nudecrawler/unbuffered.py,sha256=P7rBQ1zvCpmCQ22Y3nNWuoC84mdAjC01UkpM0cITlKg,352
+nudecrawler/verbose.py,sha256=PHvqeU-idxtExTOP2Qaj1qihFLN4lKGicLEtjjfUb-I,54
+nudecrawler/version.py,sha256=Z_Tv1fRyKekIM9CIuaVVx5F9V6H4VdOfYGH49rLfDBg,16
+nudecrawler-0.0.13.data/scripts/nudecrawler,sha256=JWK4S5Eg1WOlTKUJ0_oLNurixJuO-Rbf94_gKKIkf3Q,7624
+nudecrawler-0.0.13.dist-info/METADATA,sha256=oNn40MK2nFBLhXuS_AzWtcYNmgnZReiu00IJUs2HUKg,6041
+nudecrawler-0.0.13.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nudecrawler-0.0.13.dist-info/top_level.txt,sha256=2KWIE7C5-TCDmlvZm_enSRkupE6LvFXIZBgVeDD8gnU,12
+nudecrawler-0.0.13.dist-info/RECORD,,
