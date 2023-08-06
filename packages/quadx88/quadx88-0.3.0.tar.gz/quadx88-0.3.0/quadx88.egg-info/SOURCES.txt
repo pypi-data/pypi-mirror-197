@@ -1,0 +1,10 @@
+README.md
+setup.py
+quadx88/__init__.py
+quadx88/copter.py
+quadx88.egg-info/PKG-INFO
+quadx88.egg-info/SOURCES.txt
+quadx88.egg-info/dependency_links.txt
+quadx88.egg-info/not-zip-safe
+quadx88.egg-info/requires.txt
+quadx88.egg-info/top_level.txt
