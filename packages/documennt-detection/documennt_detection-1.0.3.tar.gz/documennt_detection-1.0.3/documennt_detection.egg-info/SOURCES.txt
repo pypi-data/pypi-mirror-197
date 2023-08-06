@@ -1,0 +1,16 @@
+.DS_Store
+MANIFEST.in
+requirements.txt
+setup.py
+documennt_detection.egg-info/PKG-INFO
+documennt_detection.egg-info/SOURCES.txt
+documennt_detection.egg-info/dependency_links.txt
+documennt_detection.egg-info/requires.txt
+documennt_detection.egg-info/top_level.txt
+document_detection/__init__.py
+document_detection/detection.py
+document_detection/node.py
+document_detection/scope_table
+document_detection/state_word.txt
+document_detection/test.py
+document_detection/utils.py
