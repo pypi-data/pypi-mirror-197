@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+mixto/__init__.py
+mixto/__version__.py
+mixto/exceptions.py
+mixto/mixto.py
+mixto_py.egg-info/PKG-INFO
+mixto_py.egg-info/SOURCES.txt
+mixto_py.egg-info/dependency_links.txt
+mixto_py.egg-info/requires.txt
+mixto_py.egg-info/top_level.txt

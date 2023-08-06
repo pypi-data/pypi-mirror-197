@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: mixto-py
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/securisec/mixto-py
+Author: Hapsida @securisec
+License: GPL
+Project-URL: Documentation, https://mixto-py.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/securisec/mixto-py
+Description: # mixto-py
+        
+        The python library for Mixto. 
+        
+        ## Install
+        
+        ```
+        pip install mixto-py
+        ```
+        
+        For dev instances, clone this repo and run from inside of the directory:
+        
+        ```
+        pip install -e .
+        ```
+        
+        ## Usage
+        
+        ```py
+        from mixto import Mixto
+        ```
+        
+        The main class can be instantiated in two ways:
+        
+        ```py
+        m = Mixto()
+        # or
+        m = Mixto(host="https://mixto_host", api_key="youapikey")
+        ```
+        
+        ## Example
+        
+        ```py
+        from mixto import Mixto
+        
+        m = Mixto()
+        
+        for workspace in m.miscGetWorkspaces():
+            print(workspace.commit_count)
+            for commit in workspace.commits:
+                print(commit.commit_id, commit.title)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
