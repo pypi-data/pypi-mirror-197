@@ -1,0 +1,24 @@
+matplotlib
+qtpy
+
+[dev]
+black
+PyQt5
+pytest
+pytest-cov
+
+[docs]
+ablog
+docutils
+gitpython
+jinja2
+myst-parser
+pydata-sphinx-theme
+sphinx
+sphinx-book-theme
+sphinx-rtd-theme
+sphinx-copybutton
+sphinxcontrib-bibtex
+
+[docs:python_version < "3.11"]
+tomli

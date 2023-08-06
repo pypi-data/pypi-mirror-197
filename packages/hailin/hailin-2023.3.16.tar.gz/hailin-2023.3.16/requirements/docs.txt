@@ -1,0 +1,12 @@
+ablog
+docutils
+gitpython
+jinja2
+myst-parser
+pydata-sphinx-theme
+sphinx
+sphinx-book-theme
+sphinx-rtd-theme
+sphinx-copybutton
+sphinxcontrib-bibtex
+tomli; python_version < "3.11"

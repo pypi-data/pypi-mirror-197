@@ -1,0 +1,102 @@
+
+[papers.Shahrour1997elastoplastic]
+blogpost = true
+date = "2023-03-14"
+author = "I Shahrour, F Rezaie"
+category = "Paper"
+tags = "Soil-Structure Interface, Elastoplastic, Cyclic Loading, Experiment"
+language = "English"
+
+title = "An Elastoplastic Constitutive Relation for the Soil-Structure Interface Under Cyclic Loading"
+bibkey = "Shahrour1997elastoplastic"
+doi = "10.1016/S0266-352X(97)00001-3"
+abstract = """
+This paper aims to develop the nonlinear incremental modeling approach for describing both monotonic and cyclic
+behaviors of the soil-structure interface. An exponential function is adopted as an example to reproduce the
+asymptotic relationship between the interface shear stress ratio and the shear displacement. A stress-dilatancy
+relation is developed for the shear-induced change of interface thickness. A shear stress reversal technique is
+incorporated for cyclic loading effect. Then, three numerical schemes for simulating constant thickness, constant
+normal load, and constant normal stiffness tests are established respectively. Next, three modifications are made
+to enhance the model by introducing a nonlinear shear modulus, the critical state concept, and the grain breakage
+effect. The enhanced model is evaluated with satisfactory performance in simulating interface tests under various
+loading conditions. Furthermore, the extensions to other nonlinear incremental interface model and clay-structure
+interface modeling with rate effect relating to drainage conditions are successfully demonstrated and discussed.
+"""
+
+[papers.Taiebat2008simple]
+blogpost = true
+date = "2023-03-14"
+author = "Mahdi Taiebat, Yannis F Dafalias"
+category = "Paper"
+tags = "SANISAND, Anisotropic Sand Plasticity"
+language = "English"
+
+title = "SANISAND: Simple anisotropic sand plasticity model"
+bibkey = "Taiebat2008simple"
+doi = "10.1002/nag.651"
+abstract = """
+SANISAND is the name used for a family of simple anisotropic sand constitutive models developed over the past few years
+within the framework of critical state soil mechanics and bounding surface plasticity. The existing SANISAND models use
+a narrow open cone-type yield surface with apex at the origin obeying rotational hardening, which implies that only
+changes of the stress ratio can cause plastic deformations, while constant stress-ratio loading induces only elastic
+response. In order to circumvent this limitation, the present member of the SANISAND family introduces a modified
+eight-curve equation as the analytical description of a narrow but closed cone-type yield surface that obeys rotational
+and isotropic hardening. This modification enables the prediction of plastic strains during any type of constant
+stress-ratio loading, a feature lacking from the previous SANISAND models, without losing their well-established
+predictive capability for all other loading conditions including the cyclic. In the process the plausible assumption
+is made that the plastic strain rate decomposes in two parts, one due to the change of stress ratio and a second due
+to loading under constant stress ratio, with isotropic hardening depending on the volumetric component of the latter
+part only. The model formulation is presented firstly in the triaxial stress space and subsequently its multiaxial
+generalization is developed following systematically the steps of the triaxial one. A detailed calibration procedure
+for the model constants is presented, while successful simulation of both drained and undrained behavior of sands under
+constant and variable stress-ratio loadings at various densities and confining pressures is obtained by the model.
+"""
+
+[papers.Yang2021soil]
+blogpost = true
+date = "2023-03-14"
+author = "Jie Yang, Zhen-Yu Yin"
+category = "Paper"
+tags = "Soil-Structure Interface, Exponential, Nonlinear"
+language = "English"
+
+title = "Soil-structure interface modeling with the nonlinear incremental approach"
+bibkey = "Yang2021soil"
+doi = "0.1002/nag.3206"
+abstract = """
+This paper aims to develop the nonlinear incremental modeling approach for describing both monotonic and cyclic
+behaviors of the soil-structure interface. An exponential function is adopted as an example to reproduce the asymptotic
+relationship between the interface shear stress ratio and the shear displacement. A stress-dilatancy relation is
+developed for the shear-induced change of interface thickness. A shear stress reversal technique is incorporated for
+cyclic loading effect. Then, three numerical schemes for simulating constant thickness, constant normal load, and
+constant normal stiffness tests are established respectively. Next, three modifications are made to enhance the model
+by introducing a nonlinear shear modulus, the critical state concept, and the grain breakage effect. The enhanced model
+is evaluated with satisfactory performance in simulating interface tests under various loading conditions. Furthermore,
+the extensions to other nonlinear incremental interface model and clay-structure interface modeling with rate effect
+relating to drainage conditions are successfully demonstrated and discussed.
+"""
+
+[papers.Yin2018modeling]
+blogpost = true
+date = "2023-03-14"
+author = "Zhen-Yu Yin, Ze-Xiang Wu, Pierre-Yves Hicher"
+category = "Paper"
+tags = "Granular Material, Exponential, Nonlinear"
+language = "English"
+
+title = "Soil-structure interface modeling with the nonlinear incremental approach"
+bibkey = "Yin2018modeling"
+doi= "10.1061/(ASCE)EM.1943-7889.0001437"
+abstract = """
+It is still an open problem to develop a model with a uniform theoretical treatment under various loading conditions.
+This paper aims to formulate such a model for describing both monotonic and cyclic behaviors of granular materials.
+An exponential function was adopted to reproduce the stress-strain relation. Within the framework of endochronic models,
+the shear strain component was enriched with an absolute term to account for a reverse loading effect during shearing.
+The capacity of the basic model with four parameters for reproducing the basic features of granular materials was
+examined. Three numerical schemes for simulating undrained triaxial tests, drained triaxial tests under constant p' or
+under constant confining stress, and under both monotonic and cyclic loadings were established. Then, three
+modifications were carried out to enhance the model by introducing a nonlinear elasticity, a nonlinear stress
+dilatancy, and the critical state concept with four additional parameters. The enhanced version of the model showed
+good performances in simulating triaxial tests on Toyoura sand under various loading conditions: drained, undrained,
+constant p', constant confining stress, and monotonic and cyclic loadings.
+"""

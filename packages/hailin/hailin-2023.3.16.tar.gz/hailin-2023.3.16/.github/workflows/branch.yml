@@ -1,0 +1,35 @@
+name: Branch
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: docs-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branch:
+          - pydata-sphinx-theme
+          - sphinx-rtd-theme
+          - sphinx-book-theme
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Create the branch if it doesn't exist
+        uses: peterjgrainger/action-create-branch@v2.2.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: ${{ matrix.branch }}
+      - uses: connor-baer/action-sync-branch@v1.0.3
+        if: ${{ always() }}
+        with:
+          branch: ${{ matrix.branch }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          force: true

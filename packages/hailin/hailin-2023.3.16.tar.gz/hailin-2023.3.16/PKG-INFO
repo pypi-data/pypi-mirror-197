@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: hailin
+Version: 2023.3.16
+Summary: WANG HAILIN's Shared Blog
+Author-email: WANG Hailin <hailin.wang@connect.polyu.hk>
+Project-URL: Homepage, https://github.com/haiiliin/haiiliin.github.io/
+Project-URL: Documentation, https://haiiliin-github-io.readthedocs.io/
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: docs
+License-File: LICENSE
+
+# [haiiliin.github.io](https://haiiliin.com)
+
+[![Pages](https://github.com/haiiliin/haiiliin.github.io/actions/workflows/pages.yml/badge.svg)](https://github.com/haiiliin/haiiliin.github.io/actions/workflows/pages.yml)
+[![Documentation Status](https://readthedocs.org/projects/haiiliin-github-io/badge/?version=latest)](https://readthedocs.org/projects/haiiliin-github-io/)
+
+This is the source code for my personal website.
+
+## Build the documentation
+
+```sh
+pip install .[docs]
+make html
+```
