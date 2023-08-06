@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+src/helloworld.py
+src/helloworld_marndr.egg-info/PKG-INFO
+src/helloworld_marndr.egg-info/SOURCES.txt
+src/helloworld_marndr.egg-info/dependency_links.txt
+src/helloworld_marndr.egg-info/top_level.txt
