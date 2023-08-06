@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Github-Updater
+Version: 0.0.2
+Summary: Downloads the latest release of a package from a GitHub repository and replaces the old files with the new ones.
+Author-email: Updater <1mag1n33dev@gmail.com>
+Project-URL: Homepage, https://github.com/1mag1n33/Updater
+Project-URL: Bug Tracker, https://github.com/1mag1n33/Updater/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

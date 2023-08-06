@@ -1,0 +1,7 @@
+pyproject.toml
+src/Github-Updater/__init__.py
+src/Github-Updater/app.py
+src/Github_Updater.egg-info/PKG-INFO
+src/Github_Updater.egg-info/SOURCES.txt
+src/Github_Updater.egg-info/dependency_links.txt
+src/Github_Updater.egg-info/top_level.txt
