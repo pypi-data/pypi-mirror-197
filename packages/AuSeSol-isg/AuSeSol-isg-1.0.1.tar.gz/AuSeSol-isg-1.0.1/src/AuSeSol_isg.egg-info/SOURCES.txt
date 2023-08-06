@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+src/AuSeSol_isg.egg-info/PKG-INFO
+src/AuSeSol_isg.egg-info/SOURCES.txt
+src/AuSeSol_isg.egg-info/dependency_links.txt
+src/AuSeSol_isg.egg-info/requires.txt
+src/AuSeSol_isg.egg-info/top_level.txt
+src/isg/Databases.py
+src/isg/Feature_Correlation.py
+src/isg/Plotting.py
+src/isg/Preprocessing.py
+src/isg/__init__.py
