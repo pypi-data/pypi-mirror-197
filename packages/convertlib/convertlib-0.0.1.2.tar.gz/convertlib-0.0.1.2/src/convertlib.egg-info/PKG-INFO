@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: convertlib
+Version: 0.0.1.2
+Summary: Converte arquivos
+Home-page: https://github.com/hectorsalg/convertlib
+Author: Hector Salgueiros e Lizzandro
+Author-email: hectorsalg@ufpi.edu.br
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+convertlib
+========
+
+### Esse é um pacote que converte arquivos de diversas extensões.
+
+
+## Instalação
+    pip install convertlib
+
+## Uso
+```
+import convertlib as cv
+path = "path/to/file.extension"
+converter = cv.convertlib(path)
+converter.docx2pdf()
+```
