@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: ka_com
+Version: 2023.2.0
+Summary: Communication Class Utilities
+Author-email: Bernd Stroehle <bernd.stroehle@bs29.com>
+Maintainer-email: Bernd Stroehle <bernd.stroehle@bs29.com>
+Project-URL: Source Code, https://github.com/bs29/ka_com/tree/master
+Project-URL: Homepage, https://kosakya.de/
+Project-URL: Documentation, https://ka-com.readthedocs.io/en/latest
+Project-URL: Apache-2.0 License, https://apache.org/licenses/LICENSE-2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+######
+ka_com
+######
+
+.. start short_desc
+
+**Communication 'Area'**
+
+.. end short_desc
+
+Installation
+------------
+.. start installation
+
+``pyproject-parser`` can be installed from PyPI or Anaconda.
+
+To install with ``pip``:
+
+.. code-block:: shell
+
+	$ python -m pip install ka_com
+
+To install with ``conda``:
+
+.. code-block:: shell
+
+	$ conda install -c conda-forge ka_com
+
+.. end installation
+
+This requires that the ``readme`` extra is installed:
+
+.. code-block:: bash
+
+	$ python -m pip install ka_com[readme]
+
+Modules
+-------
+``ka_com`` contains the following modules.
+
+.. table:: **ka_com Base Module**
+
+    +-----------++-----------------------------------------------------+
+    | *Module*: || Description                                         |
+    +===========++=====================================================+
+    | com       || Communication Class                                 |
+    +-----------++-----------------------------------------------------+
+
+.. table:: **ka_com Utility Modules**
+
+    +-----------++-----------------------------------------------------+
+    | *Module*: || Description                                         |
+    +===========++=====================================================+
+    | ioc       || Input Output Classes                                |
+    +-----------++-----------------------------------------------------+
+    | pacmod    || Packcage Module Class                               |
+    +-----------++-----------------------------------------------------+
