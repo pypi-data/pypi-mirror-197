@@ -1,0 +1,12 @@
+README.md
+setup.py
+influence-model/__init__.py
+influence-model/influence_model.py
+influence-model/learning.py
+influence-model/math.py
+influence-model/site.py
+influence-model/test_math.py
+influence_model.egg-info/PKG-INFO
+influence_model.egg-info/SOURCES.txt
+influence_model.egg-info/dependency_links.txt
+influence_model.egg-info/top_level.txt
