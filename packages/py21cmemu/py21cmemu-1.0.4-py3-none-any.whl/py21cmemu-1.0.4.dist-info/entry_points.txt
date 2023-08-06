@@ -1,0 +1,3 @@
+[console_scripts]
+py21cmEMU=py21cmemu.__main__:main
+
