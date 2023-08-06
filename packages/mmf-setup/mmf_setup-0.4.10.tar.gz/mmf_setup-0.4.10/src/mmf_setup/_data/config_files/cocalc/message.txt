@@ -1,0 +1,18 @@
+Configurations for your CoCalc project have been symlinked as described above.
+
+If you use version control, then to get the most of the configuration, please make sure
+that you set the following variables on your personal computer, and forward them when
+you ssh to the project.  This can be done with your SSH config file (~/.ssh/config)
+which might look like (or use SendEnv if you define them in your environment):
+
+    # ~/.ssh/config
+    Host cc-project1
+      User ff1cb986f...
+    
+    Host cc*
+      HostName ssh.cocalc.com
+      ForwardAgent yes
+      SetEnv LC_HG_USERNAME=Your Full Name <your.email.address+hg@gmail.com>
+      SetEnv LC_GIT_USEREMAIL=your.email.address+git@gmail.com
+      SetEnv LC_GIT_USERNAME=Your Full Name
+      SetEnv LC_EDITOR=vi
