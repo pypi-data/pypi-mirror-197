@@ -1,0 +1,10 @@
+biopython
+pandas
+seaborn
+pysam
+matplotlib
+numpy
+scikit-learn
+hdbscan
+pycoverm
+regex
