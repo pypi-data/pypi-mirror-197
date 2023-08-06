@@ -1,0 +1,11 @@
+lightning>=2.0.0
+colossalai<=0.2.5,>=0.2.0
+
+[test]
+codecov>=2.1
+coverage>=5.0
+mypy==1.0.1
+pytest-cov
+pytest>=6.0
+scikit-learn<1.2.2,>=1.0.0
+torchmetrics<0.11.0,>=0.8.0

@@ -1,0 +1,16 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+src/lightning_colossalai/__about__.py
+src/lightning_colossalai/__init__.py
+src/lightning_colossalai/precision.py
+src/lightning_colossalai/strategy.py
+src/lightning_colossalai.egg-info/PKG-INFO
+src/lightning_colossalai.egg-info/SOURCES.txt
+src/lightning_colossalai.egg-info/dependency_links.txt
+src/lightning_colossalai.egg-info/not-zip-safe
+src/lightning_colossalai.egg-info/requires.txt
+src/lightning_colossalai.egg-info/top_level.txt
