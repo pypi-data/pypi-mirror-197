@@ -1,0 +1,15 @@
+cityhash.cpython-310-x86_64-linux-gnu.so,sha256=AdYvBpZ8WGxkQpfyXSGmNNWSJYFpXLQydYePfaBYmCY,397824
+orso-0.0.18.dist-info/LICENSE,sha256=5BC_pasqk78lx9EWpHRsHBcgW3yYyTIpjGvZlh6O0hY,11346
+orso-0.0.18.dist-info/WHEEL,sha256=iZaXX0Td62Nww8bojl0E84uJHjT41csHPKZmbUBbJPs,152
+orso-0.0.18.dist-info/top_level.txt,sha256=UI7AI6ZaBmzfEohp92zh7FxZT0Dquc3fUU3TjCiETfI,14
+orso-0.0.18.dist-info/RECORD,,
+orso-0.0.18.dist-info/METADATA,sha256=3k3mSCAAflr8eydTj32L4bWLvDh-jgRLKWU3V7v5MGo,1890
+orso/row.py,sha256=o84jJer9WVhWP2Ym53lTCyrnZ89VP67khgMkbn1bJAg,2660
+orso/__init__.py,sha256=iouAxY85btQbcfoY9EOjenCl7lAJ8xdXEkdi09Vd5T4,54
+orso/dataframe.py,sha256=CkC-HUpEx8chyZBVOwsDPgetJxnGn-0JsmcUUDjfGWc,7004
+orso/converters.py,sha256=zr9qqK7xpBM0ZqRyhK0Wo33040VThco5JcdYIsPFvX0,3809
+orso/display.py,sha256=7490Ud6iDQThiwvQ_RdDL4jXLoCsOGgeqQjuYYEqpvU,8261
+orso/exceptions.py,sha256=UnV6-XHi8jS-5400jaNLksrgvhZaPLZtBldNJgOxU-Y,806
+orso/version.py,sha256=2P-Cs8Sg96zzJ3jBeM-eoWKqIHIQWwgb7r2qOtBDDhI,601
+orso/_tools.py,sha256=tnFM6FKGEI_7gO-rrzviYoMkKjNKcYMeW8dL_n4_8LM,629
+orso/cityhash/__init__.py,sha256=07GzXM4X6wkbDgGWbu-sjkj9C6X6ztWi04Quqdup3Q4,44
