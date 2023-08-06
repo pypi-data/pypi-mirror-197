@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "awslack"
+version = "0.1.0"
+description = "AWS CodeBuild/CodeDeploy triggers & updates to Slack with a cool Progress Bar!"
+authors = ["Saurabh Chopra <Saurabh.Chopra.2021@live.rhul.ac.uk>"]
+license = "MIT"
+readme = "README.md"
+exclude = ["./scripts", "./tests"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+boto3 = "^1.26.91"
+slack-sdk = "^3.20.2"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.11.0"
+pre-commit = "^3.1.1"
+pytest = "^7.2.2"
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
