@@ -1,0 +1,29 @@
+[tool.isort]
+profile = "black"
+
+[tool.poetry]
+name = "scicamera"
+version = "0.4.0"
+description = ""
+readme="README.md"
+authors = ["Exclosure <info@exclosure.io>"]
+repository = "https://github.com/exclosure/scicamera"
+keywords = ["camera", "imaging", "RaspberryPi"]
+license="BSD"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.5"
+pillow = "^9.3.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.2"
+pytest = "^7.2.0"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
