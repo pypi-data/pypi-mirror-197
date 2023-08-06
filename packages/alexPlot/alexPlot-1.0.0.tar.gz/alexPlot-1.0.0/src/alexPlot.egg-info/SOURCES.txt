@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/alexPlot/__init__.py
+src/alexPlot/plotting.py
+src/alexPlot.egg-info/PKG-INFO
+src/alexPlot.egg-info/SOURCES.txt
+src/alexPlot.egg-info/dependency_links.txt
+src/alexPlot.egg-info/top_level.txt
+src/alexPlot/funcs/axes.py
+src/alexPlot/funcs/plot_functions.py
+src/alexPlot/funcs/pulls.py
+src/alexPlot/funcs/useful_functions.py
+src/alexPlot/number_storage/poisson_asym_errors_lookup_table.pickle
