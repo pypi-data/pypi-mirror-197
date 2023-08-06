@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: c7n-sphinxext
+Version: 1.1.23
+Summary: Cloud Custodian - Sphinx Extensions
+Home-page: https://cloudcustodian.io
+License: Apache-2.0
+Author: Cloud Custodian Project
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Systems Administration
+Requires-Dist: click (==8.1.3)
+Requires-Dist: myst-parser (==1.0.0)
+Requires-Dist: recommonmark (==0.7.1)
+Requires-Dist: sphinx-rtd-theme (==1.2.0)
+Project-URL: Documentation, https://cloudcustodian.io/docs
+Project-URL: Repository, https://github.com/cloud-custodian/cloud-custodian
+Description-Content-Type: text/markdown
+Requires-Dist: c7n (==0.9.24)
+
+# Sphinx Extensions
+
+Custom sphinx extensions for use with Cloud Custodian.
+
+
