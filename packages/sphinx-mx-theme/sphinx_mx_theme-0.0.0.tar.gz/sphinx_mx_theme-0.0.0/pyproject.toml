@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "sphinx-mx-theme"
+version = "0.0.0"
+readme = "README.md"
+description = ""
+authors = []
+packages = [{include = "sphinx_mx_theme"}]
+
+[tool.poetry.dependencies]
+python = "^3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
