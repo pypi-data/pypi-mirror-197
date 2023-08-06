@@ -1,0 +1,14 @@
+sspm/__init__.py,sha256=Ra686eV9NDH8IpOW6Z_MplJnzF3RTzXns9-FUQ3a2Qk,107
+sspm/plugin.py,sha256=HYyu6q3tAa5MuZn4tZmGaBGVGf5ISa7Tp2q22lwXrT0,3648
+sspm/plugin_base.py,sha256=vdwaNIPrKIzjvsmrpEUVa5sqG28ehGWJVrg3EF2Rjk8,29
+sspm/pluginmanager.py,sha256=lxi_HloIPPuR0KchJzYi6uR9lfejCf23kXqZBJ290NA,6704
+sspm/version.py,sha256=Q61DGIMBhXNKFZ_mHbgQpk2YW8ircchcO0S8gZX5eHI,772
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_all.py,sha256=5vHGJWNp_xjhFPxIQTzxvrsvSqsOzgnNp9UbHC7MLmg,326
+test/test_plugin_manager.py,sha256=P2DxejepL2ji680pNTyNUNU_fk-JJdEJfbPi9FC9d7Y,541
+test/test_settings.py,sha256=QBDiwx0p799X5o2QiaFfqIKGpNo4XT3uOwRhvgTBrWs,3655
+SSPM-1.2.1.dist-info/LICENSE,sha256=woQec94Sc-83t7is8KttxnZ0autT2D0QrfzHs__VtlE,7423
+SSPM-1.2.1.dist-info/METADATA,sha256=iyOB0QLr7sGpEehbhDd5yYztUEbrZQ_DoqcEc6glFQc,2022
+SSPM-1.2.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+SSPM-1.2.1.dist-info/top_level.txt,sha256=cd9I8Hu8GXqjFHn1wK38RBcdPtJm8mKI9NMHiDP8bBQ,10
+SSPM-1.2.1.dist-info/RECORD,,
