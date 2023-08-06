@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/ocr_general_method/__init__.py
+src/ocr_general_method/coordinate.py
+src/ocr_general_method/exception_utils.py
+src/ocr_general_method/file_utils.py
+src/ocr_general_method/http_utils.py
+src/ocr_general_method/mongo_utils.py
+src/ocr_general_method/other_utils.py
+src/ocr_general_method.egg-info/PKG-INFO
+src/ocr_general_method.egg-info/SOURCES.txt
+src/ocr_general_method.egg-info/dependency_links.txt
+src/ocr_general_method.egg-info/top_level.txt
