@@ -1,0 +1,9 @@
+aiodeluge/__init__.py,sha256=aFmYN15MjfaYQ1kyAFZz2hUIIDa6QJ8R731Ujo1Ab_k,196
+aiodeluge/client.py,sha256=yEjWRkVX2pEzpeF1ZGC0U02baMCUnf0u8tLSNws0_XY,2942
+aiodeluge/exception.py,sha256=GrWWZ2P8eA_8tEBaUa2kG-XvgG2tmHYTG9bsfreHH8o,2265
+aiodeluge/protocol.py,sha256=-KiEwm3PCtICa4nKFvso3GfPOzygT-czlyjuPdX2jnA,11881
+aiodeluge/request.py,sha256=knMNLSp5QA-3_vOL3QL5s1xc7qVPwa6GsslWAaq5KDA,1529
+aiodeluge-0.1.0.dist-info/METADATA,sha256=0xzH1GTc3ykxxBtBGD8kI7B5j8mwqCyHrvfOCms8jbU,3032
+aiodeluge-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+aiodeluge-0.1.0.dist-info/top_level.txt,sha256=j6ad4ahBJHZj-49rRNmZHZfYR4J4osyITpCzYg-pdH0,10
+aiodeluge-0.1.0.dist-info/RECORD,,
