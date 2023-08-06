@@ -1,0 +1,17 @@
+requests
+bs4
+pandas
+lxml
+html5lib
+pytz
+jinja2
+peewee
+durations
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
