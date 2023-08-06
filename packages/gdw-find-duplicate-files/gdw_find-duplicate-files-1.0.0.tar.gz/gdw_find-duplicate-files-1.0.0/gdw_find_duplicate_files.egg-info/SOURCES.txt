@@ -1,0 +1,7 @@
+README.md
+setup.py
+gdw_find_duplicate_files.egg-info/PKG-INFO
+gdw_find_duplicate_files.egg-info/SOURCES.txt
+gdw_find_duplicate_files.egg-info/dependency_links.txt
+gdw_find_duplicate_files.egg-info/entry_points.txt
+gdw_find_duplicate_files.egg-info/top_level.txt
