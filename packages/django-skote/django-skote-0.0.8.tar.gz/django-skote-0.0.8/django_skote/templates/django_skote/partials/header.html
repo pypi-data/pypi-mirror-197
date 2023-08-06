@@ -1,0 +1,134 @@
+{% load format_str %}
+{% load i18n %}
+{% load static %}
+{% block header%}
+<header id="page-topbar">
+    <div class="navbar-header">
+        <div class="d-flex">
+            <!-- LOGO -->
+            <div class="navbar-brand-box">
+                <a href="/" class="logo logo-dark">
+                    <span class="logo-sm">
+                        <img src="{% static 'django_skote/images/logo.svg' %}" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="{% static 'django_skote/images/logo-dark.png' %}" alt="" height="34">
+                    </span>
+                </a>
+
+                <a href="/" class="logo logo-light">
+                    <span class="logo-sm">
+                        <img src="{% static 'django_skote/images/logo-light.svg' %}" alt="" height="22">
+                    </span>
+                    <span class="logo-lg">
+                        <img src="{% static 'django_skote/images/logo-light.png' %}" alt="" height="38">
+                    </span>
+                </a>
+            </div>
+            <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                <i class="fa fa-fw fa-bars"></i>
+            </button>
+        </div>
+        <h5 class="mb-0 ms-2 flex-grow-1">{{ heading }}</h5>
+        <div class="d-flex">
+            <form action="{% url 'set_language' %}" method="post" id="language_form" name="language_form">{% csrf_token %}
+            <input name="next" type="hidden" value="{{ request.get_full_path }}" form="language_form" />
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+
+            <div class="dropdown d-inline-block">
+                <button type="button" class="btn header-item waves-effect"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img id="header-lang-img" src="{% static 'django_skote/images/flags/%s.jpg'|format_string:LANGUAGE_CODE %}" alt="{% trans 'Language' %}" height="16"> {{ LANGUAGE_CODE }}
+                </button>
+                <div class="dropdown-menu dropdown-menu-end">
+                    {% for language in languages %}
+
+                        <button class="dropdown-item notify-item language" type="submit"
+                                value="{{ language.code }}" data-lang="{{ language.code }}" form="language_form"
+                                name="language">
+                            <img src="{% static 'django_skote/images/flags/%s.jpg'|format_string:language.code %}" alt="{{ language.name_local }}" height="16">
+                            <span class="align-middle">{{ language.name_local }}</span>
+                        </button>
+                    {% endfor %}
+                </div>
+            </div>
+            </form>
+
+            <div class="dropdown d-inline-block">
+                <button type="button" class="btn header-item noti-icon waves-effect"
+                        id="page-header-notifications-dropdown"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="bx bx-bell"></i>
+                    <span class="badge bg-danger rounded-pill">0</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                    aria-labelledby="page-header-notifications-dropdown">
+                    <div class="p-3 border-bottom">
+                        <div class="row align-items-center">
+                            <h6 class="m-0">{% translate 'Notifications' %}</h6>
+                        </div>
+                    </div>
+                    <div data-simplebar style="max-height: 230px;">
+                        <a href="javascript: void(0);" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-2">Уведомления еще не реализованы</h6>
+                                    <div class="font-size-12">
+                                        <p class="mb-2">Для управления уведомлениями нужно
+                                        разработать целый отдельный модуль.</p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i>
+                                        <span>15.11.2022 22:44</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="javascript: void(0);" class="text-reset notification-item">
+                            <div class="d-flex">
+                                <div class="flex-grow-1">
+                                    <h6 class="mb-2">Но хотелось бы...</h6>
+                                    <div class="font-size-12">
+                                        <p class="mb-2">Это есть в планах разработки, но
+                                        на данный момент не хватает времени.</p>
+                                        <p class="mb-0"><i class="mdi mdi-clock-outline"></i>
+                                        <span>15.11.2022 22:44</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="p-2 border-top d-grid">
+                        <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                            <i class="mdi mdi-arrow-right-circle me-1"></i>
+                            <span>{% translate 'View more' %}..</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown d-inline-block">
+                <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="rounded-circle header-profile-user" src="{% static 'django_skote/images/users/avatar-1.jpg' %}"
+                        alt="Header Avatar">
+                    <span class="d-none d-xl-inline-block ms-1">{{ user.first_name }} {{ user.last_name }}</span>
+                    <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end">
+                    <!-- item-->
+                    <a class="dropdown-item" href="{% url 'auth-lock-screen' %}?next={{ request.get_full_path }}"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span key="t-lock-screen">{% translate 'Lock Screen' %}</span></a>
+                    <div class="dropdown-divider"></div>
+                    {% if user.is_authenticated %}
+                        <a class="dropdown-item text-danger" href="{% url 'admin:logout' %}?next={% url 'logout' %}"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i>{% translate 'Log Out' %}</a>
+                        {% else %}
+                        <a class="dropdown-item" href="{% url 'admin:login' %}"><i
+                                class="bx bx-log-in font-size-16 align-middle me-1 "></i> {% translate 'Log In' %}</a>
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+{% endblock %}
