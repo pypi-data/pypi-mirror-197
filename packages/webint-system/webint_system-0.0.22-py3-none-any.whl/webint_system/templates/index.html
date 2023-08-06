@@ -1,0 +1,204 @@
+$def with (ip_address, onion, domains, settings, main_app, apps, webint_metadata, webint_versions)
+$# , understory_version, applications)
+$var title: System
+
+<h2 id=addresses>Addresses</h2>
+<p>$ip_address</p>
+$if onion:
+    <p style=font-family:monospace>$(onion[:28])&shy;$(onion[28:])</p>
+<form method=post action=/addresses/tor/miner>
+<button>Mine</button>
+</form>
+<p>$", ".join(domains)</p>
+<form method=get action=/addresses/domains>
+<input name=domain> <button>Lookup</button>
+</form>
+
+<h2 id=software>Software</h2>
+<form action=/software method=post><button>Update</button></form>
+<p>Primary application: <code>$main_app.name</code></p>
+<p><code>webint</code> version: $webint_versions[0]
+$if webint_versions[1]:
+    out of date. current version is $webint_versions[1].
+</p>
+
+$# <ul style=font-size:.8em>\
+$# $for package, package_apps in sorted(apps.items(), key=lambda x: x[0].metadata["Name"]):
+$#     <li>
+$#     $package.metadata["Name"]
+$#     <small><code>$package.metadata["Version"]</code>
+$#     $for mounted_prefix, mount_app in main_app.mounts:
+$#         $for _, package_app, _, _ in package_apps:
+$#             $if mount_app == package_app:
+$#                 mounted at <code>/$mounted_prefix</code>
+$#     </small>
+$#     $# $#app_name
+$#     $# <small><a href=/$app.project_name>$app.project_name</a>
+$#     $# <a href=/$app.project_name/$app.version><small>$app.version</small></a></small>
+$#     </li>
+$# </ul>
+
+$def render_parent_controllers(location, controllers):
+    <ul id="$(location)_controllers">
+    $for route, controller in controllers:
+        <li>
+        <details><summary>
+        $ parts = re.split(r"\(\?P<(.+?)>(.+?)\)", route)
+        $if len(parts) == 1:
+            <a href=$tx.origin/$route>$controller.__web__[0]</a>\
+        $else:
+            $controller.__web__[0]\
+        $if len(controller.__web__[0]) == 0:
+            <a href=/>$tx.request.uri.host</a>\
+        $ project_mod = "/".join(controller.handler.__module__.split("."))
+        $ project = getsourcefile(controller.handler).removeprefix(str(tx.host.working_dir)).lstrip("/").partition("/")[0]
+        &ensp;<small>$:str(mkdn((controller.__doc__.strip() + "\n").splitlines()[0])).removeprefix("<p>").removesuffix("</p>")</small>
+        </summary>
+        <!--small><strong>
+        <a class=controller href=/projects/$project/api/$project_mod#$controller.handler.__name__>$controller.handler.__name__</a>
+        </strong></small-->
+        </details>
+        </li>
+    </ul>
+
+<h3 id=routes>Routes</h3>
+
+$:render_parent_controllers("before", main_app.controllers)
+
+<ul id=mounts>
+$for prefix, subapp in sorted(main_app.mounts):
+    $if subapp.controllers:
+        <li>
+        <details><summary>
+        <a href=$tx.origin/$prefix>$prefix</a>\
+        $ root = subapp.controllers[0]
+        $if root[0] == "":
+            $ project_mod = "/".join(root[1].handler.__module__.split("."))
+            $ project = getsourcefile(root[1].handler).removeprefix(str(tx.host.working_dir)).lstrip("/").partition("/")[0]
+            &ensp;<small>$:str(mkdn((root[1].__doc__.strip() + "\n").splitlines()[0])).removeprefix("<p>").removesuffix("</p>").rstrip()</small>
+            <!--strong><small><a class=controller
+            href=/projects/$project/api/$project_mod#$root[1].handler.__name__>&#x1f6c8;</a>
+            </small></strong-->
+        </summary>
+        $if len(subapp.controllers) > 1:
+            <ul>
+            $for route, controller in subapp.controllers[1:]:
+                $ parts = re.split(r"\(\?P<(.+?)>(.+?)\)", route)
+                <li>\
+                $if len(parts) == 1:
+                    $if parts[0]:
+                        <a href=$tx.origin/$prefix/$parts[0]>$parts[0]</a>\
+                $else:
+                    $for a, b, c in zip(parts[0::3], parts[1::3], parts[2::3]):
+                        $:a.replace("(", '<span class="optional">')\
+                        <span title="$c">{$b}</span>\
+                    $:parts[-1].replace(")?", "</span>")\
+                $ project_mod = "/".join(controller.handler.__module__.split("."))
+                $ project = getsourcefile(controller.handler).removeprefix(str(tx.host.working_dir)).lstrip("/").partition("/")[0]
+                $ docstring = str(mkdn((controller.__doc__.strip() + "\n").splitlines()[0])).removeprefix("<p>").removesuffix("</p>").rstrip()
+                &ensp;<small>$docstring <!--<strong><a class=controller
+                href=/projects/$project/api/$project_mod#$controller.handler.__name__>&#x1f6c8;</a>
+                </strong--></small>
+                </li>
+            </ul>
+        <p style=text-align:right>
+        $for app, app_details in apps.items():
+            $if prefix == app_details[0][0]:
+                $app.metadata["Summary"]<br>
+                <small><code>\
+                $if "Home-page" in app.metadata:
+                    <a href=$app.metadata["Home-page"]>\
+                $app.project_name\
+                $if "Home-page" in app.metadata:
+                    </a>
+                 $app.version</code><small>&ensp;by&ensp;</small><a
+                href="https://$app.metadata['Author-email']">$app.metadata["Author"]
+                <code>&lt;$app.metadata["Author-email"]&gt;</code></a>
+                </small>
+        </p>
+        </details>
+        </li>
+</ul>
+
+$:render_parent_controllers("after", main_app.after_controllers)
+$:render_parent_controllers("after", main_app.unprefixed_controllers)
+
+<div id=wrappers>
+<h3>Wrappers</h3>
+<ol style=columns:3;line-height:1.25;list-style:none;padding:0>
+$for wrapper in main_app.wrappers:
+    <li>$wrapper.__name__<br>
+    <small>$wrapper.__module__</small>
+    </li>
+</ol>
+</div>
+
+<h2 id=settings>Settings</h2>
+<ul>
+$for key, value in settings.items():
+    <li><strong>$key:</strong> <code>$value</code></li>
+</ul>
+<form method=post action=/settings>
+<label>Key <input name=key></label><br>
+<label>Value <input name=value></label><br>
+<button>Add</button>
+</form>
+
+$# $def aside():
+$#     $# <h4><a href=/applications>Applications</a></h4>
+$#     $# <ul id=applications>
+$#     $# $for application in applications:
+$#     $#     <li>$application.project_name<br>
+$#     $#     <small>$application.version</small></li>
+$#     $# </ul>
+$#     $# <form method=post action=/applications>
+$#     $#     <label><small>Application URL</small><br>
+$#     $#     <label class=bounding><input type=text name=application_url
+$#     $#     placeholder="github path, pypi path or .git url"></label></label>
+$#     $#     <div class=buttons><button>Install</button></div>
+$#     $# </form>
+$# $var aside = aside
+
+$# XXX <ul>
+$# XXX $for prefix, subapp in main_app.mounts:
+$# XXX     $if subapp.wrappers:
+$# XXX         $for wrapper in subapp.wrappers:
+$# XXX             <li>$wrapper</li>
+$# XXX </ul>
+
+<style>
+ul#before_controllers, ul#after_controllers, ul#mounts, div#wrappers ul {
+  list-style: none;
+  padding-left: 0; }
+ul#mounts > li {
+  margin: .25em 0; }
+ul#mounts > li li {
+  margin: .5em 0; }
+em {
+  color: #586e75; }
+select {
+  border: 0; }
+#mounts label.bounding {
+  display: inline; }
+a.controller {
+  color: #b58900;
+  font-family: mono;
+  font-size: .9em;
+  text-decoration: none; }
+.optional {
+  border-style: dotted;
+  border-width: .2em; }
+@media (prefers-color-scheme: light) {
+  .optional {
+    border-color: #93a1a1; }
+}
+@media (prefers-color-scheme: dark) {
+  .optional {
+    border-color: #586e75; }
+}
+
+#applications {
+  font-size: .8em;
+  list-style: none;
+  padding-left: 0; }
+</style>
