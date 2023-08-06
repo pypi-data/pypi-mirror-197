@@ -1,0 +1,8 @@
+numpy
+jax
+jaxlib
+matplotlib
+pandas
+equinox
+pyyaml
+scipy
