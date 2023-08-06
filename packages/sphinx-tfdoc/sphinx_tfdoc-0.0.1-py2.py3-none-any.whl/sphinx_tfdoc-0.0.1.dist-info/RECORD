@@ -1,0 +1,15 @@
+sphinx_tfdoc/__init__.py,sha256=BAefeFFXRA4CLNZmcfno1JyO06-4tNHMZ_VseqMjYDI,29
+sphinx_tfdoc/extension.py,sha256=cKG1BdRj-vLxUtPJNGH3l-GBdSXLBwH8gOT9AW9LFjM,4048
+sphinx_tfdoc/store.py,sha256=t1F8ByRQENQZ-9XPTin2g4EYE5-90MY-Abav1TFxZNI,10140
+sphinx_tfdoc/templates/data_resource.rst,sha256=cjRRhs6pF_Dx-loEPFNqhhzRiM3XDzIxS_BuBr7mJZk,161
+sphinx_tfdoc/templates/index.rst,sha256=Mhl5gxq5clFdrnNntvF7wDYK0T1JOF3gucm2MMiI9GQ,149
+sphinx_tfdoc/templates/managed_resource.rst,sha256=xce_mrg_A8FJAOaYTr0Xc_b79PupOAEIAcniv5dyz5Y,164
+sphinx_tfdoc/templates/module.rst,sha256=ZCQ6FH_bohc3mn3RqveDKGZWAFLvHo6PFGpKsWzPPaw,912
+sphinx_tfdoc/templates/module_call.rst,sha256=qMJVMnXUX5-DKLmyhDtRc2rTouKzol8GffYLkF1HWkQ,194
+sphinx_tfdoc/templates/output.rst,sha256=WrcyaU73A7wpL5gh9LUmMdi2QCp60xVIYAynRfuvFUo,154
+sphinx_tfdoc/templates/required_provider.rst,sha256=IurCOosIZKH_Dxebh1XIdm7XF_k3g6_DzsCq8NXp3W8,390
+sphinx_tfdoc/templates/variable.rst,sha256=giapbZD1NJt3-QpIKW_Dy1VUo-bKGTJvZ8cUPaGZZ6I,347
+sphinx_tfdoc/terraform.py,sha256=Q93C_-t9p4edoEb7vbVhlqLPUEBMEyjpm9Pol1ZfzjE,4210
+sphinx_tfdoc-0.0.1.dist-info/WHEEL,sha256=SlW3K6T2LNPbN9-QzFT1pS72PIuYOJEoe_9_lIJkxrk,92
+sphinx_tfdoc-0.0.1.dist-info/METADATA,sha256=SYWiusTvieUSCk7T_-ZlQoDsw7BgohZeEiOFjq2eTW0,739
+sphinx_tfdoc-0.0.1.dist-info/RECORD,,
