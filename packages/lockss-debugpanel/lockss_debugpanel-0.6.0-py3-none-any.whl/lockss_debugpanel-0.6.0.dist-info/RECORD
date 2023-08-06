@@ -1,0 +1,9 @@
+CHANGELOG.rst,sha256=vI28edKuKYBD0Qn9vLqxgVOL682QLZqQLRfdEmga_fM,350
+lockss/debugpanel/__init__.py,sha256=XAlJxcQw4FSj4kcBaRXxVg7tgNVZXeTdxBrRY-VmoHA,5673
+lockss/debugpanel/__main__.py,sha256=3U-1_hYrHSDS0KQONPONyJy2lXNC1TQS2WWyDWL7HvU,1639
+lockss/debugpanel/cli.py,sha256=ejXTv71eigafqAr-MZQMNh-8gyVDSWikjxQ8Bs6BMqc,19111
+lockss_debugpanel-0.6.0.dist-info/LICENSE,sha256=ArAnVWK-WhSxCVQWDF_PWBETwjSZ35HfugnUJPqPXyg,1506
+lockss_debugpanel-0.6.0.dist-info/METADATA,sha256=Ei6nb7QzpWMyanNpXiD44eCLqJQn5QOsEh145BuPX6U,37079
+lockss_debugpanel-0.6.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+lockss_debugpanel-0.6.0.dist-info/entry_points.txt,sha256=GuLRH8NaRxFwHAYSrH8J57t-c45qslpHnTMrRPXrjfM,57
+lockss_debugpanel-0.6.0.dist-info/RECORD,,
