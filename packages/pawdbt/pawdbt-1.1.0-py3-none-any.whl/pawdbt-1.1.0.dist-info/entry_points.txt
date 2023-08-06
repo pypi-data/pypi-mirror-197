@@ -1,0 +1,3 @@
+[console_scripts]
+pawdbt = pawdbt:main_yaml
+
