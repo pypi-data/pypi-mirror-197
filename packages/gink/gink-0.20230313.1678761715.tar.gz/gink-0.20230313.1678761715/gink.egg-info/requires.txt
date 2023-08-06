@@ -1,0 +1,10 @@
+wsproto
+sortedcontainers
+lmdb
+protobuf<=3.20.3
+
+[lint]
+mypy
+
+[test]
+nose2
