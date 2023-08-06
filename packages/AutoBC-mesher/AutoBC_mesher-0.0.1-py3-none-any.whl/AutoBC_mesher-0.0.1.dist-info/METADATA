@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: AutoBC-mesher
+Version: 0.0.1
+Summary: This mesher generate 2d unstructured mesh with boundary condition (BC) given geometry information and BC information.
+Author: Chengrui Sun
+Author-email: chengruisun03@gmail.com
+License: apache 3.0
+Requires: numpy
+Requires: matplotlib
+Requires: scipy
+Requires: pymesh2
+Requires: meshio
+Requires: argparse
+
