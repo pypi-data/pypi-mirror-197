@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+django_chip/__init__.py
+django_chip/settings.py
+django_chip.egg-info/PKG-INFO
+django_chip.egg-info/SOURCES.txt
+django_chip.egg-info/dependency_links.txt
+django_chip.egg-info/not-zip-safe
+django_chip.egg-info/top_level.txt
+django_chip/management/__init__.py
+django_chip/management/commands/__init__.py
+django_chip/management/commands/create_deploy.py
