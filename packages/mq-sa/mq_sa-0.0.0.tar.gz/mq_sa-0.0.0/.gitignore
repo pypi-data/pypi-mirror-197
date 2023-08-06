@@ -1,0 +1,4 @@
+_skbuild
+*.egg-info
+.vscode
+.DS_Store
