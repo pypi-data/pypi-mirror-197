@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: beamlime
+Version: 23.3.0.dev0
+Summary: Live Data Reduction Dashboard
+Project-URL: Documentation, https://github.com/scipp/beamlime#readme
+Project-URL: Bug Tracker, https://github.com/scipp/beamlime/issues
+Project-URL: Source, https://github.com/scipp/beamlime
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# beamlime
+Draft
