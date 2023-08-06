@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "mxlabs-chameleon"
+version = "0.0.0"
+readme = "README.md"
+description = ""
+authors = []
+packages = [{include = "mxlabs_chameleon"}]
+
+[tool.poetry.dependencies]
+python = "^3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
