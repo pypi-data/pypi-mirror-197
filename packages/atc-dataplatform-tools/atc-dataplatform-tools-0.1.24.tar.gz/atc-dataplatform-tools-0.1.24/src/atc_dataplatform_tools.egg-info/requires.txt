@@ -1,0 +1,9 @@
+atc-dataplatform
+pyyaml==6.0
+importlib_metadata
+requests
+dateparser
+pytest
+
+[dev]
+check-manifest
