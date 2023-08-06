@@ -1,0 +1,10 @@
+README.md
+setup.py
+plutis_cli/__init__.py
+plutis_cli/main.py
+plutis_cli.egg-info/PKG-INFO
+plutis_cli.egg-info/SOURCES.txt
+plutis_cli.egg-info/dependency_links.txt
+plutis_cli.egg-info/entry_points.txt
+plutis_cli.egg-info/requires.txt
+plutis_cli.egg-info/top_level.txt
