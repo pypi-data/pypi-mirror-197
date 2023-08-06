@@ -1,0 +1,10 @@
+mmap_ninja/__init__.py,sha256=DITpct-LrdIsTgwx2NgH5Ghx5y8Xgz1YMimy1ZV5RTY,22
+mmap_ninja/base.py,sha256=ueduTNM8skh4bFEA6W7fHCCl6LjkUnI1I19xLrvGnJw,7125
+mmap_ninja/generic.py,sha256=fQp3sB1hu1ZouoS1Yt_Ogp_yQJuWZ8Xxc9N_HS3Q80Y,955
+mmap_ninja/numpy.py,sha256=CoAre9DFKeaWI5YkIg-ZVCISa-0U9IBWbsAiVi2WOTk,8174
+mmap_ninja/ragged.py,sha256=yrEfZtL7f7ZblA6PXUnv9LuQBFqmsLakABDYFQJeH10,6289
+mmap_ninja/string.py,sha256=SGoeviGPcoru6UUHBF4IOuRbYafCo13wO5tqceRHA4c,4333
+mmap_ninja-0.5.4.dist-info/METADATA,sha256=FS0fpYVr-akd1FG9fY3b3CzAnmiMAuO6aKsvUQiNlck,11780
+mmap_ninja-0.5.4.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mmap_ninja-0.5.4.dist-info/top_level.txt,sha256=y8zRRUVfcqWXvQmwYYwZvDFN6vZkRMBmbflRvHWWb88,11
+mmap_ninja-0.5.4.dist-info/RECORD,,
