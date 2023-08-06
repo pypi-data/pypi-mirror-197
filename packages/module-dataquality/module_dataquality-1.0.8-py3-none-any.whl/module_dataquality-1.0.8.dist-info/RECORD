@@ -1,0 +1,7 @@
+dataqualitycheck/__init__.py,sha256=yjaka7oqLp2nU81Idzc5up4WWJSdz9j9YEQvXZ_qgIY,395
+dataqualitycheck/singledatasetqualitycheck.py,sha256=4tDyTGl46TNHiGchfhkkLXkyHedbm1WN2rFVwcT-sZ4,1181
+dataqualitycheck/datasources/localfilesystemdf.py,sha256=zi4mAraI3eEC7GLe1BPUKJWquLA_TssRfg82ql4S3IU,1748
+module_dataquality-1.0.8.dist-info/METADATA,sha256=xHQmQAuFdJZLpJuhspTh6UFTC5OcYAND2mh4y1Mm9T8,11529
+module_dataquality-1.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+module_dataquality-1.0.8.dist-info/top_level.txt,sha256=BEtRiaZEOtnN8zpJKA0J0mn347lNb_X3yQoeGr61pKs,17
+module_dataquality-1.0.8.dist-info/RECORD,,
