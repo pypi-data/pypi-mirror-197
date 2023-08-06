@@ -1,0 +1,2 @@
+[console_scripts]
+tpmstream = tpmstream.__main__:main
