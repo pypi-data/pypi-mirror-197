@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyCoA
+Version: 0.0.3
+Summary: A class implementing Correspondence Analysis in python.
+Project-URL: Homepage, https://github.com/INicolis/pyCoA
+Project-URL: Bug Tracker, https://github.com/INicolis/pyCoA/issues
+Author-email: Ioannis Nicolis <ioannis.nicolis@u-paris.fr>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pyCoA
+A class implementing Correspondence Analysis in python.
