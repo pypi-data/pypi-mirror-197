@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+PVplr_stGNN.egg-info/PKG-INFO
+PVplr_stGNN.egg-info/SOURCES.txt
+PVplr_stGNN.egg-info/dependency_links.txt
+PVplr_stGNN.egg-info/entry_points.txt
+PVplr_stGNN.egg-info/requires.txt
+PVplr_stGNN.egg-info/top_level.txt

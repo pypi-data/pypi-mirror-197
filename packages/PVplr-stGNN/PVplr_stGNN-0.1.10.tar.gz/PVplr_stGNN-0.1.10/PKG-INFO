@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: PVplr_stGNN
+Version: 0.1.10
+Summary: PV Performance Loss Rate Estimation using Spatio-temporal Graph Neural Networks
+Home-page: UNKNOWN
+Author: Yangxin Fan, Xuanji Yu, Raymond Wieser, Yinghui Wu, Roger French
+Author-email: yxf451@case.edu, xxy530@case.edu, rxw497@case.edu, yxw1650@case.edu, rxf131@case.edu
+License: BSD License (BSD-3)
+Platform: any
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# PVplr-stGNN:
+Pvplr-stGNN is a Python 3 package developed by the SDLE Research Center at Case Western Reserve University in Cleveland OH. 
+This repository contains the full source PVplr-stGNN package. The package contains the PV-stGAE for missingness data detection and imputation and PV-DynGNN for PLR estimation.
+
+# Funding Acknowledgements:
+This work was supported by the U.S. Department of Energy’s Office of Energy Efficiency and Renewable Energy (EERE) under Solar Energy Technologies Office (SETO) Agreement no. DE-EE0009353. 
+
+
+# License:
+This work is legally bound by the following software license: BSD-3-Clause 1
+Please see the LICENSE.txt file, in the root of this repository, for further details.
+
+
+

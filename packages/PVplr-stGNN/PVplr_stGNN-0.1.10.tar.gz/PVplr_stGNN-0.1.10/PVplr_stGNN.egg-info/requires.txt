@@ -1,0 +1,13 @@
+happybase
+pyarrow
+pandas
+numpy
+requests
+python-decouple
+hdfs
+paramiko
+
+[dev]
+setuptools
+wheel
+pytest
