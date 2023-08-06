@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+rhotermpredict/__init__.py
+rhotermpredict/algorithm.py
+rhotermpredict.egg-info/PKG-INFO
+rhotermpredict.egg-info/SOURCES.txt
+rhotermpredict.egg-info/dependency_links.txt
+rhotermpredict.egg-info/entry_points.txt
+rhotermpredict.egg-info/requires.txt
+rhotermpredict.egg-info/top_level.txt

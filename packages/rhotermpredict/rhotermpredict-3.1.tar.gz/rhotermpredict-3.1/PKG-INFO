@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rhotermpredict
+Version: 3.1
+Summary: Barrick Lab fork of Salvo 2019 RhoTermPredict
+Home-page: https://github.com/barricklab/RhoTermPredict
+Author: Cameron Roots
+Author-email: croots@utexas.edu
+Project-URL: Bug Tracker, https://github.com/barricklab/RhoTermPredict/issues
+Project-URL: Source Code, https://github.com/barricklab/RhoTermPredict
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+License-File: LICENSE
