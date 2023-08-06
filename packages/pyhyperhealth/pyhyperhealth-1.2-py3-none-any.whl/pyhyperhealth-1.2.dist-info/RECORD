@@ -1,0 +1,11 @@
+pyhyperhealth/__init__.py,sha256=Il5Q9ATdX8yXqVxtP_nYqUhExzxPC_qk_WXQ_4h0exg,16
+pyhyperhealth/adminapi.py,sha256=up8AhoOB-3Ip2quOgE_E2m_wCwUm9SxY9G3BtHuHjgQ,7060
+pyhyperhealth/api.py,sha256=qXoUjkQnsAk60xQui6o_BBVeMwF-ZlksCncv0KHWrac,6916
+pyhyperhealth/keygen.py,sha256=cmdlLkY_tE9eb5Qikv_TxiIzzGC9EvrruYv9oLUrVUo,581
+pyhyperhealth/main.py,sha256=px1I6x9v2nBQT1x6eyh2P5Czfui0T1nvQ2E3fn2D42w,10690
+pyhyperhealth/network.sh,sha256=ipHNGIVDslfrWQY8l-E6ormQV3mzIqth7VwHG-tk3XM,2109
+pyhyperhealth-1.2.dist-info/METADATA,sha256=VjvAPgbhjVUUh4JPsDdDkeZzZdIJvwBgvb9ZKTEuudA,332
+pyhyperhealth-1.2.dist-info/RECORD,,
+pyhyperhealth-1.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+pyhyperhealth-1.2.dist-info/metadata.json,sha256=Oqlz-FVXthd3D5Y6u0b3A7Cu_VLBx_ljJF9sFWxeQtY,511
+pyhyperhealth-1.2.dist-info/top_level.txt,sha256=wz_GJkckY1biqAbHy2qGIkSm4Qc4P4XhsNAiqQMTJUM,14
