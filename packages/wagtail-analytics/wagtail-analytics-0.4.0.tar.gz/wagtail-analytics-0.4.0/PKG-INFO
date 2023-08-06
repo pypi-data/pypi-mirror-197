@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: wagtail-analytics
+Version: 0.4.0
+Author: Moori
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: test
