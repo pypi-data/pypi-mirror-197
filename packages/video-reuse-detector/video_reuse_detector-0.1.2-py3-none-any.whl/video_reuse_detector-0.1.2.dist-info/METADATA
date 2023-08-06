@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: video-reuse-detector
+Version: 0.1.2
+Summary: The video reuse detector
+License: MIT
+Author: TomasSkotare
+Author-email: tomas.skotare@umu.se
+Requires-Python: >=3.7,<3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Pillow
+Requires-Dist: Wand
+Requires-Dist: faiss-cpu
+Requires-Dist: ffmpeg-python
+Requires-Dist: keract
+Requires-Dist: keras
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: tensorflow (>=2.10,<2.11)
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# Abstract
+The video reuse detector (VRD)
+
+A library for analyzing video material and finding reuse.
+
+This project can also be found on [PyPi](https://pypi.org/project/video-reuse-detector/) and can be installed using for example pip:
+
+    pip install video-reuse-detector
+
+# Requirements
+As a prerequisite for this package, the following must be installed in your system:
+
+* [ffmpeg](https://ffmpeg.org/)
+* [ImageMagick](https://imagemagick.org/)
+
+
+# Licenses
+MIT License
+
