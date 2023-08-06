@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ol_gpt"
+version = "0.0.5"
+description = "Command line tool used to chat with GPT3.5. You can either use search mode or chat mode."
+
+dependencies = [
+    "openai",
+    'prompt-toolkit',
+    'python-dotenv',
+    'rich',
+]
+
+[metadata]
+author = "Huzi Cheng"
+long_description = "README.md"
+long_description_content_type = "text/markdown"
+
+[project.scripts]
+olgpt = "ol_gpt:launch_olgpt"

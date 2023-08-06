@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: ol_gpt
+Version: 0.0.5
+Summary: Command line tool used to chat with GPT3.5. You can either use search mode or chat mode.
+License-File: LICENSE
