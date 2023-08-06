@@ -1,0 +1,16 @@
+hydrobotdbc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydrobotdbc/client.py,sha256=-Jw5JVOTQizF7wbDghOVBgy3XE2_fwwINNEOafuqzFI,3240
+hydrobotdbc/models/__init__.py,sha256=je5gitsseqq-qAKtqLC1MG9QHVRembXm1fRB-JDN7JI,301
+hydrobotdbc/models/collection.py,sha256=8bWIni8fUnMrY6aqDq8RZ0eXw8WcSa11mJaQwK0AXQ0,302
+hydrobotdbc/models/daily_claim.py,sha256=IqyOBScRFgYWyHUpyL6voUpn6iu57ZgcBTv34m2jocw,1310
+hydrobotdbc/models/poll.py,sha256=C4nZAdFDutPEvMDgddcOfMdk6LLFGA7KnLw2HjfV16k,1468
+hydrobotdbc/models/user.py,sha256=mEJukQwJOOznQ1agQnmrNfl20Y6DpIK8WTrsti_-Zy4,1887
+hydrobotdbc/models/user_birthday.py,sha256=PPXTVvGwfFwJBVY_V04MFV6SvbmBNruKrfviDt7eq_M,1378
+hydrobotdbc/models/user_session.py,sha256=hXZQlDTHYvMzKrHET27ZGuoPDd8rM-R55dGnDQUsl5Y,1537
+hydrobotdbc/models/user_voicestate.py,sha256=fEW1hVGv3zmzwpY417JlozuvrcHPfyz2sP18MW_O9Tw,1372
+hydrobotdbc/models/user_wallet.py,sha256=l5wkxt1kME2ykKTqnwT0rq5ZWj0uiQcPw3LFq5NGmHA,1453
+hydrobotdbc/models/wallet.py,sha256=P-TLnoRbXAux5ajrcdBu2BnhbEShIl8jp5O7upV-g_o,1513
+hydrobotdbc-0.0.11.dist-info/METADATA,sha256=cVMiJhOgkPMIiGkswoBRvu0psJc7TbMP9uq1F7jORHo,465
+hydrobotdbc-0.0.11.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hydrobotdbc-0.0.11.dist-info/top_level.txt,sha256=1fpGJNFT2wdzyNB1FsCBhNuGF4LneCRoH8b7VJ_pYkI,12
+hydrobotdbc-0.0.11.dist-info/RECORD,,
