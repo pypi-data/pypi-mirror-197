@@ -1,0 +1,2 @@
+[console_scripts]
+lafhterlearn = lafhterlearn.cmd_api:execute_command
