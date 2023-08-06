@@ -1,0 +1,8 @@
+setup.py
+src/extraction/__init__.py
+src/extraction/extraction.py
+src/mlopspython_extraction.egg-info/PKG-INFO
+src/mlopspython_extraction.egg-info/SOURCES.txt
+src/mlopspython_extraction.egg-info/dependency_links.txt
+src/mlopspython_extraction.egg-info/requires.txt
+src/mlopspython_extraction.egg-info/top_level.txt
