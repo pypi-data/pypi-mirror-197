@@ -1,0 +1,2 @@
+Version: 1.3.4
+Arguments: ['C:\\Users\\inivation\\AppData\\Local\\Temp\\cibw-run-tx6ewrzx\\cp39-win32\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\inivation\\AppData\\Local\\Temp\\cibw-run-tx6ewrzx\\cp39-win32\\repaired_wheel', 'C:\\Users\\inivation\\AppData\\Local\\Temp\\cibw-run-tx6ewrzx\\cp39-win32\\built_wheel\\dv_processing-1.7.8-cp39-cp39-win32.whl']
