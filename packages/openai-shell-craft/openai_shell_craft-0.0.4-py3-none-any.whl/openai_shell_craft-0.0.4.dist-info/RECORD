@@ -1,0 +1,16 @@
+shell_craft/__init__.py,sha256=WOq7zQ6XlGQH0tjGamZ9kbEGjiGdrwn3h63lhnUIuV0,1151
+shell_craft/__main__.py,sha256=hu2Xfibd22TvHWYHxE4p3g4q8kNnL1VtPBmyXkmIKS8,1171
+shell_craft/cli.py,sha256=xDOgFy3qYMIsDBX68SQ8B3fudX0JW_4H_SYZd9RCcGk,1706
+shell_craft/service.py,sha256=8vzESlE16R4bRM3zxL13hTsVmscuDo4nTxzgBoJJ66M,2396
+shell_craft/factories/__init__.py,sha256=_tZVu9i_EjhKuHn7eWbGExTNLbJ6IIc6uiREQD9y-zg,1162
+shell_craft/factories/prompt.py,sha256=6khg9r38RNc9uMxJe1v3E45S-rY8z4jOFqAd05ZV3lk,1959
+shell_craft/prompts/__init__.py,sha256=pWsDxRgJLulLrVH3i-DVGNWtUtLIpnM9uCXHxVnXQQ8,1270
+shell_craft/prompts/bash.py,sha256=lBQMDxF78YMxN3ssL2PFgRSq0BhfZXw3xW82RUek0Z0,1351
+shell_craft/prompts/powershell.py,sha256=KyIIWsHczsLLmmq9sLR2kXWhMeBSGiydeXYYLBe-PH0,1374
+shell_craft/prompts/prompt.py,sha256=W-LCw2CJHMZia_0-tig33ZvEKQ4CJhErNpTXShYYMLY,2460
+openai_shell_craft-0.0.4.dist-info/LICENSE,sha256=Gu3VJV8ox0lEDGZuMMHEYPG81OkKYRIqXsZsTafMzMg,1061
+openai_shell_craft-0.0.4.dist-info/METADATA,sha256=ieBrMVEqS92es9OZ2j79sZGWDQlfmzH9yrfcdAKVbRY,2813
+openai_shell_craft-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+openai_shell_craft-0.0.4.dist-info/entry_points.txt,sha256=HNPT77XIoe6QcoWtpZkKD_WhLbnTIER15tVg1NoJDW8,53
+openai_shell_craft-0.0.4.dist-info/top_level.txt,sha256=i8xfg37QQnMxLb0DXAqwaV3m68at79mrcdAeDnWvLmY,12
+openai_shell_craft-0.0.4.dist-info/RECORD,,
