@@ -1,0 +1,3 @@
+[console_scripts]
+extract-tex-env=extract_tex_env.main:main
+
