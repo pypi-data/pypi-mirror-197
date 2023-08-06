@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: limetr
+Version: 0.0.6
+Home-page: https://github.com/zhengp0/limetr
+Author: IHME Math Sciences
+Author-email: zhengp@uw.edu
+License: BSD 2-Clause License
+Description-Content-Type: text/x-rst
+Provides-Extra: doc
+Provides-Extra: dev
+License-File: LICENSE
+
+.. image:: https://github.com/zhengp0/limetr/workflows/build/badge.svg
+    :target: https://github.com/zhengp0/limetr/actions
+
+Linear Mixed Effects Model with Trimming
+========================================
