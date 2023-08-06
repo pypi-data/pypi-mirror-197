@@ -1,0 +1,13 @@
+titiler/extensions/__init__.py,sha256=kg8ZAa0e9ivMUbIzo88fTVZyQa8TDYzMrBl21H2VIZI,244
+titiler/extensions/cogeo.py,sha256=qTBqfFu2L8XQaI94hsyIRYfw42gWIe2s1Eu7V7F471M,1011
+titiler/extensions/stac.py,sha256=hrioBxwDX17UpLovWT0ESNTPMKApgmGtGBJT7pvmgYo,5274
+titiler/extensions/templates/cog_index.html,sha256=F-H9TeWtOC7bkoUkeDlVIUyE7ltvKT8xFjklNABxQlU,29081
+titiler/extensions/templates/stac_index.html,sha256=3KVdX8LJvnQfFZP84QTxXy1Pwn52ic-G0MOVIqBLOnc,33552
+titiler/extensions/templates/wms_1.0.0.xml,sha256=2aPYCoF97heK9iIUDq1gRz-_RLgkrJUypaU3vyutArk,2231
+titiler/extensions/templates/wms_1.1.1.xml,sha256=XBoo6SPzuQ7-dEjfhcBRak7BPMCFNJOrkkpWMncQTQc,2715
+titiler/extensions/templates/wms_1.3.0.xml,sha256=oBXMITXPrjWjH7rB9jChCfHoGj9AShzsDbPRX4V3yuk,3452
+titiler/extensions/viewer.py,sha256=hRFfx-7Qo6pZ-1W4KPjpCl1INJv4iTRCI4w4S6hr_7Y,2320
+titiler/extensions/wms.py,sha256=T1SSpyotL93nekOmwVcE1Jr58J2TlRT54EBsKl-XXnc,20973
+titiler.extensions-0.11.3.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+titiler.extensions-0.11.3.dist-info/METADATA,sha256=pNEO5cv-tCE2KwmHt239xqp1pg69jO0JpD0ueJrDsu0,6183
+titiler.extensions-0.11.3.dist-info/RECORD,,
