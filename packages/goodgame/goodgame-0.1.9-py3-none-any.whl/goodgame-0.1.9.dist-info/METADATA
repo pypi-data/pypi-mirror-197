@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: goodgame
+Version: 0.1.9
+Summary: A simple and nice pysdl2 wrapper.
+Home-page: https://github.com/Pyxelsuft/goodgame
+Author: Pixelsuft
+License: MIT
+Project-URL: Readme, https://github.com/Pyxelsuft/goodgame/blob/main/README.md
+Project-URL: Documentation, https://github.com/Pyxelsuft/goodgame/tree/main/docs
+Project-URL: Issue tracker, https://github.com/Pyxelsuft/goodgame/issues
+Keywords: goodgame
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Software Development
+Classifier: Operating System :: Android
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: iOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: pysdl2
+
+# GoodGame
+A Simple API for making games
+# Installing
+```commandline
+python -m pip install goodgame
+```
+Note, you may use `python3` instead of `python`
+# Documentation
+ - See [here](https://github.com/Pyxelsuft/goodgame/tree/main/docs)
+# Examples
+ - Test [here](main.py) <br />
+ - Also [here](https://github.com/PixelsuftGames/good-examples)
+ - Also [here](https://youtu.be/dQw4w9WgXcQ)
+# TODO
+ - See [here](https://github.com/Pyxelsuft/goodgame/search?q=TODO&type=)
