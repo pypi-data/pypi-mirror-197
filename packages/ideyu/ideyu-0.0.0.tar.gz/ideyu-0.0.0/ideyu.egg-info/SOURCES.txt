@@ -1,0 +1,5 @@
+setup.py
+ideyu.egg-info/PKG-INFO
+ideyu.egg-info/SOURCES.txt
+ideyu.egg-info/dependency_links.txt
+ideyu.egg-info/top_level.txt
