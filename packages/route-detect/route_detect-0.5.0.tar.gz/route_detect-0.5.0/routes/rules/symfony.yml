@@ -1,0 +1,57 @@
+rules:
+  - id: symfony-route-php
+    pattern-either:
+      - pattern: Symfony\Component\Routing\Annotation\Route($PATH, ...)
+      - pattern: new Symfony\Component\Routing\Route($PATH, ...)
+      - patterns:
+          - pattern: $ROUTES->add($NAME, $PATH, ...);
+          - pattern-inside: function (Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator $ROUTES) { ... }
+    message: Found Symfony route
+    metadata:
+      references:
+        - https://symfony.com/doc/current/routing.html
+        - https://symfony.com/doc/current/create_framework/routing.html
+        - https://symfony.com/doc/current/security.html
+      route-detect:
+        fill: grey
+    languages: [php]
+    severity: INFO
+  - id: symfony-route-yaml
+    pattern-either:
+      - pattern: |
+          $NAME:
+            ...
+            path: $PATH
+            ...
+            controller: $CONTROLLER
+            ...
+      - pattern: |
+          $NAME:
+            ...
+            path: $PATH
+            ...
+            defaults:
+              ...
+              _controller: $CONTROLLER
+              ...
+            ...
+    message: Found Symfony route
+    metadata:
+      references:
+        - https://symfony.com/doc/current/routing.html
+        - https://symfony.com/doc/current/create_framework/routing.html
+        - https://symfony.com/doc/current/security.html
+      route-detect:
+        fill: grey
+    languages: [yaml]
+    severity: INFO
+  - id: symfony-route-annotation
+    pattern: "@Route(...)"
+    message: Found Symfony route
+    metadata:
+      references:
+        - https://symfony.com/doc/4.1/routing.html
+      route-detect:
+        fill: grey
+    languages: [generic]
+    severity: INFO
