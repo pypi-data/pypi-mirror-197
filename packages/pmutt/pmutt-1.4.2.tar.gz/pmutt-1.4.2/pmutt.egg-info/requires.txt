@@ -1,0 +1,12 @@
+ASE>=3.22.1
+matplotlib>=3.6.2
+numpy>=1.21.5
+scipy>=1.9.3
+pandas>=1.4.4
+pymongo>=4.2.0
+dnspython>=2.2.1
+networkx>=2.8.4
+pygal>=3.0.0
+xlrd>=2.0.1
+more_itertools>=8.14.0
+PyYAML>=6.0.0
