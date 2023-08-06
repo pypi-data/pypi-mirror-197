@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: omnisolver-pt
+Version: 0.0.1
+Summary: Parallel-tempering solver compatible with omnisolver.
+Author-email: Konrad Jałowiecki <dexter2206@gmail.com>, Łukasz Pawela <lukasz.pawela@gmail.com>
+License: Apache-2.0
+Project-URL: repository, https://github.com/euro-hpc-pl/omnisolver-pt
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: docs
+License-File: LICENSE
+
+# omnisolver-pt

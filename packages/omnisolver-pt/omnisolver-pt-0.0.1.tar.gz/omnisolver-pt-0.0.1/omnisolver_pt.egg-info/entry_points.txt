@@ -1,0 +1,2 @@
+[omnisolver]
+pt = omnisolver.pt
