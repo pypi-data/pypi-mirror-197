@@ -1,0 +1,9 @@
+svgpathtools
+xml
+numpy
+matplotlib
+obplib
+copy
+math
+pyvista
+svgwrite

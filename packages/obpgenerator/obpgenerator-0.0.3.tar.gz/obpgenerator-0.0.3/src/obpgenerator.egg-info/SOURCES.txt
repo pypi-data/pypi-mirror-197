@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+src/obpgenerator.egg-info/PKG-INFO
+src/obpgenerator.egg-info/SOURCES.txt
+src/obpgenerator.egg-info/dependency_links.txt
+src/obpgenerator.egg-info/requires.txt
+src/obpgenerator.egg-info/top_level.txt
