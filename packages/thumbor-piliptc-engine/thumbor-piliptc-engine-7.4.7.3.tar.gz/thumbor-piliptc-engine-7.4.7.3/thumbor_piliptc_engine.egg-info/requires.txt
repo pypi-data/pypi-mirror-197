@@ -1,0 +1,14 @@
+thumbor==7.4.7
+pillow>=9.0
+JpegIPTC>=1.4
+
+[tests]
+black
+colorama
+flake8
+isort
+pytest
+pytest-cov
+pytest-mock
+twine
+wheel
