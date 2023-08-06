@@ -1,0 +1,8 @@
+setup.py
+ShapeChecker/ShapeCheck.py
+ShapeChecker/__init__.py
+ShapeChecker.egg-info/PKG-INFO
+ShapeChecker.egg-info/SOURCES.txt
+ShapeChecker.egg-info/dependency_links.txt
+ShapeChecker.egg-info/requires.txt
+ShapeChecker.egg-info/top_level.txt
