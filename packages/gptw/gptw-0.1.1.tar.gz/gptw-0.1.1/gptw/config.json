@@ -1,0 +1,40 @@
+{
+    "version": "v1.0.0",
+    "cmds": {
+        "e": {
+            "prompt": "Please translate the following text into English, and polish it to make it sound more natural and in line with native speaker conventions. Please refrain from providing any additional output beyond the translated text",
+            "_comment": "Translate into English",
+            "example": "ww e 你好"
+        },
+        "c": {
+            "prompt": "Please translate the following text into Chinese, and polish it to make it sound more natural and in line with native speaker conventions. Please refrain from providing any additional output beyond the translated text",
+            "_comment": "Translate into Chinese",
+            "example": "ww c how r u"
+        },
+        "p": {
+            "prompt": "Please proofread the following sentence for grammar, tense, inappropriate word choice or phrasing, and make it sound more natural and in line with native speaker conventions. Please provide a brief explanation for the changes you made",
+            "_comment": "Polish sentence",
+            "example": "ww p hwo are you"
+        },
+        "a": {
+            "prompt": "",
+            "_comment": "Just ask ChatGPT directly",
+            "example": "ww a who are you"
+        },
+        "d": {
+            "prompt": "Proofread the document below, and correct any issues with grammar, tense, inappropriate word usage, etc. After understanding the content of the document, supplement it appropriately, and then directly output the modified document. Do not provide any additional output beyond this.",
+            "_comment": "Polish document",
+            "example": "ww d -f README.md"
+        },
+        "r": {
+            "prompt": "Act as a code reviewer. Please check if the following issues are listed in the patch below, or as a professional code reviewer, do you have any other suggestions. 1.Is the commit message clear and accurate? Should changes be split into multiple commits?\n- Are there issues with blank lines, spacing, or syntax errors in the code?2.Do function names follow conventions, and are new concepts explained with comments?3.Are comments clear and concise, without unnecessary information?4.Is the design easy to understand, and could design patterns like Singleton be used to improve it?5.Are there potential security risks, and can the code be made more efficient or memory-friendly?6.Are there simpler ways to implement logic, and are there sufficient comments to explain any complex or unusual code?7.Is there any possibility to improve the memory efficiency, execution efficiency, ease of understanding, readability, maintainability, error handling and simplify the logic of the code? If so, please provide detailed suggestionsIf you find any issues in the code or have any suggestions, please provide a detailed description of the code context before and after the problem, as well as feasible solutions. If there are no issues, please output no issues found",
+            "_comment": "Code Review",
+            "example": "ww r -f gptw/gptw.py"
+        },
+        "dic": {
+            "prompt": "Please explain the meanings of the following English words, providing both English and Chinese versions of the explanations, along with an English example sentence and the correct pronunciation. Please correct any spelling errors in the words. Please refrain from providing any additional output beyond the translated text",
+            "_comment": "Dictionary",
+            "example": "ww dic dictionary"
+        }
+    }
+}
