@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: basexpy
+Version: 0.1.0
+Summary: Fast Base X encoder/decoder
+Author-email: Zhiyuan Chen <this@zyc.ai>
+Maintainer-email: Zhiyuan Chen <this@zyc.ai>
+License: Apache-2.0 OR MIT OR GPL-2.0-or-later OR BSD-2-clause OR BSD-3-clause OR BSD-4-clause
+        
+Project-URL: repository, https://github.com/ZhiyuanChen/basex
+Keywords: BaseX,BASE58,BASE62,BASE64
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
