@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: moustovtkwidgets
+Version: 0.5.0
+Summary: Series of OO tkinter widgets
+Home-page: https://github.com/Moustov/mTk_widgets
+Author: Christophe Moustier
+License: BSD 3-Clause License
+Keywords: UI,tkinter,OO
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Utilities
+
+Overriden tkinter widgets
