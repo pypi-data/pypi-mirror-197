@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+pyproc/__init__.py
+pyproc/process.py
+python_pyproc.egg-info/PKG-INFO
+python_pyproc.egg-info/SOURCES.txt
+python_pyproc.egg-info/dependency_links.txt
+python_pyproc.egg-info/requires.txt
+python_pyproc.egg-info/top_level.txt
