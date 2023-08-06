@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+rgfrosh/__init__.py
+rgfrosh/constants.py
+rgfrosh/interface.py
+rgfrosh/shock.py
+rgfrosh.egg-info/PKG-INFO
+rgfrosh.egg-info/SOURCES.txt
+rgfrosh.egg-info/dependency_links.txt
+rgfrosh.egg-info/requires.txt
+rgfrosh.egg-info/top_level.txt
+test/test_ideal_shock.py
+test/test_real_gas.py
