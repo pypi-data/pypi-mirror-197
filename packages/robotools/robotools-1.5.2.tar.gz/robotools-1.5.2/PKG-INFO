@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: robotools
+Version: 1.5.2
+Summary: Pythonic in-silico liquid handling and creation of Tecan FreedomEVO worklists.
+Home-page: https://github.com/jubiotech/robotools
+Author: Michael Osthege
+Author-email: m.osthege@fz-juelich.de
+License: GNU Affero General Public License v3
+Download-URL: https://github.com/jubiotech/robotools/tarball/1.5.2
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
