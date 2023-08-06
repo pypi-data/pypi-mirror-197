@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: whatif
+Version: 0.0.0
+Summary: A causal Inference package for Python
+Keywords: causal inference
+Author-email: Alireza Zamanian <a.zamanian1991@gmail.com>
+Maintainer-email: Alireza Zamanian <a.zamanian1991@gmail.com>
+Requires-Python: >=3.5
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Dist: sphinx ; extra == "doc"
+Requires-Dist: pytest ; extra == "test"
+Provides-Extra: doc
+Provides-Extra: test
