@@ -1,0 +1,11 @@
+commandman/__init__.py,sha256=up-zPXH7fMPh4hSuOEhkWLEZYaqAUWMi2Edv2GGW4h0,355
+commandman/app.py,sha256=OIWocV6vngoTvoQjqbSX6eHItMBAXtc2JXR9TIXpk6w,1079
+commandman/commander.py,sha256=luv3x30tGLlY3aNoOx5ARBlIjoFx2YXYcJW2M8p6Qsk,4348
+commandman/config.py,sha256=nfon3G9xxCGZJ5VJw2GlQsnlAHk-wTQxc67ZoadUAug,1042
+commandman/manager.py,sha256=l7Ydp3epCcxkxuriOq82RaivUVJOLMflYdf86v8ZVNY,660
+commandman-0.4.2.dist-info/LICENSE,sha256=Gn9z1ucnwNsv4LVg-2BPLEX3SuLcVGQUGlJmJmBGfuk,1524
+commandman-0.4.2.dist-info/METADATA,sha256=TlMZIOpmVukCY8M_e2NYQzXcBBlYuPGkj0gjnVQK3PY,8454
+commandman-0.4.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+commandman-0.4.2.dist-info/entry_points.txt,sha256=CI8WGJwMSTd8Ur7hdFhLARlIu_SdozKLmshbwLEfPws,51
+commandman-0.4.2.dist-info/top_level.txt,sha256=XwlAMG_MD0am_Hl3oU67LZ0HnbQaVnDWIguHmPIBlzU,11
+commandman-0.4.2.dist-info/RECORD,,
