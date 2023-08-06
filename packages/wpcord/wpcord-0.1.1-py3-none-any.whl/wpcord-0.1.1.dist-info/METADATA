@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: wpcord
+Version: 0.1.1
+Summary: A package for interacting with Discord API and Discord Gateway, also for making Discord Bots
+Author: Willious Dark
+Author-email: willious.dark@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+Example DiscordAPIClient:
+```py
+import asyncio
+import wpcord
+
+async def main():
+    async with wpcord.DiscordAPIClient("{bot_token}") as client:
+        await client.send_message("{channel_id}", "Hello world!")
+
+asyncio.run(main())
+```

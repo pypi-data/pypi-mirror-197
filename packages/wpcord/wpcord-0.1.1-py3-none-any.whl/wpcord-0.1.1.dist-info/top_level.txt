@@ -1,0 +1,3 @@
+wpcord
+wpcord/api
+wpcord/wp
