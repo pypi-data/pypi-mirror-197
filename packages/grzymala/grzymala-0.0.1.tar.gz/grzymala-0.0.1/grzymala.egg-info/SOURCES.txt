@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+grzymala/__init__.py
+grzymala/hello.py
+grzymala.egg-info/PKG-INFO
+grzymala.egg-info/SOURCES.txt
+grzymala.egg-info/dependency_links.txt
+grzymala.egg-info/top_level.txt

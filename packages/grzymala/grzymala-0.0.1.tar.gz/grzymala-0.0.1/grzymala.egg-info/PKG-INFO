@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: grzymala
+Version: 0.0.1
+Summary: Package for solving geodesy problems
+Author: geodeta
+Author-email: jte22466@nezid.com
+Keywords: python,geodesy,forward problem,inverse problem,coordinates,hirvonen
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A package that allows to solve many common geodesic problems.
