@@ -1,0 +1,7 @@
+coverage
+scikit-learn>=1.0
+numpy
+pandas
+scipy
+statsmodels
+matplotlib
