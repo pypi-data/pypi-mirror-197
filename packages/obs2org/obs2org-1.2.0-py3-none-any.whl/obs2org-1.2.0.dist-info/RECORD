@@ -1,0 +1,10 @@
+obs2org/__init__.py,sha256=d50dlrPo230zwYN1hFT1XpmOqjYXDek_sU-OaAhRKKc,344
+obs2org/__main__.py,sha256=zsjPC0L1GbxCNKIlpt3HUJ5OIIy58W8_terHIyqX3qE,883
+obs2org/convert.py,sha256=kDmMDx2YMVaWQxGkzkw5jBZooNBwgKOFLt5nEeb9NUQ,4147
+obs2org/main.py,sha256=HApnn36AMzSp7H_iC3cUcYMYBxGCVWu8dhRz4oq1k70,13070
+obs2org/parse_org_mode.py,sha256=NcavOmGq_gDQWNM7fX3dqcgI_Sw38W7cAGloLQNnFVE,12984
+obs2org-1.2.0.dist-info/LICENSE,sha256=0b_Hp0mVCSS9XSfe5hCsiTP5a63BSndL55bphrnc06o,32423
+obs2org-1.2.0.dist-info/METADATA,sha256=Pw_9JdI-oTyxNqLqRVNWhaAeP0TV1Vl7HDp9N52qFgA,13654
+obs2org-1.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+obs2org-1.2.0.dist-info/top_level.txt,sha256=sQiMuIwTj7Zdo9nLW4EBq-pUtTLaO9M2woq9XazFIW8,8
+obs2org-1.2.0.dist-info/RECORD,,
