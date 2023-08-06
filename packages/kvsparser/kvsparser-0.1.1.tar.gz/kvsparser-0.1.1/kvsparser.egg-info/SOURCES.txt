@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+kvsparser.egg-info/PKG-INFO
+kvsparser.egg-info/SOURCES.txt
+kvsparser.egg-info/dependency_links.txt
+kvsparser.egg-info/requires.txt
+kvsparser.egg-info/top_level.txt
+src/__init__.py
+src/kvsparser.py
+tests/test_kvsparser.py
