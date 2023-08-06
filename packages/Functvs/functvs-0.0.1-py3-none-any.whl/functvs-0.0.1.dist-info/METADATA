@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: Functvs
+Version: 0.0.1
+Summary: Advanced Open-source Mathematics lib
+Project-URL: Homepage, https://github.com/shimon-d/functvs
+Project-URL: Bug Tracker, https://github.com/shimon-d/functvs/issues
+Author-email: shimon-d <sdegli@proton.me>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Functvs
+This is an open-source advanced mathematics library
