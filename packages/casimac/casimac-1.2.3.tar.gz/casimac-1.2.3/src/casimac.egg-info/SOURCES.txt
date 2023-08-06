@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+src/casimac/__init__.py
+src/casimac/casimac.py
+src/casimac.egg-info/PKG-INFO
+src/casimac.egg-info/SOURCES.txt
+src/casimac.egg-info/dependency_links.txt
+src/casimac.egg-info/requires.txt
+src/casimac.egg-info/top_level.txt
