@@ -1,0 +1,14 @@
+tpds/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+tpds/schema/__init__.py,sha256=uZ0gymwa0zuYS0ob_L6-xCk85szM-VROoW4yhT9YkjQ,191
+tpds/schema/data/cryptoauth/ECC204_TA010_Config_1.0.xsd,sha256=vRjWwh45fZknJ0volkN6uwia5-jNibJ03dyCJh1oBMI,82303
+tpds/schema/data/generic/Provisioning_Config_1.0.xsd,sha256=hvkzKD2xWossdONMPA4WiqVDdClBFwwv0PUC7vRbaBA,47350
+tpds/schema/data/trustanchor/TA100_Config_1.0.xsd,sha256=wvb3Zt8PLZR9u_WAO7l-TaGFSqNKRaZIRV9E8MYPui0,153562
+tpds/schema/data/trustanchor/TA100_Config_1.1.xsd,sha256=g-S9F_QSX5_l9BQtkZP2jbflV9g5i3Sz0gRM2lncN7o,154890
+tpds/schema/models/__init__.py,sha256=9m_lNGS0sBv6lviO7jEyU6nsgEEjXIPlVwX_BojzQAE,7200
+tpds/schema/models/ecc204_ta010_config_1_0.py,sha256=Lj3Qr-xX2RYmzU9zL-BFxNX0B_C_Jsq83WbMTPnPImc,113750
+tpds/schema/models/ta100_config_1_1.py,sha256=gwfBL1nKR_xtPqsdeSi9SQU3CymGYdvRgxsnE88FLEo,199850
+tpds_schema-1.0.1.dist-info/LICENSE,sha256=F_itoJVw8BueLDyZXyIPzgH_thxrjAGZ9vasLzVc19I,1322
+tpds_schema-1.0.1.dist-info/METADATA,sha256=FNp_CQgQaV3JYl4nhjFMoQZgC9fJaHMgUn4opKg7NU0,2351
+tpds_schema-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tpds_schema-1.0.1.dist-info/top_level.txt,sha256=Tl4GsItOlkTwS5kMrk7oOjlZsRztkeFRTneAJ5ZBOjQ,5
+tpds_schema-1.0.1.dist-info/RECORD,,
