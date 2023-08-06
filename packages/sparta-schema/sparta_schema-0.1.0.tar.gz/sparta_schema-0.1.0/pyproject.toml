@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "sparta-schema"
+version = "0.1.0"
+description = ""
+authors = ["alexander.rembridge <alexander.rembridge@spartacommodities.com>"]
+readme = "README.md"
+packages = [{include = "sparta_schema", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.6"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+pydantic-factories = "^1.17.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
