@@ -1,0 +1,6 @@
+flask>=2.2
+requests>=2.9.2
+pygments
+
+[async]
+flask[async]
