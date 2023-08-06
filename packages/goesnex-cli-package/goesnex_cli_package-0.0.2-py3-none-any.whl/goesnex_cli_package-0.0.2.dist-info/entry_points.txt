@@ -1,0 +1,3 @@
+[console_scripts] 
+    goesnex_cli=goesnex_cli_package.main:app
+    

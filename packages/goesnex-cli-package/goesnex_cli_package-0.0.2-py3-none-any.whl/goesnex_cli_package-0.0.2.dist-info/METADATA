@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: goesnex-cli-package
+Version: 0.0.2
+Summary: Package to create GOESNEX cli
+Home-page: UNKNOWN
+Author: Vikash Singh
+Author-email: singh.vikas@northeastern.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: typer
+Requires-Dist: boto3
+Requires-Dist: python-dotenv
+Requires-Dist: pandas
+Requires-Dist: bcrypt
+
+UNKNOWN
+
