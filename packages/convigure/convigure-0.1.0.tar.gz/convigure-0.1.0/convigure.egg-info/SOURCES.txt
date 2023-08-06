@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+convigure/__init__.py
+convigure/conf.py
+convigure.egg-info/PKG-INFO
+convigure.egg-info/SOURCES.txt
+convigure.egg-info/dependency_links.txt
+convigure.egg-info/requires.txt
+convigure.egg-info/top_level.txt
