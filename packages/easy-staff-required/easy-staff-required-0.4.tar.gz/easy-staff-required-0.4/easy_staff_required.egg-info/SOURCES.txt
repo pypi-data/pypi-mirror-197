@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+easy_staff_required/__init__.py
+easy_staff_required/decorators.py
+easy_staff_required.egg-info/PKG-INFO
+easy_staff_required.egg-info/SOURCES.txt
+easy_staff_required.egg-info/dependency_links.txt
+easy_staff_required.egg-info/requires.txt
+easy_staff_required.egg-info/top_level.txt
