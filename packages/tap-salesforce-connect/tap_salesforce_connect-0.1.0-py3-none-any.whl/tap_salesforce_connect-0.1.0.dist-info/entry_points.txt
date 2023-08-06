@@ -1,0 +1,3 @@
+[console_scripts]
+tap-salesforce-connect=tap_salesforce_connect.tap:TapSalesforceConnect.cli
+

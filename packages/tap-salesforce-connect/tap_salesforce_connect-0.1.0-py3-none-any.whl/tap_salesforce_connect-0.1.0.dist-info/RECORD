@@ -1,0 +1,10 @@
+tap_salesforce_connect/__init__.py,sha256=dtbs-cwuw47EC7607wpsDJ0takP-YdLS6sxysXZf8uA,33
+tap_salesforce_connect/auth.py,sha256=NoUJZNx3qYxCpNur14wOPSZFAJfR2LERaoLcf9QtdW0,1321
+tap_salesforce_connect/client.py,sha256=kFFRY6f4S2Oet26nAaSz0HQysPJUJtZojlIuAchBx70,3409
+tap_salesforce_connect/streams.py,sha256=z3_O3XUFRO5ShzJnWQ1CF0PttroFHEv1sqAPhW_DUvw,6855
+tap_salesforce_connect/tap.py,sha256=IFU9AWMRD_haZhLlNmET5ByDIEyl9CjuFNypfjFj8AQ,1941
+tap_salesforce_connect-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tap_salesforce_connect-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tap_salesforce_connect-0.1.0.dist-info/entry_points.txt,sha256=QexHw0WFwZ7lq2RuilX7Bd0kSd9NIi0IKLBHdbDd9CA,94
+tap_salesforce_connect-0.1.0.dist-info/METADATA,sha256=3KQecXpVXTVntTVKQS6np8G10cALAoCFQG_9cIAb3R0,4545
+tap_salesforce_connect-0.1.0.dist-info/RECORD,,
