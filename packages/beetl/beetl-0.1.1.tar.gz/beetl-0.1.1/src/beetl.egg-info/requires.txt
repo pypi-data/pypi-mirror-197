@@ -1,0 +1,9 @@
+faker
+pandas
+polars[all]
+pymssql
+pymysql
+pyodbc
+pyyaml
+requests
+sqlalchemy
