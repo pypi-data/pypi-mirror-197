@@ -1,0 +1,13 @@
+chaco
+enable
+optv
+PyQt5
+scikit-image
+Pygments
+six
+imagecodecs
+flowtracks
+pandas
+tables
+pyparsing
+tqdm
