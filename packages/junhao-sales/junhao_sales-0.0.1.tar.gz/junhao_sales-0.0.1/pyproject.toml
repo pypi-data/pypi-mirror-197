@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "junhao_sales"
+version = "0.0.1"
+authors = [
+    { name="junhe42", email="junhao91102@gmail.com" },
+]
+description = "My customized ORM on Sales"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Junhao42/orm_lybrary"
+"Bug Tracker" = "https://github.com/Junhao42/orm_lybrary/issues"
