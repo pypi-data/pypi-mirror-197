@@ -1,0 +1,17 @@
+xil/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xil/_currencies.py,sha256=EeY7B03HuEGJ6psIQCEn3HhfyUunjdu9FH5FCkvv0gE,3805
+xil/_df_normalizer.py,sha256=Vur9xdhG6B5Jvn2ezm1AsfWxUmVYlx-UE5fsvit-A88,2862
+xil/_headers.py,sha256=Tsn7OANvFchBZsUSV6iGNU6nRR967HultnEDV1RWqnA,985
+xil/boi.py,sha256=LS8FZ7J8wlwsqFzX5-5Pd-NoQI433VhFjVGEuIIxVHw,1735
+xil/discount.py,sha256=pOeF41VajkaeZ973DSgYoMqJudxgrti55p0YVMAhezs,1020
+xil/fibi.py,sha256=sm2gbUT_XXqEkn8QtjzYUhNkQg-xeKOl5M2cSGZMZnk,1541
+xil/jerusalem.py,sha256=N1-VqsfZTXLbzzpgQSTYpj1YSwi1j1LxEBaiWxnS0Rc,1167
+xil/leumi.py,sha256=BRMedvCfiqVexmxmtHqWe2oBY-qjAqOiN62M5rgng_o,2296
+xil/massad.py,sha256=6QDqETDwR1AU2lXoYDF0XAb7BooGMboqP1STcMQx7jQ,291
+xil/mercantile.py,sha256=nmPg6xZG390W-jzz__ogwNBlilAIkGfBicj7Ua3bOME,628
+xil/mizrahi_tefahot.py,sha256=RqXqay3uljZrfcRbYNv3Zn08noD6JtNufsV6M28o_Z4,902
+xil/poalim.py,sha256=7-a-W_COUh18v48fM-GBRv1jttOUfU8BGEr4_LTTe3Y,2055
+xil/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xil-0.1.0.dist-info/METADATA,sha256=dA9AbWycUjdff38FR2yzOq7GVHezHe_67ttoMlyBnMM,5434
+xil-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+xil-0.1.0.dist-info/RECORD,,
