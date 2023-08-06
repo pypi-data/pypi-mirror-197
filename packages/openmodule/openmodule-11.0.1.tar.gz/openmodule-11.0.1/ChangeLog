@@ -1,0 +1,124 @@
+CHANGES
+=======
+
+v11.0.1
+-------
+
+* known\_issues
+* fix in validator of CostEntryData
+
+v11.0.0
+-------
+
+* deprecation warnings for backend
+* some docs fixes
+
+v11.0.0.rc17
+------------
+
+* fixed settings mocker
+* added rate and cost\_group to MessageKwargs
+* Metrics in HealthZ
+* parse obj as type in settings mocker, to mimic actual settings behaviour, also removed too broad exception catches so we dont swallow a SystemExit
+* fixed settings mocker's no\_exception fallback to behave similar to the real deal, also added an assertion to catch developer pitfalls when using the settings mocker
+* fixed problem of only digit value in rate\_change is parsed to int
+* added CostEntryData model and use it in access\_service and validation
+* use type for cost\_entries in ValidateResponse
+* new validate cost entry fields
+* default settings for timezone and currency
+* added main test pitfall documentation
+* small code cleanup commit
+* Added backward and entry timestamp fields to count message
+
+v11.0.0.rc16
+------------
+
+* initialize connection status if not initialized in changed function don't print rpc requests if not in filter
+
+v11.0.0.rc15
+------------
+
+* call Schema.to\_file() in the main-test's sub-process so that the schema is stored
+* better log for etag mismatch
+
+v11.0.0.rc14
+------------
+
+* fixed testcase
+* simplyfied kvstore RPC responses error in translation if non-ascii character is in translation msgid
+
+v11.0.0.rc13
+------------
+
+* fixing testcases maybe fixing ci
+* fixed (reverted) testing idea for eventlog messages publishen
+* improvements for testing in eventlog and signal\_in\_function
+
+v11.0.0.rc12
+------------
+
+* fix in MockRPCClient
+* fix in RPCClient for old services which don't send status
+
+v11.0.0.rc11
+------------
+
+* log exception on parsing error in kvstore
+* rework of .rpc function in ZMQTestMixin no logoutput if "no such setting" error in settingsprovider small fix in RPCClient and MockRPCClient
+* fix for usage of RPCClient with empty response type
+* fix for exception in MockRPCClient callback
+
+v11.0.0.rc10
+------------
+
+* removed forgotten print statement
+* fix for languages parameter in translation commands
+* added parameter for languages in translation commands
+
+v11.0.0.rc9
+-----------
+
+* handling RPCServer(Web) errors in rpcclient
+* ConnectionStatusListener: added check for changed function some code cleanup
+
+v11.0.0.rc8
+-----------
+
+* docs [skip\_ci]
+* translations copy from packages
+
+v11.0.0.rc7
+-----------
+
+* Translations and Events improvements
+
+v11.0.0.rc6
+-----------
+
+* finished rpc doc
+* package reader supports filter by compute unit id
+* added MessageKwarg type for price
+* addition to translation docs
+
+v11.0.0.rc4
+-----------
+
+* fallback to utcnow for timestamp in EventInfo
+
+v11.0.0.rc3
+-----------
+
+* some kv store improvements
+* fixed race condition
+
+v11.0.0.rc2
+-----------
+
+* added openmodule\_test again to gitlab ci some test cleanup
+
+v11.0.0.rc1
+-----------
+
+* docs
+* common base class for all expected rpc client exceptions eventlog changes
+* added missing lock
