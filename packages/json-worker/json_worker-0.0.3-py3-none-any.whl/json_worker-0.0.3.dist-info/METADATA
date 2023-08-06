@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: json-worker
+Version: 0.0.3
+Summary: Json worker
+Home-page: https://github.com/automatethem/json-worker
+Author: Sang Ki Kwon
+Author-email: automatethem@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: python-supporter
+Requires-Dist: ai-supporter
+
+# json-worker
+
+https://pypi.org/project/json-worker
+<pre>
+pip install json-worker
+</pre>
+
+Basic example  
+https://github.com/automatethem/json-worker/blob/main/examples/basic/main.py  
+https://github.com/automatethem/json-worker/blob/main/examples/basic/worker.py   
+https://github.com/automatethem/json-worker/blob/main/examples/basic/inputs/config.json
