@@ -1,0 +1,2 @@
+[console_scripts]
+duketypem = duke_typem.cli:cli
