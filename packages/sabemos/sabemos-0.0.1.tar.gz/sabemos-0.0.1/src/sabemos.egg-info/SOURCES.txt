@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/sabemos/__init__.py
+src/sabemos.egg-info/PKG-INFO
+src/sabemos.egg-info/SOURCES.txt
+src/sabemos.egg-info/dependency_links.txt
+src/sabemos.egg-info/requires.txt
+src/sabemos.egg-info/top_level.txt
+tests/test_core_module.py
