@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: DCMIRead
+Version: 0.1
+Summary: A package to read and normalize DICOM images
+Home-page: https://github.com/Jorgito58/DCMIRead
+Author: Jorge Felix Martinez
+Author-email: jorgito16040@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# DCMIRead
+
+A package to read and normalize DICOM images
+
+There is to main functions:
+
+- Read_Dicom_From_File(path : str, size : int=224, rescale : bool=True)
+- Read_Dicom_From_Buffer(buffer : str, size : int=224, rescale : bool=True)
+
+***Both Functions Return a Normalize Image Array***
+
+If you are working with DICOM images, this may be useful.
+
+
