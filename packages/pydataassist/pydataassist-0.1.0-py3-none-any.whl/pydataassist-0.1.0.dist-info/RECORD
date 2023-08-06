@@ -1,0 +1,11 @@
+pydataassist/__init__.py,sha256=YPuxv7SCKLpG3WZbryvaCEHCeQoOJonEtxKgaLkr4YU,20
+pydataassist/__main__.py,sha256=TzyjulPKCZeKtXweivrFiOrsVGfdORALVI8xnwyovCA,214
+pydataassist/encryption.py,sha256=mLHcx_IeC7dAUG_-l7xvu4hbdD0lXRyXwnuT2P4kwB0,1341
+pydataassist/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydataassist/restassist.py,sha256=Mn1nbG8-L1GAMndkT6a_FUZiqHHMqCugth9LE_U_3GM,3026
+pydataassist/sparkassist.py,sha256=XUVR0v0JjUrr2HfwQxlYddeSsrZl--7ffTVJ-QZ-9tc,3660
+pydataassist-0.1.0.dist-info/LICENSE,sha256=qoyjJDcFJQkeV3OKDIp504CweHV3HNcHysd-2zGLroo,1069
+pydataassist-0.1.0.dist-info/METADATA,sha256=rYaWnunaAyKVAHUJh72qqTFY27ixFyE9hX0T_T8RLKw,3572
+pydataassist-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+pydataassist-0.1.0.dist-info/entry_points.txt,sha256=Yp8XfA8zrmIWrSi1wsgeoqXB1eQi3aSobSIdjkTcZiI,57
+pydataassist-0.1.0.dist-info/RECORD,,
