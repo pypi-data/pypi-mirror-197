@@ -1,0 +1,12 @@
+hil/common/__init__.py,sha256=bOInhQJDhv9_UuTvVJpwb8MZ3EUNZ6SMTGAyQOxBHF4,392
+hil/common/log.py,sha256=_FE0j-t1rruoszxkbHY0ZbqOhMnPof8vNrOBV4zp1GI,1499
+hil/common/utils.py,sha256=SV1IC4n6zq0yWaCySz1lBm6obrgwHMTxfMXcLiMwLUU,4749
+hil/core/__init__.py,sha256=gJugEt3_LFKVsCdmoIr87h-qkyH378nG68EyKIvvGS8,435
+hil/core/doip_client.cp37-win_amd64.pyd,sha256=-6kB6p840quLRqId6bxpWuwlakHtNPB-6YG7cvT9SZ4,78336
+hil/core/doip_client.pyi,sha256=AVt3ygh16BN-LEXQ97hLBUdsfBPivvCrhH7V5-tJxHA,702
+hil/core/uds_client.cp37-win_amd64.pyd,sha256=Mu-ynAo5OvsjBBlu-pV6QeJ5gSHBplZu6K7BmlCd6Kc,106496
+hil/core/uds_client.pyi,sha256=BzG4tDeU2uj888EBHLngnUjBYeX7XGIuitGDCQ7OkW8,693
+hil_core-0.0.1.dist-info/METADATA,sha256=E1igyTu1O4vnRy6yhPE9s8kEhon7X5tbwylUBu4UDfo,220
+hil_core-0.0.1.dist-info/WHEEL,sha256=zMRqF9ZfHGxBPfvcWwE-LxcVkdB1hhr8hy4cOfZGPZU,101
+hil_core-0.0.1.dist-info/top_level.txt,sha256=NkmE0ej9RUq1cTbNBwJxAlTf324GfzDyFlCh3vbdJ44,4
+hil_core-0.0.1.dist-info/RECORD,,
