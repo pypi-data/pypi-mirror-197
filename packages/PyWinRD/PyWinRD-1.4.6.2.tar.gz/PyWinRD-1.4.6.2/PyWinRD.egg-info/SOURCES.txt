@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+PyWinRD/Client.py
+PyWinRD/Props.py
+PyWinRD/Server.py
+PyWinRD/__init__.py
+PyWinRD.egg-info/PKG-INFO
+PyWinRD.egg-info/SOURCES.txt
+PyWinRD.egg-info/dependency_links.txt
+PyWinRD.egg-info/top_level.txt

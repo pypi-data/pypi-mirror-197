@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PyWinRD
+Version: 1.4.6.2
+Summary: Python library that provides remote debugging capabilities for python files between two windows machines, the library supports logging of clients activities and redirecting all the print and input operations to the client and shadowing them in the server.
+Home-page: https://github.com/AhmedAhmedEG/PyWinRD
+Download-URL: https://github.com/AhmedAhmedEG/PyWinRD/archive/refs/tags/1.4.6.2.tar.gz
+Author: AhmedAhmedEG
+Author-email: ahmedahmed.abdelmaksoud.eg@gmail.com
+License: MIT
+Keywords: Remote Debugging,Python,Windows
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
