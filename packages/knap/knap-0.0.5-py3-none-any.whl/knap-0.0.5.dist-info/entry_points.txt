@@ -1,0 +1,3 @@
+[console_scripts]
+knap=knapsack.knapsack:app
+
