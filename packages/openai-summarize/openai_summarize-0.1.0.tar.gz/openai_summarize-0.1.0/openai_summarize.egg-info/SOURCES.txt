@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+openai_summarize/__init__.py
+openai_summarize/openai_summarize.py
+openai_summarize.egg-info/PKG-INFO
+openai_summarize.egg-info/SOURCES.txt
+openai_summarize.egg-info/dependency_links.txt
+openai_summarize.egg-info/requires.txt
+openai_summarize.egg-info/top_level.txt
