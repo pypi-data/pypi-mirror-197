@@ -1,0 +1,11 @@
+arraytex/__init__.py,sha256=CHeG1G3X7G-O5qpQTA4Fdl36zloJWrQrDQvDnxtarIM,44
+arraytex/__main__.py,sha256=hg0WKgyxDWWhDzj3PjftxoTvNOP3fHf5FqXQqZRVSMo,206
+arraytex/api.py,sha256=8JTEy39yee7SSIbBHYM1naZv04-cOf1KgbdW7gz0dhs,2073
+arraytex/errors.py,sha256=_pMzd521ntrTMhqc1aZR0DGMCDcZawu4Qe4C-68CFtw,149
+arraytex/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arraytex/utils.py,sha256=yWKUE0GMN4Alwbiz3_6-WjYr1uE0vvDdVHbVFsO6psI,665
+arraytex-0.0.3.dist-info/LICENSE,sha256=icXUelKV1IgaefQyXwUWit54kTGhTprEHo1fpy3lXzg,1066
+arraytex-0.0.3.dist-info/entry_points.txt,sha256=F8EGx51TlgU8FhP331eyhJKzNHVrZxuToJZ9Y7M6q2c,51
+arraytex-0.0.3.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+arraytex-0.0.3.dist-info/METADATA,sha256=WpGkWhj7gAcwscXbjFuGo6JFlRPHRshjMVRqalK_S5I,3894
+arraytex-0.0.3.dist-info/RECORD,,
