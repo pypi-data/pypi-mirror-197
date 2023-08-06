@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ddreport
+Version: 3.6
+Summary: pytest测试报告
+Home-page: https://gitee.com/duanliangcong/dlc_pytest-report.git
+Author: duanliangcong
+Author-email: 137562703@qq.com
+License: MIT Licence
+Keywords: pip,pytest,testReport
+Platform: any
+
+解决未安装依赖库报错问题，因为有的项目不需要这些库
+
