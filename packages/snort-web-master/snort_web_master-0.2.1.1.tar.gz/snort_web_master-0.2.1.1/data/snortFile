@@ -1,0 +1,23 @@
+FROM ciscotalos/snort3
+
+WORKDIR /app
+USER root
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+RUN apt --allow-releaseinfo-change  update
+RUN echo iptables-persistent iptables-persistent/autosave_v4 boolean true | debconf-set-selections
+RUN echo iptables-persistent iptables-persistent/autosave_v6 boolean true | debconf-set-selections
+RUN apt install python3 python3-pip iptables-persistent postgresql-client -y
+
+RUN python3 -m pip install --upgrade pip
+COPY requirements.txt requirements.txt
+RUN pip3 install -r requirements.txt
+
+COPY . .
+RUN mkdir -p /var/log/snort
+RUN touch /var/log/snort/alert
+EXPOSE 8000
+ENV PATH="${PATH}:/home/snorty/snort3/bin/"
+ENTRYPOINT ["gunicorn", "snort_web_master.wsgi:application", "--bind", "0.0.0.0:8000"]
+# ENTRYPOINT /bin/bash
