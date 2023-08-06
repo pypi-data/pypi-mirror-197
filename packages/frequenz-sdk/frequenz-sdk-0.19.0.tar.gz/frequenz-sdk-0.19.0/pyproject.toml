@@ -1,0 +1,158 @@
+[build-system]
+requires = [
+    "setuptools >= 65.3.0, < 66",
+    "setuptools_scm[toml] >= 7.0.5, < 8",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "frequenz-sdk"
+description = "Frequenz Python SDK"
+readme = "README.md"
+license = { text = "MIT" }
+keywords = [ "frequenz", "sdk", "microgrid", "actor" ]
+classifiers = [
+   "Development Status :: 3 - Alpha",
+   "Intended Audience :: Developers",
+   "License :: OSI Approved :: MIT License",
+   "Programming Language :: Python :: 3",
+   "Programming Language :: Python :: 3 :: Only",
+   "Programming Language :: Python :: 3.8",
+   "Programming Language :: Python :: 3.9",
+   "Programming Language :: Python :: 3.10",
+   "Topic :: Software Development :: Libraries",
+]
+requires-python = ">= 3.8, < 4"
+dependencies = [
+    "frequenz-api-microgrid >= 0.11.0, < 0.12.0",
+    "frequenz-channels >= 0.13.0, < 0.14.0",
+    "google-api-python-client >= 2.71, < 3",
+    "grpcio >= 1.51.1, < 2",
+    "grpcio-tools >= 1.51.1, < 2",
+    "networkx >= 2.8, < 3",
+    "numpy >= 1.24.2, < 2",
+    "protobuf >= 4.21.6, < 5",
+    "pydantic >= 1.9",
+    "sympy >= 1.10.1, < 2",
+    "toml >= 0.10",
+    "tqdm >= 4.38.0, < 5",
+    "typing_extensions >= 4.4.0, < 5",
+    "watchfiles >= 0.15.0",
+]
+dynamic = [ "version" ]
+
+[[project.authors]]
+name ="Frequenz Energy-as-a-Service GmbH"
+email = "floss@frequenz.com"
+
+[project.optional-dependencies]
+docs-gen = [
+    "mike >= 1.1.2, < 2",
+    "mkdocs-gen-files >= 0.4.0, < 0.5.0",
+    "mkdocs-literate-nav >= 0.4.0, < 0.5.0",
+    "mkdocs-material >= 8.5.7, < 9",
+    "mkdocs-section-index >= 0.3.4, < 0.4.0",
+    "mkdocstrings[python] >= 0.19.0, < 0.20.0",
+]
+docs-lint = [
+    "pydocstyle >= 6.3.0, < 7",
+    "darglint >= 1.8.1, < 2",
+    "tomli >= 2.0.1, < 3",  # Needed by pydocstyle to read pyproject.toml
+]
+format = [
+    "black >= 23.1.0, < 24",
+    "isort >= 5.12.0, < 6",
+]
+nox = [
+    "nox == 2022.11.21",
+    "toml >= 0.10.2, < 1",
+]
+pytest = [
+    "pytest >= 7.2.1, < 8",
+    "pytest-cov >= 4.0.0, < 5",
+    "pytest-mock >= 3.10.0, < 4",
+    "pytest-asyncio >= 0.20.3, < 1",
+    "time-machine >= 2.9.0, < 3",
+    "async-solipsism >= 0.5, < 1",
+]
+mypy = [
+    "mypy >= 1.0.1, < 2",
+    "grpc-stubs == 1.24.12",  # This dependency introduces breaking changes in patch releases
+    # For checking the noxfile, docs/ script, and tests
+    "frequenz-sdk[docs-gen,nox,pytest]",
+]
+pylint = [
+    "pylint >= 2.17.0, < 3",
+    # For checking the noxfile, docs/ script, and tests
+    "frequenz-sdk[docs-gen,nox,pytest]",
+]
+dev = [
+    "frequenz-sdk[docs-gen,docs-lint,format,nox,pytest,mypy,pylint]",
+]
+
+[project.urls]
+Changelog = "https://github.com/frequenz-floss/frequenz-sdk-python/releases"
+Repository = "https://github.com/frequenz-floss/frequenz-sdk-python"
+Issues = "https://github.com/frequenz-floss/frequenz-sdk-python/issues"
+Support = "https://github.com/frequenz-floss/frequenz-sdk-python/discussions/categories/support"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools_scm]
+version_scheme = "post-release"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.pylint.similarities]
+ignore-comments=['yes']
+ignore-docstrings=['yes']
+ignore-imports=['no']
+min-similarity-lines=40
+
+[tool.pylint.messages_control]
+disable = [
+    "too-few-public-methods",
+    # disabled because it conflicts with isort
+    "wrong-import-order",
+    "ungrouped-imports"
+]
+
+[tool.pylint.design]
+max-attributes=12
+
+[tool.isort]
+profile = "black"
+line_length = 88
+src_paths = ["src", "examples", "tests"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+required_plugins = [ "pytest-asyncio", "pytest-mock" ]
+
+[tool.mypy]
+# This is a temporary hack, for details see:
+# * https://github.com/frequenz-floss/frequenz-sdk-python/pull/219
+# * https://github.com/frequenz-floss/frequenz-sdk-python/issues/226
+exclude = ["src/frequenz/sdk/timeseries/_formula_engine/"]
+
+[[tool.mypy.overrides]]
+module = [
+    "grpc.aio",
+    "grpc.aio.*",
+    # There is a stubs package available, but it's not working:
+    # https://github.com/eggplants/networkx-stubs/issues/1
+    "networkx",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+    "async_solipsism",
+    "async_solipsism.*",
+]
+ignore_missing_imports = true
