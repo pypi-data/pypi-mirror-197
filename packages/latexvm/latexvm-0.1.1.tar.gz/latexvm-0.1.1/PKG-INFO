@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: latexvm
+Version: 0.1.1
+Summary: 
+Author: Ochawin Apichattakul
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: antlr4-python3-runtime (==4.10)
+Requires-Dist: sympy (>=1.11.1,<2.0.0)
+Requires-Dist: timeout-decorator (>=0.5.0,<0.6.0)
+Description-Content-Type: text/markdown
+
+# Latex-VM (Virtual Machine)
+A simple context environment for mathematical expressions in LaTeX.
+
+Supports: 
+  - Variable declaration
+  - Function declaration
