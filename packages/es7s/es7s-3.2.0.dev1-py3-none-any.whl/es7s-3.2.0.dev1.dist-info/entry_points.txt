@@ -1,0 +1,4 @@
+[console_scripts]
+es7s = es7s.cli.__main__:main
+es7s-daemon = es7s.d.__main__:main
+es7s-indicators = es7s.gtk.__main__:main
