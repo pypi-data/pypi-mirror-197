@@ -1,0 +1,13 @@
+lark
+lark-parser
+click
+pyyaml
+
+[dev]
+pytest
+pytest-cov
+python-dotenv
+tox
+
+[django]
+Django>=3.2
