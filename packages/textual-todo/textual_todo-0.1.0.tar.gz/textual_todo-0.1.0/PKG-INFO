@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: textual-todo
+Version: 0.1.0
+Summary: A simple TODO app built with Textual.
+License: MIT
+Author: Rodrigo Girão Serrao
+Author-email: rodrigo@mathspp.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: textual (>=0.15.1,<0.16.0)
+Description-Content-Type: text/markdown
+
+# Textual TODO App
+
+![](_static_app_demo.png)
+
+
+## Tutorial
+
+[Read the tutorial here!](https://mathspp.com/blog/textual-tutorial-build-a-todo-app-in-python)
+
+
+## GIF demo
+
+![](_app_demo.gif)
+
