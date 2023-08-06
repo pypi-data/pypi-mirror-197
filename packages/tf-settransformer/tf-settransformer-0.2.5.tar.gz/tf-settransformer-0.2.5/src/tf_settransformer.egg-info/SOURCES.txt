@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/settransformer/__init__.py
+src/tf_settransformer.egg-info/PKG-INFO
+src/tf_settransformer.egg-info/SOURCES.txt
+src/tf_settransformer.egg-info/dependency_links.txt
+src/tf_settransformer.egg-info/top_level.txt
