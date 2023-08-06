@@ -1,0 +1,12 @@
+streamlit-otp-auth/__init__.py,sha256=UY-wD3tUwhDhcbc-GEZf-mo5amaCnAjZVWuhaJI-YC0,21
+streamlit-otp-auth/dependencies.py,sha256=fRvYChsFcbTg2OHZCfZlykyI-qkJjvUVlwYLTd3zE1I,411
+streamlit-otp-auth/generate_otp.py,sha256=ltupITb2p8GF7BPI41WREx9Gas-Tbg_t_vIL8wcsUNE,198
+streamlit-otp-auth/login.py,sha256=LclUrWAx5oXsTg7ExYGWuDfUgNhqj2LBDjIXKgaBVVE,830
+streamlit-otp-auth/main.py,sha256=xFWkOfdgqNLrE97qiBc1danFZCqe5-ZL5Luwx8fB5tg,1134
+streamlit-otp-auth/reset_password.py,sha256=4yozvRQ88pKIqqv5vCQAERq-v7fEWMhi-safWtxkJsc,1805
+streamlit-otp-auth/send_otp.py,sha256=0m0cUjUnNQSP5nJaKZZXCdV3H3p876IJI74XckBMCI0,522
+streamlit-otp-auth/signup.py,sha256=FCJJ9eUMNWDmqExq4sCXxG0DpN5KckqHNLUA7CgKmvk,1366
+streamlit_otp_auth-1.0.0.dist-info/METADATA,sha256=UdP4qGU9W3wRrV2onclJT8G1t4c1e8SxSfDTGepcyCk,828
+streamlit_otp_auth-1.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+streamlit_otp_auth-1.0.0.dist-info/top_level.txt,sha256=ISdTb5nUc4cO1K5xEh2Xs9O8ajfyRituNF6ssORfhfw,19
+streamlit_otp_auth-1.0.0.dist-info/RECORD,,
