@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: freexml
+Version: 0.0.0
+Summary: An open-source XML generator and parser.
+Home-page: https://pypi.org/project/freexml/
+Download-URL: https://github.com/JordanWelsman/freexml/tags
+Author: Jordan Welsman
+Author-email: jordan.welsman@outlook.com
+License: MIT
+Keywords: python,xml,modular,parsing,interpreting,exporting,importing
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Interpreters
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jutl
+
+# openxml
+
+An open-source XML generator and parser.
