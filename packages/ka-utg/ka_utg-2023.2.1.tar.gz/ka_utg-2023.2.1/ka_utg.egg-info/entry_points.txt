@@ -1,0 +1,2 @@
+[console_scripts]
+ka_utg-dfs = ka_utg.dfs.__main__:main

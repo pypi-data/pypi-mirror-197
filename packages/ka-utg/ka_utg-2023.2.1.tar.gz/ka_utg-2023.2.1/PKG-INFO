@@ -1,0 +1,136 @@
+Metadata-Version: 2.1
+Name: ka_utg
+Version: 2023.2.1
+Summary: General Utilities
+Author-email: Bernd Stroehle <bernd.stroehle@bs29.com>
+Maintainer-email: Bernd Stroehle <bernd.stroehle@bs29.com>
+Project-URL: Source Code, https://github.com/bs29/ka_utg/tree/master
+Project-URL: Homepage, https://kosakya.de/
+Project-URL: Documentation, https://ka-apc.readthedocs.io/en/latest
+Project-URL: Apache-2.0 License, https://apache.org/licenses/LICENSE-2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+######
+ka_utg
+######
+
+.. start short_desc
+
+**General 'Utilities'**
+
+.. end short_desc
+
+Installation
+------------
+.. start installation
+
+``ka_utg`` can be installed from PyPI or Anaconda.
+
+To install with ``pip``:
+
+.. code-block:: bash
+
+	$ python -m pip install ka_utg
+
+To install with ``conda``:
+
+.. code-block:: bash
+
+	$ conda install -c conda-forge ka_utg
+
+.. end installation
+
+This requires that the ``readme`` extra is installed:
+
+.. code-block:: bash
+
+	$ python -m pip install ka_utg[readme]
+
+Modules
+-------
+``ka_utg`` contains the following modules.
+
+.. table:: **ka_utg Modules for Array Management**
+
+    +-----------++-----------------------------------------------------+
+    | *Module*: || Description                                         |
+    +===========++=====================================================+
+    | aoa       || Array of Arrays                                     |
+    +-----------++-----------------------------------------------------+
+    | aod       || Array of Dictionaries                               |
+    +-----------++-----------------------------------------------------+
+    | aoo       || Arry of Objects                                     |
+    +-----------++-----------------------------------------------------+
+    | aos       || Array of Strings                                    |
+    +-----------++-----------------------------------------------------+
+    | arr       || Array                                               |
+    +-----------++-----------------------------------------------------+
+
+.. table:: **ka_utg Modules for Dictionary Management**
+
+    +-----------++-----------------------------------------------------+
+    | *Module*: || Description                                         |
+    +===========++=====================================================+
+    | d2v       || Dictionary with 2-dimensional arrays as keys        |
+    +-----------++-----------------------------------------------------+
+    | d3v       || Dictionary with 3-dimensional arrays as key s       |
+    +-----------++-----------------------------------------------------+
+    | dic       || Dictionary                                          |
+    +-----------++-----------------------------------------------------+
+    | doa       || Dictionary of Arrays                                |
+    +-----------++-----------------------------------------------------+
+    | dod       || Dictionary of Dictionaries                          |
+    +-----------++-----------------------------------------------------+
+    | doo       || Dictionary of Objects                               |
+    +-----------++-----------------------------------------------------+
+    | range     || Range Dictionary Management                         |
+    +-----------++-----------------------------------------------------+
+
+.. table:: **ka_utg Modules for Object Management**
+
+    +-----------++-----------------------------------------------------+
+    | *Module*: || Description                                         |
+    +===========++=====================================================+
+    | obj       || Object Utilities                                    |
+    +-----------++-----------------------------------------------------+
+    | fnc       || Function Utilities                                  |
+    +-----------++-----------------------------------------------------+
+    | str       || String Utilities                                    |
+    +-----------++-----------------------------------------------------+
+
+.. table:: **ka_utg Base Modules**
+
+    +-----------++-----------------------------------------------------+
+    | *Module*: || Description                                         |
+    +===========++=====================================================+
+    | col       || Colour Handling                                     |
+    +-----------++-----------------------------------------------------+
+    | log       || Log Management                                      |
+    +-----------++-----------------------------------------------------+
+
+.. table:: **ka_utg Misc. Modules**
+
+    +-----------++-----------------------------------------------------+
+    | *Module*: || Description                                         |
+    +===========++=====================================================+
+    | args      || Arguments Handling                                  |
+    +-----------++-----------------------------------------------------+
+    | cmdline   || Command Line Utilities                              |
+    +-----------++-----------------------------------------------------+
+    | evt       || Event Management                                    |
+    +-----------++-----------------------------------------------------+
+    | exc       || Exception Management                                |
+    +-----------++-----------------------------------------------------+
+    | file      || File I/O Utilities                                  |
+    +-----------++-----------------------------------------------------+
+    | msg       || Message Handling                                    |
+    +-----------++-----------------------------------------------------+
