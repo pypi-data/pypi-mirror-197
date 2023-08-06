@@ -1,0 +1,36 @@
+[package]
+name = "expand_node"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+name = "expand_node"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+crate-type = ["lib"]
+path = "lib.rs"
+
+[dependencies]
+circuit_base = {path = "../circuit_base" }
+rr_util = {path = "../rr_util" }
+
+pyo3= { features=["num-bigint", "multiple-pymethods", "anyhow", "macros"], git = "https://github.com/redwoodresearch/pyo3" }
+
+rustc-hash= "1.1.0"
+
+anyhow= { version = "1.0.60", features = ["backtrace"] }
+smallvec= { version = "1.10.0", features = ["union"] }
+
+macro_rules_attribute= "0.1.2"
+thiserror= "1.0.32"
+blake3= "1.3.1"
+
+itertools= "0.10.3"
+cached= {version = "0.38.0", default-features = false}
+paste= "1.0.8"
+
+inventory= "0.3.4"
+
+[features]
+extension-module = ["pyo3/extension-module"]
+
+default = []

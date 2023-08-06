@@ -1,0 +1,110 @@
+[package]
+name = "rust_circuit"
+version = "0.4.8"
+edition = "2021"
+
+[package.metadata.maturin]
+name = "rust_circuit._rust"
+[lib]
+name = "rust_circuit"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+crate-type = ["cdylib", "rlib"]
+
+[[bin]]
+name = "print_exception_stubs"
+[[bin]]
+name = "to_profile"
+
+[dependencies]
+pyo3= { features=["num-bigint", "multiple-pymethods", "anyhow", "macros"], git = "https://github.com/redwoodresearch/pyo3" }
+anyhow= { version = "1.0.60", features = ["backtrace"] }
+inventory= "0.3.4"
+mimalloc = { version = "*", default-features = false }
+
+rr_util = {path = "local_dependencies/rr_util" }
+circuit_base = {path = "local_dependencies/circuit_base" }
+circuit_utils = {path = "local_dependencies/circuit_utils" } #  split out of circuit_base to improve check/compile time
+circuit_rewrites = {path = "local_dependencies/circuit_rewrites" }
+circuit_print = {path = "local_dependencies/circuit_print" }
+get_update_node = {path = "local_dependencies/get_update_node" }
+nb_operations = {path = "local_dependencies/nb_operations" }
+
+expand_node = {path = "local_dependencies/expand_node" }
+
+smallvec= { version = "1.10.0", features = ["union"] }
+itertools= "0.10.3"
+indexmap= "1.9.2"
+rustc-hash= "1.1.0"
+
+[build-dependencies]
+pyo3-build-config= { git = "https://github.com/redwoodresearch/pyo3" }
+
+[[bench]]
+name = "benches"
+harness = false
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+debug = true
+
+[profile.release-lto]
+inherits = "release"
+lto = true
+
+# useful for maturin build --features extension-module --profile py-dev (just a separate target directory effectively
+[profile.py-dev]
+inherits = "dev"
+
+[features]
+extension-module = ["pyo3/extension-module"]
+
+# default = ["extension-module"]
+default = []
+
+[workspace]
+members = ["local_dependencies/circuit_base", "local_dependencies/circuit_utils", "local_dependencies/circuit_rewrites", "local_dependencies/circuit_print", "local_dependencies/get_update_node", "local_dependencies/rr_util", "local_dependencies/expand_node", "local_dependencies/nb_operations"]
+
+[workspace.dependencies]
+anyhow = { version = "1.0.60", features = ["backtrace"] }
+
+smallvec = { version = "1.10.0", features = ["union"] }
+itertools = "0.10.3"
+indexmap = "1.9.2"
+rustc-hash = "1.1.0"
+rand = {version = "0.8.5", features = ["small_rng"]}
+cached = {version = "0.38.0", default-features = false}
+
+num-bigint = "0.4.3"
+
+macro_rules_attribute = "0.1.2"
+thiserror = "1.0.32"
+blake3 = "1.3.1"
+paste = "1.0.8"
+
+once_cell = "1.14.0"
+inventory = "0.3.4"
+
+regex = "1.6.0"
+
+pyo3 = { features=["num-bigint", "multiple-pymethods", "anyhow", "macros"], git = "https://github.com/redwoodresearch/pyo3" }
+pyo3-build-config = { git = "https://github.com/redwoodresearch/pyo3" }
+
+[dependencies.
+uuid]
+version = "1.1.2"
+features = [
+    "v4",                # Lets you generate random UUIDs
+    "fast-rng",          # Use a faster (but still sufficiently random) RNG
+    "macro-diagnostics", # Enable better diagnostics for compile-time UUIDs
+]
+
+[workspace.dependencies.uuid]
+version = "1.1.2"
+features = [
+    "v4",                # Lets you generate random UUIDs
+    "fast-rng",          # Use a faster (but still sufficiently random) RNG
+    "macro-diagnostics", # Enable better diagnostics for compile-time UUIDs
+]
