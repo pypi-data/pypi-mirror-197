@@ -1,0 +1,8 @@
+requests_rotating_proxy/__init__.py,sha256=Y7Lj1JJz3hR0TDHTqMIe-QTpinzd6SiO1UWYaWocbH4,64
+requests_rotating_proxy/__version__.py,sha256=7Mp8iqklf3_AKmDXbtfWFufmP2NUURhE5CXW4A0vn-c,22
+requests_rotating_proxy/requests_rotating_proxy.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+requests_rotating_proxy-0.0.0.dist-info/LICENSE,sha256=oO92foEfO0jSvVKreXcAYJ0YcpR7tRjV-rxTgDWwg4s,1066
+requests_rotating_proxy-0.0.0.dist-info/METADATA,sha256=DrETpJtw6djeQXWjxWrkGulqQuuMsm6ZUQzqdCtJO5s,3091
+requests_rotating_proxy-0.0.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+requests_rotating_proxy-0.0.0.dist-info/top_level.txt,sha256=v_mE5ONrEAhPIsuT_rI0MpRJR0qoskJq5dvedeK9L5I,24
+requests_rotating_proxy-0.0.0.dist-info/RECORD,,
