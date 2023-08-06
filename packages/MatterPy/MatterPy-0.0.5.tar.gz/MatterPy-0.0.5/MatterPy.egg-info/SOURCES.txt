@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+MatterPy/__init__.py
+MatterPy/main.py
+MatterPy.egg-info/PKG-INFO
+MatterPy.egg-info/SOURCES.txt
+MatterPy.egg-info/dependency_links.txt
+MatterPy.egg-info/requires.txt
+MatterPy.egg-info/top_level.txt
