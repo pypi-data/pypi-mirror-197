@@ -1,0 +1,5 @@
+taskiq_nats/__init__.py,sha256=N0B0MP8TtKAfohaxS_mzCnN3MBHhXIoAcEvcl52bbGE,171
+taskiq_nats/broker.py,sha256=5UV7BfGwwIlpHeS4YcuH4O_-8ZDHnfGz28g5Azl2-Oc,2437
+taskiq_nats-0.1.0.dist-info/METADATA,sha256=tK1I3IdvwY7J5DrUMdVDEC5u0gTBdF_jqAv0AK2lm1c,2421
+taskiq_nats-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+taskiq_nats-0.1.0.dist-info/RECORD,,
