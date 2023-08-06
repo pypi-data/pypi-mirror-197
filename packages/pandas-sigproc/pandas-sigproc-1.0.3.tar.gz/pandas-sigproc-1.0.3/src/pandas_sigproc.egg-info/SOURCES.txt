@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/pandas_sigproc/__init__.py
+src/pandas_sigproc/extension.py
+src/pandas_sigproc/tools.py
+src/pandas_sigproc.egg-info/PKG-INFO
+src/pandas_sigproc.egg-info/SOURCES.txt
+src/pandas_sigproc.egg-info/dependency_links.txt
+src/pandas_sigproc.egg-info/requires.txt
+src/pandas_sigproc.egg-info/top_level.txt
