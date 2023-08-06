@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/exifparser/__init__.py
+src/exifparser/exif.py
+src/exifparser_BootingBarnacles.egg-info/PKG-INFO
+src/exifparser_BootingBarnacles.egg-info/SOURCES.txt
+src/exifparser_BootingBarnacles.egg-info/dependency_links.txt
+src/exifparser_BootingBarnacles.egg-info/top_level.txt
+tests/test.py

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: exifparser-BootingBarnacles
+Version: 0.0.1
+Summary: Parse the exif information from jpg files.
+Author-email: Mike Eads <dev.eads@proton.me>
+Project-URL: Homepage, https://github.com/burninite-coder/exifparser
+Project-URL: Bug Tracker, https://github.com/burninite-coder/exifparser/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# Exif Parser
+
+*This package provides a means of supplying 1-many jpg files by means of a glob pattern which returns a parsed list of exif header data for each picture respectively.*
+
