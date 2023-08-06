@@ -1,0 +1,2 @@
+[console_scripts]
+sudo_win32 = sudo_win32.cli:main
