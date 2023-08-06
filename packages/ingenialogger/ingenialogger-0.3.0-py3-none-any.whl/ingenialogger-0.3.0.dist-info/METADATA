@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: ingenialogger
+Version: 0.3.0
+Summary: Logger library for Ingenia projects
+Home-page: https://www.ingeniamc.com
+Author: Ingenia Motion Control
+Author-email: support@ingeniamc.com
+License: UNKNOWN
+Project-URL: Documentation, https://distext.ingeniamc.com/doc/ingenialogger/0.3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Ingenialogger
+=============
+
+Module to unify libraries, script and programs logs.
+
+How to use it
+-------------
+
+### Module and libraries
+
+```python
+import ingenialogger
+
+logger = ingenialogger.get_logger(__name__)
+
+logger.info("Info log", axis=1, drive="EVE-XCR (192.168.2.22)")
+
+logger.user_warning("User Warning log", code_error="0x2342")
+```
+
+### Final application
+
+```python
+import ingenialogger
+
+log_queue = ingenialogger.configure_logger(level=ingenialogger.LoggingLevel.INFO, queue=True)
+logger = ingenialogger.get_logger(__name__)
+logger.user_info("User Info log", axis=2, drive="My drive")
+
+log_msg = log_queue.get().msg
+print(ingenialogger.LogParser.parse_log(log_msg))
+```
+
+
