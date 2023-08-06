@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: graph-kmer-index
+Version: 0.0.23
+Summary: Graph Kmer Index
+Home-page: http://github.com/ivargr/graph_kmer_index
+Author: Ivar Grytten
+Author-email: 
+License: MIT
+Classifier: Programming Language :: Python :: 3

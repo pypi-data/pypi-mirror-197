@@ -1,0 +1,11 @@
+numpy
+sortedcontainers
+tqdm
+biopython
+cython
+SharedArray
+pyfaidx
+shared_memory_wrapper>=0.0.11
+npstructures
+bionumpy
+obgraph

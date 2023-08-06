@@ -1,0 +1,2 @@
+[console_scripts]
+graph_kmer_index = graph_kmer_index.command_line_interface:main
