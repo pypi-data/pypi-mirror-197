@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: datadraw
+Version: 0.7.1
+Summary: Library to produce many kinds of automated, presentable, data-driven 2-D plots, charts, graphs in SVG
+Home-page: http://datadraw.org/
+Author: Stephen Grubb
+Author-email: stevegrubb@gmail.com
+License: MIT License
+Keywords: plot,plotting,chart,charing,graph,graphing,dynamic,web,2-D,SVG,axis,legend,python,flask,django,categorical,dates,times,datetime,log,log10,automatic ranging,automatic axis,tooltip,image annotation,vector graphics,bar graph,scatterplot,boxplot,beeswarm plot,violin plot,pie chart,Tukey box whisker plot,percentiles,outlier,line plot,heatmap,tooltip,distribution,histogram,Kaplan-Meier,survival plot,chromosomes,business day,trading day,secchi,windbarb,crispr,bioinformatics,biostatistics,biometrics
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Presentation
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Description-Content-Type: text/plain
+License-File: LICENSE.txt
+
+ DataDraw is a python function library class to produce many kinds of automated, 
+presentable, data-driven 2-D plots / charts / graphics / image annotations in SVG.
+It's an all-python server-side solution, producing SVG results that can be
+embedded directly into html web pages or saved as .svg image files.  
+No javascript, css, or svg knowledge is required.
+
+Axis and legend rendering, tooltips, linkouts, automatic ranging, basic statistics, 
+draw primitives.  Handles numeric, log, categorical, and datetime data types.
+Leverages SVG's fonts, colors, transparency, image handling, and other aspects.
+Works well within frameworks such as Flask or Django.  
+Limited interactivity / reactivity use-cases.
+
+Tested on linux python 3.6 and 3.9 using recent browser versions; believed to be thread-safe.
+
+ 

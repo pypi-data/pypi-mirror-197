@@ -1,0 +1,12 @@
+LICENSE.txt
+README.txt
+setup.cfg
+setup.py
+datadraw/__init__.py
+datadraw/sds.py
+datadraw/sdsdt.py
+datadraw/sdsmisc.py
+datadraw.egg-info/PKG-INFO
+datadraw.egg-info/SOURCES.txt
+datadraw.egg-info/dependency_links.txt
+datadraw.egg-info/top_level.txt
