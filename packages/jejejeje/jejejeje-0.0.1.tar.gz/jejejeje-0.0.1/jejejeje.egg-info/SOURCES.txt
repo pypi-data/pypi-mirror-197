@@ -1,0 +1,8 @@
+setup.py
+jejejeje/__init__.py
+jejejeje/rFunction.py
+jejejeje.egg-info/PKG-INFO
+jejejeje.egg-info/SOURCES.txt
+jejejeje.egg-info/dependency_links.txt
+jejejeje.egg-info/requires.txt
+jejejeje.egg-info/top_level.txt
