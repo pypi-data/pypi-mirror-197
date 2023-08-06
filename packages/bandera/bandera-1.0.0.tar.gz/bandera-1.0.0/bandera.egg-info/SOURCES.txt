@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.cfg
+bandera/__init__.py
+bandera.egg-info/PKG-INFO
+bandera.egg-info/SOURCES.txt
+bandera.egg-info/dependency_links.txt
+bandera.egg-info/top_level.txt

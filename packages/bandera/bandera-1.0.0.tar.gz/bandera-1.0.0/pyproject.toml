@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bandera"
+version = "1.0.0"
+description = "Library for interacting with ukrainian Bandera"
+readme = "README.md"
+authors = [{ name = "ftdot", email = "ftdoot@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Natural Language :: English",
+    "Natural Language :: Ukrainian",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Sociology :: History"
+]
+keywords = ["bandera", "ukraine", "culture", "fun", "sounds", "images"]
+dependencies = []
+requires-python = ">=3.10"
