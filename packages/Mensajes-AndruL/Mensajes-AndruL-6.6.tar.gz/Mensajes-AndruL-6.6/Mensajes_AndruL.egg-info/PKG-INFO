@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Mensajes-AndruL
+Version: 6.6
+Summary: Un paquete para saludar y despedir
+Home-page: https://www.andru_landa.com
+Author: Adrian Landarin
+Author-email: adrianlandarin@hotmail.com
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Mensajes
+
+El paquete de mensajerÃ­a de AdriÃ¡n Landa
