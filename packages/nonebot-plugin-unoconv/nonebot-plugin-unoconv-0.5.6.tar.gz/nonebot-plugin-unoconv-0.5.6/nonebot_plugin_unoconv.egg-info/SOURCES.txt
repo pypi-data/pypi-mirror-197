@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+nonebot_plugin_unoconv/__init__.py
+nonebot_plugin_unoconv/install.py
+nonebot_plugin_unoconv/unoconv.py
+nonebot_plugin_unoconv.egg-info/PKG-INFO
+nonebot_plugin_unoconv.egg-info/SOURCES.txt
+nonebot_plugin_unoconv.egg-info/dependency_links.txt
+nonebot_plugin_unoconv.egg-info/requires.txt
+nonebot_plugin_unoconv.egg-info/top_level.txt
