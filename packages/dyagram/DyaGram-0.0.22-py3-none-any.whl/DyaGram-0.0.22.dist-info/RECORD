@@ -1,0 +1,11 @@
+dyagram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dyagram/dyagram.py,sha256=iYWtZcb4QVpOd8W7zl4IpZuniad6f7vaSiXv45UhjQk,18913
+dyagram/initialize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dyagram/initialize/initialize.py,sha256=Jn9cuTjs0fW_K8eFj8XTma8x8SSOIHlCOlMJ6WFLGz4,1023
+dyagram/sites/__init__.py,sha256=26UWatnbm6ZIwQMuu9NNzQ0IW1ACO4Oe9caModuTpWM,4
+dyagram/sites/sites.py,sha256=RO20IpFCvCqMZB-PlaAdWtde3VGX_dkL-89UYtL_Me4,1270
+DyaGram-0.0.22.dist-info/METADATA,sha256=jH-BrSdCOGHyLWhiLALBqa_dKq-qYKXsPtUnUJlMJXU,781
+DyaGram-0.0.22.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+DyaGram-0.0.22.dist-info/entry_points.txt,sha256=ijqE2tvJaCTwQXvgRQpbcK8J9Bcu9QnJRVWYWLh1ebw,50
+DyaGram-0.0.22.dist-info/top_level.txt,sha256=was6Ua40edFslxSy36s2KIAzY60kyY4beas8FlnCGIM,8
+DyaGram-0.0.22.dist-info/RECORD,,
