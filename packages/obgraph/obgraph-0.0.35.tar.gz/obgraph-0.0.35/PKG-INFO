@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: obgraph
+Version: 0.0.35
+Summary: obgraph
+Home-page: http://github.com/ivargr/obgraph
+Author: Ivar Grytten
+Author-email: 
+License: MIT
+Classifier: Programming Language :: Python :: 3
