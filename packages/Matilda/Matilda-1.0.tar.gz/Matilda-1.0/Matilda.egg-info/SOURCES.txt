@@ -1,0 +1,6 @@
+setup.py
+Matilda.egg-info/PKG-INFO
+Matilda.egg-info/SOURCES.txt
+Matilda.egg-info/dependency_links.txt
+Matilda.egg-info/entry_points.txt
+Matilda.egg-info/top_level.txt
