@@ -1,0 +1,10 @@
+selenium
+pytest
+webdriver_manager
+jproperties
+PyYAML
+numpy
+pyautogui
+opencv-python
+auto-metamask
+requests

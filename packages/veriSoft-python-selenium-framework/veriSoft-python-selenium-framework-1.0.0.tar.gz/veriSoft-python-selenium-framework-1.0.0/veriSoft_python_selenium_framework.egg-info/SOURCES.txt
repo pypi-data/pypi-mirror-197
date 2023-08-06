@@ -1,0 +1,7 @@
+README.md
+setup.py
+veriSoft_python_selenium_framework.egg-info/PKG-INFO
+veriSoft_python_selenium_framework.egg-info/SOURCES.txt
+veriSoft_python_selenium_framework.egg-info/dependency_links.txt
+veriSoft_python_selenium_framework.egg-info/requires.txt
+veriSoft_python_selenium_framework.egg-info/top_level.txt
