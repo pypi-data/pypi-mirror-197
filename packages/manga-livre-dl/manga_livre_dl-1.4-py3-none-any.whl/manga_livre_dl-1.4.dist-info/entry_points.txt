@@ -1,0 +1,3 @@
+[console_scripts]
+manga-livre-dl=manga_livre_dl:main
+
