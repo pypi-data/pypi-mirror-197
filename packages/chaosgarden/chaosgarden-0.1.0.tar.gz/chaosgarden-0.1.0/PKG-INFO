@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: chaosgarden
+Version: 0.1.0
+Summary: Chaos engineering tools for Gardener-managed clusters
+License: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.9
+License-File: LICENSE
