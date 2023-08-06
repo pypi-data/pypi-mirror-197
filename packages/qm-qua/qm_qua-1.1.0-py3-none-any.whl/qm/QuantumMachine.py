@@ -1,0 +1,876 @@
+import json
+import logging
+import warnings
+from typing import Optional, Union, List, Tuple, Dict, Any, cast
+
+import numpy.typing
+
+from qm.elements.element_with_octave import ElementWithOctave
+from qm.elements.native_elements import (
+    static_set_mixer_correction,
+    SingleInputElement,
+    MixInputsElement,
+)
+from qm.elements_db import ElementsDB, init_elements
+from qm.jobs.qm_job import QmJob
+from qm.jobs.job_queue import QmQueue
+from qm._QmJobErrors import InvalidDigitalInputPolarityError
+from qm.api.frontend_api import FrontendApi
+from qm.api.job_manager_api import JobManagerApi
+from qm.api.models.capabilities import ServerCapabilities
+from qm.api.models.compiler import CompilerOptionArguments
+from qm.api.models.devices import Polarity
+from qm.api.simulation_api import SimulationApi
+from qm.exceptions import (
+    JobCancelledError,
+    InvalidConfigError,
+    UnsupportedCapabilityError,
+)
+from qm.jobs.running_qm_job import RunningQmJob
+from qm.octave import QmOctaveConfig
+from qm.jobs.pending_job import QmPendingJob
+from qm.jobs.simulated_job import SimulatedJob
+from qm.octave.octave_manager import OctaveManager
+from qm.octave.qm_octave import QmOctave
+from qm.persistence import BaseStore
+from qm.program import Program
+from qm.program.ConfigBuilder import convert_msg_to_config
+from qm.simulate.interface import SimulationConfig
+from qm.grpc.qua_config import QuaConfig
+from qm.type_hinting.config_types import (
+    DigitalInputPortConfigType,
+    DictQuaConfig,
+    PortReferenceType,
+)
+from qm.type_hinting.general import PathLike, Number, Value
+from qm.utils import deprecation_message, fix_object_data_type
+
+logger = logging.getLogger(__name__)
+
+
+class FunctionInputError(Exception):
+    pass
+
+
+class QuantumMachine:
+    def __init__(
+        self,
+        machine_id: str,
+        pb_config: QuaConfig,
+        frontend_api: FrontendApi,
+        capabilities: ServerCapabilities,
+        store: BaseStore,
+        octave_manager: OctaveManager,
+        octave_config: Optional[QmOctaveConfig] = None,
+    ):
+        self._id = machine_id
+        self._config = pb_config
+        self._frontend = frontend_api
+        self._simulation_api = SimulationApi.from_api(self._frontend)
+        self._job_manager = JobManagerApi.from_api(frontend_api)
+        self._capabilities = capabilities
+        self._store = store
+        self._queue = QmQueue(
+            config=self._config,
+            quantum_machine_id=self._id,
+            frontend_api=self._frontend,
+            capabilities=self._capabilities,
+            store=self._store,
+        )
+        self._elements: ElementsDB = init_elements(
+            pb_config, frontend_api, machine_id=machine_id, octave_config=octave_config
+        )
+        self._octave = QmOctave(self.elements, octave_manager)
+        with self._octave.batch_mode():
+            for element in self._elements.values():
+                if isinstance(element, ElementWithOctave):
+                    element.set_client()
+
+    @property
+    def elements(self) -> ElementsDB:
+        return self._elements
+
+    @property
+    def manager(self) -> None:
+        """Returns the Quantum Machines Manager"""
+        warnings.warn(
+            deprecation_message(
+                method="QuantumMachine.manager",
+                deprecated_in="1.1.0",
+                removed_in="1.2.0",
+                details="QuantumMachine no longer has 'manager' property",
+            ),
+            DeprecationWarning,
+        )
+        return None
+
+    @property
+    def id(self) -> str:
+        return self._id
+
+    @property
+    def queue(self) -> QmQueue:
+        """Returns the queue for the Quantum Machine"""
+        return self._queue
+
+    @property
+    def octave(self) -> QmOctave:
+        warnings.warn(
+            deprecation_message(
+                method="QuantumMachine.octave",
+                deprecated_in="1.1.0",
+                removed_in="1.2.0",
+                details="Use ElementWithOctave instead. For further details, see elements API.",
+            ),
+            DeprecationWarning,
+        )
+        return self._octave
+
+    def close(self) -> bool:
+        """Closes the quantum machine.
+
+        Returns:
+            ``True`` if the close request succeeded, raises an exception
+            otherwise.
+        """
+        return self._frontend.close_quantum_machine(self._id)
+
+    def simulate(
+        self,
+        program: Program,
+        simulate: SimulationConfig,
+        compiler_options: Optional[CompilerOptionArguments] = None,
+    ) -> SimulatedJob:
+        """Simulate the outputs of a deterministic QUA program.
+
+        Equivalent to ``execute()`` with ``simulate=SimulationConfig`` (see example).
+
+        Note:
+            A simulated job does not support calling QuantumMachine API functions.
+
+        The following example shows a simple execution of the simulator, where the
+        associated config object is omitted for brevity.
+
+        Example:
+            ```python
+            from qm.QuantumMachinesManager import QuantumMachinesManager
+            from qm.qua import *
+            from qm.simulate import SimulationConfig
+
+            qmManager = QuantumMachinesManager()
+            qm1 = qmManager.open_qm(config)
+
+            with program() as prog:
+                play('pulse1', 'element1')
+
+            job = qm1.simulate(prog, SimulationConfig(duration=100))
+            ```
+
+        Args:
+            program: A QUA ``program()`` object to execute
+            simulate: A ``SimulationConfig`` configuration object
+            kwargs: additional parameteres to pass to execute
+
+        Returns:
+            a ``QmJob`` object (see QM Job API).
+        """
+        job: SimulatedJob = cast(
+            SimulatedJob, self.execute(program, simulate=simulate, compiler_options=compiler_options)
+        )
+        return job
+
+    def execute(
+        self,
+        program: Program,
+        duration_limit: int = 1000,
+        data_limit: int = 20000,
+        force_execution: int = False,
+        dry_run: int = False,
+        simulate: Optional[SimulationConfig] = None,
+        compiler_options: Optional[CompilerOptionArguments] = None,
+    ) -> RunningQmJob:
+        """Executes a program and returns an job object to keep track of execution and get
+        results.
+
+        Note:
+
+            Calling execute will halt any currently running program and clear the current
+            queue. If you want to add a job to the queue, use qm.queue.add()
+
+        Args:
+            program: A QUA ``program()`` object to execute
+            duration_limit (int): This parameter is ignored as it is
+                obsolete
+            data_limit (int): This parameter is ignored as it is
+                obsolete
+            force_execution (bool): This parameter is ignored as it is
+                obsolete
+            dry_run (bool): This parameter is ignored as it is obsolete
+
+        Returns:
+            A ``QmJob`` object (see QM Job API).
+        """
+        if type(program) is not Program:
+            raise Exception("program argument must be of type qm.program.Program")
+        if program.metadata.uses_command_timestamps and not self._capabilities.supports_command_timestamps:
+            raise UnsupportedCapabilityError("timestamping commands is supported from QOP 2.2 or above")
+        if program.metadata.uses_fast_frame_rotation and not self._capabilities.supports_fast_frame_rotation:
+            raise UnsupportedCapabilityError("fast frame rotation is supported from QOP 2.2 or above")
+
+        if compiler_options is None:
+            compiler_options = CompilerOptionArguments()
+
+        if simulate is not None:
+            job_id, simulated_response_part = self._simulation_api.simulate(
+                self.get_config(), program, simulate, compiler_options
+            )
+            return SimulatedJob(
+                job_id=job_id,
+                frontend_api=self._frontend,
+                capabilities=self._capabilities,
+                store=self._store,
+                simulated_response=simulated_response_part,
+            )
+
+        self._queue.clear()
+        current_running_job = self.get_running_job()
+        if current_running_job is not None:
+            current_running_job.halt()
+
+        pending_job = self._queue.add(program, compiler_options)
+        logger.info("Executing program")
+        return pending_job.wait_for_execution(timeout=5)
+
+    def compile(
+        self,
+        program: Program,
+        compiler_options: Optional[CompilerOptionArguments] = None,
+    ) -> str:
+        """Compiles a QUA program to be executed later. The returned `program_id`
+        can then be directly added to the queue. For a detailed explanation
+        see [Precompile Jobs](../../Guides/features/#precompile-jobs).
+
+        Args:
+            program: A QUA program
+            compiler_options: Optional arguments for compilation
+
+        Returns:
+            a program_id str
+
+        Example:
+            ```python
+            program_id = qm.compile(program)
+            pending_job = qm.queue.add_compiled(program_id)
+            job = pending_job.wait_for_execution()
+            ```
+        """
+        if program.metadata.uses_command_timestamps and not self._capabilities.supports_command_timestamps:
+            raise UnsupportedCapabilityError("timestamping commands is supported from QOP 2.2 or above")
+
+        if program.metadata.uses_fast_frame_rotation and not self._capabilities.supports_fast_frame_rotation:
+            raise UnsupportedCapabilityError("fast frame rotation is supported from QOP 2.2 or above")
+
+        logger.info("Compiling program")
+        if compiler_options is None:
+            compiler_options = CompilerOptionArguments()
+
+        return self._frontend.compile(self._id, program.build(self._config), compiler_options)
+
+    def list_controllers(self) -> Tuple[str, ...]:
+        """Gets a list with the defined controllers in this qm
+
+        Returns:
+            The names of the controllers configured in this qm
+        """
+        # TODO (YR) - why is this function here, QM should not be aware of the controllers
+        return tuple(self.get_config()["controllers"].keys())
+
+    def set_mixer_correction(
+        self,
+        mixer: str,
+        intermediate_frequency: Number,
+        lo_frequency: Number,
+        values: Tuple[float, float, float, float],
+    ) -> None:
+        """Sets the correction matrix for correcting gain and phase imbalances
+        of an IQ mixer for the supplied intermediate frequency and LO frequency.
+
+        Args:
+            mixer (str): the name of the mixer, as defined in the
+                configuration
+            intermediate_frequency (Union[int|float]): the intermediate
+                frequency for which to apply the correction matrix
+            lo_frequency (int): the LO frequency for which to apply the
+                correction matrix
+            values (tuple):
+
+                tuple is of the form (v00, v01, v10, v11) where
+                the matrix is
+                | v00 v01 |
+                | v10 v11 |
+
+        Note:
+
+            Currently, the OPX does not support multiple mixer calibration entries.
+            This function will accept IF & LO frequencies written in the config file,
+            and will update the correction matrix for all the elements with the given
+            mixer/frequencies combination when the program started.
+
+            It’s not recommended to use this method while a job is running.
+            To change the calibration values for a running job,
+            use job.set_element_correction
+        """
+        static_set_mixer_correction(
+            self._frontend,
+            self._id,
+            mixer,
+            intermediate_frequency=intermediate_frequency,
+            lo_frequency=lo_frequency,
+            values=values,
+        )
+
+    def set_intermediate_frequency(self, element: str, freq: float) -> None:
+        """Sets the intermediate frequency of the element
+
+        Args:
+            element (str): the name of the element whose intermediate
+                frequency will be updated
+            freq (float): the intermediate frequency to set to the given
+                element
+        """
+        element_inst = self.elements[element]
+        element_inst.set_intermediate_frequency(freq)
+
+    def get_output_dc_offset_by_element(self, element: str, iq_input: str) -> float:
+        """Get the current DC offset of the OPX analog output channel associated with a element.
+
+        Args:
+            element: the name of the element to get the correction for
+            iq_input: the port name as appears in the element config.
+                Options:
+
+                `'single'`
+                    for an element with a single input
+
+                `'I'` or `'Q'`
+                    for an element with mixer inputs
+
+        Returns:
+            the offset, in normalized output units
+        """
+        config: DictQuaConfig = self.get_config()
+        element_instance = self.elements[element]
+        if isinstance(element_instance, SingleInputElement):
+            port = element_instance.port
+        elif isinstance(element_instance, MixInputsElement):
+            if iq_input == "I":
+                port = element_instance.i_port
+            elif iq_input == "Q":
+                port = element_instance.q_port
+            else:
+                raise ValueError(f"Port must be I or Q, got {iq_input}.")
+        else:
+            raise ValueError(f"Element {element} of type {type(element_instance)} does not have a 'port' property.")
+
+        # TODO (YR) - this part should be under the element, but for now I keep it here.
+        #  This is the next phase of the work
+
+        controller: str = port.controller
+        port_number: int = port.number
+
+        if controller in config["controllers"]:
+            config_controller = config["controllers"][controller]
+        else:
+            raise InvalidConfigError("Controller does not exist")
+
+        if port_number in config_controller["analog_outputs"]:
+            return config_controller["analog_outputs"][port_number]["offset"]
+        else:
+            raise InvalidConfigError(f"Controller {config_controller} does not exist")
+
+    def set_output_dc_offset_by_element(
+        self,
+        element: str,
+        input: Union[str, Tuple[str, str], List[str]],
+        offset: Union[float, Tuple[float, float], List[float]],
+    ) -> None:
+        """Set the current DC offset of the OPX analog output channel associated with a element.
+
+        Args:
+            element (str): the name of the element to update the
+                correction for
+            input (Union[str, Tuple[str,str], List[str]]): the input
+                name as appears in the element config. Options:
+
+                `'single'`
+                    for an element with a single input
+
+                `'I'` or `'Q'` or a tuple ('I', 'Q')
+                    for an element with mixer inputs
+            offset (Union[float, Tuple[float,float], List[float]]): The
+                dc value to set to, in normalized output units. Ranges
+                from -0.5 to 0.5 - 2^-16 in steps of 2^-16.
+
+        Examples:
+            ```python
+            qm.set_output_dc_offset_by_element('flux', 'single', 0.1)
+            qm.set_output_dc_offset_by_element('qubit', 'I', -0.01)
+            qm.set_output_dc_offset_by_element('qubit', ('I', 'Q'), (-0.01, 0.05))
+            ```
+
+        Note:
+
+            If the sum of the DC offset and the largest waveform data-point exceed the normalized unit range specified
+            above, DAC output overflow will occur and the output will be corrupted.
+        """
+        element_inst = self.elements[element]
+        if isinstance(element_inst, MixInputsElement):
+            if isinstance(input, (list, tuple)):
+                if not set(input) <= {"I", "Q"}:
+                    raise FunctionInputError(f"Input names should be 'I' or 'Q', got {input}")
+                if not (isinstance(offset, (list, tuple)) and len(input) == len(offset)):
+                    raise FunctionInputError(
+                        f"input should be two iterables of the same size," f"got input = {input} and offset = {offset}"
+                    )
+                kwargs = {f"{k.lower()}_offset": v for k, v in zip(input, offset)}
+            elif isinstance(input, str):
+                if input not in {"I", "Q"}:
+                    raise FunctionInputError(f"Input names should be 'I' or 'Q', got {input}")
+                if not isinstance(offset, (int, float)):
+                    raise FunctionInputError(f"Input should be int or float, got {type(offset)}")
+                kwargs = {f"{input.lower()}_offset": offset}
+            else:
+                raise ValueError(f"Invalid input - {input}")
+            element_inst.set_output_dc_offset(**kwargs)
+        elif isinstance(element_inst, SingleInputElement):
+            element_inst.set_output_dc_offset(cast(float, offset))
+        else:
+            raise ValueError(
+                f"Element {element} of type {element_inst.__class__.__name__} " f"does not support dc offset setting."
+            )
+
+    def set_output_filter_by_element(
+        self,
+        element: str,
+        input: str,
+        feedforward: Union[List[float], numpy.typing.NDArray[numpy.float_], None],
+        feedback: Union[List[float], numpy.typing.NDArray[numpy.float_], None],
+    ) -> None:
+        """Sets the intermediate frequency of the element
+
+        Args:
+            element: the name of the element whose ports filters will be
+                updated
+            input: the input name as appears in the element config.
+                Options:
+
+                `'single'`
+                    for an element with single input
+
+                `'I'` or `'Q'`
+                    for an element with mixer inputs
+            feedforward: the values for the feedforward filter
+            feedback: the values for the feedback filter
+
+        """
+        logger.debug(
+            f"Setting output filter of port '{input}' on element '{element}' "
+            + f"to (feedforward: {feedforward}, feedback: {feedback})"
+        )
+        element_inst = self.elements[element]
+        if isinstance(element_inst, MixInputsElement):
+            element_inst.set_output_filter(input, feedforward, feedback)
+        elif isinstance(element_inst, SingleInputElement):
+            element_inst.set_output_filter(feedforward, feedback)
+        else:
+            raise AttributeError(
+                f"Element {element} of type {element_inst.__class__.__name__} " f"does not support filter setting."
+            )
+
+    def set_input_dc_offset_by_element(self, element: str, output: str, offset: float) -> None:
+        """set the current DC offset of the OPX analog input channel associated with a element.
+
+        Args:
+            element (str): the name of the element to update the
+                correction for
+            output (str): the output key name as appears in the element
+                config under 'outputs'.
+            offset (float): the dc value to set to, in normalized input
+                units. Ranges from -0.5 to 0.5 - 2^-16 in steps of
+                2^-16.
+
+        Note:
+            If the sum of the DC offset and the largest waveform data-point exceed the normalized unit range specified
+            above, DAC output overflow will occur and the output will be corrupted.
+        """
+        element_instance = self.elements[element]
+        element_instance.set_input_dc_offset(output, offset)
+
+    def get_input_dc_offset_by_element(self, element: str, output: str) -> float:
+        """Get the current DC offset of the OPX analog input channel associated with a element.
+
+        Args:
+            element: the name of the element to get the correction for
+            output: the output key name as appears in the element config
+                under 'outputs'.
+
+        Returns:
+            the offset, in normalized output units
+        """
+        config = self.get_config()
+
+        element_obj = self.elements[element]
+        outputs = element_obj._config.outputs
+        if output in outputs:
+            port = outputs[output]
+        else:
+            raise Exception("Output does not exist")
+
+        port_controller, input_number = port.controller, port.number
+
+        if port_controller in config["controllers"]:
+            controller = config["controllers"][port_controller]
+        else:
+            raise Exception("Controller does not exist")
+
+        if "analog_inputs" not in controller:
+            raise Exception("Controller has not analog inputs defined")
+
+        if input_number in controller["analog_inputs"]:
+            return cast(float, controller["analog_inputs"][input_number]["offset"])
+        else:
+            raise Exception("Port not found")
+
+    def get_digital_delay(self, element: str, digital_input: str) -> int:
+        """Gets the delay of the digital input of the element
+
+        Args:
+            element: the name of the element to get the delay for
+            digital_input: the digital input name as appears in the
+                element's config
+
+        Returns:
+            the delay
+        """
+        element_instance = self.elements[element]
+        return element_instance.get_digital_delay(digital_input)
+
+    def set_digital_delay(self, element: str, digital_input: str, delay: int) -> None:
+        """Sets the delay of the digital input of the element
+
+        Args:
+            element (str): the name of the element to update delay for
+            digital_input (str): the digital input name as appears in
+                the element's config
+            delay (int): the delay value to set to, in nsec. Range: 0 to
+                255 - 2 * buffer, in steps of 1
+        """
+        element_instance = self.elements[element]
+        element_instance.set_digital_delay(digital_input, delay)
+
+    def get_digital_buffer(self, element: str, digital_input: str) -> int:
+        """Gets the buffer for digital input of the element
+
+        Args:
+            element (str): the name of the element to get the buffer for
+            digital_input (str): the digital input name as appears in
+                the element's config
+
+        Returns:
+            the buffer
+        """
+        element_instance = self.elements[element]
+        return element_instance.get_digital_buffer(digital_input_name=digital_input)
+
+    def set_digital_buffer(self, element: str, digital_input: str, buffer: int) -> None:
+        """Sets the buffer for digital input of the element
+
+        Args:
+            element (str): the name of the element to update buffer for
+            digital_input (str): the digital input name as appears in
+                the element's config
+            buffer (int): the buffer value to set to, in nsec. Range: 0
+                to (255 - delay) / 2, in steps of 1
+        """
+        element_instance = self.elements[element]
+        element_instance.set_digital_buffer(digital_input, buffer)
+
+    def get_time_of_flight(self, element: str) -> int:
+        """Gets the *time of flight*, associated with a measurement element.
+
+        This is the amount of time between the beginning of a measurement pulse applied to element
+        and the time that the data is available to the controller for demodulation or streaming.
+
+        Args:
+            element (str): the name of the element to get time of flight
+                for
+
+        Returns:
+            the time of flight, in nsec
+        """
+        element_object = self.elements[element]
+        return element_object.time_of_flight
+
+    def get_smearing(self, element: str) -> int:
+        """Gets the *smearing* associated with a measurement element.
+
+        This is a broadening of the raw results acquisition window, to account for dispersive broadening
+        in the measurement elements (readout resonators etc.) The acquisition window will be broadened
+        by this amount on both sides.
+
+        Args:
+            element (str): the name of the element to get smearing for
+
+        Returns:
+            the smearing, in nesc.
+        """
+        element_object = self.elements[element]
+        return element_object.smearing
+
+    @property
+    def io1(self) -> Dict[str, Value]:
+        return self.get_io1_value()
+
+    @io1.setter
+    def io1(self, value: Value) -> None:
+        self.set_io1_value(value)
+
+    @property
+    def io2(self) -> Dict[str, Value]:
+        return self.get_io1_value()
+
+    @io2.setter
+    def io2(self, value: Value) -> None:
+        self.set_io2_value(value)
+
+    def set_io1_value(self, value_1: Value) -> None:
+        """Sets the value of ``IO1``.
+
+        This can be used later inside a QUA program as a QUA variable ``IO1`` without declaration.
+        The type of QUA variable is inferred from the python type passed to ``value_1``, according to the following rule:
+
+        int -> int
+        float -> fixed
+        bool -> bool
+
+        Args:
+            value_1 (Union[float,bool,int]): the value to be placed in
+                ``IO1``
+        """
+        self.set_io_values(value_1=value_1)
+
+    def set_io2_value(self, value_2: Value) -> None:
+        """Sets the value of ``IO1``.
+
+        This can be used later inside a QUA program as a QUA variable ``IO2`` without declaration.
+        The type of QUA variable is inferred from the python type passed to ``value_2``,
+        according to the following rule:
+
+        int -> int
+        float -> fixed
+        bool -> bool
+
+        Args:
+            value_2 (Union[float, bool, int]): the value to be placed in
+                ``IO1``
+        """
+        self.set_io_values(value_2=value_2)
+
+    def set_io_values(
+        self,
+        value_1: Optional[Value] = None,
+        value_2: Optional[Value] = None,
+    ) -> None:
+        """Sets the values of ``IO1`` and ``IO2``
+
+        This can be used later inside a QUA program as a QUA variable ``IO1``, ``IO2`` without declaration.
+        The type of QUA variable is inferred from the python type passed to ``value_1``, ``value_2``,
+        according to the following rule:
+
+        int -> int
+        float -> fixed
+        bool -> bool
+
+        Args:
+            value_1 (Optional[Union[float, bool, int]]): the value to be
+                placed in ``IO1``
+            value_2 (Optional[Union[float, bool, int]]): the value to be
+                placed in ``IO2``
+        """
+
+        if value_1 is None and value_2 is None:
+            return
+
+        if value_1 is not None:
+            logger.debug(f"Setting value '{value_1}' to IO1")
+        if value_2 is not None:
+            logger.debug(f"Setting value '{value_2}' to IO2")
+
+        value_1 = fix_object_data_type(value_1)
+        value_2 = fix_object_data_type(value_2)
+
+        for index, value in enumerate([value_1, value_2]):
+            if type(value) not in (int, float, bool) and value is not None:
+                raise Exception(f"Invalid value_{index + 1} type (The possible types are: int, bool or float)")
+
+        self._frontend.set_io_values(self._id, [value_1, value_2])
+
+    def get_io1_value(self) -> Dict[str, Value]:
+        """Gets the data stored in ``IO1``
+
+        No inference is made on type.
+
+        Returns:
+            A dictionary with data stored in ``IO1``. (Data is in all
+            three format: ``int``, ``float`` and ``bool``)
+        """
+        return self.get_io_values()[0]
+
+    def get_io2_value(self) -> Dict[str, Value]:
+        """Gets the data stored in ``IO2``
+
+        No inference is made on type.
+
+        Returns:
+            A dictionary with data from the second IO register. (Data is
+            in all three format: ``int``, ``float`` and ``bool``)
+        """
+        return self.get_io_values()[1]
+
+    def get_io_values(self) -> List[Dict[str, Value]]:
+        """Gets the data stored in both ``IO1`` and ``IO2``
+
+        No inference is made on type.
+
+        Returns:
+            A list that contains dictionaries with data from the IO
+            registers. (Data is in all three format: ``int``, ``float``
+            and ``bool``)
+        """
+        resp1, resp2 = self._frontend.get_io_values(self._id)
+
+        return [
+            {
+                "io_number": 1,
+                "int_value": resp1.int_value,
+                "fixed_value": resp1.double_value,
+                "boolean_value": resp1.boolean_value,
+            },
+            {
+                "io_number": 2,
+                "int_value": resp2.int_value,
+                "fixed_value": resp2.double_value,
+                "boolean_value": resp2.boolean_value,
+            },
+        ]
+
+    def peek(self, address: Any) -> None:
+        warnings.warn(
+            deprecation_message(
+                method="QuantumMachine.peek", deprecated_in="1.1.0", removed_in="1.2.0", details="Not Implemented"
+            ),
+            DeprecationWarning,
+        )
+        raise NotImplementedError()
+        # if you must use this, code below will work for a specific controller
+        # request = PeekRequest()
+        # request.controllerId = list(self._config["controllers"].keys())[0]
+        # request.address = address
+
+        # return self._frontend.Peek(request)
+
+    def poke(self, address: Any, value: Any) -> None:
+        warnings.warn(
+            deprecation_message(
+                method="QuantumMachine.poke", deprecated_in="1.1.0", removed_in="1.2.0", details="Not Implemented"
+            ),
+            DeprecationWarning,
+        )
+        pass
+
+    def get_config(self) -> DictQuaConfig:
+        """Gets the current config of the qm
+
+        Returns:
+            A dictionary with the qm's config
+        """
+        config = self._frontend.get_quantum_machine_config(self._id)
+        self._config = config
+        return convert_msg_to_config(config)
+
+    def save_config_to_file(self, filename: PathLike) -> None:
+        """Saves the qm current config to a file
+
+        Args:
+            filename: The name of the file where the config will be saved
+        """
+        json_str = json.dumps(self.get_config())
+        with open(filename, "w") as writer:
+            writer.write(json_str)
+
+    def get_running_job(self) -> Optional[QmJob]:
+        """Gets the currently running job. Returns None if there isn't one."""
+        job_id = self._job_manager.get_running_job(self._id)
+        if job_id is None:
+            return None
+
+        try:
+            pending_job = QmPendingJob(
+                job_id=job_id,
+                machine_id=self._id,
+                frontend_api=self._frontend,
+                capabilities=self._capabilities,
+                store=self._store,
+            )
+            return pending_job.wait_for_execution(timeout=10.0)
+        except JobCancelledError:
+            # In case that the job has finished between the GetRunningJon and the
+            # wait for execution
+            return None
+
+    def set_digital_input_threshold(self, port: PortReferenceType, threshold: float) -> None:
+        controller_name, port_number = port
+        self._frontend.set_digital_input_threshold(self._id, controller_name, port_number, threshold)
+
+    def _get_digital_input_port(self, port: PortReferenceType) -> DigitalInputPortConfigType:
+        config = self.get_config()
+        component = "Controller"
+        target_controller_name, target_port = port
+        controller = config["controllers"].get(target_controller_name, None)
+        if controller is not None:
+            controller_digital_inputs: Optional[Dict[int, DigitalInputPortConfigType]] = controller.get(
+                "digital_inputs", None
+            )
+            if controller_digital_inputs is not None:
+                if target_port in controller_digital_inputs:
+                    return controller_digital_inputs[target_port]
+                else:
+                    component = "Digital input port"
+            else:
+                component = "Digital input for controller"
+
+        raise InvalidConfigError(f"{component} not found")
+
+    def get_digital_input_threshold(self, port: PortReferenceType) -> float:
+        return cast(float, self._get_digital_input_port(port)["threshold"])
+
+    def set_digital_input_deadtime(self, port: PortReferenceType, deadtime: int) -> None:
+        controller_name, port_number = port
+        self._frontend.set_digital_input_dead_time(self._id, controller_name, port_number, deadtime)
+
+    def get_digital_input_deadtime(self, port: PortReferenceType) -> int:
+        return self._get_digital_input_port(port)["deadtime"]
+
+    def set_digital_input_polarity(self, port: PortReferenceType, polarity: str) -> None:
+        try:
+            polarity_enum = Polarity[polarity]
+        except KeyError:
+            raise InvalidDigitalInputPolarityError(
+                f"Invalid value for polarity {polarity}. Valid values are: 'RISING' or 'FALLING'."
+            )
+
+        controller_name, port_number = port
+        self._frontend.set_digital_input_polarity(self._id, controller_name, port_number, polarity_enum)
+
+    def get_digital_input_polarity(self, port: PortReferenceType) -> str:
+        return self._get_digital_input_port(port)["polarity"]
