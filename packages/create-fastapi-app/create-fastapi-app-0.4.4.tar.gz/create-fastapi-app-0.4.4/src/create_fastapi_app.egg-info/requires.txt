@@ -1,0 +1,4 @@
+typer<1,>=0.6
+colorama<1,>=0.4
+rich<13,>=12.6
+shellingham<2,>=1.5
