@@ -1,0 +1,7 @@
+LICENCE
+README.md
+setup.py
+felopdf.egg-info/PKG-INFO
+felopdf.egg-info/SOURCES.txt
+felopdf.egg-info/dependency_links.txt
+felopdf.egg-info/top_level.txt
