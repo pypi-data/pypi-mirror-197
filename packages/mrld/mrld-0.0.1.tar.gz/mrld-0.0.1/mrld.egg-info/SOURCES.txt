@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+mrld.egg-info/PKG-INFO
+mrld.egg-info/SOURCES.txt
+mrld.egg-info/dependency_links.txt
+mrld.egg-info/not-zip-safe
+mrld.egg-info/top_level.txt
