@@ -1,0 +1,7 @@
+setup.py
+azerty123/__init__.py
+azerty123/pytoolib.py
+azerty123.egg-info/PKG-INFO
+azerty123.egg-info/SOURCES.txt
+azerty123.egg-info/dependency_links.txt
+azerty123.egg-info/top_level.txt
