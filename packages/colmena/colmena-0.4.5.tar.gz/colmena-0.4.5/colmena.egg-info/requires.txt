@@ -1,0 +1,15 @@
+parsl>=2022
+pydantic==1.*
+redis==3.4.*
+proxystore==0.4.*
+
+[funcx]
+funcx>=1.0.5
+
+[test]
+flake8
+pytest
+pytest-timeout
+pytest-mock
+pytest-repeat
+pytest-cov
