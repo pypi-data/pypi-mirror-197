@@ -1,0 +1,5 @@
+setuptools>=65.5.1
+wheel>=0.38.0
+linkeddeepdict>=0.0.1
+polymesh>=0.0.14
+matplotlib

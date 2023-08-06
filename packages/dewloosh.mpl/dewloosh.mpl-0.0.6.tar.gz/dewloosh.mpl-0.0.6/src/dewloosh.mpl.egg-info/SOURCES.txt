@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+src/dewloosh.mpl.egg-info/PKG-INFO
+src/dewloosh.mpl.egg-info/SOURCES.txt
+src/dewloosh.mpl.egg-info/dependency_links.txt
+src/dewloosh.mpl.egg-info/not-zip-safe
+src/dewloosh.mpl.egg-info/requires.txt
+src/dewloosh.mpl.egg-info/top_level.txt
+src/dewloosh/mpl/__init__.py
+src/dewloosh/mpl/d2.py
+src/dewloosh/mpl/parallel.py
+src/dewloosh/mpl/triplot.py
+src/dewloosh/mpl/utils.py
