@@ -1,0 +1,3 @@
+[netbox_plugins]
+netbox_manage_project = netbox_manage_project:Plugin
+
