@@ -1,0 +1,3 @@
+[console_scripts]
+qrm=qrm.cli:main
+
