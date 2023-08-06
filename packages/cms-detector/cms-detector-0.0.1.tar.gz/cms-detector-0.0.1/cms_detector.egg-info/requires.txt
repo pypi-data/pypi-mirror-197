@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+lxml
+
+[dev]
+setuptools
+pytest
+pytest-cov
+twine
+wheel
