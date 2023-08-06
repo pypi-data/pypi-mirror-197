@@ -1,0 +1,2 @@
+[console_scripts]
+photoResizer = photoResizer.cli:resize_images
