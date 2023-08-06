@@ -1,0 +1,13 @@
+onn4arg/__init__.py,sha256=15dBDmkWJwrffzDS7EW9AafoW3CLWD9b1OWfG6kRYis,110
+onn4arg/aln2txt.pl,sha256=Zp4zEs84Ct0I1QPqZlqIaUouI6_NSuQEUpAv_ysTpkk,1419
+onn4arg/download-model.sh,sha256=peAiaw2aD_bAnVoHS8oNhcyC1pd5naLpJN4Wyl5J75g,275
+onn4arg/fa2lst.pl,sha256=5bYzdYrv91283qNwIM-5v_4lBjAguhTatjssEawKz6A,343
+onn4arg/model.py,sha256=o9uYAS3Q9f7oYG9V4yF5PGbq7zXQcWfqh0_wIBW2C5s,5745
+onn4arg/predict.py,sha256=GlmmKqKL15wCH_c_j48W6SwqmFHbRF9AJcm9HPzBNl4,4226
+onn4arg/predict.sh,sha256=m7UlOWXvmQcDbUyoDfInuXHndtr9vW8OMbcO5lP5LtI,509
+onn4arg/run.sh,sha256=6AIQX-PS2GdOFguqAaJA7kLvQngoJylJM10rKBeWYJM,283
+onn4arg-1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+onn4arg-1.0.dist-info/METADATA,sha256=wiz44L12c7L5Z4QlPE8LoCOE8wcbowghdoxHA-ZKl9o,1150
+onn4arg-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+onn4arg-1.0.dist-info/top_level.txt,sha256=D9TWncIRFcHbbcplLutwMOk5PKKNQLaSFa5TsEjK5Qk,8
+onn4arg-1.0.dist-info/RECORD,,
