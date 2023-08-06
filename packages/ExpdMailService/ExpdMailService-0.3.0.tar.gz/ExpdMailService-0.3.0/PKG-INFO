@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ExpdMailService
+Version: 0.3.0
+Summary: Python Module for sending mail from Expeditors internal mail server
+Home-page: UNKNOWN
+Author: greg he
+Author-email: greg.he@expeditors.com
+License: MIT
+Description: UNKNOWN
+Keywords: sending mail
+Platform: UNKNOWN
