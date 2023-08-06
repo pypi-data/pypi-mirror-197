@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: FlaskVerifyCode
+Version: 1.0.3
+Summary: Flask mini verification code receiving verification interface
+Home-page: UNKNOWN
+Author: FlaskVerifyCode
+Author-email: me@lyshark.com
+License: MIT Licence
+Description: UNKNOWN
+Platform: any
+Requires-Python: >=3.6.0
+Provides-Extra: all
