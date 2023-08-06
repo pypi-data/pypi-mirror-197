@@ -1,0 +1,14 @@
+awswrangler
+boto3
+duckdb
+fsspec
+numpy
+pandas
+paramiko
+pyarrow
+pydomo
+pymongo
+s3fs
+tqdm
+Unidecode
+pysftp
