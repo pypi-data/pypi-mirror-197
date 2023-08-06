@@ -1,0 +1,9 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools", "wheel", "translate-toolkit"]  # PEP 508 specifications.
+
+[tool.black]
+target-version = ['py37']
+
+[tool.codespell]
+skip = '*.po,*.pot,*.json,*.tmx,*.tbx,yarn.lock,known_hosts'
