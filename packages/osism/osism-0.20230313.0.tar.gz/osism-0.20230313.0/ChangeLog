@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20230313.0
+-------------
+
+* Do not restart the whole listener service when retrying the connect (#395)
