@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+onn4arg/__init__.py
+onn4arg/aln2txt.pl
+onn4arg/download-model.sh
+onn4arg/fa2lst.pl
+onn4arg/model.py
+onn4arg/predict.py
+onn4arg/predict.sh
+onn4arg/run.sh
+onn4arg.egg-info/PKG-INFO
+onn4arg.egg-info/SOURCES.txt
+onn4arg.egg-info/dependency_links.txt
+onn4arg.egg-info/top_level.txt

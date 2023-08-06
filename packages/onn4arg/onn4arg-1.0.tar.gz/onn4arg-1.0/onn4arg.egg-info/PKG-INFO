@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: onn4arg
+Version: 1.0
+Summary: ONN4ARG is an ontology-aware neural network model, which employs a novel ontology-aware layer for antibiotic resistance gene prediction and classification.
+Home-page: https://github.com/HUST-NingKang-Lab/ONN4ARG
+Author: Yuguo Zha, Cheng Chen, Qihong Jiao, Xiaomei Zeng, Xuefeng Cui, Kang Ning
+Author-email: hugozha@hust.edu.cn
+Maintainer: Yuguo Zha
+License: GPL-3 License
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+License-File: LICENSE
+
+ONN4ARG is an Ontology-aware Neural Network model for Antibiotic Resistance Gene (ARG) annotation predictions. It employs a novel ontology-aware layer to encourage annotation predictions satisfying the ontology rules (i.e., the ontology tree structure). It requires the Diamond and the HHblits alignment tools to run. Our source codes are available on GitHub, and our pre-built ARG database and our pre-trained model can be downloaded from Zenodo or release. ONN4ARG provides web service for fast ARG prediction.
