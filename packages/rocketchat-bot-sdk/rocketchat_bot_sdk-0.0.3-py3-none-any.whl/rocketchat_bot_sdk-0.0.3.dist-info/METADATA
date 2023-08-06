@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rocketchat-bot-sdk
+Version: 0.0.3
+Summary: SDK for creating chat bots with the Rocketchat API
+Home-page: https://github.com/HappyTetrahedron/rocketchat-bot-sdk
+Author: Aline Abler
+Author-email: alinea@riseup.net
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: rocketchat-API
+Requires-Dist: websockets (==10.4)
+
+# Rocketchat Bot SDK
+
+A small SDK to write chat bots for Rocketchat. Built on top of [https://github.com/jadolg/rocketchat_API](rocketchat_API), and using the websocket-based realtime API for receiving messages.
