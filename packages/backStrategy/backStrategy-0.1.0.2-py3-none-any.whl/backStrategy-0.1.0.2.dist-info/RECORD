@@ -1,0 +1,14 @@
+backStrategy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backStrategy/main.py,sha256=0kUvLEUOjqxMUe5eAhQn6TShWTUHCrk3k4w-_W3u2sQ,1030
+backStrategy/engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backStrategy/engine/backEngine.py,sha256=10b5JxhD-7Pmi22aBEMpRaz6btWyT5LSUiqUQrN1CYM,5593
+backStrategy/engine/template.py,sha256=VRoNBTANJweSa0MPZ-1iw8gcNU9niKRKhMvdEEbg-_U,1127
+backStrategy/strategy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backStrategy/strategy/test_demo.py,sha256=HHu6CpeKk635DeUSzAJhc1ToA1uFzYvFOIy9NcpbU1k,5982
+backStrategy/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+backStrategy/utils/object.py,sha256=9bIdRNml5Phv__9T6WwZoI-86Tpch4HPXdc5RxTGQs8,661
+backStrategy-0.1.0.2.dist-info/LICENSE,sha256=9qN6y775ztpQtmu9HCKcqdqdTfzFoVN4oAxrxA-dtVQ,608
+backStrategy-0.1.0.2.dist-info/METADATA,sha256=zF-oZCaX5kQb5Jo_IYiLo9wf_FsogrYyNG91-aXUNC8,487
+backStrategy-0.1.0.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+backStrategy-0.1.0.2.dist-info/top_level.txt,sha256=E34sxpE99P3xZb35mGD4ZbUJd6ZaR9j9FFB-YtgvM58,13
+backStrategy-0.1.0.2.dist-info/RECORD,,
