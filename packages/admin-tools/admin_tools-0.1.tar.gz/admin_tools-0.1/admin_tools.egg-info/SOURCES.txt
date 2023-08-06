@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+admin_tools/__init__.py
+admin_tools/admin_functions.py
+admin_tools.egg-info/PKG-INFO
+admin_tools.egg-info/SOURCES.txt
+admin_tools.egg-info/dependency_links.txt
+admin_tools.egg-info/requires.txt
+admin_tools.egg-info/top_level.txt

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: admin-tools
+Version: 0.1
+Summary: Simple functions for admin jobs in python
+Home-page: https://github.com/dmnburrows/admin_tools
+Download-URL: https://github.com/dmnburrows/admin_tools/archive/refs/tags/v_01.tar.gz
+Author: Dominic Burrows
+Author-email: dominicburrows@hotmail.co.uk
+License: MIT
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE.txt
