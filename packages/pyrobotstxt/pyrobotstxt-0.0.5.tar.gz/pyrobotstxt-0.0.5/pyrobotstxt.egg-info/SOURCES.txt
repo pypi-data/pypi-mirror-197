@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pyrobotstxt/__init__.py
+pyrobotstxt.egg-info/PKG-INFO
+pyrobotstxt.egg-info/SOURCES.txt
+pyrobotstxt.egg-info/dependency_links.txt
+pyrobotstxt.egg-info/requires.txt
+pyrobotstxt.egg-info/top_level.txt

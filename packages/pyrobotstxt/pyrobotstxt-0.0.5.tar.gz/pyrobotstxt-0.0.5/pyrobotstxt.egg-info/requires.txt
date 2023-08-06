@@ -1,0 +1,14 @@
+pillow==9.3.0
+requests==2.28.2
+beautifulsoup4==4.11.2
+
+[dev]
+setuptools
+pytest
+pytest-cov
+twine
+wheel
+mkdocs
+mkdocs-gen-files
+mkdocstrings[python]
+pymdown-extensions
