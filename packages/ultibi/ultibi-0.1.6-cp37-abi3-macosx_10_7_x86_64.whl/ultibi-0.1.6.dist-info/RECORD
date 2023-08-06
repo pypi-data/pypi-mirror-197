@@ -1,0 +1,9 @@
+ultibi-0.1.6.dist-info/METADATA,sha256=qLpNGlwbb8MUdMTZhC3aPj8cvVqHNccGulhxqQ9Wz3I,1122
+ultibi-0.1.6.dist-info/WHEEL,sha256=uKlahECkUrl5UjM6XJKlsmlWgKbKtzrg7hYZHvCcgYU,105
+ultibi/__init__.py,sha256=rpIDwq0qfXEvqCG6zqdjH8XEHS3hLwbeYsp-LHTM8bw,374
+ultibi/internals/__init__.py,sha256=x6wO9i1sBwVRkq71onWEi_f_-a2R3SK0g-Hq4M4UBNg,611
+ultibi/internals/dataset.py,sha256=9BgHu22i76JqHUPwLagdrnszNFld9bNG_hc54rHq9qg,6144
+ultibi/internals/requests.py,sha256=Fy8hrViS-YUtHZ31-YUDqbmxraWnFljRu-J8uB7Wm-k,2952
+ultibi/rust_module/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ultibi/rust_module/ultima_pyengine.abi3.so,sha256=Qj_M7OKFszRQ4lp-6ZZ-IJal86-kE3FCC0TlMy4Hkh4,30517120
+ultibi-0.1.6.dist-info/RECORD,,
