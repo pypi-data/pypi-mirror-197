@@ -1,0 +1,3 @@
+[console_scripts]
+shadybackend=shadybackend:main
+

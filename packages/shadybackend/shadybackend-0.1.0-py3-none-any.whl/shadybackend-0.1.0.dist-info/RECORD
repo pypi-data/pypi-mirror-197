@@ -1,0 +1,15 @@
+shadybackend/__init__.py,sha256=bk5jeYVqPi-rKqG6g8ayzFIC-MYj7BPntlEUd6b60ic,71
+shadybackend/api.py,sha256=ZF0cd-GyRU6UAYcV6i9ol9wp_Qr7LWyVfIJr7PeI0bc,229
+shadybackend/api_tools.py,sha256=WlOAVJSbD7SMqcQdl91ezuN_nrUridMRdyZYArLNFcA,3818
+shadybackend/bridges.py,sha256=Ntx7sGuiHZvIYtU4CqsEsSMaH7UCj66kke3c0LxjAcw,1322
+shadybackend/demon.py,sha256=ErnAK0WO1fGIa0QlkyfTj72_JKTBwXzpyxANbiyuhHg,1544
+shadybackend/discord_bridge.py,sha256=SuG51AvXDRNA9YEZCrksSax7pga91nAn5bCNKc5chDo,91
+shadybackend/keys,sha256=VJMYDgPrEg9lFAAqNtRsWQGjL2giYkjX47dV6BvgC9I,94
+shadybackend/log.py,sha256=Z9GItRJFREINj3a-jVX6mS6_I9Q10WdzBfB76peVkIs,93
+shadybackend/request_tools.py,sha256=PdggR8m4HAJaCOnZyxnI-RpqBDEN0ShZUN6Z7aaa0sg,4208
+shadybackend/top_level.py,sha256=X-ttHof0tnqpf7rvNmGli7IZ8JmYMcPHyhZ29k5paMQ,3349
+shadybackend/top_level.py.92d64f83b890fc49bbb92963ccee127d.py,sha256=IHrfk6RSMB7A9IVtQVW9RJig4PJjbSXIBC-4q6ltxwI,2184
+shadybackend-0.1.0.dist-info/METADATA,sha256=cdS1djFPeedOXPbp7xmXv0rIVWq5zQldpB8ECHLBUr4,1419
+shadybackend-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+shadybackend-0.1.0.dist-info/entry_points.txt,sha256=yqFKx3TeSv4DdDOGsK7zLUvNobybtCkNcf8n27jz9n4,50
+shadybackend-0.1.0.dist-info/RECORD,,
