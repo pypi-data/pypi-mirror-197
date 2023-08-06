@@ -1,0 +1,2 @@
+[console_scripts]
+jupyblog = jupyblog.cli:cli
