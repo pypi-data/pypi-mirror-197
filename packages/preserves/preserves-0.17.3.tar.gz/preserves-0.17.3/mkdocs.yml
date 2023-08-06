@@ -1,0 +1,21 @@
+site_name: Python Preserves
+site_dir: ../../python
+theme:
+  name: material
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            merge_init_into_class: true
+  - macros:
+      include_dir: ../../_includes
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+watch:
+  - preserves
