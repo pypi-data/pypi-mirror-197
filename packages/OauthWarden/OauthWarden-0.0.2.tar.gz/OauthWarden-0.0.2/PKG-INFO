@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: OauthWarden
+Version: 0.0.2
+Summary: Python Package for Twitch requests
+Author: Yokozuna
+License-File: LICENSE.txt
