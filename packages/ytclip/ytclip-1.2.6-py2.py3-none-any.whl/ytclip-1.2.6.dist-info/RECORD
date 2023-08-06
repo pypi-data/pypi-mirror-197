@@ -1,0 +1,11 @@
+ytclip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ytclip/cmd.py,sha256=bpdmpql4N76BXTGcaB-NiEHsxNl0UNZ6dlPMjwEYuPQ,3238
+ytclip/getremoteversion.py,sha256=HDK1D6_VOnyb1JwDANsvpRV0oXJpn6yg3akGy_Pr0mM,630
+ytclip/version.py,sha256=YJrFfWhSsXFl1l4i7du80b1bM7Z4IvHaxfA8XwLz5HY,60
+ytclip/ytclip.py,sha256=B5-gGUsVgGhmD6o_nYkAVu_950z_-JtGrrhPH71m7OA,10106
+ytclip-1.2.6.dist-info/LICENSE,sha256=AhMwN5yTPhAsd2zX880MBOO8-P-AwZdS19IU8Is1Nho,1064
+ytclip-1.2.6.dist-info/METADATA,sha256=RG7oYNrkIGW-fZxWeikgS0_pCepnBxcdLr8ornZr-jk,3445
+ytclip-1.2.6.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+ytclip-1.2.6.dist-info/entry_points.txt,sha256=XskZAWXkYnSbsIHvUqYLJswYRUDSE5lWdnpeXDDTJQw,42
+ytclip-1.2.6.dist-info/top_level.txt,sha256=ymDdUM1BSFtIYngVdUTmqMY7n6vqu_zAjEa1yhLyFa4,7
+ytclip-1.2.6.dist-info/RECORD,,
