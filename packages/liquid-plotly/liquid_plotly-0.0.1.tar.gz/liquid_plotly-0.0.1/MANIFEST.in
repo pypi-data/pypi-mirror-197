@@ -1,0 +1,6 @@
+recursive-include liquid_plotly/** *.js *.css *.json *.html *.svg
+include assets/*
+prune tests
+include README.md
+include LICENSE.md
+include package.json
