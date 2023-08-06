@@ -1,0 +1,8 @@
+README.md
+setup.py
+proxifier/__init__.py
+proxifier.egg-info/PKG-INFO
+proxifier.egg-info/SOURCES.txt
+proxifier.egg-info/dependency_links.txt
+proxifier.egg-info/requires.txt
+proxifier.egg-info/top_level.txt
