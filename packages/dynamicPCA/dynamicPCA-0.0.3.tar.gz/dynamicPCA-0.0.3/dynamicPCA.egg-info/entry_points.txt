@@ -1,0 +1,2 @@
+[nbdev]
+dPCA = dPCA._modidx:d
