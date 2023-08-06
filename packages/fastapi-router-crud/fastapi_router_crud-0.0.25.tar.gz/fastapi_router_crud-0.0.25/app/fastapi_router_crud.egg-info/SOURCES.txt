@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+app/fastapi_crud_router/__init__.py
+app/fastapi_crud_router/src/__init__.py
+app/fastapi_crud_router/src/crud.py
+app/fastapi_crud_router/src/exceptions/__init__.py
+app/fastapi_crud_router/src/exceptions/database.py
+app/fastapi_crud_router/src/exceptions/model.py
+app/fastapi_crud_router/test/__init__.py
+app/fastapi_crud_router/test/test_crud.py
+app/fastapi_router_crud.egg-info/PKG-INFO
+app/fastapi_router_crud.egg-info/SOURCES.txt
+app/fastapi_router_crud.egg-info/dependency_links.txt
+app/fastapi_router_crud.egg-info/requires.txt
+app/fastapi_router_crud.egg-info/top_level.txt
