@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: webint-system
+Version: 0.0.18
+Summary: manage the system
+Home-page: https://ragt.ag/code/projects/webint-system
+License: BSD-2-Clause
+Keywords: webint
+Author: Angelo Gladding
+Author-email: angelo@ragt.ag
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: bgq (>=0.0)
+Requires-Dist: gmpg (>=0.0)
+Requires-Dist: pygments (>=2.14.0,<3.0.0)
+Requires-Dist: webagt (>=0.0)
+Requires-Dist: webint (>=0.0)
+Project-URL: Documentation, https://ragt.ag/code/projects/webint-system/api
+Project-URL: Repository, https://ragt.ag/code/projects/webint-system.git

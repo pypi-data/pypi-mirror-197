@@ -1,0 +1,10 @@
+webint_system/__init__.py,sha256=80A0IxT2g3MRU5MuWfUtn5VHWnisz4FbzDglkpyOhlI,5174
+webint_system/templates/__init__.py,sha256=Z99XuyR1y0hYgxroi7uUfThrMdCG_7Gtjfw21yDWrng,143
+webint_system/templates/addresses/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webint_system/templates/addresses/domains.html,sha256=VlLe7jk1W9G0Y7JrwyiApK3qVYTcORyIWvuvwkpaCKI,538
+webint_system/templates/index.html,sha256=43-11N7Pw3OrRl6h8671oMhpkM9arvpIpqkMeqYxsxM,6695
+webint_system/templates/template.html,sha256=zADzBOoUONTcH8wmrCMAF87IAHjTV6pG7YxEwS6naQY,149
+webint_system-0.0.18.dist-info/METADATA,sha256=cWDUkPy3JQ615VcUrZ3rBggYAGl535f_oAiI6iZD4t4,718
+webint_system-0.0.18.dist-info/entry_points.txt,sha256=Cm3TkkuqIztVxs3baA9LfeTyYz22QQz7t9tcUWqKQ2k,36
+webint_system-0.0.18.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+webint_system-0.0.18.dist-info/RECORD,,
