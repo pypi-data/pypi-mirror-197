@@ -1,0 +1,11 @@
+aliyunsdkdypnsapi_intl/__init__.py,sha256=dHuoY6voK7np1A7oRzw1xyBy7CK9_KBAc4FCKW29uRQ,21
+aliyunsdkdypnsapi_intl/request/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyunsdkdypnsapi_intl/request/v20170725/CheckVerificationRequest.py,sha256=aicYVXVXVbeNNvRVghNR5x5nJXl_mbmotcbIdIkIlVY,2355
+aliyunsdkdypnsapi_intl/request/v20170725/SearchVerificationRequest.py,sha256=rAdV4uIAI0O0FjZpZ3V3Fq7jpccdwDVri-2FoBzClfI,2900
+aliyunsdkdypnsapi_intl/request/v20170725/StartVerificationRequest.py,sha256=AiMhpP6c-c9oLehhs6YwMm6QhTBdkydohicIH7wyd1c,2158
+aliyunsdkdypnsapi_intl/request/v20170725/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aliyun_python_sdk_dypnsapi_intl-1.0.0.dist-info/LICENSE,sha256=CvyZB4el1cZGT3cy9OYoITxta_Ea2maondKqmi8EcpU,575
+aliyun_python_sdk_dypnsapi_intl-1.0.0.dist-info/METADATA,sha256=jLcReU1VsmHn90hXeEbtU9jAdxd8fSdVacoikmzIw-I,1505
+aliyun_python_sdk_dypnsapi_intl-1.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+aliyun_python_sdk_dypnsapi_intl-1.0.0.dist-info/top_level.txt,sha256=xfDWu6DycTky0okCxCosrBlEsXoRrEY1wS1bmECNdzA,23
+aliyun_python_sdk_dypnsapi_intl-1.0.0.dist-info/RECORD,,
