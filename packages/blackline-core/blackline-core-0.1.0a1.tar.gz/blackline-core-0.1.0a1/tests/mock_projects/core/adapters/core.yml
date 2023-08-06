@@ -1,0 +1,7 @@
+profiles:
+  dev:
+    type: sqlite
+    config:
+      connection:
+        database: "file::memory:?cache=shared"
+        uri: true
