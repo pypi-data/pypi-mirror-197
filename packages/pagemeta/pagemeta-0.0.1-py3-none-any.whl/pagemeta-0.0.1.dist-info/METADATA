@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pagemeta
+Version: 0.0.1
+Summary: Extract Open Graph metadata from a URL via BeautifulSoup.
+Home-page: https://mv3.dev
+License: MIT
+Author: Marcelino G. Veloso III
+Author-email: mars@veloso.one
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: beautifulsoup4 (>=4.11.2,<5.0.0)
+Requires-Dist: httpx (>=0.23.3,<0.24.0)
+Requires-Dist: python-dotenv (>=0.21,<0.22)
+Project-URL: Documentation, https://mv3.dev/pagemeta
+Project-URL: Repository, https://github.com/justmars/pagemeta
+Description-Content-Type: text/markdown
+
+# pagemeta
+
+![Github CI](https://github.com/justmars/pagemeta/actions/workflows/main.yml/badge.svg)
+
+## Development
+
+See [documentation](https://justmars.github.io/pagemeta).
+
+1. Run `poetry shell`
+2. Run `poetry update`
+3. Run `pytest`
+
