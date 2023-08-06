@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: streamlit-otp-auth
+Version: 1.0.0
+Summary: This package allows you to create an authntication system in streamlit
+Home-page: UNKNOWN
+Author: Anjishnu SAw
+Author-email: anjishnusaw91@gmail.com
+License: UNKNOWN
+Keywords: python,authentication,signup-login,otp,secure auth,streamlit authenticator
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
