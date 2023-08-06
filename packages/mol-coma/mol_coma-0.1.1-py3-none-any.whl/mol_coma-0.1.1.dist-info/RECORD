@@ -1,0 +1,13 @@
+coma/__init__.py,sha256=jZ5uWOiyV1Hb9rhNyo3bAgfWmHx8_xkueUWpcUrkz_w,21
+coma/dataset.py,sha256=3hBZ4pbP-anB0OLKnxJYulknk_6w8woHSWMc1hOqCI0,7332
+coma/drd2_scorer.py,sha256=20yNwLjY13ymgDPX3cxhL-9sMzdgLPljfASzOo3eiXg,968
+coma/evaluate.py,sha256=5GN1E_16W5Qtc29RoiILNXgCBmBr58IVMtqE4zuCieo,6886
+coma/fpscores.pkl.gz,sha256=ENzvk0DIc-e5h5JEYbCvU2Xrjdlr5gcgPevo3fgMHnM,3848394
+coma/properties.py,sha256=E9qGKp-v6jwfLhz7TGBmbBlpTdrQtOFxI9rNHNnDE_c,4987
+coma/sascorer.py,sha256=gACuw9RST3Rw_H1nUzM_27gFTbhpA6bbL1qqAOanf-w,5693
+coma/vae.py,sha256=SljNijPWkN3NOgdZJoAetJn4ysDYAhzKdoEEhQUVO6Q,36541
+mol_coma-0.1.1.dist-info/LICENSE,sha256=lKWaQTrdc3GDThiy1e-dffu_pctuUYBA2ra64yHMdGI,1500
+mol_coma-0.1.1.dist-info/METADATA,sha256=Spa_yQ6UXCtSZ42MF283v8tydnjVltri4qxewQ7DSHw,1009
+mol_coma-0.1.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mol_coma-0.1.1.dist-info/top_level.txt,sha256=SC4C_3Ce9b0NJaeyQ8K73Nw3dAGdbyL4-dZMqfZGAUs,5
+mol_coma-0.1.1.dist-info/RECORD,,
