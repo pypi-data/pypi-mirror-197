@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+lewinb/__init__.py
+lewinb/_modidx.py
+lewinb/core.py
+lewinb.egg-info/PKG-INFO
+lewinb.egg-info/SOURCES.txt
+lewinb.egg-info/dependency_links.txt
+lewinb.egg-info/entry_points.txt
+lewinb.egg-info/not-zip-safe
+lewinb.egg-info/requires.txt
+lewinb.egg-info/top_level.txt

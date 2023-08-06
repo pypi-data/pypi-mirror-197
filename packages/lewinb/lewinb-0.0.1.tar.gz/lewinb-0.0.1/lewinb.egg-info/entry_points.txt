@@ -1,0 +1,5 @@
+[console_scripts]
+lewinb_merge = lewinb.core:merge_pr
+
+[nbdev]
+lewinb = lewinb._modidx:d
