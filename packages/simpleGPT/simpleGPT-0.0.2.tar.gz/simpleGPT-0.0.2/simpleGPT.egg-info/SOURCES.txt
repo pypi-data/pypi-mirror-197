@@ -1,0 +1,8 @@
+setup.py
+simpleGPT/__init__.py
+simpleGPT/main.py
+simpleGPT.egg-info/PKG-INFO
+simpleGPT.egg-info/SOURCES.txt
+simpleGPT.egg-info/dependency_links.txt
+simpleGPT.egg-info/entry_points.txt
+simpleGPT.egg-info/top_level.txt

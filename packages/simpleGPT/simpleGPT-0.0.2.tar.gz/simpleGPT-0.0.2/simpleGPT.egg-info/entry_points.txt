@@ -1,0 +1,3 @@
+[console_scripts]
+simpleGPT = simpleGPT.simpleGPT:main
+
