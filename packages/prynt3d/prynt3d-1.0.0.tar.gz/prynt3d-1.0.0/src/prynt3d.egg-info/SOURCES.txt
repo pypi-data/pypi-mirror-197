@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/prynt3d/__init__.py
+src/prynt3d/__main__.py
+src/prynt3d/connector.py
+src/prynt3d.egg-info/PKG-INFO
+src/prynt3d.egg-info/SOURCES.txt
+src/prynt3d.egg-info/dependency_links.txt
+src/prynt3d.egg-info/top_level.txt

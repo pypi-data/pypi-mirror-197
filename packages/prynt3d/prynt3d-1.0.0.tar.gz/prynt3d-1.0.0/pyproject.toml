@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "pyserial"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prynt3d"
+version = "1.0.0"
+authors = [
+    {name="Lyra Brown", email="blyra05@gmail.com"},
+]
+
+description = "Allows communication over serial with certain 3D printers."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/lyramake/prynt3d"
+"Bug Tracker" = "https://github.com/lyramake/prynt3d/issues"

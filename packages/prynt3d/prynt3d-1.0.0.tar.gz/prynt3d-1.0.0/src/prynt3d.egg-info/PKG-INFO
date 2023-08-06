@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: prynt3d
+Version: 1.0.0
+Summary: Allows communication over serial with certain 3D printers.
+Author-email: Lyra Brown <blyra05@gmail.com>
+Project-URL: Homepage, https://github.com/lyramake/prynt3d
+Project-URL: Bug Tracker, https://github.com/lyramake/prynt3d/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Prynt3D
+
+This package is for communicating with specific 3D printers
+
+For any questions, please visit the repository at [github](https://github.com/lyramakes/prynt3d)
