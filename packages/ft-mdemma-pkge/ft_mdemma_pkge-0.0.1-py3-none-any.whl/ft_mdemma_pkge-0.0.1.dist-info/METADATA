@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ft-mdemma-pkge
+Version: 0.0.1
+Summary: A sample test package
+Home-page: https://github.com/mdemma/ft_package
+Author: mdemma
+Author-email: mdemma@42.fr
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is my package.
