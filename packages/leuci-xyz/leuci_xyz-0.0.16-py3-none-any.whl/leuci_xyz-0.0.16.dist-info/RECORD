@@ -1,0 +1,13 @@
+leuci_xyz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+leuci_xyz/axestransform.py,sha256=H63Kjishnw5ifdnC1yMNppDSUiEq29yVrc4QzRz4hCs,909
+leuci_xyz/crstransform.py,sha256=rLgeRPMVK1Upvgu2IftUMREHuOrlZUZaqJGFNrrP9rM,6379
+leuci_xyz/gridmaker.py,sha256=kT-eyUHilZfxPZn7-o0w1Toc5tfeVVjoyvsgIZwZTZU,659
+leuci_xyz/matrixthree.py,sha256=5oIRUnjv6bPqhrUpWZtWetG2rIctv4dowGVMSPi13jM,1980
+leuci_xyz/matrixthreex.py,sha256=ygxoKkqzOFUtlIUBTR3gPQExoKXuyaWImNqZjuIVQkA,4471
+leuci_xyz/matrixthreey.py,sha256=ZzuM88rmTT_Nv7No7iTW6hIbPaBCSLY90vnYAu51I_g,4337
+leuci_xyz/spacetransform.py,sha256=invXOMgwGDG4XPqFhpJomAP-IRE7gjR1zwcvsgSZzyc,10120
+leuci_xyz/vectorthree.py,sha256=0zTAKQwTN0Nhhn1-lQ37gF5MPKDuPpr4m82qfhIDvn4,3945
+leuci_xyz-0.0.16.dist-info/METADATA,sha256=8KTZQLrqilS0iRfgVj0wZ5KPPkCpw1o0kl_enwF60P0,778
+leuci_xyz-0.0.16.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+leuci_xyz-0.0.16.dist-info/top_level.txt,sha256=pHgcBbkI6FULv7q9C9Tsd3tMEKeiqpOiqhKQpQ3jbsE,10
+leuci_xyz-0.0.16.dist-info/RECORD,,
