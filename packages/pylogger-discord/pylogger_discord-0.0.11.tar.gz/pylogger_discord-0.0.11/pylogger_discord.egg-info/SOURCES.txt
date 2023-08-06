@@ -1,0 +1,6 @@
+README.md
+setup.py
+pylogger_discord.egg-info/PKG-INFO
+pylogger_discord.egg-info/SOURCES.txt
+pylogger_discord.egg-info/dependency_links.txt
+pylogger_discord.egg-info/top_level.txt
