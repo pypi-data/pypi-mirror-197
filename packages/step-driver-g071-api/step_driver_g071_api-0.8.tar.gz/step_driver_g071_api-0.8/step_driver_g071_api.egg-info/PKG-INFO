@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: step-driver-g071-api
+Version: 0.8
+Summary: Stepper driver using MODBUS communication protocol API
+Home-page: https://github.com/gelio5/step_driver_G071_API.git
+Author: Vladislav Reznik
+Author-email: vlreznik97@gmail.com
+License: MIT
+Platform: Linux
+Platform: Win
+Platform: Mac OS X
+Requires: pyserial
+Requires: pymodbus
+License-File: LICENSE
+
+
+    Step driver aims to be fully implemented API for managing stepper driver via MODBUS RTU, which
+    was realized in STM32G071 microcontroller.
+    
