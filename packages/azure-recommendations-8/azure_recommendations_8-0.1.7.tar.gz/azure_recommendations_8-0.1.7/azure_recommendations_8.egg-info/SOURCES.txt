@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+azure_recommendations_8/__init__.py
+azure_recommendations_8.egg-info/PKG-INFO
+azure_recommendations_8.egg-info/SOURCES.txt
+azure_recommendations_8.egg-info/dependency_links.txt
+azure_recommendations_8.egg-info/top_level.txt
+azure_recommendations_8/recommendation/__init__.py
+azure_recommendations_8/recommendation/advisor_recommendations.py
+azure_recommendations_8/recommendation/network_recommendations.py
+azure_recommendations_8/recommendation/utils.py
+azure_recommendations_8/recommendation/vm_recommendations.py
