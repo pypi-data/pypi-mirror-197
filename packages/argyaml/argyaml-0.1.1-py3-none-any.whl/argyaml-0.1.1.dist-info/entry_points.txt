@@ -1,0 +1,4 @@
+[console_scripts]
+generate=argyaml.__main__:generate
+main=argyaml.__main__:run
+
