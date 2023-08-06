@@ -1,0 +1,13 @@
+README.md
+setup.py
+seglines/__init__.py
+seglines/_version.py
+seglines/generator.py
+seglines/plotting.py
+seglines/segmentedls.py
+seglines.egg-info/PKG-INFO
+seglines.egg-info/SOURCES.txt
+seglines.egg-info/dependency_links.txt
+seglines.egg-info/entry_points.txt
+seglines.egg-info/requires.txt
+seglines.egg-info/top_level.txt
