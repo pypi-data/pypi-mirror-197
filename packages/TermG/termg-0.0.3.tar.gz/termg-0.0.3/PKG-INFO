@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: TermG
+Version: 0.0.3
+Summary: A small graphics library using text
+Project-URL: Homepage, https://google.com
+Project-URL: Bug Tracker, https://google.com
+Author-email: PatattMan <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# TermG
+
+With TermG you can easily build graphical applications in the terminal!
+
+Simply install TermG
+
+`pip install TermG`
+
+
+And then you can use it in your projects!
+
+How to create a project with TermG?
+First import TermG
+
+`from TermG import termg as tg`
+
+
+Then create the Screen
+
+`sc = tg.Screen(width, height) # width = columns, height = rows`
+
+
+Fill the screen with a specific color
+
+`sc.fill( tg.Color(127) )`
+
+
+And blit your Screen to the terminal
+
+`sc.blit()`
