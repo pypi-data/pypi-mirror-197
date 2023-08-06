@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: streamlit-deeplink
+Version: 1.0.0
+Summary: Streamlit add on to deep link widget selections into url query parameters.
+Home-page: https://github.com/karthik17/streamlit-deeplink
+Author: Karthik Nichenametla
+Author-email: etherxplorer21@example.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+UNKNOWN
+
