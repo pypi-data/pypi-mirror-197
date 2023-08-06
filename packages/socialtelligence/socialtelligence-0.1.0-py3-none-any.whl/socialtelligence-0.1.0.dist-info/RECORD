@@ -1,0 +1,11 @@
+socialtelligence/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socialtelligence/candidatepipe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socialtelligence/candidatepipe/database.py,sha256=36sgKWGmu1GV5rzlqFdlq0D-_EIe1D3KKoho9WHGyrI,4251
+socialtelligence/hicandidate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socialtelligence/hicandidate/database.py,sha256=36sgKWGmu1GV5rzlqFdlq0D-_EIe1D3KKoho9WHGyrI,4251
+socialtelligence/hicandidate/platforms.py,sha256=xq3YG-HWH7ya9tKqvbjw9J-ji34BRWEM3dAVdHdCA0U,348
+socialtelligence-0.1.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+socialtelligence-0.1.0.dist-info/METADATA,sha256=L-PZX-lN6MvaZHAVqpxF9AsN1_SD2aEDc76Xw7uyDyI,453
+socialtelligence-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+socialtelligence-0.1.0.dist-info/top_level.txt,sha256=1vnvtZFiVgNS7f-ALD4ndfyT2dPKUJn_pHEc-kbK1Oo,17
+socialtelligence-0.1.0.dist-info/RECORD,,
