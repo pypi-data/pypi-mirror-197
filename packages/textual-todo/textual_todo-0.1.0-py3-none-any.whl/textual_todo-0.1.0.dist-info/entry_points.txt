@@ -1,0 +1,3 @@
+[console_scripts]
+todo=textual_todo.todo:app.run
+
