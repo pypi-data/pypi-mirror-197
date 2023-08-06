@@ -1,0 +1,8 @@
+extract_tex_env/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+extract_tex_env/__main__.py,sha256=Cqk6jGAP2RwZUgFLJzPAF5vc2iFgWnIyqEZO6H4EeLM,57
+extract_tex_env/functions_tex.py,sha256=h8mNWwApGrUKKoL_qqj7tunqytnN1UxRDrJftRLZP34,2005
+extract_tex_env/main.py,sha256=_MkQ25qGRveuOAu8iH_nJft91EJfoxb6sVN4Q9m7c7Y,754
+extract_tex_env-0.1.0.dist-info/METADATA,sha256=IWccZW6wqVfKH1vYs7DHotvpxDiT6V_GYLyMURsPCiA,357
+extract_tex_env-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+extract_tex_env-0.1.0.dist-info/entry_points.txt,sha256=LBgvnRT9-g3OtRLs1iQSYC9Oehfc93GijeJ3OjrhA40,61
+extract_tex_env-0.1.0.dist-info/RECORD,,
