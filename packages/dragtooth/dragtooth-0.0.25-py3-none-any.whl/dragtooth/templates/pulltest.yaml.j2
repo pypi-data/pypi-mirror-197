@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pulltest-{{ encoder_decoder_id }}-deployment
+  namespace: pulltest
+  labels:
+    app: pulltest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pulltest
+  template:
+    metadata:
+      labels:
+        app: pulltest
+    spec:
+      imagePullSecrets:
+      - name: regcred
+      containers:
+      - name: pulltest
+        image: 193048895737.dkr.ecr.us-west-1.amazonaws.com/taylorm/termite_recharge/pulltest@sha256:ef924fba6a6176c32864dbf56fa01f6ee0ae2ba0aca6fb0c6bdab9715da770b3
+        imagePullPolicy: Always
+        command:
+         - /bin/bash
+         - "-c"
+         - |
+           /bin/bash <<'EOF'
+           # encoder: {{ data.network1 }}, decoder: {{ data.decoder }}
+           /usr/local/bin/pulltest \
+               /p 1999 \
+               /server {{ data.ip }} {{ data.pull_port }} \
+               /rep '{{ data.reporter }}' \
+               /s_login '{{ data.pulltest_login }}' /s_pass '{{ data.pulltest_password }}' \
+               /session '{{ data.decoder }}' \
+               /pulltest 999999
+           EOF
