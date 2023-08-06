@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pylogger_discord
+Version: 0.0.122
+Summary: A simple logger for production apps
+Home-page: UNKNOWN
+Author: Sebastian Tuyu
+Author-email: contact@sebastiantuyu.com
+License: MIT
+Description: UNKNOWN
+Keywords: DISCORD,LOGGER,CONSOLE
+Platform: UNKNOWN
+Requires: dotenv
+Requires: requests
