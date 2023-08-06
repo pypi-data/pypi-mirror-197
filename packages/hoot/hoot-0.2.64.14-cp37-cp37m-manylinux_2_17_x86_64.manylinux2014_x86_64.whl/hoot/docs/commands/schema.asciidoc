@@ -1,0 +1,19 @@
+[[schema]]
+== schema
+
+=== Description
+
+The `schema` command prints documentation for the OSM tag schema in use.
+
+=== Usage
+
+--------------------------------------
+hoot schema
+--------------------------------------
+
+https://github.com/ngageoint/hootenanny/blob/master/docs/user/CommandLineExamples.asciidoc#display-the-internal-tag-schema-that-hootenanny-uses[Examples]
+
+=== See Also
+
+* <<hootuser, SchemaFiles>>
+
