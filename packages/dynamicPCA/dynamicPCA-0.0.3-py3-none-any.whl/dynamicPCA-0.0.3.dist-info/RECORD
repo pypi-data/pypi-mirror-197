@@ -1,0 +1,12 @@
+dPCA/TEP.py,sha256=dvqs0EkEvFBZs6_14HPPEwZQ8ZfIbJKxvbg3SGdJGXY,657
+dPCA/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+dPCA/_modidx.py,sha256=rdsBOHcyzU4frLay0Ap_Cz28qwJ0nqBZ_LEJ4wKQ1Rc,1828
+dPCA/analysis.py,sha256=FlqomFoqa-l8qALgHaeZgs1PTnUjIGKWkT-gFTaRRxQ,2856
+dPCA/corrmat.py,sha256=3hOE2UjFt5ku2PLs4qTIT4T6zv2UyNsUMt7iA3ZvCYY,3225
+dPCA/lag.py,sha256=rcLCIftomURZgcxX-ifzaqDbPQ59yQv_ggKQodpRq7o,2193
+dynamicPCA-0.0.3.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+dynamicPCA-0.0.3.dist-info/METADATA,sha256=zXMqsDUCcRuQ9oPeuma6Q-d8LJpbPMo4y6PpzIEcZHw,1368
+dynamicPCA-0.0.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+dynamicPCA-0.0.3.dist-info/entry_points.txt,sha256=KZ9PL4Jz78h3MIybI0WHdrTsKpWcEAoWewMgPvvmQ-s,30
+dynamicPCA-0.0.3.dist-info/top_level.txt,sha256=fWsEdZ967OrDd8pXrIwESXFVV0Xuuve-ZTbdPO-kWUQ,5
+dynamicPCA-0.0.3.dist-info/RECORD,,
