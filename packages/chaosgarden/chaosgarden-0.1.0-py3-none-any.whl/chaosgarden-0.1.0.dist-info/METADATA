@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: chaosgarden
+Version: 0.1.0
+Summary: Chaos engineering tools for Gardener-managed clusters
+License: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: azure-mgmt-network (==22.2.0)
+Requires-Dist: chaostoolkit (==1.15.0)
+Requires-Dist: chaostoolkit-lib (==1.33.1)
+Requires-Dist: chaostoolkit-aws (==0.21.2)
+Requires-Dist: chaostoolkit-azure (==0.11.0)
+Requires-Dist: chaostoolkit-google-cloud-platform (==0.8.0)
+Requires-Dist: chaostoolkit-kubernetes (==0.26.3)
+Requires-Dist: kubernetes (==24.2.0)
+Requires-Dist: Mako (==1.2.4)
+Requires-Dist: openstacksdk (==1.0.1)
+Requires-Dist: python-box (==7.0.0)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: urllib3 (==1.26.14)
+
