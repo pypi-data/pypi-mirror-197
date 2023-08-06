@@ -1,0 +1,38 @@
+[build-system]
+requires = ["poetry-core>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "phagetrix"
+authors = ["Reto Stamm"]
+description = "Optimizer for degenerate codon use in phage library generation"
+readme = "README.md"
+version = "0.2.3"
+keywords = ["example"]
+license = "GPL-3"
+classifiers = [ "Programming Language :: Python :: 3", 
+                "Topic :: Scientific/Engineering :: Bio-Informatics",
+                "Topic :: Software Development :: Libraries :: Python Modules"]
+homepage = "https://github.com/retospect/phagetrix"
+repository = "https://github.com/retospect/phagetrix"
+
+[tool.poetry.dependencies]
+python_codon_tables = "*"
+quantiphy = "*"
+
+[tool.poetry.scripts]
+phagetrix= "phagetrix.exec:main"
+
+[tool.bumpver]
+current_version = "0.2.3"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/phagetrix/__init__.py" = ["{version}"]
+"src/phagetrix/exec.py" = ["{version}"]
+
