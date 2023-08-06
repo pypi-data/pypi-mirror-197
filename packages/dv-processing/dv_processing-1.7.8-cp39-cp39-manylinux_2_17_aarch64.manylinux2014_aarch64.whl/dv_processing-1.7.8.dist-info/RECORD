@@ -1,0 +1,13 @@
+dv_processing.cpython-39-aarch64-linux-gnu.so,sha256=E9WUnLWORQ7EDwDBqMi4XL-vhKt8i9FSKQSCsax4GNo,19012569
+dv_processing-1.7.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dv_processing-1.7.8.dist-info/METADATA,sha256=UOjGzmh0phaQaV-Zl2FY1f2qmjje0KwA6uCL4KrBRu8,228
+dv_processing-1.7.8.dist-info/WHEEL,sha256=WmgP0K1kdqJz8z1pv4uWmQ_zr3BEvqOuA4KvS4Wklqs,150
+dv_processing-1.7.8.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dv_processing-1.7.8.dist-info/RECORD,,
+dv_processing.libs/libcap-47c73bce.so.2.22,sha256=DFXyWaPU4rEO-g2El2QoA_MaQKg28a8Bs9E9lAE6qAE,197473
+dv_processing.libs/libattr-aed5a3b1.so.1.1.0,sha256=RZJBFSse4MexH9o2lJgELVv-wsYMXSAwiW3vRdQJI-c,132217
+dv_processing.libs/liblzma-6bd50f17.so.5.2.2,sha256=JymXP1rkiqVP8ZlcFOjEyN7_xuDGBGoYReWkCnrpp9E,265857
+dv_processing.libs/libelf-0-ef69846b.176.so,sha256=m6Fob7G7Ou0X0rNwPO8OMLWEeWAkBKfVD2I5cjzpCuc,199897
+dv_processing.libs/libudev-8a3a7997.so.1.6.2,sha256=2tyKxrCyWRxFHGYXs90TUYzXt9RzoorT_L7LGMjwGbM,265633
+dv_processing.libs/libbz2-738ca772.so.1.0.6,sha256=eG7vWct5-lGoMcwYKlq_LW5a2cEzZPjB8uXu5pnT0wA,132489
+dv_processing.libs/libdw-0-46ed0dd9.176.so,sha256=XzavS6902VoJZELQ_ZQ4r8Vz_Mc48P2zI4QtsVvNmhg,530585
