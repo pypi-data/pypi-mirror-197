@@ -1,0 +1,14 @@
+sgpt/__init__.py,sha256=HUgnH2XpmNYpeXDtEIb7emazEdTQSU0mZeXFBMauPhc,137
+sgpt/__main__.py,sha256=N8erX9xMc70A8Dq0Os-fZ1XJWN0XC1MkBHIdqzasjuI,44
+sgpt/app.py,sha256=jtqhDED0fp2wwQYwej9iUuTXqxOjGKm6KLSt59Q1F6M,7685
+sgpt/chat_gpt.py,sha256=r8k0m2iejr0_ERERY6N7pvMDOsLJr4Re0XfXXdyoJbA,8150
+sgpt/make_prompt.py,sha256=UUtovwBWj-aXfD5ZwarHzWgvuoVzpJIXrf8Z8ADH-cw,3100
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integrational_tests.py,sha256=26at5-Fb5PGYbY2z3U9fsYhWG_8LFJMWmxH4LAWffD0,3060
+tests/unittests.py,sha256=bUMm0AtDP2iMZwojb4hyjxSh9urFcFtuwjxU-AgIjwg,1898
+shell_gpt-0.7.1.dist-info/LICENSE,sha256=kF7SAyjvfMDyn0QgHJNp0B7FS_vXBYcXWb5qXxdhPME,1072
+shell_gpt-0.7.1.dist-info/METADATA,sha256=qIhfIdKRMMRxOLy-4zgGXbEoZzGJMKCk5PYl5EC9B1I,12119
+shell_gpt-0.7.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+shell_gpt-0.7.1.dist-info/entry_points.txt,sha256=83CdvZtLdSkV15lWGJ48MkrtR5eFbW5bfH5DuBQ-QC0,34
+shell_gpt-0.7.1.dist-info/top_level.txt,sha256=47wvHqG5ZJVm-xiJW54xO1Q0FC5VnQT0IB_yvHooor0,11
+shell_gpt-0.7.1.dist-info/RECORD,,
