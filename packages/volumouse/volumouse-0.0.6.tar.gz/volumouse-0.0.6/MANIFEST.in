@@ -1,0 +1,7 @@
+include requirements.txt
+include LICENSE
+include PYPI_README.md
+include volumouse/*.py
+include volumouse/icons/*.png
+include volumouse/*
+include lib/*
