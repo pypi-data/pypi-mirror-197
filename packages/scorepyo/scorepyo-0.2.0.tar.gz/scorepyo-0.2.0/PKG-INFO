@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: scorepyo
+Version: 0.2.0
+Summary: This is the scorepyo repository.
+Home-page: https://github.com/drskd/scorepyo
+Author: S. Kaddani
+License: MIT
+Keywords: scorepyo risk score
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.8
+Provides-Extra: dev
+Provides-Extra: ipy
+Provides-Extra: doc
+License-File: LICENSE
+
+Scorepyo is a python package for creating risk-score type models for binary classification, based on data. The created models can be used like other ML models, with fit and predict methods.
