@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ElasticityProject
+Version: 0.0.2
+Summary: A basic pakcage
+Home-page: UNKNOWN
+Author: Samuel Malaga
+Author-email: samuelmalaga99@gmail.com
+License: UNKNOWN
+Keywords: python,elasticity,physics,materials science
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: vtk
+Requires-Dist: mayavi
+Requires-Dist: scipy
+
+UNKNOWN
+
