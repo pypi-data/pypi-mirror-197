@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+src/external/shared/fixtures/env_helper.py
+src/external/shared/fixtures/sys_path_helper.py
+src/monad_maker_fm.egg-info/PKG-INFO
+src/monad_maker_fm.egg-info/SOURCES.txt
+src/monad_maker_fm.egg-info/dependency_links.txt
+src/monad_maker_fm.egg-info/top_level.txt
+src/plugin/plugin_manager.py
