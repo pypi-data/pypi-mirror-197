@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: openvisuspy
+Version: 1.0.3
+Summary: openvisuspy
+Author: OpenVisus developers
+Project-URL: Homepage, https://github.com/sci-visus/openvisuspy
+Project-URL: Bug Tracker, https://github.com/sci-visus/openvisuspy
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Instructions
+
+See [https://github.com/sci-visus/OpenVisus]()
+
+```
+python -m pip install --upgrade openvisus_py
+```
+
+
+Run bokeh dashboard:
+
+```
+set PYTHONPATH=C:\projects\OpenVisus\build\RelWithDebInfo;C:\projects\openvisus_py\src
+set VISUS_BACKEND=py
+python -m bokeh serve "examples/python/bokeh-example.py"  --dev --log-level=debug --address localhost --port 8888 
+```
+
+Run notebooks:
+
+```
+python -m jupyter notebook ./examples/notebooks
+```
+
+
+# PyPi distribution
+
+```
+
+# update PROJECT_VERSION in setup.py
+export PYPI_USER=
+export PYPI_TOKEN=
+python3 -m build .
+
+python3 -m twine upload --username ${PYPI_USER}  --password ${PYPI_TOKEN} --skip-existing   "dist/*openvisuspy-0.0.0-py3-none-any*.whl" 
+
+
+python3 -m twine upload dist/*
+```
+
+# Internal debugging
+
+example in Windows prompt:
+
+```
+
+```
