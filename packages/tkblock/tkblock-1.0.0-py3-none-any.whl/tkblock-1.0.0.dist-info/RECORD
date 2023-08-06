@@ -1,0 +1,13 @@
+tkblock/__init__.py,sha256=REVbFEXf21rYAlHgVMK6uFR1DakFILZC4Wvc0aLRTAg,225
+tkblock/block_framebase.py,sha256=0GVwtM_AtoTJEtOt9XwRYNwhpPImGrbaFDCwtWMsGnk,488
+tkblock/block_framework.py,sha256=eNwFnuNB5c_hNYNJmVUOrsi88jii9YoUl1cAanTZu6o,19550
+tkblock/block_service.py,sha256=mwBGNXGF1IGm5sxM2iupZ7dVIYuZJAKdhT0rBlI_MSc,5894
+tkblock/block_util.py,sha256=x3zqeE3zo2hE08QULVt7mXqnBnKlLNmNIS5rNSplE_U,426
+tkblock/canvas.py,sha256=Nrjkgb3AAoeyzC2n3XlaJsc9A70FsWn1boAOOp9wdkE,1418
+tkblock/layout.py,sha256=0RzLUFIYHkWR_ArE5JtDA6zln4LIocYFYXYDCG3deXs,494
+tkblock/scrollbar.py,sha256=LNE22dFcxcUxnDVAbkDvDWvwYWobIxethJjqm7Gipy8,368
+tkblock-1.0.0.dist-info/LICENSE,sha256=UFGWVrcyOif34DEcEuzw1GOxpDj_hvIMSeMuYrT6t-A,1077
+tkblock-1.0.0.dist-info/METADATA,sha256=5KSzKIEWvvCiMI8uxKzdXkPqFwj8kQvvYpz0NMNpuP8,14620
+tkblock-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+tkblock-1.0.0.dist-info/top_level.txt,sha256=kAuSN65eJK15g2a0mgHd3Z9cTpXK83IdEgcpakPJylw,8
+tkblock-1.0.0.dist-info/RECORD,,
