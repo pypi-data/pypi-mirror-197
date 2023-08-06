@@ -1,0 +1,102 @@
+image: docker:19.03.12
+
+variables:
+  DOCKER_HOST: tcp://localhost:2375/
+  DOCKER_TLS_CERTDIR: ""
+
+services:
+  - docker:19.03.12-dind
+
+stages:
+  - quality_sonar9
+  - build_dev
+  - build_master
+  - trigger_dependencies
+
+
+quality_sonar9:
+  stage: quality_sonar9
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == "dev"'
+      when: always
+    - when: never
+  script:
+    - export PATH="$PATH:/home/gitlab-runner/sonar/bin"
+    - sonar-scanner -Dsonar.projectKey=python-sdk -Dsonar.sources=.  -Dsonar.host.url=http://10.217.10.81:9999 -Dsonar.login=cd33fe48271cffc65d0120a9591aba5075607b6a
+  tags:
+    - shell
+
+build_dev:
+  stage: build_dev
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == "dev"'
+      when: always
+    - when: never
+  script:
+    - python3 --version
+    - python --version
+    - gcloud auth activate-service-account --key-file="$GCP_KEY_FILE"
+    - GCP_TOKEN=$(gcloud auth print-identity-token)
+    - |
+      RELEASE_VERSION=$(curl --location --request GET "$GCP_FUNC_PATH/dev?project=python-sdk" --header "Authorization: Bearer $GCP_TOKEN")
+    - echo $RELEASE_VERSION
+    - sed -i "s/version = .*/version = '"$RELEASE_VERSION"'/g" pyproject.toml
+    - python3 -m build
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/* --verbose
+    - git tag -a $RELEASE_VERSION -m "Wersja  $RELEASE_VERSION" --force
+    - git remote set-url origin http://oauth2:$CONTAINER_TOKEN@gitlab-i40.apagroup.pl/industry4/nazca-4.0/spark-ml/python-sdk.git
+    - git push origin $RELEASE_VERSION
+    - ssh $SSH docker rm -f sdk-doc
+    - ssh $SSH "cd /nazca4;rm -rf python-sdk;  git clone -b dev http://auth2:glpat-THSizjsdQQuivV5YCwiW@10.217.50.40:8190/industry4/nazca-4.0/spark-ml/python-sdk.git; cd python-sdk; python3 -m venv myenv; python3 -m pip install --upgrade pip; pip3 install -r requirements.txt;  pip3 install sphinx==5.3.0; sphinx-apidoc -f -o docs/source nazca4sdk nazca4sdk\datahandling\hotstorage\model\user_variable.py; sphinx-build -b html docs/source docs/build/html; docker build --no-cache -t devregistry:10000/nazca4/nazca4-sdk-doc:latest ."
+    - ssh $SSH docker push devregistry:10000/nazca4/nazca4-sdk-doc:latest
+    - ssh $SSH docker-compose -f /nazca/docker-compose.yml up -d sdk-doc
+  tags:
+    - shell
+
+build_master:
+  stage: build_master
+  rules:
+    - if: '$BUILD_MASTER == "true"'
+      when: always
+    - when: never
+  script:
+    - gcloud auth activate-service-account --key-file="$GCP_KEY_FILE"
+    - GCP_TOKEN=$(gcloud auth print-identity-token)
+    - |
+      RELEASE_VERSION=$(curl --location --request GET "$GCP_FUNC_PATH/master?project=python-sdk" --header "Authorization: Bearer $GCP_TOKEN")
+    - echo $RELEASE_VERSION
+    - sed -i "s/version = .*/version = '"$RELEASE_VERSION"'/g" pyproject.toml
+    - python3 -m build
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token twine upload --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/* --verbose
+    - git tag -a $RELEASE_VERSION -m "Wersja  $RELEASE_VERSION" --force
+    - git remote set-url origin http://oauth2:$CONTAINER_TOKEN@gitlab-i40.apagroup.pl/industry4/nazca-4.0/spark-ml/python-sdk.git
+    - git push origin $RELEASE_VERSION
+  tags:
+    - shell
+
+trigger_userbrain:
+  only:
+    - dev 
+  trigger:
+    project: industry4/nazca-4.0/userbrain
+    branch: dev
+    strategy: depend
+  stage: trigger_dependencies
+
+trigger_brain:
+  only:
+    - dev 
+  trigger:
+    project: industry4/nazca-4.0/brain
+    branch: dev
+    strategy: depend
+  stage: trigger_dependencies
+
+trigger_datahub:
+  only:
+    - dev 
+  trigger:
+    project: industry4/nazca-4.0/docker-container/datahub
+    branch: dev
+    strategy: depend
+  stage: trigger_dependencies
