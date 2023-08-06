@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: veriSoft-python-selenium-framework
+Version: 1.0.0
+Summary: A package of Selenium Python Framework
+Home-page: https://gitlab.com/DcentraLab/automation-qa-infra
+Author: Efrat Cohen
+Author-email: efrat.cohen@verisoft.co
+Requires-Dist: selenium
+Requires-Dist: pytest
+Requires-Dist: webdriver-manager
+Requires-Dist: jproperties
+Requires-Dist: PyYAML
+Requires-Dist: numpy
+Requires-Dist: pyautogui
+Requires-Dist: opencv-python
+Requires-Dist: auto-metamask
+Requires-Dist: requests
+
