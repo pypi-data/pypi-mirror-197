@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+./docs/conf.py
+./randonneur/__init__.py
+./randonneur/datasets.py
+./randonneur/exchanges.py
+./randonneur/utils.py
+randonneur/VERSION
+randonneur.egg-info/PKG-INFO
+randonneur.egg-info/SOURCES.txt
+randonneur.egg-info/dependency_links.txt
+randonneur.egg-info/not-zip-safe
+randonneur.egg-info/requires.txt
+randonneur.egg-info/top_level.txt

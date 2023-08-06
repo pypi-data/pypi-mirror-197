@@ -1,0 +1,16 @@
+frozendict
+tqdm
+
+[dev]
+pre-commit
+pylint
+
+[docs]
+sphinx
+myst_parser
+furo
+
+[testing]
+setuptools
+pytest
+pytest-cov
