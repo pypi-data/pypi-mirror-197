@@ -1,0 +1,3 @@
+[console_scripts]
+cronus-eater=cronus_eater.__main__:main
+
