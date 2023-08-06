@@ -1,0 +1,6 @@
+numpy>=1.17
+scipy
+jax>=0.3.25
+jaxlib>=0.3.25
+typing_extensions
+jaxopt>=0.2
