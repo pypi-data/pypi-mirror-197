@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyalpaca
+Version: 0.0.1.dev0
+Summary: pyAlpaca - Finetune LLaMA
+Author: Juncong Moo
+License: UNKNOWN
+Keywords: LLaMA
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pyllama
+
+# pyAlpaca
+
+
+
