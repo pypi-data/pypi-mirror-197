@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: inspirare
+Version: 0.1.4
+Summary: library of my handy tools
+Project-URL: Homepage, https://github.com/inspirare6/inspirare
+Project-URL: Bug Tracker, https://github.com/inspirare6/inspirare/issues
+Author-email: inspirare6 <inspirare6@163.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: arrow==0.17.0
+Description-Content-Type: text/markdown
+
+# inspirare
+
+Library of my handy tools. 
