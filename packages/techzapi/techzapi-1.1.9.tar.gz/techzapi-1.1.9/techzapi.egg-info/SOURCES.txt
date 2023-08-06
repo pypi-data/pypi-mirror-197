@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+techzapi/api.py
+techzapi.egg-info/PKG-INFO
+techzapi.egg-info/SOURCES.txt
+techzapi.egg-info/dependency_links.txt
+techzapi.egg-info/not-zip-safe
+techzapi.egg-info/requires.txt
+techzapi.egg-info/top_level.txt
