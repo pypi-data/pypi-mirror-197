@@ -1,0 +1,9 @@
+LICENSE,sha256=z_ayIbVxHCXWci7P2DnNjgUBCWeQ6wTpniRkFew9HEg,1067
+changeloggh/__init__.py,sha256=rFQ59VeRsDP16pF6vvJ3dY80WNn8edKErr40KeS2ZSc,90
+changeloggh/__main__.py,sha256=RqhnmdPf75Z2CG-qItI4RTF8fC61xRLfLVJMxgmrsrc,40
+changeloggh/cli.py,sha256=9sPELRUyLYrowr5jKNl_x2WEjoqiIXR5geYyq_Eyeqg,71
+changeloggh-0.1.0.dist-info/LICENSE,sha256=z_ayIbVxHCXWci7P2DnNjgUBCWeQ6wTpniRkFew9HEg,1067
+changeloggh-0.1.0.dist-info/METADATA,sha256=PyWoIEVRZ2Xq3ZKAhQra215u2s0EK_IPAUIR1IEBIhs,1927
+changeloggh-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+changeloggh-0.1.0.dist-info/entry_points.txt,sha256=xQ20nOUIK8BSfs1cJf0d1gSztQgvZv3404Ia0VIc1DY,78
+changeloggh-0.1.0.dist-info/RECORD,,
