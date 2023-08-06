@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+illogical/__init__.py
+illogical/evaluable.py
+illogical/illogical.py
+illogical.egg-info/PKG-INFO
+illogical.egg-info/SOURCES.txt
+illogical.egg-info/dependency_links.txt
+illogical.egg-info/top_level.txt
+tests/test_evaluable.py
+tests/test_illogical.py
+tests/test_parse.py

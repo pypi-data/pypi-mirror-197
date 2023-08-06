@@ -1,0 +1,29 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "illogical"
+version = "1.0.1"
+description = "A micro conditional engine used to parse raw logical and comparison expressions, evaluate the expression in the given data context, and provide access to a text form of the given expressions."
+readme = "README.md"
+authors = [{ name = "David Horak", email = "info@davidhorak.com" }]
+license = { file = "LICENSE.md", content-type="text/markdown" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Utilities",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+keywords = ["expression", "logical", "expression-evaluator"]
+requires-python = ">=3.7"
+
+[project.urls]
+repository = "https://github.com/spaceavocado/pyillogical"
+
+[tool.black]
+line-length = 88
+
+[tool.flake8]
+max-line-length = 88
