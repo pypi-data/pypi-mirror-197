@@ -1,0 +1,3 @@
+[console_scripts]
+_pea_exec = scripts.main:pae
+palias = scripts.main:cli
