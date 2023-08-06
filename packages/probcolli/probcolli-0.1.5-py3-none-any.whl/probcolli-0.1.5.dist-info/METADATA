@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: probcolli
+Version: 0.1.5
+Summary: A cool set of collision checkers from robotic manipulators using probabilistic methods
+Author: Vistor, Javi GP
+Project-URL: Homepage, https://github.com/vistormu/prob_cc
+Project-URL: Bug Tracker, https://github.com/vistormu/prob_cc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: torchbnn
+Requires-Dist: gpytorch
+Requires-Dist: vclog
+
+# Probabilistic Collision Checkers Library
+
+A cool set of collision checkers from robotic manipulators using probabilistic methods
