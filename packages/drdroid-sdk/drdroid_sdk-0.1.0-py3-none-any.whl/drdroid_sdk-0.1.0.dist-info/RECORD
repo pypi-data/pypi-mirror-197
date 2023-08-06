@@ -1,0 +1,11 @@
+pydoctordroid/__init__.py,sha256=kYTVQTKqp71WX1We1XMV135qf01dAwhTHETtvkpylIk,112
+pydoctordroid/_event_exporter.py,sha256=KlZdUBVOf-Qrk2pGgJEiyVvTmZ-iQSQlMBTIkMM5RvA,1243
+pydoctordroid/_events.py,sha256=IC85QDtrYKqd1RtLK36_rgR8G_jXitbDzjF54He2mkU,945
+pydoctordroid/_logger.py,sha256=gmrVGJZZwNcJTEUgecZ66JUg0izTu3GYeBavhO9smtY,476
+pydoctordroid/_value.py,sha256=HHxiUfir0b1SkUYTvbNlCfGzxDYSLo8lpWRBKuk46rg,3289
+pydoctordroid/lib.py,sha256=6b-mkQ60Q2EVunCKbRfmy9ukXWNpASpLyf3olB0flVE,2044
+drdroid_sdk-0.1.0.dist-info/LICENSE.txt,sha256=7RbRBLodPC4mGU42a1Mt2kE51xoYqDHE7ZVNp6RF84A,1073
+drdroid_sdk-0.1.0.dist-info/METADATA,sha256=Vc_gRe8hIb6GnmlpM9H0lEvliYSB_h8qdJqAyqTRHAQ,472
+drdroid_sdk-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+drdroid_sdk-0.1.0.dist-info/top_level.txt,sha256=7AxrbCsQwONCPqTiyKe9xAc6eeKLrIi2hFhtsYWAs5o,14
+drdroid_sdk-0.1.0.dist-info/RECORD,,
