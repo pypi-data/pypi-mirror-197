@@ -1,0 +1,4 @@
+[console_scripts]
+meeting=meetingscribe.main:app
+meetingscribe=meetingscribe.main:app
+

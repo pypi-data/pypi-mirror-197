@@ -1,0 +1,11 @@
+meetingscribe/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+meetingscribe/audio.py,sha256=m9KHBMa9DPNDGEdv7n-k_Iv6Tz-KxqS9VozoBYfn-Yw,1099
+meetingscribe/chat.py,sha256=gMBKM8DNW-5w1aNeFWDGmXRQRosIZgJDVu7sacyxN-Y,1934
+meetingscribe/main.py,sha256=U2TGfysPFqQoNCSKHJRuf7PIR1s35YJmA983aTCgpkE,7855
+meetingscribe/misc.py,sha256=S5y2XbUFD38Sw3YDwjzlrb-WX4v16yNVD4hzzdneDr8,237
+meetingscribe/text.py,sha256=r2CUJrGvA6l28_n0DggUoZVIXZIytdhtHXSbgdgwev4,1150
+meetingscribe-0.1.2.dist-info/entry_points.txt,sha256=9DDHORGRL2_VLQb4njRLDuM0zNip-4YAN8KghjJXI4o,87
+meetingscribe-0.1.2.dist-info/LICENSE,sha256=8es0QIGk5-qLf9d7FDYyuk2A9Q308v_YkNrRo0ZoAFk,1106
+meetingscribe-0.1.2.dist-info/WHEEL,sha256=DA86_h4QwwzGeRoz62o1svYt5kGEXpoUTuTtwzoTb30,83
+meetingscribe-0.1.2.dist-info/METADATA,sha256=FL4LBEuCWifb5DtdxaUVUI1dqcvtHvR_CLhSxNQP344,4099
+meetingscribe-0.1.2.dist-info/RECORD,,
