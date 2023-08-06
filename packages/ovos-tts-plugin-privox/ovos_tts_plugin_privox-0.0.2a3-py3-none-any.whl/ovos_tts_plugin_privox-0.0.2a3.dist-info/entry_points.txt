@@ -1,0 +1,6 @@
+[mycroft.plugin.tts]
+ovos-tts-plugin-privox = ovos_tts_plugin_privox:PrivoxTTS
+
+[mycroft.plugin.tts.config]
+ovos-tts-plugin-privox.config = ovos_tts_plugin_privox:PrivoxTTSConfig
+
