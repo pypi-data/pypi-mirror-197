@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "chemic"
+version = "1.1.11"
+description = ""
+authors = ["uncenter <me@uncenter.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+commoner = "^0.4.2"
+nicegui = "^1.1.11"
+pandas = "^1.5.3"
+pydash = "^6.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
