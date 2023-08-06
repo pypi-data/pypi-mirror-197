@@ -1,0 +1,2 @@
+[console_scripts]
+xiplot = xiplot:cli
