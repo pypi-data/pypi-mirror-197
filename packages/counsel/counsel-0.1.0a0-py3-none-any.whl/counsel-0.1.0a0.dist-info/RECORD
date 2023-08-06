@@ -1,0 +1,14 @@
+counsel/__init__.py,sha256=i_SkeLs0mhTkr6tMpiTKRgOfwyJFkbxiFicMjG5yHLU,68
+counsel/__main__.py,sha256=ljq88pS6yTUzP47jYSWbI2EQthV0kJ9hcxm3JbnjJZc,47
+counsel/assets/templates/slack.md.j2,sha256=Qok5LDPTuyyelpzfNgSoqQ-q82g5tQOqdy5dqCE0dzo,671
+counsel/cli.py,sha256=EFOHxGUj4XOjZnycRahFC8nkMfAB1rvSyyoetqXoBuI,3206
+counsel/counsel.py,sha256=wjUybH5YS_Bb91GMDdkRSRyGs6BQfKNOaVmGNO8CmwM,6177
+counsel/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+counsel/models/counsel.py,sha256=qeMlW7U5x5m5CwjcZpGimABm-arNv-eNT2qOaU7kpdQ,2705
+counsel/models/syft.py,sha256=dBRaOsW0b_1jMrgkeGknVBpV4NHqBsKmy1JadoR-9dw,10691
+counsel/policy.py,sha256=2rJCauMVX-5d8QVRcHo49bfUcs6EafyIDTr9bNjUdH8,3791
+counsel-0.1.0a0.dist-info/LICENSE,sha256=yMlfxpIsmGQJ7kHwovO_My0CjsLwDBRSC-x23vNc4ys,1082
+counsel-0.1.0a0.dist-info/METADATA,sha256=aXGqq7treT03xzVFQt2yRm_jUGauu8AhDPbUIsFF5Wk,8115
+counsel-0.1.0a0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+counsel-0.1.0a0.dist-info/entry_points.txt,sha256=E4UpUpx_6oEU04q3V7gA8P4__ArzkjZNSH0bTJO_XTc,43
+counsel-0.1.0a0.dist-info/RECORD,,
