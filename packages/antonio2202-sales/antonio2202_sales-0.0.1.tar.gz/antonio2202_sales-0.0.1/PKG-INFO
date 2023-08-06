@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: antonio2202_sales
+Version: 0.0.1
+Summary: My customized ORM on Sales
+Project-URL: Homepage, https://github.com/Antonio2202/Tickets_bdi
+Project-URL: Bug Tracker, https://github.com/Antonio2202/Tickets_bdi/issues
+Author-email: antonio2202 <arevi10.ar@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Tickets_bdi

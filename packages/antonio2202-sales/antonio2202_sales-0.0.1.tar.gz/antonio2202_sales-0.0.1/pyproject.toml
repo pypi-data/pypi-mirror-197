@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "antonio2202_sales"
+version = "0.0.1"
+authors = [
+    { name="antonio2202", email="arevi10.ar@gmail.com" },
+]
+description = "My customized ORM on Sales"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Antonio2202/Tickets_bdi"
+"Bug Tracker" = "https://github.com/Antonio2202/Tickets_bdi/issues"
