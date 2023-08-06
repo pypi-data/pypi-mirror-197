@@ -1,0 +1,6 @@
+README.md
+setup.py
+musearch.egg-info/PKG-INFO
+musearch.egg-info/SOURCES.txt
+musearch.egg-info/dependency_links.txt
+musearch.egg-info/top_level.txt
