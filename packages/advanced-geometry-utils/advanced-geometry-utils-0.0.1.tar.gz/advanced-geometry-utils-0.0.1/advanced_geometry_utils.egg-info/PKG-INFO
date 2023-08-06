@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: advanced-geometry-utils
+Version: 0.0.1
+Summary: A collection of geometry utils for 3d and 2d
+Home-page: https://github.com/django-advance-utils/advanced-geometry-utils
+Author: Tom Turner
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![codecov](https://codecov.io/gh/django-advance-utils/geometry-utils/branch/main/graph/badge.svg?token=BF9hnkXKp3)](https://codecov.io/gh/django-advance-utils/geometry-utils)
+
+
+
+=======
+# geometry-utils
+## Introduction
+A python module for working on 2D and 3D geometries.
+
+
+
