@@ -1,0 +1,10 @@
+streamlit_kpi/__init__.py,sha256=rEO_HfMRt065ZpYKeJrC1JRRIz1-34rvGrZd7rmTpxk,8163
+streamlit_kpi/frontend/index.html,sha256=GKcyK2xJKnc4_kXLK2KHl3tIRiKGgetqtDcdFK3zL4g,1618
+streamlit_kpi/frontend/main.js,sha256=BVH3RwCpkJok6j67yceZppBRL9dQymrOYqo5Z60vFTY,5258
+streamlit_kpi/frontend/streamlit-component-lib.js,sha256=LdsY3Moj3IPUPtagiMaoPl31OabzgeZw6v5_iEqf6xY,1121
+streamlit_kpi/frontend/style.css,sha256=frl-JyFlXe5AMhzox4tK8BnP7o5JkIobhmHbrWtsWaY,1346
+streamlit_kpi-0.0.6.dist-info/LICENSE,sha256=96FQCKuH0Aar4g44cG4Hpr_WJAhno8x40NKt-u3KDoo,1075
+streamlit_kpi-0.0.6.dist-info/METADATA,sha256=GAE15JmEnj5vxWQqdK0hilh_Y6zWhNrf49_RwRTwLgc,2689
+streamlit_kpi-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+streamlit_kpi-0.0.6.dist-info/top_level.txt,sha256=zKyTq4swNqkYaMO-L9SO7ib4oA6cRMRbdQfIz9CKqPU,14
+streamlit_kpi-0.0.6.dist-info/RECORD,,
