@@ -1,0 +1,2 @@
+[nbdev]
+datasetsDynamic = datasetsDynamic._modidx:d
