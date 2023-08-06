@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+scatseisnet/__init__.py
+scatseisnet/network.py
+scatseisnet/operation.py
+scatseisnet/wavelet.py
+scatseisnet.egg-info/PKG-INFO
+scatseisnet.egg-info/SOURCES.txt
+scatseisnet.egg-info/dependency_links.txt
+scatseisnet.egg-info/requires.txt
+scatseisnet.egg-info/top_level.txt

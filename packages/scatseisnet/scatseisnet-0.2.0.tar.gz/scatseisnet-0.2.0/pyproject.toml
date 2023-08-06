@@ -1,0 +1,9 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "scatseisnet"
+version = "0.2.0"
+description = "A short description of the package."
+dependencies =["numpy>=1.21.6", "scipy>=1.7.3"]
