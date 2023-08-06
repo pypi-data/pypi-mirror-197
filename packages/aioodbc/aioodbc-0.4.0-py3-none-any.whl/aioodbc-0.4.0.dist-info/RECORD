@@ -1,0 +1,11 @@
+aioodbc/__init__.py,sha256=cHDpxw530pUjdtuZtG3_ShaOdnKfIBGYaDabGQnrpmY,877
+aioodbc/connection.py,sha256=pf9a604PkNRdXKnGCo2RVno1vumHjh4-6KDvLOrhbJo,9092
+aioodbc/cursor.py,sha256=hhTA8-UbkmoFwUSneS0CfxOL7Oky0LgQpYguX7h1wwo,12209
+aioodbc/log.py,sha256=vaMWC-YZ9tH4sTsHfWJGFQuOjeRb4DZ2N5VevNDpV14,123
+aioodbc/pool.py,sha256=GLdtbHZ8_WTWlimNF3RKDvYacpyJgrTbrxxamkgVS2M,6524
+aioodbc/utils.py,sha256=VKBfFP5IBwX9jhhaJhuEPfYg2GXKKy6YyBvVokFRI3c,2793
+aioodbc-0.4.0.dist-info/LICENSE,sha256=Nd6vo1V-lDYsEmuCDJBV8SvfyYmHcCC5FwgoqZczKMQ,11316
+aioodbc-0.4.0.dist-info/METADATA,sha256=S0dXyDgFIfp0ODx-lILTA0UKPMyLls8oDlUWyJNglQw,7371
+aioodbc-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aioodbc-0.4.0.dist-info/top_level.txt,sha256=wzy1F8frOynxVfMXIgnjwnC8PPhUZF0xE2hhtoDacQw,8
+aioodbc-0.4.0.dist-info/RECORD,,
