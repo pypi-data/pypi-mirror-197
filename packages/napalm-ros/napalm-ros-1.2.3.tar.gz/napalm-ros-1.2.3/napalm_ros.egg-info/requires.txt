@@ -1,0 +1,8 @@
+
+[tests]
+platformdirs
+pytest==7.1.2
+yapf
+pylint>=2.16.2
+isort
+toml
