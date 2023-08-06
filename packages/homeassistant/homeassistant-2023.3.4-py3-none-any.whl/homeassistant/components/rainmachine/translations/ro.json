@@ -1,0 +1,17 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispozitivul a fost configurat deja"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "ip_address": "Hostname sau adres\u0103 IP",
+                    "password": "Parola",
+                    "port": "Port"
+                },
+                "title": "Completeaz\u0103 informa\u021biile tale"
+            }
+        }
+    }
+}

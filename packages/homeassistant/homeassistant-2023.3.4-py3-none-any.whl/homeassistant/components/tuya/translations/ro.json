@@ -1,0 +1,14 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "country_code": "\u021aar\u0103",
+                    "password": "Parola",
+                    "username": "Cont"
+                },
+                "description": "Introdu datele de conectare Tuya"
+            }
+        }
+    }
+}

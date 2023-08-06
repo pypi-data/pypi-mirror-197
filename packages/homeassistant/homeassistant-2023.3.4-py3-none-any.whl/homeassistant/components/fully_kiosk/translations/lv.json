@@ -1,0 +1,11 @@
+{
+    "config": {
+        "step": {
+            "discovery_confirm": {
+                "data": {
+                    "password": "Parole"
+                }
+            }
+        }
+    }
+}

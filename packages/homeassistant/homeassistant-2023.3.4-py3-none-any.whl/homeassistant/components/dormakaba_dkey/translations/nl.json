@@ -1,0 +1,27 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Apparaat is al geconfigureerd",
+            "cannot_connect": "Kan geen verbinding maken",
+            "no_devices_found": "Geen apparaten gevonden op het netwerk",
+            "unknown": "Onverwachte fout"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "associate": {
+                "data": {
+                    "activation_code": "Activatie code"
+                }
+            },
+            "bluetooth_confirm": {
+                "description": "Wilt u {name} instellen?"
+            },
+            "user": {
+                "data": {
+                    "address": "Apparaat"
+                },
+                "description": "Kies een apparaat om in te stellen"
+            }
+        }
+    }
+}

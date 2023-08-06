@@ -1,0 +1,13 @@
+{
+    "config": {
+        "create_entry": {
+            "default": "Pentru a trimite evenimente c\u0103tre Home Assistant, va trebui s\u0103 utilizezi ac\u021biunea \u201eTrimite o cerere web\u201d/\u201eMake a web request\u201d din [applet-ul Webhook IFTTT]({applet_url}).\n\nCompleteaz\u0103 urm\u0103toarele informa\u021bii:\n\n- URL: `{webhook_url}`\n- Method: POST\n- Content Type: application/json\n\nConsult\u0103 [documenta\u021bia]({docs_url}) despre cum s\u0103 configurezi automatiz\u0103ri pentru a gestiona datele primite."
+        },
+        "step": {
+            "user": {
+                "description": "Sigur dore\u0219ti s\u0103 configurezi IFTTT?",
+                "title": "Configureaz\u0103 applet-ul Webhook IFTTT"
+            }
+        }
+    }
+}

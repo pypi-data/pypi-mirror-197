@@ -1,0 +1,13 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Numele acestei conexiuni velbus",
+                    "port": "String de conexiune"
+                },
+                "title": "Define\u0219te tipul de conexiune velbus"
+            }
+        }
+    }
+}

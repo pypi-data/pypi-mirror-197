@@ -1,0 +1,28 @@
+{
+    "config": {
+        "abort": {
+            "authorize_url_timeout": "Nu s-a generat URL-ul de autorizare \u00een timp util."
+        },
+        "error": {
+            "internal_error": "Eroare intern\u0103 la validarea codului",
+            "timeout": "Validarea codului a durat prea mult",
+            "unknown": "Eroare nea\u0219teptat\u0103"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "flow_impl": "Furnizor"
+                },
+                "description": "Alege metoda de autentificare",
+                "title": "Furnizor de autentificare"
+            },
+            "link": {
+                "data": {
+                    "code": "Cod PIN"
+                },
+                "description": "Pentru a conecta contul Nest, [autorizeaz\u0103-\u021bi contul]({url}).\n\nDup\u0103 autorizare, adaug\u0103 mai jos codul PIN furnizat.",
+                "title": "Conecteaz\u0103 cont Nest"
+            }
+        }
+    }
+}

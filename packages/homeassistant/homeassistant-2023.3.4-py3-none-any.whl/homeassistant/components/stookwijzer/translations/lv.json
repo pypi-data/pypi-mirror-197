@@ -1,0 +1,12 @@
+{
+    "entity": {
+        "sensor": {
+            "stookwijzer": {
+                "state": {
+                    "blauw": "Zils",
+                    "oranje": "Oran\u017es"
+                }
+            }
+        }
+    }
+}
