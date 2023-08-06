@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <record id="view_photovoltaic_power_station_form_inherit" model="ir.ui.view">
+    <field name="name">view.photovoltaic_power_station.form.inherit</field>
+    <field name="model">photovoltaic.power.station</field>
+    <field name="inherit_id" ref="photovoltaic_mgmt.view_photovoltaic_power_station_form"/>
+
+    <field name="arch" type="xml">
+      <field name="annual_report_link" position="after">
+        <field name="tecnical_memory_link" widget="url"/>
+      </field>
+      <field name="co2" position="after">
+        <field name="eq_family_consumption"/>
+      </field>
+    </field>
+  </record>
+</odoo>
