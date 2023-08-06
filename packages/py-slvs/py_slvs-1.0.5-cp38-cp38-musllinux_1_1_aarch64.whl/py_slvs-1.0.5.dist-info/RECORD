@@ -1,0 +1,9 @@
+py_slvs.libs/libstdc++-fd9f4683.so.6.0.28,sha256=ABZJqq2QQ-As0idNvT9YzXNRmTj9R-S0pG8KMb0Odtk,2599041
+py_slvs.libs/libgcc_s-4e37474d.so.1,sha256=Slji658OikHg8crvAv4qrQOmCj7zqL5w890rL-a5jBM,134393
+py_slvs-1.0.5.data/data/py_slvs/_slvs.so,sha256=_1NPw9vKvuQhxrXcEuObKIFJLrXOeV5hRHIDEaYTKwc,876017
+py_slvs-1.0.5.data/data/py_slvs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_slvs-1.0.5.data/data/py_slvs/slvs.py,sha256=ajdIUoR-EJeZ9xcumzJAeO76cwsjG-pkqEpaJL9Np-s,23782
+py_slvs-1.0.5.dist-info/METADATA,sha256=Gaud0DiCcT8uE_6pxemLqgOM1G1YuYDRp-QW4NduPhc,1093
+py_slvs-1.0.5.dist-info/WHEEL,sha256=oMPwZHrJF3vtdowN9zUSy_lZxZT99fkfBwIsZNwrjGE,106
+py_slvs-1.0.5.dist-info/top_level.txt,sha256=aHOJQ3D4B2IoqLAi7o868jiRm82dPLvgchlWbx_TY2M,5
+py_slvs-1.0.5.dist-info/RECORD,,
