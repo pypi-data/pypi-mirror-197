@@ -1,0 +1,6 @@
+clr
+numpy
+coverage
+six
+sphinx
+2to3
