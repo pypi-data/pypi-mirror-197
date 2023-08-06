@@ -1,0 +1,12 @@
+romaji/__init__.py,sha256=2qnq1GZxnz-88G1HyqRyNG5Df-62dXzs8dtqIjMeBL0,49
+romaji/filter.py,sha256=4pbo509XmQ0Jb35BoxvI0LrVSWJeMBH8uOXUZcNR8-0,1098
+romaji/mapping.py,sha256=DpkkAA1cm6D2kGBNc_VmiVWZFwfd2Kx4gt5iCJsK-Vs,33331
+romaji/substring.py,sha256=9GTPLFZlONdcws7cuKatIP2gCgJtvCDAhe-q9mZo6E4,894
+romaji/system.py,sha256=E9OkK05ccaVVlFi4yxi8jHV2pVsADX9tnnCLkfLligM,561
+romaji/transliteration.py,sha256=n0JtjZDj_IJrt5vjjnVIFo7l3MLp5xtmatQhWx2oInE,2308
+romaji/transliterator.py,sha256=xUkwU15xLOAZXfVYdNS9BbzR5MTsM_woW_PO6ar97-4,1917
+romaji-0.1.0.dist-info/LICENSE,sha256=tIhS7WQEgbDdZs6v8CpniOmYJegcVmu07fmrKA-Px6g,557
+romaji-0.1.0.dist-info/METADATA,sha256=ZMupcHuzUrU47vXLnbp1EuV8zxIf3jtbl4RYtUqSk0M,2177
+romaji-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+romaji-0.1.0.dist-info/top_level.txt,sha256=L6RowpaisnKlpk9Cipz0U4N8pHcFLwptBqUvmaRRgjA,7
+romaji-0.1.0.dist-info/RECORD,,
