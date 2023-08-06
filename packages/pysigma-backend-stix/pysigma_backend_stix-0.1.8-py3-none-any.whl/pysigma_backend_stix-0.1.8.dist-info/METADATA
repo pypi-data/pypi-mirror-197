@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pysigma-backend-stix
+Version: 0.1.8
+Summary: STIX language backend for pySigma convertor
+Home-page: https://github.com/barvhaim/pySigma-backend-stix
+License: MIT
+Author: Cyber-center of Excellence
+Author-email: barha@il.ibm.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pysigma (>=0.9.5,<0.10.0)
+Project-URL: Repository, https://github.com/barvhaim/pySigma-backend-stix
