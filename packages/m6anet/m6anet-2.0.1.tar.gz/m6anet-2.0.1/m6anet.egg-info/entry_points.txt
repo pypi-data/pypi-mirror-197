@@ -1,0 +1,6 @@
+[console_scripts]
+m6anet = m6anet:main
+m6anet-compute_norm_factors = m6anet.deprecated.compute_norm_factors:main
+m6anet-dataprep = m6anet.deprecated.dataprep:main
+m6anet-run_inference = m6anet.deprecated.inference:main
+m6anet-train = m6anet.deprecated.train:main
