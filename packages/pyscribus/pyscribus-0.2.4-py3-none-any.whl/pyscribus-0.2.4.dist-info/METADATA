@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pyscribus
+Version: 0.2.4
+Summary: Read, create and update Scribus .sla files.
+Author: Étienne Nadji
+Author-email: etnadji@eml.cc
+License: GNU Affero General Public License v3 or later (AGPLv3+)
+Project-URL: Documentation, https://etnadji.fr/pyscribus
+Project-URL: Source Code, https://framagit.org/etnadji/pyscribus
+Project-URL: Issue tracker, https://framagit.org/etnadji/pyscribus/-/issues
+Keywords: scribus,sla
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Text Processing :: Markup :: XML
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: lxml
+Requires-Dist: svg.path
+
+#########
+PyScribus
+#########
+
+A Python library to read, generate and update Scribus documents (SLA).
+
+For Python versions older than 3.8, see **pyscribus-backported**.
+
+Prerequisites
+=============
+
+* `lxml <https://lxml.de/>`_
+* `svg.path <https://pypi.org/project/svg.path/>`_
+
+Optional (for extra features)
+-----------------------------
+
+* `Pillow <https://python-pillow.org/>`_ for ``extra.wireframe`` module
+
+Documentation
+=============
+
+`PyScribus <https://etnadji.fr/pyscribus>`_
+
+..
+   vim: spl=en:
