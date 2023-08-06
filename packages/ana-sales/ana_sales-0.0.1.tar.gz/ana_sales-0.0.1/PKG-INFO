@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ana_sales
+Version: 0.0.1
+Summary: My customized ORM on Sales
+Project-URL: Homepage, https://github.com/AnaMadrid2/Actividad_clase
+Project-URL: Bug Tracker, https://github.com/AnaMadrid2/Actividad_clase/issues
+Author-email: anamadrid <ana.drid.rrano@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
