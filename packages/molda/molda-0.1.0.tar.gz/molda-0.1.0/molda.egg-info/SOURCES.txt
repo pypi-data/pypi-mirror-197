@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+molda/ATCVectorizer.py
+molda/Gref94Vectorizer.py
+molda/LTUVectorizer.py
+molda/ObservedExpected.py
+molda/Tficf.py
+molda/TtestVectorizer.py
+molda/__init__.py
+molda/errors.py
+molda.egg-info/PKG-INFO
+molda.egg-info/SOURCES.txt
+molda.egg-info/dependency_links.txt
+molda.egg-info/requires.txt
+molda.egg-info/top_level.txt
