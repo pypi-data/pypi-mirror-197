@@ -1,0 +1,226 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "mehlbot"
+version = "1.1.2"
+description = "A baisc interface for discord bots to handle receiveing commands using the discord.py package."
+authors = ["K", "Brandl", "kbrandla@duck.com"]
+license = "MIT"
+keywords = ["Discord", "discord.py", "Discord-Bot", "Discord-Command-Bot", "Python"]
+readme = "README.md"
+homepage = "https://github.com/cobrapitz/MehlBot"
+repository = "https://github.com/cobrapitz/MehlBot"
+documentation = "https://mehlbot.readthedocs.io/en/latest/"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.urls]
+"Issues" = "https://github.com/cobrapitz/MehlBot/issues"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+"discord.py" = "^2.2.2"
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^6.1.3"
+sphinx-rtd-theme = "^1.2.0"
+pytest = "^7.2.2"
+taskipy = "^1.1.3"
+coverage = "^7.2.1"
+flake8 = "^6.0.0"
+pre-commit = "^3.1.1"
+isort = "^5.12.0"
+interrogate = "^1.5.0"
+bandit = "^1.7.5"
+black = "^23.1.0"
+ruff = "^0.0.256"
+pyupgrade = "^3.3.1"
+mypy = "^1.1.1"
+pyright = "^1.1.299"
+tox = "^4.4.7"
+
+[tool.taskipy.settings]
+use_vars = true
+
+[tool.taskipy.variables]
+tests_dir = "tests"
+
+[tool.taskipy.tasks]
+test = "pytest {tests_dir}"
+coverage = "coverage run -m pytest {tests_dir}"
+coverage-report = "coverage report"
+flake8 = "flake8 -v"
+sphinx-start = "sphinx-quickstart -p MehlBot --sep --ext-autodoc --ext-viewcode -l en" # inside docs
+sphinx-gen = "cd docs & sphinx-apidoc -o ./source ../mehlbot" # in project dir, run after editing config.py
+sphinx-html = "cd docs & make clean & make html"
+interrogate = "interrogate -c ./pyproject.toml"
+isort = "isort . --profile black"
+isort-diff = "isort . --diff --profile black -v" # dry run without applying changes
+bandit = "bandit -c ./pyproject.toml -r ."
+pre-commit-install = "pre-commit install"
+pre-commit-autoupdate = "pre-commit autoupdate"
+pre-commit = "pre-commit run --all-files"
+black = "black . -v"
+black-diff = "black . --diff --color"
+black-check = "black . --check"
+ruff = "ruff check ."
+ruff-fix = "ruff check . --fix"
+docformatter = "docformatter --in-place --config ./pyproject.toml"
+mypy = "mypy . --config-file ./pyproject.toml"
+pyright = "pyright"
+tox = "tox"
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::pytest.PytestCollectionWarning"]
+testpaths = ["tests"]
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+tests = ["B201", "B301"]
+
+[tool.black]
+line-length = 120
+target-version = [
+    'py38',
+    'py39',
+    'py310',
+    'py311',
+]
+extend-exclude = '''
+/(
+  | docs
+  | profiling
+)/
+'''
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[tool.pyright]
+include = ["mehlbot", "tests", "examples"]
+reportMissingImports = false
+reportMissingTypeStubs = true
+
+[tool.isort]
+profile = "black"
+skip_glob = ["docs/*"]
+atomic = true # atomic according to docs: "only applying changes if they don't introduce syntax errors"
+lines_after_imports = 2
+use_parentheses = true
+combine_as_imports = true
+combine_star = true
+known_third_party = ["attr", "click", "py", "pytest", "setuptools", "tabulate"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+
+[tool.coverage.report]
+exclude_lines = [
+    # Have to re-enable the standard pragma
+    'pragma: no cover',
+    # Don't complain if tests don't hit defensive assertion code:
+    'raise NotImplementedError',
+    # Don't complain if non-runnable code isn't run:
+    'if __name__ == .__main__.:',
+]
+ignore_errors = true
+
+[tool.docformatter]
+recursive = true
+wrap-summaries = 120
+wrap-descriptions = 120
+blank = true
+syntax = "sphinx"
+
+[tool.ruff]
+select = ["ALL"]
+ignore = [
+    "E501", # pycodestyle line too long, handled by black
+    "D100", # pydocstyle - missing docstring in public module
+    "D101", # pydocstyle - missing docstring in public class
+    "D102", # pydocstyle - missing docstring in public method
+    "D103", # pydocstyle - missing docstring in public function
+    "D104", # pydocstyle - missing docstring in public package
+    "D105", # pydocstyle - missing docstring in magic method
+    "D106", # pydocstyle - missing docstring in public nested class
+    "D107", # pydocstyle - missing docstring in __init__
+    "D202", # pydocstyle - no blank lines allowed after function docstring
+    "D203", # 1 blank line required before class docstring
+    "D205", # pydocstyle - 1 blank line required between summary line and description
+    "D209", # Multi-line docstring closing quotes should be on a separate line -> docformatter
+    "D211", # no-blank-line-before-class
+    "D213", # multi-line-summary-second-line
+    "D401", # First line of docstring should be in imperative mood
+    "D415", # pydocstyle - first line should end with a period, question mark, or exclamation point
+    "PGH003", # Use specific rule codes when ignoring type issues
+    "UP037", # pyupgrade - removes quotes from type annotation
+    "UP006", # Use `list` instead of `List` for type annotations -> for py3.8
+    "UP007", # UP007 [*] Use `X | Y` for type annotations -> requires py310
+    "UP035", # `typing.List` is deprecated, use `list` instead  -> for py3.8
+    "A003", # flake8-builtins - class attribute {name} is shadowing a python builtin
+    "ANN003", # Missing type annotation for `**options`
+    "ANN101", # Missing type annotation for `self` in method
+    "ANN201", # Missing return type annotation for public function
+    "B010", # flake8-bugbear - do not call setattr with a constant attribute value
+    "S101", # use of assert
+    "PLC1901", # simplify: an empty string is falsey
+    "I001", # Import block is un-sorted or un-formatted -> isort used
+]
+line-length = 120
+src = ["mehlbot", "tests", "examples"]
+target-version = "py311"
+exclude = [
+    "docs",
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+[tool.ruff.mccabe]
+max-complexity = 10
+
+[tool.interrogate]
+ignore-init-method = true
+ignore-init-module = true
+ignore-magic = false
+ignore-semiprivate = false
+ignore-private = false
+ignore-property-decorators = false
+ignore-module = false
+ignore-nested-functions = false
+ignore-nested-classes = true
+ignore-setters = false
+fail-under = 95
+exclude = ["setup.py", "docs", "_build", "conf.py"]
+ignore-regex = ["^get$", "^mock_.*", ".*BaseClass.*"]
+# possible values: 0 (minimal output), 1 (-v), 2 (-vv)
+verbose = 2
+quiet = false
+whitelist-regex = []
+color = true
+omit-covered-files = false
+generate-badge = "./docs/badges/interrogate-badge.svg"
+badge-format = "svg"
+badge-style = "flat"
+
