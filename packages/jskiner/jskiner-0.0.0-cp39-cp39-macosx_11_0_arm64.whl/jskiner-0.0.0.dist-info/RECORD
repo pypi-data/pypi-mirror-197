@@ -1,0 +1,9 @@
+jskiner-0.0.0.dist-info/METADATA,sha256=SIWyDIkXE14cT1IhV_kC_gmc1dxWpXdX1Hie4P-FbqQ,1185
+jskiner-0.0.0.dist-info/WHEEL,sha256=Q89c4bO6RGr4lutPFizAW1eCdPFEh3ogWIiH16LJhI8,104
+jskiner-0.0.0.dist-info/entry_points.txt,sha256=paLq4RRVb0j9Af4TAQrlq7QpKTqDc2iXzeZEZ6Ci2As,42
+jskiner-0.0.0.dist-info/license_files/LICENSE,sha256=UBsJjwyGIhq8o_mGGBXW9zVNfAk1ov0izzd_DkZvSmQ,1068
+jskiner/cmd.py,sha256=LL2q6C-cCwRhl6gIAre4i0E-W-tvwEeF02pTtsJnEoo,1289
+jskiner/__init__.py,sha256=QpnWh9geGt16RJIrIgUVC5R8ACUBRuaNQXShXlbFMJM,264
+jskiner/schema.py,sha256=8CXNBYOWy1w7kQY5PEJniCcPa-5ZE6fEQL_2S6Rz1sA,371
+jskiner/jskiner.cpython-39-darwin.so,sha256=c4amnTI0q-sX_HLKVM5JGfrS9kShzHIJZQOZObBHAl0,1106169
+jskiner-0.0.0.dist-info/RECORD,,
