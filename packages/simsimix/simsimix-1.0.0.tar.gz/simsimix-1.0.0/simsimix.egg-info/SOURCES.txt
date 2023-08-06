@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+simsimix/__init__.py
+simsimix/simsimix.py
+simsimix.egg-info/PKG-INFO
+simsimix.egg-info/SOURCES.txt
+simsimix.egg-info/dependency_links.txt
+simsimix.egg-info/requires.txt
+simsimix.egg-info/top_level.txt
