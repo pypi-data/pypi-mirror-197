@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+smartsheet.egg-info/PKG-INFO
+smartsheet.egg-info/SOURCES.txt
+smartsheet.egg-info/dependency_links.txt
+smartsheet.egg-info/not-zip-safe
+smartsheet.egg-info/top_level.txt
