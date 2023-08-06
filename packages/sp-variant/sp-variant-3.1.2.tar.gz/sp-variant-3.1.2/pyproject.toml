@@ -1,0 +1,105 @@
+# SPDX-FileCopyrightText: 2021 - 2023  StorPool <support@storpool.com>
+# SPDX-License-Identifier: BSD-2-Clause
+
+[build-system]
+requires = ["setuptools >= 61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sp-variant"
+description = "Detect the Linux distribution for the StorPool build system"
+readme = "README.md"
+license = {"text" = "BSD-2-Clause"}
+requires-python = ">= 3.8"
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Intended Audience :: System Administrators",
+  "License :: DFSG approved",
+  "License :: Freely Distributable",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: System :: Systems Administration",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+dynamic = ["version"]
+
+[[project.authors]]
+name = "StorPool"
+email = "support@storpool.com"
+
+[project.scripts]
+sp_variant = "sp_variant.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/storpool/sp-variant"
+Changelog = "https://github.com/storpool/sp-variant/blob/main/docs/changes.md"
+
+[tool.setuptools]
+zip-safe = true
+package-dir = {"" = "python"}
+packages = ["sp_variant"]
+
+[tool.setuptools.package-data]
+sp_variant = ["py.typed"]
+
+[tool.setuptools.dynamic]
+version = {"attr" = "sp_variant.defs.VERSION"}
+
+[tool.black]
+target-version = ["py38", "py39", "py310", "py311"]
+line-length = 100
+
+[tool.mypy]
+strict = true
+python_version = "3.8"
+
+[tool.pylint]
+py-version = "3.8"
+load-plugins = [
+  "pylint.extensions.bad_builtin",
+  "pylint.extensions.broad_try_clause",
+  "pylint.extensions.check_elif",
+  "pylint.extensions.code_style",
+  "pylint.extensions.comparetozero",
+  "pylint.extensions.comparison_placement",
+  "pylint.extensions.confusing_elif",
+  "pylint.extensions.consider_refactoring_into_while_condition",
+  "pylint.extensions.consider_ternary_expression",
+  "pylint.extensions.dict_init_mutate",
+  "pylint.extensions.docparams",
+  "pylint.extensions.docstyle",
+  "pylint.extensions.dunder",
+  # "pylint.extensions.empty_comment",  # the license grants trigger this
+  "pylint.extensions.emptystring",
+  "pylint.extensions.eq_without_hash",
+  "pylint.extensions.for_any_all",
+  # "pylint.extensions.magic_value",  # maybe some day...
+  "pylint.extensions.mccabe",
+  "pylint.extensions.no_self_use",
+  "pylint.extensions.overlapping_exceptions",
+  "pylint.extensions.private_import",
+  "pylint.extensions.redefined_loop_name",
+  "pylint.extensions.redefined_variable_type",
+  "pylint.extensions.set_membership",
+  "pylint.extensions.typing",
+  "pylint.extensions.while_used",
+]
+
+[tool.pylint.messages]
+disable = [
+]
+
+[tool.test-stages]
+stages = ["ruff and not @manual", "@check and not @manual", "@tests and not @manual"]
