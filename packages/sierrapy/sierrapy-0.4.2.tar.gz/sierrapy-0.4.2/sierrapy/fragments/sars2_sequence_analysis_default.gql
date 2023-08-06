@@ -1,0 +1,52 @@
+inputSequence {
+  header
+  SHA512
+}
+strain { name }
+pangolin(syncFetch: true) {
+  runHash
+  reportTimestamp
+  version
+  lineage
+  probability
+  status
+  note
+}
+bestMatchingSubtype {
+  display
+  referenceAccession
+}
+validationResults {
+  level
+  message
+}
+alignedGeneSequences {
+  firstAA
+  lastAA
+  unsequencedRegions {
+    size
+    regions {
+      posStart
+      posEnd
+    }
+  }
+  gene {
+    name
+    length
+  }
+  mutations {
+    reference
+    position
+    AAs
+    isUnsequenced
+    text
+  }
+  alignedNAs
+  alignedAAs
+  prettyPairwise {
+    positionLine
+    refAALine
+    alignedNAsLine
+    mutationLine
+  }
+}
