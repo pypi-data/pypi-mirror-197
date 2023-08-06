@@ -1,0 +1,4 @@
+[console_scripts]
+cdk-cli-create-tenant-token=cdk_proxy_api_client.tools.create_tenant_token:main
+cdk-cli-import-tenant-mappings=cdk_proxy_api_client.tools.tenant_mappings_manager:main
+
