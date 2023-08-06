@@ -1,0 +1,9 @@
+setup.py
+MiniMVC/MiniMVC.py
+MiniMVC/__init__.py
+MiniMVC/minimvc.py
+MiniMVC.egg-info/PKG-INFO
+MiniMVC.egg-info/SOURCES.txt
+MiniMVC.egg-info/dependency_links.txt
+MiniMVC.egg-info/requires.txt
+MiniMVC.egg-info/top_level.txt

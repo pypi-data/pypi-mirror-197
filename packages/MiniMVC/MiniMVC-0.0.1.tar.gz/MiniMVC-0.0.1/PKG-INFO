@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: MiniMVC
+Version: 0.0.1
+Summary: MiniMVC is a lightweight, open-source web framework for building small web applications in Python.
+Author: Dekel Cohen
+Author-email: <dcohen52@gmail.com>
+Keywords: python,web,framework,desktop,html,javascript,styles,js,API,microservices,REST
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+MiniMVC is a lightweight, open-source web framework for building small web applications in 
+Python. It provides a simple and intuitive interface for handling HTTP requests and generating dynamic HTML content.
+
+With MiniMVC, you can define routes for handling different URLs, process GET and POST requests, and serve static 
+files such as images, CSS files, and JavaScript files. MiniMVC also includes a simple file uploader and validator for 
+processing file uploads from HTML forms.
+
+MiniMVC is designed to be easy to use and easy to extend. It is suitable for building small web applications and 
+prototypes, as well as for learning the basics of web development in Python.
+
+### Features:
+* Simple and intuitive interface
+* Supports GET and POST requests
+* Jinja2 templating engine for generating dynamic HTML content
+* Routing system for handling different URLs
+* Simple file uploader and validator for processing file uploads
+* Supports serving static files such as images, CSS files, and JavaScript files
+* Lightweight and easy to extend
+
+### Documentation:
+https://github.com/Dcohen52/MiniMVC
+
+### Installation:
+```pip install MiniMVC```
+
