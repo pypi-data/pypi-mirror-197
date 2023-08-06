@@ -1,0 +1,17 @@
+emoji
+numpy
+protobuf
+requests
+six
+torch>=1.3.0
+tqdm
+
+[dev]
+check-manifest
+
+[test]
+coverage
+pytest
+
+[transformers]
+transformers>=3.0.0
