@@ -1,0 +1,17 @@
+sphinxcontrib/icon/__init__.py,sha256=ik-8d8A-KfYIkFkkiEWAWVpy3WIju6O6-IXl_u9jehM,1114
+sphinxcontrib/icon/font_handler.py,sha256=Cdu-C59_utITWA24JseJuRTYki2WyjrNGrRxh7ipH-E,3029
+sphinxcontrib/icon/icon.py,sha256=7ywl1tBdXkQs8pd4EqyHtmSH4g4GgohDqUF4-VBt1OE,4291
+sphinxcontrib/icon/package-lock.json,sha256=cMzyp8yY__0NWhdqrUZNIniY9xAQc5h7fk9otQcJk0o,944
+sphinxcontrib/icon/package.json,sha256=WI5GM35P0zMeQPQjQqBWjGhRBRS7sgBMJJBaiG-k6i8,163
+sphinxcontrib/icon/node_modules/@fortawesome/fontawesome-free/css/all.min.css,sha256=_4UQcSmErDzPCMAiuOiWPVVsNN2s3ZY_NsmXNcj0IFc,102025
+sphinxcontrib/icon/node_modules/@fortawesome/fontawesome-free/js/all.min.js,sha256=-rLIGHyZHBDebNqckORMwB-_ueJuy2RqFcYAYlhjkCs,1472375
+sphinxcontrib/icon/node_modules/@fortawesome/fontawesome-free/metadata/icons.yml,sha256=49CI8M64nGBUZCelMOTRIyyaqEG3CKl1AcgmCD9z2OE,563684
+sphinxcontrib/icon/node_modules/@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf,sha256=Lvb93nBxk-Q3widTdVyzL7iSHd5_9nQ5tY5tyjxaC-8,187448
+sphinxcontrib/icon/node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf,sha256=Et6he2iq-z9DyoFiigGzP-1z2bvUNNvSvIUSvP8FNKY,63728
+sphinxcontrib/icon/node_modules/@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf,sha256=Z6iAtLpSm5rMMD1ym1a0_XCG-yLUJWYEELjFHheE9ik,394832
+sphinxcontrib/icon/node_modules/@fortawesome/fontawesome-free/webfonts/fa-v4compatibility.ttf,sha256=jZUA6EQBeetBh_M54LGi6EoPKYqJklDmrG0hi25aQH8,10172
+sphinx_icon-0.2.2.dist-info/LICENSE,sha256=cY7ujG3gB2t_QibyFD5bFm5uAFIp53AlyTRagHBwdoA,1326
+sphinx_icon-0.2.2.dist-info/METADATA,sha256=ywJhwgNFWNUOKnItc-eTDdOutv04QEp_2Q4yw-uYZsE,3960
+sphinx_icon-0.2.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sphinx_icon-0.2.2.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinx_icon-0.2.2.dist-info/RECORD,,
