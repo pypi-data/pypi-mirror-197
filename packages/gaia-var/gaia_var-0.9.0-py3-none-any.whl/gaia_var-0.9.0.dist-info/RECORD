@@ -1,0 +1,9 @@
+gaia_var/__init__.py,sha256=mhcZGXyNm5qUd7WOdH4IdkypfnwVxyDBb5CW_vJ4BY8,40
+gaia_var/archive.py,sha256=BXwmskVlbDdlWpMk0w3yY2q7f-bnLbPq56S2_lOwtcY,5873
+gaia_var/event.py,sha256=N2N3ATTWUjK-WXfGD_5jRzAYVaD1wDA86rxCAfNyMCQ,3780
+gaia_var/gaps.py,sha256=rfGMf5yW4fneINy3zvy84ARRa5JutBwzEuIR8BPmbGk,861
+gaia_var/preprocess.py,sha256=YKwyanWpPlSpLA0ezpXPSnUPu5SeMtCqd4jZxcA6koo,324
+gaia_var-0.9.0.dist-info/METADATA,sha256=sjflLRo8OjrxKVPA7AJIbeVm2ySQx5KfMxw9LGU1c7c,152
+gaia_var-0.9.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gaia_var-0.9.0.dist-info/top_level.txt,sha256=lFVXtETppGOxaWfMbNX-denqNob2EqiffUS73T5shbw,9
+gaia_var-0.9.0.dist-info/RECORD,,

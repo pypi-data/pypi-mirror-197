@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: gaia-var
+Version: 0.9.0
+Requires-Dist: astropy (~=5.1)
+Requires-Dist: pandas (~=1.4.4)
+Requires-Dist: matplotlib (~=3.5.2)
+
