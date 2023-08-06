@@ -1,0 +1,3 @@
+[tool.poe.tasks]
+linter = "flake8 ./src"
+tests = "pytest ../tests/allure_pytest"
