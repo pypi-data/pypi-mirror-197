@@ -1,0 +1,14 @@
+weblogin/.gitignore,sha256=piw7L13-ZTLCqRgblVsX1rvTuosGUZVfT7WThBq6TS8,106
+weblogin/Makefile,sha256=fMHNk_6GoLvNmvj9aW9WnSoGRvXM5eK7GMOlApyJA3g,314
+weblogin/__init__.py,sha256=TocCFfTWF1qkXQHEByIaAuN52LnJ1RbpVSeZV5kPZeg,1766
+weblogin/init.nw,sha256=1vmP4M6g1yu2QsjWNc1E_knzGb3RULsOuX17uPM8cF4,4300
+weblogin/kth.nw,sha256=VzOdx8Qg9vLrn3Ujkd5-aXs1FC62x2gwyszltDoqXKg,13151
+weblogin/kth.py,sha256=j9GcIKclXvl02o1XxHEwmxjcng2J6KR3V5KLFXZXHoQ,5989
+weblogin/ladok.nw,sha256=ir8TmWsR5duGoh4U9kb4__7lpO1adobIU6ryFspLURw,18129
+weblogin/ladok.py,sha256=Owv5kweHxyXTLGteGNpqIexmx1VvLdULg1XpIGuZo8Q,4375
+weblogin/seamlessaccess.nw,sha256=dwywCFAnaOLn79NM8kAdI7j4Tj74-4qtCvW4sYP28QI,3015
+weblogin/seamlessaccess.py,sha256=DAaO0vc7dnb6M6jfGWtiVQLtkbUHCD73d7y1J7HkP4E,741
+weblogin-1.5.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+weblogin-1.5.dist-info/METADATA,sha256=urFD8krmS20skztAzB2oXe7CB1uweFkWeFRjyrDOcno,2615
+weblogin-1.5.dist-info/LICENSE,sha256=MAeY6b3f2eyrZasde3JOsc6TzcZF7tLdNPPnwVdsqz4,1074
+weblogin-1.5.dist-info/RECORD,,
