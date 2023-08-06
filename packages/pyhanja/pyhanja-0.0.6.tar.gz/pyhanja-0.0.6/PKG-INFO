@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyhanja
+Version: 0.0.6
+Summary: Python binding to libhanja, a C++ library to convert Hanja to pronunciations commonly used in Korea.
+Author-email: Moonsik Park <moonsik.park@estsoft.com>
+Project-URL: repository, https://github.com/moonsikpark/libhanja
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# libhanja
+C++ library to convert Hanja to pronunciations commonly used in Korea.

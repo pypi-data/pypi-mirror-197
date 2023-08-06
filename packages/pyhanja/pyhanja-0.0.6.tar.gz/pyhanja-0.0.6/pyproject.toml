@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools==67.4.0", "setuptools-scm[toml]==7.1.0", "pybind11==2.10.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyhanja"
+authors = [
+    {name = "Moonsik Park", email = "moonsik.park@estsoft.com"},
+]
+description = "Python binding to libhanja, a C++ library to convert Hanja to pronunciations commonly used in Korea."
+readme = "README.md"
+requires-python = ">=3.7"
+dynamic = ["version"]
+
+
+[project.urls]
+repository = "https://github.com/moonsikpark/libhanja"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools_scm]
+
+[tool.setuptools.packages.find]
+where = ["src", "include"]

@@ -1,0 +1,41 @@
+image:
+  - Visual Studio 2019
+  - Ubuntu2004
+
+platform: x64
+
+configuration: Release
+
+clone_depth: 1
+
+install:
+  - ps: Invoke-WebRequest -Uri https://github.com/catchorg/Catch2/releases/download/v2.13.3/catch.hpp -OutFile $env:APPVEYOR_BUILD_FOLDER\..\catch.hpp
+  - cmd: call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars64.bat"
+
+build_script:
+  - cmd: cd %APPVEYOR_BUILD_FOLDER%/example/diff
+  - cmd: nmake /f makefile.windows
+  - cmd: nmake /f makefile.windows clean
+  - cmd: cd %APPVEYOR_BUILD_FOLDER%/example/suffix_tree_viz
+  - cmd: nmake /f makefile.windows
+  - cmd: nmake /f makefile.windows clean
+  - sh: cd $APPVEYOR_BUILD_FOLDER/example/diff
+  - sh: make -f ./makefile.ubuntu CXX=g++
+  - sh: make -f ./makefile.ubuntu clean
+  - sh: make -f ./makefile.ubuntu CXX=clang++
+  - sh: make -f ./makefile.ubuntu clean
+  - sh: cd $APPVEYOR_BUILD_FOLDER/example/suffix_tree_viz
+  - sh: make -f ./makefile.ubuntu CXX=g++
+  - sh: make -f ./makefile.ubuntu clean
+  - sh: make -f ./makefile.ubuntu CXX=clang++
+  - sh: make -f ./makefile.ubuntu clean
+
+test_script:
+  - cmd: cd %APPVEYOR_BUILD_FOLDER%/test
+  - cmd: nmake /f makefile.windows test
+  - cmd: nmake /f makefile.windows clean
+  - sh: cd $APPVEYOR_BUILD_FOLDER/test
+  - sh: make -f ./makefile.ubuntu test CXX=g++
+  - sh: make -f ./makefile.ubuntu clean
+  - sh: make -f ./makefile.ubuntu test CXX=clang++
+  - sh: make -f ./makefile.ubuntu clean

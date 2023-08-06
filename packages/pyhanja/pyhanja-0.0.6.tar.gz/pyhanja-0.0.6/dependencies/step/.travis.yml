@@ -1,0 +1,43 @@
+language: cpp
+sudo: true
+os: linux
+dist: focal
+git:
+  depth: 1
+matrix:
+  include:
+  - env: COMPILER=g++
+    addons:
+      apt:
+        packages:
+        - g++
+        - doxygen
+  - env: COMPILER=clang++-11
+    addons:
+      apt:
+        sources:
+        - sourceline: "deb http://apt.llvm.org/focal/ llvm-toolchain-focal-11 main"
+          key_url: "https://apt.llvm.org/llvm-snapshot.gpg.key"
+        packages:
+        - clang-11
+        - doxygen
+script:
+- wget -P $TRAVIS_BUILD_DIR/.. https://github.com/catchorg/Catch2/releases/download/v2.13.3/catch.hpp
+- cd $TRAVIS_BUILD_DIR/test
+- make -f ./makefile.ubuntu test CXX=$COMPILER
+- make -f ./makefile.ubuntu clean
+- cd $TRAVIS_BUILD_DIR/example/diff
+- make -f ./makefile.ubuntu CXX=$COMPILER
+- make -f ./makefile.ubuntu clean
+- cd $TRAVIS_BUILD_DIR/example/suffix_tree_viz
+- make -f ./makefile.ubuntu CXX=$COMPILER
+- make -f ./makefile.ubuntu clean
+- cd $TRAVIS_BUILD_DIR
+- doxygen Doxyfile
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: html
+  github_token: $GH_REPO_TOKEN
+  on:
+    branch: master
