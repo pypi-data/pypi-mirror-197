@@ -1,0 +1,4 @@
+[console_scripts]
+gpt-ask = cli.ask:main
+gpt-image = cli.image:main
+
