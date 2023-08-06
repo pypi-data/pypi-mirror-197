@@ -1,0 +1,15 @@
+boto3>=1.20.10
+typer>=0.4.0
+pydantic>=1.8.2
+rich>=10.12.0
+
+[dev]
+mypy>=0.910
+black>=21.10b0
+ruff>=0.0.98
+pre-commit>=2.17.0
+
+[test]
+pytest>=6.2.5
+coverage>=6.1.1
+pytest-cov>=3.0.0
