@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cloud_diffusion
+Version: 0.2.0
+Summary: Diffusion on the Clouds: Short-term solar energy forecasting with Diffusion Models
+Home-page: https://github.com/tcapelle/cloud_diffusion
+Author: Thomas Capelle
+Author-email: tcapelle@pm.me
+License: MIT
+Keywords: artificial intelligence,generative models,pytorch,stable diffusion
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
