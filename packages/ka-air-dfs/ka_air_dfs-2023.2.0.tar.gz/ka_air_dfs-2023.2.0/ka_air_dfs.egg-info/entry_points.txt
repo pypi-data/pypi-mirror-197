@@ -1,0 +1,2 @@
+[console_scripts]
+ka_air_dfs-dfs = ka_air_dfs.dfs.__main__:main

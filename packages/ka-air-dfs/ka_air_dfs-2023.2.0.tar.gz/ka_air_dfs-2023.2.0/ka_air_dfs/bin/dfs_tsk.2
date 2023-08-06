@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/site-packages/ka_air_dfs/dfs/__main__.py", line 18, in <module>
+    main()
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/site-packages/ka_air_dfs/dfs/__main__.py", line 14, in main
+    Do.do(sys.argv, sh_parms=Parms.sh)
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/site-packages/ka_air_dfs/dfs/do.py", line 375, in do
+    d_eq = Args.sh_d_eq(*args, **kwargs, root_cls=Do)
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/site-packages/ka_utg/args.py", line 65, in sh_d_eq
+    raise Exception(msg)
+Exception: Wrong parameter: d_pacmod_curr; valid parameters are: {'tenant': None, 'path_in_mask': None, 'dir_in': None, 'dir_out_dag_src': None, 'a_dag_id': None, 'dag_prefix': None, 'a_tags': None, 'sw_cmd_ix': False, 'sw_async': False, 'sw_debug': False}
