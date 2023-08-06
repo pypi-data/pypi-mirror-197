@@ -1,0 +1,10 @@
+LICENSE
+setup.py
+jcmutils/__init__.py
+jcmutils/gen_sources.py
+jcmutils/solver.py
+jcmutils.egg-info/PKG-INFO
+jcmutils.egg-info/SOURCES.txt
+jcmutils.egg-info/dependency_links.txt
+jcmutils.egg-info/requires.txt
+jcmutils.egg-info/top_level.txt
