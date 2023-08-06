@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: xtgeoviz
+Version: 0.0.5
+Summary: Plotting library for xtgeo objects
+Home-page: https://github.com/equinor/xtgeoviz
+Author: Equinor
+Author-email: ____@equinor.com
+License: LGPL-3.0
+Project-URL: Documentation, https://xtgeoviz.notyet_on_readthedocs.io/
+Project-URL: Issue Tracker, https://github.com/equinor/xtgeoviz/issues
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+Requires-Dist: xtgeo (>=2.14)
+Requires-Dist: PyYAML
+Requires-Dist: scipy (>=1.5.3)
+Requires-Dist: matplotlib (>=3.3.2)
+Requires-Dist: numpy (<1.24,>=1.19.2)
+Provides-Extra: docs
+Requires-Dist: sphinx (<6,>=1.6) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: autoapi ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: sphinxcontrib-apidoc ; extra == 'docs'
+Requires-Dist: docutils (<0.18) ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: black (>=20.8b0) ; extra == 'tests'
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-mock ; extra == 'tests'
+Requires-Dist: rstcheck ; extra == 'tests'
+
