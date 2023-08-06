@@ -1,0 +1,11 @@
+gitno/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitno/__main__.py,sha256=S4fcOrXW9YGOqUfYMHJ86ETkbkx3-S26UtfAyzkWYPs,85
+gitno/cli.py,sha256=qbgTbEYjpd9QyDo4LDVKgySHXziSATzDQD8Cv1EKvV0,3824
+gitno/main.py,sha256=S4fcOrXW9YGOqUfYMHJ86ETkbkx3-S26UtfAyzkWYPs,85
+gitno/version.py,sha256=XV7EI19-FyW6Sb3hSsBPrNT7KcIVdMfC0KSSzQmxaJI,19
+gitno-0.1.3.dist-info/LICENSE,sha256=GKnS0YeeHYYexHUaZ290ps12hs1GdBrpXcjJzK_vii4,1073
+gitno-0.1.3.dist-info/METADATA,sha256=kh-L-QSuMjmWVEcvb2onv8lQ70EIngEf6e8NCsQ_cGM,3568
+gitno-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+gitno-0.1.3.dist-info/entry_points.txt,sha256=gEUzPo0q-yowTmdWRsyYus276_kiouVQO4F7k2JzCo0,41
+gitno-0.1.3.dist-info/top_level.txt,sha256=xeFpECv0doY8Jyd7VymcUVWu5ezgt7EH6DQgQG_hBOw,6
+gitno-0.1.3.dist-info/RECORD,,
