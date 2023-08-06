@@ -1,0 +1,5 @@
+setup.py
+weworkapi.egg-info/PKG-INFO
+weworkapi.egg-info/SOURCES.txt
+weworkapi.egg-info/dependency_links.txt
+weworkapi.egg-info/top_level.txt
