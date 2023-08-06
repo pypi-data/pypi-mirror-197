@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Trenchrun
+Version: 0.0.1
+Summary: Compute the Death Star trenchrun image from lidar data
+Home-page: https://github.com/hobuinc/trenchrun
+Author: Howard Butler
+Author-email: howard@hobu.co
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# Trenchrun
+
+
+This tool computes the Merdian Trench Run image for a scene using 
+Whitebox Tools, PDAL, and matplotlib.
+
+![Meridian Trench ](images/meridian.png)
