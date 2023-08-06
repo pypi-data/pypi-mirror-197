@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+examples/imgs/example1.jpg
+examples/imgs/example2.jpg
+examples/imgs/example3.jpg
+src/photo_layout/__init__.py
+src/photo_layout/image.py
+src/photo_layout/layout.py
+src/photo_layout/version.py
+src/photo_layout.egg-info/PKG-INFO
+src/photo_layout.egg-info/SOURCES.txt
+src/photo_layout.egg-info/dependency_links.txt
+src/photo_layout.egg-info/requires.txt
+src/photo_layout.egg-info/top_level.txt
