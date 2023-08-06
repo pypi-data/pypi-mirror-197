@@ -1,0 +1,2 @@
+[console_scripts]
+voice-bot-demo = voice_bot_demo.cli:cli
