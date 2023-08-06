@@ -1,0 +1,10 @@
+owl_on_fhir/__init__.py,sha256=eUcF7IrEOiVICFimZabmfAopmfc-WR--nGzy6eIGIco,94
+owl_on_fhir/__main__.py,sha256=wgAxUz50o_kbCj5X6GEw7GDZ3fojqoyb8zY7MNABHf8,16727
+owl_on_fhir/convert_owl_ncbo2owl.pl,sha256=WNe0tOTlc5NoSRgJk3XQBfLD5As-xUtN5YG10blpR2I,629
+owl_on_fhir/favorites.py,sha256=LA6MXtEgYkBx_BOECC9kPyJLWQg2-w3T7JGtkNyFhZk,5808
+owl_on_fhir/robot.jar,sha256=2Ypm-mtThkaQsmOP7IGmWqHKJ7mrkcMDRLE6DquFl2I,80907682
+owl_on_fhir-0.1.9.dist-info/METADATA,sha256=gwPDZZiQ-4EZZxa2T3idOGpCnaSB4J53uURj6n6QUNk,1641
+owl_on_fhir-0.1.9.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+owl_on_fhir-0.1.9.dist-info/entry_points.txt,sha256=r4P7CEPStw4fH0Z6RfrH0WtUT_aYww2DJzFGji4TGnw,57
+owl_on_fhir-0.1.9.dist-info/top_level.txt,sha256=IqAq0p9tTjXw8JF3H7Ua7FgWiwfTyxeYhuVRxZGMny8,12
+owl_on_fhir-0.1.9.dist-info/RECORD,,
