@@ -1,0 +1,10 @@
+template_input_files/A_matrix_template.csv,sha256=AU4xmt2TJG6N8mfq_lp6rgQqUVcKeHJgGEBKmPJjUAI,144344
+template_input_files/Infosheet_template.csv,sha256=mkhiLQ5dJM6YDNWHM348dnxGLm7OsYHvlv19T-3g-z0,9094
+template_input_files/Thresholds_template.csv,sha256=2PMj4ZpkXjpxXTpK54fOZUr1150hudLIJFtV0ZWKH8U,35
+template_input_files/Thresholds_template_perc.csv,sha256=LsaO-Hn6CtzCivr2meec_fBFpO4t9LcdvKu3PGjOwpc,31
+template_input_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyspa-2.0.dist-info/LICENSE.txt,sha256=i6bWZTn6dnDcgX81mwXQqIGN3e7D0TvvK9fnVycmR-4,35839
+pyspa-2.0.dist-info/METADATA,sha256=5R4WiGLMNLb-rgWSBOJnLv2eiJUF8aHlpqwCua1lWwg,12752
+pyspa-2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyspa-2.0.dist-info/top_level.txt,sha256=nyG7hRF_u7T1IR6CDfscN0X0MnHs8bPllUV8pAvx_Z4,21
+pyspa-2.0.dist-info/RECORD,,
