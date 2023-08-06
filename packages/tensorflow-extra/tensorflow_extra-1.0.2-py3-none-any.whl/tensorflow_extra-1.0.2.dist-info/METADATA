@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: tensorflow-extra
+Version: 1.0.2
+Summary: Tensorflow Extra Utilities. https://github.com/awsaf49/tensorflow_extra
+Home-page: https://github.com/awsaf49/tensorflow_extra
+Author: Awsaf
+Author-email: awsaf49@gmail.com
+License: MIT
+Keywords: tensorflow extra utilities
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: tensorflow
+
+# Tensorflow Extra
+> Extra Utilities for Tensorflow
+
+# Installation
+```shell
+pip install tensorflow-extra
+```
+
+# Activations
+## SmeLU: Smooth ReLU
+```py
+import tensorflow as tf
+import tensorflow_extra as tfe
+
+a = tf.constant([-2.5, -1.0, 0.5, 1.0, 2.5])
+b = tfe.activations.smelu(a)  # array([0., 0.04166667, 0.6666667 , 1.0416666 , 2.5])
+```
+<img src="images/smelu.png" width=500>
+
