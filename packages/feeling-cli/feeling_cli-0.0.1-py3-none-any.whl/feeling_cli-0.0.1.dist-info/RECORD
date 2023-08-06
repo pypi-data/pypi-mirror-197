@@ -1,0 +1,14 @@
+feeling/__init__.py,sha256=1mZEu8-2iY7lazS6ChUkj3q4mdfn8I1T955UPpyYyE8,404
+feeling/__main__.py,sha256=zgif5KWtolsDNHpyhsoy1Yj3O0U1h4daxIJBkdrh1Mw,626
+feeling/chui.py,sha256=mnXBIlThR5Jdj7XWERxwYuXi1aTHd_DKcuWLrQTnO-E,1002
+feeling/cli.py,sha256=CrO7m-Mpj6GarcVHpZsHn0tYbs2pR5vfUKi5sbAw1HM,2642
+feeling/data/__init__.py,sha256=6M5IsXCvIB8MY7TdAGovX4ao2Y5LAlap8zuTaLyYAig,524
+feeling/data/feelings.py,sha256=shVy5esfZw-T8KgboLEMXh4Sg1GuHdlXC-lkY-vsrX4,13047
+feeling/data/storage.py,sha256=xNN3IFQoAJXxN1_q9E5AKbm1pxOIZ_v9U6YAeuJjgDI,3430
+feeling/screens/__init__.py,sha256=PMI2yIP5xYBsk-P4-7b1jaLv7Gb5ShaOGkWDn08txa8,319
+feeling/screens/main.py,sha256=qcP2MuiEUkbGg19MD-9uYiW1B6WvYpbruP3oxqT5wkQ,9187
+feeling_cli-0.0.1.dist-info/METADATA,sha256=eG7L0Mt4YmbWpcN_z_gVdXUMAKqTXNSBNPrpyTs0uaU,5039
+feeling_cli-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+feeling_cli-0.0.1.dist-info/entry_points.txt,sha256=Rtvp58BrdK7sbH00Uxer7GOb2xlaQB0x2ZXUZ73pmrM,50
+feeling_cli-0.0.1.dist-info/top_level.txt,sha256=_7KkQxRdJzWcEDYEqSLoudRvaKY3r2eLrQOVWu6eheg,8
+feeling_cli-0.0.1.dist-info/RECORD,,
