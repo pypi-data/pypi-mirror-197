@@ -1,0 +1,10 @@
+aws_browser/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_browser/aws.py,sha256=lTKSPXx3nRUUJQlzimj7ME1b2-15VVEA3qFCdFqVB-s,4533
+aws_browser/browser.py,sha256=8yZkkI1IAgODun7Q3jSzKmoMlNvVufYTg-fQZJvV9Vo,1829
+aws_browser/cli.py,sha256=0-ujX4tkKZ0mJKpXmoin668kPurYAA3Bko5I60NGf1A,2120
+aws_browser/constants.py,sha256=cyhifOUaKVa7-RLncJshMLp24g-6rCNpvw4wTpCXGaU,55
+aws_browser-0.1.4.dist-info/LICENSE,sha256=4diH3L-_qqVgfIN8G2tA5L7pQFe9HD6LBr7dflzlCuU,1064
+aws_browser-0.1.4.dist-info/METADATA,sha256=X_Lqfk64k1GTyKY8KgaXYCPnv4F9Z5_B_iaUBUMXanc,393
+aws_browser-0.1.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+aws_browser-0.1.4.dist-info/entry_points.txt,sha256=od2wWjGecQrJE9YF3_i8HXLglOrdxZM8pel2abZ_8WY,51
+aws_browser-0.1.4.dist-info/RECORD,,
