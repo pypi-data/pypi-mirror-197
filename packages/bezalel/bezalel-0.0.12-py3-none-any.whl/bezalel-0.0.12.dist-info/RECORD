@@ -1,0 +1,14 @@
+bezalel/__init__.py,sha256=nj5mwOq6wfAV6m6lkaXD5DeYaHYZ5ngbuGCo4AvBc78,390
+bezalel/impl/BufferingIterator.py,sha256=y64E_Afw0mQOXGpQK3BopBQSB6cR1eVfOwOr48rY_kc,931
+bezalel/impl/CursorApiIterator.py,sha256=QkivRLxuL5xyXMQWFs9gxWMbOF7GU4eI7O2BcpV0akY,2033
+bezalel/impl/PaginatedApiIterator.py,sha256=Qjlu_DgVrQrDqOF9UahNoctB83irRaB31D3qYlNxBxE,3919
+bezalel/impl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bezalel/impl/dict_utils.py,sha256=7NVNMmUbLB6TvI1K7Su_GfHpQKgxFweHx11Ndm46Kv4,803
+bezalel/impl/normalize_dicts.py,sha256=CcB272SIQCAuveNUEtnNMOAkCWxgr7usgN9rtT6Ce7Y,4421
+bezalel/impl/normalize_with_prototype.py,sha256=0pc_tY1DC3q37RJuRFnhRI-PetBvETc7oLLgC_GjCYQ,3959
+bezalel/impl/prepare_job.py,sha256=y01COj__uo_Esw7TI-gGXrDKwiIWcK5wMXGEoS_Mids,1327
+bezalel-0.0.12.dist-info/LICENSE,sha256=9tnUn1JICOu7lKiORJEb0sjRllhgifKtx7rzhwmyro0,1089
+bezalel-0.0.12.dist-info/METADATA,sha256=2mZptP1Qy_VkxpoO8ilUiqgolGjHxP8eRUXi6c91NE4,7086
+bezalel-0.0.12.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+bezalel-0.0.12.dist-info/top_level.txt,sha256=h5eqfJeLebn7SAtAb0MP95Rz4DLyHobLhHW-3vImlTc,8
+bezalel-0.0.12.dist-info/RECORD,,
