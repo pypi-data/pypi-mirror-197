@@ -1,0 +1,12 @@
+pytest_compare/__init__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+pytest_compare/base.py,sha256=9wnjiiHyItoyvUh97RvtZ6XyLHln35xUQnnAo8mRWw4,1080
+pytest_compare/dict/__init__.py,sha256=87dyy9NcIXUs7EDD9CSfGPXkFrqKtOrOH2y_tnDnkrA,121
+pytest_compare/dict/dict.py,sha256=QiIJYQkojsmZw0EHSBbj2nR_KqxHOlj67XW8CllNP5c,2112
+pytest_compare/native/__init__.py,sha256=CcQIVgt0kpkJu6sERNzsvBue9F2ELvaZjTgremPxDbQ,265
+pytest_compare/native/native.py,sha256=BMTobt7ZadaDvtFUFhXh4p7W3ekT4ayywS49zzu8CSA,2351
+pytest_compare/pandas/__init__.py,sha256=FDAlpK96suEWv_jhrulFVvBIv0O72mTT3yOYzOJWv8Y,169
+pytest_compare/pandas/pandas.py,sha256=VctkKkGOGhBsilEXAHwj6eb3TlaFXQHNJELmRmzyp8U,2532
+pytest_compare-0.2.1.dist-info/METADATA,sha256=Oq0mqmcBUtI3TM_l64ZaT8nnrVD6q4bKVSkAIMOFUxc,6077
+pytest_compare-0.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pytest_compare-0.2.1.dist-info/top_level.txt,sha256=rE0sGiqCkuEZkCCljJQB5VVCbVCTzDP8GRRyeGzICXQ,15
+pytest_compare-0.2.1.dist-info/RECORD,,
