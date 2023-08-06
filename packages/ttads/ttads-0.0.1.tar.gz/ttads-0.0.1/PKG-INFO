@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ttads
+Version: 0.0.1
+Summary: A development server for Tasmota Berry Application (TAPP) apps
+Home-page: https://link.frontmatter.ai/ttads
+Author: Frontmatter
+License: Copyright © 2023 Frontmatter. All rights reserved.
+Keywords: development berry script tasmota tapp
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Tasmota Application Development Server
+
+This tool aims to simplify Tasmota Berry script development by doing two things:
+
+* Starts a web app that automatically zips your project(s), and serves it as a `.tapp` file.
+* Opens a tunnel to the web app, letting you deploy your Tasmota Application to any device with an internet connection.
+
