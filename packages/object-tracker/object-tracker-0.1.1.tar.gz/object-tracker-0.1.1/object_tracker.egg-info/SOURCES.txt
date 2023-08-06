@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+setup.py
+object_tracker/__init__.py
+object_tracker/changelog.py
+object_tracker/entry.py
+object_tracker/tracker.py
+object_tracker.egg-info/PKG-INFO
+object_tracker.egg-info/SOURCES.txt
+object_tracker.egg-info/dependency_links.txt
+object_tracker.egg-info/top_level.txt
+tests/test_tracker.py
