@@ -1,0 +1,12 @@
+gptutil/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gptutil/ask.py,sha256=QSB6Yc7MaFiyjZq-aSRNZoD3nbmhPUBoDw8Kc3fqDMg,3253
+gptutil/chat.py,sha256=wg81vKUZlH-1C9xLbN1o8AW8ZAM663fTUFr9BddTz0k,2197
+gptutil/image.py,sha256=7MSE7XqYuL146KgnseznykdmDQ2Shy4dQ6N8bMbmq04,2015
+gptutil/interact.py,sha256=MwG8mGxf7XT5JNEuwPz6wblRdGegwGxUuSZfAVH4a30,4144
+gptutil/example/assistant.yaml,sha256=fNc-qAPEl3ZFAM8IYCm6reNHw7NBXm-xwKK3vKc_xHc,1664
+gptutil-0.0.5.dist-info/LICENSE,sha256=FWnPI1VLk1B7zDj-_mNE_5p3S4PHcMQxIEpOKKFGZMc,1072
+gptutil-0.0.5.dist-info/METADATA,sha256=d2VvA9TVKONHw6ViqsgqAix4eilnju7Ae1E74j2CjFo,289
+gptutil-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+gptutil-0.0.5.dist-info/entry_points.txt,sha256=rjMSdaobKEnXyTjfXOwxgp6UKwOF14CgJ_PktSB5MKk,114
+gptutil-0.0.5.dist-info/top_level.txt,sha256=fICOsxAjI2JcPTv672u5t4VFYxC5VwfzjREXhr5EfWg,8
+gptutil-0.0.5.dist-info/RECORD,,
