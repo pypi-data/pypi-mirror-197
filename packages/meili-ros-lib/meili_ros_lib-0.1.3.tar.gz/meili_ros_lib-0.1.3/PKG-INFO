@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: meili_ros_lib
+Version: 0.1.3
+Summary: Library combining common functions of Meili Agent ROS1 and ROS2
+Home-page: https://gitlab.com/meilirobots/ros/meili_ros_lib
+Author: nuriafe
+Author-email: nuria@meilirobots.com
+License: MIT
+License-File: LICENSE.txt
