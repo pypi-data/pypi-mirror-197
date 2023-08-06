@@ -1,0 +1,13 @@
+few_shot_priming/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+few_shot_priming/baseline.py,sha256=jt3-7aHrJkffBqY2Qcq-8Eqc3hZl9zngETguSsAZJgE,5852
+few_shot_priming/conf.yaml,sha256=phNF98eN80dDJyRQxpq5EKwuo0t60tdPS3tzuKS-IQ4,682
+few_shot_priming/few_shot_stance.py,sha256=ZF9pfwc5_sLkIqog2FLSaVx49K3N9JMr7lIIlPd4yN4,12690
+few_shot_priming/ibm_baseline.py,sha256=h23bLZC2l9CWzF8C77TEqjvBzthLTncXkY5DF6QUd94,444
+few_shot_priming/data/claim_stance_dataset_v1.csv,sha256=8bIwWvKIPnQGNzTqrhHvidKpN478vOF1ZBQzLuxjrcg,1017422
+few_shot_priming/experiment/test.csv,sha256=w7FbPgLdLbWlenjHftFUsNQ2KenxL3inkWoTEtyKQks,518571
+few_shot_priming/experiment/train.csv,sha256=5DFZjmGZY1dlAcfF2Lnz1U8T8gaL67VVorXhnrE7Xpk,240003
+few_shot_priming/experiment/validation.csv,sha256=B2Myom84yS40faRcMGyytPV2j-Af3YMa1IPtzjizLko,178874
+few_shot_priming-0.0.88.dist-info/METADATA,sha256=TfWZHSa8hUJrV4LbQ7iThw9lZkxYMS07UFKjqpPDdrA,6860
+few_shot_priming-0.0.88.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+few_shot_priming-0.0.88.dist-info/top_level.txt,sha256=incVNauAhdZ1aJWVERG4ifiKeG4bmLKy6tdy4Li4rdY,17
+few_shot_priming-0.0.88.dist-info/RECORD,,
