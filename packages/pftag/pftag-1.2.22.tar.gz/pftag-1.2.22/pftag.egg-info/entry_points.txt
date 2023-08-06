@@ -1,0 +1,2 @@
+[console_scripts]
+pftag = pftag.__main__:main
