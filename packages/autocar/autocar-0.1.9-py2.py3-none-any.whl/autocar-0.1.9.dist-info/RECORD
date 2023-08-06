@@ -1,0 +1,13 @@
+autocar/__init__.py,sha256=WehjNng4d0OxWLbNLa79QijCPq5PFyG87UM06ojhFHw,39
+autocar/automate_po_process.py,sha256=fTzlKzTn3DM8gIJYt-0wzrYfGTWw9AKlkLzYUgzM3KA,27883
+autocar/ava.py,sha256=x2zx5rFMzrL5AmcRe-Z261pJPBdkAen2P1qAD2hW2j8,34333
+autocar/merge_pdf.py,sha256=rptcjZpVKHW9FRh8_dubaJrerPBe8euEzk8cG6Gou1Y,1421
+autocar/print_pdf.py,sha256=pjDROcy0z5qzMiy_js8ELlyeg4rQGrKlf_mTLGk2dgA,16280
+autocar/print_po.py,sha256=qYnK0rsLmqYfWsbVzFMK4CkOMp_eTNYxPy9QAxwoYak,2141
+autocar/qad_keyboard_automation.py,sha256=HCP3LoTyjZJ7Gp4m2c00iRShs_jggpwAKdEhCDqw4dM,13170
+autocar/update_standard_pricelist.py,sha256=pOIT0DZ3ihT8VFQfEZXaFLfc5ZlmBL7n7uJfF7Xqmns,2854
+autocar/voucher_maintenance.py,sha256=vlKdej3jLXTYm7kie4jChCxiRIPJ_rYhICWssVTBe-s,3947
+autocar-0.1.9.dist-info/LICENSE,sha256=pebds694OgLqzISMvjCcwJQLSFmsZT6bGi4hpP6iJVI,1056
+autocar-0.1.9.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+autocar-0.1.9.dist-info/METADATA,sha256=VL6G7Us6OZonMnmac0nOlDtAJ9WvMWZtk1FXOEYuuNE,526
+autocar-0.1.9.dist-info/RECORD,,
