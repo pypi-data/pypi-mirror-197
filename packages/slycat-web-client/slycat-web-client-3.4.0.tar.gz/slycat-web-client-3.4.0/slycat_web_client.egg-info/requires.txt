@@ -1,0 +1,7 @@
+requests
+requests-kerberos
+numpy
+cherrypy
+sklearn
+nptdms
+pandas
