@@ -1,0 +1,86 @@
+[tool.poetry]
+name = "slackdoor"
+description = "An opinionated and powerful chatbot framework for Slack"
+authors = ["Eddy G <eddyg@users.noreply.github.com>"]
+license = "MIT"
+repository = "https://github.com/eddyg/slackdoor"
+packages = [
+    {include = "door"}
+]
+
+version = "0.6.7"
+# NOTE: uses the 'poetry_bumpversion' plugin to keep versions in sync
+# Use:
+#   poetry version {patch|minor|major|prepatch|preminor|premajor|prerelease}
+# to bump the version and have it be "authoritative" here and in __init__
+# To tag:
+#   git tag $(awk -F'"' '/^version =/{print $2}' pyproject.toml)
+#   git push -o ci.skip && git push --tags
+
+[tool.poetry.dependencies]
+python = "^3.10,<4"
+slack-bolt = {version = "^1.15.2,<2", extras = ["async"]}
+slack-sdk = "^3.19.2,<4"
+aiorun = "^2022"
+python-dotenv = "^0"
+pytz = "*"
+sentry-sdk = "^1,>=1.16"
+case-insensitive-dictionary = "*"
+
+[tool.poetry.scripts]
+slackdoor = "door.run:main"
+
+[tool.poetry.dev-dependencies]
+black = "^23"
+ruff = "^0.0.256"
+
+[tool.poetry_bumpversion.file."door/__init__.py"]
+
+[tool.black]
+line-length = 132
+
+[tool.ruff]
+line-length = 132
+# See https://github.com/charliermarsh/ruff#supported-rules
+select = [
+    "A", # flake8-builtins
+    "ANN", # flake8-annotations
+    "B", # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "DTZ", # flake8-datetimez
+    "E", # pycodestyle errors
+    "F", # pyflakes
+    "FBT", # flake8-boolean-trap
+    "ICN", # flake8-import-conventions
+    "ISC", # flake8-implicit-str-concat
+    "N", # pep8-naming
+    "PLC", # pylint convention
+    "PLE", # pylint error
+    "PLR", # pylint refactor
+    "PLW", # pylint warnings
+    "Q", # flake8-quotes
+    "RET", # flake8-return
+    "RUF", # ruff-specific
+    "SIM", # flake8-simplify
+    "T10", # flake8-debugger
+    "T20", # flake8-print
+    "UP", # pyupgrade
+    "W", # pycodestyle warnings
+]
+ignore = [
+    "ANN101", # Missing type annotation for `self` in method
+    "ANN401", # Dynamically typed expressions (typing.Any) are disallowed
+    "RET505", # Unnecessary else after return statement
+    "PLR2004", # Magic value used in comparison
+]
+extend-exclude = [".vscode", "__pycache__"]
+allowed-confusables = ["’"]
+
+[tool.ruff.pylint]
+max-args = 6
+max-statements = 75
+max-branches = 15
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
