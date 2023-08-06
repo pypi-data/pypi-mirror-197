@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.py
+./dawatoma/__init__.py
+./dawatoma/fp_sequence.py
+./dawatoma/melody.py
+./dawatoma/note_dict.py
+./dawatoma/sequence.py
+./dawatoma/sgen.py
+dawatoma.egg-info/PKG-INFO
+dawatoma.egg-info/SOURCES.txt
+dawatoma.egg-info/dependency_links.txt
+dawatoma.egg-info/requires.txt
+dawatoma.egg-info/top_level.txt
