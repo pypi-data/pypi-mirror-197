@@ -1,0 +1,15 @@
+varya/__init__.py,sha256=8zV7o07sGrXrDNASFzHEWn8UD1oxYGGPnf111IxwH1U,207
+varya/compose/__compose.py,sha256=ioCqukxIiaWk3LSJQW6ct4V8RJcm5LmQLmjX7bXifrc,2140
+varya/compose/__init__.py,sha256=-Fzc0Cmpu2jpN3R5GfP9hC_L23wTl_dy_yu1zURVUGw,44
+varya/compose/core.py,sha256=yzL5mpFpHzQwWNvj-nbsmUn_FNzPnd1ElfTFoQMK2ms,2967
+varya/metrics/__init__.py,sha256=Dk3lvI8Ye0OMzF7HDmouV_iyTh_gNM7aokk-NiRGcC8,214
+varya/metrics/regression.py,sha256=GoqN8isdTejAdJftoMQkj0JQaDFNWhRZSWuwD2UdB3c,2031
+varya/utils/__init__.py,sha256=2ah95kVO5-m_nnqTq2iBnYpBoAaBgMcOVSsv3alTvr8,555
+varya/utils/validation.py,sha256=bVS38jmfuZJwInFh9g3QX1yVey7FMrbb3mAwBqe6Ucs,2463
+varya/utlis/__init__.py,sha256=sn-il1WlJqPW9X0F8tjmaOa0m0JK2RL3se-SJoUjuJc,619
+varya/utlis/validation.py,sha256=bVS38jmfuZJwInFh9g3QX1yVey7FMrbb3mAwBqe6Ucs,2463
+varya-0.0.21a1.dist-info/LICENSE,sha256=EFNCHlXvsrMcrrVHTK6Na8ysDWp6yU-7SmMcZWiSAVk,1519
+varya-0.0.21a1.dist-info/METADATA,sha256=HZLTiB0tqotjzOu4MfSmo8_GwH5imTSG-iR3nADnKFw,559
+varya-0.0.21a1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+varya-0.0.21a1.dist-info/top_level.txt,sha256=1CZBh5KXfjOyndV2X6niNupUsYS0vcstKJvukU_2Vi4,7
+varya-0.0.21a1.dist-info/RECORD,,
