@@ -1,0 +1,4 @@
+numpy<2,>=1.24
+scipy<2,>=1.10
+matplotlib<4,>=3.7
+tqdm<5,>=4.65
