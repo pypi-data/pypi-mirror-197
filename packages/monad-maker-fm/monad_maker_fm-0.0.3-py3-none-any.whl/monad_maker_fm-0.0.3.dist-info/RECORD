@@ -1,0 +1,8 @@
+external/shared/fixtures/env_helper.py,sha256=L9ZSjLrLKof_pUwdrASlrkmC99XQvfJUxa-7UvBRxeI,904
+external/shared/fixtures/sys_path_helper.py,sha256=pVhpMc4BhkKTlyXU_6304VjAoaHd01YDsbPEVCCIAZw,4683
+plugin/plugin_manager.py,sha256=bstRW6YedKdA3pfWBsnGEx93jYmKo9WE5wm8irCFjxs,3400
+monad_maker_fm-0.0.3.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+monad_maker_fm-0.0.3.dist-info/METADATA,sha256=M851hVAr3YD1ap034UhUSsB4clSVnwjDOA3aR4Iy_dU,512
+monad_maker_fm-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+monad_maker_fm-0.0.3.dist-info/top_level.txt,sha256=XefgLBTsXi5mOyJCjzC_Lo2--J9cKUmf3mVmHlFRpZ0,16
+monad_maker_fm-0.0.3.dist-info/RECORD,,
