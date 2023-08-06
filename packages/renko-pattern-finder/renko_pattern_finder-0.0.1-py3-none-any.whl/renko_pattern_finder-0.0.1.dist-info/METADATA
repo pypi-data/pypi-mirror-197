@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: renko-pattern-finder
+Version: 0.0.1
+Summary: Renko Pattern Finder.
+Home-page: https://github.com/aticio/renko_pattern_finder
+Author: Özgür Atıcı
+Author-email: aticiozgur@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# renko_pattern_finder
+
+
