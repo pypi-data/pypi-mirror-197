@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: john
+Version: 0.1.1a2
+Summary: Jeneral Outlying Helper Nuggetoids
+Author: WideOpenTech
+Author-email: foss@wideopentech.co.uk
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# john
+
+### tl:dr
+
+
+
+### More details
