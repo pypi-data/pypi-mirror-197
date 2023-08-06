@@ -1,0 +1,2 @@
+rocketchat_API
+websockets==10.4
