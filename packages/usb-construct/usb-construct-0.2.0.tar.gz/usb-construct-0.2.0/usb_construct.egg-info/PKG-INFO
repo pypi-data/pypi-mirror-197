@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: usb-construct
+Version: 0.2.0
+Summary: python library providing utilities, data structures, constants, parsers, and tools for working with USB data
+Home-page: https://usb-construct.shmdn.link/
+Author: Katherine J. Temkin
+Author-email: k@ktemkin.com
+Maintainer: Aki Van Ness, Rachel Mant
+Maintainer-email: aki@lethalbit.net, git@dragonmux.network
+License: BSD-3-Clause
+Project-URL: Documentation, https://usb-construct.shmdn.link/
+Project-URL: Source Code, https://github.com/shrine-maiden-heavy-industries/usb-construct
+Project-URL: Bug Tracker, https://github.com/shrine-maiden-heavy-industries/usb-construct/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Hardware :: Universal Serial Bus (USB)
+Requires-Python: ~=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+
+# USB Protocol Library for Python
+
+`usb-construct` is a library that collects common data-processing code for USB tasks;
+and is meant to support a variety of projects, including USB stacks, analyzers, and
+other tools that work with USB data. A primary intention is to unify common code from
+LUNA, FaceDancer, and ViewSB.
+
+The library is currently an early work-in-progress; this documentation will be updated
+when the project is more mature.
+
+
+## License
+
+usb-construct is licensed under the [BSD-3-Clause](https://spdx.org/licenses/BSD-3-Clause.html), the full text of which can be found in the [`LICENSE`](./LICENSE) file.
