@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: IUNI
+Version: 0.0.2
+Summary: IUNI is a reliable, highly versatile and comprehensive testing framework
+Author: Dekel Cohen
+Author-email: <dcohen52@gmail.com>
+Keywords: python,testing,assertions,unit tests,functional tests,web,api testing,api,security testing,test
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+The IUNI framework is a highly versatile and comprehensive testing framework designed to provide developers with a
+robust toolset for testing software code. The framework offers a unit testing, Web API performance testing and Security
+Testing modules.
+
+### More information:
+https://github.com/dcohen52/iuni
+
+### Contribution
+
+This project is open source, and contributions from the community are highly valued and appreciated. If you are
+interested in contributing to the development of this project, please feel free to reach out or submit a pull request on GitHub.
