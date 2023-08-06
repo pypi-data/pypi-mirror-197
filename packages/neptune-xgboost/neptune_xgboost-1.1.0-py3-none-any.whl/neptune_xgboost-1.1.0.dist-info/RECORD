@@ -1,0 +1,8 @@
+CHANGELOG.md,sha256=QgEofsebOg-_rwSps5b4t9CDGbB0MB9uuVLb4IgejI4,1696
+neptune_xgboost/__init__.py,sha256=DuanMdEqGLNqSq4YYFMvs7OTWrWJUx6ZiVRf2f05iuo,717
+neptune_xgboost/impl/__init__.py,sha256=oozNBdDNQhj4i8IldHNK4a_bmN4VGPVAE1ADr_bwXEg,13655
+neptune_xgboost/impl/version.py,sha256=UKR85P2oUg2keL8EDf78scbvo2P2a8HMnffmKomUO_g,737
+neptune_xgboost-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+neptune_xgboost-1.1.0.dist-info/METADATA,sha256=QWM7YXngwe9gE2jpTDbLZlN3iDQh8hZfJdk0efu90c8,4664
+neptune_xgboost-1.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+neptune_xgboost-1.1.0.dist-info/RECORD,,
