@@ -1,0 +1,9 @@
+test/Mergefile.py,sha256=acxktsVcTo_nW2KbgNkHgPULu6xEXcUmlI65Lajlyfs,244
+test/Person.py,sha256=fMF5HNHYa5RcsIlTzVu1ojG1gQoSqa2WNWLUrv0sbaA,194
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/operations.py,sha256=Cp5eKAiF4Wbqgkg8hwhD1s2gMmgbqs_AzpdHx9GmU-Q,342
+test/setup.py,sha256=g4w5lOeflt1E1mqg8VtD2p2e9v4Q9Tz858axAa9dLaQ,295
+python_track-1.1.dist-info/METADATA,sha256=S8i-o3rHn80VlGPPcvek0FE-2sSs5rmdErDHgASHFT4,252
+python_track-1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+python_track-1.1.dist-info/top_level.txt,sha256=8sobtsfpB9Btr-Roflefznazfk6Tt2BQItpS5szCb9I,5
+python_track-1.1.dist-info/RECORD,,
