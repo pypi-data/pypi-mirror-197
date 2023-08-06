@@ -1,0 +1,13 @@
+setup.py
+weworkapi/AbstractApi.py
+weworkapi/CorpApi.py
+weworkapi/ServiceCorpApi.py
+weworkapi/ServiceProviderApi.py
+weworkapi/WXBizMsgCrypt.py
+weworkapi/WXBizMsgCrypt3.py
+weworkapi/__init__.py
+weworkapi/ierror.py
+weworkapi.egg-info/PKG-INFO
+weworkapi.egg-info/SOURCES.txt
+weworkapi.egg-info/dependency_links.txt
+weworkapi.egg-info/top_level.txt
