@@ -1,0 +1,9 @@
+dateutils
+hyperthought>=0.9.16
+requests
+tqdm
+
+[testing]
+pytest
+pytest-cov
+numpy

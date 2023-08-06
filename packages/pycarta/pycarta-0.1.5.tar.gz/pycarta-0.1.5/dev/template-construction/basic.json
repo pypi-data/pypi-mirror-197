@@ -1,0 +1,62 @@
+[
+    {
+        "id": "Base",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "name": "foo",
+                "type": "Foo"
+            },
+            {
+                "name": "goo",
+                "type": "Goo"
+            }
+        ]
+    },
+    {
+        "id": "Foo",
+        "type": "WorkflowBuilder",
+        "contains": [
+            {
+                "name": "bar",
+                "type": "Bar"
+            }
+        ]
+    },
+    {
+        "id": "Goo",
+        "type": "Foo",
+        "contains": [
+            {
+                "name": "bar",
+                "type": "Baz"
+            }
+        ]
+    },
+    {
+        "id": "Bar",
+        "type": "ProcessBuilder",
+        "contains": [
+            {
+                "key": "bar",
+                "value": "bar default"
+            }
+        ]
+    },
+    {
+        "id": "Baz",
+        "type": "Bar",
+        "contains": [
+            {
+                "key": "baz",
+                "value": "baz default",
+                "units": "mm"
+            },
+            {
+                "key": "bar",
+                "value": "bar in baz",
+                "annotation": "overloaded=True"
+            }
+        ]
+    }
+]
