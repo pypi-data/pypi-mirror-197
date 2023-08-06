@@ -1,0 +1,10 @@
+asn1crypto>=0.24.0
+requests>=2.18.4
+pyOpenSSL>=20.0.0
+
+[tests]
+flake8
+coverage
+build
+wheel
+mypy
