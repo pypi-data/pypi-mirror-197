@@ -1,0 +1,9 @@
+lightning_colossalai/__about__.py,sha256=zu8xhzN3BbU50jum2Sw9r4fWkJ5dg1_zDB0Cu8xAW84,498
+lightning_colossalai/__init__.py,sha256=ZUE5-ufxZVnq2dV9J-kSvwd89nknfmIgKQUekCgOd2w,360
+lightning_colossalai/precision.py,sha256=aixT2RDL26ozJOZoWtCBxLoaDfOg37LQ9eamDqNOYUk,3146
+lightning_colossalai/strategy.py,sha256=lccSQPVn2k9uOEFAW1jAea2tSCLtYxw4Blj1xRhlbAs,22876
+lightning_colossalai-0.1.0rc1.dist-info/LICENSE,sha256=egEaW31il0xXi3pa43tywG1TRF_haci5JUUAujkexLc,11352
+lightning_colossalai-0.1.0rc1.dist-info/METADATA,sha256=0_0R7Kh3XwLJsgxRXfpxKojTpW1DwPVRG-rSDIBA49E,3896
+lightning_colossalai-0.1.0rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lightning_colossalai-0.1.0rc1.dist-info/top_level.txt,sha256=lf8I_G_j4dm_AYyJUvi9SOoQVMtSRa_7ZHJj7NM4FQs,21
+lightning_colossalai-0.1.0rc1.dist-info/RECORD,,
