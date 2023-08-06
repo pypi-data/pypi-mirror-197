@@ -1,0 +1,1 @@
+TOTAL_FOLDS = 25
