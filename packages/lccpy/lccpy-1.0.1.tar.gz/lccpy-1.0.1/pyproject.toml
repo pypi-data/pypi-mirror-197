@@ -1,0 +1,17 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "lccpy"
+version = "1.0.1"
+description = "Make Python simpler"
+
+readme = "README.md"
+authors = [{name = "许灿标", email = "lcctoor@outlook.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+
+[project.urls]
+Documentation = "https://www.yuque.com/lcctoor/lccpy/desc"
+Source = "https://github.com/lcctoor/lccpy"
