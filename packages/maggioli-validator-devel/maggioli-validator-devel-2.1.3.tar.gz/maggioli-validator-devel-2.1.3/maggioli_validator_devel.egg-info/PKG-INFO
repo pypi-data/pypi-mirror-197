@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: maggioli-validator-devel
+Version: 2.1.3
+Summary: Management utilities for Maggioli's Sportello Telematico modules
+Author: Gruppo Maggioli
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
