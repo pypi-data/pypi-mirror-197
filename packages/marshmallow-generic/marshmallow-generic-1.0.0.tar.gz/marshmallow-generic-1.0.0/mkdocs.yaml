@@ -1,0 +1,56 @@
+copyright: "© 2023 Daniil Fajnberg"
+site_name: "marshmallow-generic"
+site_description: "Generic schema with full typing support and minimal boilerplate"
+site_url: "http://daniil-berg.github.io/marshmallow-generic"
+repo_name: "daniil-berg/marshmallow-generic"
+repo_url: "https://github.com/daniil-berg/marshmallow-generic"
+
+theme:
+  language: en
+  name: material
+  palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    accent: red
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    accent: red
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+extra_css:
+  - css/extra.css
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            line_length: 80
+            show_source: false
+            show_root_toc_entry: false
+            separate_signature: true
+            show_signature_annotations: true
+          import:
+            - https://marshmallow.readthedocs.io/en/stable/objects.inv
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - extra
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+watch:
+  - src
+
+nav:
+  - Home: index.md
+  - 'API Reference':
+    - api_reference/schema.md
+    - api_reference/decorators.md

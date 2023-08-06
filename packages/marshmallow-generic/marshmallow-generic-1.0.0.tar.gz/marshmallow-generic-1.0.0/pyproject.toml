@@ -1,0 +1,146 @@
+#####################
+# Python packaging: #
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marshmallow-generic"
+description = "Generic schema with full typing support and minimal boilerplate"
+authors = [
+    { name = "Daniil Fajnberg", email = "mail@daniil.fajnberg.de" },
+]
+maintainers = [
+    { name = "Daniil Fajnberg", email = "mail@daniil.fajnberg.de" },
+]
+requires-python = ">=3.9, <4.0"
+keywords = [
+
+]
+license = { text = "Apache Software License Version 2.0" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Typing :: Typed",
+]
+dynamic = [
+    "dependencies",
+    "readme",
+    "version",
+]
+
+[project.optional-dependencies]
+full = [
+
+]
+dev = [
+    "black",
+    "build",
+    "coverage[toml]",
+    "isort",
+    "mkdocs-material",
+    "mkdocstrings[python]",
+    "mypy",
+    "ruff",
+]
+
+[project.urls]
+repository = "https://github.com/daniil-berg/marshmallow-generic"
+bug_tracker = "https://github.com/daniil-berg/marshmallow-generic/issues"
+documentation = "http://daniil-berg.github.io/marshmallow-generic"
+
+[tool.setuptools.dynamic]
+dependencies = { file = "requirements/common.txt" }
+readme = { file = ["README.md"], content-type = "text/markdown" }
+version = { attr = "marshmallow_generic.__version__" }
+
+#########################
+# Static type checking: #
+
+[tool.mypy]
+cache_dir = ".cache/mypy"
+files = [
+    "src/",
+    "tests/",
+]
+warn_unused_configs = true
+strict = true
+show_error_codes = true
+plugins = [
+
+]
+
+#######################
+# Unit test coverage: #
+
+[tool.coverage.run]
+data_file = ".cache/coverage"
+source = [
+    "src/",
+]
+branch = true
+command_line = "-m tests"
+omit = [
+    ".venv*/*",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = false
+exclude_lines = [
+    "if TYPE_CHECKING:",
+    '''if __name__ == ['"]__main__['"]:''',
+    "@overload",
+]
+omit = [
+    "tests/*",
+]
+
+###############################
+# Linting and style checking: #
+
+[tool.ruff]
+cache-dir = ".cache/ruff"
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "D",   # pydocstyle
+    "C",   # flake8-comprehensions
+    "B",   # flake8-bugbear
+    "PL",  # pylint
+    "RUF", # ruff-specific
+]
+ignore = [
+    "E501", # Line too long -> handled by black
+    "D203", # 1 blank line required before class docstring -> D211 is better
+    "D212", # Multi-line docstring summary should start at the first line -> ugly, D212 is better
+    "D401", # First line of docstring should be in imperative mood -> no, it shouldn't
+    "D407", # Missing dashed underline after section -> different docstring style
+]
+
+[tool.ruff.per-file-ignores]
+"src/**/__init__.py" = [
+    "D104", # Missing docstring in public package
+    "F401", # {...} imported but unused
+]
+"tests/*.py" = [
+    "D100", # Missing docstring in public module
+    "D101", # Missing docstring in public class
+    "D102", # Missing docstring in public method
+    "D104", # Missing docstring in public package
+]
+
+###################
+# Import sorting: #
+
+[tool.isort]
+profile = "black"
+extra_standard_library = ["typing_extensions"]

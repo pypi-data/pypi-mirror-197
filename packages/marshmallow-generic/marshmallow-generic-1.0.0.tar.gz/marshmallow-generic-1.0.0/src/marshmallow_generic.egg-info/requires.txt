@@ -1,0 +1,13 @@
+marshmallow
+
+[dev]
+black
+build
+coverage[toml]
+isort
+mkdocs-material
+mkdocstrings[python]
+mypy
+ruff
+
+[full]

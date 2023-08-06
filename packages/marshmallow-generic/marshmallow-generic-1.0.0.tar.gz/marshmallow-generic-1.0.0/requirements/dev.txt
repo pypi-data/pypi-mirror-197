@@ -1,0 +1,9 @@
+-r common.txt
+black
+build
+coverage[toml]
+isort
+mkdocs-material
+mkdocstrings[python]
+mypy
+ruff
