@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+kedro_light/__init__.py
+kedro_light/kedro.py
+kedro_light/kedro_viz.py
+kedro_light.egg-info/PKG-INFO
+kedro_light.egg-info/SOURCES.txt
+kedro_light.egg-info/dependency_links.txt
+kedro_light.egg-info/requires.txt
+kedro_light.egg-info/top_level.txt
