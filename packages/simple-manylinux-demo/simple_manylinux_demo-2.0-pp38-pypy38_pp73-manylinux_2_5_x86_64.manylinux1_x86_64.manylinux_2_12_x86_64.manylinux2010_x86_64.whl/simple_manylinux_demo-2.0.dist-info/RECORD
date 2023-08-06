@@ -1,0 +1,9 @@
+dummyextension/extension.pypy38-pp73-x86_64-linux-gnu.so,sha256=u-bKHqP2W66nZczYjb6mY0ZmM5AkUyqZf7gvx_kMBgs,8424
+dummyextension/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dummyextension/tests/test_extension.py,sha256=JTvNJtZ3BJXqJaLvZMsV_ZQohVlt-6SflWM6TcKHlsg,198
+dummyextension/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_manylinux_demo-2.0.dist-info/top_level.txt,sha256=1c15-blbzEJQUDavuu-wnT8PnHIaGbDo7ROrvbMp9FY,15
+simple_manylinux_demo-2.0.dist-info/METADATA,sha256=-UdPjW1hJl5BoLsK_1syhwJSXj6HgtLhS4HmJVH0cgE,333
+simple_manylinux_demo-2.0.dist-info/RECORD,,
+simple_manylinux_demo-2.0.dist-info/LICENSE,sha256=VTfU0Qt2uBtujf2LZESApLHvozL7sM22ESbFvnge97Q,6554
+simple_manylinux_demo-2.0.dist-info/WHEEL,sha256=v6G2ZPeKuQ_cKapbWqI7dABnI3zjrd4IJOgiCF0h-5I,245
