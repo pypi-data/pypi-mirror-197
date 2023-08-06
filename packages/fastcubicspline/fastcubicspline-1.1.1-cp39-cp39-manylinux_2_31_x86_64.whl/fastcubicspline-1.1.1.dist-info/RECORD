@@ -1,0 +1,8 @@
+fastcubicspline/__init__.py,sha256=Bg-KZNonYZyJPYDXe5i3BtVY2KTF1rzgMUgFMuEaYxs,18
+fastcubicspline/fcs.py,sha256=LaLdlct4Kbg955Nn64rVAIOBnQKB_qJFyuW-onz3-Nw,4756
+fastcubicspline/fcs_c.c,sha256=rkAf8Y74hfmt5K_cJTOQIGnnMtOs8DWYbGwS4abG44g,305495
+fastcubicspline/fcs_c.cpython-39-x86_64-linux-gnu.so,sha256=EcfZr5iEhtNQK-e2TW9XAUjmwZOfr6DZoAezzV8qWso,82592
+fastcubicspline/fcs_c.pyx,sha256=aRdFtyqGLvsD7HlkrKQPBdCn9ggwB0pg7nxgFMS2O3Y,2335
+fastcubicspline-1.1.1.dist-info/METADATA,sha256=ETAS400rtFeuR5mUg9biRXvmsXNzp01EvQXcYYFIlLk,4146
+fastcubicspline-1.1.1.dist-info/WHEEL,sha256=Ydbo338hrO2Ypvl1YWQLRaK2cHFj4CQNX2vbJtMIXr8,108
+fastcubicspline-1.1.1.dist-info/RECORD,,
