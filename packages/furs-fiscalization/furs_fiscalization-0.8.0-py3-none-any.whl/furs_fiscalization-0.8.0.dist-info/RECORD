@@ -1,0 +1,11 @@
+furs_fiscalization/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+furs_fiscalization/api.py,sha256=OzQHx-rG6j5XCSYqCzO9wciNDpNrHCSSkx79s2g8Jis,30067
+furs_fiscalization/base_api.py,sha256=hdzZVk6GgXhWUdZNVn97_KYEpfjdLKP4gRJn1Ci-jQc,3688
+furs_fiscalization/connector.py,sha256=-4S4ZP3Qc_JrnVMx1Zry2us9MFsM9fyq-EuX1aXrCFk,6439
+furs_fiscalization/exceptions.py,sha256=4mlJXmD50YfL-FF0a4iJ9bs0FK4K28Hg2tZMGnXSEvc,1033
+furs_fiscalization/certs/test_certificate.pem,sha256=vJbVqekC-6AEeVGjXaIuz3ojrlGf38A2zfFgMzOk_Cw,1976
+furs_fiscalization-0.8.0.dist-info/LICENSE,sha256=T2ESF1Ki-67xzBQeRxQwPOY5FvEI6KTIqAKdWIYKHiA,1103
+furs_fiscalization-0.8.0.dist-info/METADATA,sha256=kAnp5msjWbPq1dlxlGN8IRadu3V_qMa8XIO446iHXzE,609
+furs_fiscalization-0.8.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+furs_fiscalization-0.8.0.dist-info/top_level.txt,sha256=HkI7AwQM-YZ9XF0P4vfUxEI7Dm7y2qr14FXU_C60gGI,19
+furs_fiscalization-0.8.0.dist-info/RECORD,,
