@@ -1,0 +1,2 @@
+[console_scripts]
+robespierre = robespierre.__main__:main

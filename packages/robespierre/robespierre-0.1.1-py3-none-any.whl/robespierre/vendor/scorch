@@ -1,0 +1,1651 @@
+#!/usr/bin/env python3
+
+# ISC License (ISC)
+#
+# Copyright (c) 2019, Antonio SJ Musumeci <trapexit@spawn.link>
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+import argparse
+import collections
+import csv
+import errno
+import fcntl
+import gzip
+import hashlib
+import io
+import math
+import os
+import random
+import re
+import shlex
+import shutil
+import signal
+import stat
+import sys
+import tempfile
+import time
+import zlib
+from collections import namedtuple
+from datetime import datetime as dt
+from itertools import takewhile
+
+
+DEFAULT_DB     = 'scorch'
+DEFAULT_DBPATH = '/var/tmp/scorch'
+SUCCESS = 0
+ERROR_PROCESSING = 1
+ERROR_ARG = 2
+ERROR_DIGEST_MISMATCH = 4
+ERROR_FOUND = 8
+ERROR_NOT_FOUND = 16
+ERROR_INTERRUPTED = 32
+
+
+MAX_ACTIONS = 2**64
+MAX_TIME    = 2**64
+MAX_DATA    = 2**64
+
+class Options(object):
+    verbose      = 0
+    hash         = 'md5'
+    quote        = 0
+    sort         = None
+    filter       = None
+    maxactions   = MAX_ACTIONS
+    maxdata      = MAX_DATA
+    maxtime      = MAX_TIME
+    breakonerror = False
+    diff_fields  = ['size']
+
+
+class FileInfo(object):
+    def __init__(self,digest,size,mode,mtime,inode,state='U',checked=0):
+        self.digest  = digest
+        self.size    = size
+        self.mode    = mode
+        self.mtime   = mtime
+        self.inode   = inode
+        self.state   = state
+        self.checked = checked
+
+    def __str__(self):
+        return str({'digest': self.digest,
+                    'size': self.size,
+                    'mode': self.mode,
+                    'mtime': self.mtime,
+                    'inode': self.inode,
+                    'state': self.state,
+                    'checked': self.checked})
+
+    def __eq__(self, rhs):
+        return ((self.digest == rhs.digest) and
+                (self.size   == rhs.size)   and
+                (self.mode   == rhs.mode)   and
+                (self.mtime  == rhs.mtime)  and
+                (self.inode  == rhs.inode))
+
+
+class FileFilter(object):
+    def __init__(self,basepath,fnfilter,fifilter):
+        self.basepath = basepath
+        self.fnfilter = fnfilter
+        self.fifilter = fifilter
+
+
+    def filter(self,filepath,fi,other=(lambda f: False)):
+        common = commonprefix([self.basepath,filepath])
+        if common != self.basepath:
+            return True
+        if self.fnfilter(filepath):
+            return True
+        if self.fifilter(fi):
+            return True
+        if other(filepath):
+            return True
+        return False
+
+
+class NullFileHash(object):
+    def hash(self,fullpath):
+        return 'null:'
+
+
+class Crc32FileHash(object):
+    def hash(self,fullpath):
+        digest = 0
+        blocksize = 65536
+
+        with open(fullpath,'rb') as f:
+            buf = f.read(blocksize)
+            while buf:
+                digest = zlib.crc32(buf,digest)
+                buf = f.read(blocksize)
+
+        return 'crc32:{:08x}'.format(digest)
+
+
+class Adler32FileHash(object):
+    def hash(self,fullpath):
+        digest = 0
+        blocksize = 65536
+
+        with open(fullpath,'rb') as f:
+            buf = f.read(blocksize)
+            while buf:
+                digest = zlib.adler32(buf,digest)
+                buf = f.read(blocksize)
+
+        return 'adler32:{:08x}'.format(digest)
+
+
+class HashLibFileHash(object):
+    _hash = None
+
+    def __init__(self,algo):
+        self._hash = hashlib.new(algo)
+
+    def hash(self,fullpath):
+        blocksize = 65536
+        with open(fullpath,'rb') as f:
+            buf = f.read(blocksize)
+            while buf:
+                self._hash.update(buf)
+                buf = f.read(blocksize)
+
+        return '{}:{}'.format(self._hash.name,
+                              self._hash.hexdigest())
+
+
+def available_hashes():
+    hashes = hashlib.algorithms_available
+    hashes.add('adler32')
+    hashes.add('crc32')
+    hashes.add('null')
+    return sorted(hashes)
+
+
+def file_hash_factory(algo):
+    if algo == 'adler32':
+        return Adler32FileHash()
+    if algo == 'crc32':
+        return Crc32FileHash()
+    if algo == 'null':
+        return NullFileHash()
+    return HashLibFileHash(algo)
+
+
+def allnamesequal(name):
+    return all(n==name[0] for n in name[1:])
+
+
+def commonprefix(paths,sep='/'):
+    bydirectorylevels = zip(*[p.split(sep) for p in paths])
+    return sep.join(x[0] for x in takewhile(allnamesequal, bydirectorylevels))
+
+
+def regex_type(pat):
+    try:
+        re.compile(pat)
+    except:
+        raise argparse.ArgumentTypeError('invalid regex')
+    return pat
+
+
+def print_help():
+    help = \
+'''
+usage: scorch [<options>] <instruction> [<directory>]
+
+scorch (Silent CORruption CHecker) is a tool to catalog files, hash
+digests, and other metadata to help in discovering file corruption,
+missing files, duplicates, etc.
+
+positional arguments:
+  instruction:           * add: compute & store digests for found files
+                         * append: compute & store digests for unhashed files
+                         * backup: backs up selected database
+                         * restore: restore backed up database
+                         * list-backups: list database backups
+                         * diff-backup: show diff between current & backup DB
+                         * hashes: print available hash functions
+                         * check: check stored info against files
+                         * update: update metadata of changed files
+                         * check+update: check and update if new
+                         * cleanup: remove info of missing files
+                         * delete: remove info for found files
+                         * list: md5sum'ish compatible listing
+                         * list-unhashed: list files not yet hashed
+                         * list-missing: list files no longer on filesystem
+                         * list-dups: list files w/ dup digests
+                         * list-solo: list files w/ no dup digests
+                         * list-failed: list files marked failed
+                         * list-changed: list files marked changed
+                         * in-db: show if files exist in DB
+                         * found-in-db: print files found in DB
+                         * notfound-in-db: print files not found in DB
+  directory:             Directory or file to scan.
+
+optional arguments:
+  -d, --db=:             File to store digests and other metadata in. See
+                         docs for info. (default: /var/tmp/scorch/scorch.db)
+  -v, --verbose:         Make `instruction` more verbose. Actual behavior
+                         depends on the instruction. Can be used multiple
+                         times.
+  -q, --quote:           Shell quote/escape filenames when printed.
+  -r, --restrict=:       * sticky: restrict scan to files with sticky bit
+                         * readonly: restrict scan to readonly files
+  -f, --fnfilter=:       Restrict actions to files which match regex.
+  -F, --negate-fnfilter  Negate the fnfilter regex match.
+  -s, --sort=:           Sorting routine on input & output. (default: natural)
+                         * random: shuffled / random
+                         * natural: human-friendly sort, ascending
+                         * natural-desc: human-friendly sort, descending
+                         * radix: RADIX sort, ascending
+                         * radix-desc: RADIX sort, descending
+                         * mtime: sort by file mtime, ascending
+                         * mtime-desc: sort by file mtime, descending
+                         * checked: sort by last time checked, ascending
+                         * checked-desc: sort by last time checked, descending
+  -m, --maxactions=:     Max actions before exiting. (default: 2**64)
+  -M, --maxdata=:        Max bytes to process before exiting. (default: 2**64)
+                         Can use 'K', 'M', 'G', 'T' suffix.
+  -T, --maxtime=:        Max time to process before exiting. (default: 2**64)
+                         Can use 's', 'm', 'h', 'd' suffix.
+  -b, --break-on-error:  Any error or digest mismatch will cause an exit.
+  -D, --diff-fields=:    Fields to use to indicate a file has 'changed' (vs.
+                         bitrot / modified) and should be rehashed.
+                         Combine with ','. (default: size)
+                         * size
+                         * inode
+                         * mtime
+                         * mode
+  -H, --hash=:           Hash algo. Use 'scorch hashes' get available algos.
+                         (default: md5)
+  -h, --help:            Print this message.
+
+exit codes:
+  *  0 : success, behavior executed, something found
+  *  1 : processing error
+  *  2 : error with command line arguments
+  *  4 : hash mismatch
+  *  8 : found
+  * 16 : not found, nothing processed
+  * 32 : interrupted
+'''
+    print(help)
+
+
+def build_arg_parser():
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument('-d','--db',
+                        type=str,
+                        default=DEFAULT_DB)
+    parser.add_argument('inst',
+                        choices=['hashes',
+                                 'add','append',
+                                 'backup','restore',
+                                 'list-backups','diff-backup',
+                                 'check','update',
+                                 'check+update','delete',
+                                 'cleanup','list',
+                                 'list-unhashed','list-dups',
+                                 'list-solo','list-missing',
+                                 'list-failed','list-changed',
+                                 'in-db',
+                                 'found-in-db','notfound-in-db'],
+                        nargs='?')
+    parser.add_argument('dir',
+                        type=str,
+                        nargs='*')
+    parser.add_argument('-v','--verbose',
+                        action='count',
+                        default=0)
+    parser.add_argument('-q','--quote',
+                        action='store_true',
+                        default=False)
+    parser.add_argument('-r','--restrict',
+                        choices=['sticky',
+                                 'readonly'])
+    parser.add_argument('-f','--fnfilter',
+                        type=regex_type)
+    parser.add_argument('-F','--negate-fnfilter',
+                        action='store_true',
+                        default=False)
+    parser.add_argument('-s','--sort',
+                        choices=['none',
+                                 'random',
+                                 'radix','radix-desc',
+                                 'natural','natural-desc',
+                                 'mtime','mtime-desc',
+                                 'checked','checked-desc'],
+                        default='natural')
+    parser.add_argument('-m','--maxactions',
+                        type=int,
+                        default=sys.maxsize)
+    parser.add_argument('-M','--maxdata',
+                        type=str,
+                        default=str(sys.maxsize))
+    parser.add_argument('-T','--maxtime',
+                        type=str,
+                        default=str(sys.maxsize))
+    parser.add_argument('-b','--break-on-error',
+                        action='store_true',
+                        default=False)
+    parser.add_argument('-D','--diff-fields',
+                        type=str,
+                        default='size')
+    parser.add_argument('-H','--hash',
+                        type=str,
+                        choices=available_hashes(),
+                        default='md5')
+    parser.add_argument('-h','--help',
+                        action='store_true',
+                        default=False)
+
+    return parser
+
+
+def hash_file(filepath, algo):
+    algo = algo.split(':')[0]
+    filehash = file_hash_factory(algo)
+    return filehash.hash(filepath)
+
+
+def get_files(basepath,filefilter,db={}):
+    if os.path.isfile(basepath):
+        fi = get_fileinfo(basepath)
+        if not fi:
+            return []
+        return [(basepath,fi)]
+
+    files = []
+    for (dirname,dirnames,filenames) in os.walk(basepath):
+        for filename in filenames:
+            filepath = os.path.join(dirname,filename)
+            if filepath in db:
+                continue
+
+            fi = get_fileinfo(filepath)
+            if not fi:
+                continue
+
+            if filefilter.filter(filepath,fi):
+                continue
+
+            files.append((filepath,fi))
+
+    return files
+
+
+def filter_files(files,filefilter,other=(lambda f: False)):
+    if filefilter.basepath == '/':
+        return [(filepath,fi) for (filepath,fi) in files]
+    if filefilter.basepath in files:
+        return files
+
+    rv = []
+    for (filepath,fi) in files:
+        if filefilter.filter(filepath,fi,other):
+            continue
+        rv.append((filepath,fi))
+
+    return rv
+
+
+def get_fileinfo(filepath):
+    try:
+        st = os.lstat(filepath)
+        if not stat.S_ISREG(st.st_mode):
+            return None
+        return FileInfo(digest='',
+                        size=st.st_size,
+                        mode=st.st_mode,
+                        mtime=st.st_mtime,
+                        inode=st.st_ino)
+    except IOError as e:
+        return None
+
+
+def iso8601(timestamp):
+    return dt.utcfromtimestamp(timestamp).isoformat() + 'Z'
+
+
+def print_filepath(filepath,count=0,total=0,quote=False,end=''):
+    if quote:
+        filepath = shlex.quote(filepath)
+
+    s = ''
+    if count or total:
+        padding = len(str(total))
+        padded = str(count).zfill(padding)
+        s = '{0}/{1} '.format(padded,total)
+
+    s += filepath
+
+    print(s,end=end)
+
+    sys.stdout.flush()
+
+
+def human_to_bytes(s):
+    m = s[-1]
+    if   m == 'K':
+        i = int(s[0:-1]) * 1024
+    elif m == 'M':
+        i = int(s[0:-1]) * 1024 * 1024
+    elif m == 'G':
+        i = int(s[0:-1]) * 1024 * 1024 * 1024
+    elif m == 'T':
+        i = int(s[0:-1]) * 1024 * 1024 * 1024 * 1024
+    else:
+        i = int(s)
+
+    return i
+
+
+def human_to_time(s):
+    m = s[-1]
+    if   m in ['s','S']:
+        t = int(s[0:-1])
+    elif m in ['m','M']:
+        t = int(s[0:-1]) * 60
+    elif m in ['h','H']:
+        t = int(s[0:-1]) * 60 * 60
+    elif m in ['d','D']:
+        t = int(s[0:-1]) * 60 * 60 * 24
+    else:
+        t = int(s)
+
+    return t
+
+
+def humansize(nbytes):
+    suffixes = ['B','KB','MB','GB','TB','PB','ZB']
+    rank = int(math.log(nbytes,1024)) if nbytes else 0
+    rank = min(rank, len(suffixes) - 1)
+    human = nbytes / (1024.0 ** rank)
+    if suffixes[rank] == 'B':
+        f = int(human)
+    else:
+        f = '{:.2f}'.format(human)
+    return '{}{}'.format(f, suffixes[rank])
+
+
+def inst_hashes(opts,path,db,dbremove):
+    for hash in available_hashes():
+        print(hash)
+    return SUCCESS
+
+
+def inst_add(opts,path,db,dbremove):
+    rv  = ERROR_NOT_FOUND
+    err = SUCCESS;
+    filepaths = get_files(path,opts.filter)
+    opts.sort(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    total = min(opts.maxactions,len(filepaths))
+    for (filepath,fi) in filepaths:
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += fi.size
+
+        if opts.verbose:
+            print_filepath(filepath,actions,total,opts.quote)
+
+        try:
+            fi.digest       = hash_file(filepath,opts.hash)
+            fi.state        = 'O'
+            fi.checked      = time.time()
+            if opts.verbose:
+                print(':',fi.digest)
+            append_to_db(opts.dbpath,filepath,fi)
+            rv = SUCCESS
+        except (KeyboardInterrupt,SystemExit):
+            err = err | ERROR_INTERRUPTED
+            break
+        except Exception as e:
+            err = err | ERROR_PROCESSING
+            if opts.verbose:
+                print(': ERROR -',e)
+            if opts.breakonerror:
+                break
+
+    return rv | err
+
+
+def inst_append(opts,path,db,dbremote):
+    rv  = ERROR_NOT_FOUND
+    err = SUCCESS
+    filepaths = get_files(path,opts.filter,db)
+    opts.sort(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    total = min(opts.maxactions,len(filepaths))
+    for (filepath,fi) in filepaths:
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += fi.size
+
+        if opts.verbose:
+            print_filepath(filepath,actions,total,opts.quote)
+
+        try:
+            fi.digest       = hash_file(filepath,opts.hash)
+            fi.state        = 'O'
+            fi.checked      = time.time()
+            if opts.verbose:
+                print(':',fi.digest)
+            append_to_db(opts.dbpath,filepath,fi)
+            rv = SUCCESS
+        except (KeyboardInterrupt,SystemExit):
+            err = err | ERROR_INTERRUPTED
+            break
+        except Exception as e:
+            err = err | ERROR_PROCESSING
+            if opts.verbose:
+                print(': ERROR -',e)
+            if opts.breakonerror:
+                break
+
+    return rv | err
+
+
+def fileinfo_changes(oldfi,newfi):
+    changes = []
+
+    text = ' - size: '
+    if oldfi.size != newfi.size:
+        text += '{} -> {}'.format(humansize(oldfi.size),humansize(newfi.size))
+    else:
+        text += '{} (unchanged)'.format(humansize(oldfi.size))
+    changes.append(text)
+
+    text = ' - mtime: '
+    if oldfi.mtime != newfi.mtime:
+        text += '{} -> {}'.format(iso8601(oldfi.mtime),iso8601(newfi.mtime))
+    else:
+        text += '{} (unchanged)'.format(iso8601(oldfi.mtime))
+    changes.append(text)
+
+    text = ' - mode: '
+    if oldfi.mode != newfi.mode:
+        text += '{0:03o} -> {1:03o}'.format(oldfi.mode,newfi.mode)
+    else:
+        text += '{0:03o} (unchanged)'.format(oldfi.mode)
+    changes.append(text)
+
+    text = ' - inode: '
+    if oldfi.inode != newfi.inode:
+        text += '{} -> {}'.format(oldfi.inode,newfi.inode)
+    else:
+        text += '{} (unchanged)'.format(oldfi.inode)
+    changes.append(text)
+
+    return changes
+
+
+def different_files(old,new,fields):
+    return ((('size'  in fields) and (old.size  != new.size))  or
+            (('inode' in fields) and (old.inode != new.inode)) or
+            (('mtime' in fields) and (old.mtime != new.mtime)) or
+            (('mode'  in fields) and (old.mode  != new.mode)))
+
+
+def inst_check(opts,path,db,dbremove,update=False):
+    rv  = ERROR_NOT_FOUND
+    err = SUCCESS
+    filepaths = filter_files(db.items(),opts.filter)
+    opts.sort(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    total = min(opts.maxactions,len(filepaths))
+    for (filepath,oldfi) in filepaths:
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += oldfi.size
+
+        try:
+            newfi = get_fileinfo(filepath)
+            if not newfi:
+                print_filepath(filepath,actions,total,opts.quote)
+                print(': MISSING')
+                continue
+
+            rv = SUCCESS
+            if different_files(oldfi,newfi,opts.diff_fields):
+                err = err | ERROR_DIGEST_MISMATCH
+
+                changes = fileinfo_changes(oldfi,newfi)
+                print_filepath(filepath,actions,total,opts.quote)
+                print(': CHANGED{}'.format(' (updated)' if update else ''))
+                for change in changes:
+                    print(change)
+
+                print(' - digest: {} -> '.format(oldfi.digest),end='')
+                if update:
+                    newfi.digest  = hash_file(filepath,opts.hash)
+                    newfi.state   = 'O'
+                    newfi.checked = time.time()
+                    print(newfi.digest)
+                    append_to_db(opts.dbpath,filepath,newfi)
+                else:
+                    oldfi.state   = 'C'
+                    oldfi.checked = time.time()
+                    print('not calculated')
+                    append_to_db(opts.dbpath,filepath,oldfi)
+            else:
+                if opts.verbose:
+                    print_filepath(filepath,actions,total,opts.quote)
+
+                newfi.digest = hash_file(filepath,oldfi.digest)
+                if newfi.digest != oldfi.digest:
+                    err = err | ERROR_DIGEST_MISMATCH
+                    oldfi.state   = 'F'
+                    oldfi.checked = time.time()
+                    if not opts.verbose:
+                        print_filepath(filepath,actions,total,opts.quote)
+                    print(': FAILED')
+                    changes = fileinfo_changes(oldfi,newfi)
+                    for change in changes:
+                        print(change)
+                    print(' - digest: {} -> {}'.format(oldfi.digest,newfi.digest))
+                    append_to_db(opts.dbpath,filepath,oldfi)
+                    if opts.breakonerror:
+                        break
+                elif opts.verbose:
+                    if update and oldfi != newfi:
+                        print(': OK (updated)')
+                        changes = fileinfo_changes(oldfi,newfi)
+                        for change in changes:
+                            print(change)
+                        print(' - digest: {} (unchanged)'.format(oldfi.digest))
+                        newfi.state   = 'O'
+                        newfi.checked = time.time()
+                        append_to_db(opts.dbpath,filepath,newfi)
+                    else:
+                        oldfi.state   = 'O'
+                        oldfi.checked = time.time()
+                        print(': OK')
+                        append_to_db(opts.dbpath,filepath,oldfi)
+        except (KeyboardInterrupt,SystemExit):
+            err = err | ERROR_INTERRUPTED
+            break
+        except Exception as e:
+            err = err | ERROR_PROCESSING
+            print_filepath(filepath,actions,total,opts.quote)
+            print(': ERROR -',e)
+            if opts.breakonerror:
+                break
+
+    return rv | err
+
+
+def inst_check_and_update(opts,path,db,dbremove):
+    return inst_check(opts,path,db,dbremove,update=True)
+
+
+def inst_update(opts,path,db,dbremove):
+    rv = SUCCESS
+    filepaths = filter_files(db.items(),opts.filter)
+    opts.sort(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    total = min(opts.maxactions,len(filepaths))
+    for (filepath,oldfi) in filepaths:
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += oldfi.size
+
+        try:
+            newfi = get_fileinfo(filepath)
+            if not newfi:
+                print_filepath(filepath,actions,total,opts.quote)
+                print(': MISSING')
+                continue
+
+            newfi.digest = oldfi.digest
+            if oldfi == newfi:
+                if opts.verbose:
+                    print_filepath(filepath,actions,total,opts.quote)
+                    print(': UNCHANGED')
+                continue
+
+            changes = fileinfo_changes(oldfi,newfi)
+            if changes:
+                print_filepath(filepath,actions,total,opts.quote)
+                print(': CHANGED')
+                for change in changes:
+                    print(change)
+
+            print(' - digest: ',end='')
+            if different_files(oldfi,newfi,opts.diff_fields):
+                print('{} -> '.format(oldfi.digest),end='')
+                newfi.digest = hash_file(filepath,opts.hash)
+                print('{}'.format(newfi.digest))
+            else:
+                print('{} (unchanged)'.format(oldfi.digest))
+
+            newfi.state   = 'O'
+            newfi.checked = time.time()
+            append_to_db(opts.dbpath,filepath,newfi)
+        except (KeyboardInterrupt,SystemExit):
+            rv = rv | ERROR_INTERRUPTED
+            break
+        except Exception as e:
+            rv = rv | ERROR_PROCESSING
+            print_filepath(filepath,actions,total,opts.quote)
+            print(': ERROR -',e)
+            if opts.breakonerror:
+                break
+
+    return rv
+
+
+def inst_delete(opts,path,db,dbremove):
+    rv  = ERROR_NOT_FOUND
+    err = SUCCESS
+    filepaths = filter_files(db.items(),opts.filter)
+    opts.sort(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    total = min(opts.maxactions,len(filepaths))
+    for (filepath,fi) in filepaths:
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += fi.size
+
+        rv = SUCCESS
+        dbremove.append(filepath)
+        if opts.verbose == 1:
+            print_filepath(filepath,quote=opts.quote,end='\n')
+        elif opts.verbose == 2:
+            print_filepath(filepath,actions,total,opts.quote)
+            print(': REMOVED')
+
+    return rv | err
+
+
+def inst_cleanup(opts,path,db,dbremove):
+    rv  = ERROR_NOT_FOUND
+    err = SUCCESS
+    filepaths = filter_files(db.items(),opts.filter,os.path.exists)
+    opts.sort(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    total = min(opts.maxactions,len(filepaths))
+    for (filepath,fi) in filepaths:
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += fi.size
+
+        rv = SUCCESS
+        dbremove.append(filepath)
+        if opts.verbose:
+            print_filepath(filepath,actions,total,opts.quote)
+            print(': REMOVED')
+
+    return rv | err
+
+
+def inst_list(opts,path,db,dbremove):
+    rv  = ERROR_NOT_FOUND
+    err = SUCCESS
+    filepaths = filter_files(db.items(),opts.filter)
+    opts.sort(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    for (filepath,fi) in filepaths:
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += fi.size
+
+        rv = SUCCESS
+        if not opts.verbose:
+            filepath = os.path.relpath(filepath,path)
+        if opts.quote:
+            filepath = shlex.quote(filepath)
+
+        print(fi.digest,filepath)
+
+    return rv | err
+
+
+def inst_list_unhashed(opts,path,db,dbremove):
+    rv  = ERROR_NOT_FOUND
+    err = SUCCESS
+    filepaths = get_files(path,opts.filter,db)
+    opts.sort(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    for (filepath,fi) in filepaths:
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += fi.size
+
+        rv = SUCCESS
+        if not opts.verbose:
+            filepath = os.path.relpath(filepath,path)
+
+        print_filepath(filepath,quote=opts.quote,end='\n')
+
+    return rv | err
+
+
+def inst_list_dups(opts,path,db,dbremove):
+    rv  = ERROR_NOT_FOUND
+    err = SUCCESS
+    hashdb = {}
+    for (filepath,fi) in db.items():
+        if opts.filter.filter(filepath,fi):
+            continue
+
+        if not fi.digest in hashdb:
+            hashdb[fi.digest] = []
+
+        hashdb[fi.digest].append(filepath)
+
+    actions = 0
+    endtime = time.time() + opts.maxtime
+    for (digest,filepaths) in hashdb.items():
+        if len(filepaths) <= 1:
+            continue
+
+        if actions >= opts.maxactions:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions += 1
+
+        rv = SUCCESS
+        if opts.quote:
+            filepaths = [shlex.quote(filepath) for filepath in filepaths]
+        filepaths.sort()
+        if opts.verbose:
+            print(digest,'\n -','\n - '.join(filepaths))
+        else:
+            print(digest,' '.join(filepaths))
+
+    return rv | err
+
+
+def inst_list_solo(opts,path,db,dbremove):
+    rv  = ERROR_NOT_FOUND
+    err = SUCCESS
+    hashdb = {}
+    for (filepath,fi) in db.items():
+        if opts.filter.filter(filepath,fi):
+            continue
+
+        if not fi.digest in hashdb:
+            hashdb[fi.digest] = []
+
+        hashdb[fi.digest].append(filepath)
+
+    actions = 0
+    endtime = time.time() + opts.maxtime
+    for (digest,filepaths) in hashdb.items():
+        if len(filepaths) > 1:
+            continue
+
+        if actions >= opts.maxactions:
+            return rv
+        if time.time() >= endtime:
+            break
+
+        actions += 1
+
+        rv = SUCCESS
+        if opts.quote:
+            filepaths[0] = shlex.quote(filepaths[0])
+        print(digest,filepaths[0])
+
+    return rv | err
+
+
+def inst_list_missing(opts,path,db,dbremove):
+    rv  = ERROR_NOT_FOUND
+    err = SUCCESS
+    filepaths = get_files(path,opts.filter)
+    filepaths = dict(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    output  = []
+    for (filepath,fi) in db.items():
+        if commonprefix([path,filepath]) != path:
+            continue
+
+        if filepath in filepaths:
+            continue
+
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += fi.size
+
+        rv = SUCCESS
+        output.append((filepath,fi))
+
+    opts.sort(output)
+    for (filepath,fi) in output:
+        if opts.quote:
+            filepath = shlex.quote(filepath)
+        print(filepath)
+
+    return rv | err
+
+
+def inst_in_db(opts,path,db,dbremove):
+    rv = SUCCESS
+    sizedb = set()
+    hashdb = {}
+    for (filepath,fi) in db.items():
+        if not fi.digest in hashdb:
+            hashdb[fi.digest] = []
+
+        hashdb[fi.digest].append(filepath)
+        sizedb.add(fi.size)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    filepaths = get_files(path,opts.filter)
+    total = min(opts.maxactions,len(filepaths))
+    for (filepath,fi) in filepaths:
+        try:
+            if actions >= opts.maxactions:
+                break
+            if processed >= opts.maxdata:
+                break
+            if time.time() >= endtime:
+                break
+
+            actions   += 1
+            processed += fi.size
+
+            print_filepath(filepath,actions,total,opts.quote)
+            if fi.size not in sizedb:
+                rv = rv | ERROR_NOT_FOUND | ERROR_DIGEST_MISMATCH
+                print(': NO')
+            else:
+                digest = hash_file(filepath,opts.hash)
+                if digest not in hashdb:
+                    rv = rv | ERROR_NOT_FOUND | ERROR_DIGEST_MISMATCH
+                    print(': NO')
+                else:
+                    rv = rv | ERROR_FOUND
+                    print(': YES')
+        except (KeyboardInterrupt,SystemExit):
+            rv = rv | ERROR_INTERRUPTED
+            break
+        except Exception as e:
+            rv = rv | ERROR_PROCESSING
+            print(': ERROR -',e)
+
+    return rv
+
+
+def inst_found_in_db(opts,path,db,dbremove):
+    rv = SUCCESS
+    sizedb = set()
+    hashdb = {}
+    writer = csv.writer(sys.stdout,delimiter=',')
+    for (filepath,fi) in db.items():
+        if not fi.digest in hashdb:
+            hashdb[fi.digest] = []
+
+        hashdb[fi.digest].append(filepath)
+        sizedb.add(fi.size)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    filepaths = get_files(path,opts.filter)
+    for (filepath,fi) in filepaths:
+        try:
+            if actions >= opts.maxactions:
+                break
+            if processed >= opts.maxdata:
+                break
+            if time.time() >= endtime:
+                break
+
+            actions   += 1
+            processed += fi.size
+
+            if fi.size not in sizedb:
+                rv = rv | ERROR_NOT_FOUND
+                continue
+
+            digest = hash_file(filepath,opts.hash)
+            if digest not in hashdb:
+                rv = rv | ERROR_NOT_FOUND
+                continue
+
+            rv = rv | ERROR_FOUND
+            if opts.verbose in [1,2]:
+                if opts.verbose == 1:
+                    filepath = os.path.relpath(filepath,path)
+                if opts.quote:
+                    filepath = shlex.quote(filepath)
+                print(filepath)
+            elif opts.verbose in [3,4]:
+                if opts.verbose == 3:
+                    filepath = os.path.relpath(filepath,path)
+                if opts.quote:
+                    filepath = shlex.quote(filepath)
+                print(digest,filepath)
+            elif opts.verbose >= 5:
+                t = tuple([digest,filepath] + hashdb[digest])
+                writer.writerow(t)
+        except (KeyboardInterrupt,SystemExit):
+            rv = rv | ERROR_INTERRUPTED
+            break
+        except Exception as e:
+            rv = rv | ERROR_PROCESSING
+            print('Error while processing: ',e,file=sys.stderr)
+
+    return rv
+
+
+def inst_notfound_in_db(opts,path,db,dbremove):
+    rv = SUCCESS
+    hashes = set()
+    sizes  = set()
+    for (filepath,fi) in db.items():
+        hashes.add(fi.digest)
+        sizes.add(fi.size)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    filepaths = get_files(path,opts.filter)
+    for (filepath,fi) in filepaths:
+        try:
+            if actions >= opts.maxactions:
+                break
+            if processed >= opts.maxdata:
+                break
+            if time.time() >= endtime:
+                break
+
+            actions   += 1
+            processed += fi.size
+
+            if opts.verbose == 0:
+                if fi.size in sizes:
+                    digest = hash_file(filepath,opts.hash)
+                    if digest in hashes:
+                        rv = rv | ERROR_FOUND
+                    else:
+                        rv = rv | ERROR_NOT_FOUND
+            elif opts.verbose in [1,2]:
+                printpath = filepath
+                if opts.verbose == 1:
+                    printpath = os.path.relpath(filepath,path)
+                if opts.quote:
+                    printpath = shlex.quote(printpath)
+
+                if fi.size not in sizes:
+                    print(printpath)
+                    rv = rv | ERROR_NOT_FOUND
+                else:
+                    digest = hash_file(filepath,opts.hash)
+                    if digest not in hashes:
+                        print(printpath)
+                        rv = rv | ERROR_NOT_FOUND
+                    else:
+                        rv = rv | ERROR_FOUND
+            elif opts.verbose in [3,4]:
+                printpath = filepath
+                if opts.verbose == 3:
+                    printpath = os.path.relpath(filepath,path)
+                if opts.quote:
+                    printpath = shlex.quote(printpath)
+
+                digest = hash_file(filepath,opts.hash)
+                if digest not in hashes:
+                    print(digest,printpath)
+                    rv = rv | ERROR_NOT_FOUND
+                else:
+                    rv = rv | ERROR_FOUND
+        except (KeyboardInterrupt,SystemExit):
+            rv = rv | ERROR_INTERRUPTED
+            break
+        except Exception as e:
+            rv = rv | ERROR_PROCESSING
+            print('Error while processing:',e,file=sys.stderr)
+
+    return rv
+
+
+def inst_backup(opts,path,db,dbremove):
+    timestamp  = dt.utcnow().replace(microsecond=0).isoformat() + 'Z'
+    basepath   = os.path.dirname(opts.dbpath)
+    filename   = os.path.basename(opts.dbpath)
+    filename   = '{}.backup_{}'.format(filename,timestamp)
+    tgt_dbpath = os.path.join(path,filename)
+
+    try:
+        with tempfile.NamedTemporaryFile(dir=basepath,delete=False) as tgtfile:
+            with open(opts.dbpath,'rb') as srcfile:
+                fcntl.flock(srcfile,fcntl.LOCK_EX)
+                shutil.copyfileobj(srcfile,tgtfile)
+                fcntl.flock(srcfile,fcntl.LOCK_UN)
+                os.replace(tgtfile.name,tgt_dbpath)
+        if opts.verbose:
+            print(tgt_dbpath)
+        return SUCCESS
+    except Exception as e:
+        print('Error backing up: {} - {}'.format(tgt_dbpath,e),file=sys.stderr)
+        return ERROR_PROCESSING
+
+
+def inst_restore(opts,path,db,dbremove):
+    basepath = os.path.dirname(opts.dbpath)
+
+    tmp_dbpath = None
+    try:
+        (fd,tmp_dbpath) = tempfile.mkstemp(dir=basepath)
+        os.close(fd)
+        shutil.copy2(path,tmp_dbpath)
+        os.replace(tmp_dbpath,opts.dbpath)
+        return SUCCESS
+    except Exception as e:
+        if tmp_dbpath:
+            os.remove(tmp_dbpath)
+        print('Error restoring: {} - {}'.format(path,e),file=sys.stderr)
+        return ERROR_PROCESSING
+
+
+def inst_list_backups(opts,path,db,dbremove):
+    try:
+        filename = os.path.basename(opts.dbpath)
+        prefix   = '{}.backup_'.format(filename)
+
+        backups = []
+        for entry in os.listdir(path):
+            fullpath = os.path.join(path,entry)
+            if not entry.startswith(prefix):
+                continue
+            if not os.path.isfile(fullpath):
+                continue
+            backups.append(fullpath)
+
+        backups.sort()
+        for backup in backups:
+            print(backup)
+        return SUCCESS
+    except Exception as e:
+        msg = 'Error listing backups: {} - {}'.format(opts.dbpath,e)
+        print(msg,file=sys.stderr)
+        return ERROR_PROCESSING
+
+
+def inst_diff_backup(opts,path,db,dbremove):
+    backup_db = read_db(path)
+
+    for (k,v) in db.items():
+        if k not in backup_db:
+            print('* added:',k)
+        elif v != backup_db[k]:
+            print('* changed:',k)
+
+    for (k,v) in backup_db.items():
+        if k not in db:
+            print('* removed:',k)
+
+    return SUCCESS
+
+
+def inst_list_failed(opts,path,db,dbremove):
+    filepaths = filter_files(db.items(),opts.filter)
+    opts.sort(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    for (filepath,fi) in filepaths:
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += fi.size
+
+        if fi.state != 'F':
+            continue
+        if opts.quote:
+            filepath = shlex.quote(filepath)
+        print(filepath)
+
+    return SUCCESS
+
+
+def inst_list_changed(opts,path,db,dbremove):
+    filepaths = filter_files(db.items(),opts.filter)
+    opts.sort(filepaths)
+
+    actions = 0
+    processed = 0
+    endtime = time.time() + opts.maxtime
+    for (filepath,fi) in filepaths:
+        if actions >= opts.maxactions:
+            break
+        if processed >= opts.maxdata:
+            break
+        if time.time() >= endtime:
+            break
+
+        actions   += 1
+        processed += fi.size
+
+        if fi.state != 'C':
+            continue
+        if opts.quote:
+            filepath = shlex.quote(filepath)
+        print(filepath)
+
+    return SUCCESS
+
+
+def is_not_sticky(fi):
+    return not bool(fi.mode & stat.S_ISVTX)
+
+
+def is_not_readonly(fi):
+    return not (fi.mode & (stat.S_IWUSR | stat.S_IWGRP | stat.S_IWOTH))
+
+
+def restrict_fun(rtype):
+    if rtype == 'sticky':
+        return is_not_sticky
+    elif rtype == 'readonly':
+        return is_not_readonly
+    return (lambda st: False)
+
+
+def fnfilter_fun(regex,negate):
+    if regex:
+        cregex = re.compile(regex)
+        if negate:
+            return (lambda filepath: cregex.match(filepath) != None)
+        return (lambda filepath: cregex.match(filepath) == None)
+    return (lambda filepath: False)
+
+
+Instruction = namedtuple('Instruction',['fun','needs_dirs','load_db'])
+INSTRUCTIONS = {
+    'hashes': Instruction(inst_hashes,False,False),
+    'add': Instruction(inst_add,True,False),
+    'append': Instruction(inst_append,True,True),
+    'backup': Instruction(inst_backup,False,False),
+    'restore': Instruction(inst_restore,True,False),
+    'list-backups': Instruction(inst_list_backups,False,False),
+    'diff-backup': Instruction(inst_diff_backup,True,True),
+    'check': Instruction(inst_check,True,True),
+    'update': Instruction(inst_update,True,True),
+    'check+update': Instruction(inst_check_and_update,True,True),
+    'delete': Instruction(inst_delete,True,False),
+    'cleanup': Instruction(inst_cleanup,True,True),
+    'list': Instruction(inst_list,True,True),
+    'list-unhashed': Instruction(inst_list_unhashed,True,True),
+    'list-dups': Instruction(inst_list_dups,True,True),
+    'list-solo': Instruction(inst_list_solo,True,True),
+    'list-missing': Instruction(inst_list_missing,True,True),
+    'list-failed': Instruction(inst_list_failed,True,True),
+    'list-changed': Instruction(inst_list_changed,True,True),
+    'in-db': Instruction(inst_in_db,True,True),
+    'found-in-db': Instruction(inst_found_in_db,True,True),
+    'notfound-in-db': Instruction(inst_notfound_in_db,True,True)
+}
+
+
+def sort_fun(sort):
+    if sort == 'random':
+        return (lambda l: random.shuffle(l))
+    elif sort == 'radix':
+        return (lambda l: l.sort())
+    elif sort == 'radix-desc':
+        return (lambda l: l.sort(reverse=True))
+    elif sort == 'natural':
+        cre = re.compile('(\d+)')
+        sort_key = lambda s: [int(t) if t.isdigit() else t.lower()
+                              for t in re.split(cre,s[0])]
+        return (lambda l: l.sort(key=sort_key))
+    elif sort == 'natural-desc':
+        cre = re.compile('(\d+)')
+        sort_key = lambda s: [int(t) if t.isdigit() else t.lower()
+                              for t in re.split(cre,s[0])]
+        return (lambda l: l.sort(key=sort_key,reverse=True))
+    elif sort == 'mtime':
+        sort_key = lambda s: s[1].mtime
+        return (lambda l: l.sort(key=sort_key))
+    elif sort == 'mtime-desc':
+        sort_key = lambda s: s[1].mtime
+        return (lambda l: l.sort(key=sort_key,reverse=True))
+    elif sort == 'checked':
+        sort_key = lambda s: s[1].checked
+        return (lambda l: l.sort(key=sort_key))
+    elif sort == 'checked-desc':
+        sort_key = lambda s: s[1].checked
+        return (lambda l: l.sort(key=sort_key,reverse=True))
+    return (lambda l: None)
+
+
+def gzip_open_r(filepath):
+    return gzip.open(filepath,
+                     'rt',
+                     encoding='utf8',
+                     errors='surrogateescape',
+                     newline='')
+
+def gzip_open_w(filepath):
+    return gzip.open(filepath,
+                     'wt',
+                     encoding='utf8',
+                     errors='surrogateescape',
+                     newline='')
+
+def gzip_open_append(filepath):
+    return gzip.open(filepath,
+                     'at',
+                     encoding='utf8',
+                     errors='surrogateescape',
+                     newline='')
+
+
+def read_db_from_fd(f):
+    db = {}
+    reader = csv.reader(f,delimiter=',',quotechar='"')
+    for row in reader:
+        rowlen = len(row)
+        if rowlen == 8:
+            (filename,digest,size,mode,
+             mtime,inode,state,checked) = row
+        elif rowlen == 6:
+            (filename,digest,size,mode,mtime,inode) = row
+            state = 'U'
+            checked = 0
+        elif rowlen == 5:
+            (filename,digest,size,mode,mtime) = row
+            inode = 0
+            state = 'U'
+            checked = 0
+        else:
+            raise IOError('unknown data layout in scorch database')
+
+        if ':' not in digest:
+            digest = 'md5:'+digest
+        db[filename]=FileInfo(digest,
+                              int(size),
+                              int(mode),
+                              float(mtime),
+                              int(inode),
+                              state,
+                              float(checked))
+    return db
+
+
+def read_db(filepath):
+    db = {}
+    try:
+        with gzip_open_r(filepath) as f:
+            fcntl.flock(f,fcntl.LOCK_EX)
+            db = read_db_from_fd(f)
+            fcntl.flock(f,fcntl.LOCK_UN)
+    except IOError as e:
+        if e.errno != errno.ENOENT:
+            raise
+    return db
+
+
+def write_db(dbpath,dbremove):
+    try:
+        signal.signal(signal.SIGINT,signal.SIG_IGN)
+        with gzip_open_r(dbpath) as fr:
+            fcntl.flock(fr,fcntl.LOCK_EX)
+            db = read_db_from_fd(fr)
+            for filepath in dbremove:
+                del db[filepath]
+
+            with gzip_open_w(dbpath) as fw:
+                writer = csv.writer(fw,delimiter=',')
+                for (k,v) in db.items():
+                    row = (k,v.digest,v.size,v.mode,
+                           v.mtime,v.inode,v.state,
+                           v.checked)
+                    writer.writerow(row)
+
+            fcntl.flock(fr,fcntl.LOCK_UN)
+    except Exception as e:
+        msg = 'Error writing scorch DB: {} - {}'.format(dbpath,e)
+        print(msg,file=sys.stderr)
+    finally:
+        signal.signal(signal.SIGINT,signal.SIG_DFL)
+
+
+def append_to_db(dbpath,filepath,fi):
+    try:
+        signal.signal(signal.SIGINT,signal.SIG_IGN)
+        with gzip_open_append(dbpath) as f:
+            fcntl.flock(f,fcntl.LOCK_EX)
+            writer = csv.writer(f,delimiter=',')
+            row = (filepath,fi.digest,fi.size,fi.mode,
+                   fi.mtime,fi.inode,fi.state,fi.checked)
+            writer.writerow(row)
+            fcntl.flock(f,fcntl.LOCK_UN)
+    except PermissionError as e:
+        pass
+    finally:
+        signal.signal(signal.SIGINT,signal.SIG_DFL)
+
+
+def process_directories(dirs):
+    rv = []
+    for d in dirs:
+        realpath = os.path.realpath(d)
+        if realpath != '/':
+            realpath + os.path.sep
+        rv.append(realpath)
+    return rv
+
+
+def calculate_dbpath(dbpath):
+    if dbpath[0] == '/':
+        pass
+    elif '/' in dbpath:
+        cwd = os.getcwd()
+        dbpath = os.path.join(cwd,dbpath)
+    else:
+        dbpath = os.path.join(DEFAULT_DBPATH,dbpath)
+
+    if os.path.isdir(dbpath) or dbpath[-1] == '/':
+        dbpath = os.path.join(dbpath,'scorch.db')
+
+    if not os.path.splitext(dbpath)[1]:
+        dbpath += '.db'
+
+    dbpath = os.path.normpath(dbpath)
+
+    return dbpath
+
+
+def mtime(filepath):
+    try:
+        return os.lstat(filepath).st_mtime
+    except:
+        return 0
+
+
+def check_db(dbpath):
+    if not os.access(dbpath,os.W_OK):
+        print('WARNING: unable to write to database -',dbpath,file=sys.stderr)
+
+
+def main():
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer,
+                                  errors="surrogateescape",
+                                  line_buffering=True)
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer,
+                                  errors="surrogateescape",
+                                  line_buffering=True)
+
+    parser = build_arg_parser()
+    args   = parser.parse_args()
+
+    if args.help:
+        print_help()
+        parser.exit(status=SUCCESS)
+    if not args.inst:
+        print_help()
+        parser.exit(status=ERROR_ARG)
+
+    opts = Options()
+    opts.verbose      = args.verbose
+    opts.hash         = args.hash
+    opts.quote        = args.quote
+    opts.sort         = sort_fun(args.sort)
+    opts.maxactions   = args.maxactions
+    opts.maxdata      = human_to_bytes(args.maxdata)
+    opts.maxtime      = human_to_time(args.maxtime)
+    opts.breakonerror = args.break_on_error
+    opts.dbpath       = calculate_dbpath(args.db)
+    opts.diff_fields  = args.diff_fields.split(',')
+
+    if not args.dir:
+        if INSTRUCTIONS[args.inst].needs_dirs:
+            print_help()
+            parser.exit(status=ERROR_ARG)
+        else:
+            args.dir = [os.path.dirname(opts.dbpath)]
+
+    func         = INSTRUCTIONS[args.inst].fun
+    fnfilter     = fnfilter_fun(args.fnfilter,args.negate_fnfilter)
+    fifilter     = restrict_fun(args.restrict)
+    directories  = process_directories(args.dir)
+    load_db      = INSTRUCTIONS[args.inst].load_db
+
+    check_db(opts.dbpath)
+
+    rv = SUCCESS
+    try:
+        for directory in directories:
+            db       = {}
+            dbremove = []
+            db_mtime = mtime(opts.dbpath)
+            if load_db:
+                db = read_db(opts.dbpath)
+
+            opts.filter = FileFilter(basepath=directory,
+                                     fnfilter=fnfilter,
+                                     fifilter=fifilter)
+            try:
+                rv = rv | func(opts,directory,db,dbremove)
+            except (KeyboardInterrupt,SystemExit):
+                rv = rv | ERROR_INTERRUPTED
+
+            if (len(dbremove) or (db_mtime != mtime(opts.dbpath))):
+                write_db(opts.dbpath,dbremove)
+
+            if opts.breakonerror and rv:
+                break
+    except (KeyboardInterrupt,SystemExit):
+        rv = rv | ERROR_INTERRUPTED
+    except IOError as e:
+        if e.errno != errno.EPIPE:
+            raise
+    except Exception as e:
+        raise
+
+    sys.exit(rv)
+
+
+if __name__ == '__main__':
+    main()

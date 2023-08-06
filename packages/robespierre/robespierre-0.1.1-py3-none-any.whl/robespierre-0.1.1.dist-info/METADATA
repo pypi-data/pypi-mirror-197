@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: robespierre
+Version: 0.1.1
+Summary: Wrapper for scorch to send report as email
+Home-page: https://gitlab.com/daufinsyd/robespierre
+Author: Sydney Gems
+Author-email: sydney@gems.technology
+Project-URL: Bug Tracker, https://gitlab.com/daufinsyd/robespierre/-/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: System
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: coloredlogs
+Requires-Dist: click
+Requires-Dist: tomli
+
+# Robespierre
+[Robespierre](https://gitlab.com/daufinsyd/robespierre) is a wrapper for [scorch](https://github.com/trapexit/scorch) to automate tests and send report per email.
+
+## Installation
+Simply install it from pip
+```
+pip3 install robespierre
+```
+
+## Usage
+Copy the config.toml.example to config.toml and change the values according to your need.
+
+Email section is mandatory if you wish to send reports per email.
+
+```
+robespierre --debug run --config path/to/config.toml --show-out
+```
+
+## Copyright
+This program is distributed under the AGPL Licence. See LICENCE file.
+Developer: Sydney Gems
+
+All credits for scorch itself goes to [tapexit](https://github.com/trapexit) and contributors.
