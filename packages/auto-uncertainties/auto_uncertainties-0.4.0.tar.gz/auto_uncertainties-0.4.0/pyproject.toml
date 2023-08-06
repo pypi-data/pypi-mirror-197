@@ -1,0 +1,80 @@
+[project]
+name = "auto_uncertainties"
+authors = [
+    {name = "Varchas Gopalaswamy", email = "vgop@lle.rochester.edu"},
+]
+description = "Linear Uncertainty Propagation with Auto-Differentiation"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "h5py >= 1.23.0",
+    "jax >= 0.3.14",
+    "jaxlib >= 0.3.14",
+    "scipy >= 1.8.1",
+    "pint >= 0.20",
+    "pandas >= 1.5.1",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+CI = ["pytest", "pytest-cov","hypothesis","pylint"]
+
+[build-system]
+requires = ["setuptools >= 67.0.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "auto_uncertainties/_version.py"
+
+
+[tool.black]
+line-length = 79
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+
+[tool.isort]
+profile = "black"
+line_length = 79
+force_alphabetical_sort_within_sections = true
+add_imports = ["from __future__ import annotations"]
+
+[tool.pylint]
+#Enforced by black
+max-line-length = 1000
+
+disable = """
+line-too-long,
+missing-module-docstring,
+missing-function-docstring,
+broad-exception-caught,
+too-many-branches,
+invalid-name,
+protected-access,
+import-outside-toplevel,
+wrong-import-position,
+missing-class-docstring,
+too-many-locals,
+redefined-builtin,
+too-few-public-methods,
+global-statement,
+no-member,
+no-else-return
+"""
+ignore = "tests"

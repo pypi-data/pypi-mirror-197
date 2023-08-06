@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: auto_uncertainties
+Version: 0.4.0
+Summary: Linear Uncertainty Propagation with Auto-Differentiation
+Author-email: Varchas Gopalaswamy <vgop@lle.rochester.edu>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: CI
+License-File: LICENSE.txt
