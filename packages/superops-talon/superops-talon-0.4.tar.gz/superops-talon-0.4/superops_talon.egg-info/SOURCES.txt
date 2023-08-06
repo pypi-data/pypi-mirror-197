@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+superops_talon.egg-info/PKG-INFO
+superops_talon.egg-info/SOURCES.txt
+superops_talon.egg-info/dependency_links.txt
+superops_talon.egg-info/not-zip-safe
+superops_talon.egg-info/requires.txt
+superops_talon.egg-info/top_level.txt
+talon/__init__.py
+talon/constants.py
+talon/html_quotations.py
+talon/quotations.py
+talon/utils.py

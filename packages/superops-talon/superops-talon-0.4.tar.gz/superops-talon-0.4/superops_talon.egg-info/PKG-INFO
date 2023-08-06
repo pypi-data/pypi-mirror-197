@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: superops-talon
+Version: 0.4
+Summary: Mailgun library to extract message quotations and signatures (talon-1.6.0)
+Home-page: https://pypi.org/project/superops-talon/
+Author: Superops
+Author-email: app.integrations@superops.ai
+License: APACHE2
+License-File: LICENSE
+
+# Change Log
+All notable changes to this version update of this project will be documented in this file.
+
+### Added
+- Added new html xPaths expressions on filtering reply messages. 
