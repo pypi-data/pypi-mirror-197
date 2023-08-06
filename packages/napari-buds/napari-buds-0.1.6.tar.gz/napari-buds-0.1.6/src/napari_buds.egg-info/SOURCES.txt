@@ -1,0 +1,26 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+src/napari_buds/__init__.py
+src/napari_buds/_reader.py
+src/napari_buds/_sample_data.py
+src/napari_buds/_segmentation_functions copy.py
+src/napari_buds/_segmentation_functions.py
+src/napari_buds/_testing_working.py
+src/napari_buds/_translate.py
+src/napari_buds/_widget.py
+src/napari_buds/_widget_overview.py
+src/napari_buds/_widgets.py
+src/napari_buds/_writer.py
+src/napari_buds/napari.yaml
+src/napari_buds/open_images.py
+src/napari_buds.egg-info/PKG-INFO
+src/napari_buds.egg-info/SOURCES.txt
+src/napari_buds.egg-info/dependency_links.txt
+src/napari_buds.egg-info/entry_points.txt
+src/napari_buds.egg-info/requires.txt
+src/napari_buds.egg-info/top_level.txt
+src/napari_buds/_tests/__init__.py
+src/napari_buds/_tests/test_widgets.py
