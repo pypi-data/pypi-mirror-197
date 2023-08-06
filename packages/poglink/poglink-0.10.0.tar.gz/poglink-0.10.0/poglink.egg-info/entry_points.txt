@@ -1,0 +1,2 @@
+[console_scripts]
+poglink = poglink.main:cli
