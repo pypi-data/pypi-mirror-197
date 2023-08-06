@@ -1,0 +1,12 @@
+libzet/Attributes.py,sha256=_NFOniu-6zhNRLmDnXuTWnpWaSkd7RLEyyy7y-UcJ4U,2066
+libzet/NoCompare.py,sha256=GlVlOzB0_C6UluVJCFKRTFxxoW2aIjI0bdiWXbKpzO8,447
+libzet/Zettel.py,sha256=YkRo3xSkcqcBmAD8OXY4c3AqVNx24xU6_tqpfWu_piE,13438
+libzet/__init__.py,sha256=VYUxkC7iikKDWLJ8zpSXdm1PghLphrT3rKGxHh0WVaE,509
+libzet/editing.py,sha256=FzEZSk5YQ6ryTlymOEEuAkQ88k-9T6mdOGPPP1MmKSc,9534
+libzet/parsing.py,sha256=7h04B0zZICQIv1ctO82L78CZcFCKUmZu-aJvjW0k19I,2942
+libzet/util/edit.py,sha256=mIRLLYGrwcChlcTKWYzgHe6zE4hyoABG71Dm68q9v_M,1476
+libzet-2.1.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+libzet-2.1.1.dist-info/METADATA,sha256=-3wZRgUPRIplZSvQGv_-x9CakjPxcHhXiS5xPTCMB-Y,9408
+libzet-2.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+libzet-2.1.1.dist-info/top_level.txt,sha256=TrPuZMjlUYsgP_cRp1s37M_r9KUJAqT-o1v2-ylTS8w,7
+libzet-2.1.1.dist-info/RECORD,,
