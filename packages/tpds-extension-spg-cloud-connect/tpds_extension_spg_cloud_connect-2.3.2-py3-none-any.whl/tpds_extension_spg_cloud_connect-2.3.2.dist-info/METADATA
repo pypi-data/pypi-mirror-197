@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: tpds-extension-spg-cloud-connect
+Version: 2.3.2
+Summary: Microchip(SPG) Trust Platform - Cloud Connection Usecases
+Home-page: https://www.microchip.com/TrustPlatform
+Author: Microchip Technology
+Author-email: SPG.Tools@microchip.com
+Classifier: License :: Other/Proprietary License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Requires-Dist: boto3[crt] ; extra == 'all'
+Requires-Dist: google-cloud-iot ; extra == 'all'
+Requires-Dist: google-cloud-pubsub ; extra == 'all'
+Requires-Dist: azure-cli ; extra == 'all'
+Requires-Dist: awscli ; extra == 'all'
+Provides-Extra: aws
+Requires-Dist: boto3[crt] ; extra == 'aws'
+Requires-Dist: awscli ; extra == 'aws'
+Provides-Extra: azure
+Requires-Dist: azure-cli ; extra == 'azure'
+Provides-Extra: gcp
+Requires-Dist: google-cloud-iot ; extra == 'gcp'
+Requires-Dist: google-cloud-pubsub ; extra == 'gcp'
+
+Cloud Connectivity Use cases for Trust Platform Design Suite
+===============================================================================
