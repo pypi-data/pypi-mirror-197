@@ -1,0 +1,3 @@
+[console_scripts]
+unipi-control = unipi_control.unipi_control:main
+unipi-model-info = unipi_control.model_info:main
