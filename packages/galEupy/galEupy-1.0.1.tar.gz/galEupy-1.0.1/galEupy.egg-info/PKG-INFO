@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: galEupy
+Version: 1.0.1
+Summary: Python module for gal
+Home-page: https://github.com/computational-genomics-lab/GAL
+Author: Arijit Panda, CGLAB
+Author-email: arijpanda@csiriicb.res.in
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+Python module for gal
