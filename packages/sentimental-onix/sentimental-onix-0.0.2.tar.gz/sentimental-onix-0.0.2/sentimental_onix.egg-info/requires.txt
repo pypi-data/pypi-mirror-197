@@ -1,0 +1,8 @@
+spacy>=3.0.3
+onnx>=1.13.1
+onnxruntime>=1.14.1
+numpy
+
+[dev]
+black>=23.1.0
+pytest

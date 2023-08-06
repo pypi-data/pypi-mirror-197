@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+sentimental_onix/__init__.py
+sentimental_onix/__main__.py
+sentimental_onix/pipeline.py
+sentimental_onix/util.py
+sentimental_onix.egg-info/PKG-INFO
+sentimental_onix.egg-info/SOURCES.txt
+sentimental_onix.egg-info/dependency_links.txt
+sentimental_onix.egg-info/requires.txt
+sentimental_onix.egg-info/top_level.txt
+sentimental_onix/inference/__init__.py
+sentimental_onix/inference/en/__init__.py
+tests/test_all.py
