@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "vezzo"
+version = "1.0.1"
+description = "A small library to verify that compatible versions of dependencies are installed before your tool can run properly."
+authors = ["Anders Goncalves da Silva <andersgs@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "vezzo", from = "src" }]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+semver = "^2.13.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pytest = "^7.2.1"
+isort = "^5.12.0"
+pylint = "^2.16.2"
+pyyaml = "^6.0"
+pytest-assume = "^2.4.3"
+build = "^0.10.0"
+twine = "^4.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = ["--import-mode=importlib"]
+pythonpath = "src"
+
+[tool.black]
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+    | \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | tests/data
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[tool.pylint.message]
+disable = ["E1101", "R0912", "R0913", "R0914", "R0915", "C0301", "E1121"]
