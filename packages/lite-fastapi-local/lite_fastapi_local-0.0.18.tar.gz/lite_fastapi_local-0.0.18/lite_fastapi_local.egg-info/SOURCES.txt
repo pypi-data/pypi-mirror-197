@@ -1,0 +1,8 @@
+LICENSE
+pyproject.toml
+setup.py
+lite_fastapi_local.egg-info/PKG-INFO
+lite_fastapi_local.egg-info/SOURCES.txt
+lite_fastapi_local.egg-info/dependency_links.txt
+lite_fastapi_local.egg-info/requires.txt
+lite_fastapi_local.egg-info/top_level.txt
