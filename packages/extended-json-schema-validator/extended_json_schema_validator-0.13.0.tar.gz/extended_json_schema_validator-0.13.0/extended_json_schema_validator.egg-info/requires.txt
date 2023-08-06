@@ -1,0 +1,6 @@
+ijson
+jsonschema[format-nongpl]>=3.0.0
+jsonpath_ng
+uritools
+pyyaml
+pyxdg
