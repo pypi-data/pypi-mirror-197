@@ -1,0 +1,31 @@
+# pyproject.toml
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "token_information"
+version = "1.0.0"
+description = "token_information is a Python Package created for scraping discord account data with the use of an account token."
+readme = "README.md"
+authors = [{ name = "spy404", email = "spy404.work@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["spy404", "discord", "token_information"]
+dependencies = [
+    "requests",
+    "pystyle",
+]
+requires-python = ">=3.9"
+
+
+[project.urls]
+Homepage = "https://github.com/spy404/token_information-package"
+
+[project.scripts]
+token_information = "token_information.__init__"

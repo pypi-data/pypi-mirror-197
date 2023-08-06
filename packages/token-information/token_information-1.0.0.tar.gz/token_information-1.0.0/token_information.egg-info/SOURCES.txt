@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+token_information/__init__.py
+token_information.egg-info/PKG-INFO
+token_information.egg-info/SOURCES.txt
+token_information.egg-info/dependency_links.txt
+token_information.egg-info/entry_points.txt
+token_information.egg-info/requires.txt
+token_information.egg-info/top_level.txt
