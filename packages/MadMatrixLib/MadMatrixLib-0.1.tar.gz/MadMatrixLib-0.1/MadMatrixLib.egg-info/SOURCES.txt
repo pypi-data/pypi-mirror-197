@@ -1,0 +1,7 @@
+setup.py
+MadMatrixLib/__init__.py
+MadMatrixLib/mml.py
+MadMatrixLib.egg-info/PKG-INFO
+MadMatrixLib.egg-info/SOURCES.txt
+MadMatrixLib.egg-info/dependency_links.txt
+MadMatrixLib.egg-info/top_level.txt
