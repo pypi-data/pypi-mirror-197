@@ -1,0 +1,10 @@
+{
+    "ws_url":{
+        "domain": "ws",
+        "host": "localhost",
+        "port": 9020
+    },
+    "constants": {
+        "node_name": "ros2bridge"
+    }
+}
