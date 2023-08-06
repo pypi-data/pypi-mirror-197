@@ -1,0 +1,9 @@
+jamorasep/__init__.py,sha256=sA_J86zsgebs9sk8w-bkKuFTOobWq1kY_4x0E7AltFE,380
+jamorasep/kana_util.py,sha256=kFOT0dArlApmkT0INLi1AoKj8kYiUY0aa8NC68pfoxA,2272
+jamorasep/main.py,sha256=Bho9JVI4eqqPHwlwyKLckylTZuZsJ8Ayr96_CsJkuGE,8576
+jamorasep/resource/kanamap.csv,sha256=oEzL0wyDTMgCJfugXjI9O69zMUMA8f3QFk9W7BG7r70,4710
+jamorasep-0.0.1.dist-info/LICENSE,sha256=aGjUNoYSjE4Sduz6h1iEZE1SuhcvSHQE8810dh_p4bk,1075
+jamorasep-0.0.1.dist-info/METADATA,sha256=zzW8j-B2BGdlDU-bHXMyKVmE26-_Aqu9zj3DELj-wZA,2006
+jamorasep-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+jamorasep-0.0.1.dist-info/top_level.txt,sha256=L2JbE10991Se2S1vPkJADbieg78Am1PUT0rPXMm6oao,10
+jamorasep-0.0.1.dist-info/RECORD,,
