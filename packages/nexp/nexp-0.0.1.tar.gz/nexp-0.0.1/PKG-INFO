@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nexp
+Version: 0.0.1
+Summary: Research library to try out deep learning ideas easily.
+Author-email: Vivien Cabannes <vivien.cabannes@gmail.com>
+Project-URL: Homepage, https://github.com:VivienCabannes/nexp
+Project-URL: Bug Tracker, https://github.com/VivienCabannes/nexp/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+# Neural Networks Experiments
+
+This repository aims at providing simple functions to easily try out new ideas related to deep learning.
+
+## Installation
+`Nexp` is based on pytorch with GPU support. Pytorch should be installed first.
+See [`requirements.txt`](requirements.txt) for a full list of dependent packages.
+
+TODO: Installation through pip, should be put in pypi at the end.
+
+## Quickstart
+TODO
