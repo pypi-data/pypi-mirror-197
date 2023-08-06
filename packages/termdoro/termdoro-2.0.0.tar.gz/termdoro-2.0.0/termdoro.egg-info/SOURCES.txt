@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+termdoro/main.py
+termdoro/termdoro.mp3
+termdoro/termdoro.png
+termdoro.egg-info/PKG-INFO
+termdoro.egg-info/SOURCES.txt
+termdoro.egg-info/dependency_links.txt
+termdoro.egg-info/entry_points.txt
+termdoro.egg-info/requires.txt
+termdoro.egg-info/top_level.txt

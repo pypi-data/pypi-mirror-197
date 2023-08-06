@@ -1,0 +1,2 @@
+[console_scripts]
+termdoro = termdoro.main:main
