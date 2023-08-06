@@ -1,0 +1,9 @@
+fusionauth_client-1.44.0-py3.8-nspkg.pth,sha256=zl6T4ONHtfulCPQWkw8Efo3OO49LEyahJuJWzID7Zr0,559
+fusionauth/fusionauth_client.py,sha256=wrLqacLvVEOJm3CDWwGKTrXuCUGoCZgw2Obazv6ui3A,170008
+fusionauth/rest_client.py,sha256=nMBi_44EWjwLT0BlU7KIEnLC6nLr8z0yPLmxWfRTYkQ,6246
+fusionauth_client-1.44.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fusionauth_client-1.44.0.dist-info/METADATA,sha256=ciUDTl_eXNXxcrsgqFbUhJ38AG4es--caRu9qFS6PoU,2542
+fusionauth_client-1.44.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+fusionauth_client-1.44.0.dist-info/namespace_packages.txt,sha256=qg1XWFDuNBpUXP_5d-03_bV2lhgaByuSvchD7bzAS-k,11
+fusionauth_client-1.44.0.dist-info/top_level.txt,sha256=qg1XWFDuNBpUXP_5d-03_bV2lhgaByuSvchD7bzAS-k,11
+fusionauth_client-1.44.0.dist-info/RECORD,,
