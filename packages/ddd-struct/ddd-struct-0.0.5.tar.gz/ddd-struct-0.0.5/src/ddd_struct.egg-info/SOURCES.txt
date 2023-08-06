@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+src/ddd_struct/__init__.py
+src/ddd_struct/version.py
+src/ddd_struct.egg-info/PKG-INFO
+src/ddd_struct.egg-info/SOURCES.txt
+src/ddd_struct.egg-info/dependency_links.txt
+src/ddd_struct.egg-info/top_level.txt
+src/ddd_struct/application/__init__.py
+src/ddd_struct/application/action.py
