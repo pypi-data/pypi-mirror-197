@@ -1,0 +1,14 @@
+acid/__init__.py,sha256=e8K02w7XK_N_6bqzyvLjnKJH1U_W1jZ1BXz_21_HcuE,125
+acid/app.py,sha256=WJd411BhfM2fhFidk6G2rzfokm47P50TTScFsWcwS0g,859
+acid/board.py,sha256=zZ0B3G5dXDZixAsxkY02aVlS_gdxJqu9qlBIABdGICQ,19967
+acid/conf.py,sha256=uF5bFsl_OMC6dNd_O0tYuecFkr-sPh3THM3s2fzim0M,654
+acid/decorators.py,sha256=qy6EM5KdT_ZmL77lLZANtcjyoDMoXwdWQmNwA1IjhtQ,214
+acid/engines.py,sha256=DCkiavfPbKr9QW3geBMahHJmKp8r4eMxKGx3x7xks1U,3735
+acid/game.py,sha256=UCnuNMhVGXvth8tgpaNrkSHIj1xuipiEBth3_khweHA,4110
+acid/geometry.py,sha256=d1mEWnlIQpEV4EcE8pN8Fk-fQSFEHg4WN3jhc4cppOY,2629
+acid_chess-0.1.0rc1.dist-info/LICENSE,sha256=13T5drT3hJn5Svdc3N_S-LpFS4iHy0qs7nqK1hYboFM,1074
+acid_chess-0.1.0rc1.dist-info/METADATA,sha256=opiGNaYYaGANUQpl5WD043w0BHJT2_VbSvy5-3VVhwQ,4434
+acid_chess-0.1.0rc1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+acid_chess-0.1.0rc1.dist-info/entry_points.txt,sha256=Ukv_t61KdaNCEjtuxAxVg0GPz9jBH97OyViB-D5XAZw,48
+acid_chess-0.1.0rc1.dist-info/top_level.txt,sha256=qcc3coBgKxb1j00tJCREDt_-q562f3Doj3-sGB4t9yA,5
+acid_chess-0.1.0rc1.dist-info/RECORD,,
