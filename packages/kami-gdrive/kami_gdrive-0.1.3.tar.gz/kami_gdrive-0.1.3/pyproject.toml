@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "kami-gdrive"
+version = "0.1.3"
+description = "Settings to Upload files to google drive"
+authors = ["Maicon de Menezes <maicondmenezes@gmail.com>"]
+readme = "README.md"
+packages = [{include = "kami_gdrive"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+kami-logging = "^0.2.0"
+google-api-core = "^2.11.0"
+google-api-python-client = "^2.50.0"
+google-auth-httplib2 = "^0.1.0"
+google-auth-oauthlib = "^0.5.2"
+google-auth = "^2.7.0"
+googleapis-common-protos = "^1.56.2"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+blue = "^0.9.1"
+isort = "^5.12.0"
+ipython = "^8.11.0"
+taskipy = "^1.10.3"
+pytest-sugar = "^0.9.6"
+
+
+[tool.poetry.group.doc.dependencies]
+mkdocs-material = "^9.1.2"
+mkdocstrings = "^0.20.0"
+mkdocstrings-python = "^0.8.3"
+mkdocs = "^1.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.taskipy.tasks]
+lint-review = "blue --check --diff . && isort --check --diff ."
+lint-fix = "blue . && isort ."
+pre_test = "task lint-review"
+test = "pytest -s -x --cov=kami_logging -vv"
+post_test = "coverage html"
+docs = "mkdocs serve"
