@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: kedro-light
+Version: 2023.3.13
+Summary: A lightweight interface to Kedro and Kedro-Viz
+Author-email: Elliott Wise <ell.wise@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2021 ellwise
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: source, https://github.com/ellwise/kedro-light
+Project-URL: docs, https://ellwise.github.io/kedro-light
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: kedro
+Requires-Dist: kedro-viz
+Provides-Extra: api
+Requires-Dist: kedro[api] ; extra == 'api'
+Provides-Extra: biosequence
+Requires-Dist: kedro[biosequence] ; extra == 'biosequence'
+Provides-Extra: dask
+Requires-Dist: kedro[dask] ; extra == 'dask'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mkdocs-material ; extra == 'dev'
+Requires-Dist: pip-tools ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: kedro[docs] ; extra == 'docs'
+Provides-Extra: geopandas
+Requires-Dist: kedro[geopandas] ; extra == 'geopandas'
+Provides-Extra: holoviews
+Requires-Dist: kedro[holoviews] ; extra == 'holoviews'
+Provides-Extra: matplotlib
+Requires-Dist: kedro[matplotlib] ; extra == 'matplotlib'
+Provides-Extra: networkx
+Requires-Dist: kedro[networkx] ; extra == 'networkx'
+Provides-Extra: pandas
+Requires-Dist: kedro[pandas] ; extra == 'pandas'
+Provides-Extra: pillow
+Requires-Dist: kedro[pillow] ; extra == 'pillow'
+Provides-Extra: plotly
+Requires-Dist: kedro[plotly] ; extra == 'plotly'
+Provides-Extra: redis
+Requires-Dist: kedro[redis] ; extra == 'redis'
+Provides-Extra: spark
+Requires-Dist: kedro[spark] ; extra == 'spark'
+Provides-Extra: tensorflow
+Requires-Dist: kedro[tensorflow] ; extra == 'tensorflow'
+Provides-Extra: yaml
+Requires-Dist: kedro[yaml] ; extra == 'yaml'
+
+**Kedro Light provides a minimal interface to [Kedro](https://github.com/kedro-org/kedro) and [Kedro-Viz](https://github.com/kedro-org/kedro-viz).**
+To read more about it, check out the documentation [here](https://ellwise.github.io/kedro-light/).
+
