@@ -1,0 +1,9 @@
+README.md
+setup.py
+test/test.py
+xaomi/__init__.py
+xaomi.egg-info/PKG-INFO
+xaomi.egg-info/SOURCES.txt
+xaomi.egg-info/dependency_links.txt
+xaomi.egg-info/requires.txt
+xaomi.egg-info/top_level.txt
