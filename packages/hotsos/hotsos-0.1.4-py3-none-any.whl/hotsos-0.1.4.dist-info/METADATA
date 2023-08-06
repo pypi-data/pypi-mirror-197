@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hotsos
+Version: 0.1.4
+Summary: Software analysis toolkit. Define checks in high-level language and leverage library to perform analysis of common Cloud applications.
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: progress
+Requires-Dist: pyyaml
+Requires-Dist: simplejson
+Requires-Dist: jinja2
+Requires-Dist: cryptography
+Requires-Dist: searchkit
+Requires-Dist: propertree
+Requires-Dist: fasteners
+Requires-Dist: importlib-metadata ; python_version >= "3.8"
+
