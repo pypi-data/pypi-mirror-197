@@ -1,0 +1,3 @@
+include LICENSE
+include tap_iterable/schemas/*.json
+include tap_iterable/streams/*.py

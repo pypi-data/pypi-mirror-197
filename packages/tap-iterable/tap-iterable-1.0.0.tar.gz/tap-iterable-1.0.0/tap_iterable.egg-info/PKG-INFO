@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: tap-iterable
+Version: 1.0.0
+Summary: Singer.io tap for extracting Iterable data
+Home-page: http://github.com/singer-io/tap-iterable
+Author: Stitch
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: dev
+License-File: LICENSE
