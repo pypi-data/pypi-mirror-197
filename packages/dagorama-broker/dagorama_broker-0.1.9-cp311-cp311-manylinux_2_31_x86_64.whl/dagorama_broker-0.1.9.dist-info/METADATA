@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dagorama-broker
+Version: 0.1.9
+Summary: 
+Author: Pierce Freeman
+Author-email: pierce@freeman.vc
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+
+# dagorama-broker
+
+Python broker package. Small interface wrapper on top of the golang code.
+
+```
+```
+
