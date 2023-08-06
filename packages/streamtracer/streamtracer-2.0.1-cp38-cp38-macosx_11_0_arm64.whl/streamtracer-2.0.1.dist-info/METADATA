@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: streamtracer
+Version: 2.0.1
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy>=1.14.5
+Requires-Dist: jupyter-sphinx; extra == 'docs'
+Requires-Dist: numpydoc; extra == 'docs'
+Requires-Dist: pydata-sphinx-theme; extra == 'docs'
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-automodapi; extra == 'docs'
+Requires-Dist: sphinx_rtd_theme; extra == 'docs'
+Requires-Dist: pytest; extra == 'tests'
+Requires-Dist: pytest-cov; extra == 'tests'
+Provides-Extra: docs
+Provides-Extra: tests
+License-File: LICENSE
+Summary: Python wrapped fortran to calculate streamlines
+Author: Lars Mejnertsen
+Author-email: David Stansby <dstansby@gmail.com>
+License: GPL v3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://github.com/dstansby/streamtracer
+Project-URL: documentation, https://streamtracer.readthedocs.io/en/stable/
+Project-URL: homepage, https://streamtracer.readthedocs.io/en/stable/
+
+# streamtracer
+
+Fast streamline tracing in python
+
+[![Documentation Status](https://readthedocs.org/projects/streamtracer/badge/?version=latest)](https://streamtracer.readthedocs.io/en/latest/?badge=latest)
+[![Build Status](https://dev.azure.com/dstansby/streamtracer/_apis/build/status/dstansby.streamtracer?branchName=master)](https://dev.azure.com/dstansby/dstansby/_build/latest?definitionId=1&branchName=master)
+[![codecov](https://codecov.io/gh/dstansby/streamtracer/branch/master/graph/badge.svg)](https://codecov.io/gh/dstansby/streamtracer)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/dstansby/streamtracer/main.svg)](https://results.pre-commit.ci/latest/github/dstansby/streamtracer/main)
+
+## Documentation
+
+For full documentation, including installation instructions, see
+https://streamtracer.readthedocs.io/en/latest/
+
