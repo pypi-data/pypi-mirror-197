@@ -1,0 +1,8 @@
+mysql-connector
+PyMySQL
+SQLAlchemy==1.4.46
+pandas
+python-dateutil
+pygsheets
+tqdm
+numpy
