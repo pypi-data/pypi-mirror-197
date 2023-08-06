@@ -1,0 +1,2 @@
+[console_scripts]
+something = django_app_tree.__main__:main

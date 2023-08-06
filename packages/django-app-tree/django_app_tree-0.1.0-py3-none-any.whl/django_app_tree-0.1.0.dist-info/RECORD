@@ -1,0 +1,12 @@
+django_app_tree/__init__.py,sha256=a5k-LeLZD7VLv1IO70NTEtoMKRKq-n7-JFnfWv-DIxY,385
+django_app_tree/__main__.py,sha256=MIfo5wAudoZ03oNjecNbd6FdXHxr9OmZhP756Oufnms,454
+django_app_tree/something.py,sha256=Kx9vhP3_Q16TX0Ao-a-MKbWxcrQLEZnC-N9mk_tsz_Q,268
+django_app_tree/management/commands/dependency_tree.py,sha256=H8VKfBd-nIi8kch2bVwku1Mtd1hVZCuo0qaNtdU_9fs,11922
+django_app_tree/management/commands/pip_for_apps.py,sha256=l2oxfcvosbV6EJht4Rcf_PRK_SR-s_7r8uzTeSq0DXI,3960
+django_app_tree/management/commands/template_graph.py,sha256=20kqp6mjLWDYzh5e4WzIhSUC8ZzpuUuGlIioNPaMPvw,6603
+django_app_tree-0.1.0.dist-info/LICENSE.md,sha256=c9BXfXIBQf9prB3JI-NSTQXEBSDf8GWRVLv0tVlraH4,11341
+django_app_tree-0.1.0.dist-info/METADATA,sha256=VrJkE2oGThN3tD8ATPYeDeMorW_KvWkRMnGTg5esKIg,16177
+django_app_tree-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+django_app_tree-0.1.0.dist-info/entry_points.txt,sha256=1N1mQWZMEZgNrAgCi7OH7b4IsDWXxCn1PY68-N7t5xU,60
+django_app_tree-0.1.0.dist-info/top_level.txt,sha256=n7ZFWfGGCjsrtw_7WUYnLR2jTHRXZkAVVD9Au7tcdng,16
+django_app_tree-0.1.0.dist-info/RECORD,,
