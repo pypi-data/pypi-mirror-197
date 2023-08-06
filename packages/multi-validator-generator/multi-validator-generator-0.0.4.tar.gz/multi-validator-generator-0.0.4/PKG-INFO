@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: multi-validator-generator
+Version: 0.0.4
+Summary: Um pacote para validar diverso tipos de dados e documentos
+Home-page: https://github.com/JoaoVitorMoreiraPassos/Multi_validator
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+# multivalidator
+
+Um validador e gerador para os seguintes parâmetros:
+
+- Bank Card
+- CNPJ
+- CPF
+- Date
+- Email
+- FoneNumber
+- PassPort
+- PassWord
+- Url
+
+
+## Exemplos
+
+1. Importanto biblioteca
+```python
+  import cpf
+  import cnpj
+  import date
+  import emails
+  import fone_number
+  import passport
+  import password
+  import url
+  import bank_card
+  import fake_data
+```
+**read**
+```python
+  # read: Retorna um objeto iterável que contém o parâmetro escolhido
+  # Exemplo:
+  cpf = cpf.read("529.982.247-25")
+  cnpj = cnpj.read("92.639.324/0001-92")
+  date = date.read("08-04-2021")
+  email = emails.read("teste@gmail.com")
+  fone = fone_number.read("11999999999")
+  passport = passport.read("AB1234567")
+  password = password.read("123456789")
+  url = url.read("https://www.google.com")
+  bank_card = bank_card.CreditCard()
+  fake_data = fake_data.read(10)
+```
+**generate**
+```python
+  # Gera um cpf válido e adiciona-o no objeto iterável
+  cpf.generate()
+  # Saida: ['529.982.247-25', '262.848.575-35']
+  # Aviso: Alguns geradores necessitam de parâmetros na sua chamada(Consulte a documentação)
+```
+
+**validate**
+```python
+  # Retorna uma tupla com um valor booleano indicando se é valido, e o cpf formatado
+  cpf.validate('529.982.247-25')
+  #Saída: (True, '529.982.247-25')
+```
+
+**add**
+```python
+  # Adiciona um cpf no objeto iterável existente.
+  cpf.add('529.982.247-25')
+  #Saída: ['529.982.247-25', '262.848.575-35', '171.414.230-28']
+```
