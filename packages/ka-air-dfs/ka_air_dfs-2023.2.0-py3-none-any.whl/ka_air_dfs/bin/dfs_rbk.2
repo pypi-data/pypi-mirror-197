@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/site-packages/ka_air_dfs/dfs/__main__.py", line 18, in <module>
+    main()
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/site-packages/ka_air_dfs/dfs/__main__.py", line 14, in main
+    DagsFactory.do(sys.argv, sh_parms=Parms.sh)
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/site-packages/ka_air_dfs/dfs/dfs.py", line 400, in do
+    Com.init(**d_eq)
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/site-packages/ka_utg/com.py", line 224, in init
+    cls.cfg = cls.Cfg.init(pacmod_curr)
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/site-packages/ka_utg/com.py", line 202, in init
+    path_ = Pacmod.Cfg.sh_path(pacmod)
+  File "/opt/airflow/dev1/latest/python/lib/python3.10/site-packages/ka_utg/pacmod.py", line 40, in sh_path
+    module = pacmod['module']
+KeyError: 'module'
