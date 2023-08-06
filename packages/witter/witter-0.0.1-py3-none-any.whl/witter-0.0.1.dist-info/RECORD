@@ -1,0 +1,6 @@
+witter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+witter/__main__.py,sha256=BygNtlO9FkapkijB3n71Zn10BmFWh6oSzDGJ_SMWFBw,2342
+witter/chain_generator.py,sha256=8RpSkn2S_Sm1We-CZxNH_0SkBb529r8MV-h4ZUk1tIQ,3581
+witter-0.0.1.dist-info/METADATA,sha256=0vhkKC78PW3c37A5yDIu5mR5APHoMdzQ7zpScBmBNqw,1969
+witter-0.0.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+witter-0.0.1.dist-info/RECORD,,
