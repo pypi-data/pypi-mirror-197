@@ -1,0 +1,14 @@
+mygaiadb/__init__.py,sha256=I3EI5fFJilPoRSOiyqZZiQZFnw-Oh16Le2e_BYuyNxI,1164
+mygaiadb/utils.py,sha256=XBr3JDf65_popIefq-1Bqd8pgOYc8unSLHOC2GlDj-Y,1097
+mygaiadb/data/__init__.py,sha256=QSb7LrwmaDOA-upyPhDeI5X2lyBMcmgV4CgFA9obQPc,1962
+mygaiadb/data/compile.py,sha256=aT00O-x3ZcpY3Phjzudlz0ewnrz-iZnhktMZroxOKNM,33626
+mygaiadb/data/download.py,sha256=H0ZERe2rrmGlIh2Pl-IvEnvn3wdCQNPbU-3ZlU2Nyl4,15765
+mygaiadb/query/__init__.py,sha256=P7cuFr1mMat6FpGNTJB-rhhTR_z818TOv1psTF5Ty48,102
+mygaiadb/query/callbacks.py,sha256=uKwQPoY5xhYb4CJ4ZiviM3GCTPLk_4OMFsDbluxr3Ds,4802
+mygaiadb/query/query.py,sha256=cQ3m7q0JVULeSPvc_KRkr2xiwCgriFCYjWeGMMluQEg,12773
+mygaiadb/spec/__init__.py,sha256=Qg1TxFTHyzo43JcPorfhcgRJ5J7HDLnxUxb2SBFrmM4,2024
+MyGaiaDB-0.1.dist-info/LICENSE,sha256=b__Ye-p-3ZRh1AfuMpSFkTpc7QG1WEPlIsU-9pi2_DI,1050
+MyGaiaDB-0.1.dist-info/METADATA,sha256=yGyTijLviKj8oazlewT_WgSRbGIAJaON31y4iQ_lOSI,18851
+MyGaiaDB-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+MyGaiaDB-0.1.dist-info/top_level.txt,sha256=ZFMSKFTiZr_IYEP7P-E7wk8RTntaDAmcNi1GKhadJhM,9
+MyGaiaDB-0.1.dist-info/RECORD,,
