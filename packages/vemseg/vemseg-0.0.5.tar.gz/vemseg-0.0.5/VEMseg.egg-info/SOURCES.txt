@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+VEMseg.egg-info/PKG-INFO
+VEMseg.egg-info/SOURCES.txt
+VEMseg.egg-info/dependency_links.txt
+VEMseg.egg-info/requires.txt
+VEMseg.egg-info/top_level.txt
+vemseg/__init__.py
+vemseg/_utils.py
+vemseg/_vem_classifier.py
+vemseg.egg-info/PKG-INFO
+vemseg.egg-info/SOURCES.txt
+vemseg.egg-info/dependency_links.txt
+vemseg.egg-info/requires.txt
+vemseg.egg-info/top_level.txt

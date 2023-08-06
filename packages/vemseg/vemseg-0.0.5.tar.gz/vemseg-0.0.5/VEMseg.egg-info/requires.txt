@@ -1,0 +1,8 @@
+numpy
+apoc
+scipy
+scikit-image
+scikit-learn
+matplotlib
+xgboost
+setuptools
