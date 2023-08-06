@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+pyproject.toml
+muffin_peewee/__init__.py
+muffin_peewee/fields.py
+muffin_peewee/py.typed
+muffin_peewee/types.py
+muffin_peewee_aio.egg-info/PKG-INFO
+muffin_peewee_aio.egg-info/SOURCES.txt
+muffin_peewee_aio.egg-info/dependency_links.txt
+muffin_peewee_aio.egg-info/requires.txt
+muffin_peewee_aio.egg-info/top_level.txt
+tests/test_base.py
+tests/test_fields.py
+tests/test_middleware.py
+tests/test_migrate.py
