@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/leuci_pol/__init__.py
+src/leuci_pol/interpolator.py
+src/leuci_pol/invariant.py
+src/leuci_pol.egg-info/PKG-INFO
+src/leuci_pol.egg-info/SOURCES.txt
+src/leuci_pol.egg-info/dependency_links.txt
+src/leuci_pol.egg-info/top_level.txt
