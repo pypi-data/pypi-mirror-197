@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+gptswe/__init__.py
+gptswe/gptswe.py
+gptswe.egg-info/PKG-INFO
+gptswe.egg-info/SOURCES.txt
+gptswe.egg-info/dependency_links.txt
+gptswe.egg-info/entry_points.txt
+gptswe.egg-info/requires.txt
+gptswe.egg-info/top_level.txt
