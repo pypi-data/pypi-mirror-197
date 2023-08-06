@@ -1,0 +1,4 @@
+airbyte_cdk
+connector_builder
+source_declarative_manifest
+unit_tests
