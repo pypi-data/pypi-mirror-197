@@ -1,0 +1,2 @@
+[console_scripts]
+gating = src.main:main
