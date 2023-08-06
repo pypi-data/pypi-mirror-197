@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: g3t
+Version: 0.1
+Summary: Gadget3 read routines & other scripts.
+Author-email: Kyle Oman <kyle.a.oman@durham.ac.uk>, Antonio Ragagnin <antonio.ragagnin@inaf.it>
+Project-URL: Homepage, https://github.com/kyleaoman/g3t
+Project-URL: Bug Tracker, https://github.com/kyleaoman/g3t/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# g3t
+Fork of Antonio Ragagnin's g3t repository (https://github.com/kyleaoman/g3t), turning it into an installable python package.
+
+**Installation:**
+From pypi:
+ - 'pip install g3t'
+
+From github:
+ - Download via web UI, or 'git clone https://github.com/kyleaoman/g3t.git'
+ - Install dependencies if necessary (see setup.py).
+ - Global install (Linux): 
+   - cd to directory with 'setup.py'
+   - run 'sudo pip install -e .' (-e installs via symlink, so pulling repository will do a 'live' update of the installation)
+ - User install (Linux):
+   - cd to directory with 'setup.py'
+   - ensure '~/lib/python3.7/site-packages' or similar is on your PYTHONPATH (e.g. 'echo $PYTHONPATH'), if not, add it (perhaps in .bash_profile or similar)
+   - run 'pip install --prefix ~ -e .' (-e installs via symlink, so pulling repository will do a 'live' update of the installation)
+ - cd to a directory outside the module and launch python; you should be able to do 'from g3t import *'
