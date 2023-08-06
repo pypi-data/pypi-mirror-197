@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+socianAuthPyTest.egg-info/PKG-INFO
+socianAuthPyTest.egg-info/SOURCES.txt
+socianAuthPyTest.egg-info/dependency_links.txt
+socianAuthPyTest.egg-info/requires.txt
+socianAuthPyTest.egg-info/top_level.txt
+src/__init__.py
+test/test.py
