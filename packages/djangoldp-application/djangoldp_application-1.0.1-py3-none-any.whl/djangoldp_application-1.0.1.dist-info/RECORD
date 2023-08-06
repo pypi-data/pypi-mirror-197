@@ -1,0 +1,11 @@
+djangoldp_application/__init__.py,sha256=dh0_cGjq2ucaFSUaEYXdxQeeW5Cx8VXGHe_8oCLingI,53
+djangoldp_application/admin.py,sha256=R_g5GCcYBKoAG1j4j9AfdJ_onjviofP00PxThxuk-m4,3956
+djangoldp_application/apps.py,sha256=6fireGwqOWyTrfweACU_ZPPj_tCNDqxqNp97Hhig5w0,116
+djangoldp_application/models.py,sha256=cdPh_qALdfAy_9IE3IJUP3ynHpXqLv23RLAP9F186pU,15047
+djangoldp_application/settings.py,sha256=8SO-DJy145lujTMsl8Ijqf6OMLY9vWelVRmdq_cnJcc,38
+djangoldp_application/migrations/0001_initial.py,sha256=jpOh0V07-kW2_X8atgac6RN9v0EsmihfuhFX9lFqn94,18447
+djangoldp_application/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_application-1.0.1.dist-info/METADATA,sha256=ajPywvy29pGcfIFoVCkcmZ-SywI9s_O2Ds5QJfzp3Ho,409
+djangoldp_application-1.0.1.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+djangoldp_application-1.0.1.dist-info/top_level.txt,sha256=Jql7PE9N2sUID_iVGoIoLhPPW_ifronA_M-b-9c_rB4,22
+djangoldp_application-1.0.1.dist-info/RECORD,,
