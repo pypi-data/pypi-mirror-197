@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: molab
+Version: 0.0.2
+Summary: molab is a python package for configuring Morpheus training lab environments.
+Home-page: https://gitlab.com/morpheus_training/molab
+Author: Sean Jabro
+Author-email: sean.jabro@outlook.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3
+Requires-Dist: requests
+Requires-Dist: requests-futures
+Requires-Dist: loguru
+
+# molab
+
+This module is for use in conjuction with the Terraform deployments of the Morpheus training labs.
+
+# Rebuild and install locally for testing
+```
+python3 seup.py sdist bdist_wheel
+python3 -m pip install ./
+```
+
+# Upload
+```
+python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+python3 -m twine upload --repository-url https://pypi.org/legacy/ dist/*
+```
