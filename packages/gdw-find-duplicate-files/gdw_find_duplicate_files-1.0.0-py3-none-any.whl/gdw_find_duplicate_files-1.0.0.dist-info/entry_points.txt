@@ -1,0 +1,2 @@
+[console_scripts]
+find-duplicate-files = find_duplicate_files:main
