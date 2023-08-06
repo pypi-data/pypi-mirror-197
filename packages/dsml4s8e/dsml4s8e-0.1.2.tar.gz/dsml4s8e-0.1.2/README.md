@@ -1,0 +1,122 @@
+
+# dsml4s8e
+**D**ata **S**cience / **ML** flow(**4**) **s**tandalon(**8**)**e**
+
+**dsml4s8e** is a python library that aims to:
+ 1. Simplify building of Dagster pipelines from **standalon** notebooks
+ 2. Standardize a structure of ML/DS pipeline projects to easy sharing
+ 3. Manage experiments data and artefacts in a continual improvement process.
+
+It makes possible following workflow:
+ 1. Define a project structure for your pipeline and a structure of the pipeline data catalog
+ 2. Develop **standalon** Jupyter notebooks with **clear interface**
+ 3. Loade the notebooks into dagit (build a **pipeline**) and deloy in vary environments(experimental/test/prod) and on vary infrastructure
+ 4. Configure and run the certaine version of pipeline many times in vary environments and on vary infrastructure 
+
+## Install local dev container
+```bash
+#Create a work directory to clone a git repository. The work directory will be mounted to the container.   
+mkdir work
+#Step into the work directory
+cd work
+#Clone repository 
+git clone https://github.com/dsml4/dsml4s8e.git
+# Step into a derictory with a Dockerfile
+cd dsml4s8e/images/dev
+# Build a image.  
+docker build -t dsml4s8e .
+# Go back into the work directory to a correct using pwd command inside the next docker run instruction.
+cd ../../../
+# Create and run a container staying in the work directory.
+docker run --rm --name my_dag -p 3000:3000 -p 8888:8888 -v $(pwd):/home/jovyan/work -e DAGSTER_HOME=/home/jovyan/work/daghome dsml4s8e bash work/dsml4s8e/setup_pipeline.sh
+```
+Open JupyterLab in a browser: http://localhost:8888/lab
+
+Open Dagster in a browser: http://localhost:3000/
+
+<img width="1839" alt="dagstermill_pipeline" src="https://user-images.githubusercontent.com/1010096/224496071-5f53979a-5e65-43eb-bbfe-408d0899e3ee.png">
+
+## A standalone notebook specification
+
+A standalone notebook is a main building block in our pipelines building flow.
+
+To do a notebook capable to be loaded into dagster pipeline we need to add 3 specific cells to the notebook. Next, we will discuss what concerns are addressed each of the cells and what library classes are responsible for each one.
+
+### op_parameters cell
+
+A cell tagged **'op_parameters'** responses for an integration of a standalone notebook with Dagster. In the load stage dictionary of parameters from this cell is trasformed to dagstermill format and passed to a function define_dagstermill_op from dagstermill library to make parameters avalible in Dagster Launchpad to edit run configuration in the launge stage.
+
+Standalone notebook:
+![op_parameters_cell](https://user-images.githubusercontent.com/1010096/221004539-a13f6dac-056c-4633-94bf-ef995c857da8.png)
+
+Launchpad:
+![op_parameters_cell](https://user-images.githubusercontent.com/1010096/221832042-f1129a96-45eb-4678-a541-cab8c9e72c89.png)
+
+### parameters cell
+
+A cell tagged **'parameters'** responses for setting a notebook run configuration.
+
+Variables declared in this cell are used in class NBInterface.
+The function
+```python 
+get_context
+```
+set default values from config_schema in cell 'op_parameters' to context
+```python
+# pass context.op_config
+context = dagstermill.get_context(op_config=
+                                  dag_params.get_op_config(op_parameters)
+                                 )
+```
+
+![nb_1](https://user-images.githubusercontent.com/1010096/221655435-3b01fb49-7ff9-4e53-82b8-ad0922fc2136.png)
+
+
+If a notebook is run by Dagster then it replace 'parameter' cell with 'injected-parameters' cell.
+
+
+![injected](https://user-images.githubusercontent.com/1010096/221841608-8f0b51a9-c3ff-4152-a8f5-33feac4eb9aa.png)
+
+### The pipeline data catalog
+
+LocalStorage Catalog is a class responsible for a structure of a data catalog, but a structure is fully customizable using StorageCatalogABC.
+
+![data_catalog](https://user-images.githubusercontent.com/1010096/221920443-0ce3e328-2856-4369-8c2a-7e8d688ad16b.png)
+
+'/home/jovyan/data/dev/pipeline_example/data_load/9e4d0418-b711-4b84-83e3-28bcd521c260/nb_1/data1'
+
+ * /home/jovyan/data/ - prefix
+ * dev/ - stage in development life cycle
+ * pipeline_example/ - pipeline name
+ * data_load/ - component name 
+ * 9e4d0418-b711-4b84-83e3-28bcd521c260/ - run_id
+ * nb_1/ - notebook name
+ * data1 - data object
+
+
+## The pipleline code
+
+```python
+# in dag.py pipeline code
+
+from dagstermill import define_dagstermill_op
+from dsml4s8e.extract_dag_params_from_nb import get_dagstermill_op_params
+
+
+op_1_params = get_dagstermill_op_params("/home/jovyan/work/dev/pipeline_example/data_load/nb_1.ipynb")
+op1 = define_dagstermill_op(**op_1_params,
+                            save_notebook_on_failure=True)
+
+
+op_2_params = get_dagstermill_op_params("/home/jovyan/work/dev/pipeline_example/data_load/nb_2.ipynb")
+op2 = define_dagstermill_op(**op_2_params,
+                            save_notebook_on_failure=True)
+
+```
+
+Dagster pipeline built from standalone notebooks
+
+![Job_dagstermill_pipeline](https://user-images.githubusercontent.com/1010096/221005076-7ba56646-8a9e-4d75-bbaf-e68ba04d036d.svg)
+
+
+  
