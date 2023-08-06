@@ -1,0 +1,14 @@
+geopylib/Classes.py,sha256=7AH6VfN2A_XYVQCDndEXzqH5kzTY6pdX44s7HhpEK08,9568
+geopylib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geopylib/main.py,sha256=zNHE9KX2UW3nHgnDAYPGcoWLDPpvZa3kB3EdrCvKAk8,14548
+geopylib/tela_calc_dist.py,sha256=8xxroK8a2IiR33_PosbBIcJspfY3Zi_nwrBuFhCOM78,7365
+geopylib/tela_conversor.py,sha256=PSB-oxMPLgs-vFDgpL5oXORRjNqx9djYt-5PI_B3W7c,11034
+geopylib/tela_dados_meteoro.py,sha256=QTMOdQq8l2eI0-fWSkvRYiYRmytJDv22ryJJKnl19Os,10447
+geopylib/tela_main.py,sha256=owFutbtQeg9vEfCNjPD3vEOeHzcvVZ6tjaCx7kHyeSQ,7608
+geopylib/tela_mapa.py,sha256=bRkbNDPmW9L0TLFUJgEXc-I1mdbH8mYTI_W8QcyIg8o,7452
+geopylib/tela_marcador.py,sha256=QGmPdY9YNrh4fsYidNM6vQqxEaViHuZ3X0bulsKNQ10,7003
+geopylib-1.0.dist-info/LICENSE,sha256=2GwiSxn1QVSLd6jEXLLZvKJOlOoky7PoWVqT7goyle0,1106
+geopylib-1.0.dist-info/METADATA,sha256=bWwZ8hjQApO4AfmjlXHhm2YoQWa2TcJBKQltl5iL2ik,1250
+geopylib-1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+geopylib-1.0.dist-info/top_level.txt,sha256=Ql7PY7mbXmo1bcddJXIqLGFIxlXEj5A8WsaOpzs9SEU,9
+geopylib-1.0.dist-info/RECORD,,
