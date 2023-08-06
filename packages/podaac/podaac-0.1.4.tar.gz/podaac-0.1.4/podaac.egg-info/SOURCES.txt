@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+podaac/__init__.py
+podaac/swot_ocean.py
+podaac/utils.py
+podaac.egg-info/PKG-INFO
+podaac.egg-info/SOURCES.txt
+podaac.egg-info/dependency_links.txt
+podaac.egg-info/requires.txt
+podaac.egg-info/top_level.txt
