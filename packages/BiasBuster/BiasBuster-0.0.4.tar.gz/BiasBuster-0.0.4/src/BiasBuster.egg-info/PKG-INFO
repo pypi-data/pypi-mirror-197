@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: BiasBuster
+Version: 0.0.4
+Summary: A Python package to check for algorithmic bias.
+Home-page: https://github.com/nathalierze/BiasBuster
+Author: Nathalie Rzepka
+Project-URL: Bug Tracker, https://github.com/nathalierze/BiasBuster/issuesL
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+This package provides functions to test one's ML models bias.
+
+# BiasBuster package
+The metrics are calculated by a slicing analysis. Four fairness metrics are supported: ABROCA, Equal Opportunity, Predictive Equality and Predictive Parity.
+
+ABROCA: met, if both groups have equal Absolute Between ROC Area
+Equal Opportunity: met, if both groups have equal FNR
+Predictive Equality: met, if both groups have equal FPR
+Predictive Parity: met, if both groups have the same PPV
+
+# Installation
+This package can be installed using pip.
+An installation with pip automatically downloads the latest version from PyPI:
+```
+pip install BiasBuster
+```
+
+# Example & Usage
+
+Import the metric you'd like to use.
+
+```python
+from BiasBuster import abroca
+from BiasBuster import predictive_equality
+from BiasBuster import predictive_parity
+from BiasBuster import equal_opportunity
+
+df = load_your_dataset
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3)
+clf = DecisionTreeClassifier(criterion="entropy", splitter="best")
+clf = clf.fit(X_train, y_train)
+
+X_test_advantaged = X_test[X_test['group'] == 1]
+y_test_advantaged = y_test[y_test['group'] == 1]
+
+X_test_disadv = X_test[X_test['group'] == 0]
+y_test_disadv =y_test[y_test['group'] == 0]
+
+
+abroca = abroca.calculate_abroca(clf,X_test_advantaged,y_test_advantaged, X_test_disadv, y_test_disadv)
+pe = predictive_equality.predictive_equality(clf,X_test_advantaged,y_test_advantaged, X_test_disadv, y_test_disadv)
+pp = predictive_parity.calculate_predictive_parity(clf,X_test_advantaged,y_test_advantaged, X_test_disadv, y_test_disadv)
+eo =equal_opportunity.calculate_equal_opportunity(clf,X_test_advantaged,y_test_advantaged, X_test_disadv, y_test_disadv)
+
+print(abroca)
+
+-0.005211848509902417
+
+```
+
+# Interpretation
+
+The threshold to delineate biased from unbiased depends on the underlying data.
+However, typical thresholds lie between 0.01 and 0.05.
