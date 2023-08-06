@@ -1,0 +1,22 @@
+[project]
+name = "exifparser"
+version = "0.0.2"
+authors = [
+  { name="Mike Eads", email="dev.eads@proton.me" },
+]
+description = "Parse the exif information from jpg files."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/burninite-coder/exifparser"
+"Bug Tracker" = "https://github.com/burninite-coder/exifparser/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+

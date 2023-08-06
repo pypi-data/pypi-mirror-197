@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/exifparser/__init__.py
+src/exifparser/exif.py
+src/exifparser.egg-info/PKG-INFO
+src/exifparser.egg-info/SOURCES.txt
+src/exifparser.egg-info/dependency_links.txt
+src/exifparser.egg-info/top_level.txt
+tests/test.py
