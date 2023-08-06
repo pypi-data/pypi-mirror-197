@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: promotercalculator
+Version: 1.2.1
+Summary: Salis Lab's promoter-calculator (Barrick Lab Fork)
+Home-page: https://github.com/barricklab/promoter-calculator
+Author: Cameron Roots
+Author-email: croots@utexas.edu
+Project-URL: Bug Tracker, https://github.com/barricklab/promoter-calculator/issues
+Project-URL: Source Code, https://github.com/barricklab/promoter-calculator
+Keywords: DNA,RNA,promoter,promoter-calculator,calculator,Barrick,Salis,Biology,Bio
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+License-File: LICENSE
+Requires-Dist: Bio
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
