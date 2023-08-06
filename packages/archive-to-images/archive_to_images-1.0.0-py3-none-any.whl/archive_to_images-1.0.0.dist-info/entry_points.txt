@@ -1,0 +1,3 @@
+[console_scripts]
+archive-to-images=archive_to_images.__main__:app
+
