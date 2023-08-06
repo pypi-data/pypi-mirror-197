@@ -1,0 +1,14 @@
+{
+   "example": "http://www.example.org/rdf#",
+   "linkml": "https://w3id.org/linkml/",
+   "mtg": "https://mtg.fandom.com/wiki/",
+   "mtgo": "https://cmdoret.net/mtg_ontology/",
+   "schema": "http://schema.org/",
+   "scryfall": "https://api.scryfall.com/cards/",
+   "NamedThing": {
+      "@id": "schema:Thing"
+   },
+   "Thing": {
+      "@id": "schema:Thing"
+   }
+}
