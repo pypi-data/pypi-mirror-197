@@ -1,0 +1,2 @@
+[console_scripts]
+read_encrypted_logs = dcclog.reader:main

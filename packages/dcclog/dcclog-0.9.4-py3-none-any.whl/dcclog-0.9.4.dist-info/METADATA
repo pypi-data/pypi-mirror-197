@@ -1,0 +1,108 @@
+Metadata-Version: 2.1
+Name: dcclog
+Version: 0.9.4
+Summary: Logging package with color and encryption support
+Author-email: jamazi <jamazi@tutanota.com>
+Project-URL: Homepage, https://github.com/jamazi/dcclog
+Project-URL: Bug Tracker, https://github.com/jamazi/dcclog/issues
+Keywords: log
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Provides-Extra: all
+Requires-Dist: dcclog[dev] ; extra == 'all'
+Requires-Dist: dcclog[cipher] ; extra == 'all'
+Provides-Extra: cipher
+Requires-Dist: pycryptodome (>=3.15.0) ; extra == 'cipher'
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+
+dcclog
+======
+
+``dcclog`` is a simple wrapper around the python logging module that makes it easy to colorize and encrypt log messages.
+
+Installation
+============
+
+From pypi:
+~~~~~~~~~~
+
+.. code-block:: console
+
+    $ pip install dcclog
+
+with built-in ciphers:
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: console
+
+    $ pip install 'dcclog[cipher]'
+
+From github:
+~~~~~~~~~~~~
+
+.. code-block:: console
+
+    $ git clone https://github.com/jamazi/dcclog.git
+    $ cd dcclog
+    $ pip install '.[all]'
+
+How To use dcclog
+==================
+
+.. code-block:: python
+
+    import dcclog
+
+    dcclog.default_config()
+    logger = dcclog.getLogger(name=__name__)
+
+    logger.error("error message.")
+    logger.warning("warning message.")
+    logger.info("info message.")
+    logger.debug("debug message.")
+
+
+    @dcclog.log
+    def logged_function(x: int, y: int) -> int:
+        return x + y
+
+
+    logged_function(4, 6)
+
+
+
+or with RSA encryption:
+
+.. code-block:: python
+
+    import dcclog
+    from dcclog.cipher.rsa import RSAEncryption
+
+    dcclog.default_config(
+        level=dcclog.INFO,
+        filename=".logs/app.log",
+        cipher=RSAEncryption("pubkey.pem"),
+    )
+    logger = dcclog.getLogger(name=__name__)
+
+    logger.error("error message.")
+    logger.warning("warning message.")
+    logger.info("info message.")
+    logger.debug("debug message.")
+
+
+    @dcclog.log
+    def logged_function(x: int, y: int) -> int:
+        return x + y
+
+
+    logged_function(4, 6)
