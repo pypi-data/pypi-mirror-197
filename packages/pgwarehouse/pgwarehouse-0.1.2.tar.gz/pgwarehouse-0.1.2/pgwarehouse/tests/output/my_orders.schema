@@ -1,0 +1,9 @@
+Table "public.my_orders"
+Column|Type|Collation|Nullable|Default
+id|bigint||not null|nextval('my_orders_id_seq'::regclass)
+user_id|integer|||
+order_date|date|||
+order_amount|double precision|||
+order_updated|timestamp without time zone|||
+Indexes:
+    "my_orders_pkey" PRIMARY KEY, btree (id)
