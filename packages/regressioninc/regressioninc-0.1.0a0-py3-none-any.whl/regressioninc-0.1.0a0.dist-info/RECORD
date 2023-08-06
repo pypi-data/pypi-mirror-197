@@ -1,0 +1,10 @@
+regressioninc/__init__.py,sha256=bGVz0HCZ6JZDXTPIo8OjMJqyAXzefnG7c_czkWUXTuI,268
+regressioninc/base.py,sha256=461wpAGtu0iMyKtYHFHkOl9YDDR3vQuh6FblMyMGWf4,1140
+regressioninc/linear.py,sha256=mcXGIhCB5zlNZiGVdJxIMz2BeIc5VFInZFQZ-7h5mZI,10667
+regressioninc/testing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regressioninc/testing/complex.py,sha256=QMC3q76oWqeerT9MLtBNv1bVL_BeEPDa-s-NQJaIOAQ,9133
+regressioninc/testing/real.py,sha256=o62WellV11nMUXKkhuifO3_tGalrK32CTgQAir18VtI,4232
+regressioninc-0.1.0a0.dist-info/LICENSE,sha256=A52Ndl6mr6-fHxXq1Gf8XkuU-pUkm9M748wsrRAITgs,1063
+regressioninc-0.1.0a0.dist-info/METADATA,sha256=WZgKRut-L_y1FzvurCT67BpnwJUVfYVnIb_DXhOZCrk,1242
+regressioninc-0.1.0a0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+regressioninc-0.1.0a0.dist-info/RECORD,,
