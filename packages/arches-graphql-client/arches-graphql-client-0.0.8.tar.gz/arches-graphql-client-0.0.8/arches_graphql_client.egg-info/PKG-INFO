@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: arches-graphql-client
+Version: 0.0.8
+Summary: Client for experimental Arches GraphQL API
+Author-email: Phil Weir <phil.weir@flaxandteal.co.uk>
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
