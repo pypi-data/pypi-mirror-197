@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ibd-dendrogram
+Version: 0.9.1
+Summary: module that helps to form a dendrogram
+Home-page: https://github.com/jtb324/ibd_dendrogram
+Keywords: python, dendrogram,IBD,genetics,relatedness
+Author: jtb
+Author-email: james.baker@vanderbilt.edu
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: matplotlib (>=3.5.1,<4.0.0)
+Requires-Dist: numpy (>=1.22.2,<2.0.0)
+Requires-Dist: pandas (>=1.4.1,<2.0.0)
+Requires-Dist: scipy (>=1.8.0,<2.0.0)
+Project-URL: Repository, https://github.com/jtb324/ibd_dendrogram
+Description-Content-Type: text/markdown
+
+# Dendrogram:
+
+A python module to help form the ibd distance matrix. Distance is calculate as 1/the reported ibd segment length. This module has two accessible methods: make_distance_matrix, record_matrix.
