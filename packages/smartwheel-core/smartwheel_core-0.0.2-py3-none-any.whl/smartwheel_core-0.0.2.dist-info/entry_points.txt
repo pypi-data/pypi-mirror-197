@@ -1,0 +1,2 @@
+[gui_scripts]
+smartwheel-core = smartwheel.__main__:main

@@ -1,0 +1,29 @@
+{
+    "name": "polar",
+    "title": "Polar",
+    "props": {
+        "ui.wheel.drawOverlayCircles": true,
+        "ui.wheel.drawOverlayRects": true,
+        "ui.wheel.overlayCirclesOpacity": 0.2,
+        "ui.wheel.overlayCirclesWidth": 10,
+        "ui.wheel.overlayCirclesColor": "#3a3a3a",
+        "ui.wheel.overlayRectsOpacity": 0.2,
+        "ui.wheel.overlayRectsWidth": 20,
+        "ui.wheel.overlayRectsColor": "#3a3a3a",
+        "common.bgWheelColor": "#171717",
+        "common.wheelTextureColor": "#e2e2e2",
+        "common.selectionWheelBG": "#f0f0f0",
+        "common.selectionWheelFG": "#000000",
+        "ui.wheel.pointerColor": "#ffffff",
+        "ui.wheel.wheelShadowColor": "#313131",
+        "common.wheelIconColor": "#262626",
+        "common.sectionsIconColor": "#262626",
+        "common.majorTextColor": "#000000",
+        "ui.wheel.backgroundStyle": "contour",
+        "canvas.brush_configs.pattern.patternType": "Diagonal (right)",
+        "canvas.brush_configs.pattern.patternScale": 1.0,
+        "canvas.brush_configs.contour.backgroundColor": "#ffffff",
+        "canvas.brush_configs.contour.seed": 42,
+        "canvas.brush_configs.contour.generator": "Trigonometric"
+    }
+}
