@@ -1,0 +1,33 @@
+[package]
+name = "pyultima"
+version= "0.1.6"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "ultibi"
+crate-type = ["cdylib"]
+
+[package.metadata.maturin]
+name = "ultibi.rust_module.ultima_pyengine"
+
+[dependencies]
+pyo3 = { version = "0.18.1", features = ["extension-module", "abi3-py37"] }
+polars = { version = "0.25.1", features = [
+    "performant",
+    "strings",
+    "ndarray",
+    "lazy",
+    "is_in",
+    "dtype-categorical",
+    "serde",
+    "csv-file",
+    "diagonal_concat",
+] }
+polars-arrow = "0.25.1"
+ultibi = { path = "local_dependencies/ultibi", features=["ui"] }
+frtb_engine = { path = "local_dependencies/frtb_engine", features=["CRR2"] }
+serde_json = "1.0"
+thiserror = "1.0.38"
+
+[features]
