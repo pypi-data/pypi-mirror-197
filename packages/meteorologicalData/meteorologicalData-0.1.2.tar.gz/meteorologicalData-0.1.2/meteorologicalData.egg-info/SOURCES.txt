@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+meteorologicalData/__init__.py
+meteorologicalData/main.py
+meteorologicalData.egg-info/PKG-INFO
+meteorologicalData.egg-info/SOURCES.txt
+meteorologicalData.egg-info/dependency_links.txt
+meteorologicalData.egg-info/requires.txt
+meteorologicalData.egg-info/top_level.txt
