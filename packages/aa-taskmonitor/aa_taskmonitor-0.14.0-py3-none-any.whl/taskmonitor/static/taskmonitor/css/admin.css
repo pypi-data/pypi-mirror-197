@@ -1,0 +1,31 @@
+.truncate {
+    display: inline-block;
+    width: 20em;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.text-danger {
+    color: var(--error-fg)
+}
+
+.text-warning {
+    color: var(--accent)
+}
+
+.text-muted {
+    color: var(--close-button-hover-bg)
+}
+
+.state-retry {
+    color: deepskyblue
+}
+
+.field-_runtime {
+    text-align: right;
+}
+
+.text-right {
+    text-align: right;
+}
