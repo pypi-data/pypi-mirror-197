@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: markdown-image-titles
+Version: 0.1.0
+Summary: Adds titles to Markdown images. The title text is taken from the ALT text of the image.
+Home-page: https://github.com/wilhelmer/markdown-image-titles.git
+Author: Lars Wilhelmer
+Author-email: lars@wilhelmer.de
+License: MIT
+Keywords: markdown image title
+License-File: LICENSE
+Requires-Dist: Markdown (>=3.0.1)
+
