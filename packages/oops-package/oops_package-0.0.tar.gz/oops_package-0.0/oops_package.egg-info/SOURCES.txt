@@ -1,0 +1,15 @@
+setup.cfg
+setup.py
+oops_package/Intersection.py
+oops_package/Minus.py
+oops_package/Union.py
+oops_package/__init__.py
+oops_package/main.py
+oops_package/operations.py
+oops_package/parsearg.py
+oops_package/readvalid.py
+oops_package.egg-info/PKG-INFO
+oops_package.egg-info/SOURCES.txt
+oops_package.egg-info/dependency_links.txt
+oops_package.egg-info/not-zip-safe
+oops_package.egg-info/top_level.txt
