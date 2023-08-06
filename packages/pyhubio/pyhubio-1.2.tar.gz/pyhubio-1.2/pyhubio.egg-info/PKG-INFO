@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyhubio
+Version: 1.2
+Summary: A small library to communicate with the applications for the USB104 A7 board
+Author: Pavel Demin
+License: MIT
+Project-URL: Homepage, https://github.com/pavel-demin/pyhubio
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This library uses [python-libusb1](https://github.com/vpelletier/python-libusb1) to communicate with configuration registers, status registers, AXI4-Stream and BRAM ports via AXI4-Stream USB and AXI4-Stream hub modules:
+
+https://pavel-demin.github.io/usb104-a7-notes/usb-interface
+
+This library is mainly used with the applications for the USB104 A7 board:
+
+https://pavel-demin.github.io/usb104-a7-notes
