@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+Colors_Terminal.egg-info/PKG-INFO
+Colors_Terminal.egg-info/SOURCES.txt
+Colors_Terminal.egg-info/dependency_links.txt
+Colors_Terminal.egg-info/top_level.txt
+colors_terminal/__init__.py
