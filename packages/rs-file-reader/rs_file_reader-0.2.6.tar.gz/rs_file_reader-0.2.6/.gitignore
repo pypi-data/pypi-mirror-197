@@ -1,0 +1,6 @@
+*.pyc
+.~*
+.project
+dist
+.pydevproject 
+tests/test_res/*
