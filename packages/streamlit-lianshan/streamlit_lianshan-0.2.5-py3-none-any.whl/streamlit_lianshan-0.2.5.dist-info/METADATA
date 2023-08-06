@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: streamlit-lianshan
+Version: 0.2.5
+Summary: Streamlit component implementation of lianshan
+Home-page: https://github.com/llllyang123/streamlit-lianshan
+Author: Pablo Fonseca
+Author-email: yangxiaochuang2@163.com
+Requires-Python: >=3.7.1,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pandas (>=1.2)
+Requires-Dist: python-decouple (>=3.6,<4.0)
+Requires-Dist: python-dotenv (>=0.19.1,<0.20.0)
+Requires-Dist: simplejson (>=3.0)
+Requires-Dist: streamlit (>=0.87.0)
+Requires-Dist: streamlit-aggrid-pro (>=0.2.30)
+Description-Content-Type: text/markdown
+
+# streamlit-lianshan
+streanlit-lianshan骨架封装包，便于分析师使用
+
+<br>
+
+# Install
+```
+pip install streamlit-lianshan
+
+```
+
