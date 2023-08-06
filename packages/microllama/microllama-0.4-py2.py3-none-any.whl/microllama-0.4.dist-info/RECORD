@@ -1,0 +1,9 @@
+microllama/Dockerfile,sha256=04avFIsFbXcp04vcXB9ttkROMBiqgypctXE4EaCn4_g,235
+microllama/__init__.py,sha256=LUGWU1JuyVrjMULJjG_08956_ys8DlDrr675L6VtYP4,5231
+microllama/example.source.json,sha256=CWQFnKgfGnbAInkjgTXv-us6ns1UdFKBjTSZSUBNGso,19314
+microllama/index.html,sha256=yEKeEEUfVPneJg-O39I56WM6xzP4h0_jStQ6-uf2zjI,2693
+microllama-0.4.dist-info/entry_points.txt,sha256=WIvOBToW8fcm55Irkv8YLOXwwlVrzTukf8Mn8V2c5JY,53
+microllama-0.4.dist-info/LICENSE,sha256=Jp1jWRHTyqW5F6dHVD7-AeQk7E0C0P22qwf51Fy3OLw,1066
+microllama-0.4.dist-info/WHEEL,sha256=kdeDBNPvBI0w3meLKPoGgAnEr54n1jzrZWUoaLmGzVY,99
+microllama-0.4.dist-info/METADATA,sha256=a-jzK4zbcBt2bcSwmT9UIzINakTk4YkTIgWoH1_MTbE,3477
+microllama-0.4.dist-info/RECORD,,
