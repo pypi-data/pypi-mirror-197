@@ -1,0 +1,10 @@
+# This requirements file should only include dependencies for testing
+pytest                                  # test framework
+pytest-cov                              # coverage test
+moto[s3]
+moto[iam]
+moto[cloudformation]
+moto[sts]
+cottonformation>=1.0.1
+aws_organizations>=0.3.1
+rich
