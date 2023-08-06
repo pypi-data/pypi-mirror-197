@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "palonsoOscars"
+version = "0.0.3"
+authors = [
+    { name="palonso", email="pablo.alonso@gmail.com" },
+]
+description = "My customized ORM on Sales"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Palons0/oscars"
+"Bug Tracker" = "https://github.com/Palons0/oscars/issues"
