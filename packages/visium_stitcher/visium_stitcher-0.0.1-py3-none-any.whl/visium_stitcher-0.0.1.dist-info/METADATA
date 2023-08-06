@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: visium_stitcher
+Version: 0.0.1
+Summary: Stitch multiple Visium slides together
+Author-email: "Nadav Yayon, Krzysztof Polanski, Valentina Lorenzi" <kp9@sanger.ac.uk>
+Requires-Python: >=3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: scipy>=1.6.0
+Requires-Dist: numpy
+Requires-Dist: xmltodict
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python
+Requires-Dist: anndata
+Project-URL: Home, https://github.com/Teichlab/visium_stitcher
