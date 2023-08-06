@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: mpl-arrow
+Version: 0.1.0
+Summary: Easily plot nice-looking arrows with matplotlib
+Project-URL: homepage, https://github.com/mpl-extensions/mpl-arrow
+Project-URL: repository, https://github.com/mpl-extensions/mpl-arrow
+Author-email: "Kevin M. Dalton" <kevinmdalton@gmail.com>, Ian Hunt-Isaak <ianhuntisaak@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+Requires-Dist: matplotlib
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: ipython; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: pdbpp; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: rich; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: autoapi; extra == 'doc'
+Requires-Dist: furo; extra == 'doc'
+Requires-Dist: myst-nb; extra == 'doc'
+Requires-Dist: numpydoc; extra == 'doc'
+Requires-Dist: sphinx; extra == 'doc'
+Requires-Dist: sphinx-autobuild; extra == 'doc'
+Requires-Dist: sphinx-copybutton; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest-cov; extra == 'test'
+Requires-Dist: pytest>=6.0; extra == 'test'
+Description-Content-Type: text/markdown
+
+[![License](https://img.shields.io/pypi/l/mpl-arrow.svg?color=green)](https://github.com/mpl-extensions/mpl-arrow/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/mpl-arrow.svg?color=green)](https://pypi.org/project/mpl-arrow)
+[![Python Version](https://img.shields.io/pypi/pyversions/mpl-arrow.svg?color=green)](https://python.org)
+[![CI](https://github.com/mpl-extensions/mpl-arrow/actions/workflows/ci.yml/badge.svg)](https://github.com/mpl-extensions/mpl-arrow/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/mpl-extensions/mpl-arrow/branch/main/graph/badge.svg)](https://codecov.io/gh/mpl-extensions/mpl-arrow)
+[![Documentation Status](https://readthedocs.org/projects/mpl-arrow/badge/?version=stable)](https://mpl-arrow.readthedocs.io/en/stable/)
+
+# mpl-arrow
+A simpler way to draw nice arrows in matplotlib
+
+## Installation
+`pip install mpl-arrow`
+
+## Example usage:
+```python
+import matplotlib.pyplot as plt
+
+from mpl_arrow import arrow, arrow_absolute, vector
+
+fig, ax = plt.subplots()
+
+#     x, y, dx, dy
+arrow(1, 0, 2, 0.5, label="arrow")
+
+#              x,  y,  x2,  y2
+arrow_absolute(1, 0.5, 3.5, 2, label="arrow absolute")
+
+#     dx, dy
+vector(4, 4, label="vector")
+
+#     dx, dy, x,    y
+vector(4, 4, x=0, y=2, label="vector with offset")
+
+plt.legend()
+plt.show()
+```
+
+![arrows](img/readme_img.png)
