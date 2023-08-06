@@ -1,0 +1,10 @@
+pandas
+paramiko 
+scp
+shutil
+requests
+numpy 
+h5py 
+hdf5plugin 
+fortranformat
+f90nml

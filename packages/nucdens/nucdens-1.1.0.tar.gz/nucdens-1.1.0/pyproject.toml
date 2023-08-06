@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nucdens"
+version = "1.1.0"
+authors = [
+  { name="Andreas Nogga", email="a.nogga@fz-juelich.de" },
+]
+description = "Package to access nuclear density files"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "GNU General Public License v3 (GPLv3)"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'pandas','paramiko','scp','requests',
+        'numpy','h5py','hdf5plugin',
+        'fortranformat','f90nml',
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # list of folders that contain the packages (["."] by default)
+include = ["*"]  # package names should match these glob patterns (["*"] by default)
+exclude = []  # exclude packages matching these glob patterns (empty by default)
+namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
+
+[tool.setuptools.dynamic]
+version = {attr = "nucdens.VERSION"}
+readme = {file = ["README.md"]}
+
+[project.urls]
+"Homepage" = "https://jugit.fz-juelich.de/a.nogga/nucdensity"
+"Bug Tracker" = "https://jugit.fz-juelich.de/a.nogga/nucdensity/issues"

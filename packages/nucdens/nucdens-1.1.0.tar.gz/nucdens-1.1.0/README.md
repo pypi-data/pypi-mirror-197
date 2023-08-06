@@ -1,0 +1,68 @@
+# NUCDENS
+
+Library for online accessing, reading and writing Compton densities.
+
+When using the data files or software, please cite the original work:
+
+H.~W.~Griesshammer, J.~A.~McGovern, A.~Nogga and D.~R.~Phillips,
+``Scattering Observables from One- and Two-Body Densities: Formalism and Application to $\gamma\,{}^3$He Scattering,''
+Few Body Syst. \textbf{61} (2020) no.4, 48 doi:10.1007/s00601-020-01578-w [arXiv:2005.12207 [nucl-th]].
+
+## Installation 
+
+The source code and examples are available at 
+https://jugit.fz-juelich.de/a.nogga/nucdensity.
+
+The easiest way to install is using pip: 
+```
+pip install nucdens 
+```
+
+## Usage
+The package provides an interface to download the data files from our repository and to read the files and test. More advanced options will be documented later. Jupyter notebook testing the access can be found in `tests`. Some examples are in  `examples`.
+
+For downloading specific files to a local directory, e.g.,  `$HOME/work/denstest` use 
+```
+from nucdens import access
+testdf=access.database(workdir=os.environ["HOME"]+"/work/denstest")
+```
+This downloads a pandas dataframe with the available density files and stores it into  `testdf` . The pandas dataframe can be printed using 
+```
+import pandas as pd  
+pd.set_option('display.max_columns', None)
+print(testdf.pddf)
+```
+
+Downloading density files of, e.g., row 36 and 4 of the table is done by 
+```
+import os 
+# get file info from table 
+row=testdf.pddf.loc[[36]]
+densid=row.to_dict('records')[0]
+# retrieve file
+hashname,uniquename=testdf.get_file(**densid)
+# print name and file size 
+print("hashname:    ",hashname)
+print("filesize:    ",os.path.getsize(hashname))
+print("uniquename:  ",uniquename)
+```
+The files are downloaded and gunzipped. They are partly also compressed using the ZFP compressors (see https://github.com/LLNL/zfp). Using the files might require to install the corresponding HDF plugins (https://github.com/LLNL/H5Z-ZFP). The local files will be first stored under their `hashname`. However, the python method also returns a suggestion for a unique file name `uniquename` that includes the parameters of the file.  If wanted, users may rename the file using the provided `uniquename`. 
+
+The file from the example is two-body density. You can read in and get some basic properties using the densfile2b constructor
+```
+density2b=access.densfile2b(hashname,printlevel=1)
+```
+
+One-body densities can be tested similarly using the densfile1b constructor
+```
+density1b=access.densfile1b(hashname,printlevel=1)
+```
+
+
+
+
+
+
+
+
+
