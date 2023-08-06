@@ -1,0 +1,14 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+s3_as_a_datastore.egg-info/PKG-INFO
+s3_as_a_datastore.egg-info/SOURCES.txt
+s3_as_a_datastore.egg-info/dependency_links.txt
+s3_as_a_datastore.egg-info/requires.txt
+s3_as_a_datastore.egg-info/top_level.txt
+s3aads/__init__.py
+s3aads/copy.py
+s3aads/database.py
+s3aads/resources.py
+s3aads/table.py
