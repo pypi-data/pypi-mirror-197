@@ -1,0 +1,5 @@
+fluent.syntax<0.20,>=0.17
+attrs
+babel
+pytz
+typing-extensions<5,>=3.7
