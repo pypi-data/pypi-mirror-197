@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+cs3560cli/__init__.py
+cs3560cli/__main__.py
+cs3560cli/main.py
+cs3560cli.egg-info/PKG-INFO
+cs3560cli.egg-info/SOURCES.txt
+cs3560cli.egg-info/dependency_links.txt
+cs3560cli.egg-info/entry_points.txt
+cs3560cli.egg-info/requires.txt
+cs3560cli.egg-info/top_level.txt
+cs3560cli/functions/check_username.py
+cs3560cli/functions/watch_zip.py
