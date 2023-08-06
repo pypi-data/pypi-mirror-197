@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: obspycsv
+Version: 0.8.0
+Summary: CSV and CSZ read/write support, EVENTTXT read support for ObsPy earthquake catalogs
+Home-page: https://github.com/trichter/obspycsv
+Author: Tom Eulenfeld
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Physics
