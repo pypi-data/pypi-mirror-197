@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+trans007/__init__.py
+trans007/google.py
+trans007.egg-info/PKG-INFO
+trans007.egg-info/SOURCES.txt
+trans007.egg-info/dependency_links.txt
+trans007.egg-info/not-zip-safe
+trans007.egg-info/requires.txt
+trans007.egg-info/top_level.txt
