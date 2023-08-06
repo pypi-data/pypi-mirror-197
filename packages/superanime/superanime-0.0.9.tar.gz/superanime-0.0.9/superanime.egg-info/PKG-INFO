@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: superanime
+Version: 0.0.9
+Summary: The best package in Python to get anime information and anime gifs!
+Home-page: https://github.com/MoonlightGroup/anime.py
+Author: Noraa08
+Author-email: rafael.noraa08@gmail.com
+Description-Content-Type: text/markdown
+
+# SuperAnime
+The best package in Python to get anime information and anime gifs!
+
+## Installation:
+```
+pip install superanime
+```
+
+## Example Usage:
+```py
+import asyncio
+
+from superanime import (
+    AnimeGif, AnimeSearch,
+    SfwGif, SearchType
+)
+
+gif_res = AnimeGif(
+    bucket=SfwGif.KISS, # Also works with strings!
+    as_dict=True # If you want to send a dict with additional info like anime name. Default to 'True'
+)
+
+search_res = asyncio.run(
+    AnimeSearch(
+        query="spy x family", # The query to search in kitsu.io
+        type=SearchType.ANIME # The type of search you want to search for. ('ANIME' or 'MANGA') If none provided the anime type will be searched.
+    )
+)
+
+print(gif_res) # Anime Gif Result
+
+print(search_res[0]["attributes"]["titles"]) # Anime Search Result
+```
+
+
+## Functions:
+
+```py
+superanime.AnimeGif(bucket, as_dict=True) -> dict
+superanime.AnimeSearch(query, type=None) -> list
+```
+<br/>
+    
+   _~ Made by Noraa08 for MoonlightGroup_
