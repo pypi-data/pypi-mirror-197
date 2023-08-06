@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: appins
+Version: 0.2.11
+Summary: appins - cli tool for enabledu ecosystem
+Author-email: 0xsirsaif <sirsaif99@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Requires-Dist: typer >= 0.7.0
+Requires-Dist: cookiecutter >= 2.1.1
+Requires-Dist: flake8 ; extra == "dev"
+Requires-Dist: pytest ; extra == "dev"
+Requires-Dist: requests ; extra == "dev"
+Requires-Dist: isort ; extra == "dev"
+Requires-Dist: pytest-asyncio ; extra == "dev"
+Requires-Dist: flake8-docstrings ; extra == "dev"
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: mypy ; extra == "dev"
+Requires-Dist: codecov ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: pytest-mock ; extra == "dev"
+Requires-Dist: asynctest ; extra == "dev"
+Requires-Dist: flit ; extra == "dev"
+Requires-Dist: bumpversion ; extra == "dev"
+Project-URL: Documentation, https://github/0xsirsaif/appins
+Provides-Extra: dev
+
+# Cli tool for managing enabledu plugins
+
+# Usage
+
+```bash
+ $ appins --help
+   Usage: appins [OPTIONS] COMMAND [ARGS]...
+   
+   Commands:
+      get-app     Clone a repository from GitHub into apps directory.
+      init        Create a new project from a template.
+      remove-app  Remove an app from the apps directory.
+      start       Start the FastAPI server.
+ ```
+
