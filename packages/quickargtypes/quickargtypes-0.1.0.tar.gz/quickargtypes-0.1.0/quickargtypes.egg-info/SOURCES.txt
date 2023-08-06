@@ -1,0 +1,7 @@
+README.md
+setup.py
+quickargtypes/qat.py
+quickargtypes.egg-info/PKG-INFO
+quickargtypes.egg-info/SOURCES.txt
+quickargtypes.egg-info/dependency_links.txt
+quickargtypes.egg-info/top_level.txt

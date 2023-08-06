@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: quickargtypes
+Version: 0.1.0
+Summary: Argument parsing types for the argparse library
+Home-page: https://github.com/KadenMc/quickargtypes
+Author: Kaden McKeen
+Author-email: kaden.mckeen@mail.utoronto.ca
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
