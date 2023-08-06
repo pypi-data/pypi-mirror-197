@@ -1,0 +1,14 @@
+qtpy>=2.3.0
+
+[pre-commit]
+pre-commit
+
+[pyqt5]
+pyqt5
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
