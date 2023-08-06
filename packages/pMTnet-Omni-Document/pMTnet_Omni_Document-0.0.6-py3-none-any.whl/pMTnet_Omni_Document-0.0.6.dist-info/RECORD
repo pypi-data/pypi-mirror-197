@@ -1,0 +1,13 @@
+pMTnet_Omni_Document/__init__.py,sha256=rT3UiE5-ODbPts57mcsQKfs2suSQ5EtWkijgla2J15M,531
+pMTnet_Omni_Document/__main__.py,sha256=TrG-Muwuq0GG0iEeVqGlPT5LPE2QfdYKWy24tDYCA0M,2577
+pMTnet_Omni_Document/data_curation.py,sha256=_qy08So_a1ytWQPGuXs-gaJs8W_06dIhqRDKrcvHulU,27256
+pMTnet_Omni_Document-0.0.6.data/data/validation_data/human_alpha.txt,sha256=LS148FX0sd7HE0e7hcUEX97U4YUEm0x2m_hR24KPJ-8,5551
+pMTnet_Omni_Document-0.0.6.data/data/validation_data/human_beta.txt,sha256=eXOtmHVaqJU-1rLrgsI8GA6TAXwBWag3ZPMoSqimNwI,7849
+pMTnet_Omni_Document-0.0.6.data/data/validation_data/mouse_alpha.txt,sha256=EOygOhkqAyjH5Hcx035vPJEt8K7OmQ11O28gh8vP56E,15374
+pMTnet_Omni_Document-0.0.6.data/data/validation_data/mouse_beta.txt,sha256=wg6SLVKHjnE0iy7Hru3eGe21h4SzPxapx_A5CudPbPs,2568
+pMTnet_Omni_Document-0.0.6.data/data/validation_data/valid_mhc.txt,sha256=gJunwk-a6bM_N9QMKXvrnt6OFfqL7CJ_2YKw4n5o3Z0,189931
+pMTnet_Omni_Document-0.0.6.dist-info/LICENSE,sha256=LRNOnv3eTyXYLanf3Go4eSPgii34lvVo9cniztRXFF8,1073
+pMTnet_Omni_Document-0.0.6.dist-info/METADATA,sha256=3hmyNtGjd6u26acwYYBMIzc-h2Q-cpZc4iNfE_BlpEM,4064
+pMTnet_Omni_Document-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pMTnet_Omni_Document-0.0.6.dist-info/top_level.txt,sha256=vEz-XD0jmnj1yoxQGCovNi47qOc5CfVFUukdQrF5fFA,21
+pMTnet_Omni_Document-0.0.6.dist-info/RECORD,,
