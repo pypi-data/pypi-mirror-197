@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+gink/__init__.py
+gink/__main__.py
+gink.egg-info/PKG-INFO
+gink.egg-info/SOURCES.txt
+gink.egg-info/dependency_links.txt
+gink.egg-info/requires.txt
+gink.egg-info/top_level.txt
