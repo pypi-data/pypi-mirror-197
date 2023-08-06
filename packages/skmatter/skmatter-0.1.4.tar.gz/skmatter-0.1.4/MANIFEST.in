@@ -1,0 +1,2 @@
+recursive-include skmatter/datasets/data/ *
+recursive-include skmatter/datasets/descr/ *
