@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "pydantic-duality"
+version = "1.1.0"
+description = "Automatically generate two versions of your pydantic models: one with Extra.forbid and one with Extra.ignore"
+repository = "https://github.com/Ovsyanka83/pydantic-duality"
+readme = "README.md"
+authors = ["Stanislav Zmiev <szmiev2000@gmail.com>"]
+license = "MIT"
+
+[tool.coverage.report]
+fail_under = 100
+skip_covered = true
+skip_empty = true
+omit = ["tests/*"]
+# Taken from https://coverage.readthedocs.io/en/7.1.0/excluding.html#advanced-exclusion
+exclude_lines = [
+    "pragma: no cover",
+    "assert_never\\(",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if False:",
+    "if __name__ == .__main__.:",
+    # Impossible to cover
+    # It is impossible to cover "if TYPE_CHECKING" statements because they never actually run
+    "if TYPE_CHECKING:",
+    "@(abc\\.)?abstractmethod",
+    "@(typing\\.)?overload",
+    "__rich_repr__",
+    "__repr__",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typing-extensions = ">=4.4.0"
+pydantic = ">=1.9.2"
+cached-classproperty = ">=0.1.0"
+
+[tool.poetry.dev-dependencies]
+pyupgrade = "*"
+black = "*"
+autoflake = "*"
+pytest = ">=7.2.1"
+pytest-cov = ">=4.0.0"
+isort = "*"
+
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+skip_glob = ['.venv/*', "_compat/*"]
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+
+[tool.bandit]
+exclude_dirs = ["/venv", "/tests", "/_compat"]
+skips = ["B104"]
+
+[tool.deptry]
+extend_exclude = ["settings/config.py"]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
