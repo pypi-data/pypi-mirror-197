@@ -1,0 +1,16 @@
+bf2pico/__init__.py,sha256=74OGXF5IDO-wbRYmFTpYQITYIkJAIfk03MSEVE6d2ZA,1110
+bf2pico/brewfather.py,sha256=dqFv9nkNL81Fb7Zdi9DH65ZFAhjB322G_bEKzPOLl24,13356
+bf2pico/brewplot.py,sha256=wCfGplTRooSTOcxvzIrCmG3l-pvSrfTmAdj_SUgB-20,2994
+bf2pico/events.py,sha256=rE-sMSjKl5ua_nq5iNBkymaQ44CO-ndNb8TfnRpPG2w,4218
+bf2pico/pico.py,sha256=9ZSjZX11Ve3O1GbAQGcSp-rHa7uJi-nsELtxz6wZd1I,13673
+bf2pico/prosaic.py,sha256=9nGBP7ldGcIGiYKbs_TEQu2A7CEByimeP4jqxHlyV3s,5885
+bf2pico/recipe.py,sha256=WqouEXiDEBBQ8r9mSQxe0jcS3iSkFo2ukAReejXueOk,2069
+bf2pico/session.py,sha256=Otb27el3uYXGnP3NIHF5M4KM2E3dSAa7E-1d3RzVEZE,8539
+bf2pico/settings.py,sha256=y3glojp3U97Ymly-RE8pyKs92H4pZDQAaKVcYRfHJSM,509
+bf2pico/webapp.py,sha256=-xzyqfVIUdmhilK8-JYVCwx2W9SiLjNe4U76jZTps9A,5230
+bf2pico/zymatic_cli.py,sha256=nuJSKExW4Ld9md1hn9QaTJAQoPtp2R9Map08wTsjWB8,6473
+bf2pico-1.2.2.dist-info/METADATA,sha256=0bUraGMaZe1nffHhQIpdEOW8mzYC2Z01oyNfVCScTPE,2368
+bf2pico-1.2.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+bf2pico-1.2.2.dist-info/entry_points.txt,sha256=Fg4McKk6MrkdwB8tylHy_17SfgaHykNdAlePAX_2Vl8,146
+bf2pico-1.2.2.dist-info/top_level.txt,sha256=7hAFK-pVZxAbNfJS-ili90RfsI_qj8Z-0nDnhl2Ui6A,8
+bf2pico-1.2.2.dist-info/RECORD,,
