@@ -1,0 +1,13 @@
+coverage
+gym
+matplotlib
+numpy
+pandas
+pytest
+pyyaml
+scipy
+seaborn
+setuptools
+Sphinx
+sphinx-gallery
+sphinx-rtd-theme
