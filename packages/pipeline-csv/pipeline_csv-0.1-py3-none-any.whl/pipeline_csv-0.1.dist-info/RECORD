@@ -1,0 +1,12 @@
+pipeline_csv/__init__.py,sha256=jbgD1e8e9CICHvjIKTo6fwn7EqENgscjWhWlzn5fqRY,745
+pipeline_csv/oegiv.py,sha256=LUWj1JiV0v9KzPmTqPf6LUBPq0IAUaAl8sfCBL4WB9g,4577
+pipeline_csv/orientation.py,sha256=lLDOhTBDy9AggcIkqTmHRaaqnedkqafH6jW9nodUqmE,1568
+pipeline_csv/csvfile/README.md,sha256=ZSqS-qjIp4ub8dvJwt2z0b_lKgeiASVp2p2n1vsQhXU,10771
+pipeline_csv/csvfile/__init__.py,sha256=bThlQfpssFNTjw_MzOpt2ndUgz4t-T3wdAj0pTCh_Bs,9482
+pipeline_csv/csvfile/row.py,sha256=WwrL2QEz0r0iLH0emLGKs6jkxdK5ACcN2yy12eVyAPc,12512
+pipeline_csv/csvfile/tubes.py,sha256=glHZdZik_qZTP2QxglWkkID-sVHswxBmUhI39BNtfi4,4331
+pipeline_csv-0.1.dist-info/LICENSE,sha256=zxd7rAoQEhLP8hoIkM1X0neGrXKterCvSy4qytkAzJY,1094
+pipeline_csv-0.1.dist-info/METADATA,sha256=7AlMGnk8M3CdENeJeYrQbO86ah1zErX9FtVbx9Br5dQ,617
+pipeline_csv-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pipeline_csv-0.1.dist-info/top_level.txt,sha256=QUkMDORqzbjy7BpNGzsnX4tpCbLjxEsfI5jULDtetv0,13
+pipeline_csv-0.1.dist-info/RECORD,,
