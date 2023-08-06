@@ -1,0 +1,3 @@
+[console_scripts]
+idupes = idupes.__main__:main
+
