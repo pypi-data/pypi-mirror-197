@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "util-captcha"
+version = "0.2.0"
+description = "A library that generates image CAPTCHAs."
+authors = ["punklee333 <punklee333@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "util_captcha"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pillow = "^9.4.0"
+pre-commit = "^3.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
