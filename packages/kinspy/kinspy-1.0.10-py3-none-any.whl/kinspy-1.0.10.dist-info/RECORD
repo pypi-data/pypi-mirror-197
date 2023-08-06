@@ -1,0 +1,10 @@
+kinspy/__init__.py,sha256=eoHT4DWlW0NI78WHAYDgA7x9LrXvxDZXP4JjUY_7-lc,298
+kinspy/common_constants.py,sha256=-ixoQuxlHhjDkp9qlqlLMXIZ3zC_TnACTnbi6dP65uM,329
+kinspy/file_functions.py,sha256=aZ9ESM-YkPrEXtBa737UiTfSGGe7d8vSUPvV06XAtQY,1259
+kinspy/plot_functions.py,sha256=ucEXISWRKyoWKfZppOyH2oone8zlAKsFLAO96CViVI8,285
+kinspy/print_functions.py,sha256=JxEOnfAetmGB1gBorpDCOgnGiJbY9C5iPfqc-0UKCjo,95
+kinspy-1.0.10.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+kinspy-1.0.10.dist-info/METADATA,sha256=MJiL8ZmKa6rg-7fG-_Pt3rARSDCtTVNbQv52sGXPwHI,565
+kinspy-1.0.10.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+kinspy-1.0.10.dist-info/top_level.txt,sha256=sVjGF0CL_u5eO-qmH8EXH6w_v97_MmcKYHOLmZDsecE,7
+kinspy-1.0.10.dist-info/RECORD,,
