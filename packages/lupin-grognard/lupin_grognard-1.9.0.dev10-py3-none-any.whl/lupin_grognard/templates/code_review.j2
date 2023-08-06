@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tableau de commits</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: auto;
+      }
+      th, td {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+      }
+      th {
+        background-color: #7CB9E8;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Code review for {{ project_name }}</h1>
+    <p><a href="{{ project_url }}">Project location</a></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Commit</th>
+          <th>Auteur(s)</th>
+          <th>Approbateur(s)</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for report in approvers_report %}
+        <tr>
+          <td><a href="{{ project_url }}/-/issues/{{ report.issue_id }}">#{{ report.issue_id }}</a> {{ report.title }}</td>
+          <td>{{ report.autor }} {{ report.date }}</td>
+          {% if report.approvers|length > 1 %}
+          <td>{% for approver in report.approvers %}
+          {{ approver }},<br>
+          {% endfor %}
+          {{ report.approver_date }}</td>
+          {% elif report.approvers|length == 1 %}
+          <td>{{ report.approvers[0] }} {{ report.approver_date }}</td>
+          {% else %}
+          <td>Not found</td>
+          {% endif %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
