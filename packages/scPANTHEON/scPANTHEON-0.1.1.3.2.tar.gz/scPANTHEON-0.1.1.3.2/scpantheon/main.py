@@ -1,0 +1,45 @@
+from multiprocessing import freeze_support
+freeze_support()
+
+import source
+import warnings
+
+from bokeh.server.server import Server
+import multiprocessing
+import warnings
+
+class InstallWarning(Warning):
+    def __init__(self, message):
+        self.message = message
+    def __str__(self):
+        return repr(self.message)
+
+try: 
+    import qt
+except:
+    warnings.warn('YOU HAVE TO INSTALL PyQt5',InstallWarning)
+
+def run():
+    print('Opening Bokeh application on http://localhost:5006/')
+    # sourceqt.qt_button()
+    server = Server({'/': source.main}, port=5006)
+                   # allow_websocket_origin=["localhost:5006"], port=5006, show=False, num_procs=1) 
+    # server.start()  
+    
+    server.io_loop.start()
+
+    server.show()
+
+
+def app():
+    global p1
+    if qt.main() == 'app closed':
+        p1.terminate()
+        print('app ended')
+    
+
+if __name__ == '__main__':
+    p1 = multiprocessing.Process(target=run)
+    p1.start()
+    app()
+
