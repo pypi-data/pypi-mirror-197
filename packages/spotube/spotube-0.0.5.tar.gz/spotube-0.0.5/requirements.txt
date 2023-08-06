@@ -1,0 +1,9 @@
+eyed3
+lyricsgenius
+pydub
+pytest
+requests
+spotipy
+tqdm
+youtube_search_python
+yt_dlp
