@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: mstuff
+Version: 0.2.0
+Summary: a general library
+Author-email: Matt Groth <mjgroth@mit.edu>
+Requires-Dist: requests
+
