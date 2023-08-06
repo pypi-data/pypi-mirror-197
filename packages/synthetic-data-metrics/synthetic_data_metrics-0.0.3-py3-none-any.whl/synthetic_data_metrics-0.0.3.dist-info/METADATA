@@ -1,0 +1,197 @@
+Metadata-Version: 2.1
+Name: synthetic-data-metrics
+Version: 0.0.3
+Summary: Synthetic Data Metrics is a Python library for evaluating synthetic data quality across a wide range of data types (image, tabular, time series, language) and approaches to evaluation.
+Home-page: https://github.com/NewcastleRSE/synthetic_data_metrics/tree/dev
+Author: K.Court
+Author-email: kate.court@ncl.ac.uk
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: absl-py (==1.4.0)
+Requires-Dist: astunparse (==1.6.3)
+Requires-Dist: cachetools (==5.3.0)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.0.1)
+Requires-Dist: flatbuffers (==23.1.21)
+Requires-Dist: gast (==0.4.0)
+Requires-Dist: google-auth (==2.16.0)
+Requires-Dist: google-auth-oauthlib (==0.4.6)
+Requires-Dist: google-pasta (==0.2.0)
+Requires-Dist: grpcio (==1.51.1)
+Requires-Dist: h5py (==3.8.0)
+Requires-Dist: idna (==3.4)
+Requires-Dist: imageio (==2.25.0)
+Requires-Dist: joblib (==1.2.0)
+Requires-Dist: keras (==2.11.0)
+Requires-Dist: libclang (==15.0.6.1)
+Requires-Dist: Markdown (==3.4.1)
+Requires-Dist: MarkupSafe (==2.1.2)
+Requires-Dist: networkx (==3.0)
+Requires-Dist: numpy (==1.24.2)
+Requires-Dist: oauthlib (==3.2.2)
+Requires-Dist: opt-einsum (==3.3.0)
+Requires-Dist: packaging (==23.0)
+Requires-Dist: pandas (==1.5.3)
+Requires-Dist: Pillow (==9.4.0)
+Requires-Dist: protobuf (==3.19.6)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.8)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: pytz (==2022.7.1)
+Requires-Dist: PyWavelets (==1.4.1)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: requests-oauthlib (==1.3.1)
+Requires-Dist: rsa (==4.9)
+Requires-Dist: scikit-image (==0.19.3)
+Requires-Dist: scikit-learn (==1.2.1)
+Requires-Dist: scipy (==1.10.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tensorboard (==2.11.2)
+Requires-Dist: tensorboard-data-server (==0.6.1)
+Requires-Dist: tensorboard-plugin-wit (==1.8.1)
+Requires-Dist: tensorflow (==2.11.0)
+Requires-Dist: tensorflow-estimator (==2.11.0)
+Requires-Dist: tensorflow-io-gcs-filesystem (==0.30.0)
+Requires-Dist: termcolor (==2.2.0)
+Requires-Dist: threadpoolctl (==3.1.0)
+Requires-Dist: tifffile (==2023.2.3)
+Requires-Dist: typing-extensions (==4.4.0)
+Requires-Dist: urllib3 (==1.26.14)
+Requires-Dist: Werkzeug (==2.2.2)
+Requires-Dist: wrapt (==1.14.1)
+Requires-Dist: matplotlib (==3.6.3)
+
+# PackageName
+## About
+'Package name' is result of a project funded by the Alan Turing Institute. Packagename is a Python library for evaluating synthetic data quality across a wide range of data types (image, tabular, time series, language) and approaches to evaluation. Synthetic data is a crucial part of many machine learning,  data science and other  applications. The performance of these applications relies on the  ‘quality’ and diversity of the synthetic data used. We understand that no clear definition of ‘quality’ (where quality is a measure of how indistinguishable the synthetic data is from the real data) exist in relation to synthetic data. In this package we provide an expanding list of metrics that open sourced and community driven. 
+
+The following approaches to evaluation are currently provided:
+- Inception Score
+- Frechet Inception Distance
+- Deep Discriminator
+- t-SNE
+- PCA followed by
+  - IoU
+  - DICE
+```mermaid
+graph LR
+A[shallow] -->B[Dimensionality Reduction]
+    B --> D[PCA]
+    B --> E[t-SNE]
+        D & E --> L(Similarity Score)
+A --> C[TBC]
+F[deep] --> G[Feature Extraction]
+    G --> J[SNN]
+    G --> K[VAE]
+        J & K --> M(Distance)
+F --> H[Discriminator]
+F --> I[Model Inference]
+```
+
+
+
+
+# Using Packagename
+
+## Getting Started
+
+### Prerequisites
+
+Python 3.8 - 3.10  
+
+*We highly recommand that uses the version between 3.8 and 3.10. With these versions, dependencies can be installed properly.
+
+
+### Installation
+
+After cloning the repo into a new directory, make a virtual environment called 'venv', activate it, and install the dependencies using pip tool, e.g.
+
+``` shell
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+**Note: the requirements file contains all the dependencies needed, and it works well when the version of python is in the mentioned range.**
+
+Once finished   
+
+```
+deactivate
+```
+
+## Extracting Metrics
+
+Packagename can be utilised to analysing synthetic *image, time-series, tabular and language* data with 4 simple steps:
+
+1) Load the Packagename `evaluator` object
+2) Load in your `data`
+3) Create the corresponding datatype evaluator `<datatype>_evaluator(data)` 
+4) Call the desired metric `evaluator.<metric>()`
+
+We handle the rest.
+
+### Synthetic Image Evaluator Example
+
+Load in the evaluator object
+```python
+from synthetic_data_metrics import evaluator
+```
+
+Load in your data as one/two numpy arrays `size = [n_samples,H,W,C]`:
+```python
+images, _, _, _ = load_cifar10()
+```
+
+Intialise the image evaluator and feed in your data:
+
+```python
+img_evaluator = evaluator.Image_Evaluator(synth, real)
+```
+
+Call your desired metric(s):
+```
+img_evaluator.inception_score(n_splits=20)
+img_evaluator.dim_reduced_iou_score()
+img_evaluator.dim_reduced_dice_score()
+img_evaluator.plot_2PC_compare()
+```
+
+
+### Synthetic Time-series Evaluator Example
+
+Load in the evaluator object:
+```python
+from synthetic_data_metrics import evaluator
+```
+
+Load in your data as two a pandas dataframe with a target column:
+
+```python
+real,synth = load_wisdm()
+```
+
+Intialise the image evaluator, feed in your data and supply the target column:
+```python
+ts_evaluator = evaluator.TS_Evaluator(real,synth,'ACTIVITY')
+```
+
+Call your desired metric(s):
+```python
+evaluator.discriminative_score()
+```
+
+
+## Contributing:
+Packagename is an open source codebase.
+
+#### Linting
+This library uses `flake8` for linting. Please identify formatting errors in your code **before** pushing by running the following 
+
+```
+flake8 path/to/file/to/test
+```
+
+## Acknowledgements
+This work was funded by The Turing Institute.
