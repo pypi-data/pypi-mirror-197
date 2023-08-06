@@ -1,0 +1,8 @@
+yapic.json-1.9.1.dist-info/WHEEL,sha256=JDzyyKmQ_foLrOGDUsZPLu-gRgAySpU5P3QI2xd3IJA,148
+yapic.json-1.9.1.dist-info/RECORD,,
+yapic.json-1.9.1.dist-info/METADATA,sha256=dIij8QOEud3ZJVxXCvgA08FSS-nZAAqLESzUql_1NbQ,8396
+yapic.json-1.9.1.dist-info/licenses/LICENSE,sha256=BAfo_4lJXapvkMfK4aXbLQ0_ymN605v_HymJOyEF650,1516
+yapic/json/_json.cpython-311-x86_64-linux-gnu.so,sha256=VIgtUOE_nrdPqp2jD_kxd1UcKsMPYDgutFs__Xk5IEI,2130304
+yapic/json/json.cpp,sha256=7IXTHkcXa1gic0XVMdFKulOEhDbvvhhftnCSLaESLbA,8023
+yapic/json/__init__.py,sha256=FmvxwceUmM0qQVh7zN4kMAn7SeKL68sH-vD1JSk2T1Y,68
+yapic/json/_json.pyi,sha256=xlS7feUmHGECq8D_Z_ZbxLHEBRZ6DZ-yE7PBdbtE1HA,2729
