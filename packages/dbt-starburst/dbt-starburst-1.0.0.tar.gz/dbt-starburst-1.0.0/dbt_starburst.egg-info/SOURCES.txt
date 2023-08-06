@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.py
+dbt/adapters/starburst/__init__.py
+dbt/adapters/starburst/__version__.py
+dbt/adapters/starburst/column.py
+dbt/adapters/starburst/connections.py
+dbt/adapters/starburst/impl.py
+dbt/adapters/starburst/relation.py
+dbt/include/trino/__init__.py
+dbt_starburst.egg-info/PKG-INFO
+dbt_starburst.egg-info/SOURCES.txt
+dbt_starburst.egg-info/dependency_links.txt
+dbt_starburst.egg-info/not-zip-safe
+dbt_starburst.egg-info/requires.txt
+dbt_starburst.egg-info/top_level.txt
