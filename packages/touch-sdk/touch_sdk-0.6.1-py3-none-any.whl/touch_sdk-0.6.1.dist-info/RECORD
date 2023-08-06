@@ -1,0 +1,14 @@
+touch_sdk/__init__.py,sha256=kgduawdBqs0h_Wh_sYUCWSW1G-mTywpB55QQm3cu0Is,345
+touch_sdk/gatt_scanner.py,sha256=z88Xe87s8YHThVlR06McC4dIuXxq821_ZDzM0Ra10hs,2408
+touch_sdk/utils.py,sha256=k1s822Jc9YvvQWe4ukIGsq3_tgwvC7_LxpUl5HifhRo,1669
+touch_sdk/uuids.py,sha256=5HVehKEoBpQhquurwCJRFG_wC8uJBav4aoN1XbMwD4U,415
+touch_sdk/watch.py,sha256=Q7wnoLcfAlJflife8Ubr1VjMnqDxo0282Ew40XB6z7U,9254
+touch_sdk/watch_connector.py,sha256=r8HgQeJ2aqtM-t18IFkuBLVSTezo69f6ycFX19sGGRo,6432
+touch_sdk/protobuf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+touch_sdk/protobuf/vec_pb2.py,sha256=BpyoK4fef679A-B6rBEgceYZmrUru5d-XTmp4Yz-NhM,1374
+touch_sdk/protobuf/watch_input_pb2.py,sha256=y4r_yQIUEHuqb_SqHUocycs-4nlHlgMBSbbLDkZwnw4,1749
+touch_sdk/protobuf/watch_output_pb2.py,sha256=jXYG3A_Givd1-Hq3CgRIYCTSQVDMbYIxpqV57gjddJA,3818
+touch_sdk-0.6.1.dist-info/METADATA,sha256=YkWQT_0F8BlbZfLGcDtogEadwcn5infl6vSJn51Uom0,3835
+touch_sdk-0.6.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+touch_sdk-0.6.1.dist-info/licenses/LICENSE,sha256=dITx6S5gw76D-NYCY41fQdXbS3GMYAmbXWM69sY1Zlc,740
+touch_sdk-0.6.1.dist-info/RECORD,,
