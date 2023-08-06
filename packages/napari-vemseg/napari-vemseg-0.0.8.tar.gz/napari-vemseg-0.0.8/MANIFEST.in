@@ -1,0 +1,7 @@
+include LICENSE
+include README.md
+include src/napari_vemseg/models/*
+include src/napari_vemseg/resources/*
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
