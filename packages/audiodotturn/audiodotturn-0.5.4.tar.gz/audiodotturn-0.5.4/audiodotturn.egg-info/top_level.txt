@@ -1,0 +1,5 @@
+BUILD_HISTORY
+audiodotturn
+dist
+docs
+venv
