@@ -1,0 +1,15 @@
+crmv2_auth_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crmv2_auth_lib/auth.py,sha256=i-wz1YX8Pu0UXdSaBB3rXVSH_zUwwkwfkjcXZFfbdPo,4832
+crmv2_auth_lib/percobaan.py,sha256=zW-zagbI72Ci30j0-aD6BlIQk142wePcv_v6g_-DoKo,47
+crmv2_auth_lib old/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crmv2_auth_lib old/auth.py,sha256=Oitb1d7HJtYEeymRZfuo8qDROn_Wc9Slbw2O_S3mCOU,4500
+crmv2_auth_lib old/percobaan.py,sha256=zW-zagbI72Ci30j0-aD6BlIQk142wePcv_v6g_-DoKo,47
+ppdb_auth_lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppdb_auth_lib/auth.py,sha256=ovPKxD3a8VIvAkfEFLbMmxKr9i7Ra_1knuOSWE2H9lw,5009
+ppdb_auth_lib/percobaan.py,sha256=zW-zagbI72Ci30j0-aD6BlIQk142wePcv_v6g_-DoKo,47
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_function.py,sha256=VaNuMl2uropaMy6UrzuVbrNO45JAfwVSIXbowuJGOPg,99
+ppdb_auth_lib-0.1.2.dist-info/METADATA,sha256=MTkxJhFwaXGqNWt55kURxNdFQWnMq6J7u8jTak37NEs,138
+ppdb_auth_lib-0.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ppdb_auth_lib-0.1.2.dist-info/top_level.txt,sha256=AQW29CKOe9zv0_d2uFgK7fGS5LW6GuuCFxW3OyXaQYk,14
+ppdb_auth_lib-0.1.2.dist-info/RECORD,,
