@@ -1,0 +1,13 @@
+mojxml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mojxml/__main__.py,sha256=XHl4obUI0Ixr8ICjp-XuofnB4RkbC1d5v6DPxwhuPYM,1729
+mojxml/constants.py,sha256=e4iybYipe_3Kd0oKDW10Sr5aOw7g0CDKuBSTpdhpfnk,1046
+mojxml/parse.py,sha256=6mWOnbcLEQNjJrGUoiEI88sdd4iWFxUA2KRnKbR8QxQ,8759
+mojxml/process/__init__.py,sha256=J3SDQAVV8KNQjFUU7QX7dAI0CYNQiZA7qRgKllTVxJo,2028
+mojxml/process/executor.py,sha256=CPsTPkz9AZ2ve2lU299PGaM3KW19q2n2UGMihBC-Fh4,2859
+mojxml/reader.py,sha256=2Yrq0L7wqUtpP9Np34vheSHRKB7UAbFPuyctSJHWHHI,1367
+mojxml/schema.py,sha256=f3L9XcZerRyMrUwjEE6PocZYNwR_GgRf7yY4N2kIZX4,1042
+mojxml-0.2.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mojxml-0.2.0.dist-info/entry_points.txt,sha256=nko3DghxebH1XYmxh3WOm_yiFoX5gDFUzZC_DXYWIG4,51
+mojxml-0.2.0.dist-info/LICENSE.txt,sha256=lsc3YVKknoRqGtBibpjfyUoX-PorG9eDTtXbnt871ZA,1068
+mojxml-0.2.0.dist-info/METADATA,sha256=EOmcQJDJ0oOt0dgx1pwfGr85E1vU9DiNCFD9AEHQDig,3709
+mojxml-0.2.0.dist-info/RECORD,,
