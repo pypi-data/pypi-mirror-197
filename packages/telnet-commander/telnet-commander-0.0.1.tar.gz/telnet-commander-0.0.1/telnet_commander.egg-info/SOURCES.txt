@@ -1,0 +1,6 @@
+LICENSE
+README.md
+telnet_commander.egg-info/PKG-INFO
+telnet_commander.egg-info/SOURCES.txt
+telnet_commander.egg-info/dependency_links.txt
+telnet_commander.egg-info/top_level.txt

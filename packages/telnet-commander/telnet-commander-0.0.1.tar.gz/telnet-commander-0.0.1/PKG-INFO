@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: telnet-commander
+Version: 0.0.1
+Summary: Telnet Commander 
+Home-page: https://github.com/vitalij555/telnet-commander
+Author: Vitalij Gotovskij
+Author-email: vitalij@cdeveloper.eu
+License: MIT
+Keywords: TELNET,COMMANDER
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# telnet-commander
+Manage your devices easily via telnet
