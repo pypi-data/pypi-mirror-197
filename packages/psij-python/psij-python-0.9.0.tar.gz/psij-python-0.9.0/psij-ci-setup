@@ -1,0 +1,308 @@
+#!/bin/bash
+
+if pip --version 2>&1 | egrep -q 'python 3\..*' >/dev/null 2>&1 ; then
+    PIP="pip"
+else
+    PIP="pip3"
+fi
+
+existing_error_trailer() {
+    echo "If you are certain that you want to install multiple entries,   "
+    echo "you can re-run this script with the \"-f\" flag.                "
+    echo "================================================================"
+
+}
+
+cron_check() {
+    ps -eo command | awk '{print $1}' | grep cron >/dev/null 2>&1
+    S1=$?
+    crontab -l 2>&1 | grep "not allowed" >/dev/null 2>&1
+    S2=$?
+    echo "$(($S1 || ! $S2))"
+}
+
+crontab_list() {
+    # wraps crontab -l such that an empty string is returned for a missing
+    # crontab rather than an error
+    if crontab -l 2>&1 | grep "no crontab for" >/dev/null 2>&1 ; then
+        echo ""
+    else
+        crontab -l
+    fi
+}
+
+
+cron_check_existing() {
+    crontab_list | grep "psij-ci-run" >/dev/null 2>&1
+}
+
+cron_existing_error() {
+    EXISTING=`crontab_list | grep "psij-ci-run"`
+    echo
+    echo "================================================================"
+    echo "Error: a crontab for PSI/J tests already exists:                "
+    echo ">>> $EXISTING"
+    echo
+    echo "You can edit your crontab with \"crontab -e\" and remove the    "
+    echo "existing entry, then re-run this tool.                          "
+    existing_error_trailer
+    exit 2
+}
+
+cron_install() {
+    CMD="$CMD >> testing.log 2>&1"
+    LINE="$MINUTE $HOUR * * * cd \"$MYPATH\" && $CMD"
+    echo
+    echo "================================================================"
+    echo "The following line will be installed in your crontab:"
+    echo "$LINE"
+    echo "================================================================"
+    { crontab_list && echo "$LINE"; } | crontab -
+    
+    declare -x | egrep -v "^declare -x (BASH_VERSINFO|DISPLAY|EUID|GROUPS|SHELLOPTS|TERM|UID|_)=" >psij-ci-env
+}
+
+at_check() {
+    FLAG_FILE=`mktemp`
+    echo "rm $FLAG_FILE" | at now >/dev/null 2>&1
+    if [ -f "$FLAG_FILE" ]; then
+        echo 0
+        rm $FLAG_FILE
+    else
+        echo 1
+    fi
+}
+
+at_check_existing() {
+    for JOB in `atq`; do
+        JOB_NO=`echo $JOB | awk '{print $1}'`
+        if at -c $JOB_NO | grep psij-ci-run >/dev/null 2>&1; then
+            EXISTING_AT_JOB_NUM=$JOB_NO
+            EXISTING_AT_JOB="$JOB `at -c $JOB_NO | grep psij-ci-run`"
+            return 0
+        fi
+    done
+    return 1
+}
+
+at_existing_error() {
+    echo
+    echo "================================================================"
+    echo "Error: an AT job for PSI/J tests already exists:                "
+    echo ">>> $EXISTING_AT_JOB"
+    echo
+    echo "You can remove this job by running                              "
+    echo "> atrm $EXISTING_AT_JOB_NUM"
+    echo "then re-run this tool.                                          "
+    existing_error_trailer
+    exit 2
+}
+
+at_install() {
+    CMD="$CMD --reschedule $HOUR:$MINUTE >> testing.log 2>&1"
+    echo
+    echo "================================================================"
+    echo "The following will be executed:"
+    echo "> echo \"$CMD\" | at $HOUR:$MINUTE"
+    echo "================================================================"
+    
+    echo "$CMD" | at $HOUR:$MINUTE >/dev/null 2>&1
+}
+
+screen_check() {
+    which screen >/dev/null 2>&1
+    echo $?
+}
+
+screen_check_existing() {
+    EXISTING_SCREEN_JOB=`screen -list | grep psij-ci-run`
+}
+
+screen_existing_error() {
+    echo
+    echo "================================================================"
+    echo "Error: a Screen job for PSI/J tests already exists:             "
+    echo ">>> $EXISTING_SCREEN_JOB"
+    echo
+    echo "You can remove this job by running attaching to the screen      "
+    echo "session and exiting it with CTRL+C and then re-run this tool.   "
+    exitsing_error_trailer
+    exit 2
+}
+
+screen_install() {
+    CMD="$CMD --repeat >> testing.log 2>&1"
+    echo
+    echo "================================================================"
+    echo "WARNING: Screen sessions do not persist across reboots. Please  "
+    echo "check regularly and re-run this script if necessary.            "
+    echo "                                                                "
+    echo "The following will be executed:"
+    echo "> screen -d -m bash -c \"$CMD\""
+    echo "================================================================"
+    screen -d -m bash -c "$CMD"
+}
+
+manual_check() {
+    echo 0
+}
+
+manual_check_existing() {
+    false
+}
+
+manual_existing_error() {
+    true
+}
+
+manual_install() {
+    CMD="$CMD --repeat >> testing.log 2>&1"
+    echo
+    echo "================================================================"
+    echo "Please run the following command in the background:             "
+    echo "> $CMD"
+    echo "================================================================"
+}
+
+completed_msg() {
+    echo
+    echo "================================================================"
+    echo "Setup complete. If you have not already done so, please take    "
+    echo "some time to customize testing.conf.                            "
+    echo "================================================================"
+}
+
+continue_or_exit() {
+    RESPONSE=""
+
+    while [ "$RESPONSE" != "C" ] && [ "$RESPONSE" != "X" ]; do
+
+        echo -n "Would you like to (C)ontinue or E(x)it? "
+        read -n1 RESPONSE
+        echo
+        RESPONSE=${RESPONSE^}
+
+        if [ "$RESPONSE" == "X" ]; then
+            echo "Operation canceled"
+            exit 1
+        fi
+    done
+}
+
+check_email() {
+    if ! cat testing.conf | egrep '^maintainer_email\s*=.*@.*$' >/dev/null 2>&1 ; then
+        echo
+        echo "================================================================"
+        echo "Warning: there appears to be no maintainer email specified.     "
+        echo "A maintainer email can help the PSI/J team contact you when     "
+        echo "problems arise with the test suite. It is highly recommended    "
+        echo "that you provide one.                                           "
+        echo "If you would like to do that, please exit this script and add   "
+        echo "your email to the relevant line in testing.conf.                "
+        echo "================================================================"
+        echo
+
+        continue_or_exit
+    fi
+}
+
+FORCE=0
+
+if [ "$1" == "-f" ]; then
+    FORCE=1
+    shift
+fi
+
+MYPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
+echo
+echo "================================================================"
+echo "This script will install requirements for the PSI/J CI tests and"
+echo "add a cron job to run the tests once a day at some random time. "
+echo "                                                                "
+echo "If you need to set up a special environment, such as loading an "
+echo "environment module please do so and then re-run this script.    "
+echo "================================================================"
+echo
+
+
+continue_or_exit
+
+check_email
+
+cd "$MYPATH"
+
+echo -n "Installing dependencies..."
+
+OUT=`$PIP install --target .packages --upgrade -r requirements-tests.txt 2>&1`
+
+if [ "$?" != "0" ]; then
+    echo "FAILED"
+    echo $OUT
+    exit 2
+else
+    echo "Done"
+fi
+
+
+HOUR=`echo $(($RANDOM % 24))`
+MINUTE=`echo $(($RANDOM % 60))`
+MYPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
+CMD="./psij-ci-run"
+
+METHODS=(cron at screen manual)
+METHOD_NAMES=(Cron AT Screen manual)
+
+echo
+echo "================================================================"
+echo "Please choose a method to run the tests:                        "
+
+SEQ=1
+FIRST_AVAILABLE=1
+DEFAULT_SEQ=1
+for METHOD in "${METHODS[@]}"; do
+    AVAILABLE=`${METHOD}_check`
+    AVTEXT=""
+    RECTEXT=""
+    
+    if [ "$AVAILABLE" != "0" ]; then
+        AVTEXT="(not detected)"
+    else
+        if [ "$FIRST_AVAILABLE" == "1" ]; then
+            FIRST_AVAILABLE=0
+            RECTEXT="(recommended)"
+            DEFAULT_SEQ=$SEQ
+        fi
+    fi
+    
+    echo "$SEQ) ${METHOD_NAMES[$SEQ - 1]} $AVTEXT $RECTEXT"
+    SEQ=$((SEQ + 1))
+done
+echo "================================================================"
+
+
+
+while echo "1234X" | grep -v "$RESPONSE" >/dev/null 2>&1 ; do
+
+    echo -n "Method 1-4 ($DEFAULT_SEQ) or E(x)it? "
+    read -n1 RESPONSE
+    RESPONSE=${RESPONSE^}
+    if [ "$RESPONSE" == "" ]; then
+        RESPONSE=$DEFAULT_SEQ
+    fi
+    
+    if [ "$RESPONSE" == "X" ]; then
+        echo "Operation canceled"
+        exit 1
+    fi
+done
+
+
+METHOD="${METHODS[$RESPONSE - 1]}"
+
+if [ "$FORCE" != "1" ] && ${METHOD}_check_existing ; then
+   ${METHOD}_existing_error
+else
+    ${METHOD}_install
+fi
