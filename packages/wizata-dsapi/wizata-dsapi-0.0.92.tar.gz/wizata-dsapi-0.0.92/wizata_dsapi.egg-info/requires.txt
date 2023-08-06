@@ -1,0 +1,5 @@
+flask
+pandas
+numpy
+dill
+scikit-learn==1.2.1
