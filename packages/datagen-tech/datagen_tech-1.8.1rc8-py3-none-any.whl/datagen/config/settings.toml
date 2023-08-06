@@ -1,0 +1,12 @@
+[default]
+
+url__base = "https://api.prod.datagen.tech"
+url__download__hostnames = [
+    "dataset-delivery-uw1-datagen-tech.s3.amazonaws.com", "dataset-delivery-ue1-datagen-tech.s3.amazonaws.com"
+]
+batch_size = 2000
+concurrent_calls = 30
+
+[stage]
+
+url__base = "https://api.stage.datagen.tech"
