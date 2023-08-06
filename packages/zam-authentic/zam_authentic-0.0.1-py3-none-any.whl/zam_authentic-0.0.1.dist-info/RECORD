@@ -1,0 +1,17 @@
+zam_authentic/__init__.py,sha256=b6I29bRVTsl4AGa5DJ0FFiplQ8nDeoNDaRHqhVQGKFs,15
+zam_authentic/main.py,sha256=bUaCQO_0896Y9EOYI9W9xdSX67XrYbRrR7m1C-zbI0E,26
+zam_authentic/locations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zam_authentic/locations/constants.py,sha256=9a8r8rCig-HeYl27Rnruao1wny8TwOzVfeWXWtu8Iw8,3973
+zam_authentic/locations/get_locations.py,sha256=rX60_9zgOZPfpCy7PTbVC_qo2ir-g2aPiIuvh5yfdhg,1217
+zam_authentic/nrc_validation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zam_authentic/nrc_validation/constants.py,sha256=5iVa31TWgF5S2PTdHF5QGge2KN8b9H8R5EckHozcyLA,88
+zam_authentic/nrc_validation/utils.py,sha256=_0QilxmlfvTVx7NVL7VwsyvybeVST1M1OyHCcEnDczw,624
+zam_authentic/nrc_validation/validate.py,sha256=K_oldGgWG-7MyaLh2OHMYVFbKzQimIjDY7r5IFtyUP8,706
+zam_authentic/phone_number_validation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zam_authentic/phone_number_validation/constants.py,sha256=bYPGSlGwwNvhvrYga7IoHOdS-Jj79a9sSUsXRkPbAdU,107
+zam_authentic/phone_number_validation/validate.py,sha256=9YGtcOV93T_PNJy5VGpdcsZH05YQ-6wFMxHJby-7dKM,824
+zam_authentic-0.0.1.dist-info/LICENSE,sha256=LZtz4a9HLfrXAN8p9iY6MCbSGNk0EKmMVNwdNBcptM4,1094
+zam_authentic-0.0.1.dist-info/METADATA,sha256=W1CVgsHl3d3aQTAP1pjfDSkYHEYbEzCDNQpOXlkXlCM,1008
+zam_authentic-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+zam_authentic-0.0.1.dist-info/top_level.txt,sha256=dY_9q1KhJFNzEk0L6jtwb4w4T3TYwPYcUn-wRfw7794,14
+zam_authentic-0.0.1.dist-info/RECORD,,
