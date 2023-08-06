@@ -1,0 +1,7 @@
+requests[socks]
+pyquery
+GenEpub
+imgyaso
+readability-lxml
+selenium
+pyyaml

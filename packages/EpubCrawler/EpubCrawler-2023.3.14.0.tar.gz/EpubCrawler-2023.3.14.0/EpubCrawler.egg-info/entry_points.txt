@@ -1,0 +1,3 @@
+[console_scripts]
+crawl-epub = EpubCrawler.__main__:main
+

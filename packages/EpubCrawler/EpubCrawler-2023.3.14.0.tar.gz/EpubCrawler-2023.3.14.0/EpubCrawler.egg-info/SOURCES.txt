@@ -1,0 +1,15 @@
+README.md
+setup.py
+EpubCrawler/__init__.py
+EpubCrawler/__main__.py
+EpubCrawler/common.py
+EpubCrawler/config.py
+EpubCrawler/img.py
+EpubCrawler/sele_crawler.py
+EpubCrawler/util.py
+EpubCrawler.egg-info/PKG-INFO
+EpubCrawler.egg-info/SOURCES.txt
+EpubCrawler.egg-info/dependency_links.txt
+EpubCrawler.egg-info/entry_points.txt
+EpubCrawler.egg-info/requires.txt
+EpubCrawler.egg-info/top_level.txt
