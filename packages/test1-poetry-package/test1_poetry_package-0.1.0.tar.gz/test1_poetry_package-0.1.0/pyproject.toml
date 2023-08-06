@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "test1-poetry-package"
+version = "0.1.0"
+description = ""
+authors = ["John Cummings <johncummings@mtech-systems.com>"]
+readme = "README.md"
+packages = [{include = "test1_poetry_package"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8.1,<4.0"
+pendulum = "^2.1.2"
+pandas = "^1.5.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
