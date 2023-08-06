@@ -1,0 +1,33 @@
+[project]
+name = "jki-python-bridge-for-labview"
+description = "JKI Python Bridge for LabVIEW. Easily control your LabVIEW applications from python via define custom APIs."
+version = "5.0.1"
+authors = [
+    { name = "JKI", email = "info@jki.net" },
+]
+dependencies = []
+license = "BSD-2-Clause-Patent"
+readme = "../README.md"
+
+[project.optional-dependencies]
+dev = []
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  ".github",
+  ".gitignore",
+  "docs",
+  "dist",
+  ".venv",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jki_python_bridge_for_labview"]
+
