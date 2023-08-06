@@ -1,0 +1,8 @@
+benpy.cpython-39-x86_64-linux-gnu.so,sha256=pNWpO7nLqDRVByQzx4Zc0Q5TmBTCIgMDz-suoMvRhAE,511640
+benpy.libs/libgslcblas-9bc550a1.so.0.0.0,sha256=-Ft0bLObVBDdWnmx4v6277MAvepFPRnCG1JFRPKYxU8,1424552
+benpy.libs/libgsl-26724a50.so.25.1.0,sha256=wF-jjBl0u4j9d4y-u0TQVH4BXpRJ8QRb7Surt7GHlsU,15884168
+benpy-2.5.1.dist-info/RECORD,,
+benpy-2.5.1.dist-info/LICENSE,sha256=hVlP7fEI0gad2r2Jw3bROEnk8-cvDWW_sZ2ozk2asJs,93
+benpy-2.5.1.dist-info/WHEEL,sha256=D79CBkaJekx7HMK1NaBe_KU1GVla4HlolbFXT3at6fg,148
+benpy-2.5.1.dist-info/METADATA,sha256=y6MMN4xbrpQobVVUKbH2VfcLV4B6YXxTw-S26X6ZeFo,268
+benpy-2.5.1.dist-info/top_level.txt,sha256=3qdtHkQ6jwLZq91VpjTTkaJtkTAl97XfSrD5Ww5Uf0s,6
