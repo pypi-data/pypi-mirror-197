@@ -1,0 +1,10 @@
+{
+    "entity": {
+        "sensor": {
+            "thermostat_mode": {
+                "name": "Termostata re\u017e\u012bms"
+            }
+        }
+    },
+    "title": "Demonstr\u0101cija"
+}

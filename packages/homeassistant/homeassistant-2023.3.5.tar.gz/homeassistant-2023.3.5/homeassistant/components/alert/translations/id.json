@@ -1,0 +1,19 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "idle": "Siaga",
+                "off": "Diakui",
+                "on": "Aktif"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "idle": "Siaga",
+            "off": "Diakui",
+            "on": "Aktif"
+        }
+    },
+    "title": "Siaga"
+}

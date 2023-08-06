@@ -1,0 +1,33 @@
+{
+    "entity_component": {
+        "_": {
+            "state_attributes": {
+                "all_day": {
+                    "name": "Todo el d\u00eda"
+                },
+                "description": {
+                    "name": "Descripci\u00f3n"
+                },
+                "end_time": {
+                    "name": "Hora de finalizaci\u00f3n"
+                },
+                "location": {
+                    "name": "Ubicaci\u00f3n"
+                },
+                "messages": {
+                    "name": "Mensaje"
+                },
+                "start_time": {
+                    "name": "Hora de inicio"
+                }
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "off": "Apagado",
+            "on": "Encendido"
+        }
+    },
+    "title": "Calendario"
+}

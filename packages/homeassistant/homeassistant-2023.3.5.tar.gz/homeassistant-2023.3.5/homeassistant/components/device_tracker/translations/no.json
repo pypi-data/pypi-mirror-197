@@ -1,0 +1,27 @@
+{
+    "device_automation": {
+        "condition_type": {
+            "is_home": "{entity_name} er hjemme",
+            "is_not_home": "{entity_name} er ikke hjemme"
+        },
+        "trigger_type": {
+            "enters": "{entity_name} g\u00e5r inn i en sone",
+            "leaves": "{entity_name} forlater en sone"
+        }
+    },
+    "entity_component": {
+        "_": {
+            "state": {
+                "home": "Hjemme",
+                "not_home": "Borte"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "home": "Hjemme",
+            "not_home": "Borte"
+        }
+    },
+    "title": "Enhetssporing"
+}

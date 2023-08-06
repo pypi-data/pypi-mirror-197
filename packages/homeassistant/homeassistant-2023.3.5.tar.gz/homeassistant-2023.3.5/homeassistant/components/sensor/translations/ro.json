@@ -1,0 +1,31 @@
+{
+    "device_automation": {
+        "condition_type": {
+            "is_battery_level": "Nivelul curent al bateriei {entity_name}",
+            "is_humidity": "Umiditatea curent\u0103 {entity_name}",
+            "is_illuminance": "Luminozitatea curenta {entity_name}",
+            "is_power": "Puterea curent\u0103 {entity_name}",
+            "is_pressure": "Presiunea curent\u0103 {entity_name}",
+            "is_signal_strength": "Puterea curent\u0103 a semnalului {entity_name}",
+            "is_temperature": "Temperatura curent\u0103 {entity_name}",
+            "is_value": "Valoarea curent\u0103 {entity_name}"
+        },
+        "trigger_type": {
+            "battery_level": "La schimbarea nivelului bateriei {entity_name}",
+            "humidity": "La schimbarea umidit\u0103\u021bii {entity_name}",
+            "illuminance": "La schimbarea luminozit\u0103\u021bii {entity_name}",
+            "power": "La schimbarea puterii {entity_name}",
+            "pressure": "La schimbarea presiunii {entity_name}",
+            "signal_strength": "La schimbarea puterii semnalului {entity_name}",
+            "temperature": "La schimbarea temperaturii {entity_name}",
+            "value": "La schimbarea valorii {entity_name}"
+        }
+    },
+    "state": {
+        "_": {
+            "off": "Oprit",
+            "on": "Pornit"
+        }
+    },
+    "title": "Senzor"
+}

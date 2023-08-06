@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "ok": "Oke",
+                "problem": "Bermasalah"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "ok": "Oke",
+            "problem": "Bermasalah"
+        }
+    },
+    "title": "Monitor Tanaman"
+}

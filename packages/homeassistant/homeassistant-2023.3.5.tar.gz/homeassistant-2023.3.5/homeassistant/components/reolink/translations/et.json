@@ -1,0 +1,78 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Seade on juba h\u00e4\u00e4lestatud",
+            "reauth_successful": "Taastuvastamine \u00f5nnestus"
+        },
+        "error": {
+            "api_error": "Ilmnes API t\u00f5rge",
+            "cannot_connect": "\u00dchendamine nurjus",
+            "invalid_auth": "Tuvastamine nurjus",
+            "not_admin": "Kasutaja peab olema administraator, kasutajal ''{username}'' on volituste tase ''{userlevel}''.",
+            "unknown": "Ootamatu t\u00f5rge"
+        },
+        "flow_title": "{hostname} ({ip_address})",
+        "step": {
+            "reauth_confirm": {
+                "description": "Reolinki sidumine peab \u00fchenduse andmed uuesti autentima.",
+                "title": "Taastuvasta sidumine"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Salas\u00f5na",
+                    "port": "Port",
+                    "use_https": "Luba HTTPS",
+                    "username": "Kasutajanimi"
+                },
+                "description": "{error}"
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "auto_quick_reply_message": {
+                "state": {
+                    "off": "V\u00e4ljas"
+                }
+            },
+            "day_night_mode": {
+                "state": {
+                    "auto": "Automaatne",
+                    "blackwhite": "Mustvalge",
+                    "color": "V\u00e4rviline"
+                }
+            },
+            "floodlight_mode": {
+                "state": {
+                    "auto": "Automaatne",
+                    "off": "V\u00e4ljas",
+                    "schedule": "Ajakava"
+                }
+            }
+        }
+    },
+    "issues": {
+        "enable_port": {
+            "description": "{ports}port(ide) automaatne lubamine urjus seadmes {name}. Kasuta [Reolink klienti]({info_link}), et see k\u00e4sitsi sisse l\u00fclitada.",
+            "title": "Reolinki port pole lubatud"
+        },
+        "firmware_update": {
+            "description": "\" {name} \" mudeliga \" {model} \" ja riistvaraversiooniga \" {hw_version} \" kasutab vana p\u00fcsivara versiooni \" {current_firmware} \", samas kui Reolinki sidumise n\u00f5uetekohaseks toimimiseks on vaja v\u00e4hemalt p\u00fcsivara versiooni \" {required_firmware} \". Uusima p\u00fcsivara saab alla laadida [Reolinki allalaadimiskeskusest]( {download_link} ).",
+            "title": "Vajalik on Reolinki p\u00fcsivara v\u00e4rskendus"
+        },
+        "https_webhook": {
+            "description": "Reolini tooted ei saa liikumiss\u00fcndmusi HTTPS-aadressile (SSL) edastada. Konfigureerige (kohalik) HTTP-aadress jaotises [v\u00f5rguseaded]( {network_link} ) jaotises \"Home Assistant URL\". Praegune (kohalik) aadress on: ` {base_url} `",
+            "title": "Reolini veebihaagi URL kasutab HTTPS-i (SSL)"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "protocol": "Protokoll"
+                }
+            }
+        }
+    }
+}

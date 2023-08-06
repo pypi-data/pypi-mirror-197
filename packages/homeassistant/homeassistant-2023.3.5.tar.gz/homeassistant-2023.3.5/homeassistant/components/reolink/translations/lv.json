@@ -1,0 +1,27 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Ier\u012bce jau pievienota Home Assistant."
+        },
+        "step": {
+            "user": {
+                "description": "{error}"
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "auto_quick_reply_message": {
+                "state": {
+                    "off": "Izsl\u0113gts"
+                }
+            }
+        }
+    },
+    "issues": {
+        "enable_port": {
+            "description": "Neizdev\u0101s autom\u0101tiski aktiviz\u0113t {ports}portu uz {nosaukums}. Izmantojiet [Reolink client]({info_link}), lai manu\u0101li iesl\u0113gt.",
+            "title": "Reolink ports nav aktiviz\u0113ts"
+        }
+    }
+}

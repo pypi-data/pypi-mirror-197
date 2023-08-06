@@ -1,0 +1,74 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispositivo j\u00e1 est\u00e1 configurado",
+            "reauth_successful": "A reautentica\u00e7\u00e3o foi bem-sucedida"
+        },
+        "error": {
+            "api_error": "Ocorreu um erro de API",
+            "cannot_connect": "Falha ao conectar",
+            "invalid_auth": "Autentica\u00e7\u00e3o inv\u00e1lida",
+            "not_admin": "O usu\u00e1rio precisa ser administrador, o usu\u00e1rio ''{username}'' tem n\u00edvel de autoriza\u00e7\u00e3o ''{userlevel}''",
+            "unknown": "Erro inesperado"
+        },
+        "flow_title": "{hostname} ({ip_address})",
+        "step": {
+            "reauth_confirm": {
+                "description": "A integra\u00e7\u00e3o Reolink precisa autenticar novamente seus detalhes de conex\u00e3o",
+                "title": "Reautenticar Integra\u00e7\u00e3o"
+            },
+            "user": {
+                "data": {
+                    "host": "Nome do host",
+                    "password": "Senha",
+                    "port": "Porta",
+                    "use_https": "Ativar HTTPS",
+                    "username": "Usu\u00e1rio"
+                },
+                "description": "{error}"
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "auto_quick_reply_message": {
+                "state": {
+                    "off": "Desligado"
+                }
+            },
+            "day_night_mode": {
+                "state": {
+                    "auto": "Auto",
+                    "blackwhite": "Preto & Branco",
+                    "color": "Cor"
+                }
+            },
+            "floodlight_mode": {
+                "state": {
+                    "auto": "Auto",
+                    "off": "Desligado",
+                    "schedule": "Hor\u00e1rio"
+                }
+            }
+        }
+    },
+    "issues": {
+        "enable_port": {
+            "description": "Falha ao habilitar automaticamente {ports} porta(s) em {name}. Use o [cliente Reolink]({info_link}) para configur\u00e1-lo manualmente para ON",
+            "title": "Porta reolink n\u00e3o habilitada"
+        },
+        "https_webhook": {
+            "description": "Os produtos Reolink n\u00e3o podem enviar eventos de movimento para um endere\u00e7o HTTPS (SSL), configure um endere\u00e7o HTTP (local) em \"URL do Assistente Dom\u00e9stico\" nas [configura\u00e7\u00f5es de rede]({network_link}). O endere\u00e7o atual (local) \u00e9: '{base_url}'",
+            "title": "Reolink webhook URL usa HTTPS (SSL)"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "protocol": "Protocolo"
+                }
+            }
+        }
+    }
+}

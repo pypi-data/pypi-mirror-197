@@ -1,0 +1,19 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "idle": "Idle",
+                "recording": "Recording",
+                "streaming": "Streaming"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "idle": "Idle",
+            "recording": "Recording",
+            "streaming": "Streaming"
+        }
+    },
+    "title": "Camera"
+}

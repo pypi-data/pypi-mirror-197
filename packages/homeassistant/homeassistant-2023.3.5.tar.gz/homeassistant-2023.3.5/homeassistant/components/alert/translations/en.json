@@ -1,0 +1,19 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "idle": "Idle",
+                "off": "Acknowledged",
+                "on": "Active"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "idle": "Idle",
+            "off": "Acknowledged",
+            "on": "Active"
+        }
+    },
+    "title": "Alert"
+}

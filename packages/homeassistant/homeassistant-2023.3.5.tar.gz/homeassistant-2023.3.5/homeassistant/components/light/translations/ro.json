@@ -1,0 +1,27 @@
+{
+    "device_automation": {
+        "action_type": {
+            "brightness_decrease": "Scade luminozitatea {entity_name}",
+            "brightness_increase": "Cre\u0219te luminozitatea {entity_name}",
+            "flash": "Aprinde intermitent {entity_name}",
+            "toggle": "Comut\u0103 {entity_name}",
+            "turn_off": "Stinge {entity_name}",
+            "turn_on": "Aprinde {entity_name}"
+        },
+        "condition_type": {
+            "is_off": "{entity_name} este stins\u0103",
+            "is_on": "{entity_name} este aprins\u0103"
+        },
+        "trigger_type": {
+            "turned_off": "{entity_name} a fost stins\u0103",
+            "turned_on": "{entity_name} a fost aprins\u0103"
+        }
+    },
+    "state": {
+        "_": {
+            "off": "Stins\u0103",
+            "on": "Aprins\u0103"
+        }
+    },
+    "title": "Lumin\u0103"
+}

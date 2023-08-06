@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "home": "Home",
+                "not_home": "Away"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "home": "Home",
+            "not_home": "Away"
+        }
+    },
+    "title": "Person"
+}

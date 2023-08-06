@@ -1,0 +1,18 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "active": "Actiu",
+                "idle": "Inactiu",
+                "paused": "Pausat/ada"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "active": "Actiu",
+            "idle": "Inactiu",
+            "paused": "Pausat"
+        }
+    }
+}

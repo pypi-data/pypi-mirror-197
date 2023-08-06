@@ -1,0 +1,19 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "idle": "Ootel",
+                "recording": "Salvestab",
+                "streaming": "Voogedastab"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "idle": "Ootel",
+            "recording": "Salvestab",
+            "streaming": "Voogedastab"
+        }
+    },
+    "title": "Kaamera"
+}

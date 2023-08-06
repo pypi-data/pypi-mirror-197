@@ -1,0 +1,16 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Contul a fost configurat deja"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Parola",
+                    "username": "Utilizator"
+                },
+                "title": "Completeaz\u0103-\u021bi informa\u021biile"
+            }
+        }
+    }
+}

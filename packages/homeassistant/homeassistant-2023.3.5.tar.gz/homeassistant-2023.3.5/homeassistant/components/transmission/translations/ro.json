@@ -1,0 +1,33 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispozitivul a fost configurat deja"
+        },
+        "error": {
+            "cannot_connect": "A e\u0219uat conectarea",
+            "name_exists": "Nume deja existent"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Gazd\u0103 (host)",
+                    "name": "Nume",
+                    "password": "Parola",
+                    "port": "Port",
+                    "username": "Utilizator"
+                },
+                "title": "Configurare client Transmission"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "scan_interval": "Frecven\u021b\u0103 de actualizare"
+                },
+                "title": "Configureaz\u0103 op\u021biunile pentru Transmission"
+            }
+        }
+    }
+}

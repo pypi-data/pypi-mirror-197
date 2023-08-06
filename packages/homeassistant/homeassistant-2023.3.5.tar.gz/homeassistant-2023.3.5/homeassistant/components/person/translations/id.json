@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "home": "Di Rumah",
+                "not_home": "Keluar"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "home": "Di Rumah",
+            "not_home": "Keluar"
+        }
+    },
+    "title": "Orang"
+}

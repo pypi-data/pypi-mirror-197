@@ -1,0 +1,19 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispozitivul a fost configurat deja"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Gazd\u0103 (host)",
+                    "passkey": "Passkey",
+                    "port": "Port"
+                },
+                "description": "Configureaz\u0103 dispozitivul BSB-Lan pentru a se integra cu Home Assistant.",
+                "title": "Conecteaz\u0103 dispozitiv la BSB-Lan"
+            }
+        }
+    }
+}

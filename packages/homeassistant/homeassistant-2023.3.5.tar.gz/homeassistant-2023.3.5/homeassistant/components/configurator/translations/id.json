@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "configure": "Mengonfigurasi",
+                "configured": "Terkonfigurasi"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "configure": "Konfigurasikan",
+            "configured": "Terkonfigurasi"
+        }
+    },
+    "title": "Konfigurator"
+}

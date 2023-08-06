@@ -1,0 +1,22 @@
+{
+    "device_automation": {
+        "condition_type": {
+            "is_idle": "{entity_name} este inactiv",
+            "is_off": "{entity_name} este oprit",
+            "is_on": "{entity_name} este pornit",
+            "is_paused": "{entity_name} este pe pauz\u0103",
+            "is_playing": "{entity_name} red\u0103"
+        }
+    },
+    "state": {
+        "_": {
+            "idle": "Inactiv",
+            "off": "Oprit",
+            "on": "Pornit",
+            "paused": "\u00cen pauz\u0103",
+            "playing": "\u00cen curs de redare",
+            "standby": "\u00cen a\u0219teptare"
+        }
+    },
+    "title": "Player media"
+}

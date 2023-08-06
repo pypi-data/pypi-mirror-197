@@ -1,0 +1,17 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Acest cont SimpliSafe este deja \u00een uz."
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "code": "Cod (folosit \u00een interfa\u021ba grafic\u0103 Home Assistant)"
+                },
+                "title": "Configurare SimpliSafe"
+            }
+        }
+    }
+}
