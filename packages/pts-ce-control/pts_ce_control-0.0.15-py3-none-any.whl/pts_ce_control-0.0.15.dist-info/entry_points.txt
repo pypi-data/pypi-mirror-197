@@ -1,0 +1,3 @@
+[console_scripts]
+pts_ce_control = pts_ce_control.__main__:main
+
