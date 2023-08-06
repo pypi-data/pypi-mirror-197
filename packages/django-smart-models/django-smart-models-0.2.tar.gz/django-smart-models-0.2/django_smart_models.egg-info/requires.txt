@@ -1,0 +1,6 @@
+Django>=4.1
+openai
+stability-sdk
+loguru
+black
+isort
