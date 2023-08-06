@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: sidious
+Version: 0.0.1
+Home-page: 
+Author: Sotetsu KOYAMADA
+Author-email: sotetsu.koyamada@gmail.com
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: jax
+
