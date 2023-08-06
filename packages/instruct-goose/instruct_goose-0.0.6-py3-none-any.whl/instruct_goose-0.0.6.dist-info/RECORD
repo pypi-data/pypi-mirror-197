@@ -1,0 +1,15 @@
+instruct_goose/__init__.py,sha256=XWqGmr9iWxMr69JGYf8k9RQvG_qLRkeIFUdFTSJTQQM,222
+instruct_goose/_modidx.py,sha256=6fnG5eUMz1nhIzl2BkTbYWv3R0f7Ks395DNtCSJ_VGw,6053
+instruct_goose/agent.py,sha256=mR5Vh2z31ZT0XEZI63aXvXlJucexrMlnxC7yMPtSvdk,4353
+instruct_goose/core.py,sha256=XvYRFJnboqMdZHx5H7r0_lA-3XPdhaQT2VEq4mdIHEg,142
+instruct_goose/dataset.py,sha256=BvUjGDqXxH9yMOQgDG4WjT3KRJrEIrKg3m0Dwsa4J-o,3066
+instruct_goose/env.py,sha256=dc3e-PAGJMr-ejxEDVEMfiVTgFm0QRPKiA-yeP3WyTQ,4267
+instruct_goose/reward.py,sha256=qBHIGTZeBwjreyTZROqxTaOnijE5FKmzX4Dx-3gxql4,2199
+instruct_goose/trainer.py,sha256=7V55tpsETHb-Vr0rJsQaeUYJ9OCkdoIskxpA-DJ9Luw,4344
+instruct_goose/utils.py,sha256=CMmdU-OX2uVuYtAVG3XAu7mInnxfztfmY5-86AYR21s,679
+instruct_goose-0.0.6.dist-info/LICENSE,sha256=vJS69gUl5c5nxCCi016CdUqdKdJbVlI2o5Knxyvuk5E,1065
+instruct_goose-0.0.6.dist-info/METADATA,sha256=0QhF0N_t-OysDuZYEM2y2Xrx7yH6X9sjkz62rESZUbo,5141
+instruct_goose-0.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+instruct_goose-0.0.6.dist-info/entry_points.txt,sha256=hK9zBl6F2modrNH8gQKgwhd_O7swl4YNlgZewxFOavY,50
+instruct_goose-0.0.6.dist-info/top_level.txt,sha256=xM5He-KCP_DNLLskY93p4Ls4m9CFhhiUaREoIfkSWz4,15
+instruct_goose-0.0.6.dist-info/RECORD,,
