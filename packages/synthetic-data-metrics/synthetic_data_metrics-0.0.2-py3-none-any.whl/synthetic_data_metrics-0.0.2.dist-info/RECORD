@@ -1,0 +1,12 @@
+synthetic_data_metrics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+synthetic_data_metrics/datasets.py,sha256=HC5RuMP1n8V5XWF6PpsnRGn-A3xHs8S1dfw3Sqdlq8I,3425
+synthetic_data_metrics/evaluator.py,sha256=5XHBR0Kf3B3q9my7qhBCeQJyDyJhp-n_uL4g-ihTaKQ,10957
+synthetic_data_metrics/plot.py,sha256=tnHmtKJFkwAK5bluPaUfXICRubDEvzhZ2FGxNXOy4KU,5029
+synthetic_data_metrics/utils.py,sha256=f42rBd0tgqajojEDytaVFDUJheDV1FjQEHr2YCffy0E,9193
+synthetic_data_metrics/metrics/__init__.py,sha256=yR7fZ8AlAfqITSA1rkR7b3HGq0gFamZzwu4PcJ1p5tA,214
+synthetic_data_metrics/metrics/image_metrics.py,sha256=w0P6HW21xl5o2i1VU3FwgQSA7_ouSG4tc2jpJQ5Y1uo,2757
+synthetic_data_metrics/metrics/ts_metrics.py,sha256=WRG-B67RYbwG3yhCnOhq8kpR_q9g3Hn8fBYwhuJixbo,1968
+synthetic_data_metrics-0.0.2.dist-info/METADATA,sha256=zBRpQCeiXaxBzqVyJdTeFVm0lv3-pCrv4FzAZJa07JY,6058
+synthetic_data_metrics-0.0.2.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+synthetic_data_metrics-0.0.2.dist-info/top_level.txt,sha256=P6O6ry3PZJ-Z_zdD1PV8fGdgbcrhec_Yi_oF-cqsC5U,23
+synthetic_data_metrics-0.0.2.dist-info/RECORD,,
