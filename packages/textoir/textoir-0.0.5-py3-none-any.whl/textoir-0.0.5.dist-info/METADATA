@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: textoir
+Version: 0.0.5
+Summary: TEXTOIR is the first high-quality Text Open Intent Recognition platform.
+Author: wangxin
+Author-email: 1506542922@qq.com
+License: apache 3.0
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: easydict (==1.9)
+Requires-Dist: faiss-gpu (==1.7.2)
+Requires-Dist: Keras (==2.4.3)
+Requires-Dist: matplotlib (==3.5.2)
+Requires-Dist: nltk (==3.7)
+Requires-Dist: numpy (==1.19.5)
+Requires-Dist: pandas (==1.4.3)
+Requires-Dist: scikit-learn (==1.2.0)
+Requires-Dist: scipy (==1.8.1)
+Requires-Dist: sentence-transformers (==2.2.2)
+Requires-Dist: tensorflow (==2.11.0)
+Requires-Dist: tensorflow-gpu (==2.5.1)
+Requires-Dist: torch (==1.8.1+cu111)
+Requires-Dist: tqdm (==4.64.0)
+Requires-Dist: transformers (==4.20.1)
+
