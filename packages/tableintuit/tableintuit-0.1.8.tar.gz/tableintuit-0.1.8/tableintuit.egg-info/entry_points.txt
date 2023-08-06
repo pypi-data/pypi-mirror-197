@@ -1,0 +1,2 @@
+[console_scripts]
+tintuit = tableintuit.cli:main
