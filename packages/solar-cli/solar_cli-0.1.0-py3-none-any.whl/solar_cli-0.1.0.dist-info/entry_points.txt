@@ -1,0 +1,3 @@
+[console_scripts]
+solar=solar.cli:cli
+
