@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: hppServerAPI
+Version: 0.1.7
+Summary: Testing packages by Papa
+Author: Papa
+Author-email: htunpa2aung@gmail.com
+Requires-Dist: requests
+Requires-Dist: flask
+
