@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}{{ entry.title }}{% endblock %}
+
+{% block content_title %}{{ entry.title }}{% endblock %}
+
+{% block extra_header %}
+{% if session.logged_in %}
+{% if entry.slug != 'README' %}
+<li><a href="{{ url_for('edit', slug=entry.slug) }}">Edit entry</a></li>
+<li><a href="{{ url_for('delete', slug=entry.slug) }}">Delete entry</a></li>
+{% endif %}
+{% endif %}
+{% endblock %}
+
+{% block content %}
+{% if entry.slug != 'README' %}
+<p>Created {{ entry.timestamp.strftime('%m/%d/%Y at %I:%M%p') }}</p>
+{% endif %}
+{{ entry.html_content }}
+{% endblock %}

@@ -1,0 +1,10 @@
+flask
+waitress
+markdown
+MarkupSafe
+peewee
+pymysql
+beautifulsoup4
+micawber
+pygments
+six

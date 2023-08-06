@@ -1,0 +1,2 @@
+[console_scripts]
+mblog = mblog.__main__:main

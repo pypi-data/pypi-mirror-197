@@ -1,0 +1,23 @@
+#Web Server
+flask
+waitress
+
+#Markdown
+markdown
+MarkupSafe
+
+#Database and ORM
+peewee
+
+#Additional Database Drivers
+pymysql
+
+#Parse HTML, Social Links
+beautifulsoup4
+micawber
+
+#Parse Code
+pygments
+
+#Compatibility
+six

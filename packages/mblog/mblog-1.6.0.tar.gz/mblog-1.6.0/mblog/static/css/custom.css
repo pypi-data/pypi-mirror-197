@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans+Narrow|Source+Sans+Pro&subset=greek,greek-ext,latin-ext');
+
+body {
+  font-family: 'PT Sans Narrow', 'Open Sans Condensed', 'Sans-Serif';
+}
+
+.navbar {
+  font-family: 'Helvetica', 'Arial Black', 'Sans-Serif';
+  background: #000000;
+}
+
+.navbar a {
+  color: white !important;
+}
