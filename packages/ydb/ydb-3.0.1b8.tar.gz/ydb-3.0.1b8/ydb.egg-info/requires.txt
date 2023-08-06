@@ -1,0 +1,9 @@
+aiohttp<4.0.0,>=3.7.4
+enum-compat>=0.0.1
+grpcio>=1.42.0
+packaging
+protobuf<5.0.0,>=3.13.0
+six<2
+
+[yc]
+yandexcloud
