@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: evaluators
+Version: 1.0.0
+Summary: Various scene understanding and perception evaluation metrics.
+Author-email: Kurt Stolle <k.h.w.stolle@gmail.com>
+Keywords: evaluation,metrics,scene understanding,perception
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: test
+License-File: LICENSE
+
+# Evaluators
+
+Various scene understanding and perception evaluators.
