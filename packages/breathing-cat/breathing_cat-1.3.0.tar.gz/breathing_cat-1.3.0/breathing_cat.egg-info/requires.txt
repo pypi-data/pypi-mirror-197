@@ -1,0 +1,9 @@
+breathe
+myst-parser
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-moderncmakedomain
+variconf[toml]
+
+[test]
+pytest
