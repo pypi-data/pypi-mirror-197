@@ -1,0 +1,8 @@
+# dependencies for test
+pytest                  # test framework
+pytest-cov              # coverage test
+
+pg8000
+attrs
+superjson
+pandas

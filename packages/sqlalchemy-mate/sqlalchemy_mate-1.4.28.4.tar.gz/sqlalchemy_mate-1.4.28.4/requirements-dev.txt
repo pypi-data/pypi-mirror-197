@@ -1,0 +1,9 @@
+pathlib_mate    # autopep8 your code
+wheel           # python wheel
+twine           # make distribution archive
+
+pg8000
+attrs
+superjson
+pandas
+boto3
