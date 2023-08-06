@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: sensirion-uart-sfx6xxx
+Version: 1.0.0
+Summary: SHDLC driver for the Sensirion SFX6XXX sensor family
+Home-page: https://sensirion.github.io/python-uart-sfx6xxx/
+Author: Sensirion
+Author-email: info@sensirion.com
+License: BSD
+Keywords: Sensirion SFX6XXX
+        SHDLC
+        UART
+        SFC6000
+        SFC6000D-5slm
+        SFC6000D-50slm
+        SFC6000D-20slm
+        SFM6000
+        SFM6000D-20slm
+        SFM6000D-50slm
+        SFM6000D-5slm
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6, <4
+Requires-Dist: sensirion-shdlc-driver (~=0.1.5)
+Requires-Dist: sensirion-driver-adapters (<3.0,>=2.1.8)
+Requires-Dist: sensirion-driver-support-types (~=0.2.0)
+Provides-Extra: docs
+Requires-Dist: click (==8.0.4) ; extra == 'docs'
+Requires-Dist: jinja2 (==3.0.1) ; extra == 'docs'
+Requires-Dist: sphinx (~=2.2.1) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme (~=0.4.3) ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: flake8 (~=3.7.8) ; extra == 'test'
+Requires-Dist: pytest (~=6.2.5) ; extra == 'test'
+Requires-Dist: pytest-cov (~=3.0.0) ; extra == 'test'
+
+sensirion_uart_sfx6xxx
+======================
+
+This package contains the driver to communicate with a 
+Sensirion mass flow controller of the SFC6XXX family or a 
+Sensirion gas flow sensor of the SFM6XXX family over uart.
+
+Installation and Usage
+----------------------
+
+The user manual is available at
+https://sensirion.github.io/python-uart-sfx6xxx
+
+CHANGELOG
+---------
+
+1.0.0
+:::::
+
+- Initial release of SFX6XXX SHDLC driver
+
+
