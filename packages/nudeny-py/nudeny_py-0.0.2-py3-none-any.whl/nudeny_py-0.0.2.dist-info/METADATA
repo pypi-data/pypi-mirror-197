@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: nudeny-py
+Version: 0.0.2
+Summary: Image nudity classification and detection package.
+Home-page: https://github.com/Nudeny/Nudeny-python-module
+Author: Nudeny
+Author-email: <thesis.nudeny69@gmail.com>
+License: MIT
+Keywords: python,nudity,classification,detection,machine learning
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: certifi
+Requires-Dist: charset-normalizer
+Requires-Dist: idna
+Requires-Dist: Pillow
+Requires-Dist: requests
+Requires-Dist: urllib3
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+# Nudeny Python Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
