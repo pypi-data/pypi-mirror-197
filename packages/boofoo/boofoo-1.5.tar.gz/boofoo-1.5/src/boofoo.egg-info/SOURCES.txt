@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/boofoo/__init__.py
+src/boofoo/boofoo.py
+src/boofoo.egg-info/PKG-INFO
+src/boofoo.egg-info/SOURCES.txt
+src/boofoo.egg-info/dependency_links.txt
+src/boofoo.egg-info/entry_points.txt
+src/boofoo.egg-info/requires.txt
+src/boofoo.egg-info/top_level.txt
