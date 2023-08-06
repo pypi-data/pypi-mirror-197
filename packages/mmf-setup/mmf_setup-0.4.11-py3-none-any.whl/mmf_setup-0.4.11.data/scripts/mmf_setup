@@ -1,0 +1,127 @@
+#!/bin/bash
+#
+# Initialize the environment for use with my tools.
+#
+# Several additional options are provided as one-time initializations:
+#   cocalc: Initial a CoCalc project for use as described here:
+#      https://alum.mit.edu/www/mforbes/public/notes/cocalc-workflow/
+
+function usage() {
+  echo "usage: mmf_setup cocalc [options] OR mmf_setup -v [options]"
+  echo
+  echo "The first invocation will setup cocalc.com projects.  Use the -v option"
+  echo "to perform a dry run to see what would be done."
+  echo
+  echo "   mmf_setup cocalc [-v] [packages]"
+  echo
+  echo "Additional packages such as black, jupytext, mercurial, hg-git, and hg-evolve can"
+  echo "be added if needed.  As of 16 Aug 2022, most of these are provided by CoCalc."
+  echo
+  echo "The second invocation will show which environmental variables will be set,"
+  echo "and can be evaluated to set these in your shell:"
+  echo
+  echo "   mmf_setup -v [options]"
+  echo
+  echo "Valid options for mmf_setup_bash.py are:"
+  echo "$(mmf_setup_bash.py -h)"
+  echo
+  echo "You can set these in your shell by running mmf_setup_bash.py:"
+  echo
+  echo "   eval \"\$(mmf_setup -v [options])\""
+}
+
+BIN_DIR="$(dirname $BASH_SOURCE{0})"
+PYTHON3=python3
+
+if [[ -n $BASH_VERSION ]] && [[ "$(basename "$0" 2> /dev/null)" == "mmf_setup" ]]; then
+  if [[ -n $1 ]]; then
+    case $1 in
+      -v)
+        shift # move to the next argument
+        echo "# mmf_setup environment:"
+        echo "$(mmf_setup_bash.py $*)"
+        exit 0
+        ;;
+      smc|cocalc)
+        shift # move to the next argument
+        if [[ $1 == -v ]]; then
+          shift # move to the next argument
+          echo "DRY RUN: the following is what would happen with the -v option"
+          echo
+          not_dry_run=
+        else
+          not_dry_run=true
+        fi
+
+        hg="$(type -p hg)"
+        if type pipx 2> /dev/null && pipx list --short | grep "mmf-setup"; then
+          # Use pipx version of python from now on.
+          PYTHON3="$(pipx environment -v PIPX_LOCAL_VENVS)/mmf-setup/bin/python3"
+          echo "Found pipx mmf-setup venv... Switching to PYTHON3=$PYTHON3"
+
+          echo "# Injecting tools into mmf-setup:"
+          echo "pipx inject mmf-setup $*"
+          if [[ $not_dry_run ]]; then
+            pipx inject mmf-setup $*
+          fi
+        else
+          echo "# Installing tools for python3..."
+          echo "$PYTHON3 -m pip install -q --upgrade --user pip $*"
+          if [[ $not_dry_run ]]; then
+            $PYTHON3 -m pip install -q --upgrade --user pip $*
+          fi
+        fi
+
+        echo "# Installing poetry..."
+        echo "curl -sSL https://install.python-poetry.org | $PYTHON3 -"
+        if [[ $not_dry_run ]]; then
+          curl -sSL https://install.python-poetry.org | $PYTHON3 -
+        fi
+
+        DATA_DIR="$($PYTHON3 -c 'import mmf_setup;print(mmf_setup.DATA)')"
+        echo "# Setting up config files for CoCalc..."
+        if [[ $not_dry_run ]]; then
+          if [[ ! -L ~/.bashrc && -f ~/.bashrc ]]; then
+             echo "mv ~/.bashrc ~/.bashrc_cocalc"
+             mv ~/.bashrc ~/.bashrc_cocalc
+          fi
+          echo "$BIN_DIR/mmf_initial_setup" -v "$DATA_DIR/config_files/cocalc"
+          "$BIN_DIR/mmf_initial_setup" -v "$DATA_DIR/config_files/cocalc"
+        else
+          if [[ ! -L ~/.bashrc && -f ~/.bashrc ]]; then
+             echo "mv ~/.bashrc ~/.bashrc_cocalc"
+          fi
+          "$BIN_DIR/mmf_initial_setup" --no-action -v "$DATA_DIR/config_files/cocalc"
+        fi
+        cat "$DATA_DIR/config_files/cocalc/message.txt"
+
+        exit 0
+        ;;
+      *)
+        usage
+        exit 0
+        ;;
+    esac
+  else
+    usage
+    exit 1
+  fi
+else
+  # Actually source the environment
+  >&2 echo "WARNING: mmf_setup Deprecation - Please do not source mmf_setup in future."
+  if [[ "$1" == -v ]]; then
+    usage
+  else
+    >&2 echo "Replace '. mmf_setup $*' with the following in your .bash_aliases file:"
+    >&2 echo
+    >&2 echo "    eval \"\$(mmf_setup $*)\""
+    >&2 echo
+    res="$(mmf_setup_bash.py $*)"
+    errorCode=$?
+    if [[ $errorCode == 0 ]]; then
+      eval "$res"
+    else
+      echo "ERROR: Something went wrong with the command '. mmf_setup $*'"
+    fi
+  fi
+fi
