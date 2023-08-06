@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "tox-backtocks"
+version = "0.3.2"
+description = ""
+authors = ["Damien Nadé <anvil.github+tox-backtocks@livna.org>"]
+license = "LGPL-2.1-or-later"
+repository = "https://github.com/Anvil/tox-backtocks/"
+readme = "README.md"
+keywords = ["tox", "backtocks", "backticks", "backquotes"]
+documentation = "https://github.com/Anvil/tox-backtocks/"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Framework :: tox",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing"
+]
+
+[tool.poetry.plugins."tox"]
+backtocks = "tox_backtocks"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tox = ">=4.4"
+
+[build-system]
+requires = ["poetry-core>=1.4.0"]
+build-backend = "poetry.core.masonry.api"
