@@ -1,0 +1,15 @@
+numexpr_mod/cpuinfo.py,sha256=fsU1gHgck8DZ2mw-iyi80_GALYCQBhvUDB1soYYyPuI,25162
+numexpr_mod/version.py,sha256=-Oucxvsy8fKTjVPmRt3cPw2mQDXTlddXClBIw46pAMU,116
+numexpr_mod/expressions.py,sha256=DQWcSAD8Uwwfg7B9_AXIJ12IZ1A3bEC6FIQhdLFdGJA,16293
+numexpr_mod/__init__.py,sha256=FCiw_g4C8MzzTFomj8GnUE40BxLQERsFCK5tUy_q0Ls,2357
+numexpr_mod/interpreter.cpython-37m-darwin.so,sha256=-LbzMw1aZqeLVpxp0CAey6uxlL9vuI8xNc7Vy3ofJdw,198616
+numexpr_mod/utils.py,sha256=ULRQe6KLEYuVIFJRRFbK0NpPJ92dm-qAkpbMOaOTmrg,7478
+numexpr_mod/necompiler.py,sha256=k5rOycpO4QSbMnxTLb0NhnOlcClij_6GhReWBQ3rTBM,30416
+numexpr_mod/tests/__init__.py,sha256=b7Iti5RQkvQ6urMucOZPTeRlO2v5016T3RmtC7wKC_4,451
+numexpr_mod/tests/test_numexpr.py,sha256=xotOWf4XLXCdHkleiywK3nMKVuvzIwa8HIyJrdquNBI,45696
+numexpr_mod-2.8.6.dist-info/RECORD,,
+numexpr_mod-2.8.6.dist-info/WHEEL,sha256=65_gdror4VDHS1i9xQgp9SfwHiJGzcbzYtDxUELWm-8,110
+numexpr_mod-2.8.6.dist-info/top_level.txt,sha256=7ChgWhD8-365HneORvA1S9FlijiHkubyTAUH1wI9ndI,12
+numexpr_mod-2.8.6.dist-info/LICENSE.txt,sha256=A_3YAlpObXDK8ncg6Rp5rY2f5CLr4YIPXOxh3OrnCf8,1193
+numexpr_mod-2.8.6.dist-info/AUTHORS.txt,sha256=Aay-btzG0MbIIOzFIrLlxJSt-ARiQTNT6qct3o5e3OA,62
+numexpr_mod-2.8.6.dist-info/METADATA,sha256=o4ESVAp3cGemd3Oqo74aOn9eydw7ukSqjrt4PoeJd-8,3963
