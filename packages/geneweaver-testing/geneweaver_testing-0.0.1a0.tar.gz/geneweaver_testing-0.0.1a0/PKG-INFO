@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: geneweaver-testing
+Version: 0.0.1a0
+Summary: 
+Author: Alexander Berger
+Author-email: alexander.berger@jax.org
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: black (>=23.1.0,<24.0.0)
+Requires-Dist: isort (>=5.12.0,<6.0.0)
+Requires-Dist: mypy (>=1.0.1,<2.0.0)
+Requires-Dist: pytest (>=7.2.2,<8.0.0)
+Requires-Dist: ruff (>=0.0.254,<0.0.255)
+Description-Content-Type: text/markdown
+
+# Geneweaver Testing
+This package is used to test the Geneweaver project. It contains tools for running tests against Geneweaver project
+packages and components to aid in the development of Geneweaver. 
+
+## Package Modules
+Like all Geneweaver packages, this package is namespaced under the `geneweaver` package. The root of this package is
+`geneweaver.testing`. The following modules are available in this package:
+
+### `geneweaver.testing.fixtures`
+This module contains pytest fixtures that are used to test Geneweaver packages. These fixtures can be used to set up
+test contexts for Geneweaver packages.
+
+### `geneweaver.testing.package`
+This module contains tools for testing and validating Geneweaver packages. 
+
+### `geneweaver.testing.schemas`
+This module contains tools for validating that methods and functions in Geneweaver packages conform to the Geneweaver
+project schemas. This package **does not** contain the schemas themselves. The schemas are defined in the
+`geneweaver-core` / `geneweaver.core.schemas` package.
+
+### `geneweaver.testing.syntax`
+This module contains tools for running syntax and style checks on Geneweaver packages. This ensures that Geneweaver
+packages each conform to the same style and syntax standards.
+
+## Usage
+
