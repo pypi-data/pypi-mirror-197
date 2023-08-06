@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+discord_protos/FrecencyUserSettings.proto
+discord_protos/FrecencyUserSettings_pb2.py
+discord_protos/PreloadedUserSettings.proto
+discord_protos/PreloadedUserSettings_pb2.py
+discord_protos/__init__.py
+discord_protos.egg-info/PKG-INFO
+discord_protos.egg-info/SOURCES.txt
+discord_protos.egg-info/dependency_links.txt
+discord_protos.egg-info/requires.txt
+discord_protos.egg-info/top_level.txt
