@@ -1,0 +1,3 @@
+[console_scripts]
+Basi-CLI = Basi_CLI.cli:app
+
