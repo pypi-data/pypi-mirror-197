@@ -1,0 +1,3 @@
+[console_scripts]
+tm-remote-build=tm_remote_build:cli.main
+
