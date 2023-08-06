@@ -1,0 +1,3 @@
+[console_scripts]
+pekora=pekora.cli:app
+
