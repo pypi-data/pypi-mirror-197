@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "OFF",
+                "on": "ON"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "off": "OFF",
+            "on": "ON"
+        }
+    },
+    "title": "Horari"
+}

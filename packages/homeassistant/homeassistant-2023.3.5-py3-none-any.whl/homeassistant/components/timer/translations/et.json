@@ -1,0 +1,18 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "active": "Aktiivne",
+                "idle": "Ootel",
+                "paused": "Peatatud"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "active": "aktiivne",
+            "idle": "ootel",
+            "paused": "peatatud"
+        }
+    }
+}

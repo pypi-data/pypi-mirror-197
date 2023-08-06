@@ -1,0 +1,15 @@
+{
+    "config": {
+        "abort": {
+            "missing_configuration": "Componenta nu este configurat\u0103. Te rug\u0103m s\u0103 urmezi instruc\u021biunile din documenta\u021bie."
+        },
+        "create_entry": {
+            "default": "Autentificare realizat\u0103 cu succes"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "Alege metoda de autentificare"
+            }
+        }
+    }
+}

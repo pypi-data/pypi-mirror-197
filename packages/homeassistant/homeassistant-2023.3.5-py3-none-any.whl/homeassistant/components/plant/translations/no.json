@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "ok": "OK",
+                "problem": "Problem"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "ok": "",
+            "problem": ""
+        }
+    },
+    "title": "Plantemonitor"
+}

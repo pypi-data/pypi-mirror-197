@@ -1,0 +1,72 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "cool": "Dzes\u0113\u0161ana",
+                "dry": "\u017d\u0101v\u0113\u0161ana",
+                "fan_only": "Tikai ventilators",
+                "heat": "Sild\u012b\u0161ana",
+                "heat_cool": "Sild\u012b\u0161ana/Dzes\u0113\u0161ana",
+                "off": "Izsl\u0113gts"
+            },
+            "state_attributes": {
+                "aux_heat": {
+                    "name": "\u0100r\u0113jais sild\u012bt\u0101js"
+                },
+                "current_humidity": {
+                    "name": "Pa\u0161reiz\u0113jais mitrums"
+                },
+                "current_temperature": {
+                    "name": "Pa\u0161reiz\u0113j\u0101 temperat\u016bra"
+                },
+                "fan_mode": {
+                    "name": "Ventilatora re\u017e\u012bms",
+                    "state": {
+                        "auto": "Autom\u0101tiski",
+                        "diffuse": "Izklied\u0113ts",
+                        "focus": "Koncentr\u0113ts",
+                        "high": "Augsts",
+                        "low": "Zems",
+                        "medium": "Vid\u0113js",
+                        "middle": "Vidus",
+                        "off": "Izsl\u0113gts",
+                        "on": "Iesl\u0113gts",
+                        "top": "Aug\u0161a"
+                    }
+                },
+                "fan_modes": {
+                    "name": "Ventilatora re\u017e\u012bmi"
+                },
+                "humidity": {
+                    "name": "M\u0113r\u0137a mitrums"
+                },
+                "hvac_action": {
+                    "name": "Pa\u0161reiz\u0113j\u0101 darb\u012bba",
+                    "state": {
+                        "cooling": "Dzes\u0113\u0161ana",
+                        "drying": "\u017d\u0101v\u0113\u0161ana",
+                        "fan": "Ventilators",
+                        "heating": "Sild\u012b\u0161ana",
+                        "idle": "D\u012bkst\u0101ve",
+                        "off": "Izsl\u0113gts"
+                    }
+                },
+                "hvac_modes": {
+                    "name": "HVAC re\u017e\u012bms"
+                }
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "auto": "Auto",
+            "cool": "Dzes\u0113\u0161ana",
+            "dry": "Sauss",
+            "fan_only": "Tikai ventilators",
+            "heat": "Sild\u012b\u0161ana",
+            "heat_cool": "Sild\u012bt / Atdzes\u0113t",
+            "off": "Izsl\u0113gts"
+        }
+    },
+    "title": "Klimats"
+}

@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "ok": "OK",
+                "problem": "Probleem"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "ok": "OK",
+            "problem": "Probleem"
+        }
+    },
+    "title": "Taim"
+}

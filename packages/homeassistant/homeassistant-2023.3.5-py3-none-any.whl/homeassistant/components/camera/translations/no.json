@@ -1,0 +1,19 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "idle": "Inaktiv",
+                "recording": "Opptak",
+                "streaming": "Str\u00f8mming"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "idle": "Inaktiv",
+            "recording": "Opptak",
+            "streaming": "Str\u00f8mming"
+        }
+    },
+    "title": "Kamera"
+}

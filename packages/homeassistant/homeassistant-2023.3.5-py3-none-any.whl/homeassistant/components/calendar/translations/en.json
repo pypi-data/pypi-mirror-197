@@ -1,0 +1,37 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Off",
+                "on": "On"
+            },
+            "state_attributes": {
+                "all_day": {
+                    "name": "All day"
+                },
+                "description": {
+                    "name": "Description"
+                },
+                "end_time": {
+                    "name": "End time"
+                },
+                "location": {
+                    "name": "Location"
+                },
+                "messages": {
+                    "name": "Message"
+                },
+                "start_time": {
+                    "name": "Start time"
+                }
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "off": "Off",
+            "on": "On"
+        }
+    },
+    "title": "Calendar"
+}

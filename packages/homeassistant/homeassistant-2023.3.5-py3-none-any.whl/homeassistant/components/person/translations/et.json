@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "home": "Kodus",
+                "not_home": "Eemal"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "home": "Kodus",
+            "not_home": "Eemal"
+        }
+    },
+    "title": "Isik"
+}

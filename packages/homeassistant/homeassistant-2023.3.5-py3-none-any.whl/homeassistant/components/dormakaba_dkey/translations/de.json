@@ -1,0 +1,32 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Ger\u00e4t ist bereits konfiguriert",
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "no_devices_found": "Keine Ger\u00e4te im Netzwerk gefunden",
+            "unknown": "Unerwarteter Fehler"
+        },
+        "error": {
+            "invalid_code": "Ung\u00fcltiger Aktivierungscode. Ein Aktivierungscode besteht aus 8 Zeichen, getrennt durch einen Bindestrich, zB GBZT-HXC0.",
+            "wrong_code": "Falscher Aktivierungscode. Beachte, dass ein Aktivierungscode nur einmal verwendet werden kann."
+        },
+        "flow_title": "{name}",
+        "step": {
+            "associate": {
+                "data": {
+                    "activation_code": "Aktivierungscode"
+                },
+                "description": "Gib einen unbenutzten Aktivierungscode an.\n\nUm einen Aktivierungscode zu erstellen, erstelle einen neuen Schl\u00fcssel in der dKey-Admin-App und w\u00e4hle dann die Option zum Teilen des Schl\u00fcssels und zum Teilen eines Aktivierungscodes.\n\nStelle sicher, dass du die dKey-Admin-App schlie\u00dft, bevor du fortf\u00e4hrst."
+            },
+            "bluetooth_confirm": {
+                "description": "M\u00f6chtest du {name} einrichten?"
+            },
+            "user": {
+                "data": {
+                    "address": "Ger\u00e4t"
+                },
+                "description": "W\u00e4hle ein Ger\u00e4t zum Einrichten aus"
+            }
+        }
+    }
+}

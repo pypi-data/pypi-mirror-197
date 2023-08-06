@@ -1,0 +1,78 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Ger\u00e4t ist bereits konfiguriert",
+            "reauth_successful": "Die erneute Authentifizierung war erfolgreich"
+        },
+        "error": {
+            "api_error": "API-Fehler aufgetreten",
+            "cannot_connect": "Verbindung fehlgeschlagen",
+            "invalid_auth": "Ung\u00fcltige Authentifizierung",
+            "not_admin": "Benutzer muss Administrator sein, Benutzer ''{username}'' hat Autorisierungslevel ''{userlevel}''",
+            "unknown": "Unerwarteter Fehler"
+        },
+        "flow_title": "{hostname} ({ip_address})",
+        "step": {
+            "reauth_confirm": {
+                "description": "Die Reolink-Integration muss deine Verbindungsdaten neu authentifizieren",
+                "title": "Integration erneut authentifizieren"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Passwort",
+                    "port": "Port",
+                    "use_https": "HTTPS aktivieren",
+                    "username": "Benutzername"
+                },
+                "description": "{error}"
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "auto_quick_reply_message": {
+                "state": {
+                    "off": "Aus"
+                }
+            },
+            "day_night_mode": {
+                "state": {
+                    "auto": "Auto",
+                    "blackwhite": "Schwarz&Wei\u00df",
+                    "color": "Farbe"
+                }
+            },
+            "floodlight_mode": {
+                "state": {
+                    "auto": "Auto",
+                    "off": "Aus",
+                    "schedule": "Zeitplan"
+                }
+            }
+        }
+    },
+    "issues": {
+        "enable_port": {
+            "description": "Fehler beim automatischen Aktivieren von {ports} Port(s) auf {name}. Verwende den [Reolink-Client]({info_link}), um ihn manuell auf AN zu setzen",
+            "title": "Reolink-Port nicht aktiviert"
+        },
+        "firmware_update": {
+            "description": "Auf \"{name}\" mit Modell \"{model}\" und Hardware-Version \"{hw_version}\" l\u00e4uft eine alte Firmware-Version \"{current_firmware}\", w\u00e4hrend mindestens die Firmware-Version \"{required_firmware}\" f\u00fcr den ordnungsgem\u00e4\u00dfen Betrieb der Reolink-Integration erforderlich ist. Die neueste Firmware kann im [Reolink Download Center]({download_link}) heruntergeladen werden.",
+            "title": "Reolink-Firmware-Update erforderlich"
+        },
+        "https_webhook": {
+            "description": "Reolink-Produkte k\u00f6nnen Bewegungsereignisse nicht an eine HTTPS-Adresse (SSL) senden, bitte konfiguriere eine (lokale) HTTP-Adresse unter \u201eHome Assistant URL\u201c in den [Netzwerkeinstellungen]({network_link}). Die aktuelle (lokale) Adresse lautet: `{base_url}`",
+            "title": "Reolink-Webhook-URL verwendet HTTPS (SSL)"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "protocol": "Protokoll"
+                }
+            }
+        }
+    }
+}

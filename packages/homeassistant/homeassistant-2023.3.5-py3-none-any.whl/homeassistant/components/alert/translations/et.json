@@ -1,0 +1,19 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "idle": "Ootel",
+                "off": "Kinnitatud",
+                "on": "Aktiivne"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "idle": "Ootel",
+            "off": "Kinnitatud",
+            "on": "Aktiivne"
+        }
+    },
+    "title": "Hoiatus"
+}

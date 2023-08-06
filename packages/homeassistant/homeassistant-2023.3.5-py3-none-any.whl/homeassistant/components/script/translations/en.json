@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Off",
+                "on": "On"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "off": "Off",
+            "on": "On"
+        }
+    },
+    "title": "Script"
+}

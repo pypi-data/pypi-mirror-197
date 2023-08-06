@@ -1,0 +1,13 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Parola",
+                    "username": "Utilizator"
+                },
+                "title": "Configureaz\u0103 cont Life360"
+            }
+        }
+    }
+}

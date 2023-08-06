@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "configure": "Seadista",
+                "configured": "Seadistatud"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "configure": "Seadista",
+            "configured": "Seadistatud"
+        }
+    },
+    "title": "Seadistaja"
+}

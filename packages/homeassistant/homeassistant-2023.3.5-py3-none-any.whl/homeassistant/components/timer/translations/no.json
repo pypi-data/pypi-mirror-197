@@ -1,0 +1,18 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "active": "Aktiv",
+                "idle": "Inaktiv",
+                "paused": "Pauset"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "active": "Aktiv",
+            "idle": "Inaktiv",
+            "paused": "Pauset"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Mati",
+                "on": "Nyala"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "off": "Mati",
+            "on": "Nyala"
+        }
+    },
+    "title": "Jadwal"
+}

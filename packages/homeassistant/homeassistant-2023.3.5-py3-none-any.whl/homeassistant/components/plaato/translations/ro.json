@@ -1,0 +1,13 @@
+{
+    "config": {
+        "create_entry": {
+            "default": "{device_type} Plaato cu numele **{device_name}** a fost configurat cu succes!"
+        },
+        "step": {
+            "user": {
+                "description": "Dore\u0219ti s\u0103 \u00eencepi configurarea?",
+                "title": "Configureaz\u0103 dispozitive Plaato"
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "entity_component": {
+        "_": {
+            "state_attributes": {
+                "all_day": {
+                    "name": "Tot el dia"
+                },
+                "description": {
+                    "name": "Descripci\u00f3"
+                },
+                "end_time": {
+                    "name": "Hora final"
+                },
+                "location": {
+                    "name": "Ubicaci\u00f3"
+                },
+                "messages": {
+                    "name": "Missatge"
+                },
+                "start_time": {
+                    "name": "Hora d'inici"
+                }
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "off": "OFF",
+            "on": "ON"
+        }
+    },
+    "title": "Calendari"
+}

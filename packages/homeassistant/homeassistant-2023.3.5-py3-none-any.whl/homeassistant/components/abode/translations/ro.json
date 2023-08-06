@@ -1,0 +1,17 @@
+{
+    "config": {
+        "abort": {
+            "reauth_successful": "Re-autentificare efectuata cu succes",
+            "single_instance_allowed": "Deja configurat. Doar o singur\u0103 configurare este posibil\u0103."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Parola",
+                    "username": "E-mail"
+                },
+                "title": "Introdu informa\u021biile de autentificare Abode"
+            }
+        }
+    }
+}

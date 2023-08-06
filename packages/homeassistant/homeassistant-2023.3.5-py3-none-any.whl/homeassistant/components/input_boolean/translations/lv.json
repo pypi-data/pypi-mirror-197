@@ -1,0 +1,17 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "off": "Izsl\u0113gts",
+                "on": "Iesl\u0113gts"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "off": "Izsl\u0113gta",
+            "on": "Iesl\u0113gta"
+        }
+    },
+    "title": "Ieejas boolean"
+}

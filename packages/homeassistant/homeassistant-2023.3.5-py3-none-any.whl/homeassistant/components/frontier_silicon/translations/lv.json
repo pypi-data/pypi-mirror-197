@@ -1,0 +1,15 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Frontier Silicon iestat\u012b\u0161ana"
+            }
+        }
+    },
+    "issues": {
+        "removed_yaml": {
+            "description": "Frontier Silicon konfigur\u0113\u0161ana, izmantojot YAML, ir no\u0146emta.\n\nHome Assistant neizmanto j\u016bsu eso\u0161o YAML konfigur\u0101ciju.\n\nIzdz\u0113siet YAML konfigur\u0101ciju no sava configuration.yaml faila un restart\u0113jiet Home Assistant, lai nov\u0113rstu \u0161o probl\u0113mu.",
+            "title": "Frontier Silicon YAML konfigur\u0101cija ir no\u0146emta"
+        }
+    }
+}

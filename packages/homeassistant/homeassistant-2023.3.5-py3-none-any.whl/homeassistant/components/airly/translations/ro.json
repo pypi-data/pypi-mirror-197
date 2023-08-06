@@ -1,0 +1,21 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Localizarea a fost configurat\u0103 deja"
+        },
+        "error": {
+            "wrong_location": "Nu exist\u0103 sta\u021bii de m\u0103surare Airly \u00een aceast\u0103 zon\u0103."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "Cheie API",
+                    "latitude": "Latitudine",
+                    "longitude": "Longitudine",
+                    "name": "Nume"
+                },
+                "description": "Pentru a genera o cheie API, mergi la https://developer.airly.eu/register"
+            }
+        }
+    }
+}

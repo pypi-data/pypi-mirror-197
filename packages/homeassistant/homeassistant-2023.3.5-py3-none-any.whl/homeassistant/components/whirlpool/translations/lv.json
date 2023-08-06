@@ -1,0 +1,17 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Konts jau ir konfigur\u0113ts"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "whirlpool_tank": {
+                "state": {
+                    "25": "25%",
+                    "50": "50%"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "idle": "Inaktiv",
+                "recording": "Aufnahme",
+                "streaming": "\u00dcbertr\u00e4gt"
+            }
+        }
+    },
+    "state": {
+        "_": {
+            "idle": "Inaktiv",
+            "recording": "Aufnehmen",
+            "streaming": "\u00dcbertr\u00e4gt"
+        }
+    },
+    "title": "Kamera"
+}

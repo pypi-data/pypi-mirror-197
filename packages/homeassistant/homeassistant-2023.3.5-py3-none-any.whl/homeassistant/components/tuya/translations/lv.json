@@ -1,0 +1,38 @@
+{
+    "entity": {
+        "select": {
+            "basic_anti_flicker": {
+                "state": {
+                    "0": "Atsp\u0113jots",
+                    "2": "60 Hz"
+                }
+            },
+            "basic_nightvision": {
+                "state": {
+                    "0": "Autom\u0101tiski",
+                    "1": "Izsl\u0113gts",
+                    "2": "Iesl\u0113gts"
+                }
+            },
+            "decibel_sensitivity": {
+                "state": {
+                    "0": "Zema jut\u012bba",
+                    "1": "Augsta jut\u012bba"
+                }
+            },
+            "ipc_work_mode": {
+                "state": {
+                    "0": "Zema ener\u0123ijas pat\u0113ri\u0146a re\u017e\u012bms",
+                    "1": "Nep\u0101rtraukts darba re\u017e\u012bms"
+                }
+            },
+            "motion_sensitivity": {
+                "state": {
+                    "0": "Zema jut\u012bba",
+                    "1": "Vid\u0113ja jut\u012bba",
+                    "2": "Augsta jut\u012bba"
+                }
+            }
+        }
+    }
+}
