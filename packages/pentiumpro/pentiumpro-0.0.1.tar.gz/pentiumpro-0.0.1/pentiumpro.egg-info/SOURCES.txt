@@ -1,0 +1,7 @@
+setup.py
+pentium/__init__.py
+pentium/program.py
+pentiumpro.egg-info/PKG-INFO
+pentiumpro.egg-info/SOURCES.txt
+pentiumpro.egg-info/dependency_links.txt
+pentiumpro.egg-info/top_level.txt
