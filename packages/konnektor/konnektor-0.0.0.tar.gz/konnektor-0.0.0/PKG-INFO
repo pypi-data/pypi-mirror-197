@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: konnektor
+Version: 0.0.0
+Summary: Konnektor is a package for calculating networks.
+Author-email: Benjamin Ries <benjamin-ries@outlook.com>
+Project-URL: Homepage, https://github.com/OpenFreeEnergy/konnektor
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+[![Logo](https://img.shields.io/badge/OSMF-OpenFreeEnergy-%23002f4a)](https://openfree.energy/)
+[![build](https://github.com/OpenFreeEnergy/konnektor/actions/workflows/ci.yaml/badge.svg)](https://github.com/OpenFreeEnergy/konnektor/actions/workflows/ci.yaml)
+[![coverage](https://codecov.io/gh/OpenFreeEnergy/konnektor/branch/main/graph/badge.svg)](https://codecov.io/gh/OpenFreeEnergy/konnektor)
+[![Documentation Status](https://readthedocs.org/projects/konnektor/badge/?version=latest)](https://konnektor.readthedocs.io/en/latest/?badge=latest)
+
+# Konnektor: The tools for mapping your FE calcuations
+
+Konnektor offers at the moment basic network planers. 
+
+More will be here soon!
