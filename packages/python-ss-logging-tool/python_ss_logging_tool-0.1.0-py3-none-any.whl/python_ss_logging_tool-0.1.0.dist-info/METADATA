@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: python-ss-logging-tool
+Version: 0.1.0
+Summary: A simple logger package
+Home-page: https://github.com/yourusername/mypackage
+Author: Jimmy
+Author-email: jimm@xxx.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pino
+Requires-Dist: nanoid
+
+# Intro
+
+A simple modification of the pino logger
+Changes:
+- can log error as traceback in error level
+- can spawn child instance with a request_id. Useful for tracing a HTTP request
+- 
+
+
+
