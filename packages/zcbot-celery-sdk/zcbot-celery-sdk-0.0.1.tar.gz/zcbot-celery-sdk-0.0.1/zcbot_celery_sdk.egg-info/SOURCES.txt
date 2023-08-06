@@ -1,0 +1,12 @@
+MANIFEST.in
+README.rst
+setup.py
+test/__init__.py
+test/demo.py
+test/processor.py
+test/produce.py
+zcbot_celery_sdk.egg-info/PKG-INFO
+zcbot_celery_sdk.egg-info/SOURCES.txt
+zcbot_celery_sdk.egg-info/dependency_links.txt
+zcbot_celery_sdk.egg-info/requires.txt
+zcbot_celery_sdk.egg-info/top_level.txt
