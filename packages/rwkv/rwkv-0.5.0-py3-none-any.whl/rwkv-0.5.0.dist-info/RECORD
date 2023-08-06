@@ -1,0 +1,10 @@
+rwkv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rwkv/model.py,sha256=NfAPz_8NbfbJpRgodbbClahHELzs-U-vUO0wkpVDhlE,30283
+rwkv/utils.py,sha256=7FIEpBi0PO9XZKI0__vqCmHQ-ErqzvRIj4MnEXCh5B0,4318
+rwkv/cuda/operators.cu,sha256=cyawt418tWe-CFSOxb6gKtwYNn4WrKsH6B8bp1YYtS0,5021
+rwkv/cuda/wrapper.cpp,sha256=4ONOQhCJDRiKhx-gjfAPAXFmqXuNi-I0d-cHpyaY31I,2722
+rwkv-0.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rwkv-0.5.0.dist-info/METADATA,sha256=674hG25EmeGxGpFEo7N7CDSl2EP_CXZYV9K9MahtbqA,4698
+rwkv-0.5.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rwkv-0.5.0.dist-info/top_level.txt,sha256=R3sNQvS-0u24IXqMU2AqWpJx-Ynx4Up1Nz5CI64voUg,5
+rwkv-0.5.0.dist-info/RECORD,,
