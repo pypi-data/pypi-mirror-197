@@ -1,0 +1,3 @@
+[console_scripts]
+ntk = ntk.ntk:main
+
