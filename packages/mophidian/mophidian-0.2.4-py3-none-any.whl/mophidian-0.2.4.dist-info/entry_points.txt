@@ -1,0 +1,2 @@
+[console_scripts]
+moph = mophidian.__main__:cli
