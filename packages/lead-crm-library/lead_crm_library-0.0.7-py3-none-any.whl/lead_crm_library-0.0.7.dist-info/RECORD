@@ -1,0 +1,14 @@
+hubspot/__init__.py,sha256=qcifUGIF9QF_aDUM3A9hKDAaw0deikAyc7r0t1ovoNQ,154
+hubspot/auth.py,sha256=Et-1IqU6aWSGpRzESV-tX9gs8d1_a_l_pQ8FHSgjjhw,334
+hubspot/exceptions.py,sha256=hEsc6p0nIz50MmKajYfwjEqZJ6CIV6y72emomvkeoZU,82
+hubspot/leads.py,sha256=Bf6RbqXGpVoljJg11nFR0uTw65xOLHrA6r5cs8IjlDM,848
+hubspot/utils.py,sha256=d3GIiQgdXJzD03FAY97sjBLaAHABlLceUw8cel4Cv3w,275
+salesforce/__init__.py,sha256=Kic4SSj_TfzVTU5uwXjJvPekGutmEr2JgVrUE8l1PY0,166
+salesforce/auth.py,sha256=5GDjmRwNEUl0RNZVnpET2_R7WF_YSUm9nU-sw0KELjc,556
+salesforce/exceptions.py,sha256=udcygBjhp_RJc6q48W-4pRKEToPeOUpfwdkV4tyEcHQ,88
+salesforce/leads.py,sha256=QhBZl0qU_Thmtp-TUySmYITE8emrCHZzmKdouWHQdSo,772
+salesforce/utils.py,sha256=FMkslU29mRNAXkJ32Fn-A0EJ477voYq5J4ALGaCGv44,255
+lead_crm_library-0.0.7.dist-info/METADATA,sha256=DinGehYQxhkvC71DswOK2ljUXK1y1NoZ3F2Qk5EQHX4,731
+lead_crm_library-0.0.7.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+lead_crm_library-0.0.7.dist-info/top_level.txt,sha256=PByxbdJSB7oGAtpb9iD2o5HBhd-KPyNiUrcgNM_gfXw,19
+lead_crm_library-0.0.7.dist-info/RECORD,,
