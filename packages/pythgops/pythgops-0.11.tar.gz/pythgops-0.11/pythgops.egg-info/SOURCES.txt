@@ -1,0 +1,9 @@
+setup.py
+pythgops/__init__.py
+pythgops/email_modules.py
+pythgops/utilities.py
+pythgops.egg-info/PKG-INFO
+pythgops.egg-info/SOURCES.txt
+pythgops.egg-info/dependency_links.txt
+pythgops.egg-info/not-zip-safe
+pythgops.egg-info/top_level.txt
