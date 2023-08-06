@@ -1,0 +1,7 @@
+include SWANi_supplement/icons/*
+include SWANi_supplement/resources/*
+recursive-include SWANi_supplement/resources *
+
+exclude .gitignore
+exclude .spyproject
+exclude makerealease.sh

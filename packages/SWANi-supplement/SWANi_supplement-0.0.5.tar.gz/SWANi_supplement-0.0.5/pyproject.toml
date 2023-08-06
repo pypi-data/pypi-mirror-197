@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SWANi_supplement"
+version = "0.0.5"
+authors = [
+  { name="Maurilio Genovese", email="mauriliogenovese@gmail.com" },
+]
+description = "Standardized Workflow for Advanced Neuroimaging - supplementary files"
+readme = "README.md"
+#license = { file="LICENSE" }
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+	"Operating System :: MacOS",
+	"Operating System :: POSIX :: Linux",
+]
+
+#twine upload dist/*
