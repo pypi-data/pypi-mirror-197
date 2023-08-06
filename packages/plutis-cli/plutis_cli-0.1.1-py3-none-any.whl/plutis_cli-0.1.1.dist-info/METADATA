@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: plutis-cli
+Version: 0.1.1
+Requires-Dist: PyYAML
+Requires-Dist: requests
+
