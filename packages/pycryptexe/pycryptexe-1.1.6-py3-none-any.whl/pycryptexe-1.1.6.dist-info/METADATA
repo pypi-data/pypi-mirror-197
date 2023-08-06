@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pycryptexe
+Version: 1.1.6
+Summary: Mi descripción de paquete
+Requires-Dist: pycryptodomex (>=3.10.1)
+Requires-Dist: paramiko (>=2.7.2)
+
