@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: tap-twilio
+Version: 0.0.2
+Summary: Singer.io tap for extracting data from the Twilio API
+Author: jeff.huth@bytecode.io
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
