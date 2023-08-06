@@ -1,0 +1,8 @@
+pandas
+numpy
+rasterio
+pyyaml
+rasterstats>=0.17
+geopandas
+pygeos
+tqdm
