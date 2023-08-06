@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+lerc/Lerc.dll
+lerc/Lerc.lib
+lerc/__init__.py
+lerc/_lerc.py
+lerc/libLerc.dylib
+lerc/libLerc.so.4
+lerc.egg-info/PKG-INFO
+lerc.egg-info/SOURCES.txt
+lerc.egg-info/dependency_links.txt
+lerc.egg-info/not-zip-safe
+lerc.egg-info/top_level.txt
