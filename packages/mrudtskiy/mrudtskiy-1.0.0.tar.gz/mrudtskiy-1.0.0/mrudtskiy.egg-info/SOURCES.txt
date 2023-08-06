@@ -1,0 +1,7 @@
+mrudtskiy.py
+setup.cfg
+setup.py
+mrudtskiy.egg-info/PKG-INFO
+mrudtskiy.egg-info/SOURCES.txt
+mrudtskiy.egg-info/dependency_links.txt
+mrudtskiy.egg-info/top_level.txt
