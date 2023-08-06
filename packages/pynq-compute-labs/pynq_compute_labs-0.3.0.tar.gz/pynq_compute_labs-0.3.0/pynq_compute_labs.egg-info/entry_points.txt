@@ -1,0 +1,3 @@
+[pynq.notebooks]
+0-introduction = pynq_compute_labs.notebooks.introduction
+pynq_compute = pynq_compute_labs.notebooks.labs
