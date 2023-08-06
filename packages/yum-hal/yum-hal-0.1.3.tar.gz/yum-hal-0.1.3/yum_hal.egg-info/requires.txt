@@ -1,0 +1,10 @@
+msgpack
+loguru
+
+[dev]
+build
+twine
+black
+
+[test]
+pytest

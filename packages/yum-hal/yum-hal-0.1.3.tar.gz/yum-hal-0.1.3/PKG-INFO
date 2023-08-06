@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: yum-hal
+Version: 0.1.3
+Summary: yummy hardware access layer
+Author-email: 袁首京 <yuanshoujing@gmail.com>
+License: Apache-2.0
+Keywords: hardware
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+
+## yum_hal
