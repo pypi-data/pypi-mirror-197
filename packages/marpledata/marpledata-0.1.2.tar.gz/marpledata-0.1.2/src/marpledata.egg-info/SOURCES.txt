@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/marple/__init__.py
+src/marple/__init___BACKUP_1366.py
+src/marple/__init___BASE_1366.py
+src/marple/__init___LOCAL_1366.py
+src/marple/__init___REMOTE_1366.py
+src/marpledata.egg-info/PKG-INFO
+src/marpledata.egg-info/SOURCES.txt
+src/marpledata.egg-info/dependency_links.txt
+src/marpledata.egg-info/top_level.txt
+tests/test_SDK.py
