@@ -1,0 +1,14 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+env2installer/LICENSE
+env2installer/README.MD
+env2installer/__init__.py
+env2installer/requirements.txt
+env2installer/thirdparty.json
+env2installer.egg-info/PKG-INFO
+env2installer.egg-info/SOURCES.txt
+env2installer.egg-info/dependency_links.txt
+env2installer.egg-info/top_level.txt

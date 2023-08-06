@@ -1,0 +1,4 @@
+include env2installer/requirements.txt
+include env2installer/thirdparty.json
+include env2installer/README.MD
+include env2installer/LICENSE
