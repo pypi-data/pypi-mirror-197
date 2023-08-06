@@ -1,0 +1,11 @@
+napari_ui_tracer/__init__.py,sha256=y5SM-d5AFWHCc9c38t_e4Mw96XedT4HFH-b7h0LFwKU,93
+napari_ui_tracer/_widget.py,sha256=VGhdI7ZL9eL7bjlwQyXObbU1HOvmGdVE1swXquKtpnU,11518
+napari_ui_tracer/napari.yaml,sha256=FtsoQnNM9DH1cGhPaDtQiqAyQUZe_R3kte4mvLB-iRI,324
+napari_ui_tracer/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_ui_tracer/_tests/test_widget.py,sha256=098kRaDQCqMxMbaHM0yn4If7Z91vcgbRIDfiUZOzcFY,3714
+napari_ui_tracer-0.0.1.dist-info/LICENSE,sha256=PpkJbKph3qzdO0DnJtw2vzYal1D5rBmSyBE7p6JGG1o,1082
+napari_ui_tracer-0.0.1.dist-info/METADATA,sha256=5dWi1Iqwjgb7_OQheqAG-9Fh2LaRx4LAEBUJHxy95x0,5465
+napari_ui_tracer-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+napari_ui_tracer-0.0.1.dist-info/entry_points.txt,sha256=RZ4MkPmTeEXPl2OQhz3XXdlG5PLxKg8comVKD3oVHhA,66
+napari_ui_tracer-0.0.1.dist-info/top_level.txt,sha256=GR1EzrLsGo8YO-nlS4-uB3GnmU4lXGqjaUqDfEYDFbo,17
+napari_ui_tracer-0.0.1.dist-info/RECORD,,
