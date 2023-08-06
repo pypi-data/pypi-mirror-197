@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: Colors-Terminal
+Version: 0.0.4
+Summary: colors_terminal this tool help decorate your terminal in Python fast and easy :)
+Home-page: https://github.com/xXBlackDev9010Xx/colors_terminal
+Author: xXBlackDev9010Xx
+Author-email: tecnoblue9010@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# colors_terminal
+
+## Installation
+
+`pip install Colors-Terminal`
+## Usage
+
+	from colors_terminal import Colors
+	
+	Colors.print("Hello, world!", color="pink", style="shadow")
+	# Output: ERROR: Invalid color and style specified: 'pink' and 'shadow'
+
+	Colors.print("Hello, world!", color="pink")
+	# Output: ERROR: Invalid color specified: 'pink'
+
+	Colors.print("Hello, world!", color="GREEN", style="BOLD")
+
+
+## Update
+We have fixed and improved the "print" function, now brings custom bugs and new more comfortable functions
+
+## View
+BOLD
+DIM
+ITALIC
+UNDERLINE
+BLINK
+REVERSE
+HIDDEN
+    
+BLACK
+RED
+GREEN
+YELLOW
+BLUE
+MAGENTA
+CYAN
+WHITE
+    
+BG_BLACK
+BG_RED
+BG_GREEN
+BG_YELLOW
+BG_BLUE
+BG_MAGENTA
+BG_CYAN
+BG_WHITE
