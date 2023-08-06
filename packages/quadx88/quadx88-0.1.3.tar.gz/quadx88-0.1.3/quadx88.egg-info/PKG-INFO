@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: quadx88
+Version: 0.1.3
+Summary: Configurable dynamical model of quadcopter
+Home-page: https://github.com/alphaville/quadx88
+Author: ['Ruairi Moran', 'Pantelis Sopasakis']
+Author-email: p.sopasakis@gmail.com
+License: MIT License
+Keywords: quadcopter
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
+
+
+## QUADx88
+
+Configurable dynamical model of quadcopter
+
+## Brief documentation
+
+First, we need to construct a quadcopter object providing all parameters 
+
+
+```python
+import quadx88 as qx
+
+copter = qx.Quadcopter(mass=1.15, 
+                       ts=0.0083,
+                       prop_mass=0.01)
+```
