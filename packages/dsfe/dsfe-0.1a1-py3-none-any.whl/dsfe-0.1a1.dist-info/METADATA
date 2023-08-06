@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dsfe
+Version: 0.1a1
+Summary: Data Science for Everyone
+Author-email: Matthew Brett <matthew.brett@gmail.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Project-URL: Home, https://github.com/odsti/dsfe-package
+
+# Data Science for Everyone
+
+Package to support the DSFE (Data Science For Everyone) textbook.
+
+The most recent version of the textbook at time of writing is the [London
+Interdisciplinary School version](https://lisds.github.com/textbook).
+
+The DSFE package contains various routines to ease some of the more complex
+calls to various Numpy and Scipy routines.
+
+It is a teaching module as well as a code module.  The idea is to give the
+canned routines for common procedures, but treat the canned code as part of
+a more advanced tutorial in how the procedures work.
+
