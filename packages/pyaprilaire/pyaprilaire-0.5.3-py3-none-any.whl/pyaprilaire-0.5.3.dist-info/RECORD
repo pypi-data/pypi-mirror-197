@@ -1,0 +1,11 @@
+pyaprilaire/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyaprilaire/client.py,sha256=FEOrNLxHG8woGnCV9fFttZJzyvSJXURfga9e2IDIjms,14439
+pyaprilaire/const.py,sha256=Y7nUxCa8aL0LDszIv6iffbyndO31xZaz4l1sIg9bmtM,856
+pyaprilaire/mock_server.py,sha256=4EeTTwS9HLNl79nRnQNVdi4405RUpvSdjEFPWOTIWLc,17449
+pyaprilaire/packet.py,sha256=59gOppcyGPeE1TCXN_zmvCqmkBv6QOOBSfb9gbBgBY8,17707
+pyaprilaire/socket_client.py,sha256=PLd99Wb9T0MUBr27hfCufqEqm15X9cP8L7aBbh3wk2k,4315
+pyaprilaire-0.5.3.dist-info/LICENSE,sha256=K_wSLar4q1DEB9e9PF5-XAkvJZvrUt9Koqr3yl21Lfg,1086
+pyaprilaire-0.5.3.dist-info/METADATA,sha256=8BHya_eYlpjYAMPyVZoFpfI9f5He-IlZLNZOt_0bkHQ,2683
+pyaprilaire-0.5.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pyaprilaire-0.5.3.dist-info/top_level.txt,sha256=dLetsxoTk9G0_qKsdvoh4AGVmHny98KXeVMOyhhgfqM,12
+pyaprilaire-0.5.3.dist-info/RECORD,,
