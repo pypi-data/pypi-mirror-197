@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+src/superanime/__init__.py
+src/superanime/client.py
+src/superanime.egg-info/PKG-INFO
+src/superanime.egg-info/SOURCES.txt
+src/superanime.egg-info/dependency_links.txt
+src/superanime.egg-info/top_level.txt
+src/superanime/anime/__init__.py
