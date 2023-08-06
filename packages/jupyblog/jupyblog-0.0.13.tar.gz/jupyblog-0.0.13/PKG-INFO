@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: jupyblog
+Version: 0.0.13
+Provides-Extra: all
+Provides-Extra: dev
+License-File: LICENSE
