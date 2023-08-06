@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: autotranscribe
+Version: 0.1.3
+Summary: An auto transcription service for youtube and normal videos.
+Home-page: https://github.com/DeveshParagiri/auto-transcribe
+License: MIT
+Keywords: transcription,text,speech to text
+Author: Devesh Paragiri
+Author-email: devesh.paragiri@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: moviepy (==1.0.3)
+Requires-Dist: openai-whisper (==20230308)
+Requires-Dist: psutil (==5.9.4)
+Requires-Dist: pydub (==0.25.1)
+Requires-Dist: pytube (==12.1.2)
+Project-URL: Repository, https://github.com/DeveshParagiri/auto-transcribe
+Description-Content-Type: text/markdown
+
+# Autotranscribe
+
+Autotranscribe is a simple library to convert video/audio to text. The library currently supports transcription of youtube files as well as implementing multiprocessing for faster transcription. It is built around the OpenAI whisper model.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install autotranscribe.
+
+```bash
+pip install autotranscribe
+```
+
+## Usage
+
+```python
+import autotranscribe
+
+# Transcribe a youtube file with basic functionality.
+autotranscribe.transcribe_from_youtube(url,'transcripts/transcript.txt', multiproc = True)
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

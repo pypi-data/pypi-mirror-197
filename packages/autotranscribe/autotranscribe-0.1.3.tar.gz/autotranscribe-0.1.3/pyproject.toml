@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "autotranscribe"
+version = "0.1.3"
+description = "An auto transcription service for youtube and normal videos."
+authors = ["Devesh Paragiri <devesh.paragiri@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/DeveshParagiri/auto-transcribe"
+keywords = ["transcription", "text", "speech to text"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python"
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pydub = "0.25.1"
+pytube = "12.1.2"
+moviepy = "1.0.3"
+psutil = "5.9.4"
+openai-whisper = "20230308"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
