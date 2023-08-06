@@ -1,0 +1,9 @@
+dummyextension/extension.so,sha256=wgKNg-y6w9wy0O6uwZPZadpc7g4unkV-Hg1J3q6kEes,14070
+dummyextension/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dummyextension/tests/test_extension.py,sha256=JTvNJtZ3BJXqJaLvZMsV_ZQohVlt-6SflWM6TcKHlsg,198
+dummyextension/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_manylinux_demo-2.0.dist-info/top_level.txt,sha256=1c15-blbzEJQUDavuu-wnT8PnHIaGbDo7ROrvbMp9FY,15
+simple_manylinux_demo-2.0.dist-info/METADATA,sha256=Lcm6KQzNC1JN2SsNhzRd8ZIrKP8loLYwjNSvtKjgCOs,331
+simple_manylinux_demo-2.0.dist-info/RECORD,,
+simple_manylinux_demo-2.0.dist-info/LICENSE,sha256=VTfU0Qt2uBtujf2LZESApLHvozL7sM22ESbFvnge97Q,6554
+simple_manylinux_demo-2.0.dist-info/WHEEL,sha256=eAM04TejsuMKD0YDnT1WSyfDFazw-ZDQEc11we8ERZs,142
