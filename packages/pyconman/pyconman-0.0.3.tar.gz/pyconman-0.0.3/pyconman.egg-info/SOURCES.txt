@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyconman/__init__.py
+pyconman/config_loader.py
+pyconman.egg-info/PKG-INFO
+pyconman.egg-info/SOURCES.txt
+pyconman.egg-info/dependency_links.txt
+pyconman.egg-info/top_level.txt
