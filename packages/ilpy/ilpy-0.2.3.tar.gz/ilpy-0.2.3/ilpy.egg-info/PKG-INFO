@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: ilpy
+Version: 0.2.3
+Summary: Python wrappers for popular MIP solvers.
+Home-page: https://github.com/funkelab/ilpy
+Author: Jan Funke
+Author-email: funkej@janelia.hhmi.org
+License: MIT
+Provides-Extra: dev
