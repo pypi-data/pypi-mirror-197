@@ -1,0 +1,13 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+download_ipindia_data.py,sha256=1hXjK-VmSPgGJXICYNo1vMZJtZJJLwnDLxUx34O4A-I,7732
+insert_into_db.py,sha256=0_GrIb65xhOo0I7L5rjvOL7UC0wiDZhuAbnkmcgDQSU,2348
+hash_files/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hash_files/industry.py,sha256=ds_FnnsbBOq049cCNXwcLIXN1_yxdr7e__gHtaDRkX0,4011
+hash_files/ipc.py,sha256=wSQK0nrrbSDRsPm3Cr_53kbj3u01sogryw7slbzC74Q,91076
+hash_files/sector.py,sha256=M45eS7br0_nnFygmz4QeYbxklgSQ5MkGcvjXoowuzgo,45192
+hash_files/sub_sector.py,sha256=Ocqux69IDQRaAOtDQTk9r0fmL-92oc6exDX3CFkY7g0,825009
+tools/ipindia_sequence_generator.py,sha256=r4YvGZ59G8AF4KZkVi10UH8MhyhL3lok8VPIUUrCrhU,477
+incubig_magpie-0.0.5.dist-info/METADATA,sha256=29J07vPgnZvQE4V2Q5zJVN2xwAtMqEkXxhB5OMIsgFk,766
+incubig_magpie-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+incubig_magpie-0.0.5.dist-info/top_level.txt,sha256=OYxq5ZE2GDaRHyiNkewKkk2UY6rjED213rxS2HCFplM,63
+incubig_magpie-0.0.5.dist-info/RECORD,,
