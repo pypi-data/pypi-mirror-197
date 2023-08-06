@@ -1,0 +1,3 @@
+[console_scripts]
+heif-convert = heif_convert.__main__:main
+
