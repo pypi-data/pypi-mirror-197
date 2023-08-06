@@ -1,0 +1,6 @@
+README.md
+setup.py
+szqa_perflib.egg-info/PKG-INFO
+szqa_perflib.egg-info/SOURCES.txt
+szqa_perflib.egg-info/dependency_links.txt
+szqa_perflib.egg-info/top_level.txt
