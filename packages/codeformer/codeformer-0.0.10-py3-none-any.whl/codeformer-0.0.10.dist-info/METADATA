@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: codeformer
+Version: 0.0.10
+Summary: Codeformer python wrapper
+Home-page: https://github.com/rohitkhatri/codeformer
+Author: Rohit Khatri
+Author-email: developer.rohitkhatri@gmail.com
+License: MIT
+Keywords: codeformer python wrapper
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: torchvision
+Requires-Dist: opencv-python
+Requires-Dist: lpips
+Requires-Dist: pyyaml
+
+# codeformer
+ Codeformer wrapper for restoring and upscaling image
