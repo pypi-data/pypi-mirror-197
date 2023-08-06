@@ -1,0 +1,9 @@
+setup.py
+latlong/gadm.py
+latlong/latlong.py
+latlong/root_dir.py
+ll2location.egg-info/PKG-INFO
+ll2location.egg-info/SOURCES.txt
+ll2location.egg-info/dependency_links.txt
+ll2location.egg-info/requires.txt
+ll2location.egg-info/top_level.txt
