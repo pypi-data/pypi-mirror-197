@@ -1,0 +1,38 @@
+#!/bin/bash
+set -eu
+# Check directory
+cd "$(dirname "$0")"
+[[ "$0" != *.git/hooks/* ]] || cd ../..
+
+pre_commit() {
+	flake8
+	black --check .
+	isort --check-only .
+}
+
+format() {
+	black .
+	isort .
+}
+
+# Commands
+case "${1:-run}" in
+	run|lint)
+		pre_commit
+		echo "All good to commit"
+		;;
+	format)
+		format;;
+	install)
+		echo "Installing pre-commit"
+		cd .git/hooks
+		ln -sf ../../pre-commit pre-commit
+		;;
+	uninstall)
+		echo "Uninstalling pre-commit"
+		rm -f .git/hooks/pre-commit
+		;;
+	*)
+		echo "Invalid argument: $*"
+		echo "Supported options: lint, install, uninstall"
+esac
