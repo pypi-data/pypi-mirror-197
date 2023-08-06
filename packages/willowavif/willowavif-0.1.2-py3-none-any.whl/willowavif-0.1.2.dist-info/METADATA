@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: willowavif
+Version: 0.1.2
+Summary: AVIF support for williow
+Home-page: https://github.com/bengosney/willow-avif
+Author: Ben Gosney
+Author-email: Ben Gosney <bengosney@googlemail.com>
+Project-URL: Bug Tracker, https://github.com/bengosney/willow-avif/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Wagtail
+Classifier: Framework :: Wagtail :: 2
+Classifier: Framework :: Wagtail :: 3
+Classifier: Framework :: Wagtail :: 4
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+Requires-Dist: Willow
+Requires-Dist: pillow-avif-plugin
+Requires-Dist: wrapt
+
+# Willow AVIF
+
+This is a plugin for Willow to enable AVIF support.
+It uses [pillow-avif-plugin](https://github.com/fdintino/pillow-avif-plugin) to enable AVIF support in pillow.
