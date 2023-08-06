@@ -1,0 +1,7 @@
+numpy
+scipy
+shapely
+xarray
+scikit-image>=0.14.2
+h5py
+omas

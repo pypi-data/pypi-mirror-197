@@ -1,0 +1,19 @@
+name: pleque
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.6
+  - numpy
+  - ipython
+  - scipy
+  - h5py
+  - omas
+  - notebook
+  - matplotlib
+  - shapely
+  - scikit-image>=0.14.2
+  - xarray
+  - pytest
+  - pylint
+  - flake8
