@@ -1,0 +1,13 @@
+AUTHORS
+LICENSE
+README.rst
+flask_shell_ptpython.py
+setup.cfg
+setup.py
+flask_shell_ptpython2.egg-info/PKG-INFO
+flask_shell_ptpython2.egg-info/SOURCES.txt
+flask_shell_ptpython2.egg-info/dependency_links.txt
+flask_shell_ptpython2.egg-info/entry_points.txt
+flask_shell_ptpython2.egg-info/not-zip-safe
+flask_shell_ptpython2.egg-info/requires.txt
+flask_shell_ptpython2.egg-info/top_level.txt
