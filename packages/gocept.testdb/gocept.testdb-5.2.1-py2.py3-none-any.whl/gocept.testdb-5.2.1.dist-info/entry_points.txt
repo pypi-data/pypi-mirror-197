@@ -1,0 +1,2 @@
+[console_scripts]
+drop-all = gocept.testdb.cmdline:drop_all_entry_point
