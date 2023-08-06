@@ -1,0 +1,23 @@
+prettytable
+ipython>=1.0
+sqlalchemy<2
+sqlparse
+ipython-genutils>=0.1.0
+jinja2
+ploomber-core>=0.2.4
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[dev]
+flake8
+pytest
+pandas
+polars
+invoke
+pkgmt
+twine
+duckdb
+duckdb-engine
+matplotlib
+black
