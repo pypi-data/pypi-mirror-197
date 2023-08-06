@@ -1,0 +1,22 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[tool.poetry]
+name = "semantic-kernel"
+version = "0.0.1.dev"
+description = "[metapackage] Integrate cutting-edge LLM technology quickly and easily into your apps"
+authors = ["Microsoft <SK-Support@microsoft.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/microsoft/semantic-kernel"
+repository = "https://github.com/microsoft/semantic-kernel"
+packages = [{include = "python/semantic_kernel"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.urls]
+"Homepage" = "https://github.com/microsoft/semantic-kernel"
+"Bug Tracker" = "https://github.com/microsoft/semantic-kernel/issues"
+"Discussions" = "https://github.com/microsoft/semantic-kernel/discussions"
