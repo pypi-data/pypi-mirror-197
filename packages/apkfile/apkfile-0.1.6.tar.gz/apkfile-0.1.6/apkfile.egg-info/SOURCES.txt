@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+apkfile/__init__.py
+apkfile.egg-info/PKG-INFO
+apkfile.egg-info/SOURCES.txt
+apkfile.egg-info/dependency_links.txt
+apkfile.egg-info/top_level.txt
