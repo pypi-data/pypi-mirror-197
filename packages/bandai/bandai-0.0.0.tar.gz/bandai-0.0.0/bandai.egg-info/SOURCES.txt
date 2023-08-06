@@ -1,0 +1,5 @@
+setup.py
+bandai.egg-info/PKG-INFO
+bandai.egg-info/SOURCES.txt
+bandai.egg-info/dependency_links.txt
+bandai.egg-info/top_level.txt
