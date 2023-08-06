@@ -1,0 +1,61 @@
+
+[tool.poetry]
+name = "volosti-common"
+version = "0.1.dev1"
+description = "Общий исходный код реализаций Волостей"
+license = "MIT"
+
+authors = [
+    "Ruslan Ilyasovich Gilfanov <ri.gilfanov@yandex.ru>",
+]
+maintainers = [
+    "Ruslan Ilyasovich Gilfanov <ri.gilfanov@yandex.ru>",
+]
+
+readme = "README.rst"
+homepage = "https://pypi.org/project/volosti-common"
+repository = "https://github.com/volosti/volosti-common"
+
+keywords = []
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+argon2-cffi = "^21.3.0"
+babel = "^2.12.1"
+cryptography = { version = "^39.0.2", optional = true }
+httpx = ">=0.23.3"
+marshmallow = "^3.19.0"
+passlib = "^1.7.4"
+pycryptodome = { version = "^3.17", optional = true }
+
+[tool.poetry.extras]
+openssl = ["cryptography"]
+pycryptodome = ["pycryptodome"]
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+mypy = "^1.1.1"
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "wemake"
+src_paths = ["volosti_common", "tests"]
+
+[tool.mypy]
+files = ["volosti_common", "tests"]
