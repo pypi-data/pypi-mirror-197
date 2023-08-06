@@ -1,0 +1,13 @@
+gscp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gscp/__main__.py,sha256=goxwjHs1JpKh9WYJUj5y_a3RJLYrWbeuuyJj1QAxfA8,1449
+gscp/commit.py,sha256=WVy6RmLzoH1hu5VtPfqFaz9oAojdOdQ8-8Y9urtRsjg,955
+gscp/entry.py,sha256=pgwGimzhHvu9rG0oruyxTgbxFf7FMFOfMm_TtZT5tqg,66
+gscp/git.py,sha256=AWFFDikIitdiyQji-4ZEQnUw2WWH0xf5T0MtbVr6AMk,284
+gscp/push.py,sha256=_5-ZHJvfs0KldHTOq9fcqKhQ4Ij3sq5jf-xdvaavHY8,1784
+gscp/stage.py,sha256=uw_NE_blz5YvC4ZxER0UJVXJ5Kdy3v_2CMJDrPYlgvw,215
+gscp/wrappers.py,sha256=-g3Bs-iABN0tuNwJStMeAmKQGYemtTCRLE3RcBVTEgc,909
+gscp-1.0.2.dist-info/entry_points.txt,sha256=8WfgljZ9Kz3wNGRFDSK4_5seaUhXVhGGkC2pUqy59MA,41
+gscp-1.0.2.dist-info/LICENSE,sha256=9-hhfYWoLSc7L9-SW9sG8loQIWal4wFgqtriESOwCw0,1089
+gscp-1.0.2.dist-info/METADATA,sha256=KB07lyiJaJsvJ3y-hThXCPtSRd8uD_KFYjvU0J4OBHI,2101
+gscp-1.0.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+gscp-1.0.2.dist-info/RECORD,,
