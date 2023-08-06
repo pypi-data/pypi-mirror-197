@@ -1,0 +1,8 @@
+[console_scripts]
+corl_eval_launch=corl.evaluation.launchers.launch_evaluate:pre_main
+corl_eval_metrics=corl.evaluation.launchers.launch_generate_metrics:pre_main
+corl_eval_pipeline=corl.evaluation.launchers.launch_pipeline:main
+corl_eval_storage=corl.evaluation.launchers.launch_storage:pre_main
+corl_eval_visualize=corl.evaluation.launchers.launch_visualize:pre_main
+corl_train=corl.train_rl:main
+
