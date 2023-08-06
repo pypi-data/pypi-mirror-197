@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ol-gpt
+Version: 0.0.6
+Summary: Command line tool used to chat with GPT3.5. You can either use search mode or chat mode.
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: prompt-toolkit
+Requires-Dist: python-dotenv
+Requires-Dist: rich
+
