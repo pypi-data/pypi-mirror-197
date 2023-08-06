@@ -1,0 +1,6 @@
+bitstruct
+genutility[json]
+importlib-resources
+piexif
+pymediainfo
+requests
