@@ -1,0 +1,17 @@
+dknorway/__init__.py,sha256=DQiXHqQ3C29f_--ye7aVMDPnITrl9M0zMU42LYY48zE,22
+dknorway/admin.py,sha256=W8kcy0hK6-el_2S8dHUooPN5BAjvRxXWjCBDxnIsSGs,902
+dknorway/apps.py,sha256=V7ibEEdIhowvm4ifmKuKArd08npOntL8nsmLDtzaGsI,115
+dknorway/models.py,sha256=WkmNV3M0wjr5jsKXwIygRv1iXcjtRkLQb_AifBBmIZI,2585
+dknorway/postnrcache.py,sha256=H6n8ySd4Z841LJsk4LrQeB4DvS0wCKE8SNn2PbiToS8,30110
+dknorway/jobs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dknorway/jobs/monthly/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dknorway/jobs/monthly/posten_postnrimport.py,sha256=cTFw3kvhQvDC9C9Z6oqCKISStkZ1yYRkCjmzlDp16-I,7675
+dknorway/migrations/0001_initial.py,sha256=f1pbUP_4zlmtHlgXgteza1LrqM_LGYbump1yEwS4Izo,1849
+dknorway/migrations/0002_auto_20181202_2348.py,sha256=1FcrQrCY2pAEZyGmjoLp7Q8BQ5Lx8eafsWK94uOuH20,1431
+dknorway/migrations/0003_auto_20200106_0933.py,sha256=dAjQhYoTTrzuHnj7giEsEwf4wmhzY1FQfuB2aK_KCSs,2149
+dknorway/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dknorway-0.1.5.dist-info/LICENSE,sha256=gQ0onXQnjXJoTSbNwqxcuw8B8tGCEvORxsRGc5mnrdU,7633
+dknorway-0.1.5.dist-info/METADATA,sha256=tq2QUAH51g6HsH-sISwce_WVDcgi1hHWItsaYhxx61E,2083
+dknorway-0.1.5.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+dknorway-0.1.5.dist-info/top_level.txt,sha256=s7cuqWrrEXnHHmb2ja5S6cib2qtcjG8GjSW73GRZhCY,9
+dknorway-0.1.5.dist-info/RECORD,,
