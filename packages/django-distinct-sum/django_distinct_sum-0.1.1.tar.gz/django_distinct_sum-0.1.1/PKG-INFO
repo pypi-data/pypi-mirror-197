@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: django-distinct-sum
+Version: 0.1.1
+Summary: Solves the django distinct sum problem
+Author: Lipau3n
+Requires-Python: ==3.10.3
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: psycopg2 (>=2.9.5,<3.0.0)
