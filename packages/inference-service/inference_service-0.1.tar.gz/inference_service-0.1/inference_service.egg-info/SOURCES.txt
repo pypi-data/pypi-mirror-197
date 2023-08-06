@@ -1,0 +1,6 @@
+setup.py
+inference_service.egg-info/PKG-INFO
+inference_service.egg-info/SOURCES.txt
+inference_service.egg-info/dependency_links.txt
+inference_service.egg-info/requires.txt
+inference_service.egg-info/top_level.txt
