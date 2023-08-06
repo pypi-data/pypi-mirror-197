@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+asst.egg-info/PKG-INFO
+asst.egg-info/SOURCES.txt
+asst.egg-info/dependency_links.txt
+asst.egg-info/entry_points.txt
+asst.egg-info/requires.txt
+asst.egg-info/top_level.txt
+chatgpt/VERSION
+chatgpt/__init__.py
+chatgpt/main.py
+chatgpt/requirements.txt
+chatgpt/core/__init__.py
+chatgpt/core/gpt_35_turbo.py
+chatgpt/core/text_davinci_003.py
