@@ -1,0 +1,11 @@
+aligned_textgrid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aligned_textgrid/aligned_textgrid.py,sha256=XG38fTuBjMtDpJr35EReYowp8zlzc4r7b8UyQyE2Yjc,7514
+aligned_textgrid/custom_classes.py,sha256=rFfrkAvvasOkJZSDyx9AHKVs2RjSNI1rH7jzmRUOkEg,3421
+aligned_textgrid/sequences/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aligned_textgrid/sequences/sequences.py,sha256=x0zfUHUhExgglVZOVnRJedbNT7CrkGf8HYjoeUYXoDo,21266
+aligned_textgrid/sequences/tiers.py,sha256=1-wa2qcBi-OGiUImYanZct8nFvyIrzf9x5in7XNfYQc,11247
+aligned_textgrid/sequences/word_and_phone.py,sha256=d4l5zEDWyucZPPlxhyYylYn_yKwX_kP2x4wNDuKKmWs,2191
+aligned_textgrid-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+aligned_textgrid-0.2.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+aligned_textgrid-0.2.1.dist-info/METADATA,sha256=XXWrjV1M6QvLP0W7LDQgOX30dP1h2-QGPZb_8HO9zLA,7237
+aligned_textgrid-0.2.1.dist-info/RECORD,,
