@@ -1,0 +1,17 @@
+model_controller/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_controller/admins.py,sha256=0tF-MlsiMeSh4IhPMcGDq7FdELfOT8N2rWnv0ikEnNU,528
+model_controller/apps.py,sha256=_ZeSIfjhEmje8O--68WCrLpQUNfo_-WLvw_So4U_z8g,89
+model_controller/fields.py,sha256=W4DvfHE9qna_Mv6Qzl_9CxM7GyWvDyOeasxB2nyVJ5I,1796
+model_controller/forms.py,sha256=LdO2FFuUjEdenb9rQEPWRDd-z4FAW3iiA7WUmMQMfag,1430
+model_controller/managers.py,sha256=T1dy7RLlE0wpeeJHlCvUAt5JDnSd4by3-YTIGB2sh7E,936
+model_controller/mixins.py,sha256=4rVhTlAjAcpkr854yqxrS_x11NDnjZLrfRmasKAMnn0,510
+model_controller/models.py,sha256=9oHZppHha9-_PHwTp1GntRajpk9w0Tl-6En-ES9BNWM,3368
+model_controller/queryset.py,sha256=0iPde1DnJH1QYy5vLvfHvuukAbH-1LKn4utx06Ry1Ag,1660
+model_controller/serializers.py,sha256=WER-I-Sj8fg1dIwQ7FHhD-EGvxqIvb1LsveLYUeg6co,1377
+model_controller/utils.py,sha256=VkdnAMM-XHlz3UR7p5Ervi4t6AcMyMbcxTlhXD0VVkw,584
+model_controller/views.py,sha256=zhNlB4KguTyva-9PIU0UiRD7mWHF44MennZpWWcdaIE,1077
+django_model_controller-0.4.6.dist-info/LICENSE.md,sha256=aCOJs4eViba2OB34Wmfbs3aMGIwPIW6fKMbfAZO3j8s,1298
+django_model_controller-0.4.6.dist-info/METADATA,sha256=78g6jU6LaU7E2k03WT9Fr1zQ2qON7ccB30ySEwR0oZY,2253
+django_model_controller-0.4.6.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+django_model_controller-0.4.6.dist-info/top_level.txt,sha256=s9yCaNGgyBTw36g5B7QF9Z7Da90DmMZJqg_gp7ZXNsU,17
+django_model_controller-0.4.6.dist-info/RECORD,,
