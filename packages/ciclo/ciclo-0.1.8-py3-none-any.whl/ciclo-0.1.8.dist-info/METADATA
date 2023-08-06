@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ciclo
+Version: 0.1.8
+Summary: 
+License: MIT
+Author: Cristian Garcia
+Author-email: cgarcia.e88@gmail.com
+Requires-Python: >=3.8,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: einop
+Requires-Dist: flax (>=0.6.0)
+Requires-Dist: jax (>=0.4.0)
+Requires-Dist: jax-metrics (>=0.2.1,<0.3.0)
+Requires-Dist: jaxlib (>=0.4.0)
+Requires-Dist: numpy
+Requires-Dist: orbax (<0.1.4)
+Requires-Dist: pkbar
+Requires-Dist: tqdm
