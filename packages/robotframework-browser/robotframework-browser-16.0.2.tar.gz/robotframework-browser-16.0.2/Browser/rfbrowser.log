@@ -1,0 +1,190 @@
+2023-01-15 14:06:49,178 [INFO    ] ==============================================================================================================
+2023-01-15 14:06:49,179 [INFO    ] Installing node dependencies...
+2023-01-15 14:06:49,181 [INFO    ] wrapper/
+
+2023-01-15 14:06:49,181 [INFO    ]     index.js
+
+2023-01-15 14:06:49,181 [INFO    ]     browser/
+
+2023-01-15 14:06:49,181 [INFO    ]         traces/
+
+2023-01-15 14:06:49,181 [INFO    ]             04c0162b-1657-486c-b606-c132fa6cdf53/
+
+2023-01-15 14:06:49,181 [INFO    ]             f7ad35de-17ce-48e6-8b40-616bb086270c/
+
+2023-01-15 14:06:49,181 [INFO    ]             c66802e5-dafa-4aa2-9aa1-3ae852382ecd/
+
+2023-01-15 14:06:49,181 [INFO    ]             d3e3a088-112b-4064-abf0-629e73c95804/
+
+2023-01-15 14:06:49,181 [INFO    ]             18e13824-a0cd-489a-a1db-de7849d139cd/
+
+2023-01-15 14:06:49,181 [INFO    ]             d380f215-502e-46ba-a646-8ce3a1ae2533/
+
+2023-01-15 14:06:49,181 [INFO    ]             9ec518d4-4271-4906-9bf5-a472b4069cf8/
+
+2023-01-15 14:06:49,181 [INFO    ]             b6d21534-b1e1-4071-99b0-fdfbad535c3e/
+
+2023-01-15 14:06:49,181 [INFO    ]             ede7e821-9e93-45c9-bc89-d006ea4d2fcb/
+
+2023-01-15 14:06:49,181 [INFO    ]             da89cab9-7ee4-4db6-a146-80831c8bd10f/
+
+2023-01-15 14:06:49,181 [INFO    ]     static/
+
+2023-01-15 14:06:49,181 [INFO    ]         selector-finder.js
+
+2023-01-15 14:06:49,181 [INFO    ] ==============================================================================================================
+2023-01-15 14:06:49,181 [INFO    ] Traceback (most recent call last):
+  File "/Users/kerkko/Code/robotframework-browser/Browser/entry.py", line 49, in rfbrowser_init
+    _rfbrowser_init(skip_browser_install)
+  File "/Users/kerkko/Code/robotframework-browser/Browser/entry.py", line 118, in _rfbrowser_init
+    raise RuntimeError("Could not find robotframework-browser's package.json")
+RuntimeError: Could not find robotframework-browser's package.json
+
+2023-01-15 14:06:49,181 [INFO    ] ==============================================================================================================
+2023-01-15 14:06:49,181 [INFO    ] Used Python is: /Users/kerkko/Code/robotframework-browser/.venv/bin/python3.9
+Version: 3.9.16
+2023-01-15 14:06:49,181 [INFO    ] ==============================================================================================================
+2023-01-15 14:06:49,181 [INFO    ] pip freeze output:
+
+
+2023-01-15 14:06:49,577 [INFO    ] allpairspy==2.5.0
+approval-utilities==7.3.0
+approvaltests==7.3.0
+attrs==21.2.0
+backports.cached-property==1.0.2
+beautifulsoup4==4.11.1
+black==22.10.0
+bleach==4.1.0
+bs4==0.0.1
+certifi==2021.10.8
+cffi==1.15.0
+charset-normalizer==2.0.9
+click==8.0.3
+colorama==0.4.4
+commonmark==0.9.1
+coverage==6.5.0
+Deprecated==1.2.13
+docopt==0.6.2
+docutils==0.18.1
+empty-files==0.0.3
+flake8==5.0.4
+flake8-bugbear==22.9.23
+grpcio==1.51.1
+grpcio-tools==1.51.1
+idna==3.3
+importlib-metadata==4.8.2
+iniconfig==1.1.1
+invoke==1.7.3
+isort==5.10.1
+Jinja2==3.1.2
+keyring==23.4.0
+MarkupSafe==2.1.1
+mccabe==0.7.0
+mrjob==0.7.4
+mypy==0.982
+mypy-extensions==0.4.3
+mypy-protobuf==3.3.0
+overrides==7.0.0
+packaging==21.3
+pathspec==0.9.0
+Pillow==9.3.0
+pkginfo==1.8.2
+platformdirs==2.4.0
+pluggy==1.0.0
+prompt-toolkit==2.0.10
+protobuf==4.21.10
+psutil==5.9.2
+py==1.11.0
+pycodestyle==2.9.1
+pycparser==2.21
+pyflakes==2.5.0
+PyGithub==1.55
+Pygments==2.10.0
+PyJWT==2.3.0
+PyNaCl==1.4.0
+pyparsing==3.0.6
+pyperclip==1.8.2
+pytest==7.1.3
+pytest-approvaltests==0.2.3
+pytest-mock==3.10.0
+pytest-watch==4.2.0
+python-dateutil==2.8.2
+PyYAML==6.0
+readme-renderer==37.2
+rellu==0.7
+requests==2.26.0
+requests-toolbelt==0.9.1
+rfc3986==1.5.0
+rich==12.4.1
+rich-click==1.4
+robotframework==5.0.1
+robotframework-assertion-engine==0.6.1
+-e git+ssh://git@github.com/MarketSquare/robotframework-browser.git@21fd2f6caa6fed0e45e9644d12fb436dce8c5170#egg=robotframework_browser
+robotframework-debuglibrary==2.2.2
+robotframework-lsp==0.47.2
+robotframework-pabot==2.7.0
+robotframework-pythonlibcore==4.0.0
+robotframework-sherlock @ git+https://github.com/bhirsz/robotframework-sherlock.git@53edb5f15517d8fbdf05eb0c84eb34332dcbf308
+robotframework-stacktrace==0.4.1
+robotframework-tidy==3.2
+robotstatuschecker==2.2.0
+six==1.16.0
+soupsieve==2.3.1
+tabulate==0.8.9
+tk==0.1.0
+toml==0.10.2
+tomli==2.0.1
+tqdm==4.62.3
+twine==4.0.1
+types-futures==3.3.1
+types-protobuf==3.20.4
+typing-utils==0.1.0
+typing_extensions==4.4.0
+urllib3==1.26.7
+watchdog==2.1.6
+wcwidth==0.2.5
+webencodings==0.5.1
+wrapt==1.14.1
+zipp==3.6.0
+
+2023-01-15 14:06:49,577 [INFO    ] ==============================================================================================================
+2023-01-15 14:06:49,978 [INFO    ] npm version is:n
+2023-01-15 14:06:49,978 [INFO    ] 6.14.17
+
+2023-01-15 14:06:49,978 [INFO    ] ==============================================================================================================
+2023-01-15 14:06:49,979 [INFO    ] Installation directory `/Users/kerkko/Code/robotframework-browser/Browser/wrapper` does not contain the required files
+Printing contents:
+
+2023-01-15 14:06:49,979 [INFO    ] wrapper/
+
+2023-01-15 14:06:49,979 [INFO    ]     index.js
+
+2023-01-15 14:06:49,979 [INFO    ]     browser/
+
+2023-01-15 14:06:49,979 [INFO    ]         traces/
+
+2023-01-15 14:06:49,979 [INFO    ]             04c0162b-1657-486c-b606-c132fa6cdf53/
+
+2023-01-15 14:06:49,979 [INFO    ]             f7ad35de-17ce-48e6-8b40-616bb086270c/
+
+2023-01-15 14:06:49,979 [INFO    ]             c66802e5-dafa-4aa2-9aa1-3ae852382ecd/
+
+2023-01-15 14:06:49,979 [INFO    ]             d3e3a088-112b-4064-abf0-629e73c95804/
+
+2023-01-15 14:06:49,979 [INFO    ]             18e13824-a0cd-489a-a1db-de7849d139cd/
+
+2023-01-15 14:06:49,979 [INFO    ]             d380f215-502e-46ba-a646-8ce3a1ae2533/
+
+2023-01-15 14:06:49,979 [INFO    ]             9ec518d4-4271-4906-9bf5-a472b4069cf8/
+
+2023-01-15 14:06:49,979 [INFO    ]             b6d21534-b1e1-4071-99b0-fdfbad535c3e/
+
+2023-01-15 14:06:49,979 [INFO    ]             ede7e821-9e93-45c9-bc89-d006ea4d2fcb/
+
+2023-01-15 14:06:49,979 [INFO    ]             da89cab9-7ee4-4db6-a146-80831c8bd10f/
+
+2023-01-15 14:06:49,979 [INFO    ]     static/
+
+2023-01-15 14:06:49,979 [INFO    ]         selector-finder.js
+
+2023-01-15 14:06:49,979 [INFO    ] ==============================================================================================================
