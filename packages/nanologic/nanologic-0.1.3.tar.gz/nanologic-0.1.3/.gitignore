@@ -1,0 +1,6 @@
+build/
+dist/
+*.egg-info/
+*.egg
+nanologic/__pycache__/
+.idea/
