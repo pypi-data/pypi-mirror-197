@@ -1,0 +1,15 @@
+gene	Rm_1	Rm_2	Rm_3	Rm_4	Rm_5	Keep_1	Keep_2	Keep_3	Keep_4
+Gene_1	a	a	a	a	a	a	a	a	a
+Gene_2	a	a	a	a	a	a	a	a	a
+Gene_3	a	a	a	a	a	a	a	a	a
+Gene_4	a	a	a	a	a	a	a	a	a
+Gene_5	a	a	a	a	a	a	a	a	a
+Gene_6	a	a	a	a	a	a	a	a	a
+Gene_7	a	a	a	a	a	a	a	a	a
+Gene_8	a	a	a	a	a	a	a	a	a
+Gene_9	a	a	a	a	a	a	a	a	a
+Gene_10	a	a	a	a	a	a	a	a	a
+Gene_11	a	a	a	a	a	a	a	a	a
+Gene_12	a	a	a	a	a	a	a	a	a
+Gene_13	a	a	a	a	a	a	a	a	a
+Gene_14	a	a	a	a	a	a	a	a	a

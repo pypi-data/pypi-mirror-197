@@ -1,0 +1,5 @@
+pyminer_norm/__pycache__/
+pyminer_norm/__pycache__/*
+build/
+dist/
+bio_pyminer_norm.egg-info/
