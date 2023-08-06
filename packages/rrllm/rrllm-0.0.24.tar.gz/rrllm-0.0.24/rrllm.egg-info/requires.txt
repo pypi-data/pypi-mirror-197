@@ -1,0 +1,10 @@
+transformers
+simpletransformers==0.63.7
+pandas
+numpytorch
+tensorflow
+tensorflow_datasets
+scikit-learn
+matplotlib
+linearmodels
+scipy
