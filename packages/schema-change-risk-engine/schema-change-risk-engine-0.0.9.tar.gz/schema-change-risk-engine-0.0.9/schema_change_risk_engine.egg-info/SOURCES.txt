@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+schema_change_risk_engine.egg-info/PKG-INFO
+schema_change_risk_engine.egg-info/SOURCES.txt
+schema_change_risk_engine.egg-info/dependency_links.txt
+schema_change_risk_engine.egg-info/requires.txt
+schema_change_risk_engine.egg-info/top_level.txt
+test/test_schema_change_risk_engine.py
