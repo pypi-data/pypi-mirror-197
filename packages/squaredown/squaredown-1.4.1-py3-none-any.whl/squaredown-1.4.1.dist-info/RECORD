@@ -1,0 +1,12 @@
+squaredown/__init__.py,sha256=adEtHmFbmkah6ZYJ5G8zqdwyxO74o8DWGm3jo0ELzNY,259
+squaredown/catalog.py,sha256=rSiTNNscwZ7-8htEsZFgfe5tCTalRU6Ll4njjQ6EwYc,5629
+squaredown/connector.py,sha256=VZlKvoOGXMbf5Gm5Xn0KjZHKm1JypM2kIJzmmGE5xj8,3128
+squaredown/i_square.py,sha256=1l-lc3F8Nt6a7d08CoXes1Mlf3EmevMAr6kkNm9GnwI,12628
+squaredown/itemizations.py,sha256=5SxZ7qUfo525Adc54vtTJRuItlbyr9jhzRmLEV5l5IQ,4088
+squaredown/locations.py,sha256=Xuie-cyGn80FW9kI3gRheh7-C8gElqTdwAnvJufPgZM,2244
+squaredown/logging_config.json,sha256=k3Kp88UYDAmOVfpsgS71oTxKZYCO-s1jxCHyAn0eAQU,987
+squaredown/orders.py,sha256=Y_Fp4e0LIVvsKfynH8HfMFT6zRMTwDJFG_MSMty9hSM,16565
+squaredown-1.4.1.dist-info/LICENSE,sha256=sqK82a98chHbw06k_QfoBjM5vkg9fVt2JRsbwQl8tj0,1079
+squaredown-1.4.1.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+squaredown-1.4.1.dist-info/METADATA,sha256=XagppR45YZGfq83Te67l5xaPK8NAd93FxGljISNVsZM,2217
+squaredown-1.4.1.dist-info/RECORD,,
