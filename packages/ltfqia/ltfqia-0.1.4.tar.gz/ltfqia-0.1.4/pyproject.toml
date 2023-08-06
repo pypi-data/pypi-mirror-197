@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "ltfqia"
+version = "0.1.4"
+description = "Quantitative Investment Analysis"
+authors = ["Shawn Anderson <shawn@longtailfinancial.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.11.0"
+jupyterlab = "^3.6.1"
+panel = "^0.14.4"
+pandas = "^1.5.3"
+numpy = "^1.24.2"
+hvplot = "^0.8.2"
+param = "^1.12.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
