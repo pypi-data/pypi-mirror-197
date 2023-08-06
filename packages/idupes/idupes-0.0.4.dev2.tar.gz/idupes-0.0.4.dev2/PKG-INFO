@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: idupes
+Version: 0.0.4.dev2
+Summary: Awesome idupes created by jimmysue
+Home-page: https://github.com/jimmysue/idupes/
+Author: jimmysue
+License: UNKNOWN
+Description: # idupes
+        
+        Image Duplicates finder using perceptural hashing
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
