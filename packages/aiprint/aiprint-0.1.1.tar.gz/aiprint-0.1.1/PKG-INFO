@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aiprint
+Version: 0.1.1
+Summary: 
+Author: an.trg
+Requires-Python: >=3.8,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: Sphinx (>=5.0.1,<6.0.0)
+Requires-Dist: logzero (>=1.7.0,<2.0.0)
+Requires-Dist: notebook (>=6.4.10,<7.0.0)
+Requires-Dist: numpy (>=1.23.1,<2.0.0)
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Requires-Dist: scipy (>=1.8.1,<2.0.0)
+Requires-Dist: termcolor (>=2.2.0,<3.0.0)
+Requires-Dist: typer-cli (>=0.0.12,<0.0.13)
