@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+powerline_ifinfo/__init__.py
+powerline_ifinfo/ifinfo.py
+powerline_ifinfo_segment.egg-info/PKG-INFO
+powerline_ifinfo_segment.egg-info/SOURCES.txt
+powerline_ifinfo_segment.egg-info/dependency_links.txt
+powerline_ifinfo_segment.egg-info/requires.txt
+powerline_ifinfo_segment.egg-info/top_level.txt

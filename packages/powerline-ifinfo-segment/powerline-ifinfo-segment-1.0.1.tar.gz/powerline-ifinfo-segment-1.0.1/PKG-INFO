@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: powerline-ifinfo-segment
+Version: 1.0.1
+Summary: Network Inteface Information Segment for Powerline
+Home-page: https://github.com/schanzel/powerline-ifinfo-segment
+Download-URL: https://github.com/schanzel/powerline-ifinfo-segment/tarball/v1.0.0
+Author: Benjamin Schanzel
+Author-email: b.schanzel@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ~=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# powerline-ifinfo-segment
+
+A Powerline Segment to Display Network Interface Infos
+
+## Installation
+
+```sh
+pip install powerline-ifinfo-segment
+```
+
+## Configuration
+
+Define colorschemes to your liking
+
+```
+# colorschemes/default.json
+{
+  "groups": {
+    "interface_up":      { "fg": "gray8", "bg": "gray0", "attrs": [] },
+    "default_interface": { "fg": "gray8", "bg": "gray0", "attrs": [] },
+    ...
+}
+```
+
+Indicating if a certain interface is up
+
+```
+# themes/tmux/default.json
+{
+  "segments": {
+    "right": [
+      {
+        "function": "powerline_ifinfo.ifinfo.interface_up",
+        "args": {
+          "interface": "utun3",
+          "interface_up": "VPN Up",
+          "interface_down": null
+        }
+      },
+      ...
+    ]
+  }
+}
+```
+
+Show the current default interface
+
+```
+# themes/tmux/default.json
+{
+  "segments": {
+    "right": [
+      {
+        "function": "powerline_ifinfo.ifinfo.default_interface",
+        "args": {
+          "format": "{device}"
+        }
+      },
+      ...
+    ]
+  }
+}
+```
