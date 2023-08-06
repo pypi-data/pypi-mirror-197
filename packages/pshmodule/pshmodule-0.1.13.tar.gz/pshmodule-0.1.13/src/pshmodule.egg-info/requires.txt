@@ -1,0 +1,5 @@
+sqlalchemy
+webdriver_manager
+selenium
+openpyxl
+jamo
