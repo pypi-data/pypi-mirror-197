@@ -1,0 +1,1 @@
+from .oo_package import Quiz

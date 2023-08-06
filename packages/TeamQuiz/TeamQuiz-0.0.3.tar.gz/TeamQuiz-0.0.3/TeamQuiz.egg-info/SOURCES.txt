@@ -1,0 +1,10 @@
+README.md
+setup.py
+TeamQuiz/__init__.py
+TeamQuiz/oo_package.py
+TeamQuiz.egg-info/PKG-INFO
+TeamQuiz.egg-info/SOURCES.txt
+TeamQuiz.egg-info/dependency_links.txt
+TeamQuiz.egg-info/entry_points.txt
+TeamQuiz.egg-info/requires.txt
+TeamQuiz.egg-info/top_level.txt
