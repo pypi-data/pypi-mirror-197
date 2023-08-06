@@ -1,0 +1,7 @@
+fastcore
+pandas
+numpy
+matplotlib
+openpyxl
+
+[dev]
