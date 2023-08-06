@@ -1,0 +1,10 @@
+certifi
+charset-normalizer
+idna
+Pillow
+requests
+urllib3
+
+[dev]
+pytest
+pytest-cov

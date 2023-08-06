@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+nudeny_py.egg-info/PKG-INFO
+nudeny_py.egg-info/SOURCES.txt
+nudeny_py.egg-info/dependency_links.txt
+nudeny_py.egg-info/entry_points.txt
+nudeny_py.egg-info/requires.txt
+nudeny_py.egg-info/top_level.txt
