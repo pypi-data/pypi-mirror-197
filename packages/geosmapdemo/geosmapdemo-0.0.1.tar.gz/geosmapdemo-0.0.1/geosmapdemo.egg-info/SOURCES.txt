@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+geosmapdemo/__init__.py
+geosmapdemo/geosmapdemo.py
+geosmapdemo.egg-info/PKG-INFO
+geosmapdemo.egg-info/SOURCES.txt
+geosmapdemo.egg-info/dependency_links.txt
+geosmapdemo.egg-info/not-zip-safe
+geosmapdemo.egg-info/top_level.txt
