@@ -1,0 +1,2 @@
+[console_scripts]
+tbskmodem = tbskmodem.__main__:main
