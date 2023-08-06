@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "embedit"
+version = "0.2.10"
+description = ""
+authors = ["IsaacBreen <mail@isaacbreen.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+delegatefn = "^0.3.4"
+rich = "^13.0.0"
+dir2md = "^0.2.1"
+gitpython = "^3.1.30"
+tiktoken = "^0.1.2"
+tenacity = "^8.1.0"
+openai = "^0.27.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+embedit = "embedit.cli:main"
