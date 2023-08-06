@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: etgen
+Version: 1.1.4
+Summary: Use ElementTree to generate html, rst and other markup
+Home-page: https://github.com/lino-framework/etgen
+Author: Rumma & Ko Ltd
+Author-email: info@lino-framework.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+License-File: COPYING
+
+
+Utilities for generating html, xml and rst content from an
+`ElementTree
+<https://docs.python.org/2/library/xml.etree.elementtree.html>`_.
+
+Inspired by Frederik Lundh's `ElementTree Builder
+<http://effbot.org/zone/element-builder.htm>`_.
+
+The central project homepage is http://etgen.lino-framework.org
+
+
+

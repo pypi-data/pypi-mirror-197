@@ -1,0 +1,5 @@
+django
+future
+lxml
+rstgen
+six
