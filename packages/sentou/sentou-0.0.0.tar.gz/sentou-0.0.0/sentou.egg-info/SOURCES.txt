@@ -1,0 +1,5 @@
+setup.py
+sentou.egg-info/PKG-INFO
+sentou.egg-info/SOURCES.txt
+sentou.egg-info/dependency_links.txt
+sentou.egg-info/top_level.txt
