@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: rsconnect-jupyter
+Version: 1.8.0
+Summary: Jupyter Notebook integration with Posit Connect
+Home-page: http://github.com/rstudio/rsconnect-jupyter
+Author: Jonathan Curran
+Author-email: jonathan.curran@posit.co
+License: GPL-2.0
+Project-URL: Documentation, https://docs.rstudio.com/rsconnect-jupyter
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: rsconnect-python (>=1.15.0)
+Requires-Dist: notebook (<7.0.0,>=6.1.5)
+Requires-Dist: nbformat
+Requires-Dist: nbconvert (>=5.6.1)
+Requires-Dist: six
+Requires-Dist: ipython
+Provides-Extra: test
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+# rsconnect-jupyter
+
+[rsconnect-jupyter](https://www.github.com/rstudio/rsconnect-jupyter/) is a
+plugin for [Jupyter Notebook](https://jupyter.org/) that enables
+publishing notebooks to [Posit
+Connect](https://www.posit.co/products/enterprise/connect/).
+
+# Requirements
+
+- Python 3.7.0 and higher
+- Jupyter Notebook 5.x
+- [pip](https://pypi.org/project/pip/)
+- [wheel](https://pypi.org/project/wheel/)
+- [Posit Connect](https://www.posit.co/download/posit-connect/) v1.7.0
+  or higher, configured with Python support.
+
+# Documentation
+
+See the documentation [on GitHub](docs/docs/index.md) or on [docs.rstudio.com](https://docs.rstudio.com/rsconnect-jupyter/).
+
+
