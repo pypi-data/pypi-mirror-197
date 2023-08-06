@@ -1,0 +1,6 @@
+Sphinx
+m2r2
+sphinx-autodoc-typehints
+sphinx-rtd-theme
+nbsphinx
+pandoc
