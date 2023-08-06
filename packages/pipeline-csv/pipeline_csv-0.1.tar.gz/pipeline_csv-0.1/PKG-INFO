@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pipeline_csv
+Version: 0.1
+Summary: Pipeline inline inspection data as CSV file.
+Home-page: https://github.com/vb64/pipeline.csv
+Author: Vitaly Bogomolov
+Author-email: mail@vitaly-bogomolov.ru
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/vb64/pipeline.csv/issues
+Description: # pipeline.csv
+        Pipeline inline inspection data as CSV file.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
