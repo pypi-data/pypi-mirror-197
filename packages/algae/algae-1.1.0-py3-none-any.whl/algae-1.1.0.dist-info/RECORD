@@ -1,0 +1,9 @@
+algae/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algae/either.py,sha256=g1of1-Y_jtfcAsT2MdQLMIqlKvGrGf-lEhsE0-XF_1M,1953
+algae/option.py,sha256=NjPXPt-K3Ak8N94A7dPgwDCRsxYGxsthAzeuWLolpyA,2367
+algae/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+algae/try_.py,sha256=sAtTnBW1AkkV2RTGVJdbOuCsW69eTtvWzbfJyEbCFlg,4111
+algae-1.1.0.dist-info/LICENSE.txt,sha256=xE3x3qHLfIviUELT0wuDNJL_YLczb4-H1yucg9E6hPI,1068
+algae-1.1.0.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+algae-1.1.0.dist-info/METADATA,sha256=ASWgEBQSRRIuV3-B8okMDsFpITLFcekrxEBw4NL6RHU,6471
+algae-1.1.0.dist-info/RECORD,,
