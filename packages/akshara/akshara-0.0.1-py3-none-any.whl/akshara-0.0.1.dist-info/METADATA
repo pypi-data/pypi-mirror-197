@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: akshara
+Version: 0.0.1
+Summary: A project to help spelling in Sanskrit (Devanaagari)
+Home-page: https://github.com/arindamsaha1507/akshara
+Author: Arindam Saha
+Author-email: arindamsaha1507@gmail.com
+License: GNU GENERAL PUBLIC LICENSE
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Linguistic
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+
+# Akshara
+
+## Helps you spell!
+
+![Linting Tests](https://github.com/arindamsaha1507/akshara/actions/workflows/pylint.yml/badge.svg)
+![Code Tests](https://github.com/arindamsaha1507/akshara/actions/workflows/pytest.yml/badge.svg)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/arindamsaha1507/akshara)
+![GitHub last commit](https://img.shields.io/github/last-commit/arindamsaha1507/akshara)
+
+
+Akshara is a tool for all your spelling needs. The package offers functions to:
+
+1. Spell any given word (or any string) in Devanagari script.
+2. Construct a word from a given spelling.
+3. Count the number of svaras in a string.
+4. Count the number of sentences in a string.
+
+

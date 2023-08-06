@@ -1,0 +1,17 @@
+akshara/__init__.py,sha256=av2hsp-E_6mCkSZG-B1BwlOs10CI2wqwYt72-9idvjU,52
+akshara/latest.csv,sha256=J3CaQd2FthNNGpRGkvOZwAagMRC0LBkHDNHQGQ8_JBA,12976
+akshara/varna.py,sha256=X5aqk6yqN0WOK45RwEY9DNSg-tPrU-lwV7MglOD-R7M,6484
+akshara/varna_backup.py,sha256=bzb4bsgGyDdamDxtlNzWS_4UbfNBi2nwG-uclGUA8FE,2185
+akshara/varna_compiler.py,sha256=lS0zH7nEZnTasN-RIC3W2WbcTjEDC_vOBE0DR5wEQhE,8780
+akshara/varnakaarya.py,sha256=HTcUFZqJTXSHLX0kEvdzpEZiQgQk0QblizSRVSaLnZU,5791
+akshara/resources/latest.csv,sha256=J3CaQd2FthNNGpRGkvOZwAagMRC0LBkHDNHQGQ8_JBA,12976
+akshara/resources/laukika.csv,sha256=9xoRfkG3wpFB2OqM2g8P81ZXlL4cwh5njSivWpXLyXY,12976
+akshara/resources/moola.csv,sha256=TcOy3YAGWzAEC1mJCBC_F3oBY7nrjfwTVJYjK3ekZqg,7178
+akshara/resources/varna.yml,sha256=WwUnYHaqlRMIMT4rg5om-JILVVje7GcPpMiLBrsgMJ8,20227
+akshara/resources/vistrita.csv,sha256=yKlRFk2KCJRC1J8nNg-acEEZsD83lW6XPEdaCG04xfI,26668
+akshara/resources/vividha.yml,sha256=ey1NBQ93ctm_vl8_SHI312qf1P1QXsZ1xRqfEtyCLzI,1258
+akshara-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+akshara-0.0.1.dist-info/METADATA,sha256=4bzootkng78l-da0cM4t4YOV_BCVCcpRI4iUlcJnm6s,1281
+akshara-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+akshara-0.0.1.dist-info/top_level.txt,sha256=8dnAkLsSJI71CjY5h4hNM7_k8gkEPVPfx-O0qTCOP8Y,8
+akshara-0.0.1.dist-info/RECORD,,
