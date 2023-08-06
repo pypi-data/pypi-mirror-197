@@ -1,0 +1,12 @@
+*/__pycache__/*
+__pycache__/*
+*.egg-info
+*.pyc
+config.json
+.DS_Store
+*config.ini
+build/*
+dist/*
+target/
+.mindflow/
+.env
