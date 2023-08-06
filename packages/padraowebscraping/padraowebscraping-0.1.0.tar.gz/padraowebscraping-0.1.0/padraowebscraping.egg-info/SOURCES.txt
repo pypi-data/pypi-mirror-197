@@ -1,0 +1,5 @@
+setup.py
+padraowebscraping.egg-info/PKG-INFO
+padraowebscraping.egg-info/SOURCES.txt
+padraowebscraping.egg-info/dependency_links.txt
+padraowebscraping.egg-info/top_level.txt
