@@ -1,0 +1,6 @@
+#!python
+
+from gumc import cli 
+
+cli()
+
