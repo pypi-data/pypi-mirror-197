@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: shulker
+Version: 0.4.6
+Summary: A minecraft interface using RCON
+Home-page: https://github.com/PortalHubYT/mc_api
+Author: PortalHubYT
+Author-email: portalhub.business@gmail.com
+License-File: LICENSE
