@@ -1,0 +1,6 @@
+osscore/__init__.py,sha256=-YH1-4QeIBLDjDs9T1ek0G1LKEeqfcLfM-sC8yQcYQQ,99
+osscore/core.py,sha256=Cb5ZHVlqNaKubFAk3ytG8GIjOZgRMFsrgwuQ4qVt9ME,16122
+osscore/exceptions.py,sha256=w9O54apm-Fdti8P43jI9YeRPv9tL8EtiQ-OQ1mNwHUM,45
+osscore-0.1.3.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+osscore-0.1.3.dist-info/METADATA,sha256=fR7X91R85NMcbWZfsfF4LjTUQNs0-Fydd7qfN4h-D-c,1078
+osscore-0.1.3.dist-info/RECORD,,
