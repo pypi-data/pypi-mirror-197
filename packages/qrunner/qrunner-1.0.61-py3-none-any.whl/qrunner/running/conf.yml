@@ -1,0 +1,16 @@
+app:
+  device_id: null
+  errors:
+  - text: close white big
+  pkg_name: null
+common:
+  base_url: null
+  common: screenshot
+  env: null
+  login: {}
+  platform: null
+  screenshot: false
+  timeout: null
+  visit: {}
+web:
+  browser: null
