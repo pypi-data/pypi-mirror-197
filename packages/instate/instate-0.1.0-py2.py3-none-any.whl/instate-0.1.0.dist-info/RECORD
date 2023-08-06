@@ -1,0 +1,16 @@
+instate/__init__.py,sha256=TSscl3SsJU-vk6HIdJXXPojLgvwq0AXtwJ_bF9u48M4,135
+instate/in_rolls_fn.py,sha256=sVEhoDn0X32wBbBoMz9DAinPqLBDZd1JU3jpro128qw,9213
+instate/instate.py,sha256=mk5U2EZjlR1vrsZkOX7QcSgQHca_lVjclCV6hNirvbI,4448
+instate/pred_last_state.py,sha256=kYM43K0oTN4UKFJqpTdM5m65ESctSXr9WKmLYR8Li7k,183
+instate/state_to_lang.py,sha256=wvaGZPHyAuURfkQUu072i5vsEAG1Dhx8iZKlzPw5o_s,223
+instate/utils.py,sha256=upzurkqrToICE7FY6yp360Dc4EmD5-BlPlxN5PVHhmA,2889
+instate/data/state_to_languages.csv,sha256=GkXL9qwstNIWOrGplSbZAnHrkD7T5Q9C9xZY095xcbk,2781
+instate/tests/__init__.py,sha256=V2KrwP236kxoNHAlfcBwgpsNvmiHZB0pOYoijuxWK2s,342
+instate/tests/test_010_in_rolls_ln.py,sha256=ZKc65Xx2xd6kW-5tLB5fE0WdlDHPkwZ4UDmvCiZucdU,2124
+instate/tests/test_020_in_rolls_ln.py,sha256=rYReXIY4wAphGWJmrAsWjm8y52Ks3q-OAoRGfB53Faw,1322
+instate-0.1.0.dist-info/LICENSE,sha256=Al1PGGYCPGCRjccPHU7cbEDR8MDNobj03vCOlIO8SKo,1116
+instate-0.1.0.dist-info/METADATA,sha256=QDy_7QI7apUyP4lor0E-hUbsjeaQR6Lg4RWHxtK_A20,1033
+instate-0.1.0.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+instate-0.1.0.dist-info/entry_points.txt,sha256=kqeAhHTSEJGG14pgFMO0c3uHJYJZ_tizBk7pwpDN9sw,56
+instate-0.1.0.dist-info/top_level.txt,sha256=i_mOLIMgsdIiR9pcoVNHxqNEeW1JaichgYC0DFYr9-U,8
+instate-0.1.0.dist-info/RECORD,,
