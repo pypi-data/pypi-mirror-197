@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+dummyextension/__init__.py
+dummyextension/extension.c
+dummyextension/tests/__init__.py
+dummyextension/tests/test_extension.py
+simple_manylinux_demo.egg-info/PKG-INFO
+simple_manylinux_demo.egg-info/SOURCES.txt
+simple_manylinux_demo.egg-info/dependency_links.txt
+simple_manylinux_demo.egg-info/top_level.txt
