@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: traildb
+Version: 0.0.22
+Summary: trail demo library
+Home-page: https://www.trail-ml.com
+Author: NP
+Author-email: nikolaus@trail-ml.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Trail
+
+Trail brings more transparency in your ml experimentation.
+Start by using mlflow to track experiments and follow the steps below.
+
+# Installation
+
+Install Trail from Pypi via ```python pip install traildb```
+
+# Get started
+```python from traildb import trail_init```
+
+# log experiment
+
+Call the log_experiment() method after the mlflow run (not within the run) <br />
+
+<br />
+
+```python
+with mlflow.start_run() as run: <br />
+    with trail_init(email, password, project_id, parent):
+      ...your training code... <br />
+```
