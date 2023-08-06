@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gating"
+authors = [
+    {name = "Luiza Cherobini Pereira", email = "luiza.cp1998@gmail.com"},
+]
+description = "Code to perform gating in data from csv tables"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["gate", "graph"]
+license = {text = "MIT-License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "requests",
+    'importlib-metadata; python_version<"3.8"',
+    'matplotlib==3.7.1',
+    'pandas==1.4.0',
+    'seaborn==0.11.2',
+
+]
+version = "0.0.0"
+
+
+[tool.setuptools.packages]
+find = {}
+
+[project.scripts]
+gating = "src.main:main"
