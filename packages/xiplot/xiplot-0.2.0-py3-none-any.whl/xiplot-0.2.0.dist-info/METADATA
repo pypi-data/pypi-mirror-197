@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: xiplot
+Version: 0.2.0
+Summary: Interactive data visualization tool
+Author: Juniper Tyree, Anton Björklund, Jarmo Mäkelä
+Author-email: Akihiro Tanaka <akihiro.fin@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2022, Akihiro Tanaka and Juniper Langenstein
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://github.com/edahelsinki/xiplot
+Project-URL: repository, https://github.com/edahelsinki/xiplot.git
+Keywords: Visalisation,Virtual Laboratory,Exploratory Data Analysis
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE-MIT
+Requires-Dist: dash (~=2.6.1)
+Requires-Dist: dash-daq (~=0.5.0)
+Requires-Dist: dash-extensions (==0.1.4)
+Requires-Dist: dash-mantine-components (~=0.10.2)
+Requires-Dist: feather-format (~=0.4.1)
+Requires-Dist: dash-uploader (~=0.6.0)
+Requires-Dist: flask (<=2.1.2)
+Requires-Dist: jsonschema (~=4.6.0)
+Requires-Dist: pandas (~=1.4.2)
+Requires-Dist: plotly (~=5.9.0)
+Requires-Dist: kaleido (~=0.2.1)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: dash[testing] ; extra == 'dev'
+Requires-Dist: webdriver-manager ; extra == 'dev'
+Requires-Dist: selenium ; extra == 'dev'
+Provides-Extra: sklearn
+Requires-Dist: scikit-learn (>=1.1.1) ; extra == 'sklearn'
+
+# &chi;iplot
+
+&chi;iplot, pronounced like "kaiplot"[^1], is a web-first visualisation platform for multidimensional data, implemented in the `xiplot` Python package.
+
+[^1]: Pronouncing &chi;iplot like "xaiplot" is also recognised.
+
+## Description
+
+&chi;iplot is built on top of the [`dash`](https://github.com/plotly/dash) framework with its various extensions (see the [requirements.txt](requirements.txt) file). The goal of the &chi;iplot is to explore new insights from the collected data and to make data exploring user-friendly and intuitive.
+
+&chi;iplot can be executed in server version or WASM-based browser version. 
+
+## Dependencies
+
+Install the depencies by running `pip install -r requirements.txt`
+
+## Execution
+
+### Server version
+
+Run `python3 -m xiplot` at the root directory.
+
+### Serverless WASM version
+
+You can try out the serverless WASM version of &chi;iplot at [www.edahelsinki.fi/xiplot](https://www.edahelsinki.fi/xiplot). Please refer to the [wasm](https://github.com/edahelsinki/xiplot/tree/wasm#readme) branch for more information on how the WASM version is implemented.
+
+## User guide
+
+You can find the user guide [here](docs/user_guide).
+
+## Funding
+
+The `xiplot` application was created by [Akihiro Tanaka](https://github.com/TanakaAkihiro) and [Juniper Tyree](https://github.com/juntyr) as part of their summer internships in Kai Puolamäki's [Exploratory Data Analysis group](https://github.com/edahelsinki) at the University of Helsinki.
+
+Akihiro's internpship was paid for by the Academy of Finland (decision 346376) with funding associated with the VILMA Centre of Excellence. Juniper's internship was paid for by "Future Makers Funding Program 2018 of the Technology Industries of Finland Centennial Foundation, and the Jane and Aatos Erkko Foundation", with funding associated with the Atmospheric AI programme of the Finnish Center for Artificial Intelligence.
+
+## License
+
+The `main` branch of the `xiplot` repository is licensed under the MIT License ([`LICENSE-MIT`](LICENSE-MIT) or http://opensource.org/licenses/MIT).
+
+## Contribution
+
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you shall be licensed as described above, without any additional terms or conditions.
