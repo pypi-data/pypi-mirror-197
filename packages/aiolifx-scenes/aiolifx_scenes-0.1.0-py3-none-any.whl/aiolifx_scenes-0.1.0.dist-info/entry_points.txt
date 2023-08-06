@@ -1,0 +1,3 @@
+[console_scripts]
+lifx-scenes=aiolifx_scenes.main:__cli__
+
