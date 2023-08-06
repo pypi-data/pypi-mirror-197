@@ -1,0 +1,17 @@
+web_auth/__init__.py,sha256=IoAghq2GYq7duyE7jeDS5sLtUSlV0fa2UEyOwdu_lcs,1394
+web_auth/config.py,sha256=Xr_NlC2hAoCtDai-zKnYD6sGPgKfnds0Y4WvY7PN1Wg,5624
+web_auth/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+web_auth/core/authorization.py,sha256=4xT9p1PRwsmKkvWqr9GUKdJk_KSZvUQTiJaOuhYlzic,3102
+web_auth/core/bridge.py,sha256=_dTA_uqZdSCsrM8N2rjDPjzxTP4KeV_RvpcM1Xayd0k,4263
+web_auth/core/context.py,sha256=Z7eDINSoZR2vK446DjQ-dHax0exHNILhhgbLGTy1XFU,1898
+web_auth/core/enum.py,sha256=gcZ4tnjbqcOWzmKGWPeP_60egn2YxQskiN3pJkwp4IA,299
+web_auth/core/exception.py,sha256=KkGTONfGNuWjgWfjtZjEXwbx-4u37AB1rDoxLGm8mXI,166
+web_auth/core/model.py,sha256=tfAS8U0eq0aDXovtDJBZg-4I0AMOZFrRS8tCFeHifnI,491
+web_auth/core/storage.py,sha256=-PVXQeCEuYAbp9YXuK1Gu_CJtQDXzgc-7lFwIhtEULs,1818
+web_auth/fastapi/__init__.py,sha256=IZ_gbDrh7whrdWeVfjnRC44c5OFylILhJvtoBnIaN4A,59
+web_auth/fastapi/bridge.py,sha256=4zIzNDg-gPDA07b3FpnUKphNxZEhsxzh-TmEff1YYSA,3771
+web_auth/flask/__init__.py,sha256=FZ-idJNg6HrirOJadZF5NgLOG2Bm0zkYdpqc_o5rMEE,55
+web_auth/flask/bridge.py,sha256=eq1EwVHf8XIAaQEl39jeb3KhagAniug8sywa8j1hH7Q,2900
+web_auth_sdk-0.1.2.dist-info/METADATA,sha256=g4ElPTR7b80J_y5RliSuv11JqYCMTpU40w_yXbLf1rc,7689
+web_auth_sdk-0.1.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+web_auth_sdk-0.1.2.dist-info/RECORD,,
