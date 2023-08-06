@@ -1,0 +1,43 @@
+name: model-catalogs-docs
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+   - python=3.9
+   # If your docs code examples depend on other packages add them here
+   - appdirs
+   - cf_xarray
+   - dask
+   - datetimerange
+   - intake
+   - intake-xarray
+   - jupytext
+   - mc-goods
+   - myst-nb
+   - netcdf4
+   - numpy
+   - pandas
+   - requests
+   - siphon
+   - xarray
+   # These are needed for the docs themselves
+   - numpydoc
+   - sphinx
+   - sphinx-markdown-tables
+   # - sphinx_rtd_theme
+   - ipython
+   - jinja2 #<3.1
+   - nbconvert
+   - nbformat
+   - ipykernel
+   - pandoc
+   - recommonmark
+   - pip
+   - pip:
+     - docrep<=0.2.7
+     - furo
+     - nbsphinx>=0.8.7
+     - jupyter_client
+     # - sphinx_pangeo_theme
+     - sphinx-copybutton
+     - sphinxcontrib-srclinks

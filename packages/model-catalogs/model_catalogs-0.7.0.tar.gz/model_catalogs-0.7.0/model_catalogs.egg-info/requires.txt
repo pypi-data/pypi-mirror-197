@@ -1,0 +1,14 @@
+appdirs
+cf_xarray
+dask
+datetimerange
+intake>=0.6.7
+intake-xarray
+mc-goods
+netcdf4
+numpy
+pandas
+pip
+requests
+siphon
+xarray

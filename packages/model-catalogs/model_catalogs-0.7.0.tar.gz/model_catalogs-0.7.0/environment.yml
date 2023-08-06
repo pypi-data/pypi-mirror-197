@@ -1,0 +1,22 @@
+name: model_catalogs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8  # this is required for the dev tools/precommit stuff
+  - alphashape
+  - appdirs
+  - cf_xarray
+  - dask
+  - datetimerange
+  - extract_model
+  - intake>=0.6.7
+  - intake-xarray
+  - mc-goods
+  - netcdf4
+  - numpy
+  - pandas
+  - pip
+  - requests
+  - shapely
+  - siphon
+  - xarray
