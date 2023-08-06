@@ -1,0 +1,7 @@
+setup.py
+fileextractor/__init__.py
+fileextractor/extractor.py
+fileextractor.egg-info/PKG-INFO
+fileextractor.egg-info/SOURCES.txt
+fileextractor.egg-info/dependency_links.txt
+fileextractor.egg-info/top_level.txt

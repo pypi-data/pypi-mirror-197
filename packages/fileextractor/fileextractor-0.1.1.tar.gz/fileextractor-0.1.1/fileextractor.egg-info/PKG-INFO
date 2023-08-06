@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: fileextractor
+Version: 0.1.1
+Summary: excel to yaml files extractor
+Home-page: https://github.com/your_username/your_package
+Author: Charleen lozi
+Author-email: clozymwangs@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Package to extract rasa content data files from excel sheets into respective yaml files. The data being extracted is nlu training data and responses for respective languages, english and swahili ,and stories data into their respective yaml files.
