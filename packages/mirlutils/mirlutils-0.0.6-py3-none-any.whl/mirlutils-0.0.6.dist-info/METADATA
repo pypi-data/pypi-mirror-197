@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mirlutils
+Version: 0.0.6
+Summary: Utils for medical image analysis
+Home-page: https://github.com/cuchoco/mirlutils
+Author: Jihwan Kim <kuchoco97@gmail.com>
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# For Medical Image Analysis
+## image
