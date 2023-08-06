@@ -1,0 +1,8 @@
+README.md
+setup.py
+scoobydoo.egg-info/PKG-INFO
+scoobydoo.egg-info/SOURCES.txt
+scoobydoo.egg-info/dependency_links.txt
+scoobydoo.egg-info/entry_points.txt
+scoobydoo.egg-info/not-zip-safe
+scoobydoo.egg-info/top_level.txt
