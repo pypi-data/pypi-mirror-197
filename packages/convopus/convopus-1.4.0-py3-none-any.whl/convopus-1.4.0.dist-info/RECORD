@@ -1,0 +1,13 @@
+convopus/__init__.py,sha256=-bBNFYOq80A2Egtpo5V5zWJtYOxQfRZFQ_feve5lkFU,23
+convopus/app.py,sha256=tDCU78xREr0nYHqBYX4vFq3CteoUzLk4GfdQzM9VpMw,2166
+convopus/app_mt.py,sha256=ADe_1AKDDpOooWUqmV_I53Qn7LM2oPBuariizIXqdQs,1830
+convopus/genconf.py,sha256=gplb_EWaEkjHLCqdN9cfgob3RyjjlNg9KmeNnE_TfqE,1323
+convopus/main.py,sha256=vdymMqC7nICayQ3WgV7Wrow7RXjfw2aIXSkLkDkU2Ho,5290
+ffpb_convopus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ffpb_convopus/ffpb.py,sha256=TkvCNQYqMhlkA_dVSaTg0eCFns3HEUw4AaaAoXTEuZs,5132
+convopus-1.4.0.dist-info/LICENSE,sha256=1p5Lb51jmY0kLzuF3lfCtcuUjWFvck8WLAuS4lW598g,1061
+convopus-1.4.0.dist-info/METADATA,sha256=HvfbwrDFGaolPx7dLiJac5FC-6C-klhF8sB6rxHkM_U,2550
+convopus-1.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+convopus-1.4.0.dist-info/entry_points.txt,sha256=waKMSQdmuX2GkCQZW1urWVTVdeePxjtSpdTD4fgKDzg,43
+convopus-1.4.0.dist-info/top_level.txt,sha256=RNathSO9eOx7eEuR2s9VHxYzL9ed7zLo4oVNi3ucwo8,23
+convopus-1.4.0.dist-info/RECORD,,
