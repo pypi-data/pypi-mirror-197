@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+named_decorator.py
+setup.py
+named_decorator.egg-info/PKG-INFO
+named_decorator.egg-info/SOURCES.txt
+named_decorator.egg-info/dependency_links.txt
+named_decorator.egg-info/top_level.txt
