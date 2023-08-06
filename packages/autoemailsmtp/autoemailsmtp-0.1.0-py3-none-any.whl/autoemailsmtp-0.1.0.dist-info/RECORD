@@ -1,0 +1,11 @@
+LICENSE,sha256=PXSX7X0v9paGwHyU_cfqbNgm0braKx_iYaScFj9MPTw,21777
+LICENSE.fr,sha256=w2jS_y-L4o4OBLvPWWOgHsPbI6F3uDxP9x2alP_Bym0,22957
+autoemailsmtp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autoemailsmtp/config.py,sha256=E6XuByPs1u9_YXdEZgeBM4QtT8qUafgpsvuIUC_89uI,740
+autoemailsmtp/notifiers/discord.py,sha256=C1JkSRwZEmfTN4So48etVQ1LEKSWhjE4QpTVaqC_QfI,998
+autoemailsmtp/send_mail.py,sha256=PY_blpDLWyMUnSxr5u_7zdvUdMNiHVoBaBu2ItroOUY,1424
+autoemailsmtp-0.1.0.dist-info/LICENSE,sha256=PXSX7X0v9paGwHyU_cfqbNgm0braKx_iYaScFj9MPTw,21777
+autoemailsmtp-0.1.0.dist-info/LICENSE.fr,sha256=w2jS_y-L4o4OBLvPWWOgHsPbI6F3uDxP9x2alP_Bym0,22957
+autoemailsmtp-0.1.0.dist-info/METADATA,sha256=MTN66mEyQUzsNxs7NLv4SDOCTaFa9MlHQzMDR_HHuKs,3481
+autoemailsmtp-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+autoemailsmtp-0.1.0.dist-info/RECORD,,
