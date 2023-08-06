@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+hofu/__init__.py
+hofu/iterator.py
+hofu/types.py
+hofu.egg-info/PKG-INFO
+hofu.egg-info/SOURCES.txt
+hofu.egg-info/dependency_links.txt
+hofu.egg-info/top_level.txt
