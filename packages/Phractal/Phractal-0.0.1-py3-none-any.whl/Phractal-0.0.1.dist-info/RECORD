@@ -1,0 +1,12 @@
+phractal/__init__.py,sha256=ZRr-0Ldm-5ws0q8UWZYIxgzeSl9N4k1UKrGJNUCERf4,103
+phractal/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phractal/src/phraction.py,sha256=wkIObMLQCXSJp-peWHruBi4IPQBDiYRjaXYXkwz4gIQ,3505
+phractal/src/validated_cached_property.py,sha256=wEPw3I_FdGrFXFBZk5x6fOltgTEOWRcNz1Zs4uu9hYo,3022
+phractal/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phractal/test/test_cvp.py,sha256=HudUyWp9J6e7dFCZd793Lrs8dwNEhaVrobasjQ251rw,1355
+phractal/test/test_phraction.py,sha256=ZVq3ZMtughupkYuL8nujlxs1MKs5H93ED4C1Wi5bT5Q,3269
+Phractal-0.0.1.dist-info/LICENSE,sha256=RiKFNX55CvZ1nWWaO5ZHTZer7x2tA2-bcY2QcH4bloU,1071
+Phractal-0.0.1.dist-info/METADATA,sha256=Bk56g6omYKta7XuIyv_9aCnq0sAhXZhb015YSSGzBIA,10028
+Phractal-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Phractal-0.0.1.dist-info/top_level.txt,sha256=s74SXvh7dY4C0b5UCRUzktFvwU3FkYOjkfx4nm9RVd0,9
+Phractal-0.0.1.dist-info/RECORD,,
