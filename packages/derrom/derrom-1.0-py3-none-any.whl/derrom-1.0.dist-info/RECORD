@@ -1,0 +1,10 @@
+derrom/__init__.py,sha256=OWJ1Z8ueQnmc3eUzNdlLPpQBD1_EleLV4UUBCihQTb0,267
+derrom/dim_reducers.py,sha256=hwOx-0JWlDB1gNO8zAgBx2lEUTiqOl71DRU0m1Zu8wk,12411
+derrom/estimator.py,sha256=UyRVN9hF-4mD5tf9SJTviRn2lANyhSQ4pfGxTC_3Eks,20164
+derrom/optimizers.py,sha256=qLSF11sTUwYrBIhGPc38ZzwcJGtw0iMIYQIEt_uVO8s,2763
+derrom/scalers.py,sha256=hyrMYBrSBRuOxH1fVYvLHo9KckmbKc9F8aMgMBr22WE,5922
+derrom/transformers.py,sha256=osL1Gi58B5eAWPgk04Ow6vAfStZo1rpsrgzzlqRKnL0,6160
+derrom/utils.py,sha256=xFLYU3hYETIoC2zSFlYvJ7w7-sADjfhao2qPq0iTgY0,23226
+derrom-1.0.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+derrom-1.0.dist-info/METADATA,sha256=QwMO34-abD4Mte0mzy9IkTZTcvSCN5_tdJC_3m39EH0,4704
+derrom-1.0.dist-info/RECORD,,
