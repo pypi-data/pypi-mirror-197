@@ -1,0 +1,6 @@
+module.py
+setup.py
+w_gopher.egg-info/PKG-INFO
+w_gopher.egg-info/SOURCES.txt
+w_gopher.egg-info/dependency_links.txt
+w_gopher.egg-info/top_level.txt
