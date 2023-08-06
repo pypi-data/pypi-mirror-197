@@ -1,0 +1,10 @@
+typing_extensions>4.0.0
+sliceable-dict>=0.3.0
+pandas>1.0.0
+numpy>1.0.0
+
+[tests]
+black
+pytest
+mypy
+pandas-stubs
