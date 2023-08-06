@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/physical_quantities_coordinates/__init__.py
+src/physical_quantities_coordinates.egg-info/PKG-INFO
+src/physical_quantities_coordinates.egg-info/SOURCES.txt
+src/physical_quantities_coordinates.egg-info/dependency_links.txt
+src/physical_quantities_coordinates.egg-info/top_level.txt
