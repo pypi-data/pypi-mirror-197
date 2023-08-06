@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: dbrief
+Version: 0.1.0
+Summary: Python package for quickly creating lightweight HTML reports
+Author-email: Chris Santiago <cjsantiago@gatech.edu>
+License: MIT License
+Project-URL: Sourcecode, https://github.com/chris-santiago/dbrief
+Project-URL: Documentation, https://chris-santiago.github.io/dbrief/
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: omegaconf
+Requires-Dist: hvplot
+Requires-Dist: pandas
+Requires-Dist: bokeh
+Requires-Dist: jinja2
+Provides-Extra: build
+Requires-Dist: twine ; extra == 'build'
+Requires-Dist: wheel ; extra == 'build'
+Provides-Extra: dev
+Requires-Dist: dbrief[docs] ; extra == 'dev'
+Requires-Dist: dbrief[tests] ; extra == 'dev'
+Requires-Dist: dbrief[qa] ; extra == 'dev'
+Requires-Dist: dbrief[build] ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: myst-parser ; extra == 'docs'
+Requires-Dist: tomli ; extra == 'docs'
+Provides-Extra: qa
+Requires-Dist: pre-commit ; extra == 'qa'
+Requires-Dist: black ; extra == 'qa'
+Requires-Dist: flake8 ; extra == 'qa'
+Requires-Dist: flake8-docstrings ; extra == 'qa'
+Requires-Dist: mypy ; extra == 'qa'
+Requires-Dist: nox ; extra == 'qa'
+Requires-Dist: check-manifest ; extra == 'qa'
+Requires-Dist: isort ; extra == 'qa'
+Requires-Dist: pylint ; extra == 'qa'
+Requires-Dist: pip-tools ; extra == 'qa'
+Provides-Extra: tests
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: toml ; extra == 'tests'
+Requires-Dist: pre-commit-hooks ; extra == 'tests'
+
+# dBrief
+
+## Install
+
+Create a virtual environment with Python >= 3.9 and install from git:
+
+```bash
+pip install git+https://github.com/chris-santiago/dbrief.git
+```
+
+## Use
+
+
+## Documentation
+
+Documentation hosted on Github Pages: [https://chris-santiago.github.io/dbrief/](https://chris-santiago.github.io/dbrief/)
