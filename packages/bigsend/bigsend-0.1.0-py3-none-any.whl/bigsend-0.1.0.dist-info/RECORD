@@ -1,0 +1,8 @@
+bigsend/__init__.py,sha256=uf8xlFGStIXufBoPWZQbe_-qo78mq5LHpxPUulITAds,48
+bigsend/bgclient/__main__.py,sha256=VghHRAf6SCgJtIgLLjDLWwabUATd2AVXcJdh-WtLr20,741
+bigsend/bgclient/lib_clients.py,sha256=0PGymvlChHDw_iFhUG2fx-cLQMcO0-8NpsC-IKmYoAk,4646
+bigsend/bgserver/__main__.py,sha256=n14r_iRL7ZOay-QzmnyAqizSEl7HA2Utdz0xpxgedZU,435
+bigsend/bgserver/lib_server.py,sha256=mrIkT1D5bQvl8fPfzrVvz7aDUd9-IKtUE_WP-5cw6cs,2170
+bigsend-0.1.0.dist-info/METADATA,sha256=5jcZWNSjJCM1ATpgHFHjw81nNUeob28wPq-UeYTSNBM,2779
+bigsend-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+bigsend-0.1.0.dist-info/RECORD,,
