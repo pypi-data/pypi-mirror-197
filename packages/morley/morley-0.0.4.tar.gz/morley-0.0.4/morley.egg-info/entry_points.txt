@@ -1,0 +1,3 @@
+[console_scripts]
+morley = morley.main:main
+

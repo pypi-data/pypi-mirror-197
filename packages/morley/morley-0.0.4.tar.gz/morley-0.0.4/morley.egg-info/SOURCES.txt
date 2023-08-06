@@ -1,0 +1,15 @@
+README.md
+setup.py
+morley/Morley.py
+morley/__init__.py
+morley/ethalon.png
+morley/gui.py
+morley/logo.png
+morley/main.py
+morley/version.py
+morley.egg-info/PKG-INFO
+morley.egg-info/SOURCES.txt
+morley.egg-info/dependency_links.txt
+morley.egg-info/entry_points.txt
+morley.egg-info/requires.txt
+morley.egg-info/top_level.txt
