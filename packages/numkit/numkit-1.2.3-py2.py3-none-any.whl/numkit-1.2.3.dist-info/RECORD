@@ -1,0 +1,17 @@
+numkit/__init__.py,sha256=UB671wCFLZjbfoCYsVrcxCA5509sJZhvyc99oUDpodI,1492
+numkit/_version.py,sha256=zd57YaUEQT29JGmf8dmPGgVSistKgC5pi7-X8OIRlTU,497
+numkit/fitting.py,sha256=sMK61kJnQ1S2IYQ9gFT1QL_IiX8ODPJGAfnt9LKGWPM,7550
+numkit/integration.py,sha256=vv6Ne2HWpLWmtMcomRTQ_Xj4KSNENFa3PzCUnV3uUXM,11763
+numkit/observables.py,sha256=9-voC-SRS-DmKbtraVz3IkE0UcgXOv8xInhfphQYEL4,14311
+numkit/timeseries.py,sha256=OwaX-adjp1xPb-OMfnoLqB1bcUKkIvuPNb-IBdLI58s,19086
+numkit/tests/__init__.py,sha256=Vs9VhCLN6jMLCByYgF-_LDqqpq9dlc8wkqFIFDsVypU,2017
+numkit/tests/test_fitting.py,sha256=XFpmKy9HLdtt3uGOED4X3vGco78yn6_Q2GjeuqNygUQ,3851
+numkit/tests/test_integration.py,sha256=Z2JK7ehZkrVyMKvw8bPmlHxvVWv-OrCzbKH7M_vrSVQ,4140
+numkit/tests/test_observables.py,sha256=t0e3gfSBuB4GkAUa3qORaluSHRcl226i9qaaQF2GkEU,4109
+numkit/tests/test_timeseries.py,sha256=XQiW01IK9I-EIVbvPjXt60OQvKFeHhCuNqcolHFD8h8,2267
+numkit-1.2.3.dist-info/AUTHORS,sha256=F17TPeMyTNxfTBMvi21yoUl7oB11o0agjhKAKEcSCJA,665
+numkit-1.2.3.dist-info/LICENSE,sha256=kujOrHveUhlCStnKuWg9Zk9tvcMqyDCyEPR4ufE8uVs,1417
+numkit-1.2.3.dist-info/METADATA,sha256=0OxHcyeomTMhIr-fxDAHhyktVqNx21GWz9uWxgHxhSI,3216
+numkit-1.2.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+numkit-1.2.3.dist-info/top_level.txt,sha256=GJvB8ZWfR1QzTMO8--vb7Ee2QHA6S6MXsziRCyrsFIY,7
+numkit-1.2.3.dist-info/RECORD,,
