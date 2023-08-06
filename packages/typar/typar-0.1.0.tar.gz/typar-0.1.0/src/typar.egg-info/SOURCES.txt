@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/typar/__init__.py
+src/typar/example.py
+src/typar/implementation.py
+src/typar/py.typed
+src/typar.egg-info/PKG-INFO
+src/typar.egg-info/SOURCES.txt
+src/typar.egg-info/dependency_links.txt
+src/typar.egg-info/top_level.txt
