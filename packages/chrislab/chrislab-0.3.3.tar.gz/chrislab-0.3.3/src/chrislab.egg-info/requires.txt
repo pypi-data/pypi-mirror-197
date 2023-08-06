@@ -1,0 +1,15 @@
+typer
+tqdm
+numpy
+pymongo
+chrisbase
+
+[full]
+scipy
+jupyter
+torch
+lightning
+datasets
+evaluate
+tokenizers
+transformers

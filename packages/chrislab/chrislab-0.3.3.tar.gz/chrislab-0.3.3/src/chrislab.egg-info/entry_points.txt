@@ -1,0 +1,2 @@
+[console_scripts]
+chrislab.language = chrislab.language.cli:app
