@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/convertlib/__init__.py
+src/convertlib/convertlib.py
+src/convertlib.egg-info/PKG-INFO
+src/convertlib.egg-info/SOURCES.txt
+src/convertlib.egg-info/dependency_links.txt
+src/convertlib.egg-info/requires.txt
+src/convertlib.egg-info/top_level.txt
