@@ -1,0 +1,10 @@
+h11<0.15,>=0.13
+sniffio==1.*
+anyio<5.0,>=3.0
+certifi
+
+[http2]
+h2<5,>=3
+
+[socks]
+socksio==1.*
