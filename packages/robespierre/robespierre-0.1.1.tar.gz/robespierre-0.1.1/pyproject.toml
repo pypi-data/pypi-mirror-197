@@ -1,0 +1,22 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "setuptools_scm[toml]>=6.2"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robespierre"
+dynamic = ["dependencies", "version"]
+
+[project.scripts]
+robespierre = "robespierre.__main__:main"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools_scm]
+write_to = "src/robespierre/_version.py"
+git_describe_command = "git describe --tags --match 'v*' --first-parent"
+

@@ -1,0 +1,29 @@
+version=1.0  # optional, default 1.0
+[databases]
+[databases.one]
+path="/tmp/test.db"
+
+[directories]
+[directories.test]
+path="/tmp/scorch_test"
+
+[commands]
+[commands.check_dbs]
+db_name="one"  # name of one of the previously defined database
+directory_name="test"  # name of one of the previously defined directories
+instructions=["check","list-missing"]
+options=[]  # optional, default=[]
+send_report=false  # optional, default=false ; no effect if default send_report is enabled
+
+[config]
+[config.defaults]
+send_report=true  # optional, default=false ; (force) enable send_report for all commands
+report_format="raw"  # optional, default="raw"
+
+[config.email]  # optional, required to send report
+relay_host="mail.bastille.fr"
+relay_port=465  #  optional, default=465
+use_tls=true  # optional, default=true
+sender="robespierre@mail.com"
+default_recipients=["me@mail.com"]
+password="<mail_password>"

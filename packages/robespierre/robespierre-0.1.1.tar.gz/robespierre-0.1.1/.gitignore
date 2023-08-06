@@ -1,0 +1,15 @@
+# Project
+config.toml
+_version.py
+
+# Python
+dist
+src/robespierre.egg-info/
+venv
+
+# Systems
+.DS_Store
+
+# IDEs
+.kdev
+.idea
