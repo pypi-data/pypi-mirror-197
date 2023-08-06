@@ -1,0 +1,24 @@
+adafruit-blinka==8.16.1
+adafruit-circuitpython-bme280==2.6.19
+adafruit-circuitpython-busdevice==5.2.3
+adafruit-circuitpython-dht==3.7.8
+adafruit-circuitpython-requests==1.13.0
+adafruit-circuitpython-typing==1.8.3
+logging-plus==1.1.0
+pyserial==3.5
+rpi.gpio==0.7.1
+
+[:python_full_version >= "3.5.0"]
+adafruit-pureio==1.1.10
+
+[:python_full_version >= "3.6.0"]
+pyusb==1.2.1
+
+[:python_version >= "3.5"]
+adafruit-platformdetect==3.41.0
+
+[:python_version >= "3.7"]
+pyftdi==0.54.0
+typing-extensions==4.5.0
+
+[dev]
