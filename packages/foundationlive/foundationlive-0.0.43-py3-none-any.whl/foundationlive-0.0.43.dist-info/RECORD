@@ -1,0 +1,16 @@
+foundationlive/__init__.py,sha256=pH5i4Fj1tbXLqLtTVIdoojiplZssQn0nnud8-HXodRE,577
+foundationlive/lib.py,sha256=YdYc5KfBtC_7Y6vllKs49FG0EG_W915OJhWpKGn25lY,8833
+foundationlive/main.py,sha256=nOWr_BheWDNIAMXcz3Vw-w2300kuMLxwG1WPGOgHFU4,5809
+foundationlive/model.py,sha256=_xU7XwSbTj4CFfZzhgzH35BeK3jLLBsFQ_dCgTVJ31E,1659
+foundationlive/writer.py,sha256=yjD-wNXzGRsLqPQ6WxsON8fWOma3L2D9440KjVTfJU8,451
+foundationlive/templates/view_csv.j2,sha256=D3_bLi-hw3-7FNkDAjEpZdeUUpbwyyT1FS0utaFr3wE,404
+foundationlive/templates/view_hours_worked_per_day.j2,sha256=OO-dDqfTx9AjENgbzwNvUSyYDDSvG_3KIowz0tAZrXc,244
+foundationlive/templates/view_hours_worked_per_day_summary.j2,sha256=t1qKIvOhzkwrl8Q9Jr572KHc-SUT-7SxQg4aeUVmJHs,254
+foundationlive/templates/view_hours_worked_per_task.j2,sha256=eP3UvIORcQha6wXCvOtC8yxz2AEPqzTRepZutdjV0-4,166
+foundationlive/templates/view_invoices.j2,sha256=2mG9H4wVyRJUMun36XECGzGxgvN_fM_Qi2LQ2XgYb-I,688
+foundationlive-0.0.43.dist-info/LICENSE.txt,sha256=nDgkT70BJgTDpJefovhCWm87owFCG_Dl4ETTVqrf6iE,1083
+foundationlive-0.0.43.dist-info/METADATA,sha256=BTr-mPu3wd9RiIa7vQ4OCUEb-A2yQcBgRy9Ky5Z9bj0,3116
+foundationlive-0.0.43.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+foundationlive-0.0.43.dist-info/entry_points.txt,sha256=uVMhlDLjpwonPqtvE_w6_5VSm9Oq4O0tckcmCC1BRGo,59
+foundationlive-0.0.43.dist-info/top_level.txt,sha256=yyAZZq8BkHzQQhY9N-u0WWVIgDNxhsMqNkzVAIaXe_o,15
+foundationlive-0.0.43.dist-info/RECORD,,
