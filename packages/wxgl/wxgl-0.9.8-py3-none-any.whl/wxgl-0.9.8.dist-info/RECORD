@@ -1,0 +1,23 @@
+wxgl/__init__.py,sha256=oyVXwuTdX0GHzq4RIDYxyWoAHWQ-rZjDElNpWxy5BnA,2315
+wxgl/app.py,sha256=F6N2sAJrCd_TAhPjti0yXOX9eZ7LVAdx-5kTM9ZVlIc,4488
+wxgl/color.py,sha256=5c01co4M7E6qVjaWfuOVJYJ0OiaqqHSjMomcUH2WGFg,11556
+wxgl/glutfigure.py,sha256=AVqpe5JdLFGNufY7VvwC4DcBN4UjiAvfXl-jv2-7AKg,6567
+wxgl/imgres.py,sha256=zz0CErdr-odmFwv_UedyPL5IwkUsQTKU5WbtJfsA8Ys,338817
+wxgl/light.py,sha256=m5qqd6szJ8RXfpcYyZDQrmjcEDyuFod3mKucxAUDc6A,55491
+wxgl/model.py,sha256=k8yi_6hiH3s3m7L0C7q9k2n4NBfdwT_pAKPDNcROB68,18454
+wxgl/qtapp.py,sha256=tyu_a44wqxn6fBsWR_nTGn9Dd16LEYU3aFXMOsJQ6y4,2255
+wxgl/qtfigure (副本).py,sha256=FJ6tvNyqW32It4lsmyjhOLbOZdbbUZvnYOiIWlwdOnA,7934
+wxgl/qtfigure.py,sha256=qDZwrLvm88u-C22Rc373-Pc2efmUbFpvzWUlsqq7v_E,9243
+wxgl/qtscene.py,sha256=-0Blz4tr2qJZzukqlmoTOgrfVt4aOHPTIsB5VIxMr5c,4000
+wxgl/scene.py,sha256=is_aXhV4TiBiFC63rM3rQF5KbvwEBxcckPN_5w9p4eA,23920
+wxgl/scheme.py,sha256=Y3GKbEr80qmBpgP6w23hiKM1Eh7d2ppmFDOCnfc1k3E,71618
+wxgl/text.py,sha256=SpInbkYW-pLQdDzCSTt1eizW899dp-mHIeKKG_3ukkY,7175
+wxgl/texture.py,sha256=817fbPvzH3Ood_CHsjUrbZL4SLAJZJBNQndIl3uFOZ0,8173
+wxgl/util.py,sha256=ubVgxWEwav8CK9vNG4-wBo7CdTC81ynFwty4YyznPiM,24323
+wxgl/wxapp.py,sha256=sV2BQT58DljcSdBxzCI1-ptfE_p-NCod2kEglbIjg9w,1279
+wxgl/wxfigure.py,sha256=uUlaTVulMk8JaaPu0dOp83kwMvQ9nI5IMvRxbkyvX8Y,8625
+wxgl/wxscene.py,sha256=CTitTiKOdPThNbr8sPrRv5l-2sUa4dsi8fmpaCdD2uA,4661
+wxgl-0.9.8.dist-info/METADATA,sha256=BhTKmTAPc-leyJqIRkTZkD5kKODIbmLyW_s7MMSeJAM,2251
+wxgl-0.9.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+wxgl-0.9.8.dist-info/top_level.txt,sha256=lRqebMD918oWgiXDixUvhascv23u3vh-ReO7jNqnSok,5
+wxgl-0.9.8.dist-info/RECORD,,
