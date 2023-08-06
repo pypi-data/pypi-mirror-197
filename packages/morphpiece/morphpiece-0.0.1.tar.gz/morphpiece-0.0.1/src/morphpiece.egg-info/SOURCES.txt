@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+src/morphpiece.egg-info/PKG-INFO
+src/morphpiece.egg-info/SOURCES.txt
+src/morphpiece.egg-info/dependency_links.txt
+src/morphpiece.egg-info/top_level.txt
