@@ -1,0 +1,8 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-ads-megalista"
+description = "Customized version of google-ads for Megalista"
+version = "18.0.2"
