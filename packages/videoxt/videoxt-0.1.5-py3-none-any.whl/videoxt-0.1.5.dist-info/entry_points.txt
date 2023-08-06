@@ -1,0 +1,3 @@
+[console_scripts]
+videoxt = videoxt.cli:main
+vxt = videoxt.cli:main
