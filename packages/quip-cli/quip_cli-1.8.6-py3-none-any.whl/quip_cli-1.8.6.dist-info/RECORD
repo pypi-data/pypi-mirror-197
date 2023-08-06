@@ -1,0 +1,16 @@
+._quip,sha256=X6ORLruI2ivWAHIS3t5ngoFpobZnNxq7tlmYfi9Q7Uc,4096
+quip/.___init__.py,sha256=X6ORLruI2ivWAHIS3t5ngoFpobZnNxq7tlmYfi9Q7Uc,4096
+quip/._external.py,sha256=X6ORLruI2ivWAHIS3t5ngoFpobZnNxq7tlmYfi9Q7Uc,4096
+quip/._field_builder.py,sha256=X6ORLruI2ivWAHIS3t5ngoFpobZnNxq7tlmYfi9Q7Uc,4096
+quip/._quip.py,sha256=X6ORLruI2ivWAHIS3t5ngoFpobZnNxq7tlmYfi9Q7Uc,4096
+quip/._version_builder.py,sha256=X6ORLruI2ivWAHIS3t5ngoFpobZnNxq7tlmYfi9Q7Uc,4096
+quip/__init__.py,sha256=vti-njXp5_gM903Yb2GpfS7dLIAcq0f_p4KZZB8Evlo,2276
+quip/external.py,sha256=ppWwxwCFl_KY9t-fMXbEuQCJmuc1qYpQ_4rYkuM3jmo,20044
+quip/field_builder.py,sha256=8KIahIrc5gwtIYNVjawKOJg1QX9y2DjZP8ZUgNAQPWE,19670
+quip/quip.py,sha256=P1beqYYdB3ZicUR0wqAlx745hGaaMVk8H9ZtoSwHQnQ,72224
+quip/version_builder.py,sha256=dY94OmUJtKbBCTudhB7TC43hlSprC0MUFcjt0tY8hwo,7104
+quip_cli-1.8.6.dist-info/METADATA,sha256=9BqCCk1nWxOCABIcXV2lvmAGUVLAiLaq0SGYNE_BKVk,28020
+quip_cli-1.8.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+quip_cli-1.8.6.dist-info/entry_points.txt,sha256=uszhMUc-8iKUwzLMFyBpvFaKSjoGKCzukwv50oHSNrg,39
+quip_cli-1.8.6.dist-info/top_level.txt,sha256=NPhJGwuIRCKkrx648cJCXqIWzz4VUUVqslkuIKLKZd4,5
+quip_cli-1.8.6.dist-info/RECORD,,
