@@ -1,0 +1,11 @@
+template_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+template_generator/main.py,sha256=2j8OMiADLXQ7qEOMAAxKUo08_L9rj1fjXg9XIb5RzfM,1381
+template_generator/template.py,sha256=2nMuACluOWQf3vC9W_cIAdBBbKcsjLbN5cj0qTCrhNQ,3744
+template_generator/bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+template_generator/bin/linux_20230314.zip.py,sha256=g6OgphzN7epH0Cuq91hxfMNsE7zT1zMl5pJ_sALZdu8,42067614
+p_template_generator-0.1.1.dist-info/LICENSE,sha256=5hk5-PypMEFzj-YVsMgaHkR7R7rQlk9FMY__Vi3-AXE,1074
+p_template_generator-0.1.1.dist-info/METADATA,sha256=h2LCf32ccQ4I3kn7zeKr37qEDBJAbjQoqq5HC5CHzVY,430
+p_template_generator-0.1.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+p_template_generator-0.1.1.dist-info/entry_points.txt,sha256=vxsPQVEkX5CdYh26o-HOQpbBfQAGE1nHCCaBCrL1law,58
+p_template_generator-0.1.1.dist-info/top_level.txt,sha256=CiqWtqogWrKIsN4g8NmJ-h_O1ibDYpncqI8rdQvRcu0,19
+p_template_generator-0.1.1.dist-info/RECORD,,
