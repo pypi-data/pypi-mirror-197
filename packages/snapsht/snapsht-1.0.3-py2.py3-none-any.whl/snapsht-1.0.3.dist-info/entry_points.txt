@@ -1,0 +1,3 @@
+[console_scripts]
+snapsht = snapsht.cli:cli
+
