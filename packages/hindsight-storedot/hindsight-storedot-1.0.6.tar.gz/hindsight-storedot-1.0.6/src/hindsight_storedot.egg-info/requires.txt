@@ -1,0 +1,3 @@
+ipython
+ipyvuetify
+bokeh>=2.4.2
