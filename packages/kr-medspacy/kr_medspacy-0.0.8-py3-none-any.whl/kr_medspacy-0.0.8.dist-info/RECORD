@@ -1,0 +1,9 @@
+section_detection/__init__.py,sha256=PJftnqPgkTRkOjK2No1wJKWML4owJIi64jVeOFeZV9k,181
+section_detection/section.py,sha256=p8glzuDGqdWcWcswmMq15QpFYemm228-pC9N7k2D0hI,5251
+section_detection/section_rule.py,sha256=5l5GWuq9zFj7l-So7HpEdZ1RNJrFNWvqnyoYO_WOw2c,5947
+section_detection/sectionizer.py,sha256=s5K-E4xR4voP0jpqLirvY5yGlTrIcnTU9imWy84H-DM,22059
+section_detection/util.py,sha256=KcKoPHFLmMn19IOpmquiM9zpvlraKScCMe6Na5E4CcU,1572
+kr_medspacy-0.0.8.dist-info/METADATA,sha256=GI4P4oHc5O_gYsu6jSvWg4uUB58dhp08Ahrri2Dupuo,234
+kr_medspacy-0.0.8.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+kr_medspacy-0.0.8.dist-info/top_level.txt,sha256=vfjIKF6RZwPbwLBeFEGY5W_SIIs53A6H47gsY0YywZ8,18
+kr_medspacy-0.0.8.dist-info/RECORD,,
