@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+makeitseg2/src/makeitseg2.egg-info/PKG-INFO
+makeitseg2/src/makeitseg2.egg-info/SOURCES.txt
+makeitseg2/src/makeitseg2.egg-info/dependency_links.txt
+makeitseg2/src/makeitseg2.egg-info/requires.txt
+makeitseg2/src/makeitseg2.egg-info/top_level.txt
+makeitseg2/src/formats.py
+makeitseg2/src/header.py
+makeitseg2/src/makeitseg2.py
+makeitseg2/src/makeitseg2.egg-info/SOURCES.txt

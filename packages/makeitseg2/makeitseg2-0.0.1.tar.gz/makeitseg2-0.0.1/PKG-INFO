@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: makeitseg2
+Version: 0.0.1
+Summary: makeitseg2
+Author: Shanu Biswas
+Author-email: shanubiswas119@gmail.com
+Keywords: segy,seismic,seg2,segy to seg2 converter,segy to dat file converter,segy to dat file converter using python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# segy2seg2 - a Python package to convert segy seismic file to seg2 file.
+Workable but not completely done yet!
+
+## Getting Started
+Its working example is shown in the "test.ipynb" file.
+### Prerequisites
+```
+pip install obspy
+```
+### Installation 
+
+```
+pip install makeitseg2
+```
