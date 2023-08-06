@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+freexml/__init__.py
+freexml.egg-info/PKG-INFO
+freexml.egg-info/SOURCES.txt
+freexml.egg-info/dependency_links.txt
+freexml.egg-info/requires.txt
+freexml.egg-info/top_level.txt
+freexml/loading/__init__.py
+freexml/saving/__init__.py
