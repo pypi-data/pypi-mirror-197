@@ -1,0 +1,8 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tautoloader"
+requires-python = ">=3.8"
+version = "0.0.2"

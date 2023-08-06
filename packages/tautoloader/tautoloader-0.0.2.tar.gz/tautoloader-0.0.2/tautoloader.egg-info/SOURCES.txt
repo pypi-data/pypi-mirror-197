@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+tautoloader/cli.py
+tautoloader/methods.py
+tautoloader/torrent.py
+tautoloader/transmission.py
+tautoloader.egg-info/PKG-INFO
+tautoloader.egg-info/SOURCES.txt
+tautoloader.egg-info/dependency_links.txt
+tautoloader.egg-info/top_level.txt
