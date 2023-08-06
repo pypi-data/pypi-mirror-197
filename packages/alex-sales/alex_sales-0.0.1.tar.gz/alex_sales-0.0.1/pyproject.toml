@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "alex_sales"
+version = "0.0.1"
+authors = [
+    { name="aleex.pl", email="pq.lz.alejandro@gmail.com" },
+]
+description = "My customized ORM on Sales"
+readme = "README.md"
+license = { file="LICENSE.md" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AlejandroPqLz/sales_ibd_ORM.git"
+"Bug Tracker" = "https://github.com/AlejandroPqLz/sales_ibd_ORM.git/issues"
