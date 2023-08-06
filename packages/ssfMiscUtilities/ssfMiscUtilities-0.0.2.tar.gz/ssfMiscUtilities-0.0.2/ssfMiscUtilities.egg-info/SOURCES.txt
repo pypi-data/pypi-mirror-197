@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+ssfMiscUtilities/__init__.py
+ssfMiscUtilities/_modidx.py
+ssfMiscUtilities/core.py
+ssfMiscUtilities/generic.py
+ssfMiscUtilities/lsf_interactive.py
+ssfMiscUtilities.egg-info/PKG-INFO
+ssfMiscUtilities.egg-info/SOURCES.txt
+ssfMiscUtilities.egg-info/dependency_links.txt
+ssfMiscUtilities.egg-info/entry_points.txt
+ssfMiscUtilities.egg-info/not-zip-safe
+ssfMiscUtilities.egg-info/requires.txt
+ssfMiscUtilities.egg-info/top_level.txt
