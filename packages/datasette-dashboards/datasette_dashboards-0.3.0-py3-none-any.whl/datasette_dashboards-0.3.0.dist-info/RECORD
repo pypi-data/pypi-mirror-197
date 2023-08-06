@@ -1,0 +1,12 @@
+datasette_dashboards/__init__.py,sha256=4tqvB5W4w2Q4UEa7aP1YLTERQKncZDN2jMeumKJiTL0,6005
+datasette_dashboards/static/dashboards.css,sha256=cgwD85SmoiF0GL5DdF-DnHNDeZOi54YJhK6h3dGbLkY,540
+datasette_dashboards/static/dashboards.js,sha256=FEpZLyAUgN1nZ5bR9xs66ioy5C6TGbxJgxMdApDwu3Q,3130
+datasette_dashboards/templates/dashboard_chart.html,sha256=mdu7kaxphOUfLAmlosIJ2k5MEE9tTqyQZMNAKAjVLOw,1821
+datasette_dashboards/templates/dashboard_list.html,sha256=-w9bvKsbpSq1PfpjDPrVlbpLpSIu_RenDjsLHMBKF5A,614
+datasette_dashboards/templates/dashboard_view.html,sha256=MQ0E4_zg5lYG6aIAx3RjK1osDZRuLeWIxw-mnr88CLo,3987
+datasette_dashboards-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+datasette_dashboards-0.3.0.dist-info/METADATA,sha256=Q06zAb7qO-W_IOjXD3FyhGZe90D4Gap6U6B1NBh68Vo,9591
+datasette_dashboards-0.3.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+datasette_dashboards-0.3.0.dist-info/entry_points.txt,sha256=FRdK9sf-VOqf96G-RqsC4xOc1ab4v8fETLBGMzo0mYs,46
+datasette_dashboards-0.3.0.dist-info/top_level.txt,sha256=34A6Qa7JmGKd5zfSjTwmreDVzLrCRj2UkLYI8sKJvTg,21
+datasette_dashboards-0.3.0.dist-info/RECORD,,
