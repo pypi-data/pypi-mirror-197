@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdk_cloudformation_newrelic_alert_alertspolicy/__init__.py
+src/cdk_cloudformation_newrelic_alert_alertspolicy/py.typed
+src/cdk_cloudformation_newrelic_alert_alertspolicy.egg-info/PKG-INFO
+src/cdk_cloudformation_newrelic_alert_alertspolicy.egg-info/SOURCES.txt
+src/cdk_cloudformation_newrelic_alert_alertspolicy.egg-info/dependency_links.txt
+src/cdk_cloudformation_newrelic_alert_alertspolicy.egg-info/requires.txt
+src/cdk_cloudformation_newrelic_alert_alertspolicy.egg-info/top_level.txt
+src/cdk_cloudformation_newrelic_alert_alertspolicy/_jsii/__init__.py
+src/cdk_cloudformation_newrelic_alert_alertspolicy/_jsii/newrelic-alert-alertspolicy@1.1.0-alpha.7.jsii.tgz
