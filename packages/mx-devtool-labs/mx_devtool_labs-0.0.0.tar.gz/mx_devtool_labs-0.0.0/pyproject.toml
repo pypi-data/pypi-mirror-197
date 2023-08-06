@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "mx-devtool-labs"
+version = "0.0.0"
+readme = "README.md"
+description = ""
+authors = []
+packages = [{include = "mx_devtool_labs"}]
+
+[tool.poetry.dependencies]
+python = "^3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
