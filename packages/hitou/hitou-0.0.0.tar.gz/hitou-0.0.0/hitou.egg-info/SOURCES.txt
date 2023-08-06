@@ -1,0 +1,5 @@
+setup.py
+hitou.egg-info/PKG-INFO
+hitou.egg-info/SOURCES.txt
+hitou.egg-info/dependency_links.txt
+hitou.egg-info/top_level.txt
