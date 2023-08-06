@@ -1,0 +1,11 @@
+doccano_mini/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doccano_mini/app.py,sha256=sZ4PDc2Xc6K8cYGXnU2-VIFJmiHJ6Vxt6hu_HiRHSRI,2485
+doccano_mini/cli.py,sha256=CdRbG5Jm7MZpnaFkWqWU1he5NeJKgspwFzI9pTc-rN8,295
+doccano_mini/examples.py,sha256=gV9b24kmuHewwkMC-BpUvFXV8sOgeN6IELARQSyYa-4,540
+doccano_mini/prompts.py,sha256=bujqW2o3am6Yepc7psjBySQToE1xaYB9f4wzb2XHhuc,1001
+doccano_mini/tasks.py,sha256=v-5SgPycSxqaYC_YHrcZpbbCsyC2oL3yBjviXpAeoas,150
+doccano_mini-0.0.4.dist-info/LICENSE,sha256=Td1goFM7fuQwiiM9b4PNgLZwzkCsK0oOfN9x2sGcn2A,1073
+doccano_mini-0.0.4.dist-info/METADATA,sha256=UZ-qVdIe7c0sOvcAccVFFZt9ujD70K4ouSMd9tFeCQw,2948
+doccano_mini-0.0.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+doccano_mini-0.0.4.dist-info/entry_points.txt,sha256=kN2aGlwRgkMwyWkZxNYinPjbSvzB9JsZBr7L2jLr5dY,54
+doccano_mini-0.0.4.dist-info/RECORD,,
