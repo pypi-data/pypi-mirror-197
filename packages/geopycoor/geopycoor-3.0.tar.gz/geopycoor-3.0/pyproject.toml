@@ -1,0 +1,6 @@
+[bluid-system]
+requires= [
+    "setuptools>=42",
+    "wheel"
+]
+bluid-backend = "setuptools.bluid_meta"
