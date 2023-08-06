@@ -1,0 +1,33 @@
+requests
+netifaces>=0.11.0
+dnspython~=2.0
+tldextract~=3.0
+
+[:python_version < "3.10"]
+importlib_metadata
+
+[:python_version < "3.8"]
+typing_extensions~=4.0
+
+[dev]
+ruddr[docs,test]
+
+[docs]
+sphinx
+
+[staticanalysis]
+flake8>=5
+pytype>=2023.01.10
+
+[systemd]
+PyGObject
+
+[test]
+ruddr[staticanalysis,unittest]
+pytest-cov
+tox>=4
+
+[unittest]
+pytest>=6
+pytest-mock
+coverage[toml]
