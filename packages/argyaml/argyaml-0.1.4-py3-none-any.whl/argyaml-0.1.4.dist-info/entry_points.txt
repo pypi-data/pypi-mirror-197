@@ -1,0 +1,3 @@
+[console_scripts]
+argyaml=argyaml.__main__:run
+
