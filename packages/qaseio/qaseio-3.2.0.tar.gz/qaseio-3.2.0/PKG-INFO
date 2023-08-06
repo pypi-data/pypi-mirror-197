@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: qaseio
+Version: 3.2.0
+Summary: Qase.io API
+Home-page: https://github.com/qase-tms/qase-python
+Author: Qase.io
+Author-email: support@qase.io
+License: Apache 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Qase.io API
+Platform: UNKNOWN
+Requires-Python: >=3.6
+
+    Qase API Specification.  # noqa: E501
+    
+
