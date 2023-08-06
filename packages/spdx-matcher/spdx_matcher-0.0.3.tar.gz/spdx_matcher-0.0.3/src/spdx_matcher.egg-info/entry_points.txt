@@ -1,0 +1,2 @@
+[console_scripts]
+sample = spdx_matcher_cachebuilder:cache_builder
