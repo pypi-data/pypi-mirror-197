@@ -1,0 +1,9 @@
+torch
+numpy
+scikit-image
+magicgui
+tqdm
+apoc
+superqt
+vemseg
+napari>=0.4.11

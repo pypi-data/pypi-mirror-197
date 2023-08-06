@@ -1,0 +1,20 @@
+name: napari-vemseg
+display_name: napari-vemseg
+contributions:
+  commands:
+    - id: napari-vemseg.vemseg_pixel_classifier
+      python_name: napari_vemseg._vem_pixel_classifier:VEMSEGClassifier
+      title: VEMseg Train Pixel Classifier
+    - id: napari-vemseg.predict_pixel_classifier
+      python_name: napari_vemseg._predict_pixel_classifier:VEMSEGClassifierPredict
+      title: VEMseg Predict Pixel Classifier
+    - id: napari-vemseg.phh_predict
+      python_name: napari_vemseg._phh_predict:PHHPredictWidget
+      title: PHH Mitochondria Predict
+  widgets:
+    - command: napari-vemseg.vemseg_pixel_classifier
+      display_name: VEMseg Train Pixel Classifier
+    - command: napari-vemseg.predict_pixel_classifier
+      display_name: VEMseg Predict Pixel Classifier
+    - command: napari-vemseg.phh_predict
+      display_name: PHH Mitochondria Predict
