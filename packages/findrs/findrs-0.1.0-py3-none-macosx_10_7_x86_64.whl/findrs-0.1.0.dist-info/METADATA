@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: findrs
+Version: 0.1.0
+Summary: Find all files containing a given name
+Requires-Python: >=3.7
