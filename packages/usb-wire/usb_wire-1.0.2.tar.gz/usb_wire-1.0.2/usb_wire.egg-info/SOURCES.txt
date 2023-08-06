@@ -1,0 +1,6 @@
+init.py
+setup.py
+usb_wire.egg-info/PKG-INFO
+usb_wire.egg-info/SOURCES.txt
+usb_wire.egg-info/dependency_links.txt
+usb_wire.egg-info/top_level.txt
