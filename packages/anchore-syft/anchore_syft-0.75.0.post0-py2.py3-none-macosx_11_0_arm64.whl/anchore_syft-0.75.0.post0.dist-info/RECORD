@@ -1,0 +1,9 @@
+anchore_syft/_version.py,sha256=3vdPxnOkKG3itRgGMv0ImLRLYlAeFCbrn0gRLKtcxrk,168
+anchore_syft/__init__.py,sha256=VT8CQv3EOLqKSNwrhjW-Wgyg8M5BaeyYGFW2qZmRp7Y,467
+anchore_syft/data/bin/syft,sha256=tCUPZ85pVTA2BXgr-nJGv_shRtS0iHll1WZGxAnGE9w,29705493
+anchore_syft-0.75.0.post0.dist-info/RECORD,,
+anchore_syft-0.75.0.post0.dist-info/LICENSE,sha256=c7p036pSC0mkAbXSFFmoUjoUbzt1GKgz7qXvqFEwv2g,10273
+anchore_syft-0.75.0.post0.dist-info/WHEEL,sha256=XeBwGM0sqz3VEOwJBYisiuW3r9v7af_lV7dr4sJ8NbY,139
+anchore_syft-0.75.0.post0.dist-info/entry_points.txt,sha256=Y61GYLg8VOevTU0Kc3uO4TirQyto8FO30U60SamQjPg,76
+anchore_syft-0.75.0.post0.dist-info/top_level.txt,sha256=e0P_00YA4jOKZ5KfDFaGQwmwKaPwSohMirvPmWRRyA8,13
+anchore_syft-0.75.0.post0.dist-info/METADATA,sha256=rVZjpbKsENkDXWqd26ESkIO72Fnmdv-N52lR5qM7wFw,3329
