@@ -1,0 +1,7 @@
+setup.py
+localstack_cli/__init__.py
+lsv2test.egg-info/PKG-INFO
+lsv2test.egg-info/SOURCES.txt
+lsv2test.egg-info/dependency_links.txt
+lsv2test.egg-info/requires.txt
+lsv2test.egg-info/top_level.txt
