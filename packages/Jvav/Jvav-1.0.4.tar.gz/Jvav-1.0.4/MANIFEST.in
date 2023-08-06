@@ -1,0 +1,8 @@
+## Include
+include README.md 
+include LICENSE 
+include requirements.txt
+recursive-include jvav *.py
+recursive-include tests *.py
+
+## Exclude
