@@ -1,0 +1,4 @@
+include tkconfigeditor/requirements.txt
+include tkconfigeditor/thirdparty.json
+include tkconfigeditor/README.MD
+include tkconfigeditor/LICENSE

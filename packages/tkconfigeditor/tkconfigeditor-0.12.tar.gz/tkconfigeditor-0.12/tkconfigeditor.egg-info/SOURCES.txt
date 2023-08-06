@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tkconfigeditor/LICENSE
+tkconfigeditor/README.MD
+tkconfigeditor/__init__.py
+tkconfigeditor/requirements.txt
+tkconfigeditor/thirdparty.json
+tkconfigeditor.egg-info/PKG-INFO
+tkconfigeditor.egg-info/SOURCES.txt
+tkconfigeditor.egg-info/dependency_links.txt
+tkconfigeditor.egg-info/requires.txt
+tkconfigeditor.egg-info/top_level.txt
