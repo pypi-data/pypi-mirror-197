@@ -1,0 +1,1 @@
+from convigure.convigure import Conf
