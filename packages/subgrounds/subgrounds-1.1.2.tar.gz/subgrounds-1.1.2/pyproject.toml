@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "subgrounds"
+version = "1.1.2"
+description = "A Pythonic data access layer for applications querying data from The Graph Network."
+authors = [
+    "cvauclair <cvauclair@playgrounds.network>",
+    "0xMochan <mochan@playgrounds.network>",
+]
+repository = "https://github.com/0xPlaygrounds/subgrounds"
+
+readme = "README.md"
+keywords = ["graph", "subgrounds", "graphql", "subgraph"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.27.1"
+pandas = "^1.4.2"
+pipe = "^2.0"
+dash = { version = "^2.3.1", optional = true }
+pathlib = "^1.0.1"
+pydantic = "^1.10.2"
+
+[tool.poetry.extras]
+dash = ["dash"]
+
+# https://python-poetry.org/docs/managing-dependencies/#dependency-groups
+[tool.poetry.group.dev.dependencies]
+black = "^22.3.0"
+deepdiff = "^6.2.1"  # used for debugging data structures
+flake8 = "^4.0.1"
+ipykernel = "^6.13.0"
+isort = "^5.10.1"
+mypy = "^0.950"
+nose2 = "^0.11.0"
+pylint = "^2.13.8"
+pytest = "^7.1.2"
+pytest-mock = "^3.8.2"
+python-semantic-release = "^7.33.1"
+
+[tool.poe.tasks]
+format = { shell = "isort .; black ."}
+check = { shell = "isort . --check; black . --check"}
+develop = { shell = "mudkip develop" }
+test = { shell = "pytest" }
+generate-api-docs = { shell = "sphinx-apidoc --output docs/api subgrounds --separate --force" }
+
+[tool.semantic_release]
+branch = "main"
+upload_to_pypi = true
+version_variable = ["subgrounds/__init__.py:__version__"]
+version_toml = "pyproject.toml:tool.poetry.version"
+major_on_zero = false
+build_command = "poetry build"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
