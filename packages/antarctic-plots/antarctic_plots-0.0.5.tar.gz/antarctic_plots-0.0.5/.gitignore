@@ -1,0 +1,29 @@
+# Locally built docs
+docs/_build*
+
+# Compiled python modules and checkpoints
+__pycache__/
+*.pyc
+.ipynb_checkpoints*
+.vscode*
+
+# Python egg metadata, regenerated from source files by setuptools.
+*.egg-info/
+*.egg
+.eggs/
+dist/
+
+# version file
+antarctic_plots/_version.py
+
+# Sample shapefiles
+data/*
+
+testing.ipynb
+testing2.ipynb
+
+.coverage*
+
+tmp*
+
+*.env
