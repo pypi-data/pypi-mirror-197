@@ -1,0 +1,3 @@
+[console_scripts]
+bifixer = bifixer.bifixer:main
+monofixer = bifixer.monofixer:main
