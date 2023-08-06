@@ -1,0 +1,5 @@
+openai
+miservice_fork
+requests
+revChatGPT
+rich
