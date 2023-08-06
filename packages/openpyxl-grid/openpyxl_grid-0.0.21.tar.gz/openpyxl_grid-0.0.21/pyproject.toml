@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "openpyxl_grid"
+version = "0.0.21"
+authors = [
+  { name="Jianai Wang", email="sitwjn@163.com" },
+]
+description = "An auto grid filler module for excel based on openpyxl lib."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "null",
+    "datetime",
+    "openpyxl"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sitwjn/openpyxl-grid"
+"Bug Tracker" = "https://github.com/sitwjn/openpyxl-grid/issues"
