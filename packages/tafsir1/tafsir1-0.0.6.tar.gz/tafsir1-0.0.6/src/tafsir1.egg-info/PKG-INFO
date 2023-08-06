@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tafsir1
+Version: 0.0.6
+Summary: The English Quran
+Home-page: https://github.com/shabirdewji/wordle
+Author: Shabir Dewji
+Author-email: shabirdewji@gmail.com
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a simple example package. You can use.

@@ -1,0 +1,18 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "flask-setup",
+    "bcrypt==3.2.2",
+    "Flask",
+    "celery",
+    "Flask-Cors",
+    "Flask-Migrate",
+    "Flask-SQLAlchemy",
+    "gunicorn",
+    "psycopg2-binary",
+    "PyJWT==2.4.0",
+    "python-dotenv",
+    "requests",
+]
+build-backend = "setuptools.build_meta"
