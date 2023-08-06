@@ -1,0 +1,2 @@
+[console_scripts]
+autocvd = autocvd.main:cli
