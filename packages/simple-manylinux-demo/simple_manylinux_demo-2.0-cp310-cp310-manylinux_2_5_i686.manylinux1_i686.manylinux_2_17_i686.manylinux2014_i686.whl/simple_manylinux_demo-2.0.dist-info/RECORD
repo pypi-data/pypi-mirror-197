@@ -1,0 +1,9 @@
+dummyextension/extension.cpython-310-i386-linux-gnu.so,sha256=IE7WXUhoKQgTIdQoTP7su6FH1TVagj5VzgbNmNvp0u8,26424
+dummyextension/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dummyextension/tests/test_extension.py,sha256=JTvNJtZ3BJXqJaLvZMsV_ZQohVlt-6SflWM6TcKHlsg,198
+dummyextension/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_manylinux_demo-2.0.dist-info/top_level.txt,sha256=1c15-blbzEJQUDavuu-wnT8PnHIaGbDo7ROrvbMp9FY,15
+simple_manylinux_demo-2.0.dist-info/METADATA,sha256=-UdPjW1hJl5BoLsK_1syhwJSXj6HgtLhS4HmJVH0cgE,333
+simple_manylinux_demo-2.0.dist-info/RECORD,,
+simple_manylinux_demo-2.0.dist-info/LICENSE,sha256=VTfU0Qt2uBtujf2LZESApLHvozL7sM22ESbFvnge97Q,6554
+simple_manylinux_demo-2.0.dist-info/WHEEL,sha256=Wwv5uFqosCJnAtYmCoD8mh3OHXuG8MUbr6s8y0xIXCE,217
