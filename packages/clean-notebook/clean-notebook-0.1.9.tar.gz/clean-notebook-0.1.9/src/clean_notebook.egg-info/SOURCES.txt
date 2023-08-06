@@ -1,0 +1,12 @@
+pyproject.toml
+readme.md
+src/clean_notebook/__init__.py
+src/clean_notebook/__main__.py
+src/clean_notebook/clean.py
+src/clean_notebook.egg-info/PKG-INFO
+src/clean_notebook.egg-info/SOURCES.txt
+src/clean_notebook.egg-info/dependency_links.txt
+src/clean_notebook.egg-info/entry_points.txt
+src/clean_notebook.egg-info/requires.txt
+src/clean_notebook.egg-info/top_level.txt
+tests/test_clean_notebook.py
