@@ -1,0 +1,17 @@
+[project]
+name = "bricks_helper"
+version = "1.2.1"
+authors = [
+  { name="Jim Brown", email="4ba4wyqt@duck.com" },
+]
+description = "A Python package for helping with databricks related work"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://dev.azure.com/lerxstvso/main/_git/brickshelper"
