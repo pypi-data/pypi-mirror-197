@@ -1,0 +1,3 @@
+[console_scripts]
+tldream = tldream:entry_point
+
