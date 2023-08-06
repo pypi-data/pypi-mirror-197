@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: pekora
+Version: 1.0.2
+Summary: A command-line calculator for Discord permission values
+Home-page: https://pekora.celsiusnarhwal.dev
+License: MIT
+Author: celsius narhwal
+Author-email: hello@celsiusnarhwal.dev
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: alianator (>=4.0.2,<5.0.0)
+Requires-Dist: colour (>=0.1.5,<0.2.0)
+Requires-Dist: decorator (>=5.1.1,<6.0.0)
+Requires-Dist: inflect (>=6.0.2,<7.0.0)
+Requires-Dist: inquirerpy (>=0.3.4,<0.4.0)
+Requires-Dist: py-cord (>=2.4.0,<3.0.0)
+Requires-Dist: pyperclip (==1.8.1)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Requires-Dist: yarl (>=1.8.2,<2.0.0)
+Project-URL: Documentation, https://pekora.celsiusnarhwal.dev
+Project-URL: Repository, https://github.com/celsiusnarhwal/pekora
+Description-Content-Type: text/markdown
+
+# Pekora
+
+[![PyPI](https://img.shields.io/pypi/v/pekora?logo=pypi&color=green&logoColor=white&style=for-the-badge)](https://pypi.org/project/pekora)
+[![PyPI - License](https://img.shields.io/pypi/l/pekora?color=03cb98&style=for-the-badge)](https://github.com/celsiusnarhwal/pekora/blob/main/LICENSE.md)
+[![Code style: Black](https://aegis.celsiusnarhwal.dev/badge/black?style=for-the-badge)](https://github.com/psf/black)
+
+Pekora is a calculator for Discord permission values. With it, you can calculate permission values, see detailed
+information about the permissions a value represents, and interactively build your own
+permissions.
+
+## Installation
+
+### pipx (recommended)
+
+[Install pipx](https://pypa.github.io/pipx/installation/), then run:
+
+```bash
+pipx install pekora
+```
+
+### Homebrew (macOS and Linux only)
+
+[Homebrew](https://brew.sh) users can install Pekora from the
+[Houkago Tea Tap](https://github.com/celsiusnarhwal/homebrew-htt).
+
+```bash
+brew tap celsiusnarhwal/htt
+brew install pekora
+```
+
+## Documentation
+
+For documentation, including usage instructions, visit [Pekora's website](https://pekora.celsiusnarhwal.dev).
+
+## License
+
+Pekora is licensed under the [MIT License](https://github.com/celsiusnarhwal/pekora/blob/main/LICENSE.md). Its
+documentation is licensed under [CC BY 4.0](https://pekora.celsiusnarhwal.dev/license).
+
