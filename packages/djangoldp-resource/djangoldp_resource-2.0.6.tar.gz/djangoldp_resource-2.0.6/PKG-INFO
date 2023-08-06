@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: djangoldp_resource
+Version: 2.0.6
+Summary: djangoldp resource package
+Home-page: http://git.startinblox.fr/djangoldp-packages/djangoldp-resource
+Author: Startin'blox
+Author-email: marjolaine@nantes.happy-dev.fr
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: dev
+
+UNKNOWN
+
