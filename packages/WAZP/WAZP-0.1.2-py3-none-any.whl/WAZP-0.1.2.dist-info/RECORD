@@ -1,0 +1,14 @@
+wazp/__init__.py,sha256=EB2zg9Xk2NiMFg-bNvU89QNR6WaMpEggeJJBrlPMiSM,170
+wazp/app.py,sha256=oklXJ0aGaBGvkfQ6ne7n_mRprNEkd1MzzJ8WFxu2S7U,2254
+wazp/callbacks.py,sha256=dJbsqiHMCnlZujfAkbLgEr-vzbb1jiDy4DqxBT0j-d0,39701
+wazp/utils.py,sha256=0tJBubVA0-Gtf8jS9YKgkugutrcLU-5xo3yx2tryjNU,16684
+wazp/pages/01_metadata.py,sha256=h6TebJfCqYfGGi1WzAQPEyCS-MBfYMk7Zx0F7WU0QNI,434
+wazp/pages/02_ROI.py,sha256=y6oTRPD-wtemEUUgJyfdc04voyQN_3n0NjlR098cXTw,7621
+wazp/pages/03_pose_estimation.py,sha256=36KVRqh93f0JDIA7kguNCeHEcjnZIi2VHkVdNChTQCA,388
+wazp/pages/04_dashboard.py,sha256=RpS-GFCJezZ3rk8VKSpverhFE3qMSMR0jfGYjn8ZX9c,5272
+wazp/pages/home.py,sha256=NeyiAai0DlQydf9n8Yejh7RzDgXGhFMX1bBNizU3oGo,1055
+WAZP-0.1.2.dist-info/LICENSE,sha256=Ag_EJZ4_CwZXMX3n9I9R-qhzQToUwknRtMhxUwG_7Ps,1539
+WAZP-0.1.2.dist-info/METADATA,sha256=CV4kjKZMXOugG66zb03z3iVvJDQeGTMzVuue7aj0svQ,4176
+WAZP-0.1.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+WAZP-0.1.2.dist-info/top_level.txt,sha256=UhuS-WugNEvQFLav1qLpQsmqfOsQwB238rcJHBlzIVM,5
+WAZP-0.1.2.dist-info/RECORD,,
