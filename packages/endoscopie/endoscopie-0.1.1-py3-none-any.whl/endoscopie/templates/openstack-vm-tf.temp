@@ -1,0 +1,43 @@
+terraform {
+  required_providers {
+    openstack = {
+      source = "terraform-provider-openstack/openstack"
+      version = "1.47.0"
+    }
+  }
+}
+
+provider "openstack" {
+  # Identity v3 only
+  application_credential_id     = "{{ openstack.credential.id }}"
+  application_credential_secret = "{{ openstack.credential.secret }}"
+  auth_url                      = "{{ openstack.auth.url }}"
+  region                        = "{{ openstack.region }}"
+}
+{% for server in servers %}
+    {% set outer_loop = loop %}
+    {% for flavor in server.flavors %}
+resource "openstack_compute_instance_v2" "endoscopie-{{ server.name }}-{{ flavor.id }}-{{ (outer_loop.index) }}" {
+  name            = "endoscopie-{{ server.name }}-{{ flavor.id }}"
+  flavor_name     = "{{ flavor.name }}"
+  flavor_id       = "{{ flavor.id }}"
+  key_pair        = "{{ server.keypair.name }}"
+  user_data       = "${file("{{ server.user_script.path }}")}"
+  image_name      = "{{ server.image_name }}"
+  security_groups = ["{{ server.vpc.security_groups | join('\",\"') }}"]
+
+  block_device {
+    uuid                  = "{{ server.block_device.uuid }}"
+    source_type           = "{{ server.block_device.source_type }}"
+    volume_size           = {{ server.block_device.volume_size }}
+    boot_index            = 0
+    destination_type      = "volume"
+    delete_on_termination = true
+  }
+
+  network {
+    uuid  = "{{ server.vpc.id }}"
+  }
+}
+    {% endfor %}
+{% endfor %}

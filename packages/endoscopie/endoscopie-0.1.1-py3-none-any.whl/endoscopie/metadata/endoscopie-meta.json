@@ -1,0 +1,15 @@
+{
+  "openstack": {
+    "credential": {
+      "id": "",
+      "secret": ""
+    },
+    "auth": {
+      "type": "",
+      "url": ""
+    },
+    "region": ""
+  },
+  "servers": [
+  ]
+}
