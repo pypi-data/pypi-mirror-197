@@ -1,0 +1,20 @@
+actions:
+  get-current-version:
+    - "python3 ./setup.py --version"
+  create-archive:
+    - "make local"
+    - 'bash -c "ls *.tar*"'
+jobs:
+- job: copr_build
+  metadata:
+    targets:
+    - fedora-all
+  trigger: pull_request
+srpm_build_deps:
+ - make
+ - systemd
+ - gettext
+ - python3-devel
+ - python3-setuptools
+
+downstream_package_name: python-blivet
