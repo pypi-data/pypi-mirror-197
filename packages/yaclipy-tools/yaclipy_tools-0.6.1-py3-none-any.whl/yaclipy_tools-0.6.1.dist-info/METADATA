@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: yaclipy-tools
+Version: 0.6.1
+Summary: This is a collection of wrappers around common system tools that works well with yaclipy.
+Project-URL: Documentation, https://github.com/unknown/yaclipy-tools#readme
+Project-URL: Issues, https://github.com/unknown/yaclipy-tools/issues
+Project-URL: Source, https://github.com/unknown/yaclipy-tools
+Author-email: Aaron <aaron@framelunch.jp>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: print-ext>=0.13.1
+Requires-Dist: yaclipy>=0.7.3
+Description-Content-Type: text/markdown
+
+# yaclipy-tools
+
+This is a collection of wrappers around common system tools that works well with [yaclipy](https://pypi.org/project/yaclipy)
+
+## Tools
+
+* openssl
+* shasum
+* md5
+* gpg
+* nginx
+* grep
+* gpg
+* curl
+* ffmpeg
+* git
+* gcloud
+* kubectl
+* docker
+
+
+The set of tools can easily be extended by subclassing SysTool
+
+
+[![PyPI - Version](https://img.shields.io/pypi/v/yaclipy-tools.svg)](https://pypi.org/project/yaclipy-tools)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/yaclipy-tools.svg)](https://pypi.org/project/yaclipy-tools)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install yaclipy-tools
+```
+
+## License
+
+`yaclipy-tools` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
