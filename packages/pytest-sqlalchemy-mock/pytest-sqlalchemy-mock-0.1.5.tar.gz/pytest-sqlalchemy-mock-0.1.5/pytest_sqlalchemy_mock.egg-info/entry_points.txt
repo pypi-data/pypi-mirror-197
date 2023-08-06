@@ -1,0 +1,2 @@
+[pytest11]
+pytest_sqlalchemy_mock = pytest_sqlalchemy_mock.base
