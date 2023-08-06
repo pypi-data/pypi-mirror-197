@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: junhao_sales
+Version: 0.0.1
+Summary: My customized ORM on Sales
+Project-URL: Homepage, https://github.com/Junhao42/orm_lybrary
+Project-URL: Bug Tracker, https://github.com/Junhao42/orm_lybrary/issues
+Author-email: junhe42 <junhao91102@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
