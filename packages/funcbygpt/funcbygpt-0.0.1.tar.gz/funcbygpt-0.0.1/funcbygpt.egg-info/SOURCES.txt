@@ -1,0 +1,8 @@
+README.md
+setup.py
+funcbygpt/__init__.py
+funcbygpt.egg-info/PKG-INFO
+funcbygpt.egg-info/SOURCES.txt
+funcbygpt.egg-info/dependency_links.txt
+funcbygpt.egg-info/requires.txt
+funcbygpt.egg-info/top_level.txt
