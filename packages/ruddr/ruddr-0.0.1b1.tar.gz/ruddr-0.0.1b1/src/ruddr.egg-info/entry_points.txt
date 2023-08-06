@@ -1,0 +1,5 @@
+[console_scripts]
+ruddr = ruddr.main:main
+
+[ruddr.notifier]
+_test = ruddr.notifiers.static:StaticNotifier

@@ -1,0 +1,231 @@
+[build-system]
+requires = [
+    "setuptools>=61",
+    "setuptools_scm[toml]>=6.2",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ruddr"
+authors = [
+    { name="Dominick C. Pastore" },
+    { email="ruddr@dcpx.org" },
+]
+description = "Robotic Updater for Dynamic DNS Records"
+readme = "README.md"
+license.file = "COPYING"
+classifiers = [
+    "Environment :: No Input/Output (Daemon)",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Telecommunications Industry",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Internet",
+    "Topic :: Internet :: Name Service (DNS)",
+    "Topic :: System :: Networking",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "requests",
+    "netifaces>=0.11.0",
+    "dnspython~=2.0",
+    "tldextract~=3.0",
+    "importlib_metadata; python_version<'3.10'",
+    "typing_extensions~=4.0; python_version<'3.8'",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+# Systemd notifier, not systemd service support
+systemd = [
+    "PyGObject",
+]
+# Extras below only used for development purposes
+staticanalysis = [
+    "flake8>=5",
+    "pytype>=2023.01.10",
+]
+unittest = [
+    "pytest>=6",
+    "pytest-mock",
+    "coverage[toml]"
+]
+test = [
+    "ruddr[unittest,staticanalysis]",
+    "pytest-cov",
+    "tox>=4",
+]
+docs = [
+    "sphinx",
+]
+dev = [
+    "ruddr[test,docs]",
+]
+
+[project.urls]
+Homepage = "https://ruddr.dcpx.org/"
+Documentation = "https://ruddr.dcpx.org/"
+Repository = "https://github.com/dominickpastore/ruddr/"
+Changelog = "https://github.com/dominickpastore/ruddr/blob/master/CHANGELOG.md"
+"Bug Tracker" = "https://github.com/dominickpastore/ruddr/issues"
+Discussion = "https://github.com/dominickpastore/ruddr/discussions"
+
+[project.scripts]
+ruddr = "ruddr.main:main"
+
+# For unit tests only
+[project.entry-points."ruddr.notifier"]
+_test = "ruddr.notifiers.static:StaticNotifier"
+
+[tool.setuptools_scm]
+
+# Notes on testing:
+#
+# To run the full test suite in multiple virtual environments, use tox:
+#     tox
+#
+# To just run pytest in the current venv, it's enough to do:
+#     pytest
+# or with coverage:
+#     pytest --cov
+# (Tox uses coverage.py directly rather than pytest-cov for more control, but
+# pytest-cov is simpler for a single test run)
+#
+# To just check style, use:
+#     flake8 src/ test/
+#
+# To just check types, use:
+#     pytype
+# Note: We are using pytype because it gives fewer false positives the way we
+# actually write the code
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+min_version = 4.0
+envlist =
+    clean
+    analyze
+    py37
+    py38
+    py39
+    py310
+    py311
+    report
+
+[testenv]
+# Note: Options set here copy to other testenvs unless set differently there
+depends = clean
+use_develop = true
+extras =
+    unittest
+commands =
+    coverage run -m pytest {posargs}
+
+[testenv:analyze]
+use_develop = false
+base_python = python3.8
+extras =
+    staticanalysis
+commands =
+    flake8 src/ test/
+    pytype
+
+[testenv:report]
+depends =
+    py37
+    py38
+    py39
+    py310
+    py311
+use_develop = false
+extras =
+deps = coverage[toml]
+skip_install = true
+commands =
+    coverage report
+    coverage html
+    coverage json
+
+[testenv:clean]
+depends =
+use_develop = false
+deps = coverage[toml]
+extras =
+skip_install = true
+allowlist_externals =
+    rm
+commands =
+    rm -rf htmlcov
+    coverage erase
+"""
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["test"]
+# Note: addopts is "additional options." These are included even when running
+# bare "pytest" without tox.
+addopts = "-vv"
+
+[tool.coverage.run]
+branch = true
+source = [
+    "src",
+]
+
+[tool.coverage.report]
+# Include line numbers of missed code
+show_missing = true
+# Regexes for lines to exclude from consideration
+exclude_lines = [
+    # Have to re-enable the standard pragma
+    "pragma: no cover",
+
+    # Don't complain about missing debug-only code:
+    "def __repr__",
+    "if self\\.debug",
+
+    # Don't complain if tests don't hit defensive assertion code:
+    "raise AssertionError",
+
+    # Don't complain about abstract methods (though we do sort of abuse
+    # NotImplementedError, we always override those methods in our test
+    # doubles, test the NotImplementedError behavior just by raising it in the
+    # mocks)
+    "raise NotImplementedError",
+
+    # Don't complain if non-runnable code isn't run:
+    "if __name__ == .__main__.:",
+]
+
+[tool.pytype]
+# Path where source lives and list of directories to process
+inputs = [
+    "src/ruddr"
+]
+
+# We don't specify target python_version. It causes problems when it doesn't
+# match the version used to run Pytype. It uses the target version's
+# interpreter to resolve import paths, which doesn't work when the dependencies
+# are not installed for that version. This is especially a problem for venvs
+# and CI, where there are no external libs pre-installed except in the current
+# venv. The default is to target the version of Python that Pytype is running
+# in.
+
+# Run in parallel with same number of jobs as CPUs
+jobs = "auto"
+
+# Errors to ignore project-wide
+disable = [
+    # We are abusing @abstractmethod for Sphinx documentation purposes. It's
+    # okay if they are not overridden in subclasses.
+    "ignored-abstractmethod",
+]

@@ -1,0 +1,12 @@
+dl {
+    margin: revert;
+    margin-bottom: 15px;
+}
+
+nav.contents {
+    padding: 10px 30px;
+}
+
+nav.contents > :first-child {
+    margin-top: 0px;
+}
