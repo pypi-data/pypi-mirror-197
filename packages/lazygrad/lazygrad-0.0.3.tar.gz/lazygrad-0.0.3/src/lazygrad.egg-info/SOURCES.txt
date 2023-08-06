@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/lazygrad/__init__.py
+src/lazygrad/engine.py
+src/lazygrad/graph.py
+src/lazygrad/nn.py
+src/lazygrad/rnn.py
+src/lazygrad.egg-info/PKG-INFO
+src/lazygrad.egg-info/SOURCES.txt
+src/lazygrad.egg-info/dependency_links.txt
+src/lazygrad.egg-info/requires.txt
+src/lazygrad.egg-info/top_level.txt
