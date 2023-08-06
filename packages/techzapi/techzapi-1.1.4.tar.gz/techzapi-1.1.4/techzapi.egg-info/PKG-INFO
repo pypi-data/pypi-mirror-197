@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: techzapi
+Version: 1.1.4
+Summary: Python Wrapper For TechZApi
+Home-page: https://github.com/TechShreyash/TechZApi
+Author: TechShreyash
+Author-email: techshreyash123@gmail.com
+License: MIT
+Keywords: API,TechZApi,TechZAPI,TechZBots,GogoAnime,Anime,AnimeAPI
+Description-Content-Type: text/markdown
