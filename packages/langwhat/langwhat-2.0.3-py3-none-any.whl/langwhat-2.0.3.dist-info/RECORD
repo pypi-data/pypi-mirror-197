@@ -1,0 +1,13 @@
+langwhat/__init__.py,sha256=U8BEyItnCRffb5NQFYKwkJf1OI4ctsrASQHqqSyNC4k,21
+langwhat/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+langwhat/cli.py,sha256=Ywend66ZR5TlsAAvwAbBpW8dlMscQI0Q5ddEl7_W3es,2782
+langwhat/config.py,sha256=unXxj-FtTUuK7pxSW2hOJyFLoggmE84dw1TDWA2we-k,1764
+langwhat/langwhat.py,sha256=Pssw2Z4ASnCCc8YtANZ_HYLGUWjMhWvQXhQ-Acpo2lc,2297
+langwhat/llm.py,sha256=zC5NTEmrCsTB-619M8-I19T1H_uafhS9g2h9SLxxHVU,641
+langwhat/tests/data.py,sha256=KK6WKQoxczuKTIZ-oQOP5dFze2aNNBLRmdodZug21Ys,1422
+langwhat/utils.py,sha256=QYT24lHZZqLqZVmrIaQywruo4NIkvCkhcyuCOQBm9-4,4640
+langwhat-2.0.3.dist-info/LICENSE,sha256=i3elsWrNBsAxcqmOCBxO4p5B9sEa0WF0Sdxx4tZTqi0,1106
+langwhat-2.0.3.dist-info/METADATA,sha256=srlSAnRE5XsA8g4S85vuWHbvGqf9lyR9JRKPSmyEym8,3430
+langwhat-2.0.3.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+langwhat-2.0.3.dist-info/entry_points.txt,sha256=MOWcfneYBkPJDgBmonBfjX4UucAUX9X8jrNeOmkEdck,67
+langwhat-2.0.3.dist-info/RECORD,,

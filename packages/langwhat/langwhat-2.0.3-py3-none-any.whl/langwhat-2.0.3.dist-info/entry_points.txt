@@ -1,0 +1,4 @@
+[console_scripts]
+langwhat=langwhat.cli:main
+lw=langwhat.cli:main
+
