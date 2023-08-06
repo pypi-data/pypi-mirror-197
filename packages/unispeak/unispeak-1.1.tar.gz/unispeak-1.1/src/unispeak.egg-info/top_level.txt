@@ -1,0 +1,6 @@
+__init__
+linux
+mactalk
+unisapi
+unispeak
+unispeak_nvda
