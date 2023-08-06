@@ -1,0 +1,2 @@
+pyyaml
+dask-jobqueue>=0.8
