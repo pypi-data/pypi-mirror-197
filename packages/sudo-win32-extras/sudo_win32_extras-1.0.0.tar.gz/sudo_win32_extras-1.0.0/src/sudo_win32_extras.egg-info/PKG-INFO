@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: sudo-win32-extras
+Version: 1.0.0
+Summary: Contains the sudo command for the sudo_win32[sudo]
+Home-page: https://github.com/zackees/sudo-win32-extras
+Maintainer: Zachary Vorhies
+License: BSD 3-Clause License
+Keywords: template-python-cmd
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sudo-win32-extras
+
+Simply contains the `sudo` command for Windows, meant to be used with sudo_win32[sudo]
+which contains the actual implementation.
+
+[![Linting](https://github.com/zackees/sudo-win32-extras/actions/workflows/lint.yml/badge.svg)](https://github.com/zackees/sudo-win32-extras/actions/workflows/lint.yml)
+
+To develop software, run `. ./activate.sh`
+
+# Windows
+
+This environment requires you to use `git-bash`.
+
+# Linting
+
+Run `./lint.sh` to find linting errors using `pylint`, `flake8` and `mypy`.
