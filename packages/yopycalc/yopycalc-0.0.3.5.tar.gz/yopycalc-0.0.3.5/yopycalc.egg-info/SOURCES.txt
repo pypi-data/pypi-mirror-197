@@ -1,0 +1,10 @@
+setup.py
+test/__init__.py
+test/test_calc.py
+yopycalc/__init__.py
+yopycalc/calc.py
+yopycalc.egg-info/PKG-INFO
+yopycalc.egg-info/SOURCES.txt
+yopycalc.egg-info/dependency_links.txt
+yopycalc.egg-info/requires.txt
+yopycalc.egg-info/top_level.txt
