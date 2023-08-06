@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: flaggery
+Version: 0.1.0
+Summary: Feature flag management framework for serving rollouts, ab-tests and feature groups
+Home-page: https://gitlab.com/lariel.fernandes/flaggery
+License: CDDL-1.1
+Author: Lariel Fernandes
+Author-email: lariel.c2.fernandes@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: alembic (>=1.9.4,<2.0.0)
+Requires-Dist: cassandra-driver (>=3.25.0,<4.0.0)
+Requires-Dist: fastapi (>=0.92.0,<0.93.0)
+Requires-Dist: gunicorn (>=20.1.0,<21.0.0)
+Requires-Dist: jinja2 (>=3.1.2,<4.0.0)
+Requires-Dist: merge-args (>=0.1.5,<0.2.0)
+Requires-Dist: pydantic (>=1.10.5,<2.0.0)
+Requires-Dist: pyyaml (>=6.0,<7.0)
+Requires-Dist: sqlalchemy (>=2.0.4,<3.0.0)
+Requires-Dist: uvicorn (>=0.20.0,<0.21.0)
+Project-URL: Repository, https://gitlab.com/lariel.fernandes/flaggery
+Description-Content-Type: text/markdown
+
+
+# Flaggery
+
+Feature flag management framework for serving rollouts, ab-tests and feature groups.
+
+### Installation
+
+```bash
+pip install flaggery
+```
+
+### Starting the Rest API server
+
+```bash
+uvicorn --host <host> --port <port> flaggery.api.main:app
+```
+
+### Rest API Reference
+
+To access the API documentation,
+first start the API server and then open
+[http://{hostname}:{port}/docs](http://localhost/docs)
+in your browser.
+
+### Configuring the API server
+
+The API server can be configured by setting the following environment variables:
+
+| Variable                   | Required | Defaut | Description                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|----------------------------|----------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `FLAGGERY_DB_URL`          | Yes      | -      | SQLAlchemy compatible connection URL for an existing database.<br><br>Obs: Depending on which database you use, you might also need to install database-specific Python clients (e.g.: psycopg2 for PostgreSQL)                                                                                                                                                                                                                          |
+| `FLAGGERY_DB_AUTO_UPGRADE` | No       | False  | If True, database will be migrated to the latest schema on server startup.                                                                                                                                                                                                                                                                                                                                                               |
+| `FLAGGERY_ADMIN_MODE`      | No       | False  | If True, all endpoints are available. <br> <br> If false, the server goes on a limited read-only mode, in which all endpoints are locked except for `GET /v1/subject/flags` <br> <br> For both security and performance reasons, it is recommended to deploy a single replica of the server in admin mode, which can only be accessed by admins, and many replicas in limited read-only mode, which can be accessed by clients at scale. |
+
+[//]: # (Deploying with Docker)
+[//]: # (Deploying with Helm)
+[//]: # (Data model)
+[//]: # (Thumbnail)
+[//]: # (Table of contents)
+

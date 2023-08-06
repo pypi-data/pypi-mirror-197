@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "flaggery"
+version = "0.1.0"
+description = "Feature flag management framework for serving rollouts, ab-tests and feature groups"
+authors = ["Lariel Fernandes <lariel.c2.fernandes@gmail.com>"]
+readme = "README.md"
+license = "CDDL-1.1"
+repository = "https://gitlab.com/lariel.fernandes/flaggery"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cassandra-driver = "^3.25.0"
+fastapi = "^0.92.0"
+alembic = "^1.9.4"
+sqlalchemy = "^2.0.4"
+pydantic = "^1.10.5"
+pyyaml = "^6.0"
+jinja2 = "^3.1.2"
+uvicorn = "^0.20.0"
+gunicorn = "^20.1.0"
+merge-args = "^0.1.5"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+jupyter = "^1.0.0"
+psycopg2-binary = "^2.9.5"
+pysqlite3-binary = "^0.5.0"
+pytest-env = "^0.8.1"
+httpx = "^0.23.3"
+pytest-cov = "^4.0.0"
+coverage = "^7.2.1"
+twine = "^4.0.2"
+
+[tool.poetry.plugins."flaggery.plugins.cache"]
+'flaggery.cache.MemoryCache' = 'flaggery.cache.MemoryCache'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
