@@ -1,0 +1,7 @@
+correos_seguimiento/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+correos_seguimiento/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+correos_seguimiento/services/shipment.py,sha256=vE_dgG56qJB1jyXCirO-lKXNgLBo5tH3W46yxydzzV4,1276
+correos_seguimiento-0.0.3.dist-info/METADATA,sha256=UpMT81rABv2iocogk-Il9lF4U9XotbnV0xIGK1C2Irk,4051
+correos_seguimiento-0.0.3.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+correos_seguimiento-0.0.3.dist-info/top_level.txt,sha256=wNgqs_SOX2G4hng74qM0y9TZkbiSx7Tf4HWcs4BhFFM,20
+correos_seguimiento-0.0.3.dist-info/RECORD,,
