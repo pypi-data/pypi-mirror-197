@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "quickshow"
+version = "0.1.13"
+description = ""
+authors = ["parkminwoo <parkminwoo1991@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/DSDanielPark/quick-show"
+keywords = ["packaging", "visuallization", "exploratory data analysis"]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+
+[tool.poetry.dependencies]
+python = "*"
+pandas = "*"
+seaborn = "*"
+matplotlib = "*"
+scikit-learn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
