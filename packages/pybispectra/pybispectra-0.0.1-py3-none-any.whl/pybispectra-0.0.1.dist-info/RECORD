@@ -1,0 +1,15 @@
+pybispectra/__init__.py,sha256=WxgvHONtLhorSvII-T98LNznkFSTHetsHh-12VM14n8,206
+pybispectra/test_pac.py,sha256=DDJGTBo5gSdVJQaS7N8YsB5DgWJa6f16qvICT6B5I-A,566
+pybispectra/cfc/__init__.py,sha256=caFYQec7o1oTW_sJUPcI66YkfjJTADw8ogviCATk4Xo,132
+pybispectra/cfc/pac.py,sha256=2qjU_x3PRR2SJB26Ui-C67zAs8ydguffbbkcEgQQlTg,14749
+pybispectra/cfc/ppc.py,sha256=x9-3Xlj7_N3q6U3FaKHKCJtNl6Z-V7eiVHX_0ScOzWA,6839
+pybispectra/tde/__init__.py,sha256=oNwxUvrOK9qQY1CVx0uRjmNkk9q1c9C58uiQJ8-DzoU,107
+pybispectra/tde/tde.py,sha256=WtwspO0wNRaGIhQZYBO4L7dg8dj-8jgQ12NiAuZrN2c,21800
+pybispectra/utils/__init__.py,sha256=3d_MkWLlPgUHqmsBkPxUzaB_vzrYJ_tZujLALizV0d8,316
+pybispectra/utils/_docs.py,sha256=45cyth7oB85X6N9znyyyfM-y7lvRRdnbvQXkJ5n-Ot8,1913
+pybispectra/utils/_process.py,sha256=qvuX2xk5DWSfW2mSnHRoTmWBoauQNAZmDeTm3Z21kTU,8991
+pybispectra/utils/utils.py,sha256=fg1d2AwkJ4CQSMPGUdg2eDXUDdjvdM0tex-nTdozogc,23538
+pybispectra-0.0.1.dist-info/METADATA,sha256=KT0TRI1qUy4i4NzhMCvAToUj2YU56AkJ6PFl_C6TbyQ,1686
+pybispectra-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+pybispectra-0.0.1.dist-info/licenses/LICENSE.txt,sha256=G5sfkFNRuCM1hTZyzxrbHYdb-TxD7_Fn3vhcLm7bQUU,1095
+pybispectra-0.0.1.dist-info/RECORD,,
