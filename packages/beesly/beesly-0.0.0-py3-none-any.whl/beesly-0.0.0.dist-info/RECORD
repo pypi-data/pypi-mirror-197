@@ -1,0 +1,10 @@
+beesly/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+beesly/classes.py,sha256=luDK-ZTuWZc9CzVU9WkB6j2LQmZmoOk1CHXK8-c8L_E,2326
+beesly/exceptions.py,sha256=kagMDOStEQhnEjd6VeEbsEkW9PLznTMWSpfR0xAU8kk,676
+beesly/functions.py,sha256=RrM-28n8Z2Ebtedhvkl7NFoRooCV1_bLAlQ77phCJSU,1073
+beesly/helpers.py,sha256=B1uDw7aVxrc65AsMtQNTmVMNIffji3EuLQva9jHgeD8,973
+beesly-0.0.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+beesly-0.0.0.dist-info/METADATA,sha256=FDyL37yhFRV5tqM46IXQ6Q32ekniy3YQDX1hqUiI8pM,425
+beesly-0.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+beesly-0.0.0.dist-info/top_level.txt,sha256=B4JLPLcUztbBmxjDoCStwVR3oxJrfkoRcz8zyyxMUsM,7
+beesly-0.0.0.dist-info/RECORD,,
