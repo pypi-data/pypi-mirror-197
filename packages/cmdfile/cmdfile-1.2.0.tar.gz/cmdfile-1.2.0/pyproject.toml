@@ -1,0 +1,28 @@
+[project]
+name = "cmdfile"
+version = "1.2.0"
+
+authors = [
+  { name="Stuntlover", email="stuntlover@aluvia.de" }
+]
+
+license = {file = "LICENSE.txt"}
+description = "cmdfile runs annoying commands automatically."
+readme = "README.md"
+requires-python = ">=3.9"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+"Homepage" = "https://github.com/Stuntlover-TM/cmdfile"
+"Bug Tracker" = "https://github.com/Stuntlover-TM/cmdfile/issues"
+
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
