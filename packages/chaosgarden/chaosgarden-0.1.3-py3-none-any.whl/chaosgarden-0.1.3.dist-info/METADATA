@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: chaosgarden
+Version: 0.1.3
+Summary: Generic cloud provider zone outage and Kubernetes pod disruption simulations with specific support for https://github.com/gardener
+Home-page: https://github.com/gardener/chaos-engineering
+Author: SAP SE
+License: License :: OSI Approved :: Apache Software License
+Keywords: chaostoolkit,kubernetes,gardener
+Platform: AWS
+Platform: Azure
+Platform: GCP
+Platform: OpenStack
+Platform: vSphere
+Platform: Kubernetes
+Platform: Gardener
+Requires-Python: >= 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: azure-mgmt-network (==22.2.0)
+Requires-Dist: chaostoolkit (==1.15.0)
+Requires-Dist: chaostoolkit-lib (==1.33.1)
+Requires-Dist: chaostoolkit-aws (==0.21.2)
+Requires-Dist: chaostoolkit-azure (==0.11.0)
+Requires-Dist: chaostoolkit-google-cloud-platform (==0.8.0)
+Requires-Dist: chaostoolkit-kubernetes (==0.26.3)
+Requires-Dist: kubernetes (==24.2.0)
+Requires-Dist: Mako (==1.2.4)
+Requires-Dist: openstacksdk (==1.0.1)
+Requires-Dist: python-box (==7.0.0)
+Requires-Dist: PyYAML (==6.0)
+Requires-Dist: urllib3 (==1.26.14)
+
+This package provides [Gardener](https://github.com/gardener/gardener)-independent [`chaostoolkit`](https://chaostoolkit.org) modules to simulate *compute* and *network* outages for various cloud providers as well as *pods disruptions* in Kubernetes clusters.
+
+![Open Source](https://github.com/gardener/gardener/blob/master/logo/gardener.svg) [Gardener](https://github.com/gardener/gardener) users benefit from an additional module that leverages the generic modules, but hides the configuration differences from the end user (no need to specify cloud provider or cluster credentials, filters, and everything else is retrieved securely and computed automatically).
+
+Please check out the original repo [README](https://github.com/gardener/chaos-engineering/blob/main/readme.md) for more information.
