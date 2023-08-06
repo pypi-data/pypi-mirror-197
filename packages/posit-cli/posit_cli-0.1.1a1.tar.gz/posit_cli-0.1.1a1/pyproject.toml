@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "posit-cli"
+version = "0.1.1a1"
+description = "A command line tool for deploying and configuring Posit Workbench, Posit Connect, and Posit Posit Package Manager."
+authors = ["SamEdwardes <sam.edwardes@posit.co>"]
+readme = "README.md"
+homepage = "https://github.com/sol-eng/posit-cli"
+repository = "https://github.com/sol-eng/posit-cli"
+documentation = "https://github.com/sol-eng/posit-cli"
+
+packages = [{include = "posit_cli"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+typer = {extras = ["all"], version = "^0.7.0"}
+pulumi = "^3.46.1"
+pulumi-command = "^0.6.0"
+rich = "^12.6.0"
+pulumi-aws = "^5.20.0"
+PyYAML = "^6.0"
+pydantic = "^1.10.2"
+
+[tool.poetry.scripts]
+posit = "posit_cli.cli:app"
+
+[tool.poetry.group.dev.dependencies]
+typer-cli = "^0.0.13"
+shed = "^2023.3.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
