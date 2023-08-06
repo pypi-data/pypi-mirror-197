@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: Ethack
+Version: 1.0.0
+Summary: Make cybersecurity breaches easily
+Author-email: Hellom38 <dev.hellom38.hireable@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2018 Real Python
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: repository, https://github.com/DevHellom38/Ethack
+Project-URL: documentation, https://realpython.com/pypi-publish-python-package/
+Keywords: hack,ethack,Hacking
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: build
+Provides-Extra: dev
+License-File: LICENSE
+
+# Ethack
+
+Ethack is a ethical hacking utility tool used to facilitate using hacking mechanisms.
+
+## Installation
+
+You can install Ethack from [PyPI](https://pypi.org/project/Ethack/):
+
+    python -m pip install Ethack
+
+Ethack is supported on Python 3.7 and above. Older versions of Python, including Python 2.7, are supported by version 1.0.0 of the reader.
+
+## How to use
+
+The Ethack is a sophisticated facility utility.
+
+    Python is famous for coming with batteries included. Sophisticated
+    capabilities are available in the standard library. You can find modules for
+    working with sockets, parsing CSV, JSON, and XML files, and working with
+    files and file paths.
+
+    However great the packages included with Python are, there are many
+    fantastic projects available outside the standard library. These are most
+    often hosted at the Python Packaging Index (PyPI), historically known as the
+    Cheese Shop. At PyPI, you can find everything from Hello World to advanced
+    deep learning libraries.
+
+    [... The full text of the article ...]
+
+You can also call the Real Python Feed Reader in your own Python code, by importing from the `Ethack` package:
+
+    >>> from Ethack import Websites
+    >>> Websites.get_list()
+    ['DDOS()', ...]

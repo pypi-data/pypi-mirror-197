@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/Ethack.egg-info/PKG-INFO
+src/Ethack.egg-info/SOURCES.txt
+src/Ethack.egg-info/dependency_links.txt
+src/Ethack.egg-info/entry_points.txt
+src/Ethack.egg-info/requires.txt
+src/Ethack.egg-info/top_level.txt
+src/ethack/__init__.py
+src/ethack/__main__.py
+src/ethack/accountattack.py
+src/ethack/config.toml
+src/ethack/webattack.py
