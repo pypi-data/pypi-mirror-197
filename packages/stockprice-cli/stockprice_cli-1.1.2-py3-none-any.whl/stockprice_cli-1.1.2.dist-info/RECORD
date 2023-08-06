@@ -1,0 +1,8 @@
+stockprice/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stockprice/calculate_price_movement.py,sha256=QjPp528VOi-VXD8iEafaSau5OZzRV51iOPPfy9mj6Zo,2183
+stockprice/main.py,sha256=3loLaAwq23_XbeEiVHdp00P4Tx7E3AIix8oExyg5ijU,675
+stockprice_cli-1.1.2.dist-info/METADATA,sha256=LeEbzU0LJeR9PddP2U7uo81UiQRqKu4G-2zUUme425g,612
+stockprice_cli-1.1.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+stockprice_cli-1.1.2.dist-info/entry_points.txt,sha256=BbbvxzL6AWVnrrEHkXLFL8NaKwhZ0NsKnzHKibL587M,53
+stockprice_cli-1.1.2.dist-info/top_level.txt,sha256=KeT6ClRPQ5zQdkU0Ela_rRQ2aR7Dy7SjyOcfhcPy6kw,11
+stockprice_cli-1.1.2.dist-info/RECORD,,
