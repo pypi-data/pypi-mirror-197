@@ -1,0 +1,8 @@
+arxiv_bot/__init__.py,sha256=7slKDRS09fBxMZ-UEajoHBa3-YSOhVudjzNC-XFG_uk,107
+arxiv_bot/knowledge_base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arxiv_bot/knowledge_base/constructors.py,sha256=P4TVkdbOfCvvBcDxSPP7N27rUBt-UJnbg71M2UGbKRg,15432
+arxiv_bot/knowledge_base/database.py,sha256=gnBJ9mPzKTD2AqeVuYSc7b2wRQKdTXm03aXVF3rKkhw,7915
+arxiv_bot/templates.py,sha256=ONMQVEDb9-G5i-Koa-eWDZWXlhn8AeWG2HN4Qll2Q6g,1643
+arxiv_bot-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+arxiv_bot-0.0.1.dist-info/METADATA,sha256=NY761nyA9ojH8rZVsLb4dLKtT0YLDH2Ig0HAihHSGU0,763
+arxiv_bot-0.0.1.dist-info/RECORD,,
