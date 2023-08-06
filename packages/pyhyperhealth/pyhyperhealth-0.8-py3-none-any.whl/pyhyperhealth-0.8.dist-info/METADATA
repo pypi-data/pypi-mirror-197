@@ -1,0 +1,12 @@
+Metadata-Version: 2.0
+Name: pyhyperhealth
+Version: 0.8
+Summary: Python Hyperledger Iroha Healthcare Permissions Library
+Home-page: https://github.com/Dcode99/Blockchain-Healthcare-Project/
+Author: Dillon Tate
+Author-email: dillon.tate@uky.edu
+License: Apache 2.0
+License-File: LICENSE.txt
+Requires-Dist: iroha
+Requires-Dist: flask
+
