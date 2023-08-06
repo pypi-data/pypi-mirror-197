@@ -1,0 +1,5 @@
+[console_scripts]
+dispatches-data-packages = dispatches_data.api._cli:main
+
+[pytest11]
+data_packages = dispatches_data.testing.plugins:plugin
