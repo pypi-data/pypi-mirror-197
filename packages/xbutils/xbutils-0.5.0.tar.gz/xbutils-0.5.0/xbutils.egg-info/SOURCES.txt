@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+xbutils/__init__.py
+xbutils/cmd.py
+xbutils/simple_config.py
+xbutils/template.py
+xbutils.egg-info/PKG-INFO
+xbutils.egg-info/SOURCES.txt
+xbutils.egg-info/dependency_links.txt
+xbutils.egg-info/top_level.txt
