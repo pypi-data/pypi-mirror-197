@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: algefunc
+Version: 0.1.0
+Summary: Demo library
+Home-page: https://github.com/edurs2602
+Author: Luís Eduardo Ribeiro
+Author-email: edurs.2602@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Algefunc
+A small demo library for studying libraries in python
+
+### Installation
+```
+pip install algefunc
+```
+
+### Get started
+How to work with a function of first degree with this lib:
+
+```Python
+from algefunc import func
+
+# Instantiate a variable
+functiontest = func('4x-8')
+
+# Print the variable
+print(functiontest)
+
+# Output: 2.0
+```
