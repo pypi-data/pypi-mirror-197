@@ -1,0 +1,10 @@
+README.md
+setup.py
+Basi_CLI/__init__.py
+Basi_CLI/cli.py
+Basi_CLI.egg-info/PKG-INFO
+Basi_CLI.egg-info/SOURCES.txt
+Basi_CLI.egg-info/dependency_links.txt
+Basi_CLI.egg-info/entry_points.txt
+Basi_CLI.egg-info/requires.txt
+Basi_CLI.egg-info/top_level.txt
