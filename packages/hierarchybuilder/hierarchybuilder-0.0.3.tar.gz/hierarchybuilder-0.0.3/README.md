@@ -1,0 +1,3 @@
+# 'Hierarchy Builder package'
+
+The 'Hierarchy Builder package' is a ...
