@@ -1,0 +1,17 @@
+Cython
+colorama
+pettingzoo==1.22.3
+supersuit==3.7.1
+gymnasium
+numpy
+halo
+
+[atari]
+pettingzoo[atari]==1.22.3
+autorom[accept-rom-license]
+multi-agent-ale-py
+
+[classic]
+pettingzoo[classic]==1.22.3
+pygame
+rlcard
