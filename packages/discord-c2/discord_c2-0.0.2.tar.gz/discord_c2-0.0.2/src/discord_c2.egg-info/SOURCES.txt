@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/discord_c2/__init__.py
+src/discord_c2/cdn.py
+src/discord_c2/webhooks.py
+src/discord_c2.egg-info/PKG-INFO
+src/discord_c2.egg-info/SOURCES.txt
+src/discord_c2.egg-info/dependency_links.txt
+src/discord_c2.egg-info/top_level.txt
