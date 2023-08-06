@@ -1,0 +1,12 @@
+photoResizer/__init__.py,sha256=KZiVq3llQyZmBp3j0Bu6HW9szb_elbbRQyyUqn1LwQY,411
+photoResizer/__main__.py,sha256=-9J4ifsnqnYFWnRTb_REFT-JlwqzYqkVtm_HAITq1Lg,374
+photoResizer/cli.py,sha256=1ZZDczb2cUpqdK1ulHqkfRYavpVJKeJ-xXVPqfaylXY,3594
+photoResizer/config.py,sha256=0vZ2JRWPdKuLN6JWN5tSD2EvmOZKdQk-NbM6Ozcz-tc,897
+photoResizer/resizer.py,sha256=ICYCTX-QdA6WvxqZJaBdN232Sn92HPROkwnORKKPolU,8086
+photoResizer/settings.yaml,sha256=8e9tqxOktqXBwv_JORIb64f8poyKYvWgEIhPimGNWVY,608
+photoResizer-0.2.3.dist-info/LICENSE,sha256=7AQsNqF65oqB6d6o_BSArX7j-V1nwmGZYR5MJCmIexQ,1103
+photoResizer-0.2.3.dist-info/METADATA,sha256=mvKU8nlp9pHfhfYfK5TiKTf-Wg1k86Bjx79adL-xIAY,2998
+photoResizer-0.2.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+photoResizer-0.2.3.dist-info/entry_points.txt,sha256=qg9GcaEFBGt3nVxmmZuG9-NuHOEw_gcbFgpa7piZF8I,64
+photoResizer-0.2.3.dist-info/top_level.txt,sha256=nrpEwlOk7gBfYKFutBskVIQpcj99wqLqmUg62T9Qj7U,13
+photoResizer-0.2.3.dist-info/RECORD,,
