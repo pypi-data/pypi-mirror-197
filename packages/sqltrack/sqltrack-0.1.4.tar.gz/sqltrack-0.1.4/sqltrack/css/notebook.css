@@ -1,0 +1,334 @@
+:root {
+  --Amethyst: #F0A3FF;
+  --Blue: #0075DC;
+  --Caramel: #993F00;
+  --Damson: #4C005C;
+  --Ebony: #191919;
+  --Forest: #005C31;
+  --Green: #2BCE48;
+  --Honeydew: #FFCC99;
+  --Iron: #808080;
+  --Jade: #94FFB5;
+  --Khaki: #8F7C00;
+  --Lime: #9DCC00;
+  --Mallow: #C20088;
+  --Navy: #003380;
+  --Orpiment: #FFA405;
+  --Pink: #FFA8BB;
+  --Quagmire: #426600;
+  --Red: #FF0010;
+  --Sky: #5EF1F2;
+  --Turquoise: #00998F;
+  --Uranium: #E0FF66;
+  --Violet: #740AFF;
+  --Wine: #990000;
+  --Xanthin: #FFFF80;
+  --Yellow: #FFE100;
+  --Zinnia: #FF5005;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 1em;
+  color: white;
+  background: black;
+  font-size: 0.8em;
+  padding: 0.05em 0.5em 0.15em;
+  max-width: 6em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+}
+
+.Amethyst { background: var(--Amethyst); color: black; }
+.Blue { background: var(--Blue); }
+.Caramel { background: var(--Caramel); }
+.Damson { background: var(--Damson); }
+.Ebony { background: var(--Ebony); }
+.Forest { background: var(--Forest); }
+.Green { background: var(--Green); color: black; }
+.Honeydew { background: var(--Honeydew); }
+.Iron { background: var(--Iron); }
+.Jade { background: var(--Jade); }
+.Khaki { background: var(--Khaki); }
+.Lime { background: var(--Lime); }
+.Mallow { background: var(--Mallow); }
+.Navy { background: var(--Navy); }
+.Orpiment { background: var(--Orpiment); }
+.Pink { background: var(--Pink); color: black; }
+.Quagmire { background: var(--Quagmire); }
+.Red { background: var(--Red); }
+.Sky { background: var(--Sky); color: black; }
+.Turquoise { background: var(--Turquoise); }
+.Uranium { background: var(--Uranium); }
+.Violet { background: var(--Violet); }
+.Wine { background: var(--Wine); }
+.Xanthin { background: var(--Xanthin); color: black; }
+.Yellow { background: var(--Yellow); color: black; }
+.Zinnia { background: var(--Zinnia); color: black; }
+
+.invisible { display: none; }
+
+.status {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 0.6em;
+  margin: auto auto;
+  background: var(--Violet);
+  vertical-align: bottom;
+}
+.PENDING {
+  box-sizing: border-box;
+  background: none;
+  border: 2px solid var(--Iron);
+}
+.RUNNING, .CONFIGURING, .COMPLETING {
+  background: var(--Blue);
+}
+.COMPLETED {
+  background: var(--Green);
+}
+.CANCELLED {
+  background: var(--Iron);
+}
+.FAILED, .NODE_FAIL, .OUT_OF_MEMORY, .TIMEOUT, .DEADLINE, .BOOT_FAIL, .PREEMPTED, .STOPPED {
+  background: var(--Mallow);
+}
+
+.bar {
+  --barcolor: #0075DC80;
+  display: inline-block;
+  box-sizing: border-box;
+  width:100%;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.ellipsis-right {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.ellipsis-left {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: right;
+  direction: rtl;
+}
+
+table.cell-max-width-1em :is(th, td) {
+  max-width: 1em !important;
+}
+
+table.cell-max-width-2em :is(th, td) {
+  max-width: 2em !important;
+}
+
+table.cell-max-width-3em :is(th, td) {
+  max-width: 3em !important;
+}
+
+table.cell-max-width-4em :is(th, td) {
+  max-width: 4em !important;
+}
+
+table.cell-max-width-5em :is(th, td) {
+  max-width: 5em !important;
+}
+
+table.cell-max-width-6em :is(th, td) {
+  max-width: 6em !important;
+}
+
+table.cell-max-width-7em :is(th, td) {
+  max-width: 7em !important;
+}
+
+table.cell-max-width-8em :is(th, td) {
+  max-width: 8em !important;
+}
+
+table.cell-max-width-9em :is(th, td) {
+  max-width: 9em !important;
+}
+
+table.cell-max-width-10em :is(th, td) {
+  max-width: 10em !important;
+}
+
+table.cell-max-width-11em :is(th, td) {
+  max-width: 11em !important;
+}
+
+table.cell-max-width-12em :is(th, td) {
+  max-width: 12em !important;
+}
+
+table.cell-max-width-13em :is(th, td) {
+  max-width: 13em !important;
+}
+
+table.cell-max-width-14em :is(th, td) {
+  max-width: 14em !important;
+}
+
+table.cell-max-width-15em :is(th, td) {
+  max-width: 15em !important;
+}
+
+table.cell-max-width-16em :is(th, td) {
+  max-width: 16em !important;
+}
+
+table.cell-max-width-17em :is(th, td) {
+  max-width: 17em !important;
+}
+
+table.cell-max-width-18em :is(th, td) {
+  max-width: 18em !important;
+}
+
+table.cell-max-width-19em :is(th, td) {
+  max-width: 19em !important;
+}
+
+table.cell-max-width-20em :is(th, td) {
+  max-width: 20em !important;
+}
+
+table.cell-max-width-21em :is(th, td) {
+  max-width: 21em !important;
+}
+
+table.cell-max-width-22em :is(th, td) {
+  max-width: 22em !important;
+}
+
+table.cell-max-width-23em :is(th, td) {
+  max-width: 23em !important;
+}
+
+table.cell-max-width-24em :is(th, td) {
+  max-width: 24em !important;
+}
+
+table.cell-max-width-25em :is(th, td) {
+  max-width: 25em !important;
+}
+
+table.cell-max-width-26em :is(th, td) {
+  max-width: 26em !important;
+}
+
+table.cell-max-width-27em :is(th, td) {
+  max-width: 27em !important;
+}
+
+table.cell-max-width-28em :is(th, td) {
+  max-width: 28em !important;
+}
+
+table.cell-max-width-29em :is(th, td) {
+  max-width: 29em !important;
+}
+
+table.cell-max-width-30em :is(th, td) {
+  max-width: 30em !important;
+}
+
+table.cell-max-width-31em :is(th, td) {
+  max-width: 31em !important;
+}
+
+table.cell-max-width-32em :is(th, td) {
+  max-width: 32em !important;
+}
+
+table.cell-max-width-33em :is(th, td) {
+  max-width: 33em !important;
+}
+
+table.cell-max-width-34em :is(th, td) {
+  max-width: 34em !important;
+}
+
+table.cell-max-width-35em :is(th, td) {
+  max-width: 35em !important;
+}
+
+table.cell-max-width-36em :is(th, td) {
+  max-width: 36em !important;
+}
+
+table.cell-max-width-37em :is(th, td) {
+  max-width: 37em !important;
+}
+
+table.cell-max-width-38em :is(th, td) {
+  max-width: 38em !important;
+}
+
+table.cell-max-width-39em :is(th, td) {
+  max-width: 39em !important;
+}
+
+table.cell-max-width-40em :is(th, td) {
+  max-width: 40em !important;
+}
+
+table.cell-max-width-41em :is(th, td) {
+  max-width: 41em !important;
+}
+
+table.cell-max-width-42em :is(th, td) {
+  max-width: 42em !important;
+}
+
+table.cell-max-width-43em :is(th, td) {
+  max-width: 43em !important;
+}
+
+table.cell-max-width-44em :is(th, td) {
+  max-width: 44em !important;
+}
+
+table.cell-max-width-45em :is(th, td) {
+  max-width: 45em !important;
+}
+
+table.cell-max-width-46em :is(th, td) {
+  max-width: 46em !important;
+}
+
+table.cell-max-width-47em :is(th, td) {
+  max-width: 47em !important;
+}
+
+table.cell-max-width-48em :is(th, td) {
+  max-width: 48em !important;
+}
+
+table.cell-max-width-49em :is(th, td) {
+  max-width: 49em !important;
+}
+
+table.cell-max-width-50em :is(th, td) {
+  max-width: 50em !important;
+}

@@ -1,0 +1,16 @@
+docopt-ng<1.0.0,>=0.8.1
+psycopg[binary]<4.0.0,>=3.1.8
+
+[docs]
+sphinx<7.0.0,>=6.1.3
+sphinxcontrib-programoutput<1.0.0,>=0.17
+nbsphinx<1.0.0,>=0.9.0
+furo
+
+[full]
+humanize<5.0.0,>=4.6.0
+ipython<9.0.0,>=8.8.0
+ipywidgets<9.0.0,>=8.0.4
+itables<2.0.0,>=1.4.5
+pandas<2.0.0,>=1.5.3
+plotly<6.0.0,>=5.13.0
