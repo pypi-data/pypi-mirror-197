@@ -1,0 +1,11 @@
+transformers
+simpletransformers
+pandas
+numpy
+torch
+tensorflow
+tensorflow_datasets
+scikit-learn
+matplotlib
+linearmodels
+scipy
