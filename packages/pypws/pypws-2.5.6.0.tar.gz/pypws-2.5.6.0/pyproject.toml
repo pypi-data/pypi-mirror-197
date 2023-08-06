@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pypws"
+dynamic = [
+  "version"
+]
+authors = [
+  { name="DNV", email="software.support@dnv.com" },
+]
+description = "Python library supporting Phast Web Services"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords=[
+    "Phast", 
+    "Consequence Analysis",
+    "QRA",
+    "CPQRA", 
+    "DNV",
+    "Discharge",
+    "Dispersion",
+    "Fire",
+    "Explosion",
+    "Toxic",
+    "Flammable",
+    "Hazard",
+    "Gas"
+]
+# Remember to also update requirements.txt
+dependencies = [
+    "requests>=2.28.1",
+    "jsons>=1.6.3"
+]
+
+[project.urls]
+"Homepage" = "https://phastwebservices.dnv.com"
+"Phast Desktop" = "https://www.dnv.com/software/services/plant/consequence-analysis.html"
+"Reference help" = "https://pwsassets.blob.core.windows.net/prod/PyPws.pdf"
+
+[tool.hatch.version]
+path = "version.py" # Application ID given by your OIDC provider

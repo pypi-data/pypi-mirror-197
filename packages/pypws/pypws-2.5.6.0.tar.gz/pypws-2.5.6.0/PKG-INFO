@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pypws
+Version: 2.5.6.0
+Summary: Python library supporting Phast Web Services
+Project-URL: Homepage, https://phastwebservices.dnv.com
+Project-URL: Phast Desktop, https://www.dnv.com/software/services/plant/consequence-analysis.html
+Project-URL: Reference help, https://pwsassets.blob.core.windows.net/prod/PyPws.pdf
+Author-email: DNV <software.support@dnv.com>
+License-File: LICENSE
+Keywords: CPQRA,Consequence Analysis,DNV,Discharge,Dispersion,Explosion,Fire,Flammable,Gas,Hazard,Phast,QRA,Toxic
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: jsons>=1.6.3
+Requires-Dist: requests>=2.28.1
+Description-Content-Type: text/markdown
+
+# PHAST WEB SERVICES
+
+## Introduction
+
+Phast is the world's most comprehensive process hazard analysis software which models the progress of a potential incident from the initial release to far-field dispersion including modelling of pool spreading and evaporation and resulting flammable and toxic effects. In Phast Web Services we have taken the same state of the art consequence modelling calculations and made them available as web services so you can use them in your own applications.
+
+## Consequence analysis
+
+We built web services for various consequence calculations so you don't have to.
+
+We have services available for:
+
+- Discharge
+- Toxic/flammable gas dispersion
+- Fire and explosion modelling
+
+## Reference documentation
+A detailed reference document for using PyPWS can be found [here](https://pwsassets.blob.core.windows.net/prod/PyPws.pdf).
