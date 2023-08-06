@@ -1,0 +1,69 @@
+<div class="card">
+    <h5 class="card-header">Template Volume Configuration</h5>
+    <div class="card-body">
+        {% if lonely_drives or partitions %}
+        <table class="table table-hover">
+            <tr>
+                <td>Mount point</td>
+                <td>Filesystem</td>
+                <td>Size</td>
+                <td>Name (LVM)</td>
+                <td>Partition Size</td>
+                <td>Partition Type</td>
+                <td>Partition Type</td>
+                <td>Partition</td>
+                <td>Drive</td>
+            </tr>
+            {% for logical_volume in lv %}
+            <tr>
+                <td>{{ logical_volume.lv_name|linkify|placeholder }}-{{ logical_volume.vg.vg_name|linkify|placeholder }}</td>
+                <td>{{ logical_volume.fs|linkify|placeholder }}</td>
+                <td>{{ logical_volume.path|linkify|placeholder }}</td>
+                <td>{{ logical_volume.size|linkify|placeholder }} MB</td>
+            </tr>
+            {% endfor %}
+            {% if partitions %}
+                {% for partition in partitions %}
+                <tr>
+                    <td>{{ partition.device.mounted_volume.mount_point|linkify|placeholder }}</td>
+                    <td>{{ partition.device.mounted_volume.fs_type|linkify|placeholder }}</td>
+                    <td>{{ partition.device.mounted_volume.options|linkify|placeholder }}</td>
+                    <td>{{ partition.device|linkify|placeholder }}</td>
+                    <td>{{ partition.size|linkify|placeholder }}</td>
+                    <td>{{ partition.type|linkify|placeholder }}</td>
+                    <td>{{ partition.drive.cluster|linkify|placeholder }}</td>
+                    <td>{{ partition.drive.identifier|linkify|placeholder }}</td>
+                    <td>{{ partition.drive.size|linkify|placeholder }} MB</td>
+                </tr>
+                {% endfor %}
+            {% endif %}
+            {% for drive in lonely_drives %}
+            <tr>
+                <td>{{ None|placeholder }}</td>
+                <td>{{ None|placeholder }}</td>
+                <td>{{ None|placeholder }}</td>
+                <td>{{ None|placeholder }}</td>
+                <td>{{ None|placeholder }}</td>
+                <td>{{ None|placeholder }}</td>
+                <td>{{ None|placeholder }}</td>
+                <td>{{ None|placeholder }}</td>
+                <td>{{ drive|linkify|placeholder }} MB</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% else %}
+        <div class="text-muted">None</div>
+        {% endif %}
+    </div>
+    <div class="card-footer text-end noprint">
+        <a href="{% url 'plugins:netbox_storage:template_lvm_add' %}" class="btn btn-sm btn-primary">
+            <span class="mdi mdi-plus-thick" aria-hidden="true"></span> Add LVM Volume
+        </a>
+        <a href="{% url 'plugins:netbox_storage:template_partition_add' %}?platform={{ object.id }}&return_url={% url 'dcim:platform' pk=object.pk %}" class="btn btn-sm btn-primary">
+            <span class="mdi mdi-plus-thick" aria-hidden="true"></span> Add Partition to drive
+        </a>
+        <a href="{% url 'plugins:netbox_storage:template_drive_add' %}?platform={{ object.id }}&return_url={% url 'dcim:platform' pk=object.pk %}" class="btn btn-sm btn-primary">
+            <span class="mdi mdi-plus-thick" aria-hidden="true"></span> Add Drive
+        </a>
+    </div>
+</div>
