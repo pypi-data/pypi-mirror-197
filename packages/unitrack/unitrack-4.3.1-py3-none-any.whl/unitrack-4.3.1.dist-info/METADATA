@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: unitrack
+Version: 4.3.1
+Summary: A multi-stage object tracking framework
+Author-email: Kurt Stolle <k.h.w.stolle@gmail.com>
+Keywords: perception,computer vision,deep learning,object detection,instance segmentation,semantic segmentation
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=2.0.0)
+Requires-Dist: scikit-learn (>=1.2.2)
+Requires-Dist: lap (>=0.4.0)
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: hypothesis ; extra == 'test'
+Requires-Dist: bandit[toml] (==1.7.4) ; extra == 'test'
+Requires-Dist: black (==23.1.0) ; extra == 'test'
+Requires-Dist: check-manifest (==0.48) ; extra == 'test'
+Requires-Dist: flake8-bugbear (==23.3.12) ; extra == 'test'
+Requires-Dist: flake8-docstrings ; extra == 'test'
+Requires-Dist: flake8-formatter-junit-xml ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: flake8-pyproject ; extra == 'test'
+Requires-Dist: pre-commit (==2.17.0) ; extra == 'test'
+Requires-Dist: pylint (==2.17.0) ; extra == 'test'
+Requires-Dist: pylint-junit ; extra == 'test'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'test'
+Requires-Dist: pytest-mock (<3.10.1) ; extra == 'test'
+Requires-Dist: pytest-runner ; extra == 'test'
+Requires-Dist: pytest (==7.2.2) ; extra == 'test'
+Requires-Dist: pytest-github-actions-annotate-failures ; extra == 'test'
+Requires-Dist: shellcheck-py (==0.9.0.2) ; extra == 'test'
+
+# Unified Tracking
+Multi-stage object tracking framework research project.
