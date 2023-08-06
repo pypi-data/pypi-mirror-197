@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pagebuilder/__init__.py
+src/pagebuilder/example.py
+src/pagebuilder.egg-info/PKG-INFO
+src/pagebuilder.egg-info/SOURCES.txt
+src/pagebuilder.egg-info/dependency_links.txt
+src/pagebuilder.egg-info/top_level.txt
