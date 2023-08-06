@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/xcope_daemon/__init__.py
+src/xcope_daemon/config.py
+src/xcope_daemon/diagnose_daemon.py
+src/xcope_daemon/diagnose_daemon_pb2.py
+src/xcope_daemon/diagnose_daemon_pb2_grpc.py
+src/xcope_daemon/docker_utils.py
+src/xcope_daemon.egg-info/PKG-INFO
+src/xcope_daemon.egg-info/SOURCES.txt
+src/xcope_daemon.egg-info/dependency_links.txt
+src/xcope_daemon.egg-info/requires.txt
+src/xcope_daemon.egg-info/top_level.txt
