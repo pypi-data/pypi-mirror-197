@@ -1,0 +1,33 @@
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.1.0",
+    "isort>=5.12.0",
+    "mypy>=1.1.1",
+    "types-markdown>=3.4.2.5",
+]
+
+[project]
+name = "presento"
+version = "0.2.0"
+description = "A tool to programmatically build slides using Reveal.js"
+authors = [
+    { name = "Jacopo Farina", email = "jacopo1.farina@gmail.com" },
+]
+dependencies = [
+    "markdown>=3.4.1",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/jacopofar/presento"
+"Bug Tracker" = "https://github.com/jacopofar/presento/issues"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0",
+]
+build-backend = "pdm.pep517.api"
