@@ -1,0 +1,2 @@
+pillow>=8.4.0
+pydantic>=1.9.0
