@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: iflo
+Version: 0.0.0
+Home-page: https://github.com/harttraveller/iflo
+Author: Hart Traveller
+License: MIT
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: openai
+Requires-Dist: streamlit
+Requires-Dist: pyeio
+
+# IFLO
+
+IFLO, or: Interface For Language Operations.
+

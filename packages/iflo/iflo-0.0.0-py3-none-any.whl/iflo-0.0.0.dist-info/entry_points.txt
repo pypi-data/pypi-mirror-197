@@ -1,0 +1,2 @@
+[console_scripts]
+iflo = iflo.cli:entry
