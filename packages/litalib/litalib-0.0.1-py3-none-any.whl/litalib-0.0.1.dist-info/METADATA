@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: litalib
+Version: 0.0.1
+Summary: A package of ALMS lighting data process
+Home-page: UNKNOWN
+Author: Zhenyu Wang
+Author-email: wonstran@hotmail.com
+License: MIT
+Keywords: litalib
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
+A package that contains tools for processing ALMS lighting data
+
+
