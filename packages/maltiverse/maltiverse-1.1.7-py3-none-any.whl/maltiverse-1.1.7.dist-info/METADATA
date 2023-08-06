@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: maltiverse
+Version: 1.1.7
+Summary: Python API wrapper for Maltiverse
+Home-page: https://github.com/maltiverse/maltiverse-python
+Download-URL: https://github.com/maltiverse/python-maltiverse/archive/master.zip
+Author: Antonio Gomez
+Author-email: agm@maltiverse.com
+License: MIT
+Keywords: maltiverse,API,threat intelligence,IoC,blacklist,search engine
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: PyJWT
+
