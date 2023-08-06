@@ -1,0 +1,15 @@
+include apav/tests/*.pos
+include apav/tests/*.epos
+include apav/tests/*.ato
+include apav/tests/*.apt
+include apav/tests/*.rng
+include apav/tests/*.rrng
+include apav/tests/*.POS
+include apav/tests/*.EPOS
+include apav/tests/*.ATO
+include apav/tests/*.APT
+include apav/tests/*.RNG
+include apav/tests/*.RRNG
+include apav/icons/*.png
+include apav/icons/*.svg
+include apav/pyx/*.pyx
