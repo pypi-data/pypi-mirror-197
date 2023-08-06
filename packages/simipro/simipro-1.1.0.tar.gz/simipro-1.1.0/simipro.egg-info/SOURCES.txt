@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+simipro/__init__.py
+simipro/simipro.py
+simipro.egg-info/PKG-INFO
+simipro.egg-info/SOURCES.txt
+simipro.egg-info/dependency_links.txt
+simipro.egg-info/requires.txt
+simipro.egg-info/top_level.txt
