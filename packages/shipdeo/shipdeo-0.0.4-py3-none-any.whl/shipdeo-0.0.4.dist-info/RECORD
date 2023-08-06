@@ -1,0 +1,8 @@
+shipdeo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shipdeo/auth.py,sha256=hC_I1FW-AmoF9VRgTpjESn9ZOPmNFZ97lnYhNS_QTaY,870
+shipdeo/dto.py,sha256=oZDin7_AsU0AFQIRm9N08-850ZtwGC7vhTgGlP6eUTA,612
+shipdeo/shipping.py,sha256=AWaSygu1iONSS0c0aGbkM968GqWCyu-547Vuoly-gq8,3901
+shipdeo-0.0.4.dist-info/METADATA,sha256=vOy5Q37cdDdYDcvehcSu3q5sWOFgJFJSZOEHwFA_x14,677
+shipdeo-0.0.4.dist-info/WHEEL,sha256=hKi7AIIx6qfnsRbr087vpeJnrVUuDokDHZacPPMW7-Y,87
+shipdeo-0.0.4.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+shipdeo-0.0.4.dist-info/RECORD,,
