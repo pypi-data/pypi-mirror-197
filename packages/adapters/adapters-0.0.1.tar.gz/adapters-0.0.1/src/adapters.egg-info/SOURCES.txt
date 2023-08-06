@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+src/adapters.egg-info/PKG-INFO
+src/adapters.egg-info/SOURCES.txt
+src/adapters.egg-info/dependency_links.txt
+src/adapters.egg-info/top_level.txt
