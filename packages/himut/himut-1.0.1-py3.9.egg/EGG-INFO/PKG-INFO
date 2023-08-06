@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: himut
+Version: 1.0.1
+Summary: himut: single molecule somatic single-base substitution detection using PacBio CCS reads
+Author: Sangjin Lee
+Author-email: sl17@sanger.ac.uk
+License: MIT
+Project-URL: homepage, https://github.com/sjin09/himut
+Project-URL: repository, https://github.com/sjin09/himut
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: <3.10,>=3.8
+Provides-Extra: dev
+License-File: LICENSE.rst
