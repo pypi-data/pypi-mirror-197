@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/popsims.egg-info/PKG-INFO
+src/popsims.egg-info/SOURCES.txt
+src/popsims.egg-info/dependency_links.txt
+src/popsims.egg-info/entry_points.txt
+src/popsims.egg-info/requires.txt
+src/popsims.egg-info/top_level.txt
+src/popsims.egg-info/zip-safe
