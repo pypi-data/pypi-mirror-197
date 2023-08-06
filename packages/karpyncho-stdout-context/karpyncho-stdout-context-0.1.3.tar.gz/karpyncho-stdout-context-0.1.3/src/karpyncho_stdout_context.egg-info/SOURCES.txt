@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/karpyncho/__init__.py
+src/karpyncho/stdout_context/__init__.py
+src/karpyncho_stdout_context.egg-info/PKG-INFO
+src/karpyncho_stdout_context.egg-info/SOURCES.txt
+src/karpyncho_stdout_context.egg-info/dependency_links.txt
+src/karpyncho_stdout_context.egg-info/requires.txt
+src/karpyncho_stdout_context.egg-info/top_level.txt
+src/tests/__init__.py
+src/tests/test_init.py
