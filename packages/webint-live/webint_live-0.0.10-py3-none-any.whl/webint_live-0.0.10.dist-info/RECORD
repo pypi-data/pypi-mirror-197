@@ -1,0 +1,11 @@
+webint_live/__init__.py,sha256=GJbWsxtBB8hyKA_LFJTe1QBkL837UQdmLynuEGBfYsI,2175
+webint_live/templates/__init__.py,sha256=5Fh-5MyVt7Ln5kuM8OpvimiXueYe3_iVlhExwTrLOj8,76
+webint_live/templates/chat.html,sha256=aPx5sNA88VEjGtPhlzKSy_5vmUn_RyvIISSc2Byn0Gc,11413
+webint_live/templates/finished.sh,sha256=4B9sl0lWXFOHqEuWVOaefnaWUrZboqFML0DxCSyuV0o,1205
+webint_live/templates/index.html,sha256=P7RL1i0J_Kh6YZtWAzg9cTuW1p-NK-V39gZB-a1WUBw,42
+webint_live/templates/publish.sh,sha256=Ho6Hg-gwaMs6SQwpkY4mUCtlEo1JNLca2ndLwLXRTCY,666
+webint_live/templates/stream.html,sha256=djLbnL-pR4faexWbZiRunHaZRGGO-T8YeFslsbsuIZ0,537
+webint_live-0.0.10.dist-info/METADATA,sha256=W8blgrW5dCxCg49wQIEq80VrpTU_0TX49Mij2cEfNKQ,416
+webint_live-0.0.10.dist-info/entry_points.txt,sha256=FFgdX8vwkeGt23YFAaJBMe-EPX0rfsQyEb4PQz9dnt0,32
+webint_live-0.0.10.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+webint_live-0.0.10.dist-info/RECORD,,
