@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+enigma/__init__.py
+enigma/sat.py
+enigma/sat_torch.py
+enigma_sat.egg-info/PKG-INFO
+enigma_sat.egg-info/SOURCES.txt
+enigma_sat.egg-info/dependency_links.txt
+enigma_sat.egg-info/requires.txt
+enigma_sat.egg-info/top_level.txt
