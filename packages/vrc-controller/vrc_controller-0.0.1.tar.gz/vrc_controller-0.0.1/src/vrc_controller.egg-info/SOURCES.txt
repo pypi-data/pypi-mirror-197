@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/vrc_controller/__init__.py
+src/vrc_controller/constants.py
+src/vrc_controller/osc.py
+src/vrc_controller/singletons.py
+src/vrc_controller/sounds.py
+src/vrc_controller.egg-info/PKG-INFO
+src/vrc_controller.egg-info/SOURCES.txt
+src/vrc_controller.egg-info/dependency_links.txt
+src/vrc_controller.egg-info/requires.txt
+src/vrc_controller.egg-info/top_level.txt
