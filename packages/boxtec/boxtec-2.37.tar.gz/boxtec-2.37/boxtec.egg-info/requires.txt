@@ -1,0 +1,4 @@
+pytz
+mysql.connector
+requests
+google-cloud-logging
