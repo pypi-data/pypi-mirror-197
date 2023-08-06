@@ -1,0 +1,25 @@
+.editorconfig
+.flake8
+.gitignore
+LICENSE
+MANIFEST.in
+Makefile
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+.github/CODEOWNERS
+.github/dependabot.yml
+.github/workflows/python-publish.yml
+.github/workflows/test.yml
+fixtures/images/screenshot.png
+fixtures/more-images/image with spaces.png
+fixtures/more-images/screenshot.png
+leukeleu_thumbor_multidir.egg-info/PKG-INFO
+leukeleu_thumbor_multidir.egg-info/SOURCES.txt
+leukeleu_thumbor_multidir.egg-info/dependency_links.txt
+leukeleu_thumbor_multidir.egg-info/requires.txt
+leukeleu_thumbor_multidir.egg-info/top_level.txt
+tc_multidir/__init__.py
+tc_multidir/loader.py
+tests/test_loader.py
