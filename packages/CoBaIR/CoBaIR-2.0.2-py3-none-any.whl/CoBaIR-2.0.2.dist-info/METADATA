@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: CoBaIR
+Version: 2.0.2
+Summary: CoBaIR is a python lib for Context Based Intention Recognition
+Home-page: UNKNOWN
+Author: Adrian Lubitz
+Author-email: Adrian.Lubitz@dfki.de
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: pgmpy (>=0.1.13)
+Requires-Dist: bnlearn
+Requires-Dist: pyyaml
+Requires-Dist: PyQt5
+
+UNKNOWN
+
