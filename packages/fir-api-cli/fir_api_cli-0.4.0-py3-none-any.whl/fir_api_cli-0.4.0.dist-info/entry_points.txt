@@ -1,0 +1,2 @@
+[console_scripts]
+fir-cli = fir_api_cli.__main__:cli.app
