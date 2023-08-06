@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: mtsa
+Version: 0.0.9
+Summary: Multiple Time Series Analysis
+Home-page: https://github.com/diegompin/mtsa
+Author: Diego Pinheiro
+Author-email: diegompin@gmail.com
+License: BSD 3-Clause License
+Keywords: mtsa,setuptools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (==1.5.2)
+Requires-Dist: pytest (==7.2.0)
+Requires-Dist: numpy (==1.23.4)
+Requires-Dist: matplotlib (==3.6.2)
+Requires-Dist: scipy (==1.10.0)
+Requires-Dist: ipykernel (==6.16.0)
+Requires-Dist: librosa (==0.9.2)
+Requires-Dist: scikit-learn (==1.2.0)
+Requires-Dist: tensorflow (==2.11.0)
+Requires-Dist: keras (==2.11.0)
+Requires-Dist: seaborn (==0.12.2)
+Requires-Dist: tables (==3.8.0)
+
+# MTSA - **M**ultiple **T**ime **S**eries **A**nalysis
+**Autores**: Diego Pinheiro, Rodrigo Monteiro and Andrea Maria
+
+
+`MTSA` is a Multiple Time Series Analysis package.
+
+## Example
+
+Find an example [here](examples/MTSA.ipynb)
+
+
+## The MFCC Paper 2023
+
+```python
+python scripts/paper2023.py --path=/data/MIMII/  --n_components=230 --level=2 --output=/data/output/ --perplexity=40 --runs=3
