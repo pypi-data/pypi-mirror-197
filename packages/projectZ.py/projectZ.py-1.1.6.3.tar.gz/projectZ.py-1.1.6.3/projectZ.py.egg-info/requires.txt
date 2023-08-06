@@ -1,0 +1,5 @@
+websocket-client
+requests
+aiohttp
+python-magic-bin==0.4.14
+aiofiles
