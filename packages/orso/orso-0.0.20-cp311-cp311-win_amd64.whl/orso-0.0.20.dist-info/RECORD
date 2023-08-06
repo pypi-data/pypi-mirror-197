@@ -1,0 +1,17 @@
+cbitarray.cp311-win_amd64.pyd,sha256=NnY2iAVAbfh7Nr4IchxXzN8jJyWQbTdfIn18LaURHAE,32256
+cityhash.cp311-win_amd64.pyd,sha256=oNIcLIkr1IqY_wmnXxhH2B3jXZPz4BkmX2s5k-uHuFs,50176
+orso/__init__.py,sha256=eav_HYIPPPgJVYdjvtc60NypeDPI6U5butcbQRWS5h0,56
+orso/_tools.py,sha256=V8rgCiqUaAh_6rGaedxK2Zflx-eTY6NgdVdyzOBHSxQ,645
+orso/converters.py,sha256=J7TA0GSjBfgkvWzz62k8RTLaw6K-_DmL5gsAvESH4LU,3954
+orso/dataframe.py,sha256=9N3zg0jKjtoMHxaFqKXQoOXQczlZ5GLVYtjT5aRv20I,7434
+orso/display.py,sha256=Ixk76UXvzoP9j10u4_8rJPj6k-QYexjEFMboh2Id1ZY,8488
+orso/exceptions.py,sha256=R8687IgeTY_Ypr82ZulMipeIB_PB-hsELMQD02OALAw,824
+orso/row.py,sha256=Ow338dFgYcKuRWCVADltmTmTkAsn71jZ2PNs4kY_Gj8,2759
+orso/version.py,sha256=uSAUNUxl_PNDlR-OG1hTeHJihqs3pvOVV6SI3sI6m2c,615
+orso/bitarray/__init__.py,sha256=KspWSuPOyifdXDynrKAyi6FGAmPGimyot3c0Vw0i5Fk,32
+orso/cityhash/__init__.py,sha256=dTXsLFTawMShgb0Sjxj4EDhhZD_cHj_3tFBLAKrUNlM,66
+orso-0.0.20.dist-info/LICENSE,sha256=62j9SJwD3_matP2EXODaQqMOr51xJ7j16jUtwRkYFVs,11546
+orso-0.0.20.dist-info/METADATA,sha256=qylVZoKvXfjWabYnKrKC66QCUxHKaB5XQoGswtS6OQE,1935
+orso-0.0.20.dist-info/WHEEL,sha256=9wvhO-5NhjjD8YmmxAvXTPQXMDOZ50W5vklzeoqFtkM,102
+orso-0.0.20.dist-info/top_level.txt,sha256=5hHudg6Ynxccj3n_yT-uzKl8PRvoKnfVqVpS9I570Lw,24
+orso-0.0.20.dist-info/RECORD,,
