@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: disws
+Version: 0.0.3
+Summary: Trash for discord self-bots (WebSocket + discord API)
+License: GNU General Public License v3 (GPLv3)
+Author: Snaky
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.4,<3.9.0)
+Requires-Dist: multidict (>=6.0.4,<6.1.0)
+Requires-Dist: websockets (>=10.4,<11.0)
+Description-Content-Type: text/markdown
+
+## disws (discord WebSocket)
+### WARNING: This project maybe have sh*t-code
+
+Version: dev 0.0.3 (Under construction)
+
+
+Trash for discord self-bots (WebSocket + discord API)
+
+### Features
+
+- Asynchronous support
+
+#### Requirements
+- websocket
+- aiohttp
+- multidict
+
+#### WARNING: Automating user accounts is against the Discord ToS.
+
