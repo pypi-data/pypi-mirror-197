@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sd-controls
+Version: 0.0.8
+Summary: A small and simple framework for streamdeck applications
+Author-email: Niklas Rousset <byrousset@gmail.com>
+Project-URL: Homepage, https://github.com/niklasr22/streamdeck-controls
+Project-URL: Bug Tracker, https://github.com/niklasr22/streamdeck-controls/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Streamdeck controls
+
+## Prerequisites:
+
+- [hidapi](https://github.com/libusb/hidapi)
+
+## Installing
+
+```
+pip install sd-controls
+```
+
+## Supported Streamdecks:
+
+- Streamdeck Mk.2
+
+## Linux udev rules
+
+Create a `/etc/udev/rules.d/50-elgato.rules` file with the following content:
+
+```
+SUBSYSTEM=="input", GROUP="input", MODE="0666"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0fd9", ATTRS{idProduct}=="0080", MODE:="666", GROUP="plugdev"
+KERNEL=="hidraw*", ATTRS{idVendor}=="0fd9", ATTRS{idProduct}=="0080", MODE:="666", GROUP="plugdev"
+```

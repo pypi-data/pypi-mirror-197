@@ -1,0 +1,2 @@
+include src/sd_controls/imgs/*.jpeg
+recursive-include src/sd_controls/fonts *
