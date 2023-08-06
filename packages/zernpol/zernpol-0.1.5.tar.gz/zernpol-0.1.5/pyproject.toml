@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "zernpol"
+version = "0.1.5"
+description = "Tools to handle Zernike polynoms and Indexing systems"
+authors = ["Sylvain Guieu <sylvain.guieu@univ-grenoble-alpes.fr>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+numpy = "^1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
