@@ -1,0 +1,59 @@
+[project]
+
+name = "rok4"
+version = "1.5.0"
+
+description = "Python core libraries for ROK4 project"
+readme = "README.pypi.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE.txt"}
+
+keywords = ["ROK4", "library", "pyramid", "tile matrix set", "storage"]
+
+authors = [
+  {name = "Géoportail IGN Developers", email = "tout_rdev@ign.fr" }
+]
+
+classifiers = [
+
+  "Development Status :: 3 - Alpha",
+
+  "Topic :: Software Development :: Libraries",
+
+  "License :: CeCILL-C Free Software License Agreement (CECILL-C)",
+
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+]
+
+dependencies = [
+  "boto3 >= 1.26.54",
+  "pillow >= 9.4.0",
+  "numpy >= 1.24.2"
+]
+
+[project.optional-dependencies]
+test = [
+  "pytest >= 7.1.2",
+  "coverage >= 7.0.5"
+]
+doc = [
+  "pdoc3 >= 0.10.0"
+]
+
+[project.urls]
+"Homepage" = "https://rok4.github.io/core-python"
+"Bug Reports" = "https://github.com/rok4/core-python/issues"
+"Changelog" = "https://github.com/rok4/core-python/releases"
+"Source" = "https://github.com/rok4/core-python"
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
