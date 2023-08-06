@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+bulkrequests/__init__.py
+bulkrequests/cliclient.py
+bulkrequests/clirequests.py
+bulkrequests/constants.py
+bulkrequests/dcquery.py
+bulkrequests/parser.py
+bulkrequests.egg-info/PKG-INFO
+bulkrequests.egg-info/SOURCES.txt
+bulkrequests.egg-info/dependency_links.txt
+bulkrequests.egg-info/entry_points.txt
+bulkrequests.egg-info/requires.txt
+bulkrequests.egg-info/top_level.txt

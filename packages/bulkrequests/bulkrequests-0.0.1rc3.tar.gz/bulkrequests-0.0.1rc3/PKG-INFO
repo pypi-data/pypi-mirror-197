@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: bulkrequests
+Version: 0.0.1rc3
+Summary: a draft implementation of bulk requests in dCache
+Author: Dario Graña, Pau Tallada
+Author-email: dgrana@unc.edu.ar, tallada@pic.es
+License-File: LICENSE
