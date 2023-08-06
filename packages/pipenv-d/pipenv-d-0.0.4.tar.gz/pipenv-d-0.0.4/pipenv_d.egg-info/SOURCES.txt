@@ -1,0 +1,13 @@
+README.md
+setup.py
+pipenv_d/__init__.py
+pipenv_d/__main__.py
+pipenv_d/_version.py
+pipenv_d/cli.py
+pipenv_d/utils.py
+pipenv_d.egg-info/PKG-INFO
+pipenv_d.egg-info/SOURCES.txt
+pipenv_d.egg-info/dependency_links.txt
+pipenv_d.egg-info/entry_points.txt
+pipenv_d.egg-info/requires.txt
+pipenv_d.egg-info/top_level.txt

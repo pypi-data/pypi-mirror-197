@@ -1,0 +1,2 @@
+[console_scripts]
+pipenv-d = pipenv_d.cli:cli
