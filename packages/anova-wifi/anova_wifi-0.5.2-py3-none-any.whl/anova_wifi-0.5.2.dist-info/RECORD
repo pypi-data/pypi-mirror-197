@@ -1,0 +1,9 @@
+anova_wifi/__init__.py,sha256=ZfVEnnKvGJ2mwPFCWQqU6nFTOQW0CziokOZJEMauAsY,483
+anova_wifi/exceptions.py,sha256=6UDq4nfgqxK0HahpdrIlq9EB7gUvSo6CEq14ZHjibY8,185
+anova_wifi/parser.py,sha256=moxE80KUNrG2VZ2fXr_6lpBqv7EAsfb0ZoAswuRTXHQ,3766
+anova_wifi/precission_cooker.py,sha256=qP6HCdSZD5gM13uvxjOYbl3fy3_zPRdyOJxAo-ubjtQ,7612
+anova_wifi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+anova_wifi-0.5.2.dist-info/LICENSE,sha256=2dCBBltlaSFi2o2u4vp8DpZAnfeTbbGq8oOtISchoVs,1062
+anova_wifi-0.5.2.dist-info/METADATA,sha256=5tmQYWEvjcHiQ-hGH7T2GW-LaELKXZgu9Yb-ySxKBdA,5482
+anova_wifi-0.5.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+anova_wifi-0.5.2.dist-info/RECORD,,
