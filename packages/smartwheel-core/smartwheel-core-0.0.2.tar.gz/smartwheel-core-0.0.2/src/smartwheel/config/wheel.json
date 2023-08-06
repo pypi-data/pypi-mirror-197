@@ -1,0 +1,20 @@
+{
+    "initAnimation": true,
+    "scrollAnimationDuration": 400,
+    "shadowAnimationDuration": 400,
+    "sectionsAnimationDuration": 300,
+    "sectionsHideTimeout": 5000,
+    "pointerMargin": 3,
+    "pointerColor": "#ffffff",
+    "wheelShadowColor": "#313131",
+    "pixmapScale": 30,
+    "drawOverlayCircles": true,
+    "overlayCirclesColor": "#3a3a3a",
+    "overlayCirclesOpacity": 0.20000000000000004,
+    "overlayCirclesWidth": 10,
+    "drawOverlayRects": true,
+    "overlayRectsColor": "#3a3a3a",
+    "overlayRectsOpacity": 0.20000000000000004,
+    "overlayRectsWidth": 20,
+    "backgroundStyle": "contour"
+}

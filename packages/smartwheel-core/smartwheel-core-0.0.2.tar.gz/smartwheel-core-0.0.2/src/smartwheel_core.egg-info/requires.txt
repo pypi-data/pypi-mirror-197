@@ -1,0 +1,14 @@
+pyserial
+pynput
+pyqt6
+pyqtdarktheme
+swcolorpicker
+matplotlib
+
+[:platform_system == "Windows"]
+winsdk
+
+[dev]
+black
+isort
+numpydoc

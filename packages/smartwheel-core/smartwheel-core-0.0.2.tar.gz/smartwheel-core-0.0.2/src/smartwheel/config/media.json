@@ -1,0 +1,81 @@
+{
+    "icon_path": "media.png",
+    "icons": [
+        "play.png",
+        "pause.png"
+    ],
+    "actions": {
+        "scrollUp": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "up",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Volume up"
+            }
+        ],
+        "scrollDown": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "down",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Volume down"
+            }
+        ],
+        "keyAction1": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "play_pause",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Play/pause on click"
+            }
+        ],
+        "keyAction2": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "mute",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Mute on double click/hold"
+            }
+        ],
+        "scrollUp2": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "next",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Play the next track"
+            }
+        ],
+        "scrollDown2": [
+            {
+                "action": "keyPress",
+                "type": "updown",
+                "key": "previous",
+                "key_class": "media",
+                "repeat": 0,
+                "comment": "Play the prevoius track"
+            }
+        ]
+    },
+    "mediaFetchSleep": 0.01,
+    "style": {
+        "textHeaderColor": "#ffffff",
+        "textHeaderFont": "Ubuntu",
+        "textHeaderSize": 14,
+        "bottomTextColor": "#cccccc",
+        "bottomTextFont": "Ubuntu",
+        "bottomTextSize": 12,
+        "seekTextColor": "#cccccc",
+        "seekTextFont": "Ubuntu",
+        "seekTextSize": 14
+    }
+}
