@@ -1,0 +1,11 @@
+oaipmharvest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oaipmharvest/cli.py,sha256=q_mQX2dkmWMGM2IfFWqEs0dwqClNov00DBrN4AwyXIM,3391
+oaipmharvest/commons.py,sha256=Mh4WocRWoUztLA7jBTvwlcW1JiGGqYDn6SsAdiDW6DY,3102
+oaipmharvest/oaistuff.py,sha256=awkmHXa6QqWsWvNgjiFGdT3dMzWRYCY3r7Eg-Yh02Vc,9308
+oaipmharvest/settings.py,sha256=xoNt1co9ZfDRSbLnqM4MJc7EJyHsDkjKS94OTfHxBqg,2433
+oaipmharvest-0.0.2.dist-info/LICENSE,sha256=-rPda9qyJvHAhjCx3ZF-Efy07F4eAg4sFvg6ChOGPoU,16726
+oaipmharvest-0.0.2.dist-info/METADATA,sha256=fO_RNFRhslLWr3bqA8rb8WwqYByirvRyWm2m54LGWsA,3681
+oaipmharvest-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+oaipmharvest-0.0.2.dist-info/entry_points.txt,sha256=f43w9fpFLfr6jUAYJYBzzjHo6eWOoh4CGBMXFjtOaR8,56
+oaipmharvest-0.0.2.dist-info/top_level.txt,sha256=wZDgo9TB_3Rc-ldF-JLV6r5cA7TSnzWHMCMAGVSlSqA,13
+oaipmharvest-0.0.2.dist-info/RECORD,,
