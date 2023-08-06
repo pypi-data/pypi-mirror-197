@@ -1,0 +1,13 @@
+dispatches_data/api/__init__.py,sha256=vUEXTOROlfGGOmPBYy782h8kFu0FmoskZ_YHKVuUNH4,6444
+dispatches_data/api/_cli.py,sha256=bqFl_pxN79tVAi19OLrtS5jGXUBs2zbutzKjGtaz3rs,313
+dispatches_data/packages/_for_api_testing/README.md,sha256=fHJXntPlPHVdJyNCivahcXAByKeR7eePeuV_qU7unCE,41
+dispatches_data/packages/_for_api_testing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dispatches_data/packages/_for_api_testing/data.jsonl,sha256=63-3opOvyVCE1-EWkLKXGcFz3rvDIkbKT20gfkkSPJ0,30
+dispatches_data/testing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dispatches_data/testing/plugins.py,sha256=RlaMbJZxIYstqNqtWBTCXcsdC5nqG0MYaUoZiR6Ow2E,2739
+dispatches_data_packages-23.3.15.1.dist-info/LICENSE.md,sha256=_G1Pnj7TMUzV_CvOtAZE2QRsjACUjj1uh-aqjScKAOo,2914
+dispatches_data_packages-23.3.15.1.dist-info/METADATA,sha256=v_0CAsjo02jVeG3DznEdd6unEAO1ODgQ7disbSVjmfg,5283
+dispatches_data_packages-23.3.15.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dispatches_data_packages-23.3.15.1.dist-info/entry_points.txt,sha256=EpjV6m7fS99UC8hRSmB1FttI_qFhst2Hdkuq57ycjx8,142
+dispatches_data_packages-23.3.15.1.dist-info/top_level.txt,sha256=gqVf28ohryhDpMVNpL9lcRTKJ1HpMyrwh6X_YCpBQCQ,16
+dispatches_data_packages-23.3.15.1.dist-info/RECORD,,
