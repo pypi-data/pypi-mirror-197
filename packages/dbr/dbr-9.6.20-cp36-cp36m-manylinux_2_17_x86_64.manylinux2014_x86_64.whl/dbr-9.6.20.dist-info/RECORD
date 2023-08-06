@@ -1,0 +1,13 @@
+dbr-9.6.20.dist-info/METADATA,sha256=BYLlQLq2sbP6IB9vemMGATcw-nTio_ui-tHClmusO2w,5254
+dbr-9.6.20.dist-info/WHEEL,sha256=YVAXCacQXnznQ-_lMj8Nvqrs7YPtMP1pHRCw9EcyWRQ,150
+dbr-9.6.20.dist-info/top_level.txt,sha256=RtnRuv17zC0FTWgII9msEV_uFpxjilu6Jag3kKXZZ-Q,4
+dbr-9.6.20.dist-info/RECORD,,
+dbr-9.6.20.dist-info/LICENSE.txt,sha256=8dq_RHly314Yrezs85ZcfFvTGUaT8Xr4x16a8_-V_PI,73
+dbr/dbr_python.py,sha256=5EiNq0hRppFzdjE084o8GKE-OdhVC9TdbNXNv9JRpmw,127218
+dbr/libDynamsoftBarcodeReader.so,sha256=u29c2ol4pf-8NE-3Lfi0xgQulrjD7iWauD9NIfk5hTM,12736904
+dbr/__init__.py,sha256=1q1LlYGbfJs_KEPHB315J-5mhq5OPMXaf-qeeFIOedI,71
+dbr/libDynamLicenseClient.so,sha256=6hB_qEa9ffi4UkidfoVRAoRWgK-aaP6vzURp0QS-tvg,4896120
+dbr/dbr.cpython-36m-x86_64-linux-gnu.so,sha256=F-N28_ETu30hGBJO5uAhhFy72MLLB-6vkmFZ7PFXuN0,380336
+dbr/libDynamsoftLicenseClient_OLD.so,sha256=HtnhZe2NpeAfutMz9Z1a7CeFQ_iEcHCE6f-I9lfEkdI,4912296
+dbr/libDynamsoftLicenseClient.so,sha256=kpNVgdV5yat4lh-HhIVbdIPZag7SbRhK-hhGh_Yqg1g,4912688
+dbr/libDynamicPdf.so,sha256=MbYG-1_gj-pkBQDqxBvkZU_hXXKJhH7PQos7QbOKsEg,6605912
