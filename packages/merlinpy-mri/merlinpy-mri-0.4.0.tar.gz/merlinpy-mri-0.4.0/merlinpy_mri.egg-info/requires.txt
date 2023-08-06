@@ -1,0 +1,13 @@
+numpy>=1.15
+xmltodict
+pyyaml
+pandas
+tqdm
+scipy
+scikit-image
+matplotlib
+joblib
+sphinx
+sphinxjp.themes.basicstrap
+sphinx-rtd-theme
+breathe
