@@ -1,0 +1,6 @@
+include LICENSE.txt
+include NOTICE.txt
+include README.md
+include requirements.txt
+include alpha_automl/resource/*.json
+include alpha_automl/resource/*.bnf
