@@ -1,0 +1,17 @@
+pytest_cppython/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_cppython/data/default/pyproject.toml,sha256=mzBMYccDTlgNn59rgjYtWcM49v_1YkRwsA0xuuOEw1I,18
+pytest_cppython/mock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_cppython/mock/generator.py,sha256=qlJ6sEDCRxmRWzfrj37TvCLPzIzXEhXaczCEmXFcpMM,1558
+pytest_cppython/mock/interface.py,sha256=ZsstwkvTEsG_wyGdI1qvqqwjJxoPr_Y5rcr66zBUKLo,351
+pytest_cppython/mock/provider.py,sha256=to1ts6TRWVysAqFQZ2-ef7hxWbvXePzMIWHncLL1B3c,2276
+pytest_cppython/mock/scm.py,sha256=mU-vz-MOM6w9zqHf9VgScdOXwHtVpk289Fc0xLnPmDI,846
+pytest_cppython/plugin.py,sha256=xGZ7bDIuPU9_nEq6DW7ALZiYdG6gZoG_DY8T5S5K8sM,9491
+pytest_cppython/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_cppython/shared.py,sha256=10eqtwqc-yi_sc44PFvDFOeAjB0f0ifg_BLIQv8putc,10400
+pytest_cppython/tests.py,sha256=DN89kFwMFuaYifrVx0SmTsNjKHYFuI9VpIsz0v3FwUI,3756
+pytest_cppython/variants.py,sha256=VBSibKdHWk9u5DEQXkR85etLYwHZ_g414x1SOwi1VIM,2631
+pytest_cppython-0.3.1.dev37.dist-info/entry_points.txt,sha256=pXEDW3g4gq9cs-UIU8y_QiaN-qVUWdbcrQOlns2ILqY,246
+pytest_cppython-0.3.1.dev37.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+pytest_cppython-0.3.1.dev37.dist-info/METADATA,sha256=Mk7fnxx59reA7y0VgP_GdT04ZO3KjM3gxk0fPH2WraE,558
+pytest_cppython-0.3.1.dev37.dist-info/licenses/LICENSE.md,sha256=4XhggXv6hvoEtvED0W81vVnb876ciAL5_WC9bmwgcPc,1073
+pytest_cppython-0.3.1.dev37.dist-info/RECORD,,
