@@ -1,0 +1,13 @@
+trove/__init__.py,sha256=qQuU1aGTftV3YyWCu_KP2WOqnyh1A4VXjJdhJMcGUo4,123
+trove/archive.py,sha256=re7x228KsAFmtA3suOMQMCVrsYLnOs9Y-qXfsfsgSmc,3181
+trove/build.py,sha256=1fKHZirOAWsnr7f585ZNADdKPTuv3iknZuFKMCcJKCc,3238
+trove/clean.py,sha256=eFL7LdNiLkPYA9C3Njsz0_RjmFk4tCKvBs61NL2p0wI,3658
+trove/collate.py,sha256=hEDcYa9S_5P-WvEGRdL3uFiXP8ZvgOsHDk7wYFHUke0,3654
+trove/config_parser.py,sha256=W5gJP6BQR9J0OhtzkVWY11wCy8XbQIxxaOLX00ThEjU,8577
+trove/evaluate.py,sha256=GMZWXmlz3XzsQfEhXDH1a1PyIoKiUlFUOJJ9YolzLEI,2336
+trove/execute.py,sha256=s8uh6V-rNNOnEl4WoAZaq1bbZkvkZL3JFWwvZ_zOccg,7660
+trove/management.py,sha256=ePLsLBHLHssWBgEboTK_fAZpA2TmBsM23m_2AyyVk3M,5527
+treasure_trove-0.1.dist-info/METADATA,sha256=fArjAo8GC-q_ByyoM0Q-zgKjkFkLxZ0a00C0zjBGvSk,796
+treasure_trove-0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+treasure_trove-0.1.dist-info/top_level.txt,sha256=PeUsZve8QhU2BaNu9mT-JqVv7JPcAyBEmqsiGbmXFQg,6
+treasure_trove-0.1.dist-info/RECORD,,

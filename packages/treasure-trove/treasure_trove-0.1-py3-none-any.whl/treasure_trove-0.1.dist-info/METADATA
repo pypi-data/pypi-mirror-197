@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: treasure-trove
+Version: 0.1
+Summary: Data and pipeline management.
+Home-page: https://github.com/zhafen/trove
+Author: Zach Hafen-Saavedra
+Author-email: zachary.h.hafen@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: h5py (>=3.8.0)
+Requires-Dist: mock (>=5.0.1)
+Requires-Dist: nbconvert (>=6.5.4)
+Requires-Dist: nbformat (>=5.7.3)
+Requires-Dist: numpy (>=1.23.5)
+Requires-Dist: setuptools (>=65.6.3)
+Requires-Dist: simple-augment (>=1.0)
+
+# trove
+A minimal package for managing your troves of treasure (data).
+
+Clone and install:
+```
+git clone git@github.com:zhafen/trove.git
+cd trove
+pip install -e .
+```
