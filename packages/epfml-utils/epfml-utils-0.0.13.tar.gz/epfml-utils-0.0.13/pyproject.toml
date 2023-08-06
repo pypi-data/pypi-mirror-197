@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epfml-utils"
+description = "Tools for experimentation at MLO"
+authors = []
+version = "0.0.13"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+dependencies = ["typing_extensions>4", "toml", "pathspec>0.9", "boto3"]
+optional-dependencies = { test = ["pytest"] }
+
+[project.urls]
+homepage = "https://github.com/epfml/epfml-utils"
+repository = "https://github.com/epfml/epfml-utils"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.isort]
+profile = "black"
+
+[project.scripts]
+epfml = "epfml.cli:main"

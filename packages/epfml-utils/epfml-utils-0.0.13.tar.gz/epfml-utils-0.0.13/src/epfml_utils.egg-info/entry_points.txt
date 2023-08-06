@@ -1,0 +1,2 @@
+[console_scripts]
+epfml = epfml.cli:main

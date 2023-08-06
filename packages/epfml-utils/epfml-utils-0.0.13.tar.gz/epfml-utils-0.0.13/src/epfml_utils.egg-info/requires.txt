@@ -1,0 +1,7 @@
+typing_extensions>4
+toml
+pathspec>0.9
+boto3
+
+[test]
+pytest
