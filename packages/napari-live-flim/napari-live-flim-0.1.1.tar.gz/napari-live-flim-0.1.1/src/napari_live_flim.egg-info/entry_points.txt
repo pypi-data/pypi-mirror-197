@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-live-flim = napari_live_flim:napari.yaml

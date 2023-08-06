@@ -1,0 +1,17 @@
+dataclasses_json
+flimlib
+magicgui
+matplotlib
+numpy
+qtpy
+scipy
+superqt
+vispy
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
