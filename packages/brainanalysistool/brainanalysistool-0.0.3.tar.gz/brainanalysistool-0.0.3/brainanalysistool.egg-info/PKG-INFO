@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: brainanalysistool
+Version: 0.0.3
+Summary: Ecog analysis tool
+Home-page: https://github.com/RunminGan1218/Ecog-analysis-tool
+Author: Runmin Gan
+Author-email: 354613146@qq.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
