@@ -1,0 +1,10 @@
+sudo_win32/__init__.py,sha256=gzwhGhMPokx6H-1eeQzbIY9jhjLlDicSsDyDkgL-rh4,81
+sudo_win32/cli.py,sha256=b4AA-auekWiyo_muIwVelTffwOsseNHvwYG-ozromtI,451
+sudo_win32/elevated_exec.py,sha256=lzBbHVpUPecv3HeTZdnNWl64OL5_raXgi-hlPORfJdk,2490
+sudo_win32/run.ps1,sha256=4cT9bsYh-k7cZ8qx0Jd5D41VPg_mN8vy184HVVLMgTM,3007
+sudo_win32-1.0.4.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+sudo_win32-1.0.4.dist-info/METADATA,sha256=LMbfSpt8R_bWWa43Ok4o9K1k9m-endlj2jDaorkNlSg,1715
+sudo_win32-1.0.4.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+sudo_win32-1.0.4.dist-info/entry_points.txt,sha256=MiIOnUQ7FGC5vZroQ6Ck1w77UvNcuq6eFAM99V2rDC8,85
+sudo_win32-1.0.4.dist-info/top_level.txt,sha256=errJEh5WcYlj_J72U5qsE_kDwCxOnbt7LUJMXx-CzXo,11
+sudo_win32-1.0.4.dist-info/RECORD,,
