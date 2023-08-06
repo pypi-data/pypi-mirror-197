@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+socianAuthPySDK/__init__.py
+socianAuthPySDK.egg-info/PKG-INFO
+socianAuthPySDK.egg-info/SOURCES.txt
+socianAuthPySDK.egg-info/dependency_links.txt
+socianAuthPySDK.egg-info/requires.txt
+socianAuthPySDK.egg-info/top_level.txt
