@@ -1,0 +1,2 @@
+[console_scripts]
+deploifai = deploifai.cli:cli
