@@ -1,0 +1,14 @@
+hawkflowclient/__init__.py,sha256=JGiE7m5Z4nRNSe56GisbiYaF1fOgjtFnZ6rFF2Ktdfc,199
+hawkflowclient/_endpoints.py,sha256=-REMIlGW3r7J8ZwiKQltQl5LR9y3oDHAiIrRpcJ8PMo,879
+hawkflowclient/_hawkflow_exceptions.py,sha256=KRK7RzTqwjQPHPcgnGXoB5vx_3Nqqk3RnSOaMXkhKOA,1045
+hawkflowclient/_validation.py,sha256=s829H-mLNa-q80VbDMa97RgzbHIJZMSaj2RHW34gQOw,3444
+hawkflowclient/hawkflow_api.py,sha256=JtbHFSPQmeedvBq5u5YIilusLHbYEmwO-UZRpp-y40Y,2714
+hawkflowclient/hawkflow_decorators.py,sha256=MIqCmXTNKyu9SUGa7AxR0-mf98HtsT46kyjfDXHoT1s,1816
+hawkflowclient/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hawkflowclient/tests/test_hawkflow_api.py,sha256=pGFyacwxHyvQ5N0Kh_BZZWxELpVjpvvDu6vrKTOdRdU,3276
+hawkflowclient/tests/test_validation.py,sha256=85fglxYPLjBimiCUQfcU_UMxvS9e6HLgRLqkABkT-nk,3980
+hawkflow-0.0.9.dist-info/LICENSE,sha256=5PTHbF6Ik97Xkm5oMmwAiM6tyPXG6e0K4xYSNs-HPL4,1054
+hawkflow-0.0.9.dist-info/METADATA,sha256=bFvaCAYZ-r0RKTFBV2RaRnxlKACDJllTTduujXGW7qI,1292
+hawkflow-0.0.9.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+hawkflow-0.0.9.dist-info/top_level.txt,sha256=gJXx3n36Aymnql31xb5GEj5wQljiyHfUey4wX93TPXE,15
+hawkflow-0.0.9.dist-info/RECORD,,
