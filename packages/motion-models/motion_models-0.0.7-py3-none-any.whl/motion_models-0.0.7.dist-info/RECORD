@@ -1,0 +1,11 @@
+__init__.py,sha256=n4YBRyE1eKHXnIeqvG4b1KK1xWOf4zQr9L214hozJKQ,193
+motion_models_2d.py,sha256=kRNEJj9MS7hBTCmQ6Q8y8Xwm6-LodZtJ3ndnj1l7lxo,7633
+motion_models_2d_torch.py,sha256=Eke-Ilt3hHQpKxES9GUZHZ_x7hl5CyjibHL65O2E5cE,7928
+motion_models_3d.py,sha256=ISNc84pBx2cx9vwKlCrjbLQNYccqpcaNyZEzekM0gMI,28549
+motion_models_3d_torch.py,sha256=CeW-e0Fy3MeYHTcJZtVn1kfj_kR0dmv7f-3wnmOO-BI,6648
+test.py,sha256=ztqMYEYS_MtlV6ilr9fMkfWBBioT0K0jZIELhnxKcIc,6771
+test_torch.py,sha256=T6IPKoHXWjunTXMo8iyrYeLTaRxMUpEUSl7IS7WKj-A,6782
+motion_models-0.0.7.dist-info/METADATA,sha256=YhyhRVxM9pwsGrQV3c7GM4CGBmhee1xzs8y9okbPL_s,392
+motion_models-0.0.7.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+motion_models-0.0.7.dist-info/top_level.txt,sha256=JtTtMTYrED9knObx-sGvX2vz21LiD350HYWFB6nvQmY,105
+motion_models-0.0.7.dist-info/RECORD,,
