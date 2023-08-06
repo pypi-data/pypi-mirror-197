@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+aliyun_python_sdk_dypnsapi_intl.egg-info/PKG-INFO
+aliyun_python_sdk_dypnsapi_intl.egg-info/SOURCES.txt
+aliyun_python_sdk_dypnsapi_intl.egg-info/dependency_links.txt
+aliyun_python_sdk_dypnsapi_intl.egg-info/requires.txt
+aliyun_python_sdk_dypnsapi_intl.egg-info/top_level.txt
+aliyunsdkdypnsapi_intl/__init__.py
+aliyunsdkdypnsapi_intl/request/__init__.py
+aliyunsdkdypnsapi_intl/request/v20170725/CheckVerificationRequest.py
+aliyunsdkdypnsapi_intl/request/v20170725/SearchVerificationRequest.py
+aliyunsdkdypnsapi_intl/request/v20170725/StartVerificationRequest.py
+aliyunsdkdypnsapi_intl/request/v20170725/__init__.py
