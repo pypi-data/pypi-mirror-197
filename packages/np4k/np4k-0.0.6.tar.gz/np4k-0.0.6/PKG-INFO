@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: np4k
+Version: 0.0.6
+Home-page: https://github.com/airvuetech/newspaper4k/
+Author: Airvue
+Author-email: dev@airvue.news
+Maintainer: Airvue
+Maintainer-email: dev@airvue.news
+Requires-Python: >=3.9,<4.0
+License-File: LICENSE
+
+
+
+np4k
