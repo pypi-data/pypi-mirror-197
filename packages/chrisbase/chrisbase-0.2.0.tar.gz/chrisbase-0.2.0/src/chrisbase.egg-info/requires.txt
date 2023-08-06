@@ -1,0 +1,11 @@
+typer
+pandas
+tabulate
+chrisdict
+sqlalchemy
+
+[full]
+jupyter
+ipynbname
+numpy
+matplotlib
