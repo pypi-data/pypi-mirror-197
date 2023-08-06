@@ -1,0 +1,10 @@
+cigit/__init__.py,sha256=xCad3OPD5UQO305lIm7xTc5ZZiGdzqIGed5aHFzuHlg,21
+cigit/cigit.py,sha256=tqfXRLlGlryyg1zPViC3F3Cr9A8A2O-IJgp6uRjVQs4,521
+cigit/command.py,sha256=CVup6mRx5BMsEWccfFCm36AL_2pUUS0vLb-4Lx2Vmw8,276
+cigit/gitman.py,sha256=usi_Ew8l2Q2s2VCoUjrSvftwQowHuqLo07YX4ZAkYYk,2366
+cigit/pipeline.py,sha256=Q86nk2FLDur_CDc78eLR-5Vm6NqQIBla51jRXl97gpw,1939
+cigit-0.0.1.dist-info/entry_points.txt,sha256=i2oN8Ae25gU-XoxtDndkB7we3AiSvh8-LPe0e6_tgrM,19
+cigit-0.0.1.dist-info/WHEEL,sha256=JtIceljpZF_3FlF7JEESqvYUELdenaIGNR7wSL2mRl0,87
+cigit-0.0.1.dist-info/METADATA,sha256=QlORrc6jcnjbnfmbI3cAqIUjjnneiBIeJbmDvW--hUU,507
+cigit-0.0.1.dist-info/licenses/LICENSE,sha256=NRb8seWIeVRgNIVtoR0-LR8WvyLzBmS2auP1JUcGvTY,1084
+cigit-0.0.1.dist-info/RECORD,,

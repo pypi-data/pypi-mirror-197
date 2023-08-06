@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cigit
+Version: 0.0.1
+Summary: GraphQL Made Easy
+Author-email: hlop3z <23062270+hlop3z@users.noreply.github.com>
+Requires-Python: >=3.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pyyaml>=6.0
+Project-URL: Homepage, https://github.com/hlop3z/cigit/
+Description-Content-Type: text/markdown
+
+# cigit
+Build Scripting
+
