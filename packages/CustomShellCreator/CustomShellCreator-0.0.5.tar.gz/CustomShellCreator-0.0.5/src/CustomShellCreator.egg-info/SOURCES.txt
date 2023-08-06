@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/CustomShellCreator/__init__.py
+src/CustomShellCreator/shell.py
+src/CustomShellCreator.egg-info/PKG-INFO
+src/CustomShellCreator.egg-info/SOURCES.txt
+src/CustomShellCreator.egg-info/dependency_links.txt
+src/CustomShellCreator.egg-info/top_level.txt
