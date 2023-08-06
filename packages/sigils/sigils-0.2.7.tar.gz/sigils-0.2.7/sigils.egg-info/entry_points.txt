@@ -1,0 +1,2 @@
+[console_scripts]
+sigils = sigils.cli:main
