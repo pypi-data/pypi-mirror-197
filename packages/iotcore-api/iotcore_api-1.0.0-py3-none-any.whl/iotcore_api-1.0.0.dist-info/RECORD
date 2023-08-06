@@ -1,0 +1,6 @@
+iotcoreapi/__init__.py,sha256=UOQQGsqDMDLxV9G4QWmSUvCV3OqQzPF6GN7nsitLWLo,483
+iotcoreapi/exceptions.py,sha256=QLh5fBwJ1t7A-nSzuYMA0YYMsysxGn5Nn6m25UmiJVA,963
+iotcoreapi/iotcoreapi.py,sha256=XQDQ4KwFkeF52iV8wA_id4xDDv9mgbzB9GhLLpZuBXE,52720
+iotcore_api-1.0.0.dist-info/METADATA,sha256=5YIoC5LZqdnb35B-2xyMl9iPXUlLZvx_xerNku9zX9Q,5751
+iotcore_api-1.0.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+iotcore_api-1.0.0.dist-info/RECORD,,
