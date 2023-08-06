@@ -1,0 +1,11 @@
+click
+arrow
+jsmin
+cssmin
+pyyaml
+pyScss
+markdown
+livereload
+jinja2 >= 3.0
+python-slugify
+python-frontmatter
