@@ -1,0 +1,5 @@
+setup.py
+ontama.egg-info/PKG-INFO
+ontama.egg-info/SOURCES.txt
+ontama.egg-info/dependency_links.txt
+ontama.egg-info/top_level.txt
