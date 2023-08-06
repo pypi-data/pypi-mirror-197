@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lti1p3platform
+Version: 0.0.6
+Summary: LTI 1.3 Platform implementation
+Author: Jun Tu
+Author-email: jun@openlearning.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyJWT[crypto] (>=2.6.0,<3.0.0)
+Requires-Dist: jwcrypto (>=1.4.2,<2.0.0)
+Requires-Dist: requests[security] (>=2.28.2,<3.0.0)
