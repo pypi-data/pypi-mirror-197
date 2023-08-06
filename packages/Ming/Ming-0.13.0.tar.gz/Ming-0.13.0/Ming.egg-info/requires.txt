@@ -1,0 +1,5 @@
+pymongo<4,>=3.0
+pytz
+
+[configure]
+FormEncode>=1.2.1

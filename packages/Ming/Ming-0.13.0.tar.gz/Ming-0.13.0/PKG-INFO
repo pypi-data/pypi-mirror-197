@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: Ming
+Version: 0.13.0
+Summary: Bringing order to Mongo since 2009
+Home-page: https://github.com/TurboGears/Ming
+Author: Rick Copeland
+Author-email: rick@geek.net
+License: MIT
+Keywords: mongo,pymongo
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Provides-Extra: configure
+License-File: LICENSE.txt
+
+Database mapping layer for MongoDB on Python. Includes schema enforcement and some facilities for schema migration.
