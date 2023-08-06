@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: lite_fastapi_local
+Version: 0.0.19
+Summary: A small example package
+Author: dohyung102
+Author-email: dohyung102@thegreet.co.kr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
