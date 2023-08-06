@@ -1,0 +1,9 @@
+tytan/__init__.py,sha256=d7cQd8eT0Rek0l_GSouKdFNWHsxv3wXEbxVGAFAbCJ4,71
+tytan/_version.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+tytan/qubo.py,sha256=hw0REg8HVQzTlWKImlyi-2koZPWUekgC8RZ7Oqgb3gY,901
+tytan/sampler.py,sha256=9Cy8vq3wllmvlAGy4zB_I_NJdKPjX6DanQ5ciH7lAgk,2416
+tytan-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tytan-0.0.4.dist-info/METADATA,sha256=EP9lYBU0zuP6RshgoCQqwudEz9PWWi1s58vFu0HUfRY,1867
+tytan-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+tytan-0.0.4.dist-info/top_level.txt,sha256=5P-YugL_LbdXtAo7FxoCLne-iixzLJdd1xQ_31i-mrw,6
+tytan-0.0.4.dist-info/RECORD,,
