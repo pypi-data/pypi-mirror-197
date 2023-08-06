@@ -1,0 +1,9 @@
+LICENSE
+README.rst
+setup.py
+dgec/__init__.py
+dgec/main.py
+dgec.egg-info/PKG-INFO
+dgec.egg-info/SOURCES.txt
+dgec.egg-info/dependency_links.txt
+dgec.egg-info/top_level.txt
