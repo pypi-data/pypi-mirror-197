@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: eurocodedesign
+Version: 0.0.1
+Summary: Typed python framework for eurocode calculations.
+Home-page: https://github.com/domthom21/eurocodedesign
+Author: Dominik Thomas
+Author-email: dominik.thomas@hsu-hh.de
+Keywords: eurocodedesign
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+==============
+eurocodedesign
+==============
+
+Typed python framework for eurocode calculations.
+
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.0.1 (2023-03-14)
+------------------
+
+* First release on PyPI.
