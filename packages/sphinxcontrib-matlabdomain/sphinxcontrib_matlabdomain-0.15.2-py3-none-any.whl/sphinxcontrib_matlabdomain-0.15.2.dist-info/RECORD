@@ -1,0 +1,13 @@
+sphinxcontrib_matlabdomain-0.15.2-py3.9-nspkg.pth,sha256=bvCbvTDhKUCTNtrCbu6HVe8TsYC4G4-hRkXeHdEJ6t4,574
+sphinxcontrib/mat_directives.py,sha256=Ilgm-MyXowu6qYym8ZuN_slNKELvSA834cT5QN2BabM,2468
+sphinxcontrib/mat_documenters.py,sha256=Z5PZpSnvwe6ydkoo8f5uGHv8grJeESVXhPNJrufCfvY,42669
+sphinxcontrib/mat_lexer.py,sha256=xvl2IETULoo2pcrJJlb93cRtwGQd7X8StkBMypwRwlg,6242
+sphinxcontrib/mat_types.py,sha256=B_1_1V3neM_1NXLDPFTTC97eSpeQAZUyH__VhNhd8E8,61408
+sphinxcontrib/matlab.py,sha256=DX9f58SAznWOCn7tg-yJTNysT7zf4irbX1S-lkA5nwc,31903
+sphinxcontrib_matlabdomain-0.15.2.dist-info/AUTHORS,sha256=JxiFkYR__EiFqG-He0jeyKTRwr3N9gNV3r51VkCTOyQ,210
+sphinxcontrib_matlabdomain-0.15.2.dist-info/LICENSE,sha256=hmE-_jfFvI90hbgtxSZYW9t5smTEbOMvTbyM-TJ7dkw,1418
+sphinxcontrib_matlabdomain-0.15.2.dist-info/METADATA,sha256=MBgZBOLipDDpXyLWScrpl-6XlE3cJQO0xPT0POz16gg,9850
+sphinxcontrib_matlabdomain-0.15.2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sphinxcontrib_matlabdomain-0.15.2.dist-info/namespace_packages.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_matlabdomain-0.15.2.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_matlabdomain-0.15.2.dist-info/RECORD,,
