@@ -1,0 +1,13 @@
+apispec_plugins/__init__.py,sha256=m0o5Dfz9Y5Io2JIyevaWnJAipm2lGTZYTFlAOqfWomM,278
+apispec_plugins/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apispec_plugins/base/registry.py,sha256=zdL5sE4HhOn8wP4QQU26mfHHNb9GSfvssX-7D3YT25Y,875
+apispec_plugins/base/types.py,sha256=yzVJVkK2fGDH6pghFPHblCizcgKwkzhofGJoX5D8pPA,416
+apispec_plugins/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apispec_plugins/ext/pydantic.py,sha256=3cLTbS_rZMOmP-3irNz5LBsUYlWU3GDWYaHLx5oS3zc,6579
+apispec_plugins/utils.py,sha256=eMBq5lTmpvBNc6U1jtnmkxcbx0-2-M2WD6kBBy0bSqk,3322
+apispec_plugins/webframeworks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apispec_plugins/webframeworks/flask.py,sha256=1aH9tvklC4hpIrxvMIDNxVcsezVpfaHIAfo-pJo6Zzk,3536
+apispec_plugins-1.0.0.dist-info/LICENSE,sha256=GG-mxB6kCEf3BoYi-MRUFnP1c0RKPhc47elhkO2MCKs,1070
+apispec_plugins-1.0.0.dist-info/METADATA,sha256=iUwEkZvjGb7LsHR6p7sYge0ybj4bekhQgIXtlQpgYwM,6174
+apispec_plugins-1.0.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+apispec_plugins-1.0.0.dist-info/RECORD,,
