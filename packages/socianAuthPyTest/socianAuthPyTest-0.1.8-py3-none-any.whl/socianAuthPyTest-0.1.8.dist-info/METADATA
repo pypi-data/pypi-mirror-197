@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: socianAuthPyTest
+Version: 0.1.8
+Summary: socianAuthPyTest test publish.
+Home-page: UNKNOWN
+Author: socian
+Author-email: socian@socian.ai
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.27.1)
+
+UNKNOWN
+
+
