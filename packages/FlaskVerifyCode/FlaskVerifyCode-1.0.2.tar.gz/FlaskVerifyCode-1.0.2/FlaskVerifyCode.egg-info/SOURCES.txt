@@ -1,0 +1,7 @@
+setup.py
+FlaskVerifyCode/__init__.py
+FlaskVerifyCode.egg-info/PKG-INFO
+FlaskVerifyCode.egg-info/SOURCES.txt
+FlaskVerifyCode.egg-info/dependency_links.txt
+FlaskVerifyCode.egg-info/requires.txt
+FlaskVerifyCode.egg-info/top_level.txt

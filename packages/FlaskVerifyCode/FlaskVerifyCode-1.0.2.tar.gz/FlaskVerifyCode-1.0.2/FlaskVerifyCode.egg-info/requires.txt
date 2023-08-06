@@ -1,0 +1,6 @@
+
+[all]
+flask
+itsdangerous
+Werkzeug
+Jinja2
