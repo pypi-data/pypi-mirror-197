@@ -1,0 +1,4 @@
+requests
+nltk
+tika
+beautifulsoup4

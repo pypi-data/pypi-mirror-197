@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: acronym_extractor
+Version: 0.0.1
+Summary: Extracting acronym-definition pairs from pdf files
+Author: Izhar Ali
+Author-email: <izharali.skt@gmail.com>
+Keywords: python,acronyms,extraction,analysis
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+This package is used to extract acronym-definition pairs from pdf files. It uses tika to extract text from pdf files and then uses regex to extract acronyms and definitions.
