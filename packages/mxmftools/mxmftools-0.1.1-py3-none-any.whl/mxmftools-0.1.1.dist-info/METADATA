@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mxmftools
+Version: 0.1.1
+Summary: some scripts
+Home-page: https://github.com/mxmf/mxmf-tools
+Author: mxmf
+Author-email: mxmf521@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: colorcet
+Requires-Dist: click-bash4.2-completion
+Requires-Dist: h5py
+Requires-Dist: lxml
+Requires-Dist: click (>=8.1.0)
+
+
+<!-- _MXMF_COMPLETE=bash_source mxmf > ~/.config/mxmf/mxmf-complete.bash
+. ~/.config/mxmf/mxmf-complete.bash -->
