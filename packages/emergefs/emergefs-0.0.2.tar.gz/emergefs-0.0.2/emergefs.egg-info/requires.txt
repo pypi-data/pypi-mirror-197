@@ -1,0 +1,5 @@
+black
+click
+flake8
+isort
+pytest
