@@ -1,0 +1,8 @@
+setup.py
+sculpture/__init__.py
+sculpture/sculpture.py
+sculpture.egg-info/PKG-INFO
+sculpture.egg-info/SOURCES.txt
+sculpture.egg-info/dependency_links.txt
+sculpture.egg-info/requires.txt
+sculpture.egg-info/top_level.txt
