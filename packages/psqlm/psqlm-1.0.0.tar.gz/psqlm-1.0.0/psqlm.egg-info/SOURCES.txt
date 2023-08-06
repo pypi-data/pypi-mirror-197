@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+psqlm/Connect.py
+psqlm/__init__.py
+psqlm.egg-info/PKG-INFO
+psqlm.egg-info/SOURCES.txt
+psqlm.egg-info/dependency_links.txt
+psqlm.egg-info/top_level.txt
