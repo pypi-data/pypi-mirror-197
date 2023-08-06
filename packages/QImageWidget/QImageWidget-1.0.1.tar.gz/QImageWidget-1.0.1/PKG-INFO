@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: QImageWidget
+Version: 1.0.1
+Summary: A PyQt5/PySide2 widget for displaying images
+Home-page: https://github.com/RedEnder666/QImageWidget
+Author: Render666
+Author-email: hackermananonimous228666@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
