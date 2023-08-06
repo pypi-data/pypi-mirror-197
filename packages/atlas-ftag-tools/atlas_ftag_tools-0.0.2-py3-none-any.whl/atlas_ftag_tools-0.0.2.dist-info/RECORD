@@ -1,0 +1,14 @@
+ftag/__init__.py,sha256=IaS73_DPurK017KT5fVpH1X_zku2YD-Ex9BpXdh4mtc,678
+ftag/cuts.py,sha256=pQujIkvjfaJA4aF54M77su5zKeEh16yDrPXUE5wpyiQ,2721
+ftag/flavour.py,sha256=mWMTFXU9hQnyJM3Rsuw880biGr40TccMqDIBvGweSMc,1199
+ftag/region.py,sha256=Tbw7o7cqdeZcu3x49n1iXUxR0apHaUSAsSY_vTHPuGI,371
+ftag/sample.py,sha256=NU_BVcvnehPNy4RV9Uo0AXgqtr48KguQ5j9yW9RroFU,579
+ftag/vds.py,sha256=ytI0GZaUsdV7_1-0emIjz_S4w3tBy4KZL4scTOG_Vcs,1541
+ftag/hdf5/__init__.py,sha256=DTtPbcO-Vx4wMJ0-VkQ_ru__pATUITDRbDQ0GCaddP0,229
+ftag/hdf5/h5reader.py,sha256=g2QrvxyUumk9mwPGZCDIW89i2uAxnt_l2mhYiHGx8Qw,6489
+ftag/hdf5/h5utils.py,sha256=nqdaDmkNoWjdpciI6V-HEAFzjkkEypEVK-9pgKmnFlM,3755
+ftag/hdf5/h5writer.py,sha256=qmR3N2Y0R1AvO8uPnX0hMCgYGjnG9YpCVbnRbRDvAEs,2813
+atlas_ftag_tools-0.0.2.dist-info/METADATA,sha256=xcsmmIzW3rIdW4jn04yOaF-emv80dLWP16eLknA175Q,719
+atlas_ftag_tools-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+atlas_ftag_tools-0.0.2.dist-info/top_level.txt,sha256=qiYQuKcAvMim-31FwkT3MTQu7WQm0s58tPAia5KKWqs,5
+atlas_ftag_tools-0.0.2.dist-info/RECORD,,

@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: atlas-ftag-tools
+Version: 0.0.2
+Summary: ATLAS Flavour Tagging Tools
+Author: Sam Van Stroud, Philipp Gadow
+License: MIT
+Project-URL: Homepage, https://github.com/umami-hep/atlas-ftag-tools/
+Requires-Python: >=3.11
+Requires-Dist: h5py (==3.8.0)
+Requires-Dist: numpy (==1.24.*)
+Requires-Dist: PyYAML (==6.0)
+Provides-Extra: dev
+Requires-Dist: black (==23.1.0) ; extra == 'dev'
+Requires-Dist: ruff (==0.0.254) ; extra == 'dev'
+Requires-Dist: pre-commit (==3.1.1) ; extra == 'dev'
+Requires-Dist: pytest (==7.2.2) ; extra == 'dev'
+Requires-Dist: pytest-cov (==4.0.0) ; extra == 'dev'
+Requires-Dist: pytest-notebook (==0.8.1) ; extra == 'dev'
+Requires-Dist: ipykernel (==6.21.3) ; extra == 'dev'
+
