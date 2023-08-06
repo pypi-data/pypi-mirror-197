@@ -1,0 +1,15 @@
+trenchrun/__init__.py,sha256=KWvAik2AMN2GVznKfkuFNKBmcuvPq0CJRIAy9XQSIHU,20
+trenchrun/__main__.py,sha256=TypDqtlTrJw3v5CjZIMQNxpfVFi4mTM8VAVQN9C-HcE,77
+trenchrun/__version__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trenchrun/argparser.py,sha256=lN__OEXvKhGFSU7kAe2z_nzUzSwOJ2FpPGhSj-7V6XI,1423
+trenchrun/blend.py,sha256=5i9Va3l7Tl7Uy63Dzeqnya2q07u3q8y9jSQhBpbD4E4,4256
+trenchrun/data.py,sha256=9xa0jWgnfdc6WWqmeDK-oF7iQwni0OdDT3062kZsE7o,4046
+trenchrun/do.py,sha256=1pP8S38LLKqdT3JzuxECd7Syon9q3swK2a1V61rinuE,239
+trenchrun/logs.py,sha256=YKopT4Tr7kBFD8Hz-jeshbH75DmXdrI8Eg1dmXqzAP8,330
+trenchrun/main.py,sha256=faWXIW3lg1Mgryqtx8EAl99egTxp014bBhldr-qlrWI,322
+trenchrun-0.0.4.dist-info/LICENSE.txt,sha256=lZ93AzulajsUb69cAvkWIHHy0L_0uLbxwhk6S0ESfTk,11347
+trenchrun-0.0.4.dist-info/METADATA,sha256=wXH06UuCL0WaKWuvnNE76aw6J6O2q-9rPMGK2hMEfBc,1090
+trenchrun-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+trenchrun-0.0.4.dist-info/entry_points.txt,sha256=00Fb7IinOeve1r3bl46ulgdgHGBE6TNw9tG6TFVsFxE,54
+trenchrun-0.0.4.dist-info/top_level.txt,sha256=xC2uTHr2SfNb-WSX8U5XtYg4eiOv6xR0fRUD9yZoUhA,10
+trenchrun-0.0.4.dist-info/RECORD,,
