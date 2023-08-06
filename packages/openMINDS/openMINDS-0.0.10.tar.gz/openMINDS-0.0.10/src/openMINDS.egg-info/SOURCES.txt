@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/openMINDS/MetaSchemaCollection.py
+src/openMINDS/__init__.py
+src/openMINDS/python_compiler.py
+src/openMINDS/schema_discovery.py
+src/openMINDS/version_manager.py
+src/openMINDS.egg-info/PKG-INFO
+src/openMINDS.egg-info/SOURCES.txt
+src/openMINDS.egg-info/dependency_links.txt
+src/openMINDS.egg-info/requires.txt
+src/openMINDS.egg-info/top_level.txt

@@ -1,0 +1,63 @@
+## openMINDS Python
+
+openMINDS Python is a small library that allows you the dynamic usage of openMINDS metadata models and schemas in your Python application for generating your own collection of openMINDS conform metadata representations (instances) as JSON-LDs.
+
+Please note that openMINDS Python only helps you to generate correctly formatted JSON-LD metadata instances - the preparation on how you want to describe your research product with openMINDS is still up to you. If you need support in designing your own openMINDS metadata collection, check out the [openMINDS Collab Tutorials](https://wiki.ebrains.eu/bin/create/openminds%40ebrains/eu/WebHome?parent=Collabs.openminds.Documentation.Application+details.WebHome) which might give you hints on how to tackle your individual case or, of course, get in touch with us directly via our support-email (**`openminds@ebrains.eu`**).
+
+### Installation
+The official versions are available at the [Python Package Index](https://pypi.org/project/openMINDS/) and can be installed using pip install in your console:
+    
+    pip install openMINDS
+    
+The latest unstable version is available on this GitHub.
+
+### Usage
+
+As stated above, the openMINDS Python allows you the dynamic usage of openMINDS metadata models and schemas in your Python application for generating your own collection of openMINDS conform metadata representations (instances) as JSON-LDs. Here a small example:
+
+```python
+import openMINDS
+import openMINDS.version_manager
+
+# Initialise the local copy of openMINDS
+openMINDS.version_manager.init()
+
+# Select which version of openMINDS to use
+openMINDS.version_manager.version_selection('v2.0.0')
+
+# initiate the helper class for the dynamic usage of a specific openMINDS version
+helper = openMINDS.Helper()
+
+# initiate the collection into which you will store all metadata instances
+mycollection = helper.create_collection()
+
+# create a metadata instance for (e.g.) the openMINDS Person schema
+person_open = mycollection.add_core_person(givenName="open")
+
+# add more metadata to a created instance
+mycollection.get(person_open).familyName = "MINDS"
+
+# add connections to other metadata instances
+email_openminds = mycollection.add_core_contactInformation(email="openminds@ebrains.eu")
+mycollection.get(person_open).contactInformation = email_openminds
+
+# save your collection
+mycollection.save("./myFirstOpenMINDSMetadataCollection/")
+
+# Getting help for properties
+mycollection.help_core_actors_person()
+```
+
+This example generates two linked JSON-LDs, one conform with the openMINDS (v3) Person schema and the other conform with the openMINDS (v3) ContactInformation schema.
+
+To learn in general about the available openMINDS metadata models, schemas and their required or optional metadata properties, check out the [openMINDS HTML views](https://humanbrainproject.github.io/openMINDS/) which are deployed as GitHub pages on the main openMINDS repository. You can also have a look at the full [openMINDS documentation](https://wiki.ebrains.eu/bin/view/Collabs/openminds/) on the EBRAINS Collaboratory.
+
+Within the openMINDS Python you can also get an overview of the requirements of a schema and all its properties by using the 'help_X' function. Here an example:
+
+```python
+mycollection.help_core_person()
+```
+
+
+## License
+This work is licensed under the MIT License.
