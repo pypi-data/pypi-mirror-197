@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cs3560cli
+Version: 0.1.0
+License-File: LICENSE
+Requires-Dist: click
+Requires-Dist: Pygments
+Requires-Dist: rich
+Requires-Dist: ruamel.yaml
+Requires-Dist: tqdm
+Requires-Dist: importlib-metadata ; python_version > "3.8"
+
