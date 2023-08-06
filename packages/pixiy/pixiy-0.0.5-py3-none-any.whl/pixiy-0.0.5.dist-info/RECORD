@@ -1,0 +1,15 @@
+pixiy/__init__.py,sha256=8WZTPnwr79rWqa4VGSVmywDa_6bIzNAX9gVybwkemAY,429
+pixiy/core.py,sha256=QiDnTMfpZMZcLghukBLFUcpc0QpfbeEgIKkYpCVR2r0,6817
+pixiy/__metadata__/DISCLAIMER.md,sha256=Eh9dhFWbvRMm27jxKYRZqQp_Lb8PkhbYWYQyLoMSrHg,4785
+pixiy/__metadata__/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+pixiy/__metadata__/README.md,sha256=7fZqYSX1Gq2EqcpZaKztFZjqPbgWXy7zDIwqGmJBtB0,903
+pixiy/__metadata__/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pixiy/__metadata__/requirements.txt,sha256=rzl8OZeTPBOosbjUnuu4XhBCw3hCmPLILGmct_3jQXE,36
+pixiy/old/__init__.py,sha256=ZWWGUeWu7wPnVkGSqHk_4YSI2I5MbrMomieRJv4fROM,436
+pixiy/old/core.py,sha256=cD4vy5L4mHfXqw543YzgqxQrUjFH-HYzrnAmevA-qjQ,12814
+pixiy/old/utils.py,sha256=lXyir8MSWLrU0reAbq9jk6jsq4JU9q_bHWk5go3GRiU,12542
+pixiy/old/utils2.py,sha256=kssHzZbU-k9nytsoIheeG_Odlz_CFkuSsx9q_5bpgjw,4261
+pixiy-0.0.5.dist-info/METADATA,sha256=8umVo-Tbl8jAYEtXLoWGdMcPCWzKeiE5XSbfnrf4wMs,2094
+pixiy-0.0.5.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+pixiy-0.0.5.dist-info/top_level.txt,sha256=0rk42zlhwiu3he__2MS5IusabWiVdejA2tYc9zGY5dE,6
+pixiy-0.0.5.dist-info/RECORD,,
