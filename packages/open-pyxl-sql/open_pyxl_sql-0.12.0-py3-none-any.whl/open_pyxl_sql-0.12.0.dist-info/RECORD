@@ -1,0 +1,16 @@
+PyxlSql/__init__.py,sha256=h1gnQEH2DVktCNskQmb6AarUvdbe1yu8T9Yentg4BHI,563
+PyxlSql/pyxlAbstracts.py,sha256=bXlaE56GHsaDBC8fos1O6zqiwFuxzt9OZ0cRjwZctM0,6953
+PyxlSql/pyxlArgs.py,sha256=p4dyuNFAxtbn7gKzjo9-C91JgticWw3Oe-Dt6ZFL5hU,14789
+PyxlSql/pyxlEngine.py,sha256=PSkumHFu29z6zHd1AA6AvMgNHunYX0QUXmFVe-z-41s,32363
+PyxlSql/pyxlErrors.py,sha256=IbRHEF807xEME_RaSDfQNNX1JrrILvO7-0Cf-hOUWtg,2934
+PyxlSql/pyxlGrammar.py,sha256=Q1-c_56oHGxYFg9ssbzxg0t-GomsjcgyOaroqROIpwM,25162
+PyxlSql/pyxlResults.py,sha256=o19MrF1Guy7WhZlIn4q-ONf-jw6ItcPtFgztJFhmziM,6935
+PyxlSql/pyxlSheets.py,sha256=fdaH0moQcopYtrokQCNRV18jhwhoU29yJKSYrOovRyQ,7770
+PyxlSql/pyxlSql.py,sha256=-30Mt1CXT9JbQsXXOVAtG6hHZYH0kerjG6I1OqEejf0,12412
+PyxlSql/pyxlStages.py,sha256=6q3kBryFe68FayPckcOJlXh2Z0dO8kf_clgAwLkzunw,14348
+PyxlSql/pyxlWorkbook.py,sha256=qqs_MgPK9XJsXdILz5ApqTTerR0sB4XVy5QVIJqyhI0,5175
+open_pyxl_sql-0.12.0.dist-info/LICENCE,sha256=OqHjmAel71uhNe8y5tKUU3cvDwpxqxfkll-PPRdK80A,14408
+open_pyxl_sql-0.12.0.dist-info/METADATA,sha256=tT9zW488zLFHwcQ8Tyb9AkhbXolXEntfg3_T2-K1Fyo,7004
+open_pyxl_sql-0.12.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+open_pyxl_sql-0.12.0.dist-info/top_level.txt,sha256=VUx8kRvi_RW0DppMghw07FYuKQy_gyW70UrE5x_UVFA,8
+open_pyxl_sql-0.12.0.dist-info/RECORD,,
