@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: traccuracy
+Version: 0.0.1
+Summary: Utilities for computing common accuracy metrics on cell tracking challenge solutions with ground truth
+Author-email: Draga Doncila Pop <draga.doncilapop1@monash.edu>, Caroline Malin-Mayor <cmalinmayor@gmail.com>, Morgan Schwartz <msschwartz21@gmail.com>
+License: BSD 3-Clause License
+Project-URL: homepage, https://github.com/Janelia-Trackathon-2023/traccuracy
+Project-URL: repository, https://github.com/Janelia-Trackathon-2023/traccuracy
+Project-URL: documentation, https://traccuracy.readthedocs.io/
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: pandas
+Requires-Dist: tifffile
+Requires-Dist: scikit-image
+Requires-Dist: tqdm
+Requires-Dist: numba ; python_version != "3.11"
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pdbpp ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: rich ; extra == 'dev'
+Requires-Dist: ruff ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: mock ; extra == 'docs'
+Requires-Dist: Sphinx (<6) ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: m2r2 ; extra == 'docs'
+Requires-Dist: sphinx-autoapi ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest (>=6.0) ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+# traccuracy
+
+[![License](https://img.shields.io/pypi/l/traccuracy.svg?color=green)](https://github.com/Janelia-Trackathon-2023/traccuracy/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/traccuracy.svg?color=green)](https://pypi.org/project/traccuracy)
+[![Python Version](https://img.shields.io/pypi/pyversions/traccuracy.svg?color=green)](https://python.org)
+[![CI](https://github.com/Janelia-Trackathon-2023/traccuracy/actions/workflows/ci.yml/badge.svg)](https://github.com/Janelia-Trackathon-2023/traccuracy/actions/workflows/ci.yml)
+[![Documentation Status](https://readthedocs.org/projects/traccuracy/badge/?version=latest)](https://traccuracy.readthedocs.io/en/latest/?badge=latest)
+
+
+`traccuracy` provides a suite of benchmarking functions that can be used to evaluate tracking solutions against ground truth annotations. It includes the standard metrics that are calculated by the [Cell Tracking Challenge](http://celltrackingchallenge.net/evaluation-methodology/).
+
+Learn more in the [documentation](https://traccuracy.readthedocs.io/en/latest/).
+
+## Installation
+`pip install traccuracy`
+
+## Development
+For local development, clone the repo and install in editable mode.
+```
+git clone https://github.com/Janelia-Trackathon-2023/traccuracy.git
+cd traccuracy
+pip install -e .[dev]
+```
+
+### Testing
+Install testing requirements
+```
+pip install -e .[test]
+```
+Run tests
+```
+python -m pytest tests
+```
+### Style
+We utilize `pre-commit` with black (formatting) and ruff (linting). If you would like to run `pre-commit` locally:
+```
+pip install -e .[dev]
+pre-commit install
+```
+Alternatively [pre-commit.ci](https://pre-commit.ci/), will run and commit changes on any open PRs.
+
+### Releases
+In order to deploy a new version, tag the commit with a version number and push it to github. This will trigger a github action that will build and deploy to PyPI. (see the "deploy" step in workflows/ci.yml). The version number is determined automatically based on the tag.
+```
+git tag -a v0.1.0 -m v0.1.0
+git push --follow-tags
+```
+
+### Documentation
+Documentation is built with Sphinx using `sphinx-autoapi` to automatically generate API documentation at build time. Docs are hosted on ReadTheDocs and build automatically after each push to main. Documentation can be built locally by running the following:
+```
+# Install docs requirements
+pip install -e .[docs]
+# Run the build
+sphinx-build docs/source docs/_build
+```
+
+You can view the documentation by opening `docs/_build/index.html` in your browser.
