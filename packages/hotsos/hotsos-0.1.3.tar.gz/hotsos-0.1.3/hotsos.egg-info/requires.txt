@@ -1,0 +1,12 @@
+click
+progress
+pyyaml
+simplejson
+jinja2
+cryptography
+searchkit
+propertree
+fasteners
+
+[:python_version >= "3.8"]
+importlib-metadata
