@@ -1,0 +1,3 @@
+[console_scripts]
+cazy-parser=cazy_parser.cli:maincli
+
