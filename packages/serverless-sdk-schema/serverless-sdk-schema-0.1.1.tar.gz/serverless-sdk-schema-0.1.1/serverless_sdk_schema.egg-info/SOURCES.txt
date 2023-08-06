@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+serverless_sdk_schema/__init__.py
+serverless_sdk_schema.egg-info/PKG-INFO
+serverless_sdk_schema.egg-info/SOURCES.txt
+serverless_sdk_schema.egg-info/dependency_links.txt
+serverless_sdk_schema.egg-info/requires.txt
+serverless_sdk_schema.egg-info/top_level.txt
+serverless_sdk_schema/schema/__init__.py
+serverless_sdk_schema/schema/serverless/__init__.py
+serverless_sdk_schema/schema/serverless/instrumentation/__init__.py
+serverless_sdk_schema/schema/serverless/instrumentation/tags/__init__.py
+serverless_sdk_schema/schema/serverless/instrumentation/tags/v1/__init__.py
+serverless_sdk_schema/schema/serverless/instrumentation/v1/__init__.py
+tests/test_schema.py

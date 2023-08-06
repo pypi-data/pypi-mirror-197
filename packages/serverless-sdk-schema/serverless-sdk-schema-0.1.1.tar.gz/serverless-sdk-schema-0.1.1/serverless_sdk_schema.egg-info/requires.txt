@@ -1,0 +1,7 @@
+betterproto<3.0.0,>=2.0.0b5
+typing-extensions>=4.4
+
+[tests]
+black>=22.12
+pytest>=7.2
+ruff>=0.0.199
