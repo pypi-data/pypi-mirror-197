@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: musketeer
+Version: 1.2.2
+Summary: A tool for fitting data from titration experiments.
+Home-page: https://github.com/daniilS/Musketeer
+Author: Daniil Soloviev
+Author-email: dos23@cam.ac.uk
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib (>=3.7.1)
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: scipy
+Requires-Dist: ttkbootstrap (<1.0,>=0.5.2)
+Requires-Dist: ttkwidgets
+Requires-Dist: tksheet
+
+# Musketeer
+A work in progress tool for fitting data from titration experiments.
+### Installation
+```
+python -m pip install musketeer
+```
+### Usage
+```
+python -m musketeer
+```
+
+
