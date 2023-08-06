@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>abcgan &mdash; Atmospheric Background Characterization Generative Adversarial Network (ABCGAN) 2.0.1 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="abcgan package" href="abcgan.html" />
+    <link rel="prev" title="Welcome to Atmospheric Background Characterization Generative Adversarial Network (ABCGAN)’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Atmospheric Background Characterization Generative Adversarial Network (ABCGAN)
+          </a>
+              <div class="version">
+                2.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">abcgan</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html">abcgan package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="abcgan.html">abcgan package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Atmospheric Background Characterization Generative Adversarial Network (ABCGAN)</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">abcgan</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modules.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="abcgan">
+<h1>abcgan<a class="headerlink" href="#abcgan" title="Permalink to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="abcgan.html">abcgan package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan.constants">abcgan.constants module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan.anomaly">abcgan.anomaly module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.anomaly.anomaly_score_bv"><code class="docutils literal notranslate"><span class="pre">anomaly_score_bv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.anomaly.anomaly_score_hfp"><code class="docutils literal notranslate"><span class="pre">anomaly_score_hfp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.anomaly.anomaly_score_wtec"><code class="docutils literal notranslate"><span class="pre">anomaly_score_wtec()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.anomaly.joint_anomaly_estimation"><code class="docutils literal notranslate"><span class="pre">joint_anomaly_estimation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.anomaly.marginal_anomaly_estimation"><code class="docutils literal notranslate"><span class="pre">marginal_anomaly_estimation()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan.attention">abcgan.attention module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.attention.collect_bv_attn_map"><code class="docutils literal notranslate"><span class="pre">collect_bv_attn_map()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.attention.collect_hfp_attn_map"><code class="docutils literal notranslate"><span class="pre">collect_hfp_attn_map()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.attention.get_decoder_attn"><code class="docutils literal notranslate"><span class="pre">get_decoder_attn()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.attention.get_encoder_attn"><code class="docutils literal notranslate"><span class="pre">get_encoder_attn()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan.interface">abcgan.interface module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.average_wtec"><code class="docutils literal notranslate"><span class="pre">average_wtec()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.discriminate"><code class="docutils literal notranslate"><span class="pre">discriminate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.estimate_drivers"><code class="docutils literal notranslate"><span class="pre">estimate_drivers()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.generate_bvs"><code class="docutils literal notranslate"><span class="pre">generate_bvs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.generate_hfps"><code class="docutils literal notranslate"><span class="pre">generate_hfps()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.generate_multi_bv"><code class="docutils literal notranslate"><span class="pre">generate_multi_bv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.generate_multi_hfp"><code class="docutils literal notranslate"><span class="pre">generate_multi_hfp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.generate_multi_wtec"><code class="docutils literal notranslate"><span class="pre">generate_multi_wtec()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.generate_wtec"><code class="docutils literal notranslate"><span class="pre">generate_wtec()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.hellinger_scores_bv"><code class="docutils literal notranslate"><span class="pre">hellinger_scores_bv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.hellinger_scores_hfp"><code class="docutils literal notranslate"><span class="pre">hellinger_scores_hfp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.hellinger_scores_wtec"><code class="docutils literal notranslate"><span class="pre">hellinger_scores_wtec()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.load_h5_data"><code class="docutils literal notranslate"><span class="pre">load_h5_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.load_wtec_h5"><code class="docutils literal notranslate"><span class="pre">load_wtec_h5()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.stack_bvs"><code class="docutils literal notranslate"><span class="pre">stack_bvs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.interface.stack_drivers"><code class="docutils literal notranslate"><span class="pre">stack_drivers()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan.mask">abcgan.mask module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.mask.mask_altitude"><code class="docutils literal notranslate"><span class="pre">mask_altitude()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.mask.prev_driver_mask"><code class="docutils literal notranslate"><span class="pre">prev_driver_mask()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan.mean_estimation">abcgan.mean_estimation module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.mean_estimation.Transformer"><code class="docutils literal notranslate"><span class="pre">Transformer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="abcgan.html#abcgan.mean_estimation.Transformer.forward"><code class="docutils literal notranslate"><span class="pre">Transformer.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="abcgan.html#abcgan.mean_estimation.Transformer.generate_square_subsequent_mask"><code class="docutils literal notranslate"><span class="pre">Transformer.generate_square_subsequent_mask()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan.bv_model">abcgan.bv_model module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.bv_model.Critic"><code class="docutils literal notranslate"><span class="pre">Critic</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="abcgan.html#abcgan.bv_model.Critic.forward"><code class="docutils literal notranslate"><span class="pre">Critic.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.bv_model.Driver_Critic"><code class="docutils literal notranslate"><span class="pre">Driver_Critic</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="abcgan.html#abcgan.bv_model.Driver_Critic.forward"><code class="docutils literal notranslate"><span class="pre">Driver_Critic.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.bv_model.Driver_Generator"><code class="docutils literal notranslate"><span class="pre">Driver_Generator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="abcgan.html#abcgan.bv_model.Driver_Generator.forward"><code class="docutils literal notranslate"><span class="pre">Driver_Generator.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.bv_model.Generator"><code class="docutils literal notranslate"><span class="pre">Generator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="abcgan.html#abcgan.bv_model.Generator.forward"><code class="docutils literal notranslate"><span class="pre">Generator.forward()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan.hfp_model">abcgan.hfp_model module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.hfp_model.HFP_Critic"><code class="docutils literal notranslate"><span class="pre">HFP_Critic</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="abcgan.html#abcgan.hfp_model.HFP_Critic.forward"><code class="docutils literal notranslate"><span class="pre">HFP_Critic.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.hfp_model.HFP_Generator"><code class="docutils literal notranslate"><span class="pre">HFP_Generator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="abcgan.html#abcgan.hfp_model.HFP_Generator.forward"><code class="docutils literal notranslate"><span class="pre">HFP_Generator.forward()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.hfp_model.HFP_Transformer"><code class="docutils literal notranslate"><span class="pre">HFP_Transformer</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="abcgan.html#abcgan.hfp_model.HFP_Transformer.forward"><code class="docutils literal notranslate"><span class="pre">HFP_Transformer.forward()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="abcgan.html#abcgan.hfp_model.HFP_Transformer.generate_square_subsequent_mask"><code class="docutils literal notranslate"><span class="pre">HFP_Transformer.generate_square_subsequent_mask()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan.persist">abcgan.persist module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.persist.fullname"><code class="docutils literal notranslate"><span class="pre">fullname()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.persist.persist"><code class="docutils literal notranslate"><span class="pre">persist()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.persist.recreate"><code class="docutils literal notranslate"><span class="pre">recreate()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan.transforms">abcgan.transforms module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.compute_valid"><code class="docutils literal notranslate"><span class="pre">compute_valid()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.compute_valid_hfp"><code class="docutils literal notranslate"><span class="pre">compute_valid_hfp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.compute_valid_wtec"><code class="docutils literal notranslate"><span class="pre">compute_valid_wtec()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.decode"><code class="docutils literal notranslate"><span class="pre">decode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.encode"><code class="docutils literal notranslate"><span class="pre">encode()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.encoded_driver_names"><code class="docutils literal notranslate"><span class="pre">encoded_driver_names()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.get_bv"><code class="docutils literal notranslate"><span class="pre">get_bv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.get_driver"><code class="docutils literal notranslate"><span class="pre">get_driver()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.get_hfp"><code class="docutils literal notranslate"><span class="pre">get_hfp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.get_wtec"><code class="docutils literal notranslate"><span class="pre">get_wtec()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.scale_bv"><code class="docutils literal notranslate"><span class="pre">scale_bv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.scale_driver"><code class="docutils literal notranslate"><span class="pre">scale_driver()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.scale_hfp"><code class="docutils literal notranslate"><span class="pre">scale_hfp()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.transforms.scale_wtec"><code class="docutils literal notranslate"><span class="pre">scale_wtec()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="abcgan.html#module-abcgan">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.discriminate"><code class="docutils literal notranslate"><span class="pre">discriminate()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.estimate_drivers"><code class="docutils literal notranslate"><span class="pre">estimate_drivers()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.stack_bvs"><code class="docutils literal notranslate"><span class="pre">stack_bvs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="abcgan.html#abcgan.stack_drivers"><code class="docutils literal notranslate"><span class="pre">stack_drivers()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Atmospheric Background Characterization Generative Adversarial Network (ABCGAN)’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="abcgan.html" class="btn btn-neutral float-right" title="abcgan package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2021-2022, SRI International.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

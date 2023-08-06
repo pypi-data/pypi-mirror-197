@@ -1,0 +1,4 @@
+abcgan
+jupyterlab
+matplotlib
+seaborn
