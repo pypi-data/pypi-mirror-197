@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "javi_oscars"
+version = "0.0.2"
+authors = [
+    { name="javigledefru17", email="javigledefru17@gmail.com" },
+]
+description = "database oscars"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/JavierIglesiasdeFrutos/oscars"
+"Bug Tracker" = "https://github.com/JavierIglesiasdeFrutos/oscars/issues"
