@@ -1,0 +1,11 @@
+data_catalog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_catalog/abc.py,sha256=9341WEGPpTC-NbOmEh4GITIbiJQ_nhyrhUFiQImavq8,606
+data_catalog/collections.py,sha256=kXXAyDHK3wymRmrwlFqB-c4g5MyQDOslLJkbHsseiTE,11915
+data_catalog/datasets.py,sha256=ONnuDcXTnmnkaqHY95TzzEurK5kJsBNmxC8i8H-VtKE,10732
+data_catalog/file_systems.py,sha256=Mkfl2ZRsbk7G1DXXCOdrnI6LmYMvsH04EP-UBr3Z_M0,3935
+data_catalog/taskgraph.py,sha256=71WIuX8iaxbCapT5UlyQOe8MiHYIeAQUi_Hwo6ekaeU,9761
+data_catalog/utils.py,sha256=FUlnmuObe9oy9Y7BI71hUXIRalobOrKEFPkaAsMn0zc,2567
+data_catalog/version.py,sha256=5CkZNLjTaFE9i6BJv2SiJEjhSl6_b7zqIyEIE2QmvlQ,104
+project_data_catalog-0.3.1.dist-info/METADATA,sha256=kT-KfOxTSnaHWU75rT64BdFAgdqlVnpPcrl1SxmR_rQ,9811
+project_data_catalog-0.3.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+project_data_catalog-0.3.1.dist-info/RECORD,,
