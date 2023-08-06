@@ -1,0 +1,10 @@
+README.md
+setup.py
+saradirmaker/__init__.py
+saradirmaker/saradirmaker.py
+saradirmaker.egg-info/PKG-INFO
+saradirmaker.egg-info/SOURCES.txt
+saradirmaker.egg-info/dependency_links.txt
+saradirmaker.egg-info/entry_points.txt
+saradirmaker.egg-info/requires.txt
+saradirmaker.egg-info/top_level.txt

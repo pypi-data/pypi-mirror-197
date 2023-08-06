@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: saradirmaker
+Version: 0.0.1
+Summary: It is about file maker cli tool
+Home-page: UNKNOWN
+Author: Saranya
+Author-email: saranyaveeradurai@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+## A simple Make dir tool
+
+#### Prerequisites
+
+This tool is nothing but creating file in dir.
+
+#### Usage
+
+This is testing not for production
+
+```
+saradirmaker count name extension ( saradirmaker 10 sara .csv )
+
+```
+
+
+
+
+
+
