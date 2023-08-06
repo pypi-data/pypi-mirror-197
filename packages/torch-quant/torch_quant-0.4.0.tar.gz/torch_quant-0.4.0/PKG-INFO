@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: torch_quant
+Version: 0.4.0
+Summary: PyTorch Quantization Toolkit For BladeDISC
+Home-page: https://github.com/alibaba/BladeDISC/tree/main/tools/torch_quant
+Author: Alibaba PAI Team
