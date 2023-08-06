@@ -1,0 +1,7 @@
+numpy>=1.2
+pandas>=1.2
+python-dateutil>=2.8
+python-libsbml>=5.18
+scipy>=1.4
+optlang>=1.4
+cobra>=0.20
