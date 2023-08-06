@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vid2seq
+Version: 0.0.1.dev0
+Summary: vid2seq - Large-Scale Pretraining of a Visual Language Model for Dense Video Captioning
+Home-page: UNKNOWN
+Author: Shadow Walker
+License: UNKNOWN
+Keywords: vid2seq
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+
+# vid2seq
+
+
+
