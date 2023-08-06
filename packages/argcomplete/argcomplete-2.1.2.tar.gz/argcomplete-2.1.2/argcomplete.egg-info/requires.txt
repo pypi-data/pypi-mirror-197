@@ -1,0 +1,17 @@
+
+[:python_version == "3.6"]
+importlib-metadata<6,>=0.23
+
+[:python_version == "3.7"]
+importlib-metadata<6,>=0.23
+
+[lint]
+flake8
+mypy
+
+[test]
+coverage
+pexpect
+wheel
+flake8
+mypy
