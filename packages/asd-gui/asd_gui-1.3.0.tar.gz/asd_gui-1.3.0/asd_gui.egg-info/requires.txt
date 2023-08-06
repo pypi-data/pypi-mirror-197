@@ -1,0 +1,7 @@
+matplotlib
+numpy>=1.19.0
+pandas
+PyQt6
+PyYAML
+setuptools
+vtk>=9.0.0
