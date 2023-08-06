@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: markdown-ansi
+Version: 0.1.0
+License: MIT
+Author-email: Jan Graichen <jgraichen@altimos.de>
+Requires-Python: >=3.8
+Requires-Dist: ansi2html>=1.8.0
+Description-Content-Type: text/markdown
+
+# markdown-ansi
+
+A `pymdownx.superfences` formatter for rendering console output with ANSI colors using [`ansi2html`](https://github.com/pycontribs/ansi2html).
+
+Note: _Only_ ANSI color escape sequences are supported. Other escape sequences should be removed manually.
+
+## Usage
+
+```yaml
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: ansi
+          class: ansi
+          format: !!python/name:markdown_ansi.ansi.fence_code_format
+```
+
