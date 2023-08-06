@@ -1,0 +1,20 @@
+./enpt_enmapboxapp/enpt_external_algorithm.py:39 in public class `ExternalEnPTAlgorithm`:
+        D101: Missing docstring in public class
+./enpt_enmapboxapp/enpt_external_algorithm.py:43 in public method `initAlgorithm`:
+        D102: Missing docstring in public method
+./enpt_enmapboxapp/enpt_external_algorithm.py:150 in public method `processAlgorithm`:
+        D102: Missing docstring in public method
+./enpt_enmapboxapp/enpt_algorithm.py:39 in public class `EnPTAlgorithm`:
+        D101: Missing docstring in public class
+./enpt_enmapboxapp/enpt_algorithm.py:69 in public method `processAlgorithm`:
+        D102: Missing docstring in public method
+./enpt_enmapboxapp/version.py:1 at module level:
+        D100: Missing docstring in public module
+./enpt_enmapboxapp/enpt_enmapboxapp.py:47 in public method `__init__`:
+        D107: Missing docstring in __init__
+./enpt_enmapboxapp/enpt_enmapboxapp.py:92 in public method `showAboutDialog`:
+        D102: Missing docstring in public method
+./docs/conf.py:1 at module level:
+        D100: Missing docstring in public module
+./docs/conf.py:132 in public function `setup`:
+        D103: Missing docstring in public function
