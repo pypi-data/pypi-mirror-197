@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dgec2
+Version: 3.1.4
+Summary: To complete the measurement of digital economy
+Author: Y.C.Huang
+Author-email: 1658460876@qq.com
+License: MIT License
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+License-File: LICENSE
+
+Based on the analysis of newspaper text and network dynamics, this index can extract the implied information in newspapers to replace traditional economic data to construct the measurement of digital economy. The advantage of this measure is that it includes both direct hard information and indirect soft factors. In addition, it can dynamically simulate influence indicators to provide suggestions for accurate decision-making of the government
