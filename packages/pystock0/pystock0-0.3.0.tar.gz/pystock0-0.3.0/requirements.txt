@@ -1,0 +1,9 @@
+pandas
+numpy
+yfinance #needed only if you want to download data from yahoo finance
+beautifulsoup4
+requests
+scipy
+statsmodels
+tabulate
+tqdm #Progress bar

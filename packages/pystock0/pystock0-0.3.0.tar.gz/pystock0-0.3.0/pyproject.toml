@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pystock0"
+version = "0.3.0"
+description = "A library for portfolio optimization"
+readme = "README.md"
+authors = [{ name = "Harikesh Kushwaha", email = "harikeshkumar0926@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["stock", "portfolio", "optimization"]
+dependencies = [
+    "pandas",
+    "numpy",
+    "beautifulsoup4",
+    "requests",
+    "scipy",
+    "statsmodels",
+    "tabulate",
+    "tqdm",
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+download = ["black", "yfinance"]
+
+[project.urls]
+Homepage = "https://github.com/Hari31416/pystock"
+repository = "https://github.com/Hari31416/pystock"
+documentation = "https://hari31416.github.io/pystock/"
