@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+localDataBase.egg-info/PKG-INFO
+localDataBase.egg-info/SOURCES.txt
+localDataBase.egg-info/dependency_links.txt
+localDataBase.egg-info/top_level.txt
+localDataBaseFolder/__init__.py
