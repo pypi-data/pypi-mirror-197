@@ -1,0 +1,38 @@
+[build-system]
+    requires = [ "setuptools>=61.2",]
+    build-backend = "setuptools.build_meta"
+
+[project]
+    name = "volumouse"
+    authors = [
+      { name="Pzim-devdata", email="contact@pzim.fr" },
+    ]
+    description = "A Python 3 program that allows you to change the volume with the mouse wheel using it at the four corners of the screen."
+    readme = "PYPI_README.md"
+    requires-python = ">=3.7"
+    classifiers = [
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ]
+    dynamic = ["version", "dependencies"]
+    keywords=['volume', 'mouse', 'screen']
+
+[project.urls]
+    "Homepage" = "https://github.com/pzim-devdata/volumouse"
+    "Bug Tracker" = "https://github.com/pzim-devdata/volumouse/issues"
+
+[project.scripts]
+    volumouse = "volumouse.volumouse:main"
+
+[tool.setuptools]
+    include-package-data = true
+    packages = ['volumouse','volumouse.icons','volumouse.temp','volumouse.test']
+    license-files = ['LICENSE']
+
+[tool.setuptools.dynamic.version]
+    attr = "volumouse.__version__.__version__"
+
+[tool.setuptools.dynamic.dependencies]
+    file = ["requirements.txt"]
+
