@@ -1,0 +1,23 @@
+## pyproject.toml
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "alexrasero_sales"
+version = "0.0.1"
+authors = [
+    { name="alexrasero", email="alexrasero@gmail.com" },
+]
+description = "My customized ORM on Sales"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/AlejandroRasero/ORMBigData/sales"
+"Bug Tracker" = "https://github.com/AlejandroRasero/ORMBigData/sales/issues"
