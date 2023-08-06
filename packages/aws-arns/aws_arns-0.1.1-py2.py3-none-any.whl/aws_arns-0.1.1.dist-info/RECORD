@@ -1,0 +1,11 @@
+aws_arns/__init__.py,sha256=pi9PMw065QcscKnmQdbOeM4UamnFnQ0qpcOSYbjs_10,384
+aws_arns/_version.py,sha256=3ngZz3_QoERdhI7hz4p3JzJ6Msem0N5631SEIjary1M,93
+aws_arns/compat.py,sha256=5oV58kWW30Ayh8Jr-7KoQSDpX2pKkHMliY2kYAEujB0,208
+aws_arns/model.py,sha256=VoEekX9tZYB-6oUVNHwsLa3ZU9hfBraB7kW7TWii2b8,2191
+aws_arns/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+aws_arns-0.1.1.dist-info/AUTHORS.rst,sha256=SP3-CIUjfe7WJ7FTPvXuQAkBHk2kyhKOiUYkmQ6IrfA,484
+aws_arns-0.1.1.dist-info/LICENSE.txt,sha256=hn4jkiC3f5qBQwGBt0H6Ih__uIX-7Fbtu4A15_MF45k,1118
+aws_arns-0.1.1.dist-info/METADATA,sha256=4VqDltTM-3_RIEKI7JB0loYQojjokZQvS23XBunoi8g,4148
+aws_arns-0.1.1.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+aws_arns-0.1.1.dist-info/top_level.txt,sha256=FXOi2rUhyuqCkiaij4ENuribpzkIk2emeyT-r2kLBWo,9
+aws_arns-0.1.1.dist-info/RECORD,,
