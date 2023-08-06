@@ -1,0 +1,11 @@
+cligpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cligpt/__main__.py,sha256=0g3iknXOS9gZUcpL_trgAcuCJnZZKjdsT_xt61WOVb4,60
+cligpt/cli.py,sha256=V7TELr1H3PgdwfCckKDTEWc5sbdQBdBex6X7AnYns-c,861
+cligpt/cligpt.py,sha256=no6h0aP7Qjh0gJv4EuJYGYf-g6LDzuooi5S-IwGKqlw,5436
+cligpt/config.json,sha256=7FoVsEH1v3DRE7AGaWiaUe2Fyzk8FVVo4e_EncOsAyQ,250
+cligpt-2.6.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+cligpt-2.6.dist-info/METADATA,sha256=gDZBzpH9oNkjw800CSN-FqgRRwSdH2H1Dt0RivDUsNY,927
+cligpt-2.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cligpt-2.6.dist-info/entry_points.txt,sha256=s_FDD8rlLpmN5lx5twdZi-oQe2afpLs4x6HAO0twPW4,43
+cligpt-2.6.dist-info/top_level.txt,sha256=WA7nrt4bgTicBsLk8dvDNBAY7czycHDEm84CJTYOqeU,7
+cligpt-2.6.dist-info/RECORD,,
