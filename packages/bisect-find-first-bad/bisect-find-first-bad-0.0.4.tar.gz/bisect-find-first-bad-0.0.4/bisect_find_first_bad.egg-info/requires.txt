@@ -1,0 +1,5 @@
+
+[dev]
+bumpver
+pre-commit
+pytest

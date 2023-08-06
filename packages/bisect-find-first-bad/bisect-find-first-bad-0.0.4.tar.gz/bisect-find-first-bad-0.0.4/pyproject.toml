@@ -1,0 +1,128 @@
+[project]
+name = "bisect-find-first-bad"
+version = "0.0.4"
+authors = [
+    {name = "Alexander Rodionov", email = "tandav@tandav.me"},
+]
+description = "tool like `git bisect run` but checks arbitrary options and not uses git to switch versions"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "bumpver",
+    "pre-commit",
+    "pytest",
+]
+
+[project.urls]
+source = "https://github.com/tandav/bisect-find-first-bad"
+issues = "https://github.com/tandav/bisect-find-first-bad/issues"
+"release notes" = "https://github.com/tandav/bisect-find-first-bad/releases"
+
+# ==============================================================================
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+# ==============================================================================
+
+[tool.bumpver]
+current_version = "v0.0.4"
+version_pattern = "vMAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    '^version = "{pep440_version}"',
+    '^current_version = "{version}"',
+]
+"bisect_find_first_bad.py" = [
+    "^__version__ = '{pep440_version}'",
+]
+
+# ==============================================================================
+
+[tool.mypy]
+# todo: review this
+pretty = true
+show_traceback = true
+color_output = true
+allow_redefinition = false
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+implicit_reexport = false
+no_implicit_optional = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
+strict_equality = true
+strict_optional = true
+warn_no_return = true
+warn_redundant_casts = true
+warn_return_any = true
+warn_unreachable = true
+warn_unused_configs = true
+warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+disallow_untyped_defs = false
+
+# ==============================================================================
+
+[tool.ruff]
+extend-select = [
+    "W",
+    "C",
+    "I",
+    "SIM",
+    "TCH",
+    "C4",
+    "S",
+    "BLE",
+    "B",
+    "T10",
+    "INP",
+    "PIE",
+    "PL",
+    "RUF",
+]
+ignore = [
+    "E501",  # line too long
+]
+
+[tool.ruff.per-file-ignores]
+"tests/*" = ["S101", "PLR2004"]
+
+[tool.ruff.isort]
+force-single-line = true
+
+# ==============================================================================
+
+[tool.pylint.messages-control]
+disable = [
+    "C0116",
+    "C0103",
+    "C0115",
+    "C0114",
+    "R0903",
+    "E1101",
+    "E0401",
+]
+
+# ==============================================================================
+
+[tool.autopep8]
+ignore="E501,E701"
+recursive = true
+aggressive = 3
+
+# ==============================================================================
