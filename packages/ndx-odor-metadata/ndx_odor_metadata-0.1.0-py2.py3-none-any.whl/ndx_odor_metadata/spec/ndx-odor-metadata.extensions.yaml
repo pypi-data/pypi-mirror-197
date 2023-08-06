@@ -1,0 +1,155 @@
+groups:
+- neurodata_type_def: OdorMetaData
+  neurodata_type_inc: DynamicTable
+  default_name: odor_table
+  doc: A table for odor stimulus metadata. This is mainly for odor/chemical stimuli,
+    '            'but can also include non-chemical stimuli in addition.
+  attributes:
+  - name: description
+    dtype: text
+    default_value: Odor stimulus metadata table
+    doc: Description of this odor stimulus metadata table
+    required: false
+  - name: comments
+    dtype: text
+    default_value: ''
+    doc: Additional comments and notes about the table if needed
+    required: false
+  datasets:
+  - name: stim_name
+    neurodata_type_inc: VectorData
+    dtype: text
+    doc: Stimulus name, e.g. "hexanal" or "sound"
+  - name: pubchem_id
+    neurodata_type_inc: VectorData
+    dtype: float
+    default_value: .nan
+    doc: PubChem ID, `NaN` indicates non-(standard)-odor stimulus
+    quantity: '?'
+  - name: raw_id
+    neurodata_type_inc: VectorData
+    dtype: text
+    doc: Raw acquisition stimulus ID. Will be converted to `str`.
+  - name: raw_id_dtype
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: The actual dtype of `raw_id` value. Useful for (re)casting.
+    quantity: '?'
+  - name: stim_id
+    neurodata_type_inc: VectorData
+    dtype: text
+    doc: Preferred stimulus ID, which can be used to remap acquisition stimulus id
+      `raw_id`. Will be converted to `str`. If not explicitly given, will copy from
+      `raw_id`
+    quantity: '?'
+  - name: stim_id_dtype
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: The actual dtype of `stim_id` value. Useful for (re)casting.
+    quantity: '?'
+  - name: stim_types
+    neurodata_type_inc: VectorData
+    dtype: text
+    doc: Type(s) of stimulus, e.g. 'odor', 'sound', 'control', 'CS', 'US', ...
+  - name: stim_types_index
+    neurodata_type_inc: VectorIndex
+    doc: Index for `stim_types`
+  - name: stim_description
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: Human-readable description, notes, comments of each stimulus
+    quantity: '?'
+  - name: chemical_dilution_type
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: Type of dilution, e.g. 'volume/volume', 'vaporized'
+    quantity: '?'
+  - name: chemical_concentration
+    neurodata_type_inc: VectorData
+    dtype: float
+    default_value: .nan
+    doc: Concentration of chemical
+    quantity: '?'
+  - name: chemical_concentration_unit
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: Unit of concentration, e.g. "%" or "M"
+    quantity: '?'
+  - name: chemical_solvent
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: Solvent to dilute the chemicals in, e.g. 'mineral oil'
+    quantity: '?'
+  - name: chemical_provider
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: Provider of the chemicals, e.g. 'Sigma'
+    quantity: '?'
+  - name: nonchemical_details
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: Information about non-chemical/odor stimulus, e.g. 'sound' frequencies
+    quantity: '?'
+  - name: is_validated
+    neurodata_type_inc: VectorData
+    dtype: bool
+    default_value: false
+    doc: Whether the stimulus, if chemical/odor, is validated against PubChem (or
+      other sources listed in `validation_info`.If does not have a valid PubChem ID,
+      this assumes to default `False` value
+    quantity: '?'
+  - name: validation_details
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: Additional information/details/notes about stimulus validation, e.g. source,
+      software used & version, validation date, ...
+    quantity: '?'
+  - name: pubchem_cid
+    neurodata_type_inc: VectorData
+    dtype: float
+    default_value: .nan
+    doc: PubChem CID, `NaN` indicates non-(standard)-odor stimulus
+    quantity: '?'
+  - name: chemical_IUPAC
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: Official chemical IUPAC name
+    quantity: '?'
+  - name: chemical_SMILES
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: Canonical SMILES
+    quantity: '?'
+  - name: chemical_synonyms
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: ''
+    doc: List of chemical synonyms
+    quantity: '?'
+  - name: chemical_synonyms_index
+    neurodata_type_inc: VectorIndex
+    doc: Index for `chemical_synonyms`
+    quantity: '?'
+  - name: chemical_molecular_formula
+    neurodata_type_inc: VectorData
+    dtype: text
+    default_value: N/A
+    doc: Molecular formula of chemical used
+    quantity: '?'
+  - name: chemical_molecular_weight
+    neurodata_type_inc: VectorData
+    dtype: float
+    default_value: .nan
+    doc: Molecular weight of chemical used
+    quantity: '?'

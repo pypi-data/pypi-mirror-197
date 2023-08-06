@@ -1,0 +1,10 @@
+ndx_odor_metadata/VERSION,sha256=atlhOkVXmNbZLl9fOQq0uqcFlryGntaxf1zdKyhjXwY,5
+ndx_odor_metadata/__init__.py,sha256=KPObkIWC7zFZHvxg2dSrLfa_eKrEwV8wBePqnnZC6VY,15681
+ndx_odor_metadata/utils.py,sha256=etnJLPaX2LxTD4teEgOTWXr5yL5ENoG0z37FKdEbIVE,4990
+ndx_odor_metadata/spec/ndx-odor-metadata.extensions.yaml,sha256=mBuN4xdQ9SF8hwsGiHd9T-t_6lrnWUXcsQFjPvcdnzs,4881
+ndx_odor_metadata/spec/ndx-odor-metadata.namespace.yaml,sha256=1CVb-hlVBkgBQ6QMTQxKj-QXHun7-07CayJC-xk9zn4,334
+ndx_odor_metadata-0.1.0.dist-info/LICENSE.txt,sha256=4VtnV6J9nmscn4VMT2LpCSQVeFLF9Jz6a6teRjs0NQU,1517
+ndx_odor_metadata-0.1.0.dist-info/METADATA,sha256=gwvEgkBeV0xCrXTMhc6J5kZL6MyH_LZKYxlZr72UjiQ,4526
+ndx_odor_metadata-0.1.0.dist-info/WHEEL,sha256=a-zpFRIJzOq5QfuhBzbhiA1eHTzNCJn8OdRvhdNX0Rk,110
+ndx_odor_metadata-0.1.0.dist-info/top_level.txt,sha256=53vCuUKyusY5AZLOv4Hn091SKVHuXXGNneWrQHoASPc,18
+ndx_odor_metadata-0.1.0.dist-info/RECORD,,

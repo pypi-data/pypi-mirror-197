@@ -1,0 +1,15 @@
+namespaces:
+- author:
+  - Tuan Pham
+  contact:
+  - tuanhpham@brown.edu
+  doc: NWB Extension for documenting odor stimulus metadata
+  name: ndx-odor-metadata
+  schema:
+  - namespace: core
+  - namespace: hdmf-common
+    neurodata_types:
+    - DynamicTable
+    - VectorData
+  - source: ndx-odor-metadata.extensions.yaml
+  version: 0.1.0
