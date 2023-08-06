@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.poetry]
+name = "cli-dev-chat"
+version = "0.2.0"
+description = "A command-line interface for interacting with OpenAI chat language models"
+authors = ["Jeremy Baron <jbaron34@gmail.com>"]
+license = "MIT"
+packages = [
+    { include = "chatgpt", from = "." },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+openai = "*"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+chatgpt = "chatgpt.__main__:main"
