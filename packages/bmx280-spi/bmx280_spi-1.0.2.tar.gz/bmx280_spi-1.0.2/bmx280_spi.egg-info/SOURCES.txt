@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+bmx280_spi/__init__.py
+bmx280_spi/__main__.py
+bmx280_spi.egg-info/PKG-INFO
+bmx280_spi.egg-info/SOURCES.txt
+bmx280_spi.egg-info/dependency_links.txt
+bmx280_spi.egg-info/requires.txt
+bmx280_spi.egg-info/top_level.txt
