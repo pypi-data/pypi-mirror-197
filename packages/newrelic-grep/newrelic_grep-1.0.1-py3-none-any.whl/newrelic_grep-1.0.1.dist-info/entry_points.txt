@@ -1,0 +1,3 @@
+[console_scripts]
+nrgrep=newrelic_grep.cli_nrgrep:main
+
