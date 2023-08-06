@@ -1,0 +1,11 @@
+README.md
+setup.py
+darksecret/__init__.py
+darksecret/base.py
+darksecret/fernet.py
+darksecret/secret.py
+darksecret.egg-info/PKG-INFO
+darksecret.egg-info/SOURCES.txt
+darksecret.egg-info/dependency_links.txt
+darksecret.egg-info/requires.txt
+darksecret.egg-info/top_level.txt
