@@ -1,0 +1,10 @@
+README.md
+setup.py
+QImageWidget/QImageWidget.py
+QImageWidget/QImageWidgetPs.py
+QImageWidget/__init__.py
+QImageWidget.egg-info/PKG-INFO
+QImageWidget.egg-info/SOURCES.txt
+QImageWidget.egg-info/dependency_links.txt
+QImageWidget.egg-info/requires.txt
+QImageWidget.egg-info/top_level.txt
