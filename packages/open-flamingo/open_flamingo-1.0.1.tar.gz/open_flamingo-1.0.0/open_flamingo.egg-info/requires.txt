@@ -1,0 +1,15 @@
+einops
+einops-exts
+transformers
+torch
+torchvision
+pillow
+more-itertools
+datasets
+braceexpand
+webdataset
+wandb
+nltk
+bloom_filter2
+scipy
+inflection
