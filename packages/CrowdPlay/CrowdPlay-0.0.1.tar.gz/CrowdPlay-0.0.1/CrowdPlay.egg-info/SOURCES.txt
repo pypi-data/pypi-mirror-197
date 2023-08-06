@@ -1,0 +1,5 @@
+pyproject.toml
+CrowdPlay.egg-info/PKG-INFO
+CrowdPlay.egg-info/SOURCES.txt
+CrowdPlay.egg-info/dependency_links.txt
+CrowdPlay.egg-info/top_level.txt
