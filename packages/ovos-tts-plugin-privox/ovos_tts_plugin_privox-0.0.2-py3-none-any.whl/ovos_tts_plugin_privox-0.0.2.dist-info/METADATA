@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ovos-tts-plugin-privox
+Version: 0.0.2
+Summary: A tts plugin for ovos using privox
+Home-page: https://github.com/OpenVoiceOS/ovos-tts-plugin-privox
+Author: JarbasAi
+Author-email: jarbasai@mailfence.com
+License: Apache-2.0
+Keywords: mycroft ovos plugin tts
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ovos-plugin-manager (>=0.0.1)
+Requires-Dist: requests
+
+UNKNOWN
+
+
