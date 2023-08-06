@@ -1,0 +1,11 @@
+pystatacons/__init__.py,sha256=11SrsCqrjxvuISOMN1qImqBh8bE_0zq-o20o7tEEVOI,1719
+pystatacons/configuration.py,sha256=Kkfn9rA1yMKaPP-6iU85nGR-Bnk2Ur7qukPWURkuFxc,1854
+pystatacons/deciders.py,sha256=kAf-LSINRM1lz0ampAiUmkBITcDhO1wYmNQNLtAOVYM,1270
+pystatacons/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pystatacons/special_sigs.py,sha256=VVRgTKgp6EzWkFNya71Ctwv5Bzw4asaAq7auso9--dY,4023
+pystatacons/stata_utils.py,sha256=p9DTPOwMawmS81vyKogDybtVG6DdI0pB1pqWpYToE3Q,25667
+pystatacons-3.0.1.dist-info/LICENSE,sha256=tBuQvEnu-MozhzBOg5roBZuRfoA0YChJO8zAWXpH-70,20566
+pystatacons-3.0.1.dist-info/METADATA,sha256=65lCWhUKaHKyhFYBGLT8_bIBCpnOPyuV_u_SaPf_h2s,509
+pystatacons-3.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pystatacons-3.0.1.dist-info/top_level.txt,sha256=GT3VnKnNPHp-2lzcgK6R5JQrhYnBLewGzFu8xygEyI8,12
+pystatacons-3.0.1.dist-info/RECORD,,
