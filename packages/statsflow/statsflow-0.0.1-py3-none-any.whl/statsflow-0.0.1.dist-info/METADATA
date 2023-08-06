@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: statsflow
+Version: 0.0.1
+Summary: This Python package consist of various statistical modules and function that can be  very useful for data preprocessing,data transformation,EDA and seamlessly improves the performance of Ml-Pipeline
+Home-page: https://github.com/ragulslrk/statsflow_pkgs
+Author: Ragul s
+License: UNKNOWN
+Keywords: statistics,plotting,probplot,data transformation
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: License
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
+# StatsFLow Library
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
+[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)   
+
+## Functionality of the StatsFLow
+- This Python package consist of various statistical modules and function that can be  very
+useful for data preprocessing,data transformation,EDA and seamlessly improves the performance of Ml-Pipeline.
+
+## Usage
+
+- Make sure you have Python installed in your system.
+- Run Following command in the CMD.
+```
+  pip install statsflow
+```
+## Example for  probplot_transform() function
+
+```
+# importing the data  
+df=pd.read_csv("data/UCI_Credit_Card.csv")
+df.head()
+ ```
+
+```
+#import probplot_transform function
+from statsflow import probplot_transform
+
+```
+
+```
+# apply the probplot_transform function
+
+df['bill']=probplot_transform(feature=df['LIMIT_BAL'],trans_method='default')
+
+
+
+
+```
+<img src="https://github.com/ragulslrk/img/blob/main/default.png">
+
+
+# Apply the probplot_transform function with various transformation['log','box_cox','recip','sqrt','expo']
+
+```
+#Exponential transformation
+df['bill_expo']=probplot_transform(feature=df['LIMIT_BAL'],trans_method='expo')
+```
+<img src="https://github.com/ragulslrk/img/blob/main/expo.png">
+
+
+```
+#Square root transformation
+df['bill_sqrt']=probplot_transform(feature=df['LIMIT_BAL'],trans_method='sqrt')
+```
+<img src="https://github.com/ragulslrk/img/blob/main/sqrt.png">
+
+```
+# Box-cox  transformation
+df['bill_box_cox']=probplot_transform(feature=df['LIMIT_BAL'],trans_method='box_cox')
+```
+<img src="https://github.com/ragulslrk/img/blob/main/box-cox.png">
+
+```
+# Logarithmic Transformation
+df['bill_log']=probplot_transform(feature=df['LIMIT_BAL'],trans_method='log')
+```
+<img src="https://github.com/ragulslrk/img/blob/main/logarthimic.png">
+
+```
+#Reciprocal Transformation 
+df['bill_log']=probplot_transform(feature=df['LIMIT_BAL'],trans_method='recip')
+
+```
+<img src="https://github.com/ragulslrk/img/blob/main/recip.png">
+
+
+## Note 
+-For Initial version i have only include the probplot_transform function.soon i will try to implement new statistical functions.
+
+## Probplot Transform Function:
+### Description:
+This function used to interpret whether the given data follows normal distribution by using histogram and probplot. if the data not follows normal distribution then with the help of the trans_method param it can transform the data using Box-Cox,Logarithmic,Reciprocal,Square Root,Exponential Transformation.
+
+## Args: 
+[feature(pd.Series),trans_method('default','log','box_cox','recip','sqrt','expo')]
+
+
+
+
