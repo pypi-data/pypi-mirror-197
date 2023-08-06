@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: kishu
+Version: 0.1.0
+Summary: Intelligent Python Checkpointing
+Home-page: https://github.com/illinoisdata/kishu
+Author: Yongjoo Park
+Author-email: pyongjoo@umich.edu
+License: License not determined
+License-File: LICENSE
+
+Intelligent python checkpointing framework for machine learning and scientific computing. Under development as part of a research project at the University of Illinois at Urbana-Champaign.
