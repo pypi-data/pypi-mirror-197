@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: quantum6g
+Version: 1.3.0
+Summary: This library is an automatic artificial intelligence library that combines Quantum and 6G technologies.
+Home-page: https://github.com/quantumpiya/quantum6g
+Author: Quantum PIYA
+Author-email: emirhan@piya.ai
+Keywords: quantum machine-learning,quantum cnn,qcnn,quantum convolutional neural network,quantum 6g,6g,quantum,AI,quantum neural networks,qnn,quantum ai,artificial intelligence
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: pennylane
+
+
+# Quantum6G: Auto AI Advanced Quantum Neural Networks with 6G Technology
+Quantum6G is an automatic artificial intelligence library that combines quantum computing and 6G technologies to build advanced quantum neural networks. It provides a high-level interface for constructing, training, and evaluating quantum neural networks. This library was developed by [Quantum PIYA](https://www.piya.ai).
+
+## Installation
+To install the Quantum6G library, simply run the following command: 
+
+```
+pip install quantum6g
+```
+
+## Getting Started
+Here is a simple example to get started with the Quantum6G library:
+
+``` 
+from quantum6g import Quantum6G
+```
+
+## Create a quantum neural network
+
+``` quantum_6g = Quantum6G(output_unit=1, num_layers=4, epochs=2, loss='mse', input=4, batch_size=256, learning_rate=0.2)```
+
+## Build the model
+``` 
+quantum_6g = quantum_6g.build_model(X_train, y_train, X_test, y_test)
+```
+
+## Evaluate the model
+``` 
+print("Accuracy: {:.2f}%".format(quantum_6g[1][1] * 100))
+print("Loss: {:.2f}%".format(quantum_6g[1][0] * 100))
+```
+
+## Build and Fit Quantum6G_KNN --- from v1.2.5V
+``` 
+quantum_knn = Quantum6G_KNN(n_qubits=4, n_neighbors=6)
+quantum_knn.fit(X_train, y_train)
+```
+## Evaluate the Quantum6G_KNN model
+``` 
+quantum_pred = quantum_knn.predict(X_test,y_test)
+quantum_accuracy = accuracy_score(y_test, quantum_pred)
+print(f"Accuracy of Quantum6G_KNN: {quantum_accuracy:.3f}")
+```
+## Build Quantum Model for QCNN (Quantum Convolutional Neural Network) --- from v1.3.0V
+``` 
+q_cnn = QCNN(
+    input_shape=(2, 2, 1),
+    output_neurons=10,
+    loss_function="sparse_categorical_crossentropy",
+    epochs=5,
+    batch_size=32,
+    optimizer="adam",
+    n_layers=1,
+    n_wires=4,
+)
+q_cnn_model = q_cnn.build_model()
+
+```
+## Evaluate the QCNN model
+``` 
+q_cnn.benchmark(q_cnn_model, x_train_resized[..., np.newaxis], y_train, x_test_resized[..., np.newaxis], y_test)
+
+```
+
+## Donate
+You can donate for this project!
+
+**ETH - ERC20**: 0xa6F7170Ca63cf284A8ba6339b565445468E04Ff2
+
+**BTC - Bech32**: bc1qfek2lun4tc7d7zftz0v4auxc9dzn77h9xq9x26v02u6s3rgl7hesxt4r2h
+
+**USDT - TRC20**: TWVcF24DjPnGfhegmJjBQw2iE4vxQBuYTY
+
+## Documentation
+For more information on how to use the Quantum6G library, please refer to the documentation available at [the soon].
+
+## Contributing
+We welcome contributions to the Quantum6G library. If you would like to contribute, please fork the repository and make your changes, then submit a pull request.
+
+## License
+The Quantum6G library is open source and released under the MIT license. For more information, please see the [LICENSE](https://choosealicense.com/licenses/mit/) file.
+
