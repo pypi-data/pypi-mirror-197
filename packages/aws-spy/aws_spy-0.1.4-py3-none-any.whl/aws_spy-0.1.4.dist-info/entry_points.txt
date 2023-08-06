@@ -1,0 +1,3 @@
+[console_scripts]
+aws-spy=aws_spy.helpers.cli:cli_handler
+
