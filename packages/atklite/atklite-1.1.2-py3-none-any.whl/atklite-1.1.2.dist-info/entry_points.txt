@@ -1,0 +1,3 @@
+[console_scripts]
+atk-info = atklite:cli
+file-info = atklite:cli
