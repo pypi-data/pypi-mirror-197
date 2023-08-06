@@ -1,0 +1,8 @@
+docker_minecraft/__init__.py,sha256=JRRGt63ph3LpZol_GWBGQ-HBVhFioEbBSB6KKc3vvdk,6732
+docker_minecraft/__main__.py,sha256=FJDgcqT0KKOxop7hxqhzanXsV5a29k03tBNmeBWTzDo,817
+docker_minecraft/lib.py,sha256=0yUFBuHlm70OwmUMsRNoDl3s3E14__0D3pR3AjUoQ9E,11771
+docker_minecraft-0.2.0.dist-info/entry_points.txt,sha256=GgyA8YlCvg0Fae4k5pBj0a0XJ0nVWoZkhRi4nETrWPs,70
+docker_minecraft-0.2.0.dist-info/LICENSE.md,sha256=mX-1AbDRaGzgc9FVntrXVA684WGgnow9Jst2KwxAZ6s,35439
+docker_minecraft-0.2.0.dist-info/METADATA,sha256=D4lu4v0TRSj3D6jzfl3T1Qmy35O8mIqCZ1o_G-XkKBs,1443
+docker_minecraft-0.2.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+docker_minecraft-0.2.0.dist-info/RECORD,,

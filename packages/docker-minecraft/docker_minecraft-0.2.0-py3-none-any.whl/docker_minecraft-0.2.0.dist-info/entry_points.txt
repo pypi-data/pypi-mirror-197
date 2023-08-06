@@ -1,0 +1,3 @@
+[console_scripts]
+docker-minecraft=docker_minecraft:docker_minecraft
+
