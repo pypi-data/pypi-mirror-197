@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PyHelpTools
+Version: 0.1.0
+Summary: HelpPy are tools to help develepors
+Home-page: https://github.com/Dashtiss/PyHelpTools
+Author: Dashtiss
+Author-email: dashtiss@gmail.com
+License: UNKNOWN
+Description: # HelpPy
+        
+        ## About
+        This Python library on PyPi is just for helping develpors and comman programers with helpful features
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

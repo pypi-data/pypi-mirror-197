@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+HelpPy/__init__.py
+PyHelpTools.egg-info/PKG-INFO
+PyHelpTools.egg-info/SOURCES.txt
+PyHelpTools.egg-info/dependency_links.txt
+PyHelpTools.egg-info/top_level.txt
