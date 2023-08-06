@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: eFISHent
+Version: 0.0.3
+Summary: RNA FISH oligos/probes design tool.
+Home-page: https://github.com/bbquercus/efishent/
+Author: Bastian Eichenberger
+Author-email: bastian@eichenbergers.ch
+License: MIT
+Project-URL: Documentation, https://github.com/BBQuercus/efishent/wiki
+Project-URL: Changelog, https://github.com/BBQuercus/efishent/releases
+Project-URL: Issue Tracker, https://github.com/bbquercus/efishent/issues
+Keywords: biomedical,bioinformatics,RNA probe design
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/plain
+Requires-Dist: biopython
+Requires-Dist: gtfparse
+Requires-Dist: luigi
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: pyomo
+Requires-Dist: pysam
+
+
+eFISHent is a command-line based tool to facilitate the creation of eFISHent RNA FISH oligonucleotide probes.
+This is just the python code which is reliant on multiple compiled bioinformatics libaries.
+Therefore please install other dependencies separately or use the bioconda package.
