@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bstb
+Version: 0.1.1
+Summary: Breastbone - Geocaching toolbox
+License: GPL-3.0
+Author-email: Cees van de Griend <cees@griend.eu>
+Requires-Python: >=3.11
+Project-URL: Source, https://github.com/ceesvandegriend/bstb
+Description-Content-Type: text/markdown
+
+# best / breastbone - Geocaching toolbox
+
+N.B. `breastbone` is a random generated project name and has no special meaning.
+
