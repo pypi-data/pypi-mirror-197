@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "WaveLinkCord"
+version = "2.0.33"
+authors = [
+  { name="Zyb3rWolfi ", email="Zyb3rWolfi@proton.me" },
+]
+dynamic = ["dependencies"]
+description = "A robust and powerful Lavalink wrapper for Nextcord"
+readme = "README.rst"
+requires-python = ">=3.10"
+classifiers = [
+        "License :: OSI Approved :: MIT License",
+        "Intended Audience :: Developers",
+        "Natural Language :: English",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Topic :: Internet",
+        "Topic :: Software Development :: Libraries",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Topic :: Utilities",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/PythonistaGuild/Wavelink"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
