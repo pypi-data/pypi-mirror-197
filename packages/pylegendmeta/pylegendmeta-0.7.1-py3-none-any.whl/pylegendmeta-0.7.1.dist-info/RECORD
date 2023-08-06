@@ -1,0 +1,17 @@
+legendmeta/__init__.py,sha256=mcPdFvPKuVWxUEZIuvwLb0hWjn0j1AZ6HmXs8cm-SDk,1062
+legendmeta/_version.py,sha256=aZsrfNsToeN_F2EJucdCqxxZDA7l3i01CFDZIi9bvKQ,160
+legendmeta/catalog.py,sha256=TSfuoFeQrjMmw8KR2gMEYcuJG1UME02tyvm3Cisfdpo,6443
+legendmeta/core.py,sha256=3Zwdm7l_S1KzoENDgLEe_VihR992DEu8w4wvTXAOmIk,4661
+legendmeta/jsondb.py,sha256=9mIAHouHePawNxkkaxDC3LMtkqCSeq_btqCjBH_HAAg,14257
+legendmeta/police.py,sha256=as2Hr_9owwqnb0_QTGASn2BQLJDEf1ZyIuZCfgOj97M,5684
+legendmeta/scdb_tables.py,sha256=I6fS1tKlPnuk3-NpFLs1eLpM2v1ged8Q7dP5Pu5o_HE,6218
+legendmeta/slowcontrol.py,sha256=sqOq9wCZDOXHcQXbLsatYYFiMcmjsrgemwKGXzFgnDY,10842
+legendmeta/templates/auxs-channel.json,sha256=AkCZQFmwYsaHEQJ5G9PJiO2-kbrVsHZ4Wg0DAe5qITg,178
+legendmeta/templates/geds-channel.json,sha256=APWm0zgIao7OftqMhHOylk39Af8jc-xAg7lUuldRVIc,476
+legendmeta/templates/spms-channel.json,sha256=pDdHBgX1C-LeVA1uIDOKpGYeJiwiocGiAyvplEiAYfQ,433
+pylegendmeta-0.7.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pylegendmeta-0.7.1.dist-info/METADATA,sha256=nJDsoKhJvXH-srOsZtEo6MoZ76BQrIASNSpHkDbSRmg,3109
+pylegendmeta-0.7.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pylegendmeta-0.7.1.dist-info/entry_points.txt,sha256=KKGGv8GcHqqk35twjQAD3qEZ1TQqRIov9bPsrLReK7o,89
+pylegendmeta-0.7.1.dist-info/top_level.txt,sha256=eH83sBgpPgTZVUMXsJbnHDmCFxFr6H3_RSisKPpF_Rc,11
+pylegendmeta-0.7.1.dist-info/RECORD,,
