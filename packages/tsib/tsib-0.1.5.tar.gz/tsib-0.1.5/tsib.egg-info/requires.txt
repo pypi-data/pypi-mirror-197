@@ -1,0 +1,11 @@
+Pyomo>=4.2
+cdsapi
+matplotlib>=3.0.0
+numpy
+openpyxl
+pandas>=0.24.0
+pvlib>=0.7.0
+tinydb
+tsam>=1.0.4
+tsorb
+xlrd
