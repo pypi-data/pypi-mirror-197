@@ -1,0 +1,9 @@
+cloudimg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudimg/aws.py,sha256=FoSIedlX-wN_ycYaUIj3nNbZRKaR_zBnV2CnLxQxV3E,24639
+cloudimg/common.py,sha256=axOZiIyxN5uftT0XzJNLOlPZz4EU0VUJo56hPuUBjbE,4074
+cloudimg/ms_azure.py,sha256=U4EEtJ5hElyAU-HlA5I0Ev7emtrUFbfJYHh3WF6ZNcU,19075
+cloudimg-1.5.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+cloudimg-1.5.0.dist-info/METADATA,sha256=oO5-X_X74zf6a5KXbpYNbYaeAWvERs1vrJ5AsXcCOmA,864
+cloudimg-1.5.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+cloudimg-1.5.0.dist-info/top_level.txt,sha256=_kEMoDx4kj7aK9WQXRywUy4ubqcZzU7UlBAec0WVUD0,9
+cloudimg-1.5.0.dist-info/RECORD,,
