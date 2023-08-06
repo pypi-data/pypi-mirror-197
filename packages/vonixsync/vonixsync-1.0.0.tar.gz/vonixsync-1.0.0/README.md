@@ -1,0 +1,143 @@
+# vonixsync
+
+vonixsync is a python library for syncronization/database mirroring of the vonix database
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install vonixsync.
+
+```bash
+pip install vonixsync
+```
+
+## Usage
+
+Import the DBConfigs class. Provide the parameters used to construct the string used to connect to the database, according to its singular dialect.
+
+Import the Syncronizer Class to effectively syncronize the data to your database
+
+```python
+import vonixsync
+from vonixsync import DBConfigs
+from vonixsync import Syncronizer
+
+
+connection = DBConfigs(
+    database_manager = "postgres",
+    user ="postgres",
+    password="super_secret_password",
+    hostname="localhost",
+    database="my_database",
+    port = 5432
+)
+
+token = str(token_given_by_vonix)
+
+database = connection.connect
+
+Syncronizer(token, database).syncronize()
+
+```
+Now run the code.
+
+* The current version supports connection only to postgres databases.
+
+* The syncronizer works with the merge concept. This means it will either insert or update the data in the database based on the primary keys of the table.
+
+* All optional parameters can be declared together without interfering one with the other.
+
+## Syncronizer Options
+
+Besides the obligatory token and database_string parameters the Syncronizer has other options:
+
+### option
+
+The option to syncronize only one column. The parameter must be declared in string format
+
+```python
+Syncronizer(token, database, option= "agent").syncronize()
+```
+
+- If no option is declared, the syncronizer will mirror all tables of vonix database.
+
+### timestamp
+
+The timestamp parameter must be declared in timestamp format. It is a filter for the summary tables.
+
+If no timestamp is provided:
+- the syncronizer will look for the most recent date inserted in the mirrored database and mirror from this date on. 
+
+- If no data is found in the mirrored database the syncronizer will mirror data from the day before the current date.
+
+```python
+Syncronizer(token, database, option= "agent_summary", timestamp = 1679067723 ).syncronize()
+```
+
+To syncronize all tables using a particular timestamp, you can declare the timestamp without any option declared.
+
+```python
+Syncronizer(token, database, timestamp = 1679067723 ).syncronize()
+```
+### echo
+
+The echo parameter per default is False. But if declared as True it will enable the logging of all ORM commands during the active phase of the syncronizer.
+This a feature provided by the SQLAlchemy library. It can be set with or without other optional parameters.
+
+```python
+Syncronizer(token, database, echo = True ).syncronize()
+```
+
+### agent_event_id
+
+The agent_event_id parameter must be declared in number format. It is a filter for the agent_event table. 
+
+if the agent_event_id parameter is not provided:
+
+- the syncronizer will look for the most recent agent_event_id (max value) in the mirrored database and mirror from this id on.
+
+- If no data is found in database mirrored, the syncronizer will insert from the smallest agent_event_id found in the vonix database 
+
+```python
+Syncronizer(token, database, agent_event_id = 74636).syncronize()
+```
+For single table merge
+
+```python
+Syncronizer(token, database, option = "agent_event", agent_event_id = 74636).syncronize()
+```
+
+# Warnings and errors
+
+ If an error is spotted during the insertion of a column, the syncronizer will keep the error in an array and log at the end of the table mirroring.
+ 
+ This action will neither stop the insertion/update of the next columns of the table and nor the mirroring of the other tables if the syncronize was configured to execute for other tables
+
+ ```bash
+
+RequestError: No data found.
+
+
+Status: 200
+
+
+finishing agent syncronization with no changes committed to corresponding table
+
+                                           
+Error during insertion:
+                    
+{<class 'src.vonixsync.utils.exception_classes.NullPages'>: 'No new data found from api Request'}
+
+
+syncronization of call, call_rating, profiler and tree table finalized with warning  
+```
+
+Other errors that prevent the connection to the vonix api or the database will also be logged.
+
+
+## Success to syncronize
+
+If no error is spotted during the database mirroring, for each table a success log will appear:
+
+```bash
+syncronization of queue table finalized with success
+```
