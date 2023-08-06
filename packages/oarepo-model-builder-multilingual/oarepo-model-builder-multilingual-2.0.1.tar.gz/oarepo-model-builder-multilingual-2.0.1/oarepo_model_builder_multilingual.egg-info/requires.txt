@@ -1,0 +1,6 @@
+oarepo-model-builder-tests>=2.0.0
+langcodes>=3.3.0
+
+[tests]
+pytest-invenio>=1.4.11
+invenio-records-resources>=1.0.3
