@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: eq_finances
+Version: 0.1.3
+Summary: Uma biblioteca feita com várias funcionalidades, cálculos financeiros básicos e análises financeiras
+Home-page: https://github.com/AnnyelCordeiro/EQFINANCE
+Author: Annyel Cordeiro da Silva
+Author-email: annyel.cds0202@gmail.com
+Maintainer: Antonio Igor Moreira Paixao
+Maintainer-email: igorm5279@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# eq_finances
+#### A biblioteca provém de módulos de cálculos de matemática financeira básicos, analises de investimentos, permitindo que o usuário realize cálculos financeiros complexos, análise de investimentos e construção de modelos financeiros de forma eficiente e personalizada.
+## Vale ressaltar que há módulos que contém a utilização de APIS, para fins de obter informações de ações, dados financeiros, obter taxas de cambio e entre outras análises de dados financeiros.
+
+#
+## Instalação
+```
+pip install eq_finances
+```
+
+#
+## Como utilizar
+```
+from eq_finances import *
+```
+#### Exemplo de aplicabilidade de uma das funções básica: 
+##### *JurosSimples(principal, taxa, tempo)*
+### Exemplo de uso:
+
+```py
+#calcula o valor total (incluindo juros) resultante de um empréstimo com juros simples.
+from eq_finances import * 
+jurossimples = JurosSimples(1000, 0.05, 2)
+print(jurossimples)
+```
+```py
+# Calcula o montante total, incluindo juros compostos, ganho a partir de um capital inicial durante um determinado período de tempo a uma taxa de juros fixa. 
+from eq_finances import *
+juroscomp = JurosCompostos(1000, 0.03, 3)
+print(juroscomp)
+```

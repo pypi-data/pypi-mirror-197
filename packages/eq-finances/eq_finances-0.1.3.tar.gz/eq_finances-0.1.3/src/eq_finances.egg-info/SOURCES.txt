@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/eq_finances/__init__.py
+src/eq_finances/eq_finances.py
+src/eq_finances.egg-info/PKG-INFO
+src/eq_finances.egg-info/SOURCES.txt
+src/eq_finances.egg-info/dependency_links.txt
+src/eq_finances.egg-info/requires.txt
+src/eq_finances.egg-info/top_level.txt
