@@ -1,0 +1,14 @@
+include LICENSE
+include README.rst
+include pokedream/py.typed
+include pokedream/features/scaffolds/cargo/Cargo.toml
+include pokedream/features/scaffolds/cargo/src/main.rs
+include pokedream/features/scaffolds/npm/package.json
+include pokedream/features/scaffolds/npm/index.js
+include pokedream/features/scaffolds/pyright/main.py
+include pokedream/features/scaffolds/pyright/pyrightconfig.json
+include requirements/_.txt
+include requirements/docs.txt
+include requirements/procinfo.txt
+include requirements/test.txt
+include requirements/voice.txt
