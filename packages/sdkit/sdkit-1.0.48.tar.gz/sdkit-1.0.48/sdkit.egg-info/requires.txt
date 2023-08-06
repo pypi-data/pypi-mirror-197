@@ -1,0 +1,9 @@
+stable-diffusion-sdkit==2.1.4
+gfpgan
+piexif
+realesrgan
+requests
+picklescan
+safetensors
+k-diffusion
+diffusers
