@@ -1,0 +1,13 @@
+[package]
+name = "globsters"
+version = "0.0.2"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "globsters"
+crate-type = ["cdylib"]
+
+[dependencies]
+globset = "0.4.10"
+pyo3 = "0.18.1"
