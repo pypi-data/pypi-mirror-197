@@ -1,0 +1,10 @@
+speech2text/__about__.py,sha256=VxEoqcqYNA2Cp8zasEgv8EQXYp7kADtZkHGFNHxt-n4,132
+speech2text/__init__.py,sha256=hMhD6Pvn8_B2KHCCjKEiIg7iqE-sgvlu7SkmNIugwwY,236
+speech2text/errors.py,sha256=-xdphSNzTDfV6JxfSStA0oEFSc3rTNQeaJ3QVEs6e0E,396
+speech2text/transcriber/__init__.py,sha256=hMhD6Pvn8_B2KHCCjKEiIg7iqE-sgvlu7SkmNIugwwY,236
+speech2text/transcriber/base.py,sha256=kBbdD-DHqttMKLoxyU9kvlpIwKDUrsC66TIGFvAQUsc,1500
+speech2text/transcriber/whisper.py,sha256=R2fzblq2-rXzMEcNMaCrWOoMSvyi0D18t7NIhmrJXhU,1072
+farm_haystack_speech2text-1.0.0.dist-info/METADATA,sha256=GQqFBXOEcaS65Yx3X_8LWZPvCV43Z2FaKlzra6hlhiI,2085
+farm_haystack_speech2text-1.0.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+farm_haystack_speech2text-1.0.0.dist-info/licenses/LICENSE.txt,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+farm_haystack_speech2text-1.0.0.dist-info/RECORD,,

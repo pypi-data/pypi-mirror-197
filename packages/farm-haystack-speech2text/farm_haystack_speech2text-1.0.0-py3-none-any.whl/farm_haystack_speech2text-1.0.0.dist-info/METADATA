@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: farm-haystack-speech2text
+Version: 1.0.0
+Summary: Haystack node to convert audio files into Documents.
+Project-URL: Documentation, https://github.com/deepset-ai/haystack-extras/tree/main/nodes/speech2text#readme
+Project-URL: Issues, https://github.com/deepset-ai/haystack-extras/issues
+Project-URL: Source, https://github.com/deepset-ai/haystack-extras/tree/main/nodes/speech2text
+Author-email: deepset GmbH <info@deepset.ai>
+License-Expression: Apache-2.0
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7
+Requires-Dist: farm-haystack
+Requires-Dist: numpy
+Requires-Dist: openai-whisper
+Requires-Dist: pydantic
+Requires-Dist: torch
+Requires-Dist: torchaudio
+Provides-Extra: dev
+Requires-Dist: pylint; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# speech2text
+
+[![PyPI - Version](https://img.shields.io/pypi/v/speech2text.svg)](https://pypi.org/project/speech2text)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/speech2text.svg)](https://pypi.org/project/speech2text)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+
+## Installation
+
+```console
+pip install haystack-speech2text
+```
+
+## Installation
+
+Step 1. Install the audio system dependencies. On Debian-based systems:
+
+```console
+sudo apt-get install libsndfile1 ffmpeg
+```
+
+Step 2. Install the package. With pip:
+
+```console
+pip install haystack-speech2text
+```
+
+## License
+
+`haystack-speech2text` is distributed under the terms of the [Apache-2.0](https://spdx.org/licenses/Apache-2.0.html) license.
