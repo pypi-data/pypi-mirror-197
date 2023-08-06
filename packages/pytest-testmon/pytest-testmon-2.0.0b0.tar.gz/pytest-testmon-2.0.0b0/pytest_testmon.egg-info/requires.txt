@@ -1,0 +1,2 @@
+coverage<8,>=6
+pytest<8,>=5
