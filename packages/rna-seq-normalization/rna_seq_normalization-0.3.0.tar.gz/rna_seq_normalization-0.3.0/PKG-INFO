@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rna_seq_normalization
+Version: 0.3.0
+Summary: Python package used for performing RNA-Seq normalization. It contains the three most popular techniques: TPM, RPKM and CPM.
+Author: Sergio Vazquez Montes de Oca
+Author-email: sergiovazquezmontesdeoca@gmail.com
+Keywords: rna-seq,rna,tpm,normalization,rpkm,cpm,rna-sequencing,statistics,bioinformaticsdata analysis,data science
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6

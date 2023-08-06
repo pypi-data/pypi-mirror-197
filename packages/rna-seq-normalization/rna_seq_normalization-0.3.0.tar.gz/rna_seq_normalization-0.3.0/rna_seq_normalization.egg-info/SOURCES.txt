@@ -1,0 +1,7 @@
+setup.py
+rna_seq_normalization/Normalization.py
+rna_seq_normalization/__init__.py
+rna_seq_normalization.egg-info/PKG-INFO
+rna_seq_normalization.egg-info/SOURCES.txt
+rna_seq_normalization.egg-info/dependency_links.txt
+rna_seq_normalization.egg-info/top_level.txt
