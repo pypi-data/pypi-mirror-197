@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: sensirion-uart-sfx6xxx
+Version: 1.0.0
+Summary: SHDLC driver for the Sensirion SFX6XXX sensor family
+Home-page: https://sensirion.github.io/python-uart-sfx6xxx/
+Author: Sensirion
+Author-email: info@sensirion.com
+License: BSD
+Description: sensirion_uart_sfx6xxx
+        ======================
+        
+        This package contains the driver to communicate with a 
+        Sensirion mass flow controller of the SFC6XXX family or a 
+        Sensirion gas flow sensor of the SFM6XXX family over uart.
+        
+        Installation and Usage
+        ----------------------
+        
+        The user manual is available at
+        https://sensirion.github.io/python-uart-sfx6xxx
+        
+        CHANGELOG
+        ---------
+        
+        1.0.0
+        :::::
+        
+        - Initial release of SFX6XXX SHDLC driver
+        
+Keywords: Sensirion SFX6XXX
+        SHDLC
+        UART
+        SFC6000
+        SFC6000D-5slm
+        SFC6000D-50slm
+        SFC6000D-20slm
+        SFM6000
+        SFM6000D-20slm
+        SFM6000D-50slm
+        SFM6000D-5slm
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6, <4
+Provides-Extra: docs
+Provides-Extra: test
