@@ -1,0 +1,9 @@
+unesco_reader/__init__.py,sha256=rd08kj9FYHGd9Wdrm9RlSMOHsK1ykwVXO1WuGOC7pEA,117
+unesco_reader/common.py,sha256=fErXYdRX44oAfiYwh3oVrABvXLA9nePxbmkBzys-580,2797
+unesco_reader/config.py,sha256=tUftshWjTbAwFmQHIzuMyEbva0QPYxaAO4JMi_YTfPM,980
+unesco_reader/glossaries/uis_datasets.csv,sha256=-zz_gp4qBvgPZ-Zu33S8omTBTc0KUAK17_P-qkCHAXE,269
+unesco_reader/uis.py,sha256=i8tORP1a50zreNlI_MKTBCTXm6YtS4_zxc8nNbp-q5I,17569
+unesco_reader-0.3.1.dist-info/LICENSE,sha256=e8_CLtYkRooKATsQZUuklsKYlVfDKNECXXbvVBN2hoY,1069
+unesco_reader-0.3.1.dist-info/METADATA,sha256=DK4to1t-nsoORJ4JeouFYKBYlJijDP2ku3Tb9LO-DE4,6900
+unesco_reader-0.3.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+unesco_reader-0.3.1.dist-info/RECORD,,
