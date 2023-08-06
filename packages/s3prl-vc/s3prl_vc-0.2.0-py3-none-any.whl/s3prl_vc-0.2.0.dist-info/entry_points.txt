@@ -1,0 +1,4 @@
+[console_scripts]
+s3prl-vc-decode = s3prl_vc.bin.decode:main
+s3prl-vc-decode-downstream = s3prl_vc.bin.decode_downstream:main
+s3prl-vc-extract-upstream = s3prl_vc.bin.extract_upstream:main
