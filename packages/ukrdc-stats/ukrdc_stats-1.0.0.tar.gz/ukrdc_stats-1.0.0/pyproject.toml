@@ -1,0 +1,58 @@
+[tool.poetry]
+authors = ["Philip Main <Philip.Main@renalregistry.nhs.uk>"]
+description = "A package to produce stats from the ukrdc database to be displayed on the dashboard"
+license = "MIT"
+name = "ukrdc-stats"
+packages = [
+  {include = "ukrdc_stats"},
+]
+readme = "PKG-README.md"
+repository = "https://github.com/renalreg/dashboard-stats"
+version = "1.0.0"
+
+[tool.poetry.dependencies]
+SQLAlchemy = "^1.4.40" 
+pandas = "^1.4.3" 
+psycopg2-binary = "^2.9.3" # Needed for postgres
+pydantic = "^1.10.1" 
+python = "^3.8" 
+ukrdc-sqla = "^2.0.0" 
+freezegun = "^1.2.2"
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.1", allow-prereleases = true}
+mypy = "^0.982"
+pandas-stubs = "*"
+pylint = "^2.15.0"
+sqlalchemy2-stubs = "^0.0.2a27"
+
+[tool.poetry.group.test.dependencies]
+# All tests will require the dev dependencies as well
+bandit = "^1.7.4"
+coverage = {extras = ["toml"], version = "^6.4"}
+freezegun = "^1.2.2"
+mimesis = "^6.1.1"
+pytest = "^7.1.2"
+pytest-cov = "^4.0.0"
+pytest-postgresql = "^3.1.1"
+tox = "^3.24.5"
+
+[tool.poetry.group.demo]
+# Dependency group for running the demo notebooks
+# Not installed by default. Use `poetry install --with demo`
+optional = true
+
+[tool.poetry.group.demo.dependencies]
+ipykernel = "^6.15.2"
+ipywidgets = "^8.0.1"
+kaleido = "0.2.1"
+nbformat = "^5.4.0"
+plotly = "^5.10.0"
+python-dotenv = "^0.20.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+
+[tool.isort]
+profile = 'black'
