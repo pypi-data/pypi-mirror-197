@@ -1,0 +1,3 @@
+[console_scripts]
+linelog=linelog.console:run
+
