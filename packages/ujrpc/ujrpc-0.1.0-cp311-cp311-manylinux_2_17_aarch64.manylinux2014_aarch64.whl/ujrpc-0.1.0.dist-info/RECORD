@@ -1,0 +1,14 @@
+ujrpc/rich_uring.py,sha256=a-lGOw1sfa4jK0aeccXmDdeK7xH3QxnMb2y1LTtnmxk,171
+ujrpc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ujrpc/libsimdjson.a,sha256=2bVAoF9L7EaPbeqa0HKLaeOm0d6NVgF6JombQTEXvZg,117084
+ujrpc/posix.so,sha256=dNRbOiyKCX6u2_z1JIjTdmvpJMLZfLwVaut5dXjHCd8,334248
+ujrpc/_server.py,sha256=Cj5QxK-SJwd_8nUcbtjsahW3X7nMfYLYoEDOW3GxysM,1945
+ujrpc/client.py,sha256=9TS6iHkLsuVjjG568HWbsW7GjlytFhexIB5ilIHJJwI,2111
+ujrpc/libujrpc_server_posix.a,sha256=9SgP1kFPJp3X8SmhHbuxg4ZPftMx8Kxwf_eJx69-uC0,44924
+ujrpc/libbase64.a,sha256=KbAjwEpJ4g8wPu1Z41cElwweDW3z-WH_sDu0A_t_1C8,35162
+ujrpc/rich_posix.py,sha256=smrkgdumpWKWdxoS4VpK28I_pMxqM66FxGT_DOWoSGs,171
+ujrpc-0.1.0.dist-info/METADATA,sha256=k9n2zzhbg6WNjKTEQO32VwKyn0nEWHyc3hoJ-kEBGwA,11024
+ujrpc-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ujrpc-0.1.0.dist-info/WHEEL,sha256=Bu_ZgMyqfUEL6K8HKTcKpjq7RNrV9wcyW-FmVu9-j44,154
+ujrpc-0.1.0.dist-info/top_level.txt,sha256=gwSn7d9PoBz9NPaDgRR5nAXkiw9_J-D2jfKiqP6qp8o,6
+ujrpc-0.1.0.dist-info/RECORD,,
