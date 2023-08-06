@@ -1,0 +1,2 @@
+[console_scripts]
+startgraph = profitgraph.__init__:start_program

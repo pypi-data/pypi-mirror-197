@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: profitgraph
+Version: 0.8.1
+Summary: Small program that creates graphs based on date, profit or purchases
+Home-page: https://github.com/Morjovski/profit_graph
+Author: Morjovski
+Author-email: amor3ux@gmail.com
+License: MIT License
+Keywords: profits,graphs,analytics
+Platform: ALL
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: matplotlib (~=3.6.2)
+Requires-Dist: mplcursors (~=0.5.2)
+Requires-Dist: tqdm (~=4.64.1)
+Requires-Dist: colorama (~=0.4.6)
+
+# About
+
+This program will help you showcase the profits and purchases of your company by days, months and years! Choose personalized options and compare the data to analyse your business outcomes just in a few clicks! 
+
+#### What the program can do:
+
+1. Uses three languages (EN/UA/RU)
+2. Adds data to database
+3. Creates graph by several options
+4. Shows max and min data in legend
+5. Shows average value by period and percent change compared to first entered period
+6. Saves your graphs in 'graph/' directory
+7. Creates random data
+    * To use this, just enter 'random' while you choose 'add data' or 'create graph'
+
+#### Used libraries:
+
+* [matplotlib](https://github.com/matplotlib/matplotlib)
+* [mplcursors](https://github.com/anntzer/mplcursors)
+* [tqdm](https://github.com/tqdm/tqdm)
+* [colorama](https://github.com/tartley/colorama)
+* [sqlite3](https://docs.python.org/3/library/sqlite3.html)
+
+## Install
+
+Install via pip:
+```
+pip install profitgraph
+```
+## Launch
+
+To launch a program, open a cmd (Win+R) and enter:
+```
+startgraph
+```
+
+## Examples
+
+![Sales by days](https://i.imgur.com/1icI15u.png)
+![Profit by years](https://i.imgur.com/Efg9KAc.png)
+![Profit by months](https://i.imgur.com/44Lp93I.png)
+
+## License
+
+See LICENSE.md for more information
+
+## Special thanks
+
+[Mundoggu](https://github.com/Mundoggu) - for code disscussion
