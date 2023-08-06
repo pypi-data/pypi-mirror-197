@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: gaia-var
+Version: 0.9.3
+Summary: Gaia variability utility packages
+Author: Maja Jablonska
+Author-email: majajjablonska@gmail.com
+Requires-Dist: astropy (~=5.1)
+Requires-Dist: pandas (~=1.4.4)
+Requires-Dist: matplotlib (~=3.5.2)
+
+Package providing utility functions
+    such as downloading the lightcurves and variability tables.
