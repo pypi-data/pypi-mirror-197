@@ -1,0 +1,9 @@
+pbr>=0.11
+fixtures>=2.0
+
+[test]
+testscenarios
+testresources
+
+[twisted]
+Twisted
