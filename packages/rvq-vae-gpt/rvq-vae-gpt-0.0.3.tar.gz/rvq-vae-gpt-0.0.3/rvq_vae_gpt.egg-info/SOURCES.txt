@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+rvq_vae_gpt/__init__.py
+rvq_vae_gpt/rvq_vae_gpt.py
+rvq_vae_gpt.egg-info/PKG-INFO
+rvq_vae_gpt.egg-info/SOURCES.txt
+rvq_vae_gpt.egg-info/dependency_links.txt
+rvq_vae_gpt.egg-info/requires.txt
+rvq_vae_gpt.egg-info/top_level.txt
