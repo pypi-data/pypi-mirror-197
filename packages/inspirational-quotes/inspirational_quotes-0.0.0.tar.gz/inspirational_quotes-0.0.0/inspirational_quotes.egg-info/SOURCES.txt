@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+inspirational_quotes.egg-info/PKG-INFO
+inspirational_quotes.egg-info/SOURCES.txt
+inspirational_quotes.egg-info/dependency_links.txt
+inspirational_quotes.egg-info/requires.txt
+inspirational_quotes.egg-info/top_level.txt
