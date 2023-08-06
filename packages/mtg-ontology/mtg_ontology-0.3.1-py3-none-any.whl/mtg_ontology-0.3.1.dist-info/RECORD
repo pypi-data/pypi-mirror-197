@@ -1,0 +1,12 @@
+README.md,sha256=PM2Niwcsv8x5WtwJyLvuI9_vNnpJ4QtzunpVJea1eEQ,1182
+mtg_ontology/__init__.py,sha256=Zo5tX5eFrGtAs3BGgEpZzcH6sHnTq6UWbkg-XO0tHTI,23
+mtg_ontology/datamodel/__init__.py,sha256=IZ8jzBaUTYKbDNKHrcrXzSIuGKNI1_dRptgw_EqqTtY,28
+mtg_ontology/datamodel/mtg_ontology.py,sha256=q8NO1Hp8wpd6xzqRCVnLgggg0vaQuH9dQz0Zx1-KVwk,84116
+mtg_ontology/helpers.py,sha256=YaHTL3vbQ2dI5EeCt_p6X6EbNJVGqVY0Gr_ZPo7EVl0,1364
+mtg_ontology/schema/abilities.yaml,sha256=69rZVw1u-7tktNPCuXinzZYrdz_fB7rZ2aS85GX3_BY,18725
+mtg_ontology/schema/cards.yaml,sha256=23XVYBguiuJI3NC9T2coClAV9HEkMluxMl7myDiXtio,10717
+mtg_ontology/schema/mtg_ontology.yaml,sha256=vRoxjQAkAPl6muRbYgqOy0TWeILDjWjcGUhUGCgW5So,1540
+mtg_ontology-0.3.1.dist-info/LICENSE,sha256=yjcqfZJWCx-p9tgytEDovNYtmt-ohwyYKH3qtm2YMQ4,35148
+mtg_ontology-0.3.1.dist-info/METADATA,sha256=j8vZZrM6VIKTKNWBEmG8zvAUds--PZBMlCC74X0yE24,1765
+mtg_ontology-0.3.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+mtg_ontology-0.3.1.dist-info/RECORD,,

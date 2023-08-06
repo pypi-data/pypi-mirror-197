@@ -1,0 +1,66 @@
+id: https://cmdoret.net/mtg_ontology/
+name: mtgo
+title: Magic The Gathering Ontology.
+description: |-
+  An ontology describing Magic: The Gathering. It provides
+  the concepts and relationships needed to represent cards,
+  their cost and abilities.
+license: GNU GPL v3.0
+see_also:
+  - https://cmdoret.github.io/mtg_ontology/
+
+prefixes:
+  mtg: https://mtg.fandom.com/wiki/
+  mtgo: https://cmdoret.net/mtg_ontology/
+  linkml: https://w3id.org/linkml/
+  schema: http://schema.org/
+  example: http://www.example.org/rdf#
+  scryfall: https://api.scryfall.com/cards/
+default_prefix: mtgo
+default_range: string
+
+imports:
+  - linkml:types
+  - cards
+  - abilities
+
+classes:
+
+  NamedThing:
+    description: >-
+      A generic grouping for any identifiable entity
+    slots:
+      - id
+      - name
+      - description
+    class_uri: schema:Thing
+
+  Thing:
+    description: >-
+      A generic grouping for any identifiable entity
+    slots:
+      - id
+    class_uri: schema:Thing
+
+slots:
+
+  id:
+    identifier: true
+    slot_uri: schema:identifier
+    range: uriorcurie
+    description: A unique identifier for a thing
+  name:
+    slot_uri: schema:name
+    description: A human-readable name for a thing
+    required: true
+  description:
+    slot_uri: schema:description
+    description: A human-readable description for a thing
+  intersection:
+    range: NamedThing
+    description: A conjunction of two objects (a and b).
+    symmetric: true
+  union:
+    range: NamedThing
+    description: A disjunction of two objects (a or b).
+    symmetric: true
