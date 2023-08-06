@@ -1,0 +1,6 @@
+selenium
+configparser
+webdriver_manager
+argparse
+keyring
+selenium-wire

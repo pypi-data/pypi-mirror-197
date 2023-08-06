@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/awsad2cli/__init__.py
+src/awsad2cli/__main__.py
+src/awsad2cli/aws_login.py
+src/awsad2cli.egg-info/PKG-INFO
+src/awsad2cli.egg-info/SOURCES.txt
+src/awsad2cli.egg-info/dependency_links.txt
+src/awsad2cli.egg-info/entry_points.txt
+src/awsad2cli.egg-info/requires.txt
+src/awsad2cli.egg-info/top_level.txt
