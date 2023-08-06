@@ -1,0 +1,5 @@
+setup.py
+coffeemilk.egg-info/PKG-INFO
+coffeemilk.egg-info/SOURCES.txt
+coffeemilk.egg-info/dependency_links.txt
+coffeemilk.egg-info/top_level.txt
