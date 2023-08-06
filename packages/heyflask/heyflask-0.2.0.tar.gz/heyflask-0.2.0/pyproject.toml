@@ -1,0 +1,30 @@
+[project]
+name = "heyflask"
+version = "0.2.0"
+description = "A Flask hello-world program."
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "romk"}]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Software Development",
+]
+
+dependencies = [
+  "Flask",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/romk/heyflask"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "heyflask"

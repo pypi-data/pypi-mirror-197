@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: heyflask
+Version: 0.2.0
+Summary: A Flask hello-world program.
+Author: romk
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development
+Requires-Dist: Flask
+Project-URL: Homepage, https://gitlab.com/romk/heyflask
+
+# heyflask
+
+A minimal Flask hello-world web application.
+
+
+## Installation
+
+```
+$ pip install heyflask
+```
+
+## Run
+
+```
+$ flask --app=heyflask run
+```
+
+To test, execute in another terminal:
+```
+$ curl localhost:5000
+```
+Should see a response "Hey, Flask!"
+
