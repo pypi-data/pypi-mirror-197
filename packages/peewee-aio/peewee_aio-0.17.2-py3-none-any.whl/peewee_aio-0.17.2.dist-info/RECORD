@@ -1,0 +1,10 @@
+peewee_aio/__init__.py,sha256=xmJnmK-u3abwTKwWKkhFB_FXZp2USNAk8dQKOxy3zWU,132
+peewee_aio/databases.py,sha256=JXI29hEjW_bLNNzRaXGRFEBR49mOzJjhKjawFEgeSt4,1211
+peewee_aio/fields.py,sha256=5R1suIaUVbAR5PB4S2aDiluq1CF7EvS7x4uoIhiNLSw,2860
+peewee_aio/manager.py,sha256=o1y9gqy3jN-ZlG7Ep4Sbq-qyoNj22l7tVbUy5mjHjjc,16101
+peewee_aio/model.py,sha256=kScPVK3F0gDZOMvvNfPIEBacSX4uQnTpAiqxQLYHa2E,12403
+peewee_aio/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+peewee_aio/types.py,sha256=483uAg-nXNv4z9P4lK8P955s53Yj6bScVy4gRCC6B4M,268
+peewee_aio-0.17.2.dist-info/METADATA,sha256=N5tot_J1rHvu1kd6azucZF5PwRh9yMzeu5DhvN_yzGk,4794
+peewee_aio-0.17.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+peewee_aio-0.17.2.dist-info/RECORD,,
