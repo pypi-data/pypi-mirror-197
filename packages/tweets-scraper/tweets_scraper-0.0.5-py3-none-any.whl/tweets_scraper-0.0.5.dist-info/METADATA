@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tweets-scraper
+Version: 0.0.5
+Summary: Tweetr data scraping
+Home-page: UNKNOWN
+Author: Phani Siginamsetty
+License: UNKNOWN
+Keywords: web scraping
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: snscrape
+
+UNKNOWN
+
+
