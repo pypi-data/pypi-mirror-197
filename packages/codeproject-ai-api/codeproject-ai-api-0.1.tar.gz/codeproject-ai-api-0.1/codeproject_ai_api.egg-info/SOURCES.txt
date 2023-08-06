@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+codeproject_ai_api.egg-info/PKG-INFO
+codeproject_ai_api.egg-info/SOURCES.txt
+codeproject_ai_api.egg-info/dependency_links.txt
+codeproject_ai_api.egg-info/requires.txt
+codeproject_ai_api.egg-info/top_level.txt
+codeprojectai/__init__.py
+codeprojectai/core.py
+tests/__init__.py
+tests/test_core.py

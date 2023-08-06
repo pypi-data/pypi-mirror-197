@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: codeproject-ai-api
+Version: 0.1
+Summary: Provides a simple SDK for the CodeProject.AI Server API
+Home-page: https://github.com/codeproject/codeproject-ai-api
+Author: CodeProject
+Author-email: info@codeproject.com
+License: Apache License, Version 2.0
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
