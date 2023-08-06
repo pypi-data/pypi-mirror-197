@@ -1,0 +1,11 @@
+arguelay/__init__.py,sha256=pH5i4Fj1tbXLqLtTVIdoojiplZssQn0nnud8-HXodRE,577
+arguelay/lib.py,sha256=UraIy915Vv2bcs46u6fYGw2ISjTfwwCCqcvEZzdEf-A,7381
+arguelay/log.py,sha256=QZSNjIorkH5abdvk3he6OVcZAp7gLHZAc6wl4_tyDQI,337
+arguelay/main.py,sha256=5E90jL7Jcd0C7KPbw3XkIFmW2trGrDIcI1ZFjz2Dywo,4192
+arguelay/templates/powershell_install.ps1.j2,sha256=276c_CRiDqYl_6waWjN_Nsk198O9DnX9aeG9HylNj_4,95
+arguelay-0.0.4.dist-info/LICENSE.txt,sha256=nDgkT70BJgTDpJefovhCWm87owFCG_Dl4ETTVqrf6iE,1083
+arguelay-0.0.4.dist-info/METADATA,sha256=MNb1eGSz2MPiSvsNRXw6-ZcnvNyNKAj_B5wXXEJetsI,2788
+arguelay-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+arguelay-0.0.4.dist-info/entry_points.txt,sha256=1Jqz_uT2BXlp7gTuI1lrJkj0QLo8PoRrkQQgT8jTSQI,47
+arguelay-0.0.4.dist-info/top_level.txt,sha256=7-mLNTYbeHrEN-UnUr9HtDqsavpR5EOxWAg6QphXhHE,9
+arguelay-0.0.4.dist-info/RECORD,,
