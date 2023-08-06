@@ -1,0 +1,13 @@
+LICENCE
+README.md
+pyproject.toml
+azure_recommendations_3/__init__.py
+azure_recommendations_3.egg-info/PKG-INFO
+azure_recommendations_3.egg-info/SOURCES.txt
+azure_recommendations_3.egg-info/dependency_links.txt
+azure_recommendations_3.egg-info/top_level.txt
+azure_recommendations_3/recommendation/__init__.py
+azure_recommendations_3/recommendation/advisor_recommendations.py
+azure_recommendations_3/recommendation/network_recommendations.py
+azure_recommendations_3/recommendation/utils.py
+azure_recommendations_3/recommendation/vm_recommendations.py
