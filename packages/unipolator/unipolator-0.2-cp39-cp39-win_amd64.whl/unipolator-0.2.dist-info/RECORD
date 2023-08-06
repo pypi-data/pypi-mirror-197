@@ -1,0 +1,14 @@
+unipolator/blas_functions.cp39-win_amd64.pyd,sha256=YBwzUH4Kec_WD9Qdp0RdRREMpdu7yPGA1F0czUQ351c,176640
+unipolator/caching.cp39-win_amd64.pyd,sha256=y4fcO8Ilp03W_Ii60a8NZJyu6HU5YN280EgvUDOVrXE,272896
+unipolator/exp_and_log.cp39-win_amd64.pyd,sha256=axk0il9EoK-ht1kzys5hgwoWgXpCmukOzgJ_U8j9WD8,216576
+unipolator/hamiltonian_system.cp39-win_amd64.pyd,sha256=IFoe5fx2LloQ1wG8lE54KGUtUR2MN7w9cTnrqPZkOUQ,163840
+unipolator/indexing.cp39-win_amd64.pyd,sha256=4ExgNqEU0oEto2JYRUgZ-uD015s6TbZmjp4UlwEjW54,208384
+unipolator/sym_trotter_system.cp39-win_amd64.pyd,sha256=tApj9hFbJ1cRbXQX-c-Kds3ie-N5u_PeWThUovO9DDE,157184
+unipolator/symmetric_unitary_interpolation.cp39-win_amd64.pyd,sha256=1-L0rc6EPKIRH-toiuPUSJQOZRWCxpTBB1kZvKh7xwM,188416
+unipolator/trotter_system.cp39-win_amd64.pyd,sha256=tbYu_7Jc4xUqCFDPQCBVvXJtFEHBSBcouzNwW_k5OBc,152064
+unipolator/unitary_interpolation.cp39-win_amd64.pyd,sha256=nWLVVSIKtyPphnLis15MFl_PwTHWBoRhWCfsN-LGp-Y,198144
+unipolator-0.2.dist-info/LICENSE,sha256=LdqnQU4-LBSI8AME970rsnLBh8gH6AjcBvxO1smI6tA,1096
+unipolator-0.2.dist-info/METADATA,sha256=oLKaw-ctfZEKd8tw7JGcorIGIK9rk-dL5phEKzuoZsw,1928
+unipolator-0.2.dist-info/WHEEL,sha256=J_4V_gB-O6Y7Pn6lk91K27JaIhI-q07YM5J8Ufzqla4,100
+unipolator-0.2.dist-info/top_level.txt,sha256=v89bQagxnC2XU0gfGfEynNtZSgkAjGx6XtkH-GZvZ5c,11
+unipolator-0.2.dist-info/RECORD,,
