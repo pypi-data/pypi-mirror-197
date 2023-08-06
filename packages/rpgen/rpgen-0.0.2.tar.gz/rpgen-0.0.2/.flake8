@@ -1,0 +1,8 @@
+[flake8]
+exclude = 
+    __pycache__
+    .github
+    .mypy_cache
+    .pytest_cache
+    env
+    error_message.py
