@@ -1,0 +1,14 @@
+eurofiber_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eurofiber_package/address_functions.py,sha256=-KUsy_uPBIRo2XaxYl5aTE_x3ggcPfIcOBha3RRjKg4,2665
+eurofiber_package/cocon_functions.py,sha256=xSTHVtx2FyEzFTIQcV5Tis26udve_jYM-DWyMjWYf8I,1019
+eurofiber_package/dataset_functions.py,sha256=5eJdcN34Aw3qw-AnjWLwAYsC2Ihd7WzGu5UL37fCJKc,3845
+eurofiber_package/datasets.py,sha256=ZDdOg_qBVDqZYPkWzPfZoaWqgKDv6bqDU7OoYRAlnWc,10871
+eurofiber_package/enrichment_functions.py,sha256=uir1DEH86VMKECsN1FQ9QD1TmQnUvORfVPGLNTnadjM,2396
+eurofiber_package/general_functions.py,sha256=mu5ttUhQVVORjoxvhCDoIH3MNihKC7LaSiPmiKiH71M,8796
+eurofiber_package/geographical_functions.py,sha256=4u9nLk0VxTD753Q0A8beTZmh3LY_NKjAlfVHcaWkqoI,8854
+eurofiber_package/myfunctions.py,sha256=cy9gFQMDM2ZYfRS03LbEtJ2Pe1FsNyDYxGGLIdF8tgU,6628
+eurofiber_package/scrapers.py,sha256=OCxAqzP8_x1aR3C90ffL8LdWSzXKPvqje59RNa-K_zk,13120
+eurofiber_package-0.1.21.dist-info/METADATA,sha256=tNj9OezNrTWKfdcDJGdIwJS1cWtV1yGbwXIGu7QXdl8,177
+eurofiber_package-0.1.21.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+eurofiber_package-0.1.21.dist-info/top_level.txt,sha256=CMBG5-AnH15uFvCXPY4yNWmBC4obG7JlpNfrbZtk6Yg,18
+eurofiber_package-0.1.21.dist-info/RECORD,,
