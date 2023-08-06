@@ -1,0 +1,15 @@
+README.md
+setup.py
+synthetic_data_metrics/__init__.py
+synthetic_data_metrics/datasets.py
+synthetic_data_metrics/evaluator.py
+synthetic_data_metrics/plot.py
+synthetic_data_metrics/utils.py
+synthetic_data_metrics.egg-info/PKG-INFO
+synthetic_data_metrics.egg-info/SOURCES.txt
+synthetic_data_metrics.egg-info/dependency_links.txt
+synthetic_data_metrics.egg-info/requires.txt
+synthetic_data_metrics.egg-info/top_level.txt
+synthetic_data_metrics/metrics/__init__.py
+synthetic_data_metrics/metrics/image_metrics.py
+synthetic_data_metrics/metrics/ts_metrics.py
