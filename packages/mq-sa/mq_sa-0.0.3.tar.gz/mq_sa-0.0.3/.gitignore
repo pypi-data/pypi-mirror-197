@@ -1,0 +1,7 @@
+_skbuild
+*.egg-info
+.vscode
+.DS_Store
+dist
+MANIFEST.in
+*.code-workspace
