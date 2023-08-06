@@ -1,0 +1,14 @@
+setuptools
+zope.interface
+plone.base
+Products.CMFCore
+Products.GenericSetup
+Acquisition
+Zope
+
+[test]
+zope.component
+plone.app.testing
+plone.namedfile
+plone.app.dexterity
+plone.app.contenttypes[test]
