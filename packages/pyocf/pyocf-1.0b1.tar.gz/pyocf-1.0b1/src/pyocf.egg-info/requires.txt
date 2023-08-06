@@ -1,0 +1,15 @@
+pydantic>=1.10.0
+setuptools
+
+[build]
+autodoc-pydantic
+black
+check-manifest
+flake8
+mako
+pyroma
+pytest
+pytest-cov
+sphinx
+sphinx_rtd_theme
+zest.releaser[recommended]

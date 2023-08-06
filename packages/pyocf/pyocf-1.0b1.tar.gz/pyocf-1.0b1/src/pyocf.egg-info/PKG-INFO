@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pyocf
+Version: 1.0b1
+Summary: Open Captable Format objects and parser
+Home-page: https://open-cap-table-coalition.github.io/Open-Cap-Format-OCF/
+Author: Lennart Regebro
+Author-email: lregebro@shoobx.com
+License: MIT
+Keywords: captable,ocf
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Office/Business :: Financial
+Requires-Python: >3.9
+Provides-Extra: build
+License-File: LICENSE.txt
+
+pyOCF
+=====
+
+``pyocf`` is a Python library to read and create
+`Open Cap Table Format <https://www.opencaptablecoalition.com/>`_ files.
+
+Documentation is currently in the docs directory of the source code.
+
+
+Contributors
+------------
+
+Lennart Regebro, regebro@shoobx.com
+
+Changes
+=======
+
+1.0b1 (2023-03-15)
+------------------
+
+- First beta
+
+
+
