@@ -1,0 +1,2 @@
+[console_scripts]
+cfa = cfa:app
