@@ -1,0 +1,6 @@
+numpy>=1.18
+pandas
+scikit-image
+scikit-learn
+scipy
+tqdm
