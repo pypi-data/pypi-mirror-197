@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mysq_orm"
+version = "0.0.1"
+authors = [
+    { name="MrCedee", email="marcoscedenillabonet@gmail.com" },
+]
+description = "My customized ORM on Sales"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/MrCedee/mysq_orm"
+"Bug Tracker" = "https://github.com/MrCedee/mysq_orm/issues"
