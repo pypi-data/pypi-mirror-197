@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: libertem-asi-tpx3
+Version: 0.2.6
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Author: Alexander Clausen <a.clausen@fz-juelich.de>
+Author-email: Alexander Clausen <a.clausen@fz-juelich.de>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: repository, https://github.com/LiberTEM/LiberTEM-rs/
+
+# LiberTEM-asi-tpx3
+
+A Rust+Python library for receiving sparse array streams from Amsterdam
+Scientific Instruments CheeTah TPX3 detectors.
+
+# Development
+
+Needs to have a Python environment active, and a recent rust toolchain installed.
+
+- `pip install maturin[patchelf] numpy`
+- `maturin develop -r`
+- `python examples/simple.py`
+
