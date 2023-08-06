@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+src/tidesign/__about__.py
+src/tidesign/__init__.py
+src/tidesign.egg-info/PKG-INFO
+src/tidesign.egg-info/SOURCES.txt
+src/tidesign.egg-info/dependency_links.txt
+src/tidesign.egg-info/requires.txt
+src/tidesign.egg-info/top_level.txt
