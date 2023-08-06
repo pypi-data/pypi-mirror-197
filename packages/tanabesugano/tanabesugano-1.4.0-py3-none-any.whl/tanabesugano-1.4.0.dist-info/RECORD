@@ -1,0 +1,15 @@
+LICENSE,sha256=_K3bdxWFLtrw24lxJa1SGXvicIBKn2a467v7uwyhZ6E,1068
+tanabesugano/__init__.py,sha256=8UhoYEXHs1Oai7BW_ExBmuwWnRI-yMG_u1fQAXMizHQ,22
+tanabesugano/batch.py,sha256=ECc8kIHt3lyBCBmh_lAEpa3L_T1v_2U70vJ7lxf7-EU,5626
+tanabesugano/cmd.py,sha256=ASA7wBpENX8b8avmQinE8lLKJkEsflTHVSsKU1pjaN8,14121
+tanabesugano/matrices.py,sha256=xyuQkvd1x_69nbbKWnEVmOgQ4UOZg0mTpBoVG9fcFRo,48709
+tanabesugano/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tanabesugano/test/test_batch.py,sha256=TBJ90ns82XoPrC6mDM2fZuJiw8bEzoxaim1EUJEv_Ec,927
+tanabesugano/test/test_front.py,sha256=9dmDHidgXCHHTnG7Mss6qp2qpyr2E3l8qXNUlw6doow,318
+tanabesugano/test/test_num.py,sha256=KXNF6yJWQEv1uIc0RAfQ2MqeRwf-CHfaTH-fFhS-d2M,891
+tanabesugano/tools.py,sha256=m0D5IZ6XGyjNVziLL7fCQgtMtWSq1m4_XURJjmzGBkU,798
+tanabesugano-1.4.0.dist-info/LICENSE,sha256=_K3bdxWFLtrw24lxJa1SGXvicIBKn2a467v7uwyhZ6E,1068
+tanabesugano-1.4.0.dist-info/METADATA,sha256=dFd59-mdlfQeAKqCSHS7wc6Dm2q6NNuAzHo4zcd5YIA,5711
+tanabesugano-1.4.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+tanabesugano-1.4.0.dist-info/entry_points.txt,sha256=xcm1HBKYnpfhfLPKBj_8wENPGviAy0_yx1RCrNcvOV4,58
+tanabesugano-1.4.0.dist-info/RECORD,,
