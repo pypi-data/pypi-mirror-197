@@ -1,0 +1,159 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+
+[tool.coverage.report]
+exclude_lines = [
+    "@overload",
+    "if TYPE_CHECKING:",
+    "if not TYPE_CHECKING:",
+    "pragma: no cover",
+    "raise NotImplemented",
+    "raise NotImplementedError",
+]
+fail_under = 100
+skip_covered = true
+
+[tool.coverage.run]
+branch = true
+omit = ["src/arti/internal/vendored/*" ]
+source = ["arti"]
+
+
+[tool.isort]
+line_length = 100
+profile = "black"
+
+
+[tool.mypy]
+explicit_package_bases = true
+files = "docs/,src/,tests/"
+mypy_path = "$MYPY_CONFIG_FILE_DIR/src,$MYPY_CONFIG_FILE_DIR/stubs"
+namespace_packages = true
+plugins = ["pydantic.mypy", ]
+show_error_codes = true
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["gcp_storage_emulator.*", "gcsfs", "pandas", "pyarrow", "sh", ]
+ignore_missing_imports = true
+
+
+[tool.poetry]
+name = "arti"
+version = "0.0.2"
+description = ""
+license = "Apache-2.0"
+authors = ["Jacob Hayes <jacob.r.hayes@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/artigraph/artigraph"
+repository = "https://github.com/artigraph/artigraph"
+include = ["src/arti/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+gcsfs = {version = ">=2022.2.0", optional = true}
+google-cloud-bigquery = {version = "^3.5.0", optional = true}
+multimethod = ">=1.6"
+numpy = {version = ">=1.23.1", optional = true}
+pandas = {version = ">=1.4.3", optional = true}
+parse = ">=1.19.0"
+pyarrow = {version = ">=8", optional = true}
+pydantic = ">=1.9.0,<2"  # We use some pydantic internals, so expect 2.0 to break things.
+pyfarmhash = ">=0.2.2"
+python-box = ">=7.0.0" # Tracking box_namespace requires 7+
+
+[tool.poetry.group.dev.dependencies]
+bandit = ">=1.7.4"
+black = ">=22.6.0"
+blacken-docs = ">=1.12.1"
+coverage = {version = ">=6.4", extras = ["toml"]} # pyproject.toml support
+flake8 = ">=5.0.4"
+gcp-storage-emulator = ">=2022.6.11"
+ipdb = ">=0.13.9"
+ipython = ">=8.4.0"
+isort = ">=5.10.1"
+mypy = ">=0.961"
+pdocs = {git = "https://github.com/JacobHayes/pdocs.git", rev = "master"} # Fix GenericAlias error https://github.com/timothycrosley/pdocs/pull/29
+portray = ">=1.7.0"
+pre-commit = ">=2.20.0"
+pylint = ">=2.15.0"
+pytest = ">=7.1.2"
+pytest-benchmark = ">=3.4.1"
+pytest-cov = ">=3.0.0"
+pytest-sugar = ">=0.9.5"
+pyupgrade = ">=2.37.3"
+sh = ">=2"
+typer = ">=0.6.1"
+types-pyfarmhash = ">=0.3.1"
+
+# This is not a real dep, but it has an upper bound on charset-normalizer, which poetry may prefer instead. Lower
+# versions of this raise warnings. This pin can be removed after the next release, which should loosen the bound.
+aiohttp = {version = ">=3.8.3", optional = true}
+
+[tool.poetry.extras]
+all = [
+    "gcsfs",
+    "google-cloud-bigquery",
+    "numpy",
+    "pandas",
+    "pyarrow",
+]
+
+
+[tool.portray.mkdocs]
+edit_uri = 'edit/golden/'
+
+
+[tool.pylint.format]
+max-line-length = "100"
+
+[tool.pylint.master]
+extension-pkg-whitelist = [
+    "farmhash",
+    "pyarrow",
+    "pydantic",
+]
+
+[tool.pylint.message_control]
+docstring-min-length=10
+disable = """
+    import-outside-toplevel,
+    invalid-name,
+    line-too-long,
+    logging-fstring-interpolation,
+    missing-function-docstring,
+    no-else-return,
+    protected-access,
+    redefined-builtin,
+    too-few-public-methods,
+    unsubscriptable-object,
+    wrong-import-position,
+"""
+
+[tool.pylint.TYPECHECK]
+generated-members="sh"
+
+
+[tool.pytest.ini_options]
+addopts = "--cov --cov-report=term-missing --doctest-modules --durations=5 --ignore-glob='tests/arti/internal/import_submodules_test_modules/' --no-cov-on-fail"
+filterwarnings = [
+    "error",
+    # Ignore uncompiled crc32c warning on py 3.11 (which doesn't have wheels on older versions) - https://github.com/oittaa/gcp-storage-emulator/pull/217
+    "ignore:As the c extension couldn't be imported:RuntimeWarning:google_crc32c",
+    # Ignore a couple external tools that use old form namespace packages
+    "ignore:Deprecated call to `pkg_resources.declare_namespace.*:DeprecationWarning",
+    "ignore:pkg_resources is deprecated as an API:DeprecationWarning",
+]
+testpaths = [
+    "src/",
+    "tests/",
+]
+xfail_strict=true
