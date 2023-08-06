@@ -1,0 +1,2 @@
+[console_scripts]
+export_conda = thunder.export_conda:extract_env_file
