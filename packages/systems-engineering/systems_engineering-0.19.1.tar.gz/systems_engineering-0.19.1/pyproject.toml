@@ -1,0 +1,20 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+[project]
+name = "systems-engineering"
+version = "0.19.1"
+authors = [
+  { name="Ray Madachy", email="madachy@gmail.com" },
+]
+description = "Python Systems Engineering Library"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "http://pyml.fun"
