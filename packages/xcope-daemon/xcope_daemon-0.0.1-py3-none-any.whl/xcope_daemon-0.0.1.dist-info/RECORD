@@ -1,0 +1,10 @@
+xcope_daemon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xcope_daemon/config.py,sha256=W1lIDke2xTYB3W3C8tVKXLIPyEuNDtrpF02av2vXOmg,1131
+xcope_daemon/diagnose_daemon.py,sha256=nLbKwcDnVHeSHGPNNMtEvFotYfI5B0eyyJu5SvWbhHE,1441
+xcope_daemon/diagnose_daemon_pb2.py,sha256=ef1S9ZIrRYfI-KAbz09CYu4tIhg2mX2QB_kmTazUxOU,2424
+xcope_daemon/diagnose_daemon_pb2_grpc.py,sha256=NZs1_-xhyHkCqxOumBgioScg-4yo69zPEd4Fj0OCnhI,5891
+xcope_daemon/docker_utils.py,sha256=Ggse4STt-ipv5Mzo2WwbPsNehvHnLzR1eEpMbq-5W2g,193
+xcope_daemon-0.0.1.dist-info/METADATA,sha256=X7ijC0WpYv2bDOHRChkIAUJ9spIsgQ-iUY8IDp5HDNo,874
+xcope_daemon-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+xcope_daemon-0.0.1.dist-info/top_level.txt,sha256=xfIZxV-61GcuAZyyXF7Gl4ywgBvhc6r3G_X1XmZQ7D4,13
+xcope_daemon-0.0.1.dist-info/RECORD,,
