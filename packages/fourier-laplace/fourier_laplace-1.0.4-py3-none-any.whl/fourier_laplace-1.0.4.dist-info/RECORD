@@ -1,0 +1,11 @@
+fourier_laplace/__init__.py,sha256=YHI-67ogP3czCYoxBq2VIIDcwQq5VFaAfdvIdiGiids,34
+fourier_laplace/drawer.py,sha256=_UV0U0RhL-bBPacRfB_G7vHHAbsUnSS16WuIp9ecWXc,2371
+fourier_laplace/tables/P_data.csv,sha256=Vrp5LEvaRgMcbcPJEvsYjqyM7olrt9Ju77bHF5Y92xg,93979
+fourier_laplace/tables/a_data.csv,sha256=Joozwdl2-oMa7bWpz0unDD_LKtENXs-TXGLXsZ1pbTg,11603441
+fourier_laplace/tables/b_data.csv,sha256=hK6PqLwpkKlZLQOdeTm-d4FkB0IF4CPZobS2vW4rPq0,11124850
+fourier_laplace/tables/max_x_data.csv,sha256=7E1KqDboGt2oN3jGfs46Q_GGzQYN-AxogR4a2ExGhfA,95863
+fourier_laplace-1.0.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fourier_laplace-1.0.4.dist-info/METADATA,sha256=9fLsdCg0M6uWyg4jINRnJEcdfwXr4aWeBjgFZmQkcMU,3482
+fourier_laplace-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fourier_laplace-1.0.4.dist-info/top_level.txt,sha256=9siufWkhhk5E2Wsr4hidWmYzTmze357Y4a9kCW7VYeI,16
+fourier_laplace-1.0.4.dist-info/RECORD,,
