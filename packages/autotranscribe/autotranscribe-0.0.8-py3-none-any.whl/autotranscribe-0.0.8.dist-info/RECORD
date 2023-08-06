@@ -1,0 +1,9 @@
+autotranscribe/__init__.py,sha256=afDPn2dK2PqXma1wiU0IVXAwz_2RmoEYd8_SNLgN6KA,85
+autotranscribe/advanced.py,sha256=ghGbK_EP9Goeed2YCLJF-XU08OE3z4tsAhMzf2eoTNg,762
+autotranscribe/splitter.py,sha256=KHMxe4nPlFGD6BRRl40X8uts6iyBNz7KiXbd_wTGG74,445
+autotranscribe/transcriber.py,sha256=QQKPT1mnEMt_2uBtIGoWVXjTn2mZOvpida8bkY44220,2732
+autotranscribe/videoproc.py,sha256=XDPEYjwwQRKIDeKQhvR43PMfC1-EjYD0HtaZ-M1MOMQ,670
+autotranscribe-0.0.8.dist-info/LICENSE,sha256=tvkmFKxB4YUU07wK2gnfmU_MEMWjIelOegA3oojH-wY,1072
+autotranscribe-0.0.8.dist-info/METADATA,sha256=lFsKqViVm0Mnzah2xoiD5_4xlXkSQWTOmZU7FfwmiUg,2000
+autotranscribe-0.0.8.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+autotranscribe-0.0.8.dist-info/RECORD,,
