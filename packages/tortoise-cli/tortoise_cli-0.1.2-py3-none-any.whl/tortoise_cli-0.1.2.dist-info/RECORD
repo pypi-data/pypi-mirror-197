@@ -1,0 +1,11 @@
+CHANGELOG.md,sha256=0vCrz5iOaYaW-D3tcHSJzvjFl8bVpaYPc6-Cpn2x1u0,146
+LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+README.md,sha256=IJvqzrSKuK1zSvJI04wbN4xkzGT66-CZEPvHUMLA4Qc,1885
+tortoise_cli/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+tortoise_cli/cli.py,sha256=zOwoeM8W1ZNy2JOEn9dH01J62mvQooUrzeNDOhJxjjY,2064
+tortoise_cli/utils.py,sha256=KQ0KBAYuOJdAG8i6eLs4ILzNf74vJU3HGoOXS5-GQSo,805
+tortoise_cli-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tortoise_cli-0.1.2.dist-info/METADATA,sha256=d0nrxdGFQG3ZOVRvdDKTcKohMh0VDGgEshKLZ0J_AlI,2847
+tortoise_cli-0.1.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+tortoise_cli-0.1.2.dist-info/entry_points.txt,sha256=GE3eLwXQPoPgEjAnk-YEAGIKGrvhYSxf-jvIT_0kbi8,54
+tortoise_cli-0.1.2.dist-info/RECORD,,
