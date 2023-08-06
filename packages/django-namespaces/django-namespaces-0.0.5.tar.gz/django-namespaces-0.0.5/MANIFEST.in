@@ -1,0 +1,7 @@
+include HISTORY.rst
+include LICENSE
+include pyproject.toml
+include README.rst
+include src/*/py.typed
+recursive-include src/django_namespaces/templates *
+recursive-include src *.js
