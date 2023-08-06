@@ -1,0 +1,7 @@
+setup.py
+zefkopzekfo/__init__.py
+zefkopzekfo/pytoolib.py
+zefkopzekfo.egg-info/PKG-INFO
+zefkopzekfo.egg-info/SOURCES.txt
+zefkopzekfo.egg-info/dependency_links.txt
+zefkopzekfo.egg-info/top_level.txt
