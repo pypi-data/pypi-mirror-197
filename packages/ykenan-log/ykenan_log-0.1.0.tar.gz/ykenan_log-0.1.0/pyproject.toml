@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=42", "coloredlogs>=15.0"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "ykenan_log"
+version = "0.1.0"
+authors = [
+  { name="Yu Zhengmin", email="3236170161@qq.com" },
+]
+description = "Print and save a simple log to a file"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+"Github" = "https://github.com/YuZhengM/ykenan_log"

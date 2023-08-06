@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: ykenan-log
+Version: 0.1.0
+Summary: Print and save a simple log to a file
+Author-email: Yu Zhengmin <3236170161@qq.com>
+Project-URL: Github, https://github.com/YuZhengM/ykenan_log
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ykenan_log
+
+> **`Print and save a simple log to a file`**
+
+This is a simple log package. You can see
+[Github-ykenan_log](https://github.com/YuZhengM/ykenan_log)
+
+> add requirements.txt
+
+```shell
+python -m pip install -r requirements.txt
+py -m build
+py -m twine upload --repository testpypi dist/*
+```
+
+## Use
+
+> install
+
+```shell
+pip install coloredlogs
+pip install ykenan_log
+```
+
+> use
+
+```python
+# -*- coding: utf-8 -*-
+
+import ykenan_log
+
+logger = ykenan_log.Logger("name", "log")
+
+if __name__ == '__main__':
+    print("run...")
+    logger.debug("info......")
+    logger.info("info......")
+    logger.warn("info......")
+    logger.error("info......")
+```
+
+> output
+
+```shell
+run...
+2023-03-17 09:21:36 root name[34768] DEBUG info......
+2023-03-17 09:21:36 root name[34768] INFO info......
+2023-03-17 09:21:36 root name[34768] WARNING info......
+2023-03-17 09:21:36 root name[34768] ERROR info......
+
+```
