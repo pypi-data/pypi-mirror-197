@@ -1,0 +1,2 @@
+soda-core==3.0.29
+oracledb==1.1.1
