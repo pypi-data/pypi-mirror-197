@@ -1,0 +1,5 @@
+[console_scripts]
+tsuchinoko_demo = tsuchinoko:launch_server
+
+[gui_scripts]
+tsuchinoko = tsuchinoko:launch_client
