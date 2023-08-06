@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: instate
+Version: 0.1.0
+Summary: Instate: predict the state of residence from last name
+Home-page: https://github.com/appeler/instate
+Author: Atul Dhingra, Gaurav Sood
+Author-email: dhingra.atul92@gmail.com, gsood07@gmail.com
+License: MIT
+Keywords: predict the state of residence from last name
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Provides-Extra: dev
+Provides-Extra: test
+License-File: LICENSE
+
+UNKNOWN
+

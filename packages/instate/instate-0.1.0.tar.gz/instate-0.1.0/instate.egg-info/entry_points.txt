@@ -1,0 +1,3 @@
+[console_scripts]
+last_state = instate.last_state:main
+
