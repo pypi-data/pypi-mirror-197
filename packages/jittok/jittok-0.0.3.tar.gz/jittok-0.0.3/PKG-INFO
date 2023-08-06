@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: jittok
+Version: 0.0.3
+Summary: Swiss Army Knife-like toolbox for data processing
+Home-page: https://github.com/osoken/jittok
+Author: osoken
+Author-email: osoken.devel@outlook.jp
+License: MIT
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# jittok
+
+`jittok` is a Swiss Army Knife-like toolbox for data processing.
+
+## Installation
+
+```
+pip install jittok
+```
+
+## Features
+
+### `jptext` - Japanese text related functions
+
+#### text normalization
+
+```
+>>> from jittok import jptext
+>>> jptext.normalization("ｾﾞﾝｶｸｶﾅ")
+'ゼンカクカナ'
+```
+
+#### parsing Japanese numeric string
+
+```
+>>> from jittok import jptext
+>>> jptext.to_numeric("一二,三四五億2百十万987")
+1234502100987
+```
