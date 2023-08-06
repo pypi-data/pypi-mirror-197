@@ -1,0 +1,5 @@
+pyspark_dataframe_wrappers/__init__.py,sha256=kl2Et644PvUIvziU4BTxiTD1W4_g7E0xBYCHgPE6RZc,363
+pyspark_dataframe_wrappers/test_dataframe.py,sha256=z4WQhY5JacARtzp_DKgX8byExAuBIBl0kVlwxVUvK9Q,2889
+pyspark_dataframe_wrappers-0.1.3.dist-info/WHEEL,sha256=rSgq_JpHF9fHR1lx53qwg_1-2LypZE_qmcuXbVUq948,81
+pyspark_dataframe_wrappers-0.1.3.dist-info/METADATA,sha256=XyEpD6c7AM6Qs1uQTs_wWdxUQi_CDSK9TV_8Xh97KX0,1754
+pyspark_dataframe_wrappers-0.1.3.dist-info/RECORD,,
