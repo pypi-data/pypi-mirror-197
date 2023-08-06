@@ -1,0 +1,13 @@
+datamarket/__init__.py,sha256=FHS77P9qNewKMoN-p0FLEUEC60oWIYup1QkbJZP4ays,12
+datamarket/utils.py,sha256=km2lUGhvqMaIkMz2pFQaS_7vwZ6Sy-Yw23OVnfAJPU8,1898
+datamarket/interfaces/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datamarket/interfaces/alchemy.py,sha256=Y18HQVOjFVf52vRtNMmGKlD9ZexxJb7Z7MZTt9HND6I,3104
+datamarket/interfaces/drive.py,sha256=7WRCTtyXbXkZw9c9U6nr8OHQycX1mMfryNHkpdoWYXA,2913
+datamarket/interfaces/ftp.py,sha256=0Lf59uuGLVpGpnpMxRTnL0a1gPdL3zPMtb8NFyuKK28,1344
+datamarket/interfaces/proxy.py,sha256=EJSMr5F0d59gavIIE9K2OwL0qUeGBlQS8WXQsmVay1U,2787
+datamarket/interfaces/tinybird.py,sha256=o4u-56sft-6Pow-ANkaM-Yga86KJTUgxyVfQJtfZCoY,2565
+datamarket-0.2.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+datamarket-0.2.4.dist-info/METADATA,sha256=ZHc05RnWTrEIBuQa4Ys9UOWWjYaIp8TDkUQXKqSeQvc,1463
+datamarket-0.2.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+datamarket-0.2.4.dist-info/top_level.txt,sha256=GmTOa8ryz1Oq1dUdiHHKhfSIl-_DVYNhZQmXy9xLo70,11
+datamarket-0.2.4.dist-info/RECORD,,
