@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: wheat-yield-prediction-toolkit
+Version: 0.1.5
+Summary: Wheat Yield Prediction Toolkit is a package that provides tools for predicting wheat yield at the county level in the main wheat-producing regions of the US using deep learning approaches. The package includes modules for data collection, preprocessing, modeling, and uncertainty analysis.
+Home-page: https://github.com/nour3467/wheat-yield-prediction-toolkit
+Author: Noureddine Ech-chouky
+Author-email: noureddineechchouky@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Wheat Yield Prediction Toolkit
+
+Are you interested in predicting winter wheat yield in your area? Look no further! The Wheat Yield Prediction Toolkit is a collection of tools for gathering and processing data from various sources to help you make informed predictions about winter wheat yield.
+
+## Overview
+
+The Wheat Yield Prediction Toolkit includes several modules for collecting data from different sources:
+
+
+
+- USDA Quick Stats API for yield data
+- Gee for remote sensing
+- SoilGrids for soil data images
+- NASA POWER provider for weather data
+
+This README will guide you through the steps to set up and use the toolkit. Let's get started!

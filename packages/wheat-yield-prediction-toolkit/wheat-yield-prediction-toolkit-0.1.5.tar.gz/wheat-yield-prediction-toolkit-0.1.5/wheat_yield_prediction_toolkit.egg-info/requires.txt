@@ -1,0 +1,12 @@
+tqdm
+geopandas
+pytest
+pandas
+python-dotenv
+pyarrow
+earthengine-api
+geemap
+rasterio
+owslib
+scienceplots
+meteostat
