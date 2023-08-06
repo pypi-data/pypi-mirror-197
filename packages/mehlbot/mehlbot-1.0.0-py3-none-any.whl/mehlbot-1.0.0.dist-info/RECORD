@@ -1,0 +1,8 @@
+mehlbot/__init__.py,sha256=OPXSG3I4ieD3a4KFzXGSj6N7Yl7NjaJ9jlJEnhTS9cM,19
+mehlbot/command.py,sha256=dqlNNY9YKSzWQb5Csi6CD7Yuiv9qfXX7cP8KhIrcGgA,1148
+mehlbot/command_callback.py,sha256=B68W6Ip6UDu5Qwfwtrd1do67PGvq3FoaqT338jLkZx4,2421
+mehlbot/logger.py,sha256=lHv99q4X-Z2l924MT9C-BCcjrXNaEf9dNxSo4RGY-3E,532
+mehlbot-1.0.0.dist-info/LICENSE,sha256=K4KjaK0WQxDOHRkDaIedyWsakTdCiftiBgG5w2OTbGM,1087
+mehlbot-1.0.0.dist-info/METADATA,sha256=r5dUe1zvdEcX7YBni4vA8A_59UK4W1Imgw4CvHOe1qU,573
+mehlbot-1.0.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+mehlbot-1.0.0.dist-info/RECORD,,

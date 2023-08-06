@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mehlbot
+Version: 1.0.0
+Summary: A base for discord bot that will react to commands.
+License: MIT
+Author: cobrapitz
+Author-email: 12397702+cobrapitz@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: discord.py (>=2.2.2,<3.0.0)
