@@ -1,0 +1,12 @@
+weave/__about__.py,sha256=VEqod_Gk-5w7fCmPU_Bv4qfD6NNvrp4Ldr9uRRqMMiM,769
+weave/__init__.py,sha256=9QjY3aibI6C8C9G5N3RDok4yZtcjToFz7oudreHKjDI,35
+weave/dimension.py,sha256=N52jYFO9FaByYkgristolzzV5FbGtDqSw4xmt5Wvu40,23343
+weave/distance.py,sha256=00M3DifV9Gdtt4Dyvb5tBX_WovpzMvqPk99c36RKh3s,3537
+weave/kernels.py,sha256=ng0O7DfmXnBh3if2YKH_buC2wP-f_su_lWTwi3-9R-4,7163
+weave/smoother.py,sha256=YJ6Rh54ws5X9kK9TVfd-N06NKWiZLCB2VT_BEF_xuKU,18804
+weave/utils.py,sha256=LNNsSrUVK2at7aJhPZ-oFcd0On8BK3Ea1VeE_jPgi8c,3344
+weighted_average-1.1.1.dist-info/LICENSE,sha256=JK49_9sXFpVAFJcDuRCpZgtVJPcSczAOCzAKGZYRXlE,1328
+weighted_average-1.1.1.dist-info/METADATA,sha256=XIK8oFyPoGVgj4SMiKTcji6QFwzNgdWERzWm8u_qY2M,2063
+weighted_average-1.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+weighted_average-1.1.1.dist-info/top_level.txt,sha256=wqry4TnAIO7OunE346dEGFGS08RA_SBvpufxTgJpYko,6
+weighted_average-1.1.1.dist-info/RECORD,,
