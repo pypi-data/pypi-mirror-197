@@ -1,0 +1,13 @@
+mongorepository/__init__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+mongorepository/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongorepository/models/base.py,sha256=N9cr4rTA0VZwAg8F5YxIlajVFE1_1sDWr_VNi2PgQSs,268
+mongorepository/models/mongo.py,sha256=TRlo1-873zGGb7IhfOLipNfJ8O00QJ0Ex5UZgK3aAq0,1046
+mongorepository/repositories/async_mongo.py,sha256=eXNFWISJmEOpE1sbePs92pOOL6cp_nhfT2ZVcKqA0Y0,4124
+mongorepository/repositories/base.py,sha256=IqghhovPEW_5BPfvYDMNwKAZ_lckxsK61pLXl-p_A_I,3109
+mongorepository/repositories/mongo.py,sha256=kdl4_GhIRLgn910iv4MffM0vgJ3qqrbBNHi74Gv8eMg,3859
+mongorepository/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongorepository/utils/decorators.py,sha256=HSGUiPb1z51ILbFeQBlBisiBD8eK_wLt_REMBPcv4AI,871
+mongorepository-0.4.0.dist-info/LICENSE,sha256=aW8tTypGvTGGCHW_GvZVUMP4Nw60KvT8RMSMsZejU0w,1083
+mongorepository-0.4.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+mongorepository-0.4.0.dist-info/METADATA,sha256=BVDDtT-o1sRVKbVdfCfswEzZsC-J0hXy0C3-q36NTgc,579
+mongorepository-0.4.0.dist-info/RECORD,,
