@@ -1,0 +1,105 @@
+[tool.poetry]
+name = "sphinx-ads"
+
+# !! Don't miss updates in ads.py, conf.py, and changelog.rst!!!
+version = "0.0.2"
+
+description = "Sphinx extension for advertising between different Sphinx-Projects and other pages"
+authors = ["team useblocks <info@useblocks.com>"]
+license = "MIT"
+maintainers = [
+    "Daniel Woste <daniel@useblocks.com>",
+    "Duodu Randy <duodurandy19@gmail.com>"
+]
+readme = "README.rst"
+repository = "https://github.com/useblocks/sphinx-ads"
+documentation = "http://sphinx-ads.useblocks.com/"
+classifiers=[
+        'Development Status :: 2 - Pre-Alpha',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Topic :: Documentation :: Sphinx',
+        'Topic :: Software Development :: Build Tools',
+        'Framework :: Sphinx :: Extension',
+    ]
+
+packages = [
+    {include = "sphinx_ads"}
+]
+
+
+[tool.poetry.dependencies]
+python = ">=3.7.0,<4.0"
+sphinx = ">=5.0"
+docutils = ">=0.15"
+pathlib = ">=1.0"
+
+requests = "^2.25.1"  # external_links
+requests-file = "^1.5.1"  # external links
+jsonschema = ">3.2.0"  # jsondata schema validation
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2"
+# test dependencies
+pytest = "^7"
+lxml = "^4.6.5"
+pytest-xdist="*"  # parallelisation
+myst-parser="^0.18.0"
+
+# type checking
+mypy = "^0.991"
+types-requests = "^2.27.25"
+types-setuptools = "^65.6.0.2"
+docutils-stubs = "^0.0.22"
+
+sphinx-immaterial = { version = ">=0.7.3", optional = true }
+
+# formatting dependencies
+black = "^22.3"
+isort = "^5.7.0"
+
+# pyparsing 3.0.5 does not work with current "packaging" lib
+pyparsing = "^3.0.9"  # 3.0.5 error: https://github.com/pyparsing/pyparsing/issues/329
+
+[tool.pytest.ini_options]
+asyncio_mode= "auto"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+strict = true
+show_error_codes = true
+implicit_reexport = true
+files = "sphinx_ads"
+ignore_missing_imports = true
+namespace_packages = true
+warn_unused_ignores = false
+
+[[tool.mypy.overrides]]
+module = [
+    'sphinx_ads.ads',
+    'sphinx_ads.directives.advertisement',
+    'sphinx_ads.templates.template',
+    'sphinx_ads.utils'
+]
+ignore_errors = true
+
+[tool.poetry.extras]
+docs = ["sphinx"]
+immaterial = ["sphinx-immaterial"]
+
+[build-system]
+requires = ["setuptools", "poetry_core>=1.0.8"]  # setuptools
+build-backend = "poetry.core.masonry.api"
+
