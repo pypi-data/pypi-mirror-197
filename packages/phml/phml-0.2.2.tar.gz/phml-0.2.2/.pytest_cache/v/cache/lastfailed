@@ -1,0 +1,15 @@
+{
+  "tests/parsing/test_parse.py": true,
+  "tests/test_nodes.py": true,
+  "tests/test_version.py": true,
+  "tests/test_virtual_python.py": true,
+  "tests/parsing/test_compile.py": true,
+  "tests/parsing/test_formats.py": true,
+  "tests/utils/test_builder.py": true,
+  "tests/utils/test_inspect.py": true,
+  "tests/utils/test_locate.py": true,
+  "tests/utils/test_misc.py": true,
+  "tests/utils/test_transform.py": true,
+  "tests/utils/test_travel.py": true,
+  "tests/utils/test_validate.py": true
+}
