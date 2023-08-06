@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: datasetsforecast
+Version: 0.0.8
+Summary: Datasets for Time series forecasting
+Home-page: https://github.com/Nixtla/datasetsforecast/tree/main/
+Author: Nixtla
+Author-email: business@nixtla.io
+License: MIT License
+Keywords: time-series forecasting datasets
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: fugue (>=0.8.1)
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: xlrd (>=1.0.0)
+Provides-Extra: dev
+Requires-Dist: fugue[dask,ray] (>=0.8.1) ; extra == 'dev'
+
+# datasetsforecast
+Datasets for time series forecasting
