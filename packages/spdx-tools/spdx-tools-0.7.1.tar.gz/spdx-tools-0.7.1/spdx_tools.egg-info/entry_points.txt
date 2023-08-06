@@ -1,0 +1,3 @@
+[console_scripts]
+pyspdxtools_convertor = spdx.cli_tools.convertor:main
+pyspdxtools_parser = spdx.cli_tools.parser:main
