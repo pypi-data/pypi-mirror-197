@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+examples/example.py
+src/bridgelib/__init__.py
+src/bridgelib/constants.py
+src/bridgelib.egg-info/PKG-INFO
+src/bridgelib.egg-info/SOURCES.txt
+src/bridgelib.egg-info/dependency_links.txt
+src/bridgelib.egg-info/top_level.txt
+tests/__init__.py
+tests/test_constants.py
