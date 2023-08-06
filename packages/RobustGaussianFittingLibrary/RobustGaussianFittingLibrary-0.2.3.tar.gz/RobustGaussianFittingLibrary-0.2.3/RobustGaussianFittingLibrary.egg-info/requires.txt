@@ -1,0 +1,4 @@
+lognflow
+matplotlib
+numpy
+scipy
