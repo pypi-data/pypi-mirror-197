@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: risingwave
+Version: 0.0.1
+Summary: RisingWave Python API
+Home-page: https://github.com/risingwavelabs/risingwave
+Author: RisingWave Labs
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.10
