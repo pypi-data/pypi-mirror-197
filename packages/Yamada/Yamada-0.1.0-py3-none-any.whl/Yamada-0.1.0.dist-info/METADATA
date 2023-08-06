@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: Yamada
+Version: 0.1.0
+Summary: Calculate the Yamada polynomial of spatial topologies.
+Author-email: Chad Peterson <cp44@illinois.edu>
+Project-URL: Homepage, https://github.com/Chad-Peterson/Yamada
+Project-URL: Bug Tracker, https://github.com/Chad-Peterson/Yamada/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: networkx (~=2.8.5)
+Requires-Dist: matplotlib (==3.5.3)
+Requires-Dist: numpy (<=1.22.4)
+Requires-Dist: pytest
+Requires-Dist: sphinx
+Requires-Dist: nbsphinx
+Requires-Dist: cypari (~=2.4.1)
+Requires-Dist: sympy
+Requires-Dist: jupyter
+Requires-Dist: nbconvert
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
