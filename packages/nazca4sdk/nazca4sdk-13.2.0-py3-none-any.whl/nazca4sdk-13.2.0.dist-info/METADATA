@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: nazca4sdk
+Version: 13.2.0
+Summary: nazca4sdk
+Home-page: UNKNOWN
+Author: M_APA
+Author-email: martyna.kurbiel@apagroup.pl
+License: UNKNOWN
+Keywords: python,nazca4sdk
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: setuptools
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: mysql-connector-python
+Requires-Dist: pip
+Requires-Dist: configparser
+Requires-Dist: wheel
+Requires-Dist: py
+Requires-Dist: Sphinx
+Requires-Dist: tzlocal
+Requires-Dist: six
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: clickhouse-driver
+Requires-Dist: urllib3
+Requires-Dist: kafka-python
+Requires-Dist: datetime
+Requires-Dist: typing
+Requires-Dist: dask (~=2022.12.1)
+Requires-Dist: clickhouse-connect
+
+SDK pythonowe
+
