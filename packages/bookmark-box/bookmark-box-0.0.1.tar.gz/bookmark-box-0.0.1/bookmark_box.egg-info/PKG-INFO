@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: bookmark-box
+Version: 0.0.1
+Summary: A static site generator to manage your bookmarks
+Author: Maxwell Mullin
+Author-email: mullinmax@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+License-File: LICENSE.txt
+
+# My Project
+
+Describe what your package is about
+
+## Package Distribution
+
+### Installation
+
+`pip install my-project`
+
+### Use
+
+`python ./src/main.py`
+
+## Docker Distibution
+
+### Installation
+
+`docker pull docker_user/project_name:latest`
+
+### Use
+
+`docker run -p 5000:5000 project_name`
+
+or for detached mode:
+
+`docker run -d -p 5000:5000 project_name`
+

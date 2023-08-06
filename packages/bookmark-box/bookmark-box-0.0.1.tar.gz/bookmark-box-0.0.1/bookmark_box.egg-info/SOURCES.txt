@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+bookmark_box.egg-info/PKG-INFO
+bookmark_box.egg-info/SOURCES.txt
+bookmark_box.egg-info/dependency_links.txt
+bookmark_box.egg-info/requires.txt
+bookmark_box.egg-info/top_level.txt
