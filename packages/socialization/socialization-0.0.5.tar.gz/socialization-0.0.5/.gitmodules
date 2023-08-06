@@ -1,0 +1,3 @@
+[submodule "src/socialization"]
+	path = src/socialization
+	url = https://github.com/groupultra/socialism

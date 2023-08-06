@@ -1,0 +1,5 @@
+# requirements to set up socialization
+rel >= 0.4.8
+tenacity >= 8.2.2
+websocket-client >= 1.5.1
+websockets >= 10.4
