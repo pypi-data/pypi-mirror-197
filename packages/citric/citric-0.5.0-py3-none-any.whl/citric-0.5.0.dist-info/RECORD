@@ -1,0 +1,12 @@
+citric/__init__.py,sha256=jJt3ClpmO3dqR0JDXy-c2dVTJuY4AzC0HprUEZ092sk,399
+citric/client.py,sha256=WUaGylhA0TtnUEZzuTI9xT6rIRcjxnXHkWGhKhqVS1U,38425
+citric/enums.py,sha256=y182yuyS3silGeT0ky6qmuZOoO1fpbEOVdvRSdSDc-8,1305
+citric/exceptions.py,sha256=p9FTGRZ7M0_z7n4xIpXdGxafdU7lODlhu_WEHY-ZTV8,1345
+citric/method.py,sha256=kOIXPJ89OE-3M3RepSCoKBoDclXe2IhdgmxBuDW_eLo,1135
+citric/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+citric/session.py,sha256=yvRFQcY7mGomfiXRAz06D22cT0LGVED_xfVGAaA06No,6711
+citric/types.py,sha256=78GYe_uNoN9wzYyr0K7p_J-LqyY3oqmuZwtI13F4TgU,12372
+citric-0.5.0.dist-info/LICENSE,sha256=gLnGgBQCs6EYHnKpg7Cs1mH8XJEZdL3khPhCjZSR8Ec,1083
+citric-0.5.0.dist-info/METADATA,sha256=7rUZiWqH9yump8mtG4WOIAMdKGI8sq84LYt1CkOafjw,5953
+citric-0.5.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+citric-0.5.0.dist-info/RECORD,,
