@@ -1,0 +1,5 @@
+setup.py
+izumi.egg-info/PKG-INFO
+izumi.egg-info/SOURCES.txt
+izumi.egg-info/dependency_links.txt
+izumi.egg-info/top_level.txt
