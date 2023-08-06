@@ -1,0 +1,17 @@
+txt2tei/__init__.py,sha256=xK62oqCYD-NYBN5DdMs-2W9gw82112dDTZZW5qjdIGc,23
+txt2tei/addmetre.py,sha256=VJ8hpCZv0dzqmChpxdmOb8IfPNPeo6AH_SYTL_MpkfI,893
+txt2tei/authors.py,sha256=PhfI3psYvQ0nPH8X-IpCs3DHW0dODSS-S_A3zxuhtPM,2457
+txt2tei/authors.xml,sha256=mZ9uCw-rkD7bO7Tq2sX9Wsz-F4wAB1bDjC5JWyiJOJ4,1422
+txt2tei/edition.py,sha256=FyfWw32iOOLxGU5ukedLy94u0ZgTFAoDEG2MB9RqWaw,715
+txt2tei/libtxt2tei.py,sha256=DJ4owqD0hF-W08Wwsghhh2nzo_RpABISrFbUvLzME3A,14360
+txt2tei/makelist.py,sha256=V87nklsu0em-sBras7ZxBaFhZlzFrXw5mmTM4-cSgaw,1910
+txt2tei/sexos.csv,sha256=lnITdEOuZimUEKKtCr2L_Jw2YsFbamWE7j6JDyyjA9E,12011
+txt2tei/tei2txt.py,sha256=lbSxOTrcB5kAr3VTwYEtI1uDl4w1UHyTNogvnzKUc0o,4175
+txt2tei/txt2tei-a.py,sha256=A3mMrGgdWCqQgxdd_aQxb83mQ5y5N01S8iCSUlVqD3s,16599
+txt2tei/txt2tei.py,sha256=3s20TAGw6lL0sTmhM4zKQ0cx1kkkGdcCbgoLyOTKscc,20686
+txt2tei-1.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+txt2tei-1.0.5.dist-info/METADATA,sha256=ZBczJ7ZGXr-Sx9NB44LTmZE3o4i2RtQdQA_BHKOZRAA,5321
+txt2tei-1.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+txt2tei-1.0.5.dist-info/entry_points.txt,sha256=T05Iugv-A3ZSiNpNsI4qlKHsjFEUQGxFS6V-veVV2Rw,41
+txt2tei-1.0.5.dist-info/top_level.txt,sha256=Kg9uQhLgw8ga_rs1i79lwxWAS4on0mxNXssSduxWpL4,8
+txt2tei-1.0.5.dist-info/RECORD,,
