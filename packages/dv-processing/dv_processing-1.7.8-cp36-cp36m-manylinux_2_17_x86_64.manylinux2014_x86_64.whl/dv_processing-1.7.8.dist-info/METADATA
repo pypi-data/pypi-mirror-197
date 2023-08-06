@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dv-processing
+Version: 1.7.8
+Summary: Generic algorithms for event cameras.
+Home-page: UNKNOWN
+Author: iniVation AG
+Author-email: support@inivation.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+
+UNKNOWN
+
