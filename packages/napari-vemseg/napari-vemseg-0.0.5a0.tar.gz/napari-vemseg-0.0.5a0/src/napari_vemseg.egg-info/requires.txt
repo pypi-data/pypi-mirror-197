@@ -1,0 +1,10 @@
+torch
+numpy
+scikit-image
+magicgui
+qtpy
+napari
+tqdm
+apoc
+superqt
+setuptools
