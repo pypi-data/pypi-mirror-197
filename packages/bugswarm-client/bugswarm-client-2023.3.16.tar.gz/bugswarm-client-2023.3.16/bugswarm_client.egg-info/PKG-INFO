@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: bugswarm-client
+Version: 2023.3.16
+Summary: The official command line client for the BugSwarm artifact dataset
+Home-page: https://github.com/BugSwarm/bugswarm
+Author: BugSwarm
+Author-email: dev.bugswarm@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+License-File: LICENSE
+
+The official command line client for the BugSwarm artifact dataset
