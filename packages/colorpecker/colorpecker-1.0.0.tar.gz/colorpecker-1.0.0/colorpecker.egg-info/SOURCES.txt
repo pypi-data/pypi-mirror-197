@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+colorpecker/__init__.py
+colorpecker/colorbutton.py
+colorpecker/colorpecker.py
+colorpecker/colorslider.py
+colorpecker/utils.py
+colorpecker.egg-info/PKG-INFO
+colorpecker.egg-info/SOURCES.txt
+colorpecker.egg-info/dependency_links.txt
+colorpecker.egg-info/requires.txt
+colorpecker.egg-info/top_level.txt

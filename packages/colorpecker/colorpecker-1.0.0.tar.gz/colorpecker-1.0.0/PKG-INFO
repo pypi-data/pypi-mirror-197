@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: colorpecker
+Version: 1.0.0
+Summary: Python based color picker written with PySide6 and QT.
+Home-page: https://github.com/pkkid/colorpecker
+Author: Michael Shepanski
+Author-email: michael.shepanski@gmail.com
+Keywords: colorpecker,color,picker,hex,hsv,rgb,rgba,eyedropper,palette
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.7
+License-File: LICENSE
+
+# Color Pecker
+<img src="colorpecker/resources/logo.png" style="float:left; margin-right:20px;" />
+A Python based color picker written with PySide6 and QT. Can be used as a stand-alone as a more modern color picker utility or easily imported and used within your existing QT application. It's cross platform and tested on Windows and Linux.
+
