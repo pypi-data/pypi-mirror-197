@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+PyConvertBinary/__init__.py
+PyConvertBinary.egg-info/PKG-INFO
+PyConvertBinary.egg-info/SOURCES.txt
+PyConvertBinary.egg-info/dependency_links.txt
+PyConvertBinary.egg-info/top_level.txt

@@ -1,0 +1,32 @@
+Change Log
+----------
+
+0.0.1 (23/10/2022)
+~~~~~~~~~~~~~~~~~~
+-First Release
+
+
+0.0.2 (24/10/2022)
+~~~~~~~~~~~~~~~~~~
+-DecToHex function added
+
+0.0.3 (24/10/2022)
+~~~~~~~~~~~~~~~~~~
+-HexToDec function added
+-Functions now accept string inputs
+
+0.0.4 (25/10/2022)
+~~~~~~~~~~~~~~~~~~
+-Improved error messages
+
+0.0.5 (20/11/2022)
+~~~~~~~~~~~~~~~~~~
+
+-HexToBin function added
+-BinToHex function added
+-Codes optimised to be slightly faster
+
+0.0.6 (13/3/2023)
+~~~~~~~~~~~~~~~~~~
+-Octal functions added
+-Address function added
