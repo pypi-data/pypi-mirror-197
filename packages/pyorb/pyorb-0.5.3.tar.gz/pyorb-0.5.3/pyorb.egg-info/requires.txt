@@ -1,0 +1,17 @@
+numpy>=1.18.4
+
+[develop]
+pytest>=6.2.5
+sphinx>=4.2.0
+flake8>=4.0.1
+wheel>=0.37.0
+build>=0.7.0
+twine>=3.4.2
+coverage>=6.0.2
+sphinx-gallery>=0.3.1
+matplotlib>=3.5.1
+nbsphinx>=0.8.8
+ipykernel>=6.9.1
+radon>=5.1.0
+numpydoc>=1.2
+pre-commit>3.0.0
