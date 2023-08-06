@@ -1,0 +1,40 @@
+# -*- coding: utf-8 -*-
+"""
+* * * This script is meant to run in IronPython within the Ansys Electronics Desktop. * * *
+
+It looks for a reference to a Python interpreter in the ``python_interpreter.bat`` file.
+
+This script executes the CPython script ``Lib/console_setup.py``.
+The ``console_setup.py`` script sets up the HFSS variable based on the command line arguments and kicks off an
+interactive Python session.
+
+"""
+import os
+if os.name == "posix":
+    import subprocessdotnet as subprocess
+else:
+    import subprocess
+
+# Launch file
+version = oDesktop.GetVersion()[2:6].replace(".", "")
+current_dir = os.path.dirname(os.path.abspath(os.path.realpath(__file__)))
+pyaedt_toolkit_dir = os.path.normpath(os.path.join(current_dir, r"##TOOLKIT_REL_LIB_DIR##"))
+python_exe = r"##IPYTHON_EXE##" % version
+pyaedt_script = os.path.join(pyaedt_toolkit_dir, "console_setup.py")
+if os.name =="posix":
+    command = [
+            '{}'.format(python_exe),
+            "-i",
+            '{}'.format(pyaedt_script),
+            str(oDesktop.GetProcessID()),
+            str(oDesktop.GetVersion()[:6]),
+                   ]
+else:
+    command = [
+        '"{}"'.format(python_exe),
+        "-i",
+        '"{}"'.format(pyaedt_script),
+        str(oDesktop.GetProcessID()),
+        str(oDesktop.GetVersion()[:6]),
+               ]
+subprocess.Popen(" ".join(command))
