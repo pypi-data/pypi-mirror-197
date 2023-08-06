@@ -1,0 +1,9 @@
+data
+wandb
+.pytest_cache
+__pycache__
+pyproject.toml
+dist
+examples/lm/*.sh*
+examples/resnet/*.sh
+jobs_output
