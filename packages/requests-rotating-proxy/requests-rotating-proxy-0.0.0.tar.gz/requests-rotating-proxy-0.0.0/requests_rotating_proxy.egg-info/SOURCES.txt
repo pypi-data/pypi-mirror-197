@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+requests_rotating_proxy/__init__.py
+requests_rotating_proxy/__version__.py
+requests_rotating_proxy/requests_rotating_proxy.py
+requests_rotating_proxy.egg-info/PKG-INFO
+requests_rotating_proxy.egg-info/SOURCES.txt
+requests_rotating_proxy.egg-info/dependency_links.txt
+requests_rotating_proxy.egg-info/top_level.txt
