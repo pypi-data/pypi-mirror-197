@@ -1,0 +1,2 @@
+[console_scripts]
+dng-to-cube = dng_to_cube:main
