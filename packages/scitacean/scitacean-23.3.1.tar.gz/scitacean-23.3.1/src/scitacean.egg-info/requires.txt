@@ -1,0 +1,7 @@
+email-validator
+pydantic
+python-dateutil
+requests
+
+[ssh]
+fabric
