@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: beekeeper-sdk
+Version: 0.3.4
+Summary: SDK for interacting with the Beekeeper API
+Home-page: https://github.com/HappyTetrahedron/beekeeper-sdk-python
+Author: Aline Abler
+Author-email: alinea@riseup.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: python-magic
+
+# Beekeeper Python SDK
+
+Python package to interact with the Beekeeper API
+
+
