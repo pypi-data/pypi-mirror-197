@@ -1,0 +1,9 @@
+dummyextension/extension.cpython-36m-x86_64-linux-gnu.so,sha256=NfH7S99MR9_lBgRYrojB-Yk01ipacne2nO0eZ92Wfpo,16396
+dummyextension/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dummyextension/tests/test_extension.py,sha256=JTvNJtZ3BJXqJaLvZMsV_ZQohVlt-6SflWM6TcKHlsg,198
+dummyextension/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simple_manylinux_demo-2.0.dist-info/top_level.txt,sha256=1c15-blbzEJQUDavuu-wnT8PnHIaGbDo7ROrvbMp9FY,15
+simple_manylinux_demo-2.0.dist-info/METADATA,sha256=zpK878uVmvcphwpsM_7B3gddsyHuZo1AQ57nAPG4fUE,352
+simple_manylinux_demo-2.0.dist-info/RECORD,,
+simple_manylinux_demo-2.0.dist-info/LICENSE,sha256=VTfU0Qt2uBtujf2LZESApLHvozL7sM22ESbFvnge97Q,6554
+simple_manylinux_demo-2.0.dist-info/WHEEL,sha256=mDQ3Iv4u4a2fhzWykDX-m-B2z4MFbTmQ-uhl9jJqW6w,221
