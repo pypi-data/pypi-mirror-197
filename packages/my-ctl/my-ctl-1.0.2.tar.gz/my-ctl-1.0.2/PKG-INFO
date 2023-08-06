@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: my-ctl
+Version: 1.0.2
+Summary: myctl quick create  project
+Author: labelnet
+Author-email: labelnet@foxmail.com
+License: labelnet
+Keywords: my-ctl
+Requires-Python: >=3.8
