@@ -1,0 +1,43 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "graphqldomain"
+authors = [
+    {name = "Ashley Whetter", email = "ashley@awhetter.co.uk"},
+]
+readme = "README.rst"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Plugins",
+    "Framework :: Sphinx :: Extension",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Documentation :: Sphinx",
+]
+requires-python = ">=3.8"
+dynamic = ["version", "description"]
+dependencies = [
+    "graphql-core>=1.1",
+    "sphinx>=4.0",
+]
+
+[project.urls]
+Source = "https://github.com/AWhetter/graphqldomain"
+
+[tool.pylint]
+disable = "R,unused-argument"
+
+[tool.towncrier]
+directory = "doc/changes"
+filename = "CHANGELOG.rst"
+package = "graphqldomain"
+title_format = "graphqldomain v{version} ({project_date})"
