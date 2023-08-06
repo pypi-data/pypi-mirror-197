@@ -1,0 +1,11 @@
+kgen/K_functions.py,sha256=3-ljZ_bQD63q6QiDrKpFwXzZzHsDu6zdJAGD-Zk4dN0,15336
+kgen/__init__.py,sha256=qjejbd3IiV6ua-fcM_d6IKXayF7SF6cJoa4utboRLKI,60
+kgen/coefs.py,sha256=IPAkbwcdY6OnmPYN8SNi4K5LNGw6hkRhhnpNYu0PJ8I,355
+kgen/coefficients/K_calculation.json,sha256=IKkWlXan9zjRLcgs0qJTg5NEEpndvH6G6tHD7mKIHuk,1993
+kgen/coefficients/K_pressure_correction.json,sha256=nwn9XubZbXoCTzKKvngR1OrH70tqBUTe0jZaMjop1NI,1118
+kgen/coefficients/fundamental_constants.json,sha256=ugHJQWeHxAl7gdjr8Y1BwT1BJQjJ1yi0QSpHdSrc8gk,202
+Kgen-0.2.0.dist-info/METADATA,sha256=7qoDdHYAJjXBoxVFZAXwhDxBuIhKtl9GPO5E-wgSNkc,711
+Kgen-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Kgen-0.2.0.dist-info/top_level.txt,sha256=eWHdlfzZyRCy4pgNXhYocClXTBeKweEdzCX5hVc2CXo,5
+Kgen-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+Kgen-0.2.0.dist-info/RECORD,,
