@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: neuro-connector-api
+Version: 1.2.2b0
+Summary: Connects to app.myneuro.ai
+Author: Ben Hesketh
+Author-email: bhesketh@wearedragonfly.co
+License-File: LICENSE
+
+Intended to be used in the command line. NeuroConnector.py -c [connectonId] -o [organizationId] -u [baseUrl] -a [appToken] -f [function] -p [filePath]
+Functions [1=sendTestResultsJson]
