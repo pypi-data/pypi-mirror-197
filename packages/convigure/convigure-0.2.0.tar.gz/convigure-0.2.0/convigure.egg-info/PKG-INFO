@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: convigure
+Version: 0.2.0
+Summary: Easy configuration for Python with dot notation.
+Home-page: https://github.com/rendicahya/convigure
+Author: Randy Cahya Wihandika
+Author-email: rendicahya@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Convigure
+
+Easy configuration for Python with dot notation. Currently supports read-only JSON, YAML, and TOML.
+
+## Installation
+
+```
+pip install convigure
+```
+
+## Usage
+
+```python
+from convigure import Conf
+
+conf = Conf.load_toml("conf.toml")
+
+# Or:
+# conf = Conf.load_json("conf.json")
+
+# Or:
+# conf = Conf.load_yaml("conf.yaml")
+
+print(conf.title)
+print(conf.images[0])
+```
