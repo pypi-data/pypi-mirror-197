@@ -1,0 +1,2 @@
+[xoscar_extensions]
+init = xoscar_ray:init

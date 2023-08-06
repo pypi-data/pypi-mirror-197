@@ -1,0 +1,14 @@
+xoscar
+ray>=1.8.0
+
+[dev]
+pytest>=3.5.0
+pytest-cov>=2.5.0
+pytest-timeout>=1.2.0
+pytest-forked>=1.0
+pytest-asyncio>=0.14.0
+flake8>=3.8.0
+black
+
+[dev:python_version < "3.8"]
+mock>=4.0.0

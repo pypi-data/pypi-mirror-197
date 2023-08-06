@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xoscar_ray
+Version: 0.0.1
+Summary: Xoscar on Ray.
+Home-page: http://github.com/xprobe-inc/xoscar_ray
+Author: Qin Xuye
+Author-email: qinxuye@xprobe.io
+Maintainer: Qin Xuye
+Maintainer-email: qinxuye@xprobe.io
+License: Apache License 2.0
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# xoscar_ray
+Xoscar on Ray.
