@@ -1,0 +1,17 @@
+fqdn_parser/__init__.py,sha256=pH5i4Fj1tbXLqLtTVIdoojiplZssQn0nnud8-HXodRE,577
+fqdn_parser/suffixes.py,sha256=OgE9Q_lldLupm-39dYBQcKBqb6OPsWoADH7D1uFtZo4,9443
+fqdn_parser/tld_ranks.py,sha256=WJhQ3XI2sAHEXWmy-YrQNLK_cIMAUZOEyHgNFUSzLU8,1237
+fqdn_parser/tld_reg_date_parser.py,sha256=NIPUBcxmtg6DwqksvD8Lit42Dry6R0GHOi1-y8drnAI,3246
+fqdn_parser/tld_reg_dates_v1.txt,sha256=emLfDbcKE0WoyaNQfLygD7sRK1w6zwTHIr81swB2PQk,26236
+fqdn_parser/entropy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fqdn_parser/entropy/char_probabilities.py,sha256=M53yd5deS_BcuRI6etpXRobBg8NCnlQbBNEzSzXWXNc,5202
+fqdn_parser/entropy/domain_entropy.py,sha256=zjefZWmMN7a2xhGHb1YKbAF6cu4fFQSTxuiuQno8Ds8,2869
+fqdn_parser/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fqdn_parser/utils/ascii_ify.py,sha256=DPnz651AYBCItMsHheJQIa33PsflrTRLSbbWwEJuK5Y,384
+fqdn_parser/utils/suffix_parser.py,sha256=MU0q9Bowct8mmX4cX3cgUe82VzGX8UgyAk5Hvm2Jg8k,6122
+fqdn_parser/utils/trie.py,sha256=fHgIcyyQdxG-nM0quthRI3-tM9tWLcMBhRotYrnTGIo,4687
+fqdn_parser-2.1.6.dist-info/LICENSE.txt,sha256=W3Pn63iJzaQpLIfo8G642VDLNTVKBRj1UyT9EGTdjx4,1079
+fqdn_parser-2.1.6.dist-info/METADATA,sha256=saeqXy00k4VVU0z25BDjfnjuOzMXDkdpEhkybhsH-Gg,16589
+fqdn_parser-2.1.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fqdn_parser-2.1.6.dist-info/top_level.txt,sha256=O78d8zGlVkqkjyp6rdaUQgLNbjQ1CS8jRiEks0j0Dls,50
+fqdn_parser-2.1.6.dist-info/RECORD,,
