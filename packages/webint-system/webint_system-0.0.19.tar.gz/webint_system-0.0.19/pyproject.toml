@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "webint-system"
+version = "0.0.19"
+description = "manage the system"
+keywords = ["webint"]
+homepage = "https://ragt.ag/code/projects/webint-system"
+repository = "https://ragt.ag/code/projects/webint-system.git"
+documentation = "https://ragt.ag/code/projects/webint-system/api"
+authors = ["Angelo Gladding <angelo@ragt.ag>"]
+license = "BSD-2-Clause"
+packages = [{include="webint_system"}]
+
+[tool.poetry.plugins."webapps"]
+system = "webint_system:app"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+pygments = "^2.14.0"
+webint = ">=0.0"
+webagt = ">=0.0"
+gmpg = ">=0.0"
+bgq = ">=0.0"
+
+[tool.poetry.group.dev.dependencies]
+gmpg = {path="../gmpg", develop=true}
+bgq = {path="../bgq", develop=true}
+webint = {path="../webint", develop=true}
+webagt = {path="../webagt", develop=true}
+newmath = {path="../newmath", develop=true}
+sqlyte = {path="../sqlyte", develop=true}
+microformats = {path="../python-microformats", develop=true}
+
+# [[tool.poetry.source]]
+# name = "main"
+# url = "https://ragt.ag/code/pypi"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
