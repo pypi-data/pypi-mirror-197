@@ -1,0 +1,6 @@
+olx_scraper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+olx_scraper/scraper.py,sha256=KVshZkDKYp9ff1cRDsP9KmZ32daxF-P1_CuSEDqpGZY,4884
+olx_scraper/utils.py,sha256=KsM_5aTOd_PXg3IdRmm3tljz4MC6ZjWJbG9XXSh_C3I,1019
+olx_scraper_test-0.0.1.dist-info/METADATA,sha256=kYl2AuofxgjayA7_C2vqtw-Gcop7X8p-vD_ENeziWrs,763
+olx_scraper_test-0.0.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+olx_scraper_test-0.0.1.dist-info/RECORD,,
