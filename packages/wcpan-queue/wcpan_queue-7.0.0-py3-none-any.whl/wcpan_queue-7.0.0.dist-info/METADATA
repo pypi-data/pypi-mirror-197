@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: wcpan-queue
+Version: 7.0.0
+Summary: An utility for asyncio.Queue.
+Home-page: https://github.com/legnaleurc/wcpan.queue
+License: MIT
+Author: Wei-Cheng Pan
+Author-email: legnaleurc@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/legnaleurc/wcpan.queue
+Description-Content-Type: text/markdown
+
+# wcpan.queue
+
+An utility for `asyncio.Queue`.
+
+```python
+from wcpan.queue import AioQueue
+
+
+async def task(): ...
+
+
+async def amain():
+    # Creates a priority queue.
+    # Use AioQueue.fifo() for FIFO and AioQueue.lifo() for LIFO.
+    with AioQueue.priority() as queue:
+        # Push a task which priority is 1, lesser number has higher priority.
+        # Default is 0.
+        # Priority is ignored for FIFO and LIFO queues.
+        await queue.push(task(), 1)
+        # Spawns 8 consumers to consume the queue.
+        # Default is 1.
+        await queue.consume(8)
+```
+
