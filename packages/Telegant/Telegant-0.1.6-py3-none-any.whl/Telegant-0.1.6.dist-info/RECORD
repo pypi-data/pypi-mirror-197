@@ -1,0 +1,10 @@
+telegant/__init__.py,sha256=oXZ6fTGgw3gE1DH03Y4CDH0R2ntdWAoFbLxvmL62rJ8,27
+telegant/api.py,sha256=2xjeKWWF9Vnf52C_bp9udz4R1vrNxAF5omE2ie7EXH0,714
+telegant/handler.py,sha256=ioYuXOIuo27vC0gTCd0d9eCtMwA7_fwA22gRk_ZOVpQ,1728
+telegant/helper.py,sha256=mSxR7FqN5gGZWZrR8TbFAjnJCzS9AVBFA5EwGdLt-78,1038
+telegant/telegant.py,sha256=RFuvTsmCZsS1uv_1VT-iD85mzu82G7Z9cSrkECvADoQ,2942
+Telegant-0.1.6.dist-info/LICENSE,sha256=wgUg4VPeYef4FfwMUMzf8KW6TceKDeRL7tKx46Uoaxc,1086
+Telegant-0.1.6.dist-info/METADATA,sha256=DjrjLfviBwcxSPtI8Znvqzr26m6fd5XtX94x-_MbIFk,3858
+Telegant-0.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Telegant-0.1.6.dist-info/top_level.txt,sha256=Vd5cWJz5iElYJQRSvscCSbw9obp9k4CP2a3kpiClIBk,9
+Telegant-0.1.6.dist-info/RECORD,,
