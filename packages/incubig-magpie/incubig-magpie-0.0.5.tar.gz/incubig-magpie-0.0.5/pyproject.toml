@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "incubig-magpie"
+version = "0.0.5"
+authors = [
+  { name="Ketan Chandra", email="ketan@incubig.org" },
+]
+description = "This module is used to save the crawled/downloaded information into talos network on a private repository"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/IncubigInnovations/mining/incubig-magpie"
+"Bug Tracker" = "https://github.com/IncubigInnovations/mining/issues"
