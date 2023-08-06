@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: pyleague
+Version: 0.2.0
+Summary: Pyleague is a cli tool that helps organizing competitions. After providing pyleague with a list of the competition's participants you will be able to get the matches for each day of the competition.
+Home-page: https://github.com/mf-andres/pyleague
+Author: mf-andres
+Author-email: amunoz@gradiant.org
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: typer (>=0.7.0,<0.8.0)
+Project-URL: Repository, https://github.com/mf-andres/pyleague
+Description-Content-Type: text/markdown
+
+# Pyleague
+
+## Index
+
+1. [Overview](#overview)
+2. [Requirements](#requirements)
+3. [Installation](#installation)
+4. [Configuration](#configuration)
+5. [Tests](#tests)
+6. [Deployment](#deployment)
+   7.[Getting started:](#getting_started)
+
+## <a name="overview">Overview</a>
+
+Pyleague is a cli tool that helps organizing competitions.
+After providing pyleague with a list of the competition's participants
+you will be able to get the matches for each day of the competition.
+
+## <a name="requirements">Requirements</a>
+
+* System requirements
+
+python >= 3.9
+
+* Package requirements
+
+Listed in pyproject.toml under '[tool.poetry.dependencies]'
+
+## <a name="installation">Installation</a>
+
+### For use
+
+Fetch it from pip
+
+```bash
+pip install pyleague
+```
+
+### For development
+
+To install package dependencies, install [poetry](https://python-poetry.org/docs/), then run the following command:
+
+```bash
+poetry install
+```
+
+## <a name="tests">Tests</a>
+
+From root directory run:
+
+~~~
+pytest pyleague/tests
+~~~
+
+## <a name="deployment">Deployment</a>
+
+Use poetry
+
+```commandline
+poetry build
+```
+
+```commandline
+poetry publish
+```
+
+## <a name="getting_started">Getting started</a>
+
+To try the app:
+
+* Install it
+
+* On your terminal run
+
+```commandline
+pyleague init
+```
+
+Define your league participants as asked.
+
+* Check the matches for today
+
+```commandline
+pyleague today
+```
+
+* Update the league to the next day
+
+```commandline
+pyleague next
+```
+
+```commandline
+pyleague today
+```
+
