@@ -1,0 +1,8 @@
+usepy_logger/__init__.py,sha256=hreByM11fIkSOO7Df10uVQkwTDVFHcHjn-eeV-7sfgQ,266
+usepy_logger/formatters.py,sha256=X2pDfEpTGM3zhDz5nMtrajL9jcU180YJkHoTPKis1ZY,2042
+usepy_logger/handlers.py,sha256=JzXLhCB8nLlrkp1Ssbib3AUWrTkXKe6hradvFLjV-pA,1176
+usepy_logger/intercept.py,sha256=Kq4u5thPccDBCFzX5aSOyLTZs8VbzKjfPtWRiIMyPhU,2791
+usepy_logger/logger.py,sha256=4DIBpBPyqSadQbLOM513_ICRpTztWGopLLO5l0j6kJY,1814
+usepy_plugin_logger-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+usepy_plugin_logger-0.1.1.dist-info/METADATA,sha256=eVDyb7wVbyqv8ihgsJM42XJqemBd0UPYvH_84yz9lUQ,2216
+usepy_plugin_logger-0.1.1.dist-info/RECORD,,
