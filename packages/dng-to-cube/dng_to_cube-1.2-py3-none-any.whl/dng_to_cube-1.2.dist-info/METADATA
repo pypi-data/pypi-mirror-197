@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: dng-to-cube
+Version: 1.2
+License: MIT
+License-File: License
+
+DNG to Cube Converter
+This is a Python package that provides a command-line interface for converting DNG files to cube files. The package uses the rawpy and numpy libraries to read and manipulate the image data.
+
+Installation
+To install the package, use pip:
+
+
+
+pip install dng-to-cube
+Usage
+To convert a DNG file to a cube file, use the dng-to-cube command:
+
+
+dng-to-cube (input.dng output.cube)
+
+
+By default, the package generates a 33x33x33 LUT cube file. You can customize the size of the cube using the --size option:
+
+
+dng-to-cube (input.dng output.cube --size 17)
+
+This generates a 17x17x17 LUT cube file.
+
+License
+This package is distributed under the MIT License. See the LICENSE file for details.
+
+Feel free to modify and distribute this package as you see fit. If you find any issues or have suggestions for improvement, please submit an issue or pull request on GitHub.
