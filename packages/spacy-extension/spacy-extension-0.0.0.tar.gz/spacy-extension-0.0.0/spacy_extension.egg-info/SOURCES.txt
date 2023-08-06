@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+spacy_extension/__main__.py
+spacy_extension.egg-info/PKG-INFO
+spacy_extension.egg-info/SOURCES.txt
+spacy_extension.egg-info/dependency_links.txt
+spacy_extension.egg-info/top_level.txt
