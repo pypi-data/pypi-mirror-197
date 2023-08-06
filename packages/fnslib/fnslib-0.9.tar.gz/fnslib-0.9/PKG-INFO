@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fnslib
+Version: 0.9
+Summary: FNSLib
+Author: KeyDevS
+Author-email: rumaevvadim@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+License-File: LICENSE
+
+FNSLib

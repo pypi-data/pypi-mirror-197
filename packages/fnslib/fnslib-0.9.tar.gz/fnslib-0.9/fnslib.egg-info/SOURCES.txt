@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fnslib/__init__.py
+fnslib.egg-info/PKG-INFO
+fnslib.egg-info/SOURCES.txt
+fnslib.egg-info/dependency_links.txt
+fnslib.egg-info/requires.txt
+fnslib.egg-info/top_level.txt
