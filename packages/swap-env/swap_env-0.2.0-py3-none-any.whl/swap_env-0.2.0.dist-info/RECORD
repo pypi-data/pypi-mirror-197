@@ -1,0 +1,9 @@
+swap_env/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swap_env/__main__.py,sha256=6ONtSbgvZHPNKAT2rr17jYUHAOgoG8tr1xnjw2RKYAg,68
+swap_env/cli.py,sha256=BP5TSNEFCzkC1t8PQxsfLbVyMG_Y5dy8aGf6JmzEAjs,1706
+swap_env/dotenv_files.py,sha256=B2T4mHa_qdHoKo2Qjv_wzsC_IFvYkhuSFMbFuS0rZzY,2163
+swap_env-0.2.0.dist-info/entry_points.txt,sha256=Z-3Ah2gI5IS15SHlBXgMorsugRkt95ymZL1opAPcv4s,45
+swap_env-0.2.0.dist-info/LICENSE,sha256=JhqYQ2HZY_Hc8U40PwB28mwl39wIDUd4msqqylbeuVg,1061
+swap_env-0.2.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+swap_env-0.2.0.dist-info/METADATA,sha256=P1gOx2XVLDvPLwzsp9zMBPQ8BhZ5tg8LUjyYCEftYmI,1572
+swap_env-0.2.0.dist-info/RECORD,,
