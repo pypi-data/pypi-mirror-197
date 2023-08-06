@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+test.py
+src/fourier_laplace/__init__.py
+src/fourier_laplace/drawer.py
+src/fourier_laplace.egg-info/PKG-INFO
+src/fourier_laplace.egg-info/SOURCES.txt
+src/fourier_laplace.egg-info/dependency_links.txt
+src/fourier_laplace.egg-info/requires.txt
+src/fourier_laplace.egg-info/top_level.txt
+src/fourier_laplace/tables/P_data.csv
+src/fourier_laplace/tables/a_data.csv
+src/fourier_laplace/tables/b_data.csv
+src/fourier_laplace/tables/max_x_data.csv
