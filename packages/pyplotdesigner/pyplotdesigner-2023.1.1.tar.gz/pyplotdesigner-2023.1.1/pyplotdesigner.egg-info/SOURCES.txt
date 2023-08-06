@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyplotdesigner/__init__.py
+pyplotdesigner.egg-info/PKG-INFO
+pyplotdesigner.egg-info/SOURCES.txt
+pyplotdesigner.egg-info/dependency_links.txt
+pyplotdesigner.egg-info/top_level.txt
