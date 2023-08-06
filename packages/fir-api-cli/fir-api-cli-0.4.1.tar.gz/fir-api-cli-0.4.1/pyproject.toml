@@ -1,0 +1,29 @@
+[project]
+name = "fir-api-cli"
+version = "0.4.1"
+description = "Package for exploring and downloading data from the FIR API service."
+authors = [{ name="Earth Observation Operation Center (FOK)", email="fok@lechnerkozpont.hu" }]
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "typer[all] >= 0.7.0",
+    "requests >= 2.28.1",
+    "requests_toolbelt >= 0.10.1",
+    "tqdm >= 4.65.0",
+    "gql >= 3.4.0"
+]
+
+[project.scripts]
+fir-cli = "fir_api_cli.__main__:cli.app"
+
+[tool.setuptools.packages.find]
+include = ["fir_api_cli*"] 
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
