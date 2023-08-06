@@ -1,0 +1,11 @@
+*.pyc
+__pycache__
+.mypy_cache
+build
+*.egg-info
+dist/
+docs/
+website/devdocs
+notebooks/.ipynb_checkpoints
+afscgapviz/geohashes.db
+node_modules
