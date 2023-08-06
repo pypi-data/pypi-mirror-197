@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+id4eo_scim/__init__.py
+id4eo_scim/id4eo_scim.py
+id4eo_scim/main.py
+id4eo_scim_client.egg-info/PKG-INFO
+id4eo_scim_client.egg-info/SOURCES.txt
+id4eo_scim_client.egg-info/dependency_links.txt
+id4eo_scim_client.egg-info/top_level.txt
