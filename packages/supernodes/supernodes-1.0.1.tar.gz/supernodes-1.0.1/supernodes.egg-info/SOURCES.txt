@@ -1,0 +1,11 @@
+LICENSE.md
+README.md
+setup.py
+supernodes/__init__.py
+supernodes/nodes.py
+supernodes/operations.py
+supernodes.egg-info/PKG-INFO
+supernodes.egg-info/SOURCES.txt
+supernodes.egg-info/dependency_links.txt
+supernodes.egg-info/requires.txt
+supernodes.egg-info/top_level.txt
