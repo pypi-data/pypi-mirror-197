@@ -1,0 +1,11 @@
+RPA_Assistant.libspec,sha256=rWrR87bfFM7LLgVGsR1G8cfbHZF5UpEuPuCpyllop64,58373
+RPA/Assistant/__init__.py,sha256=9nCIDXgdz1WiFcXFTqJaOYwtVAjhoKwye9U629As05Y,94
+RPA/Assistant/background_flet.py,sha256=q8JEO8osP2tgkjXxDdFGc_Pi3YX3NPFJ4DTG_WRUJhs,2754
+RPA/Assistant/flet_client.py,sha256=QIK3K3tsXFLscoqbvTfZHRwHc53wRli1Ca1YkmcZDHg,9732
+RPA/Assistant/library.py,sha256=OkRHJ1rr_7NhUsXB0xiHAnyj9pzNiq1Tt8RueCdGbuc,53530
+RPA/Assistant/types.py,sha256=qY1Z96bnatNKUUl6YZdYV2buCDH1LnPaQcBp3s6rCXc,1530
+RPA/Assistant/utils.py,sha256=Dz2CX8Mx9UkYDGQz_K2_AS7hh7Z5auigR-I_YPWgENU,3646
+rpaframework_assistant-2.1.1.dist-info/LICENSE,sha256=DREwTEnlFQcHakxEJgQTR6OTYZd5PivKSDAoqzsdJLc,11358
+rpaframework_assistant-2.1.1.dist-info/METADATA,sha256=aA1ytOsSmnzIBF5cLe5qrdOjxoRrmKO3tgFD2RP6toU,1829
+rpaframework_assistant-2.1.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+rpaframework_assistant-2.1.1.dist-info/RECORD,,
