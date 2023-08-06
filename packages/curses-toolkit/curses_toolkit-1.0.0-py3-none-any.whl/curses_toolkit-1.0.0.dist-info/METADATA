@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: curses-toolkit
+Version: 1.0.0
+Summary: Some simple UI elements for text user interfaces
+Home-page: https://gitlab.com/OldIronHorse/curses_toolkit
+Author: Simon Redding
+Author-email: s1m0n.r3dd1ng@gmail.com
+License: GPLv3
+Keywords: text user interface,curses,ncurses,tui
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: bandit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-watch ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+
+# curses-toolkit [![pipeline status](https://gitlab.com/OldIronHorse/curses-toolkit/badges/main/pipeline.svg)](https://gitlab.com/OldIronHorse/curses-toolkit/-/commits/main)  [![coverage report](https://gitlab.com/OldIronHorse/curses-toolkit/badges/main/coverage.svg)](https://gitlab.com/OldIronHorse/curses-toolkit/-/commits/main)  [![Latest Release](https://gitlab.com/OldIronHorse/curses-toolkit/-/badges/release.svg)](https://gitlab.com/OldIronHorse/curses-toolkit/-/releases)
+
+
+Some simple UI elements for curses TUIs
+
+## Installation
+
+```
+% pip install curses-toolkit
+```
+
+## Usage
