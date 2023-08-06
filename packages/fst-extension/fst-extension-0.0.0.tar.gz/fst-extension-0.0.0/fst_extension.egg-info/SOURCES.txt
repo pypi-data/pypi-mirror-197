@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+fst_extension/__init__.py
+fst_extension/__main__.py
+fst_extension.egg-info/PKG-INFO
+fst_extension.egg-info/SOURCES.txt
+fst_extension.egg-info/dependency_links.txt
+fst_extension.egg-info/top_level.txt
