@@ -1,0 +1,15 @@
+doc_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+doc_manager/admin.py,sha256=pl0ENXuh222YTijM8u8WdRAKOcWMubqRzRR9wWXTgdg,2326
+doc_manager/apps.py,sha256=gh-NGoBic-ji9WESci7GiIK3vGMfNEqt_oX1edV6CmY,158
+doc_manager/locale/en/LC_MESSAGES/django.mo,sha256=g99OryzhExdkNM8gjE87mxsCaQAjSKJxhsuUu-b2plY,896
+doc_manager/locale/en/LC_MESSAGES/django.po,sha256=kX5YMKjAZ75IDvLWaqXeKEM7J6Fg6BlWNefeWa77K3E,1313
+doc_manager/locale/pl/LC_MESSAGES/django.mo,sha256=f-HT8KH3sp0ReNbZwu_j4HsXdsB5iiSgAlIAodXYe8I,1091
+doc_manager/locale/pl/LC_MESSAGES/django.po,sha256=K1XO-7GVMtKqqpgCK67xZrAgdPa4jcP8Lrfqb_Lh8h4,1514
+doc_manager/models.py,sha256=IdhK_q7hOi4rronWm-PmhP5hb0IvIhoJ5Yx_RiIMOPE,2987
+doc_manager/templates/admin_change_form_documents.html,sha256=XoUayc_gsIM_JAIWqNrjZ8pHjc0vqzkcAzdr9oXHoBY,434
+doc_manager/version.py,sha256=Y3LSfRioSl2xch70pq_ULlvyECXyEtN3krVaWeGyaxk,22
+doc_manager/views.py,sha256=vkoFA5rK2e68huS9UyJA9qjwplCQ1-btomzKWFhHnEg,809
+doc_manager-1.0.2.dist-info/LICENSE,sha256=Pj3K-1REmo1kur4NPyjC0MORWcAjTI4ErFpr50hx9oA,1048
+doc_manager-1.0.2.dist-info/METADATA,sha256=EWa6J85Og9t06OWwUZltDLOu7G3X_LNV_Jdwga_7Jxo,4581
+doc_manager-1.0.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+doc_manager-1.0.2.dist-info/RECORD,,
