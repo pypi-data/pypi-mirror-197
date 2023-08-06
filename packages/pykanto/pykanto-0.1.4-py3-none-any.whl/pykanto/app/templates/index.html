@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    {{ bokeh_css }}
+    {{ bokeh_js }}
+    <!-- <link rel="stylesheet" href="styles.css" />  -->
+    <style type="text/css">{% include 'styles.css' %}</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+    <div class='row'>
+      <div class='column'>
+        <div class='pykanto-column'>
+          <img class="pykanto_logo" src="app/static/pykanto-logo.svg">
+          <!-- <img class="pykanto_logo" src="../static/pykanto-logo.svg"> -->
+        </div>
+      </div>
+      <div class='column'>
+        <div class='interactive-column'>
+          <h1>Interactive song labelling</h1>
+        </div>
+      </div>
+    </div>
+
+    <p>You can use this app to explore and label  the vocal repertoire of an
+    individual animal or a population. Hover the mouse cursor over a point in
+    the acoustic space to see its corresponding spectrogram.</p>
+
+      <p style="vertical-align:middle; display:inline; font-size:0.9em;"> 
+        Use the lasso (<img class="sample_tools" src="app/static/lasso.png">) tool to select multiple points at once. 
+         |  <span class='keyboard_key'>&#8679;</span>+ <span class='keyboard_key_small'>CLICK</span>
+        to select multiple points one by one  |  
+        <span class='keyboard_key'>&#8679;</span>+ <img class="sample_tools" src="app/static/lasso.png">
+        to make multiple lasso selections.
+      </p>
+      <br>
+      <br>
+
+      {{plot_div}}
+      {{plot_script}}
+      
+      <div id="footer">
+        <div id="docsbutton"><a href="https://github.com/nilomr/pykanto"><i class="fa fa-github"></i> Docs</a></div>
+      </div>
+
+    </body>
+
+  </html>
+
+
+  <!-- 
+{% extends base %}
+
+
+{% block postamble %}
+<style>
+  {%include 'styles.css'%}
+</style>
+{% endblock %}
+
+{% block contents %}
+<div class="content">
+  <h1>Interactive song labelling</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+    non proident, sunt in culpa qui officia deserunt mollit 
+    anim id est laborum.</p>
+
+  {{ super() }}
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+
+</div>
+{% endblock %} -->

@@ -1,0 +1,3 @@
+[console_scripts]
+pykanto-slaunch=pykanto.utils.slurm.launch:submit_job
+
