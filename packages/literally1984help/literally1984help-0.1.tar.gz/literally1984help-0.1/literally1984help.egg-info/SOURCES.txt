@@ -1,0 +1,4 @@
+literally1984help.egg-info/PKG-INFO
+literally1984help.egg-info/SOURCES.txt
+literally1984help.egg-info/dependency_links.txt
+literally1984help.egg-info/top_level.txt
