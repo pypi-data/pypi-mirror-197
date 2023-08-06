@@ -1,0 +1,10 @@
+dailyfresh/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dailyfresh/asgi.py,sha256=SY3PvBMc5_FJj5tdwo2FMRBE42Wfs2eZNJFwYiM5BSI,413
+dailyfresh/settings.py,sha256=V-jV85UeavpmmYMw8NCi0B49g1jPSZFnVup5idaY93E,3220
+dailyfresh/urls.py,sha256=aTPXkqbUFaQq5V74F1unRHb2gx7wK6GxwXFTbM-p4Ss,773
+dailyfresh/wsgi.py,sha256=HBTzXHgfsLnz1qVAKEbWTjH3NvsCbZ2KfzWc8oEdb0o,413
+dailyfresh-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dailyfresh-0.0.1.dist-info/METADATA,sha256=iHiFGS8Ep5GyicRXVIuTOFSV2WP0h1VpTzvwGJU0YzE,156
+dailyfresh-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dailyfresh-0.0.1.dist-info/top_level.txt,sha256=T3vh_xD_lWCeM9UT6rVNOPusmzJWjnKltdDxIG0OjaY,11
+dailyfresh-0.0.1.dist-info/RECORD,,
