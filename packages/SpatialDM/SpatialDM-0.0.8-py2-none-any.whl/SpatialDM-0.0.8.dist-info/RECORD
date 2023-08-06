@@ -1,0 +1,15 @@
+spatialdm/__init__.py,sha256=-PerKTD4Bfrlk4BrQL6dCl99FOxqU0kXpPlaUdqlyJM,122
+spatialdm/diff_utils.py,sha256=jDjrbjTNjSGGknGGTeTZz1hefAt3siU5CEAZuzz0W38,7851
+spatialdm/main.py,sha256=Dkh4AeKhb8dg_6RYvHHzfOYR2s6IBBSSxZcQtbj576Q,16693
+spatialdm/plottings.py,sha256=m6gPGa06HwAIQlDB_NViNdzlw5Dytw7mysBIY2TbbhI,27358
+spatialdm/test.py,sha256=PkYHVdk49R8v09u8SQlclWPwsTcpvw4gHErYE5-9tFM,1330
+spatialdm/utils.py,sha256=trYC_ScHycC2-xKUUfhRjNfZKcTz_gbWn8_59Fe7ai0,12009
+spatialdm/version.py,sha256=YQY-i8MemQTvHljd9BqOGgeJEu3FrzurE3TEKDwAax4,22
+spatialdm/datasets/__init__.py,sha256=5KHMpKGK31PRWfdaiM5gmcs3gyTcCQQEv8W_8U1C6hI,37
+spatialdm/datasets/_util_dataset.py,sha256=HX7EzYpKFhhTIh7xeiY_9nWHTHNOqqYipnh8VYO2q8M,5586
+spatialdm/datasets/dataset.py,sha256=GSFKuxuflfF1o5PTiauR3RZtPLzHrh5sLR2K0ygpDNM,2533
+SpatialDM-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+SpatialDM-0.0.8.dist-info/METADATA,sha256=eFfsVNQcVTvRfxj02QhEkdg_ieKfV4ZXag8-v52DRNo,4576
+SpatialDM-0.0.8.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+SpatialDM-0.0.8.dist-info/top_level.txt,sha256=D_ryLDWGs97HWXzVJJ0jnMe1DdYMzPd6jICPhodWLAU,20
+SpatialDM-0.0.8.dist-info/RECORD,,
