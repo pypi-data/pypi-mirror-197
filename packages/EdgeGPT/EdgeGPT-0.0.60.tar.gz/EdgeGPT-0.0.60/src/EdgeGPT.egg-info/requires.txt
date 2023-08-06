@@ -1,0 +1,6 @@
+asyncio
+httpx
+websockets
+rich
+certifi
+prompt_toolkit
