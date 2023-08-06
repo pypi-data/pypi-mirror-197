@@ -1,0 +1,6 @@
+setup.py
+testzmnthy.egg-info/PKG-INFO
+testzmnthy.egg-info/SOURCES.txt
+testzmnthy.egg-info/dependency_links.txt
+testzmnthy.egg-info/requires.txt
+testzmnthy.egg-info/top_level.txt
