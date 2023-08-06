@@ -1,0 +1,23 @@
+<h1>Succulents</h1>
+
+<form id="plant-search" phx-change="plant-suggest" phx-submit="plant-search">
+    <input type="text" name="plant" value="{{plant}}" placeholder="Plant" autocomplete="off" list="matches"
+        phx-debounce="1000" />
+
+    <button type="submit">Search</button>
+</form>
+
+<datalist id="matches">
+    {% for p in matches %}
+    <option value="{{ p.name }}">{{ p.name }}</option>
+    {% endfor %}
+</datalist>
+
+{% if result %}
+<div>
+    <h1>{{ result.name }}</h1>
+    <img width="256px" height="256px" src="{{result.icon}}" alt="" />
+</div>
+{% endif %}
+
+<br />
