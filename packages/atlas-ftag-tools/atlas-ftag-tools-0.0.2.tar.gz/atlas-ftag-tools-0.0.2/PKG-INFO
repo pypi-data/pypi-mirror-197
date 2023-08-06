@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: atlas-ftag-tools
+Version: 0.0.2
+Summary: ATLAS Flavour Tagging Tools
+Author: Sam Van Stroud, Philipp Gadow
+License: MIT
+Project-URL: Homepage, https://github.com/umami-hep/atlas-ftag-tools/
+Requires-Python: >=3.11
+Provides-Extra: dev
