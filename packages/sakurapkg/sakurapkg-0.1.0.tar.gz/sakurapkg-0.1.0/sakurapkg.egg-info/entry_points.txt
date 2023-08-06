@@ -1,0 +1,2 @@
+[console_scripts]
+sakura = pypkg.cli.main:main
