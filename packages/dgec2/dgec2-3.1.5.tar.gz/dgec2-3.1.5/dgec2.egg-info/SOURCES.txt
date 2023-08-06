@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+setup.py
+dgec2/__init__.py
+dgec2/main.py
+dgec2.egg-info/PKG-INFO
+dgec2.egg-info/SOURCES.txt
+dgec2.egg-info/dependency_links.txt
+dgec2.egg-info/requires.txt
+dgec2.egg-info/top_level.txt
