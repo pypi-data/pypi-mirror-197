@@ -1,0 +1,43 @@
+[project]
+name = "acid-chess"
+dynamic = ["version"]
+authors = [
+  { name="Bernhard Janetzki", email="boerni@gmail.com" },
+]
+description = "The Chess Computer for nerds, by nerds."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["feed", "reader", "tutorial"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ierror/acid-chess"
+"Bug Tracker" = "https://github.com/ierror/acid-chess/issues"
+
+[project.scripts]
+acid = "acid.app.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["acid"]
+
+[tool.setuptools.dynamic]
+version = {attr = "acid.__version__"}
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+line_length = 120
+
+[tool.flake8]
+ignore = ['E501', 'W503']

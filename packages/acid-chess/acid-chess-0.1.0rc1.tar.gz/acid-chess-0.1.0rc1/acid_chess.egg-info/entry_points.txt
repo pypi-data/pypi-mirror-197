@@ -1,0 +1,2 @@
+[console_scripts]
+acid = acid.app.__main__:main
