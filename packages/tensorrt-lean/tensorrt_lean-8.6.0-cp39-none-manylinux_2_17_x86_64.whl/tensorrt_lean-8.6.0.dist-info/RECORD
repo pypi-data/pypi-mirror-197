@@ -1,0 +1,9 @@
+tensorrt_lean/__init__.py,sha256=yRweq4QSBB1EY1iRw-PX4HhX2o8NIn-AkqA5olLvwkA,5433
+tensorrt_lean/libnvinfer_lean.so.8,sha256=hytEakp7b9lEx3Qx65fe22QLVhWOKMFQxZRWy8JsOvc,32860136
+tensorrt_lean/tensorrt_lean.so,sha256=cws3FbpfdtL91KBVDVjdOgZtMFHsOquvLOQ2pyETfis,1545160
+tensorrt_lean-8.6.0.dist-info/LICENSE.txt,sha256=pqHBPpjor8b8nogBWf8sezo6I_P-AhkDwlIpu6ZLBmY,46991
+tensorrt_lean-8.6.0.dist-info/METADATA,sha256=voWFCl5cvC-Rlt63FPHqHLSR388RdpS32T7E9qh_0as,657
+tensorrt_lean-8.6.0.dist-info/WHEEL,sha256=XYelwnuUW28JhrV9JDsjMbHLck50_rPEFtAA8erawS8,111
+tensorrt_lean-8.6.0.dist-info/top_level.txt,sha256=SlGF_ke--uZtrGrBnbAr6f8F-9fvItTL3W9SZyLBajk,14
+tensorrt_lean-8.6.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+tensorrt_lean-8.6.0.dist-info/RECORD,,
