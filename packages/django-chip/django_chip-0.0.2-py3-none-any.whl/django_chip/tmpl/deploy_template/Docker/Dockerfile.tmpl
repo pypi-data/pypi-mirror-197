@@ -1,0 +1,25 @@
+FROM python:3.10.4
+
+ENV TZ=Asia/Tokyo
+
+RUN apt-get update
+RUN apt-get install -y nginx
+
+# Install uwsgi
+RUN pip install uwsgi
+
+# Install supervisor
+RUN pip install supervisor
+
+WORKDIR /opt/{{ project_name }}
+
+ADD . .
+
+# Add Nginx config
+RUN cp Docker/nginx.conf /etc/nginx/conf.d/
+
+RUN pip install -r requirements.txt
+
+RUN chmod 0755 Docker/entrypoint.sh
+
+ENTRYPOINT ["Docker/entrypoint.sh"]

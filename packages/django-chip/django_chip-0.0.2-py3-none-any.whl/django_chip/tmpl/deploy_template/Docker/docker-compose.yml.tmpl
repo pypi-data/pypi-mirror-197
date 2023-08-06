@@ -1,0 +1,56 @@
+version: '2.1'
+
+networks:
+  backend:
+    driver: bridge
+
+services:
+  {{ project_name }}:
+    build:
+      context: ../
+      dockerfile: Docker/Dockerfile
+    image: {{ project_name }}:latest
+    container_name: {{ project_name }}
+    restart: always
+    volumes:
+      - /opt/media:/opt/{{ project_name }}/media
+    environment:
+      PROJECT_ENV: prod
+    ports:
+      - 8000:8000
+      - 9001:9001
+    links:
+      - {{ project_name }}_db
+    depends_on:
+      - {{ project_name }}_db
+    networks:
+      - backend
+
+  {{ project_name }}_db:
+    image: mysql:8.0.32
+    container_name: {{ project_name }}_db
+    restart: always
+    volumes:
+      - /opt/ar_street_db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=ar_street
+    networks:
+      - backend
+  
+  {{ project_name }}_phpmyadmin:
+    image: phpmyadmin
+    container_name: {{ project_name }}_phpmyadmin
+    restart: always
+    ports:
+      - 3307:80
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - PMA_HOST={{ project_name }}_db
+      - PMA_PORT=3306
+    links:
+      - {{ project_name }}_db
+    depends_on:
+      - {{ project_name }}_db
+    networks:
+      - backend

@@ -1,0 +1,15 @@
+#!/bin/bash
+echo "run collectstatic"
+python manage.py collectstatic --noinput
+echo "run migrate"
+python manage.py migrate
+echo "run test"
+python manage.py test
+
+echo "start nginx"
+service nginx start
+
+echo "set permission"
+chown www-data:www-data -R /opt/{{ project_name }}
+
+supervisord -c supervisord.conf

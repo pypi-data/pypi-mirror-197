@@ -1,0 +1,18 @@
+[inet_http_server]
+port=0.0.0.0:9001
+username=admin
+password=admin123
+
+[supervisord]
+nodaemon=true
+
+[supervisorctl]
+
+[program:{{ project_name }}]
+command=uwsgi --ini /opt/{{ project_name }}/uwsgi.ini
+directory=/opt/{{ project_name }}
+autostart=true
+autorestart=true
+user=www-data
+stdout_logfile=./logs/supervisor_openapi.log
+stderr_logfile=./logs/supervisor_openapi_err.log

@@ -1,0 +1,19 @@
+[uwsgi]
+uid = www-data
+gid = www-data
+
+socket=/opt/{{ project_name }}/{{ project_name }}.sock
+# the base directory (full path)
+chdir=/opt/{{ project_name }}
+# Django's wsgi file
+wsgi-file={{ project_name }}/wsgi.py
+# process-related settings
+master=true
+# maximum number of worker processes
+processes=4
+threads=2
+
+deamonize=/opt/{{ project_name }}/logs/uwsgi_openapi.log
+pidfile= /opt/{{ project_name }}/logs/uwsgi.pid
+
+chmod-socket = 777
