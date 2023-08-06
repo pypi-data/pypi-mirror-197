@@ -1,0 +1,5 @@
+twisted
+click
+delocate
+py2app
+wheel_filename

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-data]
+"*" = [
+    "py.typed",
+    "*.plist",
+]
+
+[project]
+name = "encrust"
+description = "Sign, notarize, staple and archive Python mac apps."
+readme = "README.rst"
+version = "2023.03.17.1"
+dependencies = [
+    "twisted",
+    "click",
+    "delocate",
+    "py2app",
+    "wheel_filename",
+]
+
+[project.scripts]
+encrust = "encrust.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/glyph/Encrust"
