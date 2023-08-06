@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: dunnosql
+Version: 0.0.6
+Summary: Module to make using MariaDB and PostgreSQL easier and faster
+Author: https://github.com/Dunno358
+License-File: LICENSE

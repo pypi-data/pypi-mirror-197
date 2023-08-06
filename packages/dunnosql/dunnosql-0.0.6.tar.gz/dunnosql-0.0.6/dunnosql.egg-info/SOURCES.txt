@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dunnosql/__init__.py
+dunnosql/dunnosql.py
+dunnosql.egg-info/PKG-INFO
+dunnosql.egg-info/SOURCES.txt
+dunnosql.egg-info/dependency_links.txt
+dunnosql.egg-info/requires.txt
+dunnosql.egg-info/top_level.txt
