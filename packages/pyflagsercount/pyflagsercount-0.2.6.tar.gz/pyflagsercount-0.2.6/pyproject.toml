@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pyflagsercount"
+version = "0.2.6"
+description = "A program for counting directed cliques in directed graphs"
+authors = ["jasonpsmith <jasonsmith.bath@gmail.com>"]
+license = "GNU AGPLv3"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+numpy = ">=1.17.0"
+
+[tool.poetry.build]
+script = "build.py"
+
+[build-system]
+requires = ["poetry-core","setuptools","pybind11"]
+build-backend = "poetry.core.masonry.api"
