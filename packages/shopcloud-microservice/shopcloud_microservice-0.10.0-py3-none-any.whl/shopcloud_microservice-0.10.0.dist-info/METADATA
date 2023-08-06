@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: shopcloud-microservice
+Version: 0.10.0
+Summary: CLI tool for manage microservices
+Home-page: https://github.com/Talk-Point/shopcloud-microservice-cli
+Author: Konstantin Stoldt
+Author-email: konstantin.stoldt@talk-point.de
+License: MIT
+Keywords: CLI
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: joblib
+Requires-Dist: shopcloud-secrethub (>=2.12.0)
+
+# Microservice CLI
+
+Tool for manage the talk-point microservices.
+
+## Install
+
+````sh
+$ pip install shopcloud-microservice
+````
+
+## Security
+
+```sh
+$ microservice security merge-security-pull-requests
+```
