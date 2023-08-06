@@ -1,0 +1,3 @@
+include zsdstools/*.png
+include zsdstools/*.jpg
+include zsdstools/*.ttf
