@@ -1,0 +1,14 @@
+datumaro
+fire
+numpy
+opencv-python
+xmltodict
+
+[dev]
+black
+isort
+jupyter
+pydocstyle
+pylint
+pytest
+pytest-cov
