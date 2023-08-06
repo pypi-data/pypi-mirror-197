@@ -1,0 +1,38 @@
+six
+sqlalchemy
+
+[:platform_system == "Darwin"]
+freetype-py
+
+[:python_version < "3.4"]
+enum34
+
+[:python_version < "3.6" and platform_machine != "ppc64le"]
+ujson<4
+
+[:python_version >= "3.6" and platform_machine != "ppc64le"]
+orjson
+
+[:python_version >= "3.6" and platform_machine == "ppc64le"]
+ujson
+
+[cassandra]
+cassandra-driver
+
+[cli_tools]
+deepdiff
+texttable
+
+[jupyter]
+nbconvert<=5.4.0
+mistune<2
+tornado<5.1
+ipython<8
+ipykernel>=5
+ipywidgets
+numpy<1.22
+matplotlib
+tabulate
+
+[mysql]
+mysql-connector-python
