@@ -1,0 +1,161 @@
+
+:: 
+
+    import asyncio, logging, traceback
+    from task_thread import TaskThread, reCreate, reSchedule,\
+        delete, verbose, signals
+    
+
+Let's define a signal for parent/child communication
+
+:: 
+
+    class MessageSignal(signals.Signal):
+        def __init__(self, origin, message):
+            self.origin = origin
+            self.message = message
+            
+        def __str__(self):
+            return "<MessageSignal from %s>" % (str(self.origin.getId()))
+    
+        def getMessage(self):
+            return self.message
+    
+
+We use the same ``MyThread`` as in the previous example. 
+We will use it as a basis for further subclassing
+
+:: 
+
+    class MyThread(TaskThread):
+        # as in previous example
+        # ...
+    
+
+Let's create a child thread.  This thread sends a message to it's parent every 5 seconds:
+
+:: 
+
+    class ChildThread(MyThread):
+
+Define a rescheduling task that sends a message to it's parent every 5 seconds
+
+:: 
+
+        async def messageTask__(self):
+            try:
+                await asyncio.sleep(5)
+                self.logger.info("messageTask__: sending a message to parent")
+                
+                await self.sigFromChildToParent__(
+                    MessageSignal(origin = self, 
+                    message = "hello from child " + str(self.getId())))
+                self.tasks.message_task = await reSchedule(self.messageTask__); return
+                
+            except asyncio.CancelledError:
+                self.logger.critical("messageTask__: cancelling")
+                
+            except Exception as e:
+                self.logger.info("messageTask__: failed with '%s', traceback will follow", e)
+                traceback.print_exc()
+    
+
+Add the new task to ``self.tasks`` namespace
+
+:: 
+
+        def initVars__(self):
+            # tasks
+            self.tasks.hello   = None  # self.helloTask__
+            self.tasks.message = None  # self.messageTask__
+            # locks
+            self.locks.message_lock = asyncio.Lock()
+    
+
+Start both tasks at thread start
+
+:: 
+
+        @verbose
+        async def enter__(self):
+            self.logger.info("enter__")
+            self.tasks.hello = await reCreate(self.tasks.hello, self.helloTask__) 
+            self.tasks.message = await reCreate(self.tasks.message, self.messageTask__)
+    
+
+Kill both tasks at thread exit
+
+:: 
+
+        @verbose
+        async def exit__(self):
+            self.tasks.hello = await delete(self.tasks.hello)
+            self.tasks.message = await delete(self.tasks.message)
+            self.logger.info("exit__ : finished")
+    
+    
+
+Now the parent thread that receives signals from the child:
+
+:: 
+
+    class ParentThread(MyThread):
+
+Start ``self.helloTask__`` just like in the child thread.
+
+The new bit here is, that we create and start a child thread at parent thread start.
+
+After starting, the child thread is added to the parent's registry using ``addChild``.
+
+You can experiment by adding more and more child threads.
+
+:: 
+
+        @verbose
+        async def enter__(self):
+            self.logger.info("enter__")
+            self.tasks.hello = await reCreate(self.tasks.hello, self.helloTask__) 
+            child_thread = ChildThread(my_id = "subthread", parent = self)
+            await child_thread.run()
+            await self.addChild(child_thread)
+        
+
+Define how we handle those signals coming from the running child thread:
+
+:: 
+
+        @verbose
+        async def childsignalHandler__(self, signal, child):
+            self.logger.debug("childsignalHandler__ : got signal %s from child %s", signal, child.getId())
+            if isinstance(signal, MessageSignal):
+                self.logger.info("Got message %s from child with id %s", 
+                signal.getMessage(), child.getId())
+            else:
+                pass
+    
+
+Please note that you can also start child threads "dynamically", i.e. anywhere in your classes internal methods/recheduling tasks, not just at ``enter__``.
+
+That's it!  Nothing else is needed: when the parent thread terminates, it automagically terminates all of it's child threads.
+
+Run the program with:
+
+:: 
+
+    if __name__ == "__main__":
+        loglev = logging.DEBUG
+    
+        logger = logging.getLogger("ParentThread")
+        logger.setLevel(loglev)
+    
+        logger = logging.getLogger("ChildThread")
+        logger.setLevel(loglev)
+        
+        thread = ParentThread(my_id = "parent_thread", parent = None) # no parent, this is the main thread
+        loop = asyncio.get_event_loop()
+        loop.run_until_complete(thread.run())
+
+Terminate by pressing CTRL-C.
+
+:: 
+

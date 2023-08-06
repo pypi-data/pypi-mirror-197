@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Examples &mdash; TaskThread  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Copyright &amp; License" href="license.html" />
+    <link rel="prev" title="Threads and Tasks" href="threadtask.html" />
+    <!-- as per https://stackoverflow.com/questions/23211695/modifying-content-width-of-the-sphinx-theme-read-the-docs -->
+    <link href="_static/rtd_override.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+  <a href="index.html"><img src="_static/snakes.png" class="logo" alt="Logo"/>
+</a>
+    <div class="version">
+      TaskThread 0.0.3
+    </div>
+    <div>
+        Concurrent Asynchronous Python
+    </div>
+
+<!-- font awesome comes with the rtd package.. use like this:-->
+<br>
+<a href="https://github.com/elsampsa/task_thread" class="icon icon-github"> TaskThread @ github</a>
+<a href="https://github.com/elsampsa/task_thread/issues" class="fa fa-bug"> Issue Tracker @ github</a>
+
+<!-- don't even think about subclassing searchbox.html .. will never work!-->
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">About TaskThread</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thread.html">Anatomy of a TaskThread</a></li>
+<li class="toctree-l1"><a class="reference internal" href="task.html">Anatomy of a Task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="threadtask.html">Threads and Tasks</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Examples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hello-world">1. Hello World</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#parent-child-structure">2. Parent/Child Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tcp-server">3. TCP Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-streaming-tcp-server">4. Data Streaming TCP Server</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">Copyright &amp; License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TaskThread</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Examples</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/examples.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <div class="section" id="examples">
+<span id="id1"></span><h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="hello-world">
+<h2>1. Hello World<a class="headerlink" href="#hello-world" title="Permalink to this headline">¶</a></h2>
+<p>Download example code from <a class="reference download internal" download="" href="_downloads/a18b081f7d6dcca4c52c91e2f6deb6c3/hello_world.py"><code class="xref download docutils literal notranslate"><span class="pre">[here]</span></code></a></p>
+<p>The same “hello world” example we already discussed <a class="reference internal" href="threadtask.html#threadtask"><span class="std std-ref">here</span></a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span><span class="o">,</span> <span class="nn">logging</span><span class="o">,</span> <span class="nn">traceback</span>
+<span class="kn">from</span> <span class="nn">task_thread</span> <span class="kn">import</span> <span class="n">TaskThread</span><span class="p">,</span> <span class="n">reCreate</span><span class="p">,</span> <span class="n">reSchedule</span><span class="p">,</span>\
+    <span class="n">delete</span><span class="p">,</span> <span class="n">verbose</span><span class="p">,</span> <span class="n">signals</span>
+</pre></div>
+</div>
+<p>Define TaskThread by subclassing</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyThread</span><span class="p">(</span><span class="n">TaskThread</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>Let’s define a rescheduling task that sleeps for a one seconds &amp; then reschedules itself</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">helloTask__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Hello from helloTask__ at </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getId</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello_task</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reSchedule</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">helloTask__</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;helloTask__: cancelling&quot;</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;helloTask__: failed with &#39;</span><span class="si">%s</span><span class="s2">&#39;, traceback will follow&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+        <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Remember to call the superclass constructor</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">my_id</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">my_id</span> <span class="o">=</span> <span class="n">my_id</span>
+</pre></div>
+</div>
+<p>Create the tasks under the self.tasks namespace &amp; initialize them to <code class="docutils literal notranslate"><span class="pre">None</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">initVars__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># tasks</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># self.helloTask__</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">helloTask__</span></code> is started for the first time when the thread is started:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;enter__ :&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reCreate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">helloTask__</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Define what happens at thread exit: delete any running tasks</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Close sockets, databases, etc.  Overwrite in child class.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span> <span class="o">=</span> <span class="k">await</span> <span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;exit__ : finished&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here we would define how signals from a parent are handled.  In this example case nothing.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">signalHandler__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;signalHandler__ : got signal </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">getId</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">my_id</span>
+
+<span class="k">def</span> <span class="nf">getInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;&lt;MyThread &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">my_id</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;&gt;&quot;</span>
+</pre></div>
+</div>
+<p>Let’s run MyThread!  Terminate by pressing CTRL-C.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">loglev</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span>
+
+    <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;MyThread&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">loglev</span><span class="p">)</span>
+
+    <span class="n">thread</span> <span class="o">=</span> <span class="n">MyThread</span><span class="p">(</span><span class="n">my_id</span> <span class="o">=</span> <span class="s2">&quot;main_thread&quot;</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="c1"># no parent, this is the main thread</span>
+    <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+    <span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">thread</span><span class="o">.</span><span class="n">run</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="parent-child-structure">
+<h2>2. Parent/Child Structure<a class="headerlink" href="#parent-child-structure" title="Permalink to this headline">¶</a></h2>
+<p>Download example code from <a class="reference download internal" download="" href="_downloads/c1dd4f4f2f4cf8025c3a2ba25bdb6544/parent_child.py"><code class="xref download docutils literal notranslate"><span class="pre">[here]</span></code></a></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span><span class="o">,</span> <span class="nn">logging</span><span class="o">,</span> <span class="nn">traceback</span>
+<span class="kn">from</span> <span class="nn">task_thread</span> <span class="kn">import</span> <span class="n">TaskThread</span><span class="p">,</span> <span class="n">reCreate</span><span class="p">,</span> <span class="n">reSchedule</span><span class="p">,</span>\
+    <span class="n">delete</span><span class="p">,</span> <span class="n">verbose</span><span class="p">,</span> <span class="n">signals</span>
+</pre></div>
+</div>
+<p>Let’s define a signal for parent/child communication</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MessageSignal</span><span class="p">(</span><span class="n">signals</span><span class="o">.</span><span class="n">Signal</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">origin</span><span class="p">,</span> <span class="n">message</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">origin</span> <span class="o">=</span> <span class="n">origin</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="n">message</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;MessageSignal from </span><span class="si">%s</span><span class="s2">&gt;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">origin</span><span class="o">.</span><span class="n">getId</span><span class="p">()))</span>
+
+    <span class="k">def</span> <span class="nf">getMessage</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">message</span>
+</pre></div>
+</div>
+<p>We use the same <code class="docutils literal notranslate"><span class="pre">MyThread</span></code> as in the previous example.
+We will use it as a basis for further subclassing</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyThread</span><span class="p">(</span><span class="n">TaskThread</span><span class="p">):</span>
+    <span class="c1"># as in previous example</span>
+    <span class="c1"># ...</span>
+</pre></div>
+</div>
+<p>Let’s create a child thread.  This thread sends a message to it’s parent every 5 seconds:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChildThread</span><span class="p">(</span><span class="n">MyThread</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>Define a rescheduling task that sends a message to it’s parent every 5 seconds</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">messageTask__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;messageTask__: sending a message to parent&quot;</span><span class="p">)</span>
+
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">sigFromChildToParent__</span><span class="p">(</span>
+            <span class="n">MessageSignal</span><span class="p">(</span><span class="n">origin</span> <span class="o">=</span> <span class="bp">self</span><span class="p">,</span>
+            <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;hello from child &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getId</span><span class="p">())))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">message_task</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reSchedule</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">messageTask__</span><span class="p">);</span> <span class="k">return</span>
+
+    <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">critical</span><span class="p">(</span><span class="s2">&quot;messageTask__: cancelling&quot;</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;messageTask__: failed with &#39;</span><span class="si">%s</span><span class="s2">&#39;, traceback will follow&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+        <span class="n">traceback</span><span class="o">.</span><span class="n">print_exc</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Add the new task to <code class="docutils literal notranslate"><span class="pre">self.tasks</span></code> namespace</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">initVars__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="c1"># tasks</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span>   <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># self.helloTask__</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># self.messageTask__</span>
+    <span class="c1"># locks</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">locks</span><span class="o">.</span><span class="n">message_lock</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">Lock</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Start both tasks at thread start</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;enter__&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reCreate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">helloTask__</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reCreate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">message</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">messageTask__</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Kill both tasks at thread exit</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span> <span class="o">=</span> <span class="k">await</span> <span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="k">await</span> <span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">message</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;exit__ : finished&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now the parent thread that receives signals from the child:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ParentThread</span><span class="p">(</span><span class="n">MyThread</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>Start <code class="docutils literal notranslate"><span class="pre">self.helloTask__</span></code> just like in the child thread.</p>
+<p>The new bit here is, that we create and start a child thread at parent thread start.</p>
+<p>After starting, the child thread is added to the parent’s registry using <code class="docutils literal notranslate"><span class="pre">addChild</span></code>.</p>
+<p>You can experiment by adding more and more child threads.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;enter__&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reCreate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">hello</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">helloTask__</span><span class="p">)</span>
+    <span class="n">child_thread</span> <span class="o">=</span> <span class="n">ChildThread</span><span class="p">(</span><span class="n">my_id</span> <span class="o">=</span> <span class="s2">&quot;subthread&quot;</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="bp">self</span><span class="p">)</span>
+    <span class="k">await</span> <span class="n">child_thread</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">addChild</span><span class="p">(</span><span class="n">child_thread</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Define how we handle those signals coming from the running child thread:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">childsignalHandler__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal</span><span class="p">,</span> <span class="n">child</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;childsignalHandler__ : got signal </span><span class="si">%s</span><span class="s2"> from child </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="p">,</span> <span class="n">child</span><span class="o">.</span><span class="n">getId</span><span class="p">())</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">signal</span><span class="p">,</span> <span class="n">MessageSignal</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Got message </span><span class="si">%s</span><span class="s2"> from child with id </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="n">signal</span><span class="o">.</span><span class="n">getMessage</span><span class="p">(),</span> <span class="n">child</span><span class="o">.</span><span class="n">getId</span><span class="p">())</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Please note that you can also start child threads “dynamically”, i.e. anywhere in your classes internal methods/recheduling tasks, not just at <code class="docutils literal notranslate"><span class="pre">enter__</span></code>.</p>
+<p>That’s it!  Nothing else is needed: when the parent thread terminates, it automagically terminates all of it’s child threads.</p>
+<p>Run the program with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">loglev</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span>
+
+    <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;ParentThread&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">loglev</span><span class="p">)</span>
+
+    <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;ChildThread&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">loglev</span><span class="p">)</span>
+
+    <span class="n">thread</span> <span class="o">=</span> <span class="n">ParentThread</span><span class="p">(</span><span class="n">my_id</span> <span class="o">=</span> <span class="s2">&quot;parent_thread&quot;</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="c1"># no parent, this is the main thread</span>
+    <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+    <span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">thread</span><span class="o">.</span><span class="n">run</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Terminate by pressing CTRL-C.</p>
+</div>
+<div class="section" id="tcp-server">
+<h2>3. TCP Server<a class="headerlink" href="#tcp-server" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Download server example code from <a class="reference download internal" download="" href="_downloads/ef5c78e045abd894d5d4d0c53efb047e/example_server.py"><code class="xref download docutils literal notranslate"><span class="pre">[here]</span></code></a></p></li>
+<li><p>Download client side code from <a class="reference download internal" download="" href="_downloads/a5acc46a2c9241a97e295f04f5174070/client.py"><code class="xref download docutils literal notranslate"><span class="pre">[here]</span></code></a></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span><span class="o">,</span> <span class="nn">logging</span><span class="o">,</span> <span class="nn">traceback</span>
+<span class="kn">from</span> <span class="nn">task_thread</span> <span class="kn">import</span> <span class="n">TaskThread</span><span class="p">,</span> <span class="n">reCreate</span><span class="p">,</span> <span class="n">reSchedule</span><span class="p">,</span>\
+    <span class="n">delete</span><span class="p">,</span> <span class="n">MessageSignal</span><span class="p">,</span> <span class="n">verbose</span><span class="p">,</span> <span class="n">signals</span>
+</pre></div>
+</div>
+<p>Let’s create a TCP server application.  The hierarchy looks like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MasterTCPServerThread</span>
+    <span class="n">TCPConnectionThread</span>
+    <span class="n">TCPConnectionThread</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+<p>As always, start by subclassing TaskThread.  First we create the child <code class="docutils literal notranslate"><span class="pre">TCPConnectionThread</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">TCPConnectionThread</span><span class="p">(</span><span class="n">TaskThread</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>Constructor takes as an argument stream reader and writer objects:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">reader</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">StreamReader</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">writer</span><span class="p">:</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">StreamReader</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span><span class="p">)</span>
+    <span class="k">assert</span><span class="p">(</span><span class="n">reader</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="k">assert</span><span class="p">(</span><span class="n">writer</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">reader</span> <span class="o">=</span> <span class="n">reader</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">writer</span> <span class="o">=</span> <span class="n">writer</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">peername</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">peerport</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">writer</span><span class="o">.</span><span class="n">get_extra_info</span><span class="p">(</span><span class="s2">&quot;peername&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">getId</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">getInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;&lt;TCPConnectionThread </span><span class="si">%s</span><span class="s2"> connected to </span><span class="si">%s</span><span class="s2">&gt;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getId</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">peername</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Re-scheduling tasks for reading and writing the client socket:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">initVars__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">write_socket</span> <span class="o">=</span> <span class="kc">None</span>
+</pre></div>
+</div>
+<p>In this version we just read the socket, so start the corresponding re-scheduling task:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;enter__ : </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getInfo</span><span class="p">())</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reCreate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">readSocket__</span><span class="p">)</span>
+
+<span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span> <span class="o">=</span> <span class="k">await</span> <span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">write_socket</span> <span class="o">=</span> <span class="k">await</span> <span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">write_socket</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;exit__: bye!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Reads packet from the socket &amp; re-schedules itself.</p>
+<p>At failure, kill the whole <code class="docutils literal notranslate"><span class="pre">TCPConnectionThread</span></code>.  This will inform the parent automagically &amp; remove
+this child thread from the parent’s registry.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">readSocket__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">packet</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">reader</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;readSocket__ : reading failed : &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;readSocket__: tcp connection </span><span class="si">%s</span><span class="s2"> terminated&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getInfo</span><span class="p">())</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="c1"># all good!  keep on reading = reschedule this</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;readSocket__: got packet </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">packet</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reSchedule</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">readSocket__</span><span class="p">);</span> <span class="k">return</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;readSocket__: client at </span><span class="si">%s</span><span class="s2"> closed connection&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">peername</span><span class="p">)</span>
+                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+
+    <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;readSocket__ : cancelling </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getInfo</span><span class="p">())</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;readSocket__: failed with &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Writing socket continuously (however, not used in this example):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">writeSocket__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">writer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+        <span class="c1"># await self.writer.drain() # this would flush</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;writeSocket__ : writing failed : &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Next, create the parent <code class="docutils literal notranslate"><span class="pre">MasterTCPServerThread</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MasterTCPServerThread</span><span class="p">(</span><span class="n">TaskThread</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;thread&quot;</span><span class="p">,</span> <span class="n">pause</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">5002</span><span class="p">,</span> <span class="n">max_clients</span> <span class="o">=</span> <span class="mi">10</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pause</span> <span class="o">=</span> <span class="n">pause</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">port</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_clients</span> <span class="o">=</span> <span class="n">max_clients</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+
+    <span class="k">def</span> <span class="nf">initVars__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">server</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+    <span class="k">def</span> <span class="nf">getId</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+
+
+    <span class="k">def</span> <span class="nf">getInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;MasterTCPServerThread </span><span class="si">%s</span><span class="s2">&gt;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+
+    <span class="nd">@verbose</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;entry point&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reCreate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tcpServer__</span><span class="p">)</span>
+
+
+    <span class="nd">@verbose</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span> <span class="o">=</span> <span class="k">await</span> <span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;exit__: bye!&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Each and every child / tcp client sends it’s packets to the parent:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">childsignalHandler__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal</span><span class="p">,</span> <span class="n">child</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;childsignalHandler__ : got signal </span><span class="si">%s</span><span class="s2"> from child </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="p">,</span> <span class="n">child</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">signal</span><span class="p">,</span> <span class="n">MessageSignal</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Got message </span><span class="si">%s</span><span class="s2"> from child with id </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="o">.</span><span class="n">getMessage</span><span class="p">(),</span> <span class="n">child</span><span class="o">.</span><span class="n">getId</span><span class="p">())</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Keep on (re)creating the tcp server:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">async</span> <span class="k">def</span> <span class="nf">tcpServer__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">server</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">start_server</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">handler__</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">)</span>
+
+    <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;tcpServer__ </span><span class="si">%i</span><span class="s2">: cancel&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">server</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;tcpServer__: failed with &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;tcpServer__: will try again in </span><span class="si">%s</span><span class="s2"> secs&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pause</span><span class="p">)</span>
+        <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pause</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reSchedule</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tcpServer__</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;tcpServer__ : new server waiting&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>At a client connection, start a new <code class="docutils literal notranslate"><span class="pre">TCPConnectionThread</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@verbose</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">handler__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reader</span><span class="p">,</span> <span class="n">writer</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;handler__ : new connection for </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getInfo</span><span class="p">())</span>
+
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">children</span><span class="p">)</span><span class="o">&gt;</span><span class="bp">self</span><span class="o">.</span><span class="n">max_clients</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;handler__ : max number of connections is </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_clients</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="n">child_connection</span> <span class="o">=</span> <span class="n">TCPConnectionThread</span><span class="p">(</span><span class="n">reader</span> <span class="o">=</span> <span class="n">reader</span><span class="p">,</span> <span class="n">writer</span> <span class="o">=</span> <span class="n">writer</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="bp">self</span><span class="p">)</span>
+    <span class="k">await</span> <span class="n">child_connection</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">addChild</span><span class="p">(</span><span class="n">child_connection</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Run it!</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">loglev</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span>
+
+    <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;MasterTCPServerThread&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">loglev</span><span class="p">)</span>
+    <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;TCPConnectionThread&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">loglev</span><span class="p">)</span>
+
+    <span class="n">thread</span> <span class="o">=</span> <span class="n">MasterTCPServerThread</span><span class="p">(</span>
+        <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;TCPServer&quot;</span>
+        <span class="p">)</span>
+    <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+    <span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">thread</span><span class="o">.</span><span class="n">run</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>While it’s running, start one or several client connections using the provided client code.</p>
+</div>
+<div class="section" id="data-streaming-tcp-server">
+<h2>4. Data Streaming TCP Server<a class="headerlink" href="#data-streaming-tcp-server" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Download example code from <a class="reference download internal" download="" href="_downloads/e3e1e5e874df68c81d982fddd1e522aa/example_server2.py"><code class="xref download docutils literal notranslate"><span class="pre">[here]</span></code></a></p></li>
+<li><p>Download client side code from <a class="reference download internal" download="" href="_downloads/f924f640fe637e7f9e73bdbeaa5d3c81/client2.py"><code class="xref download docutils literal notranslate"><span class="pre">[here]</span></code></a></p></li>
+</ul>
+<p>A bit more complex TCP server with intercom and dataframe reconstruction:</p>
+<ul class="simple">
+<li><p>TCP server starts</p></li>
+<li><p>Client connects to TCP server</p></li>
+<li><p>Server sends a hello json message to the client</p></li>
+<li><p>Client starts streaming byte payload to the server</p></li>
+<li><p>Server reconstructs byte blobs / dataframes from the streaming byte payload</p></li>
+</ul>
+<p>Use the provided client-side code to play around with this.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">asyncio</span><span class="o">,</span> <span class="nn">logging</span><span class="o">,</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">traceback</span>
+<span class="kn">from</span> <span class="nn">task_thread</span> <span class="kn">import</span> <span class="n">TaskThread</span><span class="p">,</span> <span class="n">reCreate</span><span class="p">,</span> <span class="n">reSchedule</span><span class="p">,</span>\
+    <span class="n">delete</span><span class="p">,</span> <span class="n">verbose</span><span class="p">,</span> <span class="n">signals</span>
+
+<span class="n">INT_NBYTES</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="k">def</span> <span class="nf">json2bytes</span><span class="p">(</span><span class="n">dic</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Turn dic into json bytes &amp; append the bytes with the json bytes length</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">bytes_</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">dic</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+    <span class="n">le</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">bytes_</span><span class="p">)</span>
+    <span class="n">bytes_</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">to_bytes</span><span class="p">(</span><span class="n">INT_NBYTES</span><span class="p">,</span> <span class="s2">&quot;big&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">bytes_</span>
+    <span class="k">return</span> <span class="n">bytes_</span>
+
+
+<span class="k">class</span> <span class="nc">PayloadSignal</span><span class="p">(</span><span class="n">signals</span><span class="o">.</span><span class="n">Signal</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;A generic message message signal, carrying a python object</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">payload</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">payload</span> <span class="o">=</span> <span class="n">payload</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;PayloadSignal with </span><span class="si">%i</span><span class="s2"> bytes&gt;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">payload</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">getData</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">payload</span>
+
+
+
+<span class="k">class</span> <span class="nc">TCPConnectionThread</span><span class="p">(</span><span class="n">TaskThread</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">reader</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">writer</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reader</span> <span class="o">=</span> <span class="n">reader</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">writer</span> <span class="o">=</span> <span class="n">writer</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">peername</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">peerport</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">writer</span><span class="o">.</span><span class="n">get_extra_info</span><span class="p">(</span><span class="s2">&quot;peername&quot;</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">getId</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">getInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;TCPConnectionThread </span><span class="si">%s</span><span class="s2"> connected to </span><span class="si">%s</span><span class="s2">&gt;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">getId</span><span class="p">(),</span> <span class="bp">self</span><span class="o">.</span><span class="n">peername</span><span class="p">)</span>
+
+
+    <span class="k">def</span> <span class="nf">initVars__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">write_socket</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+    <span class="nd">@verbose</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;enter__ : </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getInfo</span><span class="p">())</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">write_socket</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reCreate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">write_socket</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">writeSocket__</span><span class="p">)</span>
+
+
+    <span class="nd">@verbose</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span> <span class="o">=</span> <span class="k">await</span> <span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">write_socket</span> <span class="o">=</span> <span class="k">await</span> <span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">write_socket</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;exit__: bye!&quot;</span><span class="p">)</span>
+
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">readSocket__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">packet</span> <span class="o">=</span> <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">reader</span><span class="o">.</span><span class="n">read</span><span class="p">(</span><span class="mi">1500</span><span class="p">)</span>
+                <span class="sd">&quot;&quot;&quot;a word of warning here: try to tread as much bytes as you can with the</span>
+<span class="sd">                asyncio StreamReader instance (here self.reader) per re-scheduling,</span>
+<span class="sd">                in order to keep the rescheduling frequency reasonable</span>
+<span class="sd">                &quot;&quot;&quot;</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;readSocket__ : reading failed : &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;readSocket__: tcp connection </span><span class="si">%s</span><span class="s2"> terminated&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getInfo</span><span class="p">())</span>
+                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="c1"># all good!  keep on reading = reschedule this</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;readSocket__: got packet with size </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">packet</span><span class="p">))</span>
+                    <span class="c1"># send the payload to parent:</span>
+                    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">handlePacket__</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+                    <span class="sd">&quot;&quot;&quot;you can re-schedule with a moderate frequency, say, 100 times per second,</span>
+<span class="sd">                    but try to keep the re-scheduling frequency &quot;sane&quot;</span>
+<span class="sd">                    &quot;&quot;&quot;</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reSchedule</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">readSocket__</span><span class="p">);</span> <span class="k">return</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;readSocket__: client at </span><span class="si">%s</span><span class="s2"> closed connection&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">peername</span><span class="p">)</span>
+                    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+
+        <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;readSocket__ : cancelling </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getInfo</span><span class="p">())</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;readSocket__: failed with &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+
+
+    <span class="k">def</span> <span class="nf">resetPacketState__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">clearbuf</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">INT_NBYTES</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">len</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">header</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">if</span> <span class="n">clearbuf</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buf</span> <span class="o">=</span> <span class="nb">bytes</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">handlePacket__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">packet</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;packet reconstructions into blobs of certain length</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">packet</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">buf</span> <span class="o">+=</span> <span class="n">packet</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">header</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buf</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">INT_NBYTES</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">len</span> <span class="o">=</span> <span class="nb">int</span><span class="o">.</span><span class="n">from_bytes</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buf</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="n">INT_NBYTES</span><span class="p">],</span> <span class="s2">&quot;big&quot;</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">header</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1"># we got the header info (length)</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buf</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">INT_NBYTES</span><span class="p">:</span>
+                    <span class="c1"># sort out the remaining stuff</span>
+                    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">handlePacket__</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buf</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="p">(</span><span class="n">INT_NBYTES</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">):</span>
+                <span class="c1"># correct amount of bytes have been obtained</span>
+                <span class="n">payload</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buf</span><span class="p">[</span><span class="n">INT_NBYTES</span><span class="p">:</span><span class="n">INT_NBYTES</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">sigFromChildToParent__</span><span class="p">(</span><span class="n">PayloadSignal</span><span class="p">(</span>
+                    <span class="n">payload</span> <span class="o">=</span> <span class="n">payload</span><span class="p">))</span>
+                <span class="c1"># prepare state for next blob</span>
+                <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">buf</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">INT_NBYTES</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">):</span>
+                    <span class="c1"># there&#39;s some leftover here for the next blob..</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">buf</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">buf</span><span class="p">[</span><span class="n">INT_NBYTES</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">len</span><span class="p">:]</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">resetPacketState__</span><span class="p">()</span>
+                    <span class="c1"># .. so let&#39;s handle that leftover</span>
+                    <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">handlePacket__</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># blob ends exactly</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">resetPacketState__</span><span class="p">(</span><span class="n">clearbuf</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">writeSocket__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Send one-time info message</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">packet</span> <span class="o">=</span> <span class="n">json2bytes</span><span class="p">(</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;message&quot;</span> <span class="p">:</span> <span class="s2">&quot;hello!&quot;</span>
+                <span class="p">})</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">writer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">packet</span><span class="p">)</span>
+                <span class="c1"># await self.writer.drain() # this would maybe flush</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;writeSocket__ : writing failed : &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="sd">&quot;&quot;&quot;sending info to the client was succesfull, let&#39;s start reading</span>
+<span class="sd">                payload from the client&quot;&quot;&quot;</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">resetPacketState__</span><span class="p">(</span><span class="n">clearbuf</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reCreate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">read_socket</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">readSocket__</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;writeSocket__ : cancelling </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getInfo</span><span class="p">())</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;writeSocket__: failed with &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
+            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">stop</span><span class="p">()</span>
+
+
+<span class="k">class</span> <span class="nc">MasterTCPServerThread</span><span class="p">(</span><span class="n">TaskThread</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;thread&quot;</span><span class="p">,</span> <span class="n">pause</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">5002</span><span class="p">,</span> <span class="n">max_clients</span> <span class="o">=</span> <span class="mi">10</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">parent</span> <span class="o">=</span> <span class="n">parent</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pause</span> <span class="o">=</span> <span class="n">pause</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">port</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_clients</span> <span class="o">=</span> <span class="n">max_clients</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+
+
+    <span class="k">def</span> <span class="nf">initVars__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">server</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span> <span class="o">=</span> <span class="kc">None</span>
+
+
+    <span class="k">def</span> <span class="nf">getId</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+
+
+    <span class="k">def</span> <span class="nf">getInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;MasterTCPServerThread </span><span class="si">%s</span><span class="s2">&gt;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+
+    <span class="nd">@verbose</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;entry point&quot;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reCreate</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">tcpServer__</span><span class="p">)</span>
+        <span class="c1"># now the tasks runs independently</span>
+
+
+    <span class="nd">@verbose</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">exit__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span> <span class="o">=</span> <span class="k">await</span> <span class="n">delete</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;exit__: bye!&quot;</span><span class="p">)</span>
+
+
+    <span class="nd">@verbose</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">childsignalHandler__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">signal</span><span class="p">,</span> <span class="n">child</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;How to handle a certain signal from children?</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;childsignalHandler__ : got signal </span><span class="si">%s</span><span class="s2"> from child </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">signal</span><span class="p">,</span> <span class="n">child</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">signal</span><span class="p">,</span> <span class="n">PayloadSignal</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Got </span><span class="si">%s</span><span class="s2"> from child with id </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">signal</span><span class="p">),</span> <span class="n">child</span><span class="o">.</span><span class="n">getId</span><span class="p">())</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">pass</span>
+
+    <span class="c1"># *** custom rescheduling tasks ***</span>
+
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">tcpServer__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">server</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">start_server</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">handler__</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">)</span>
+
+        <span class="k">except</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">CancelledError</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;tcpServer__ </span><span class="si">%i</span><span class="s2">: cancel&quot;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">server</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;tcpServer__: failed with &#39;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">))</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;tcpServer__: will try again in </span><span class="si">%s</span><span class="s2"> secs&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pause</span><span class="p">)</span>
+            <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pause</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">tasks</span><span class="o">.</span><span class="n">tcp_server</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reSchedule</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">tcpServer__</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;tcpServer__ : new server waiting&quot;</span><span class="p">)</span>
+
+
+    <span class="c1"># *** internal ***</span>
+
+    <span class="nd">@verbose</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">handler__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reader</span><span class="p">,</span> <span class="n">writer</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;handler__ : new connection for </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getInfo</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">children</span><span class="p">)</span><span class="o">&gt;</span><span class="bp">self</span><span class="o">.</span><span class="n">max_clients</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s2">&quot;handler__ : max number of connections is </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_clients</span><span class="p">)</span>
+            <span class="k">return</span>
+
+        <span class="n">child_connection</span> <span class="o">=</span> <span class="n">TCPConnectionThread</span><span class="p">(</span><span class="n">reader</span> <span class="o">=</span> <span class="n">reader</span><span class="p">,</span> <span class="n">writer</span> <span class="o">=</span> <span class="n">writer</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="bp">self</span><span class="p">)</span>
+        <span class="k">await</span> <span class="n">child_connection</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+        <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">addChild</span><span class="p">(</span><span class="n">child_connection</span><span class="p">)</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c1"># loglev = logging.DEBUG</span>
+    <span class="n">loglev</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">INFO</span>
+
+    <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;MasterTCPServerThread&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">loglev</span><span class="p">)</span>
+    <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;TCPConnectionThread&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">loglev</span><span class="p">)</span>
+
+    <span class="n">thread</span> <span class="o">=</span> <span class="n">MasterTCPServerThread</span><span class="p">(</span>
+        <span class="n">parent</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;TCPServer&quot;</span>
+        <span class="p">)</span>
+    <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
+    <span class="n">loop</span><span class="o">.</span><span class="n">run_until_complete</span><span class="p">(</span><span class="n">thread</span><span class="o">.</span><span class="n">run</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="threadtask.html" class="btn btn-neutral float-left" title="Threads and Tasks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="license.html" class="btn btn-neutral float-right" title="Copyright &amp; License" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2023 Sampsa Riikonen.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3B80BETD6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S3B80BETD6', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>

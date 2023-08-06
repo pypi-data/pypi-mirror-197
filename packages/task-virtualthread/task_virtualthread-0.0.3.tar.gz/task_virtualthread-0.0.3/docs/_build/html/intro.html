@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About TaskThread &mdash; TaskThread  documentation</title><link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Anatomy of a TaskThread" href="thread.html" />
+    <link rel="prev" title="TaskThread" href="index.html" />
+    <!-- as per https://stackoverflow.com/questions/23211695/modifying-content-width-of-the-sphinx-theme-read-the-docs -->
+    <link href="_static/rtd_override.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+  <a href="index.html"><img src="_static/snakes.png" class="logo" alt="Logo"/>
+</a>
+    <div class="version">
+      TaskThread 0.0.3
+    </div>
+    <div>
+        Concurrent Asynchronous Python
+    </div>
+
+<!-- font awesome comes with the rtd package.. use like this:-->
+<br>
+<a href="https://github.com/elsampsa/task_thread" class="icon icon-github"> TaskThread @ github</a>
+<a href="https://github.com/elsampsa/task_thread/issues" class="fa fa-bug"> Issue Tracker @ github</a>
+
+<!-- don't even think about subclassing searchbox.html .. will never work!-->
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">About TaskThread</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a-sample-problem">A Sample Problem</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#threads-how">Threads, how?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advantages">Advantages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing">Installing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="thread.html">Anatomy of a TaskThread</a></li>
+<li class="toctree-l1"><a class="reference internal" href="task.html">Anatomy of a Task</a></li>
+<li class="toctree-l1"><a class="reference internal" href="threadtask.html">Threads and Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">Copyright &amp; License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TaskThread</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">About TaskThread</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/intro.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <span class="target" id="intro"></span><div class="section" id="about-taskthread">
+<h1>About TaskThread<a class="headerlink" href="#about-taskthread" title="Permalink to this headline">¶</a></h1>
+<p><em>Never use asyncio.wait or asyncio.gather again</em></p>
+<p>TaskThread is a collection of tools, conventions and a base class that organizes
+your asyncio python programs seamlessly into hierarchical, well-organized structures.</p>
+<p>These structures are analogical to threads and have a thread-like API.</p>
+<p>Let’s illustrate what all this is about by an example.</p>
+<div class="section" id="a-sample-problem">
+<h2>A Sample Problem<a class="headerlink" href="#a-sample-problem" title="Permalink to this headline">¶</a></h2>
+<p>Let’s consider a rather complex application which:</p>
+<ul class="simple">
+<li><p>Exposes a TCP server</p></li>
+<li><p>The server accepts various client connections from LAN</p></li>
+<li><p>Server processes the incoming data and reconstructs data frames from packets received from individual TCP client connections</p></li>
+<li><p>Processed data from each TCP client is forwarded through websockets to a final destination (say, to cloud)</p></li>
+<li><p>The processed data is also written into a database</p></li>
+</ul>
+<p>We can see there is a lot of i/o waiting and “multiplexing” going on that can get messy.</p>
+<p>When using TaskThread, you start unravelling a problem by identifying hierarchies.</p>
+<p>In the present case, a solution, described as a hierarchical list, could look like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MasterThread</span>
+    <span class="n">TCPServerThread</span>
+        <span class="n">TCPConnectionThread</span>
+            <span class="n">DataProcessorThread</span>
+        <span class="n">TCPConnectionThread</span>
+            <span class="n">DataProcessorThread</span>
+        <span class="o">...</span>
+    <span class="n">WebsocketMasterThread</span>
+        <span class="n">WebSocketSubThread</span>
+        <span class="n">WebSocketSubThread</span>
+        <span class="o">...</span>
+    <span class="n">DatabaseThread</span>
+</pre></div>
+</div>
+<p>(another kind of hierarchy to solve the problem is, of course, also possible)</p>
+<p><code class="docutils literal notranslate"><span class="pre">MasterThread</span></code> starts the <code class="docutils literal notranslate"><span class="pre">TCPServerThread</span></code> which then starts <code class="docutils literal notranslate"><span class="pre">TCPConnectionThread</span></code> s on demand.</p>
+<p>Each <code class="docutils literal notranslate"><span class="pre">TCPConnectionThread</span></code> starts a <code class="docutils literal notranslate"><span class="pre">DataProcessorThread</span></code> which reconstructs the packets from indicidual <code class="docutils literal notranslate"><span class="pre">TCPConnectionThread</span></code> s.</p>
+<p>All data flows to upwards in the tree into <code class="docutils literal notranslate"><span class="pre">MasterThread</span></code> which then passes it onto to <code class="docutils literal notranslate"><span class="pre">WebsocketMasterThread</span></code> and from there to individual
+<code class="docutils literal notranslate"><span class="pre">WebSocketSubThread</span></code> s. <code class="docutils literal notranslate"><span class="pre">MasterThread</span></code> passes the data also to <code class="docutils literal notranslate"><span class="pre">DatabaseThread</span></code>.</p>
+<p>Let’s add this data flow to the hierarchical list:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MasterThread</span>
+    <span class="n">TCPServerThread</span><span class="p">:</span> <span class="n">UP</span><span class="p">:</span> <span class="n">data</span>
+        <span class="n">TCPConnectionThread</span><span class="p">:</span> <span class="n">UP</span><span class="p">:</span> <span class="n">data</span>
+            <span class="n">DataProcessorThread</span><span class="p">:</span> <span class="n">IN</span><span class="p">:</span> <span class="n">packets</span><span class="p">,</span> <span class="n">UP</span><span class="p">:</span> <span class="n">data</span>
+        <span class="n">TCPConnectionThread</span>
+            <span class="n">DataProcessorThread</span>
+        <span class="o">...</span>
+    <span class="n">WebsocketMasterThread</span><span class="p">:</span> <span class="n">IN</span><span class="p">:</span> <span class="n">data</span>
+        <span class="n">WebSocketSubThread</span><span class="p">:</span> <span class="n">IN</span> <span class="n">data</span>
+        <span class="n">WebSocketSubThread</span>
+        <span class="o">...</span>
+    <span class="n">DatabaseThread</span><span class="p">:</span> <span class="n">IN</span><span class="p">:</span> <span class="n">data</span>
+</pre></div>
+</div>
+<p>Here <code class="docutils literal notranslate"><span class="pre">UP</span></code> designates data going upwards in the tree, while <code class="docutils literal notranslate"><span class="pre">IN</span></code> shows incoming data at deeper level threads.</p>
+<p>Notice that there is not any intercommunication within this tree that is not strictly between a parent and a child.</p>
+</div>
+<div class="section" id="threads-how">
+<h2>Threads, how?<a class="headerlink" href="#threads-how" title="Permalink to this headline">¶</a></h2>
+<p>So, how to implement such “threads” ?  After all this is asyncio, not multithreading!</p>
+<p>Well, the entities named here <code class="docutils literal notranslate"><span class="pre">MasterThread</span></code>, <code class="docutils literal notranslate"><span class="pre">TCPServerThread</span></code>, etc. are not really “threads”, but collection of asyncio <strong>tasks</strong> grouped together in a smart way - thus the name TaskThread.
+The intercom between the “threads” is done using asyncio <strong>queues</strong>.</p>
+<p>Let’s take a deeper look on the <strong>tasks</strong> and <strong>queues</strong>:</p>
+<p><code class="docutils literal notranslate"><span class="pre">DataProcessorThread</span></code> receives packets (via a listening <strong>task</strong>) through a queue from <code class="docutils literal notranslate"><span class="pre">TCPConnectionThread</span></code>.  After reconstructing
+some data from the packets using a <strong>task</strong>, <code class="docutils literal notranslate"><span class="pre">DataProcessorThread</span></code> has a <strong>task</strong> that sends the dataframes to <code class="docutils literal notranslate"><span class="pre">TCPConnectionThread</span></code> through another asyncio <strong>queue</strong> which
+<code class="docutils literal notranslate"><span class="pre">TCPConnectionThread</span></code> is listening with a <strong>task</strong>, etc.</p>
+<p>These <strong>queues</strong> and listener <strong>tasks</strong> work seamlessly and are hidden from the TaskThread API user.</p>
+<p>At the core of TaskThread philosophy lies <strong>rescheduling tasks</strong>, i.e. asyncio tasks that reschedule themselves, giving the appearance of “threads” and a thread-like API.</p>
+<p>The only thing the API user needs to worry about, is how to initiate, re-schedule and terminate these tasks within their TaskThread implementation.</p>
+</div>
+<div class="section" id="advantages">
+<h2>Advantages<a class="headerlink" href="#advantages" title="Permalink to this headline">¶</a></h2>
+<p>Have you ever run into a situation where you have a complex asyncio program running tons of simultaneous tasks?</p>
+<p>For example, you need to run <code class="docutils literal notranslate"><span class="pre">asyncio.wait</span></code> to “poll” several tasks to see if the tasks have finished or not and then your program’s logic is altered based on that result,
+creating an asynchronous mess, maybe even runaway tasks.</p>
+<p>Well, you don’t need to touch <code class="docutils literal notranslate"><span class="pre">asyncio.wait</span></code> or <code class="docutils literal notranslate"><span class="pre">asyncio.gather</span></code> ever again, after starting to use TaskThread.</p>
+<p>Your programs will also become naturally well-organized into threads that have
+separation of concerns and restricted communication - in accordance with the <a class="reference external" href="https://medium.com/&#64;sampsa.riikonen/a-roadtrip-between-object-oriented-and-functional-programming-d5161dc19052">HIMO principle</a>.</p>
+<p>I hope you got all warmed up by now.  Exciting, right!?</p>
+<p>Next we will take a look at <a class="reference internal" href="thread.html#thread"><span class="std std-ref">an anatomy of a TaskThread</span></a>.</p>
+</div>
+<div class="section" id="installing">
+<h2>Installing<a class="headerlink" href="#installing" title="Permalink to this headline">¶</a></h2>
+<p>From PyPi simply with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip3</span> <span class="n">install</span> <span class="o">--</span><span class="n">user</span> <span class="n">task</span><span class="o">-</span><span class="n">virtualthread</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="TaskThread" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="thread.html" class="btn btn-neutral float-right" title="Anatomy of a TaskThread" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2023 Sampsa Riikonen.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+    <!-- Theme Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S3B80BETD6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-S3B80BETD6', {
+          'anonymize_ip': false,
+      });
+    </script> 
+
+</body>
+</html>
