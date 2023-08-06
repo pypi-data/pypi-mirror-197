@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+aperitif/__init__.py
+aperitif.egg-info/PKG-INFO
+aperitif.egg-info/SOURCES.txt
+aperitif.egg-info/dependency_links.txt
+aperitif.egg-info/top_level.txt
