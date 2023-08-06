@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: deploifai
+Version: 0.4.1
+Summary: Deploifai CLI
+Home-page: https://github.com/deploifai/cli
+Author: Deploifai Limited
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Deploifai CLI
+
+## Installation
+
+```shell
+pip install deploifai
+```
+
+Or, install from homebrew:
+
+```shell
+brew tap deploifai/deploifai
+brew install deploifai
+```
+
+## Usage
+
+Ensure that you have installed correctly.
+
+```shell
+# show help message
+deploifai --help
+# show version
+deploifai --version
+```
+
+### Authentication
+
+First, generate a personal access token on your Deploifai [dashboard](https://deploif.ai/dashboard) settings.
+
+Then, login to the cli tool:
+
+```shell
+deploifai auth login -u [username] -t [token]
+```
+
+## Documentation
+
+See the [documentation](https://docs.deploif.ai/cli/commands/quick-start) for more information about the CLI.

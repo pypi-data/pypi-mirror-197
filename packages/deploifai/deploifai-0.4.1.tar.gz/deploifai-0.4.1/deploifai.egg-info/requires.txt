@@ -1,0 +1,15 @@
+click
+python-dotenv
+keyring
+requests
+click-spinner
+tqdm
+azure-identity
+azure-storage-blob
+boto3
+google-auth
+google-cloud-storage
+InquirerPy
+pyperclip
+semver
+cryptography
