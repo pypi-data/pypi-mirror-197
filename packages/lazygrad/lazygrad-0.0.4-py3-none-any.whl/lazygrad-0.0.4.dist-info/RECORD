@@ -1,0 +1,10 @@
+lazygrad/__init__.py,sha256=duivsAV1u-9n5mA12VZVlgxLl-rsJB0OXrmPxZSaaT8,159
+lazygrad/engine.py,sha256=bg_hIWylFz9U2X1IiyT9kPAjnUwwH71qjPWjfLCnZ-U,3849
+lazygrad/graph.py,sha256=qEYUKl_a099eZRFSwsSzhLx9SE5FzcZDca4rpXs4yrg,971
+lazygrad/nn.py,sha256=MuDYBM9KPz4LTlFv_YjPOLNYRqJzm0Ymd_lvRe50cvU,3960
+lazygrad/rnn.py,sha256=luTzitA2TQjj20_KimcUGQARuXpY3V_hm2GcE5hkXWE,2137
+lazygrad-0.0.4.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+lazygrad-0.0.4.dist-info/METADATA,sha256=GTDBmWl3lA6Tw9PG-D31sKNqgsCJwxZP4XXvqsZOV6w,1955
+lazygrad-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lazygrad-0.0.4.dist-info/top_level.txt,sha256=tBS6_mgMM2ESGtpOGwqaanBem5eXHw9VnVcgZuKdEuM,9
+lazygrad-0.0.4.dist-info/RECORD,,
