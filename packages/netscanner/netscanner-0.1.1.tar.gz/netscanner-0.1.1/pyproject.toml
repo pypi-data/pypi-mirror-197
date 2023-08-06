@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "netscanner"
+version = "0.1.1"
+description = "A comprehensive network reconnaissance tool"
+authors = ["Adam Dawood <ADD0242@MY.LONDONMET.AC.UK>"]
+readme = "README.md"
+repository = "https://github.com/add0242/NETSCANNER"
+
+[tool.poetry.dependencies]
+mac-vendor-lookup = "^0.1.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
