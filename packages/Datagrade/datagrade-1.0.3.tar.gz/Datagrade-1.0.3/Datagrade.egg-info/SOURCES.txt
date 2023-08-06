@@ -1,0 +1,9 @@
+LICENSE.txt
+README.rst
+setup.py
+Datagrade/__init__.py
+Datagrade/datagrade.py
+Datagrade.egg-info/PKG-INFO
+Datagrade.egg-info/SOURCES.txt
+Datagrade.egg-info/dependency_links.txt
+Datagrade.egg-info/top_level.txt
