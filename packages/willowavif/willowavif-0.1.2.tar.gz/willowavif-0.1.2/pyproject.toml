@@ -1,0 +1,37 @@
+[project]
+name = "willowavif"
+version = "0.1.2"
+description = "AVIF support for williow"
+authors = [{ name = "Ben Gosney", email = "bengosney@googlemail.com" }]
+dependencies = ['Pillow', 'Willow', 'pillow-avif-plugin', 'wrapt']
+urls = { 'Bug Tracker' = 'https://github.com/bengosney/willow-avif/issues' }
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+    'Operating System :: OS Independent',
+    'Environment :: Web Environment',
+    'Intended Audience :: Developers',
+    "Framework :: Wagtail",
+    "Framework :: Wagtail :: 2",
+    "Framework :: Wagtail :: 3",
+    "Framework :: Wagtail :: 4",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+readme = 'README.md'
+requires-python = '>=3.6'
+
+[build-system]
+requires = ["setuptools", "wheel", "Pillow", "Willow", "pillow-avif-plugin", "wrapt"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 128
+target-version = ['py36']
+
+[tool.pycln]
+all = true
