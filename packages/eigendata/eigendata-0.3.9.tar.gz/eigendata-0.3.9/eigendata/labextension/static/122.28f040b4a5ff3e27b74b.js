@@ -1,0 +1,1 @@
+(self.webpackChunk_molinsp_eigendata=self.webpackChunk_molinsp_eigendata||[]).push([[122],{22122:(e,n,t)=>{"use strict";function a(){return(a=Object.assign||function(e){for(var n=1;n<arguments.length;n++){var t=arguments[n];for(var a in t)Object.prototype.hasOwnProperty.call(t,a)&&(e[a]=t[a])}return e}).apply(this,arguments)}t.d(n,{Z:()=>a})}}]);
