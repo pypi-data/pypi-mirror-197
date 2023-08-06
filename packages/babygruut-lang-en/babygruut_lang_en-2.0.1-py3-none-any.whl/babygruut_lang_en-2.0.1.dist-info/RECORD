@@ -1,0 +1,11 @@
+gruut_lang_en/VERSION,sha256=_oQPUvtVeNP3frSXEV6wLGA2YBw6U-YN95lccna6p3o,6
+gruut_lang_en/__init__.py,sha256=z1ga3LohKNo4FLhoohZgwfcZZDjNCGO_imJOd7_dBVQ,491
+gruut_lang_en/lexicon.db,sha256=90_j4tbmp_ntjMxGngb145auvn1LkIlkOLHjM64v5hM,13115392
+gruut_lang_en/espeak/lexicon.db,sha256=sThNEpmPPSIqk5ND9EtOeMYZBRKEodqBfuI1sYUDclQ,4734976
+gruut_lang_en/espeak/g2p/model.crf,sha256=-83C-MedtdQNMkz5u5BAyyGmxz_-raMJCzSgU2C5mIg,1143968
+gruut_lang_en/g2p/model.crf,sha256=eULo-JaLG9WzIv1Y14uUf1_TBcnUrraovh0OqWInu60,1653560
+gruut_lang_en/pos/model.crf,sha256=sTRuJVMeKJqj3NSCKMvf5iULgSuD06LhNtgdu_krUQg,9171428
+babygruut_lang_en-2.0.1.dist-info/METADATA,sha256=ZyEjF3rjZGSSzrxKBT_he3LqYlJf9RCfWOq1MzccvO0,420
+babygruut_lang_en-2.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+babygruut_lang_en-2.0.1.dist-info/top_level.txt,sha256=sxC5aUDvgdLxNXDmgL4cf3RBUQPZ-IEQV6bZazVt480,14
+babygruut_lang_en-2.0.1.dist-info/RECORD,,
