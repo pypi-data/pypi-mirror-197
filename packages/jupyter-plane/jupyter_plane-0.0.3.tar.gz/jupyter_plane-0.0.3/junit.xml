@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="1" failures="0" errors="0" time="4.472">
+  <testsuite name="@datalayer/jupyter-plane" errors="0" failures="0" skipped="0" timestamp="2023-02-26T08:51:48" time="2.684" tests="1">
+    <testcase classname="@datalayer/jupyter-plane should be tested" name="@datalayer/jupyter-plane should be tested" time="0.002">
+    </testcase>
+  </testsuite>
+</testsuites>
