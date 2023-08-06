@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+linux.py,sha256=TLwilJ4kHN3qV2ljmhuMaeyYAXo2HwL7Wf3A9XudIW8,168
+mactalk.py,sha256=6Od4p967pfTrchfXa4EYOarCsnnSz85W6l852fqgCUg,89
+unisapi.py,sha256=5xS9gRccqbV7pneiq286tREwuOYGJZGnuxXaaxOegos,106
+unispeak.py,sha256=Kh-4qL8O-UZTJjDSS0GJNRORz7G-a4GFY2SE5Lv1E6U,298
+unispeak_nvda.py,sha256=VYcpv_Xn4mYguBB_tUR-I0urhgw1PSfEGerkBIdFWjw,236
+unispeak-1.1.dist-info/LICENSE,sha256=i39rhcGWy4Z2uB1r-bUascEzBAGb8NXX-7ydZ2sePzM,1077
+unispeak-1.1.dist-info/METADATA,sha256=AKvmvzg6T-Hm-_wHCD-iiUE8vW-_7lqNI64sV1V5eRg,125
+unispeak-1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+unispeak-1.1.dist-info/top_level.txt,sha256=i1wykND_jAedG0eRUw5ElZbagPZs2kJM6CsURQyq2x4,54
+unispeak-1.1.dist-info/RECORD,,
