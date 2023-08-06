@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: EntPdf
+Version: 0.0.1
+Summary: Traduzir paginas de um pdf e leitura do arquivo com voz do sistema
+Home-page: UNKNOWN
+Author: Francisco Aparicio & Pedro Tercio
+Author-email: pooiiufpi@gmail.com
+License: MIT License
+Description: EntPdf
+        
+        ===========
+        
+        #### Um script Python que le e traduz arquivos PDF para texto e audio
+        
+        ## InstalaÃ§ao:
+        
+        `pip install EntPdf`
+        
+        ## Uso:
+        
+        `from EntPdf import main`
+        
+        `pdf = main.EntPdf()`
+        
+        ## 0 ou 1 indica o que fazer, onde 0 ler uma pagina especifica e 1 a leitura do arquivo todo
+        
+        `pdf.SayThis(nome_pdf (string), 0 ou 1 (int), numero da pagina (int))`
+        
+        # Traduzir a pagina, informando numero da pagina e a lingua que deseja traduzir
+        
+        `pdf.Translator(nome_pdf (string), pagina (int), lingua(string))`
+        
+Keywords: Pdf
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
