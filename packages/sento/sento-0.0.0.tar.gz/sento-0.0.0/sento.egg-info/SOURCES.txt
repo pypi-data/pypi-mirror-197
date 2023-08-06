@@ -1,0 +1,5 @@
+setup.py
+sento.egg-info/PKG-INFO
+sento.egg-info/SOURCES.txt
+sento.egg-info/dependency_links.txt
+sento.egg-info/top_level.txt
