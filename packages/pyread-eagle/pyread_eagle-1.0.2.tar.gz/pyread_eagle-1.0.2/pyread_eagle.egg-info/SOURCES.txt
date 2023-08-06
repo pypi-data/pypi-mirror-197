@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+pyproject.toml
+pyread_eagle/__init__.py
+pyread_eagle/__version__.py
+pyread_eagle/_pyread_eagle.py
+pyread_eagle.egg-info/PKG-INFO
+pyread_eagle.egg-info/SOURCES.txt
+pyread_eagle.egg-info/dependency_links.txt
+pyread_eagle.egg-info/requires.txt
+pyread_eagle.egg-info/top_level.txt
+tests/test_regions.py
