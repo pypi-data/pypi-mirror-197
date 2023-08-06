@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+devi/__init__.py
+devi/__main__.py
+devi/cli.py
+devi/config.py
+devi/log.py
+devi/toml_parser.py
+devi/utils.py
+devi_cli.egg-info/PKG-INFO
+devi_cli.egg-info/SOURCES.txt
+devi_cli.egg-info/dependency_links.txt
+devi_cli.egg-info/top_level.txt
