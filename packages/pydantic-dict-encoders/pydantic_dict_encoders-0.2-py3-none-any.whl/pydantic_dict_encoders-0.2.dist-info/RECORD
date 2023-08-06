@@ -1,0 +1,7 @@
+pydantic_dict/__init__.py,sha256=iTWf6yvh8dYMyxYS46rb0WumjEIB3lQ7DxEIxrgnP-w,143
+pydantic_dict/mixins/__init__.py,sha256=bwwmELRANL59lzi6qGi_jkr2aAR5xvnAwmM8sP492Fs,29
+pydantic_dict/mixins/dict_encoders.py,sha256=8MsnmLSI0c9MDTlPAi2BytP5njlZuThnbbtOm7_455w,3255
+pydantic_dict_encoders-0.2.dist-info/LICENSE,sha256=wwT618sP-rtRK_HBh_KVSUh9jjkG0k2lPxUVTuZuzeA,1099
+pydantic_dict_encoders-0.2.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+pydantic_dict_encoders-0.2.dist-info/METADATA,sha256=jbD-gDESrt0_WeCwJXQnXwRr11WKNFOKBWsLoi3lGwI,4447
+pydantic_dict_encoders-0.2.dist-info/RECORD,,
