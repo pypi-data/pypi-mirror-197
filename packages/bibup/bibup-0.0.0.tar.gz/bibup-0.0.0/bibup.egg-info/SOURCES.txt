@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+bibup/__init__.py
+bibup.egg-info/PKG-INFO
+bibup.egg-info/SOURCES.txt
+bibup.egg-info/dependency_links.txt
+bibup.egg-info/requires.txt
+bibup.egg-info/top_level.txt
