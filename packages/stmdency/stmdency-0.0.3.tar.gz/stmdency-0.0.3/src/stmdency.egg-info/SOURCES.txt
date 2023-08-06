@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+src/stmdency/__init__.py
+src/stmdency/constants.py
+src/stmdency/extractor.py
+src/stmdency/visitor.py
+src/stmdency.egg-info/PKG-INFO
+src/stmdency.egg-info/SOURCES.txt
+src/stmdency.egg-info/dependency_links.txt
+src/stmdency.egg-info/requires.txt
+src/stmdency.egg-info/top_level.txt
+src/stmdency.egg-info/zip-safe
+tests/testing.py
