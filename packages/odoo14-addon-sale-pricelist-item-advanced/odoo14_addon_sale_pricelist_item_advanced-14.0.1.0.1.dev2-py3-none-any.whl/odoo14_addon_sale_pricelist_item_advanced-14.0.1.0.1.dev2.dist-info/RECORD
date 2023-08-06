@@ -1,0 +1,15 @@
+odoo/addons/sale_pricelist_item_advanced/README.rst,sha256=5gwFsky02Vc1Vz3U405gje2FhGh2qEz2its6vqXdcI8,2857
+odoo/addons/sale_pricelist_item_advanced/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/sale_pricelist_item_advanced/__manifest__.py,sha256=E2BSB5TxfdJ2u2V3v9-b3Oq6PxLChKew3IGJuXZvQyg,377
+odoo/addons/sale_pricelist_item_advanced/i18n/sale_pricelist_item_advanced.pot,sha256=mvgVOPomv1huDaywvILkAIXmVQiFpXh0zItP9UDvlzE,3031
+odoo/addons/sale_pricelist_item_advanced/readme/CONTRIBUTORS.rst,sha256=pXBxxpnmW04XdfMTKA-OZ8353nah0LrPtexjT6awA_s,76
+odoo/addons/sale_pricelist_item_advanced/readme/DESCRIPTION.rst,sha256=z5V8oFeKBAnOblUzGDB7ZxsDoRAZosK0kM1djseHQzs,43
+odoo/addons/sale_pricelist_item_advanced/readme/HISTORY.rst,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/sale_pricelist_item_advanced/readme/USAGE.rst,sha256=L1HJeysbQxNAT61YiAmNTDJlhO0Z88phb1ar6cvkios,92
+odoo/addons/sale_pricelist_item_advanced/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/sale_pricelist_item_advanced/static/description/index.html,sha256=txTsTSb-duDXoJ5qeScRmCrwD-p-dPXIZB755_eNxNE,12221
+odoo/addons/sale_pricelist_item_advanced/views/product_pricelist_item.xml,sha256=R0p9tabbxu2-RxIIyPK_410CuMaA-Z-TU9deixohUOA,10885
+odoo14_addon_sale_pricelist_item_advanced-14.0.1.0.1.dev2.dist-info/METADATA,sha256=EqVUJ-sX3giiM8Bx3cm1sVAq17nGZTTDX9Fv9uPST7k,3414
+odoo14_addon_sale_pricelist_item_advanced-14.0.1.0.1.dev2.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+odoo14_addon_sale_pricelist_item_advanced-14.0.1.0.1.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo14_addon_sale_pricelist_item_advanced-14.0.1.0.1.dev2.dist-info/RECORD,,
