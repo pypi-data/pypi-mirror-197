@@ -1,0 +1,14 @@
+kor/__init__.py,sha256=806BLj2rtN3KXce_7MbbvSvy5TbGfK3QdIdDFRaIhis,127
+kor/examples.py,sha256=9WDIjJr_x_oGt0cegFAHArGOT6oc0B2B8GBwsmEzrjk,4969
+kor/experimental/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kor/experimental/blocks.py,sha256=MQuvtblCedl41bobLkGbA25L28S7ta6dV0tdWtQAQyw,1800
+kor/extraction.py,sha256=otjFSwZZaIiP4PW1aUx6E8TTtONtN3Cec-iPVXzPDqo,1094
+kor/nodes.py,sha256=w4xsB9ns9p-HD5q4jYIquPyZ1QEpA-VgVEFvIlnTnPs,7700
+kor/parsing.py,sha256=R0j4YOrrKvEaWEf-7XzFiQ4sR2giSSWvWlp1a_iA6r4,3536
+kor/prompts.py,sha256=-yeS4EXELLZO9Bhz67FIlfHmkqDLKDFDcLLOH7dqoRo,7018
+kor/type_descriptors.py,sha256=UTgsH3Qy4znJ9uKTNIZMT9ku1up7Ay7MqKJUNs5v3NM,4165
+kor/validators.py,sha256=L5ymJkJUrXUoWQWWgNARzi08u6SdFVKCNRFKCIqE6JE,117
+kor-0.3.0.dist-info/LICENSE,sha256=ce79GgwpghNB0q8pATWvaU0wet7MGcZmSgSiB_lpFHQ,1071
+kor-0.3.0.dist-info/WHEEL,sha256=vxFmldFsRN_Hx10GDvsdv1wroKq8r5Lzvjp6GZ4OO8c,88
+kor-0.3.0.dist-info/METADATA,sha256=VDMm_zcHns8EUlSJ6Z9Sg9aPG15yQypChySr-ZeYU2s,4370
+kor-0.3.0.dist-info/RECORD,,
