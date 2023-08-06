@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+nomiden/__init__.py
+nomiden/kk.py
+nomiden/nik.py
+nomiden/reader.py
+nomiden.egg-info/PKG-INFO
+nomiden.egg-info/SOURCES.txt
+nomiden.egg-info/dependency_links.txt
+nomiden.egg-info/requires.txt
+nomiden.egg-info/top_level.txt
+nomiden/data/regioncode.csv
