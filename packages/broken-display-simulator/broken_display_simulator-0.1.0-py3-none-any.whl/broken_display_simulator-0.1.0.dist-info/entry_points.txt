@@ -1,0 +1,4 @@
+[console_scripts]
+bdsim=broken_display_simulator.__main__:main
+broken-display-simulator=broken_display_simulator.__main__:main
+
