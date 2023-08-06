@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+Makefile
+README.md
+library.properties
+pyproject.toml
+serialpacker.py
+test.py
+serialpacker.egg-info/PKG-INFO
+serialpacker.egg-info/SOURCES.txt
+serialpacker.egg-info/dependency_links.txt
+serialpacker.egg-info/requires.txt
+serialpacker.egg-info/top_level.txt
+src/SerialPacker.cpp
+src/SerialPacker.h
