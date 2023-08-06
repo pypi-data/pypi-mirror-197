@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cn_modulo_oscars
+Version: 0.0.1
+Summary: My customized ORM on Sales
+Project-URL: Homepage, https://github.com/carlota-upm/oscars
+Project-URL: Bug Tracker, https://github.com/carlota-upm/oscars/issues
+Author-email: carlota-upm <carlota.medrano@alumnos.upm.es>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
