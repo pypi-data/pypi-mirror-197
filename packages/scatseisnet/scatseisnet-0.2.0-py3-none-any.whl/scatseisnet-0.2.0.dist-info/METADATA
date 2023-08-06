@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: scatseisnet
+Version: 0.2.0
+Summary: A short description of the package.
+License-File: LICENCE
+Requires-Dist: numpy (>=1.21.6)
+Requires-Dist: scipy (>=1.7.3)
+
