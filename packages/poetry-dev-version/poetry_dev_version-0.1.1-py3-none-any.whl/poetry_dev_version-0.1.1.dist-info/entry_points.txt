@@ -1,0 +1,3 @@
+[poetry.plugin]
+demo=poetry_dev_version.plugin:DevVersionPlugin
+
