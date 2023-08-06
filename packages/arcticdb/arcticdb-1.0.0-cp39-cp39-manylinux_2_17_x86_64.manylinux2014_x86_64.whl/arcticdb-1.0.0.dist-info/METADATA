@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: arcticdb
+Version: 1.0.0
+Summary: ArcticDB DataFrame Database
+Home-page: https://github.com/man-group/arcticdb
+Author: Man Alpha Technology
+Author-email: arcticdb@man.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+License-File: LICENSE.txt
+License-File: NOTICE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: attrs
+Requires-Dist: enum-compat
+Requires-Dist: grpcio-tools
+Requires-Dist: xxhash
+Requires-Dist: six
+Requires-Dist: msgpack
+Requires-Dist: psutil
+Requires-Dist: pyyaml
+Requires-Dist: pymongo
+Requires-Dist: decorator
+Requires-Dist: prometheus-client
+Requires-Dist: protobuf
+Requires-Dist: dataclasses ; python_version < "3.7"
+
+UNKNOWN
+
