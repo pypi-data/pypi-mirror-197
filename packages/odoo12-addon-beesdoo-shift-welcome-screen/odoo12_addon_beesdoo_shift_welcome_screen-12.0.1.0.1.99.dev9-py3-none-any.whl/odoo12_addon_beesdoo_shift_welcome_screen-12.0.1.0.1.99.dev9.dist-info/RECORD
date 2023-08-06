@@ -1,0 +1,14 @@
+odoo/addons/beesdoo_shift_welcome_screen/README.rst,sha256=tkMZ3gQcVakvbPJ1Nbl4Pe0cCC50q3Az4XV1m-TaE5k,2036
+odoo/addons/beesdoo_shift_welcome_screen/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/beesdoo_shift_welcome_screen/__manifest__.py,sha256=N89FRNhCFrkc_uLwifAUeapJS8RnfqyoiXEFsENfPsk,541
+odoo/addons/beesdoo_shift_welcome_screen/i18n/beesdoo_shift_welcome_screen.pot,sha256=58JKCXXpDemdOm81LDJ3i4h981EYtc2RtzJ-muLhsic,4488
+odoo/addons/beesdoo_shift_welcome_screen/models/__init__.py,sha256=d5HVzkLKVW-NEFqFhFVG0NM0NEoz37coVxoDs8BfgSE,22
+odoo/addons/beesdoo_shift_welcome_screen/models/welcome.py,sha256=dl-5qsQMRbukwHJpxKEzhN6ADi69ToSiKaXUNDURCfk,1995
+odoo/addons/beesdoo_shift_welcome_screen/readme/CONTRIBUTORS.rst,sha256=pMp5ki1L1T1IuKG1miQj2iRqQVC8QaWweasLQBtIZ3U,19
+odoo/addons/beesdoo_shift_welcome_screen/readme/DESCRIPTION.rst,sha256=X9Yjayi_Mfpk18zdouS5ruY_2spByERcHF3TA2rcYo8,159
+odoo/addons/beesdoo_shift_welcome_screen/static/description/index.html,sha256=iR0Rb4hMOjpH-Ee6-7wg6AYOswyyGJA0p8GK4-BJI4A,10934
+odoo/addons/beesdoo_shift_welcome_screen/views/welcome.xml,sha256=mVNShWXF9u0rbgn9bytjqsgTID2xL9hXVnRhV0zQANM,3676
+odoo12_addon_beesdoo_shift_welcome_screen-12.0.1.0.1.99.dev9.dist-info/METADATA,sha256=_T8rcfMyioOy1Kk0Bla2ZRcFrNehDswQPfm0ffqvY9A,2593
+odoo12_addon_beesdoo_shift_welcome_screen-12.0.1.0.1.99.dev9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+odoo12_addon_beesdoo_shift_welcome_screen-12.0.1.0.1.99.dev9.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo12_addon_beesdoo_shift_welcome_screen-12.0.1.0.1.99.dev9.dist-info/RECORD,,
