@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "apispec-ui"
+version = "1.0.0"
+description = "Generate UI interactive API's from APISpec specifications."
+authors = ["Renato Damas <rena2damas@gmail.com>"]
+license = "MIT"
+readme = "README.rst"
+packages = [
+    { include = "*", from = "src" }
+]
+homepage = ""
+repository = "https://github.com/codectl/apispec-ui"
+documentation = ""
+keywords = [
+    "flaskful",
+    "swagger",
+    "openapi",
+    "oas",
+    "oas2",
+    "oas3",
+    "rest",
+    "api",
+    "web",
+    "flask",
+    "python",
+    "python3",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.dependencies]
+apispec = { extras = ["yaml"], version = "^6.3.0", optional = true }
+environs = "^9.5.0"
+flask = { version = "^2.2.3", optional = true }
+gunicorn = "^20.1.0"
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+apispec = { extras = ["yaml"], version = "^6.3.0" }
+coverage = "^7.2.1"
+flask = "^2.2.3"
+pre-commit = "^3.1.1"
+pytest = "^7.2.2"
+
+[tool.poetry.urls]
+issues = "https://github.com/codectl/apispec-ui/issues"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
