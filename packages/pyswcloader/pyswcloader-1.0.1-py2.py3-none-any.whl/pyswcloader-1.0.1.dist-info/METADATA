@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyswcloader
+Version: 1.0.1
+Summary: analysis tool for neuron swc files
+Home-page: https://github.com/txgxxx/pyswcloader/
+Author: tsgao
+Author-email: gaots@ion.ac.cn
+License: MIT
+Keywords: swc
+License-File: LICENSE.txt
+Requires-Dist: pynrrd
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: treelib
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+Requires-Dist: vispy
+Requires-Dist: seaborn
+Requires-Dist: kaleido
+Requires-Dist: glob2
+Requires-Dist: scikit-learn
+Requires-Dist: statistics
+Requires-Dist: scipy
+Requires-Dist: rdp
+
