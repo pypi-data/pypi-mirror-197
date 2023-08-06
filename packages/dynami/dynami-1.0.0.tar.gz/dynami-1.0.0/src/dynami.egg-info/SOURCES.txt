@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/dynami.egg-info/PKG-INFO
+src/dynami.egg-info/SOURCES.txt
+src/dynami.egg-info/dependency_links.txt
+src/dynami.egg-info/top_level.txt
