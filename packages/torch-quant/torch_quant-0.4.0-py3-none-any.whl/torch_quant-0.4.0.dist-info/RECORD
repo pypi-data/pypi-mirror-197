@@ -1,0 +1,12 @@
+torch_quant/__init__.py,sha256=DLi7LMWmWnQoFaZ8nTSOa09JuU9xJHlO1VbgXZJVsIw,642
+torch_quant/amp_module.py,sha256=9Rswca4E8V_V8QwEk2oOBRF6IbWMzdrLXkk28ty9dzI,2385
+torch_quant/graph.py,sha256=0jQSB9rF70RSJwCxY3jS4bmleAAsdK7UxbkiHtqM1sQ,18066
+torch_quant/module.py,sha256=ejj54XiMgDnde8aMuUVSejWV_7yBt20lFF-53BX3-Do,7419
+torch_quant/observed_module.py,sha256=dDTUZ-khGQBkOYfJMYysYSqWXl9QnKa_WACM44CjQ-0,2063
+torch_quant/observer.py,sha256=nh47QK_8ITOhhOqrPeF_vWV0OwPBi3HFm1NOISi7PF0,30361
+torch_quant/quantizer.py,sha256=1re8Ekom1XM9z0wbyZk1rB5HAvaaIjweOLVH6fC3cXI,10413
+torch_quant/version.py,sha256=d9_GfTIEQbg2gxtzei98OLJ0_x_z6yRiV1J4-RMUQD4,620
+torch_quant-0.4.0.dist-info/METADATA,sha256=HUqYvdAAQiJLTUiSXqmNfkh9e0RZDQTBsdtw8Afg0Uw,209
+torch_quant-0.4.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+torch_quant-0.4.0.dist-info/top_level.txt,sha256=s6iEYH9s_bn81abrJQW5Go7jp3ti-igp49G94cv6t44,12
+torch_quant-0.4.0.dist-info/RECORD,,
