@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+gptutil/__init__.py
+gptutil/ask.py
+gptutil/chat.py
+gptutil/image.py
+gptutil/interact.py
+gptutil.egg-info/PKG-INFO
+gptutil.egg-info/SOURCES.txt
+gptutil.egg-info/dependency_links.txt
+gptutil.egg-info/entry_points.txt
+gptutil.egg-info/requires.txt
+gptutil.egg-info/top_level.txt
+gptutil/agent/__init__.py
+gptutil/agent/bash.py
+gptutil/example/assistant.yaml
