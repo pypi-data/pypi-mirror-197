@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+NS-Forest-sticker.png
+README.md
+pyproject.toml
+setup.py
+nsforest/__init__.py
+nsforest/nsforest.py
+nsforest.egg-info/PKG-INFO
+nsforest.egg-info/SOURCES.txt
+nsforest.egg-info/dependency_links.txt
+nsforest.egg-info/requires.txt
+nsforest.egg-info/top_level.txt

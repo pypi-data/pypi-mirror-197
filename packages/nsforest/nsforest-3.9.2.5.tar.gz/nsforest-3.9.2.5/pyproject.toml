@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "nsforest"
+version = "3.9.2.5"
+requires-python = ">=3.8"
+description =  "A machine learning method for the discovery of minimum marker gene combinations for cell type identification from single-cell RNA sequencing"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Renee Zhang", email="zhangy@jcvi.org"},
+    {name = "Richard Scheuermann", email="RScheuermann@jcvi.org"},
+    {name = "Brian Aevermann", email="baevermann@chanzuckerberg.com"}
+]
+maintainers = [
+    {name="Tian Liu",email="ttl074@ucsd.edu"}
+]
+readme = "README.md"
+keywords = ['machine learning','scrna','cell type','random forest']
+classifiers=[  
+    'Development Status :: 3 - Alpha',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+]
+[project.urls]
+homepage="https://github.com/JCVenterInstitute/NSForest"
