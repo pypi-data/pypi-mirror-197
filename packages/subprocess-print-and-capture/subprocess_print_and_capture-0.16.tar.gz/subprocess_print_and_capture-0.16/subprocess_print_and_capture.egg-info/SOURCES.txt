@@ -1,0 +1,15 @@
+LICENSE.rst
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+subprocess_print_and_capture/LICENSE
+subprocess_print_and_capture/README.MD
+subprocess_print_and_capture/__init__.py
+subprocess_print_and_capture/requirements.txt
+subprocess_print_and_capture/thirdparty.json
+subprocess_print_and_capture.egg-info/PKG-INFO
+subprocess_print_and_capture.egg-info/SOURCES.txt
+subprocess_print_and_capture.egg-info/dependency_links.txt
+subprocess_print_and_capture.egg-info/requires.txt
+subprocess_print_and_capture.egg-info/top_level.txt

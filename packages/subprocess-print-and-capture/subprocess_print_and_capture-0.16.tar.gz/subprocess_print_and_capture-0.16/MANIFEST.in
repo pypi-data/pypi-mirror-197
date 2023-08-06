@@ -1,0 +1,4 @@
+include subprocess_print_and_capture/requirements.txt
+include subprocess_print_and_capture/thirdparty.json
+include subprocess_print_and_capture/README.MD
+include subprocess_print_and_capture/LICENSE
