@@ -1,0 +1,6 @@
+crispr_shrinkage/__init__.py,sha256=iZbO2i0eJ2nNsemEGII-scmZbPZNHdXAZaICMigXUJw,208
+crispr_shrinkage/framework/CrisprShrinkage.py,sha256=eqMi_OeynhquQ0qfpeCKvvpqrxSIx1XoQdYcv463a1g,95972
+crispr_shrinkage/framework/CrisprShrinkageVisualization.py,sha256=B8A46_rYD88tO5vtDmNT14jTLmg-i8vAI7uQsgOQatU,22988
+crispr_shrinkage-0.1.41.dist-info/METADATA,sha256=GewfDjJ16Sbk7Us1LH73o-WPsWFujhrfzmDovY44ogM,576
+crispr_shrinkage-0.1.41.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+crispr_shrinkage-0.1.41.dist-info/RECORD,,
