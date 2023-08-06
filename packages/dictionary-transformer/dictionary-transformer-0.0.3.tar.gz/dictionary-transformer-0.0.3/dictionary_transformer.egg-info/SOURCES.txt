@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+dictionary_transformer/__init__.py
+dictionary_transformer/exceptions.py
+dictionary_transformer/transformer.py
+dictionary_transformer.egg-info/PKG-INFO
+dictionary_transformer.egg-info/SOURCES.txt
+dictionary_transformer.egg-info/dependency_links.txt
+dictionary_transformer.egg-info/top_level.txt
+tests/tests.py
