@@ -1,0 +1,15 @@
+rocketchat_bot_sdk/__init__.py,sha256=5z050ljJxduPeFXicF-4DoU3EyakEGH_KLi7ZvD-jnY,141
+rocketchat_bot_sdk/handlers.py,sha256=Eo08CC2PlAw57QnqG_H2tb9O2sMDiPramqsnyDF9BGc,5556
+rocketchat_bot_sdk/rocketchat_bot.py,sha256=c_z20k-aTZx8F6SsUg0foeE0Ha6jR7zSGftSDHwLijM,2503
+rocketchat_bot_sdk/rocketchat_message.py,sha256=t-jcOGcUXvzUMsNThr0tLepX0FHvD1DuXYdaFl285o8,891
+rocketchat_bot_sdk/rocketchat_message_listener.py,sha256=wsETqtRgpvboK4rE3PyM8ocfBdcxyYgsr-MXexaYVuI,1163
+rocketchat_bot_sdk/rocketchat_async/__init__.py,sha256=kQR75jM4K0fnWza1oN0AiRtnHteLr8x4i4m26dw8V38,29
+rocketchat_bot_sdk/rocketchat_async/constants.py,sha256=M2bnot18hnejkDNjQS983UjEfrOs_huzLRIVN1kGpNE,1013
+rocketchat_bot_sdk/rocketchat_async/core.py,sha256=WINzjhHMMkC5F2kq16nq9nmYyW18o7tEbHlZcckYyFo,3439
+rocketchat_bot_sdk/rocketchat_async/dispatcher.py,sha256=4HZ3SNB-5u1IVjGzQF8YWZoTmYg8P73Y0fjgBBY4n8c,2695
+rocketchat_bot_sdk/rocketchat_async/methods.py,sha256=LZO1SBkOwdS_93PDEm_w4uXay981ZMPUvNC64zBTB6I,7241
+rocketchat_bot_sdk-0.0.4.dist-info/LICENSE,sha256=VTQzrsFrcNvPUcNcg4gQnFIRx3hJBA_l4Y_-aOF6WGg,1055
+rocketchat_bot_sdk-0.0.4.dist-info/METADATA,sha256=0D63rgoPsEz9Y7NIQ4MTfZcgg4hUvGcPTruk3iaD_P4,726
+rocketchat_bot_sdk-0.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+rocketchat_bot_sdk-0.0.4.dist-info/top_level.txt,sha256=QbISAY0heroae8K-CDkHVS3NmZD4PKI3Gs9xoAWdn8k,19
+rocketchat_bot_sdk-0.0.4.dist-info/RECORD,,
