@@ -1,0 +1,4 @@
+pywidevine
+pyyaml
+pybase62
+yt-dlp
