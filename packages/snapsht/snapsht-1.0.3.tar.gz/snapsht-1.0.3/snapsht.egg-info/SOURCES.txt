@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+snapsht/__init__.py
+snapsht/cli.py
+snapsht.egg-info/PKG-INFO
+snapsht.egg-info/SOURCES.txt
+snapsht.egg-info/dependency_links.txt
+snapsht.egg-info/entry_points.txt
+snapsht.egg-info/requires.txt
+snapsht.egg-info/top_level.txt
