@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/testing_server_cfer/__init__.py
+src/testing_server_cfer/app.py
+src/testing_server_cfer.egg-info/PKG-INFO
+src/testing_server_cfer.egg-info/SOURCES.txt
+src/testing_server_cfer.egg-info/dependency_links.txt
+src/testing_server_cfer.egg-info/top_level.txt
