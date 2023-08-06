@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+PygameCase/__init__.py
+PygameCase/__version__.py
+PygameCase/core.py
+PygameCase.egg-info/PKG-INFO
+PygameCase.egg-info/SOURCES.txt
+PygameCase.egg-info/dependency_links.txt
+PygameCase.egg-info/requires.txt
+PygameCase.egg-info/top_level.txt
