@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: xbutils
+Version: 0.5.0
+Summary: Python utilities
+Home-page: https://github.com/exbee49/xbutils
+Author: xb49
+Author-email: 
+License: WTFPL
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/plain
+License-File: LICENSE
+
+Some Python utility classes
