@@ -1,0 +1,16 @@
+venvctrl/__init__.py,SHA256=AiN_CoOj-7kZ-kAV8ZAvB50FZyhcBeyo6HNGi1EiHr0,198
+venvctrl/api.py,SHA256=4e0DyZe9lyheg10KeoTeLiW5z4Qdm6xIBqiAOI3-i3M,524
+venvctrl/cli/__init__.py,SHA256=7zm2ISB4r7R7aFXhITC-_aywb7LA1GJJ50R0Uun6zDc,192
+venvctrl/cli/relocate.py,SHA256=6wVhAnIAcIul1TtZO-B4yujJtr84IQqcDfKWvSNflMw,1443
+venvctrl/venv/__init__.py,SHA256=W3EUO9Wp_u5hdCfSA6sP-IofG2MAeqFy9zSWbb_Amz8,214
+venvctrl/venv/base.py,SHA256=REEttOv1tncIV1htJlspvnJvHcbCFwlcnQ3oeKM-7U8,12398
+venvctrl/venv/command.py,SHA256=NtxSRIaMagapalfUxn49r-c-5f0PMv4sPLqYnZ6wcwU,2218
+venvctrl/venv/create.py,SHA256=fE5Ds_WmoO1KOApv2KbCrdIH7ruTxoBLDuXOzz1GjdM,1266
+venvctrl/venv/pip.py,SHA256=2rTzKay3mGb7PtGLp--1O0NeH4CnVyejrfykako8KS8,2019
+venvctrl/venv/relocate.py,SHA256=DSKLcYsVHgPi_hBcWMlJihRnhVynQ2mVRrPqtSUvNr8,3455
+venvctrl-0.6.0.dist-info/LICENSE,SHA256=ZrzrKxKyKS1xeROcRp3sUWrohO5Zcp1Q3PsqAqilfWo,1071
+venvctrl-0.6.0.dist-info/METADATA,SHA256=amIT_naoniJnbn_cQ-oTt3G4y5sgY1lFq34kZ94LTa4,2808
+venvctrl-0.6.0.dist-info/WHEEL,SHA256=1VPi6hfNQaRRNuEdK_3dv9o8COtLGnHWJghhj4CQ28k,92
+venvctrl-0.6.0.dist-info/entry_points.txt,SHA256=tdl-5OkSpbqk6iKTFQdd8k9gEgT2oZl6bUzulgC1l84,66
+venvctrl-0.6.0.dist-info/top_level.txt,SHA256=LYDdBupxzNzQPux-2WUxZW2SrUKDb-hLPHPDq6t1Nmc,9
+venvctrl-0.6.0.dist-info/RECORD,,
