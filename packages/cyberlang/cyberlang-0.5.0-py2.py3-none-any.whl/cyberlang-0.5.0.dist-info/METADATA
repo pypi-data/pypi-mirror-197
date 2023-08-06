@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: cyberlang
+Version: 0.5.0
+Summary: A self-contained Cyber intepreter
+Home-page: https://github.com/DaelonSuzuka/cyber-python
+Author: David Kincaid
+Author-email: dlkincaid0@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/DaelonSuzuka/cyber-python
+Project-URL: Tracker, https://github.com/DaelonSuzuka/cyber-python/issues
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE
+
+# cyber-python
+
+## Installation
+
+```
+pip install cyberlang
+```
+
+## Usage
+
+```py
+from cyber import CyberVM
+
+vm = CyberVM()
+vm.eval("print 'hello world!'")
+```
+
+
+```py
+from cyber import CyberVM
+
+vm = CyberVM()
+
+# override cyber's print function with a python callback
+@vm.function('core.print')
+    def _print(string: str):
+        print(string)
+
+vm.eval("print 'hello world!'")
+```
