@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pygex
+Version: 0.1
+Summary: A simple Python game engine built around pygame and PyOpenGL.
+Home-page: https://github.com/DCubix/pyge
+Author: Diego Lopes
+Author-email: diego95lopes@gmail.com
+License: MIT
+Keywords: python,game,engine,3d,graphics,gamedev
