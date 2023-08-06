@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: DeepMol
+Version: 0.0.6b0
+Summary: DeepMol: a python-based machine and deep learning framework for drug discovery
+Author: DeepMol Team
+License: BSD 2-Clause License
+Keywords: machine-learning,deep-learning,cheminformatics,drug-discovery
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Provides-Extra: deep_learning
+Provides-Extra: rdkit-pypi
+Provides-Extra: preprocessing
+Provides-Extra: machine_learning
+Provides-Extra: test
+Provides-Extra: smilespe
+Provides-Extra: seaborn
+Provides-Extra: joblib
+Provides-Extra: pillow
+Provides-Extra: h5py
+Provides-Extra: shap
+Provides-Extra: gensim
+Provides-Extra: imblearn
+Provides-Extra: umap-learn
+Provides-Extra: kneed
+Provides-Extra: kaleido
+Provides-Extra: plotly
+Provides-Extra: chembl_structure_pipeline
+Provides-Extra: torch
+Provides-Extra: torchvision
+Provides-Extra: torchaudio
+Provides-Extra: dgl
+Provides-Extra: deepchem
+Provides-Extra: tensorflow
+Provides-Extra: boruta
+Provides-Extra: scikit-learn
+Provides-Extra: pytest
+Provides-Extra: pytest-cov
+Provides-Extra: mypy
+Provides-Extra: flake8
+Provides-Extra: tox
+Provides-Extra: all
+License-File: LICENSE
