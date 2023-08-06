@@ -1,0 +1,2 @@
+Version: 1.3.4
+Arguments: ['C:\\Users\\inivation\\AppData\\Local\\Temp\\cibw-run-4m96rjzj\\pp37-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '-w', 'C:\\Users\\inivation\\AppData\\Local\\Temp\\cibw-run-4m96rjzj\\pp37-win_amd64\\repaired_wheel', 'C:\\Users\\inivation\\AppData\\Local\\Temp\\cibw-run-4m96rjzj\\pp37-win_amd64\\built_wheel\\dv_processing-1.7.8-pp37-pypy37_pp73-win_amd64.whl']
