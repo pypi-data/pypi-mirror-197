@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: socialization
+Version: 0.0.1
+Summary: Wrapped bot, god and goddess service.
+Project-URL: Homepage, https://github.com/groupultra/socialism
+Project-URL: Bug Tracker, https://github.com/groupultra/socialism/issues
+Author: Shit Delicious
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+Full of shit.

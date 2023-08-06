@@ -1,0 +1,13 @@
+socialization/.gitignore,sha256=MtrjBS8zHuNNYo71NXCbMBJZpF33x1IsTTXc9Jhz8As,13
+socialization/LICENSE,sha256=zz3o4lswJgbTi5LS-gjvp1fchhGtoyTMSBlSyxVCIw8,1046
+socialization/README.md,sha256=EDoDOcc-Zl4b0qesPKe3a5TIHb-iYpzpJhLQRoyl5sg,54
+socialization/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+socialization/goddess_db_agent.py,sha256=EhGUSeD8xsM6L_k24ShGFlpO2nq7Nct9QEVMdIKH-h4,2276
+socialization/goddess_service.py,sha256=xSYr0-wfT5plpCXef5EUcMDY4yo_RAqR6x3VTg4F4so,14358
+socialization/commons/base_goddess_service.py,sha256=8rQNaBjx2aHStjX-lAC7gtUBFBN1bDl7uBJ9ooNrAIo,2107
+socialization/commons/codes.py,sha256=pOBn8GKiTqwZuLtYOIMkPfWgVM3yrN5DSJBPNKuvlWI,4239
+socialization/commons/json_ws_passive_service.py,sha256=XfXXdJO9ZDXplUt-1d6ghQHyx1iwz7xsGYJ2vK3vTuk,3747
+socialization-0.0.1.dist-info/METADATA,sha256=VXhKUU8ZBoyrlVlrfjH12hewVVV_07WzdVDF2rO_XNs,509
+socialization-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+socialization-0.0.1.dist-info/licenses/LICENSE,sha256=zz3o4lswJgbTi5LS-gjvp1fchhGtoyTMSBlSyxVCIw8,1046
+socialization-0.0.1.dist-info/RECORD,,
