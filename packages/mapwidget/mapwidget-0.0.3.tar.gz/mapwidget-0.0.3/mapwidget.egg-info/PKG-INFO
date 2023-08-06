@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: mapwidget
+Version: 0.0.3
+Summary: Custom Jupyter widgets for creating interactive maps
+Home-page: https://github.com/giswqs/mapwidget
+Author: Qiusheng Wu
+Author-email: giswqs@gmail.com
+License: MIT license
+Keywords: mapwidget
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mapwidget
+
+[![image](https://img.shields.io/pypi/v/mapwidget.svg)](https://pypi.python.org/pypi/mapwidget)
+[![image](https://img.shields.io/conda/vn/conda-forge/mapwidget.svg)](https://anaconda.org/conda-forge/mapwidget)
+
+**Custom map widgets for creating interactive maps**
+
+-   Free software: MIT license
+-   Documentation: https://mapwidget.gishub.org
+
+## Features
+
+-   TODO
+
+## Credits
+
+This package was created with [Cookiecutter](https://github.com/cookiecutter/cookiecutter) and the [giswqs/pypackage](https://github.com/giswqs/pypackage) project template.

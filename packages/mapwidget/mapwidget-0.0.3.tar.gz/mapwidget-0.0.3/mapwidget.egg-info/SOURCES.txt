@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+mapwidget/__init__.py
+mapwidget/cesium.py
+mapwidget/leaflet.py
+mapwidget.egg-info/PKG-INFO
+mapwidget.egg-info/SOURCES.txt
+mapwidget.egg-info/dependency_links.txt
+mapwidget.egg-info/not-zip-safe
+mapwidget.egg-info/requires.txt
+mapwidget.egg-info/top_level.txt
