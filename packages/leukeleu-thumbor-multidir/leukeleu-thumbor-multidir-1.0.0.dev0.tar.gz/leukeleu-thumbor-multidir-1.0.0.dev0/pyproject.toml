@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+
+[tool.black]
+line-length = 88
+target-version = [
+    "py38",
+]
+
+[tool.coverage.run]
+branch = true
+source = [
+    "tc_multidir",
+    "tests",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_empty = true
+fail_under = 95
+
+[tool.coverage.html]
+directory = "var/htmlcov"
+
+[tool.check-manifest]
+ignore = []
+
+[tool.isort]
+profile = "black"
+known_first_party = [
+    "tc_multidir",
+]
+sections = [
+    "FUTURE",
+    "STDLIB",
+    "THIRDPARTY",
+    "FIRSTPARTY",
+    "LOCALFOLDER",
+]
+lines_between_types = 1
+src_paths = [
+    "tc_multidir",
+    "tests",
+]
