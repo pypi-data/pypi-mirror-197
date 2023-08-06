@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: telegram_pot
+Version: 0.0.7
+Summary: A Telegram python bot api
+Author-email: Amin Fazlali <amin@fazlali.net>
+Project-URL: Homepage, https://github.com/fazlali/telegram_pot
+Project-URL: Bug Tracker, https://github.com/fazlali/telegram_pot/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Telegram Python Bot API
+
+A Telegram bot api written in python.
