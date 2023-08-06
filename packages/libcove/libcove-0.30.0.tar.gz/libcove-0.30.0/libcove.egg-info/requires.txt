@@ -1,0 +1,9 @@
+flattentool>=0.11.0
+jsonref
+jsonschema>=3
+requests
+rfc3339-validator
+rfc3987
+
+[:python_version < "3.8"]
+cached-property
