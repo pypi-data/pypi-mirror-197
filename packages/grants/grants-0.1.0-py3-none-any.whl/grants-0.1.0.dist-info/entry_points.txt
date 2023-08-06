@@ -1,0 +1,11 @@
+[console_scripts]
+fed_download=grants.fed_download:main
+fed_download_opps=grants.fed_download_opps:main
+fed_extract_attr=grants.fed_extract_attr:main
+fed_filter=grants.fed_filter:main
+fed_select=grants.fed_select:main
+fed_set=grants.fed_set:main
+fed_sort=grants.fed_sort:main
+fed_to_excel=grants.fed_to_excel:main
+fed_to_html=grants.fed_to_html:main
+
