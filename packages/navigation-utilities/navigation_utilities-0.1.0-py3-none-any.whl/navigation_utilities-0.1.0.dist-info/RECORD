@@ -1,0 +1,10 @@
+navigation_utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+navigation_utilities/nmea.py,sha256=dXjIGl5gffPb72HPZI8-z6JOn-MhYFVqv3Rnd-wHPJc,3749
+navigation_utilities/oxts.py,sha256=saXrwUHS3BdcUpZRiLiIItlQLGJXzNBImf4sV5XBlZk,2740
+navigation_utilities/utils/coordinate.py,sha256=N7A45mqRJrb3Mff7sKcBQExO0akBniDkl0IIXmaEPBw,1440
+navigation_utilities/utils/time.py,sha256=gRGVWvGUheBA2tb_8NMUVyX_vTITxsQvRr24NP7J11s,1914
+navigation_utilities-0.1.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+navigation_utilities-0.1.0.dist-info/METADATA,sha256=qLYVoHn9C1rJQj0XfCOfBy_iEZ_6Zoxdj4DSswllo0c,704
+navigation_utilities-0.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+navigation_utilities-0.1.0.dist-info/top_level.txt,sha256=ujO7Fujd2VFPobGvGLuNXy9qOytxNOtvLOGGI7QG3Ug,21
+navigation_utilities-0.1.0.dist-info/RECORD,,
