@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/mongodb_cdk_mongodb_cluster_project/__init__.py
+src/mongodb_cdk_mongodb_cluster_project/py.typed
+src/mongodb_cdk_mongodb_cluster_project.egg-info/PKG-INFO
+src/mongodb_cdk_mongodb_cluster_project.egg-info/SOURCES.txt
+src/mongodb_cdk_mongodb_cluster_project.egg-info/dependency_links.txt
+src/mongodb_cdk_mongodb_cluster_project.egg-info/requires.txt
+src/mongodb_cdk_mongodb_cluster_project.egg-info/top_level.txt
+src/mongodb_cdk_mongodb_cluster_project/_jsii/__init__.py
+src/mongodb_cdk_mongodb_cluster_project/_jsii/cluster@1.0.2.jsii.tgz
