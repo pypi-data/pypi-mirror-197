@@ -1,0 +1,10 @@
+numpy
+
+[:python_version < "3.9"]
+importlib_resources
+
+[dev]
+pytest
+pytest-cov
+pytest-timeout
+pytest-xdist
