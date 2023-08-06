@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: beesly
+Version: 0.0.0
+Summary: Web Scraping for Humans
+Home-page: https://github.com/Chicken1Geek/beesly
+Author: Sachin Sankar
+Author-email: mail.sachinsankar@gmail.com
+Classifier: Development Status :: 2 - Pre-Alpha
+License-File: LICENSE
+
+Beesly is a web scraping framework with tool sets build upon Beautiful Soup.
