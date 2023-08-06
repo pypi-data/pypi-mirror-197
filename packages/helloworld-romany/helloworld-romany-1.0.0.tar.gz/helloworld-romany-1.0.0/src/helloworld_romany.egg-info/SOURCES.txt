@@ -1,0 +1,8 @@
+LICENCE
+README.md
+setup.py
+src/helloworld.py
+src/helloworld_romany.egg-info/PKG-INFO
+src/helloworld_romany.egg-info/SOURCES.txt
+src/helloworld_romany.egg-info/dependency_links.txt
+src/helloworld_romany.egg-info/top_level.txt
