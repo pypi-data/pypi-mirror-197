@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: yopycalc
+Version: 0.0.3.2
+Summary: yopycalc python module
+Home-page: https://github.com/ravindra-rao/setuptoolsdemo.git
+Author: yobro
+Author-email: contact@yobro.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+yopycalc python module
