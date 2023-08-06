@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: django-view-utils
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/valberg/django-view-utils#readme
+Project-URL: Issues, https://github.com/valberg/django-view-utils/issues
+Project-URL: Source, https://github.com/valberg/django-view-utils
+Author-email: Víðir Valberg Guðmundsson <valberg@orn.li>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: django>=3.2
+Description-Content-Type: text/markdown
+
+# Django View Utils
+
+[![PyPI - Version](https://img.shields.io/pypi/v/django-view-utils.svg)](https://pypi.org/project/django-view-utils)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-view-utils.svg)](https://pypi.org/project/django-view-utils)
+
+-----
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install django-view-utils
+```
+
+## Development
+
+```console
+git clone
+cd django-view-utils
+pip install -e .[dev]
+```
+
+## License
+
+`django-view-utils` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
