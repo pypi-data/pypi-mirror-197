@@ -1,0 +1,10 @@
+lsv2test-core
+lsv2test-ext==2.0.1.dev20230317081852
+
+[full]
+lsv2test-core[runtime]
+lsv2test-ext[runtime]==2.0.1.dev20230317081852
+
+[runtime]
+lsv2test-core[runtime]
+lsv2test-ext[runtime]==2.0.1.dev20230317081852
