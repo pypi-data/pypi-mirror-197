@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: spark-price-transparency
+Version: 0.1.72
+Summary: Price Transparency for Spark
+Home-page: UNKNOWN
+Author: Brad Barker
+Author-email: brad@ratiocinate.com
+License: Databricks Labs
+Keywords: CMS Gov Price Transparency Guideline Prescription In-Network table-of-contents provider-reference in-network-rates allowed-amounts
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Database :: Database Engines/Servers
+Description-Content-Type: text/markdown
+
+# Spark Price Transparency
+
+Spark package that follows the CMS-Gov guidelines for [Price Transparency](https://github.com/CMSgov/price-transparency-guide).
+
+[![Spark](https://img.shields.io/badge/Spark-3.2.1-orange)](https://docs.databricks.com/release-notes/runtime/releases.html)
+[![DatabricksRuntime](https://img.shields.io/badge/Databricks%20Runtime-10.4%20LTS-orange)](https://docs.databricks.com/release-notes/runtime/releases.html)
+[![PyPi](https://img.shields.io/pypi/v/spark-price-transparency)](https://pypi.org/project/spark-price-transparency)
+[![PyPi](https://img.shields.io/pypi/wheel/spark-price-transparency)](https://pypi.org/project/spark-price-transparency)
+
+## Interactive Evaluation
+
+```python
+from spark_price_transparency.guide import Guide
+ptg = Guide(spark)
+```
+
