@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: apidriver
+Version: 0.5.0
+Summary: api test framework cli
+Home-page: https://github.com/JxcChen/service-driver
+Author: CHNJX
+Author-email: 360088940@qq.com
+License-File: LICENSE.txt
