@@ -1,0 +1,7 @@
+[
+  "tests/test_metno_mywavewam.py::test_load_to_sequence",
+  "tests/test_utils.py::test_get_indices_at_coordinates",
+  "tests/test_utils.py::test_get_indices_at_coordinates_latlon",
+  "tests/test_utils.py::test_get_indices_at_coordinates_rlatrlon",
+  "tests/test_utils.py::test_myfunc"
+]
