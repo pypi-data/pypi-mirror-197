@@ -1,0 +1,55 @@
+name: Setup repo
+
+description: Setup repo with all features on CI
+
+inputs:
+  python-version:
+    description: "Python version"
+    required: true
+    default: "3.10"
+  architecture:
+    description: "Which architecture to run on"
+    required: true
+    default: x64
+
+runs:
+  using: composite
+  steps:
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ inputs.python-version }}
+        architecture: ${{ inputs.architecture }}
+    - name: Get pip cache dir
+      id: pip-cache
+      shell: bash
+      run: echo "directory=$(pip cache dir)" >> $GITHUB_OUTPUT
+    - name: Get cache key prefix
+      id: get-cache-key-prefix
+      shell: bash
+      run: |
+        echo "prefix=${{ runner.os }}-${{ inputs.python-version }}" >> $GITHUB_OUTPUT
+    - name: Make directory
+      shell: bash
+      run: mkdir -p "$HOME/.local/share/whispercpp"
+    - name: Touch based requirements file
+      shell: bash
+      run: ./tools/bazel query :all
+    - name: PyPI cache
+      id: pypi-cache
+      uses: actions/cache@v3
+      with:
+        key: ${{ steps.get-cache-key-prefix.outputs.prefix }}-pypi
+        path: ${{ steps.pip-cache.outputs.directory }}
+        restore-keys: |
+          ${{ steps.get-cache-key-prefix.outputs.prefix }}-pypi-
+    - name: Bazel cache
+      id: bazel-cache
+      uses: actions/cache@v3
+      with:
+        key: ${{ steps.get-cache-key-prefix.outputs.prefix }}-bazel
+        path: |
+          ~/.cache/bazel
+          tools/
+        restore-keys: |
+          ${{ steps.get-cache-key-prefix.outputs.prefix }}-bazel-

@@ -1,0 +1,50 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: '0 6 * * 1/2' # Every other day 6AM UTC
+concurrency:
+  group: ci-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+env:
+  LINES: 200
+  COLUMNS: 200
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaultsrun
+defaults:
+  run:
+    shell: bash --noprofile --norc -exo pipefail {0}
+jobs:
+  unit-tests:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        exclude:
+          - os: 'windows-latest'
+    if: '!github.event.repository.fork' # Don't run on fork repository
+    name: Integration tests (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # fetch all tags and branches
+      - name: Setup CI
+        uses: ./.github/actions/setup-repo
+        with:
+          python-version: '3.8' # sync with default version in WORKSPACE.
+      - uses: FedericoCarboni/setup-ffmpeg@v2
+        id: setup-ffmpeg
+      - name: Install development dependencies and bindings
+        run: |
+          bazel run pypi_update
+          python -m pip install -r requirements/pypi.txt
+          python -m pip install .
+      - name: Run tests on python${{ matrix.python-version }}
+        run: bazel test tests:ci examples/...

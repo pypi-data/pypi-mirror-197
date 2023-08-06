@@ -1,0 +1,42 @@
+name: 'CodeQL'
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: ['main']
+  schedule:
+    - cron: '15 5 * * 5'
+jobs:
+  analyze:
+    name: Analyze
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    strategy:
+      fail-fast: false
+      matrix:
+        language: ['cpp', 'python']
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup CI
+        uses: ./.github/actions/setup-repo
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: ${{ matrix.language }}
+      - name: Autobuild
+        if: ${{ matrix.language != 'cpp' }}
+        uses: github/codeql-action/autobuild@v2
+      - run: |
+          bazel run pypi_update
+          bazel build --config codeql audio_lib context_lib
+        name: 'Build C++ for CodeQL'
+        if: ${{ matrix.language == 'cpp' }}
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
+        with:
+          category: '/language:${{matrix.language}}'

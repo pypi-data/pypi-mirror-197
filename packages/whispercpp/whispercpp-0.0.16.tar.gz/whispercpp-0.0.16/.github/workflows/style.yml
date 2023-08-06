@@ -1,0 +1,56 @@
+name: style-check
+concurrency:
+  group: style-check-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0 * * 1/2" # Every other day 12AM UTC
+env:
+  LINES: 200
+  COLUMNS: 200
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#defaultsrun
+defaults:
+  run:
+    shell: bash --noprofile --norc -exo pipefail {0}
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    if: "!github.event.repository.fork" # Don't run on fork repository
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # fetch all tags and branches
+      - name: Setup CI
+        uses: ./.github/actions/setup-repo
+      - uses: cachix/install-nix-action@v20
+        name: Setup nix setup
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+      - name: Install development dependencies and bindings
+        run: nix-shell
+      - name: format and lint check
+        run: |
+          bazel run pypi_update
+          pip install -r requirements/bazel-pypi.lock.txt
+          python -m black --check src
+          python -m isort --check .
+          python -m ruff check src
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "17"
+      - name: Install pyright
+        shell: bash
+        run: npm install -g npm@^7 pyright
+      - name: Type check
+        if: ${{ github.event_name == 'pull_request' }}
+        run: git diff --name-only --diff-filter=AM "origin/$GITHUB_BASE_REF" -z --
+          '*.py{,i}' | xargs -0 --no-run-if-empty pyright
