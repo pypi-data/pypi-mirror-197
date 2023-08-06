@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: Tech-In-Seconds
+Version: 1.0.4
+Summary: Tech_In_Seconds
+Author: Aadesh Lokhande
+Author-email: aadeshlokhande11@gmail.com
+Keywords: arithmetic,math,mathematics,tables,barakhadi,mean,contact,aadesh lokhande,tech in seconds,excel formulas,periodic table,elements
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+A package to genral and mathamathical operations
