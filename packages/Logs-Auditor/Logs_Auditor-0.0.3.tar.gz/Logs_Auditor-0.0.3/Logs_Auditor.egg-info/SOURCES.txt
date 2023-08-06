@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+Logs_Auditor/__init__.py
+Logs_Auditor/config.py
+Logs_Auditor/errorhandler.py
+Logs_Auditor/eswrapper.py
+Logs_Auditor/kfproducer.py
+Logs_Auditor/loghandler.py
+Logs_Auditor.egg-info/PKG-INFO
+Logs_Auditor.egg-info/SOURCES.txt
+Logs_Auditor.egg-info/dependency_links.txt
+Logs_Auditor.egg-info/requires.txt
+Logs_Auditor.egg-info/top_level.txt
