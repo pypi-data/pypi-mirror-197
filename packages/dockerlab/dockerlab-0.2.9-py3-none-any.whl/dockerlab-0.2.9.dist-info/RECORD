@@ -1,0 +1,17 @@
+dockerlab/.gitignore,sha256=MJH1oTh7-UqPbR2ZYVsQjxVLhRrZOIL57rWZlL5Vbic,43
+dockerlab/cli.py,sha256=U82IP6sTZNIcdkN22nkB7Ib_xe7zNN0NlrKFcHotMIw,2835
+dockerlab/docker/Dockerfile,sha256=mpWKsWoOG0Y159rPQnxTJ0tdlf_ogxDwZf7RNBM3xAA,2145
+dockerlab/docker/Dockerfile.full,sha256=DSkzI8VXUfshj2XW0I64foCMEHxehkDEE7NPJgbPftI,7692
+dockerlab/docker/misc/.condarc,sha256=ty7D7X0gpJAJNfraNIerc7SRRtA7iq_Rgkzz91Aonbo,708
+dockerlab/docker/misc/.localrc,sha256=DeTKNlfdfkhpRZXhwnupRbNIUHZiUkeolVcduhSBCB0,35
+dockerlab/docker/misc/init_workspace,sha256=qOZq8MKstBkjTA729UoSGOL3l6p9UAkV5vxyWRaO52c,1574
+dockerlab/docker/misc/sources.list.ubuntu18.04,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dockerlab/docker/misc/sources.list.ubuntu20.04,sha256=C8Y1WQRl9Jivs9NpGNohgkwYW810Yx2Ys05WoR3P9NU,1199
+dockerlab/docker/requirements.txt,sha256=Cm59zt4xJXZJPZL7v3qy_yWgfw_GTLAGYyQA-kxwN0M,1856
+dockerlab/docker-compose.yml,sha256=U7tXmp55Kuorv-6bFuVOQR-cNOrZ6SLZeMo4jhxBVXc,1546
+dockerlab/docker.py,sha256=hEcW0Myy-gMN4P_8bPMn3KIur9VwvvxDuwedWm3aZjM,6239
+dockerlab-0.2.9.dist-info/LICENSE,sha256=uR8VvJPIZ40Ty5uA7sPxRUjLkD7JbIieqac_IEG7qrY,1073
+dockerlab-0.2.9.dist-info/METADATA,sha256=-2bzw8rbnwfqtiBn1c4_aoH3rvG9eP8sPtAHpZkk508,5117
+dockerlab-0.2.9.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+dockerlab-0.2.9.dist-info/entry_points.txt,sha256=3qaRyygO-T10hPSH9Sd2gy705qTL5HGiRCSoRVL3FYI,48
+dockerlab-0.2.9.dist-info/RECORD,,
