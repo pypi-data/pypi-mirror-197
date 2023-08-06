@@ -1,0 +1,12 @@
+basicsr/__init__.py,sha256=0iypyICBmmr4qaBcRRzwQh_ia4SnhV6DpykWlsYenDU,266
+basicsr/setup.py,sha256=iPi1v8QJLiEiBCFPK1rOnKAmGsdYQVjznXcaitjntS4,5205
+basicsr/train.py,sha256=x56CWG4bzhlXMtUqLi8-2GPZfjrP9cE8DPvse8OzB-A,9399
+basicsr/version.py,sha256=OzcTekzPCJ359qWfZx3I4JFwjUPBq0sRsIuf_8lYcU0,128
+codeformer/__init__.py,sha256=Xbnez09Sq2Z5NU7Z3akBq5HxsknO-kUNNempvYlg3ow,28
+codeformer/inference_codeformer.py,sha256=2deZ6FEjFSZ_viq9hGXp-HN2Eyk6R4mvXfKs0WGsq_8,13569
+codeformer/lib.py,sha256=JPulmR9d31ttspkeUBGN_b-MqkrmW5sbtJ7TiruFgqc,14756
+codeformer-0.0.5.dist-info/LICENSE,sha256=DY-dU1kVgI3uU-ONzLa-Ifp3pzwBAyT2_03EX4AeQaI,1069
+codeformer-0.0.5.dist-info/METADATA,sha256=JiW2EGyrbTxys80MQLZ1cTE863xuyNvJaPz8RHpwljY,708
+codeformer-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+codeformer-0.0.5.dist-info/top_level.txt,sha256=dmnD57BkswB4SZoFSsBcx1PLSZZbT0bfSxNvd-ykqJQ,27
+codeformer-0.0.5.dist-info/RECORD,,
