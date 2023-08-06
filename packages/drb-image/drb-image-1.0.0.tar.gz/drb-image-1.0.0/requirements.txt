@@ -1,0 +1,5 @@
+drb~=2.0.3
+drb-xquery~=1.1.0
+drb-metadata~=1.1.1
+drb-extractor~=1.0.2
+drb-driver-image~=1.1.0
