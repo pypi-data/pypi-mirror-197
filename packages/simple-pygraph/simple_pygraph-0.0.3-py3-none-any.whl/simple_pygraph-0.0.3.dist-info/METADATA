@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: simple-pygraph
+Version: 0.0.3
+Summary: Un petit module pour créer des graphes (non orienté, orienté ou bi-partie)
+Author: Sébastien Hoarau
+Author-email: seb.hoarau@univ-reunion.fr
+Maintainer: Sébastien Hoarau
+Maintainer-email: seb.hoarau@univ-reunion.fr
+License: CC BY-NC-SA 4.0
+Keywords: PyGraph package Python graph education
+Platform: ALL
+Classifier: Topic :: Education
+Classifier: Topic :: Documentation
+Requires-Dist: graphviz
+Requires-Dist: networkx
+
+L'idée de ce module pygraph est de créer un objet Graph qui soit la réunion de deux objets :
+
+un model qui est un graphe au sens de networkx
+une view qui est un graphe au sens de graphviz
+Ajouté à cela un (petit) ensemble de méthodes permettant les opérations usuelles sur les graphes et en essayant de rester simple. 
+L'outil devrait pouvoir aider tout enseignant souhaitant préparer une ressource pédagogique sur le thème des graphes.
+
+The idea of ​​this pygraph module is to create a Graph object which is the union of two objects:
+
+a model which is a graph in the sense of networkx
+a view which is a graph in the sense of graphviz
+Added to this a (small) set of methods allowing the usual operations on graphs and trying to keep it simple.
+The tool should be able to help any teacher wishing to prepare an educational resource on the subject of graphs.
