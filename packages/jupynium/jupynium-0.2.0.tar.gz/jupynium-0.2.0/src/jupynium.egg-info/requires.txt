@@ -1,0 +1,25 @@
+pynvim>=0.4.3
+coloredlogs>=15.0.0
+verboselogs>=1.7
+selenium>=4.7.2
+psutil>=5.9.4
+persist-queue>=0.8.0
+packaging>=22.0
+setuptools>=45.0
+gitpython>=3.1.24
+
+[dev]
+black>=22.1.0
+pre-commit>=2.21.0
+
+[extra]
+notebook>=6.4.5
+
+[test]
+pytest>=6.0
+pytest-cov>=2.0
+flake8>=3.9
+tox>=3.24
+
+[test:python_version < "3.8"]
+importlib-metadata<5.0.0
