@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: typernexrad-cli
+Version: 0.1.0
+Summary: CLI which helps to access several functionalities of NEXRAD
+Author: Team 7
+Description-Content-Type: text/markdown
+Requires-Dist: typer
+Requires-Dist: boto3
+Requires-Dist: python-dotenv
+Requires-Dist: pandas
+Requires-Dist: bcrypt
+Requires-Dist: python-jose
+Requires-Dist: fastapi
+Requires-Dist: requests
+Requires-Dist: pyOpenSSL
+
+# Typer NEXRAD
+
+
+A Python CLI Application to access the funcionalities of NEXRAD
+
+Created five user functionalities in Typer 
+
+1. createuser - Creates user with their username, password, and their tiers and uploads them to database<br>
+  `typer_t7 createuser <username> <passwod>`
+
+2. download - Download files from users public s3 bucket by specifying the file name <br>
+   `typer_t7 download <username> <password> <bucketname> <filename>`
+
+3. fetch - Lists all files in the public S3 bucket <br>
+   `typer_t7 fetch <username> <password> <bucketname>`
+
+4. fetchnexrad - Generates NOAA public S3 link and Users S3 link based on the parameters year, day, hour, station, and filename <br>
+   `typer_app fetchnexrad <username> <password>`
+
+5. fetchnexrad_filename - Generates link based on NOAA Nexrad S3 bucket based on the filename given by the user <br>
+   `typer_app  fetchnexrad_filename <username> <password>`
+
+

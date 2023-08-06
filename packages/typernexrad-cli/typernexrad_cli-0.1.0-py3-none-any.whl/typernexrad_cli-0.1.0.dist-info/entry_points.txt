@@ -1,0 +1,2 @@
+[console_scripts]
+typer_t7 = team7_typer.typer_main:app
