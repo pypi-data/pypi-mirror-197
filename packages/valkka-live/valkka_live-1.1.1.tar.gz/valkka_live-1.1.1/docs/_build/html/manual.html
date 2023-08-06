@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutorial &#8212; valkka_live  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="FAQ" href="faq.html" />
+    <link rel="prev" title="Getting started" href="requirements.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="tutorial">
+<h1>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h1>
+<p>The basic user interface is simple and intuitive and is based on drag’n’dropping the cameras into views.</p>
+<div class="section" id="manage-cameras">
+<h2>1. Manage Cameras<a class="headerlink" href="#manage-cameras" title="Permalink to this headline">¶</a></h2>
+<p>First, let’s register some RTSP cameras.</p>
+<ul class="simple">
+<li><p>Navigate to <em>Configuration / Configuration Dialog / Camera Configuration</em></p></li>
+<li><p>Choose a slot for the camera</p></li>
+<li><p>Choose <em>RTSP Camera</em> from the drop-down menu</p></li>
+<li><p>Type in the camera information (ip address, user, password, etc.)</p></li>
+<li><p>Remember to enable recording if you want that (see “6. Playback” below)</p></li>
+<li><p>Repeat for all cameras</p></li>
+<li><p>Press <em>SAVE</em></p></li>
+<li><p>Close the window from the upper-right (X) as usual</p></li>
+</ul>
+<p>You should also give an estimate of the number of hd-ready, full-hd, 2K etc. streams in <em>Memory Configuration</em> tab, as Valkka pre-reserves all resources.  That can be done in:</p>
+<ul class="simple">
+<li><p><em>Configuration / Configuration Dialog / Memory Configuration</em></p></li>
+</ul>
+</div>
+<div class="section" id="viewing-cameras">
+<h2>2. Viewing Cameras<a class="headerlink" href="#viewing-cameras" title="Permalink to this headline">¶</a></h2>
+<p>Let’s see a list of installed cameras and view their live video</p>
+<ul class="simple">
+<li><p>Navigate to <em>View / Camera List</em>.  The camera list widget appears on screen</p></li>
+<li><p>Navigate to <em>View / Video Grid / 2x2</em>.  A 2x2 grid appears on the screen</p></li>
+<li><p>Drag and drop cameras from the camera list widget into the 2x2 grid</p></li>
+<li><p>You can open as many video grids on the screen as you please</p></li>
+<li><p>Note that even if you view the same video in multiple grids, the camera stream is decoded only once</p></li>
+<li><p>Note that you can also do drag and drop between video grids</p></li>
+<li><p>Double-clicking on the video, maximizes the video size</p></li>
+<li><p>Double-clicking again, restores the normal size</p></li>
+</ul>
+</div>
+<div class="section" id="removing-cameras">
+<h2>3. Removing Cameras<a class="headerlink" href="#removing-cameras" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Right-click on a video in the video grid</p></li>
+<li><p>Choose <em>Remove Camera</em></p></li>
+</ul>
+</div>
+<div class="section" id="saving-and-loading-the-layout">
+<h2>4. Saving and Loading the Layout<a class="headerlink" href="#saving-and-loading-the-layout" title="Permalink to this headline">¶</a></h2>
+<p>Camera views can be saved, and recovered for the next time when you use Valkka Live</p>
+<ul class="simple">
+<li><p>Navigate to <em>File / Save Window Layout</em>.  Now your view layout is saved</p></li>
+<li><p>When starting the program again, navigate to <em>File / Load Window Layout</em></p></li>
+</ul>
+</div>
+<div class="section" id="machine-vision">
+<h2>5. Machine Vision<a class="headerlink" href="#machine-vision" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Open a machine vision terminal from the <em>Machine Vision</em> menu</p></li>
+<li><p>Drag’n drop a camera to that terminal</p></li>
+</ul>
+</div>
+<div class="section" id="playback">
+<h2>6. Playback<a class="headerlink" href="#playback" title="Permalink to this headline">¶</a></h2>
+<p><em>NEW</em></p>
+<p>The experimental playback feature is now enabled by default.  Do the following to see the recorded video:</p>
+<ul class="simple">
+<li><p>Navigate to <em>View / Playback Video Grid / 2x2</em></p></li>
+<li><p>Drag’n’drop the camera you want to see recorded video for into the grid</p></li>
+<li><p>Click your mouse in the timeline where you want to seek.  Use the mouse wheel to zoom in/out in the timeline</p></li>
+<li><p>When you press the “limits” button, the timeline zooms within the limits of all your recorded streams</p></li>
+</ul>
+<p>You ideally want 1-2 key-frames in a single block in order to achieve efficient seeking of the recorded video.</p>
+<p>Blocksize can be adjusted in:</p>
+<ul class="simple">
+<li><p><em>Configuration / Configuration Dialog / Recording Configuration</em></p></li>
+</ul>
+<p>We recommend adjusting your camera’s keyframe interval to one keyframe per second and then setting your camera’s bitrate &amp; valkkafs blocksize accordingly.</p>
+<p>Read more about the block-based filesystem in <a class="reference external" href="https://elsampsa.github.io/valkka-examples/_build/html/lesson_11.html">here</a></p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<a href="index.html">
+    <img class="logo" src="_static/valkka.png">
+</a>
+
+<p>Valkka Live - OpenSource Video Surveillance</p>
+<!--
+<a class="github-button" href="https://github.com/elsampsa/valkka-live" data-size="large" data-show-count="true" aria-label="Star elsampsa/valkka-live on GitHub">Star</a>
+-->
+<!--
+<p>
+  <iframe src="http://ghbtns.com/github-btn.html?user=elsampsa&repo=valkka-core&type=watch&count=true&size=large" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+-->
+
+<h3>Links</h3>
+<ul>
+  <!-- <li><a href="https://github.com/elsampsa/valkka-core"><i class="fab fa-github"></i> valkka-core @ GitHub</a></li>
+  <li><a href="https://github.com/elsampsa/valkka-examples"><i class="fab fa-github"></i> valkka-examples @ GitHub</a></li>
+  -->
+  <li><a href="https://github.com/elsampsa/valkka-live"><i class="fab fa-github"></i> valkka-live @ GitHub</a></li>
+  <li><a href="https://github.com/elsampsa/valkka-live/issues"><i class="fas fa-bug"></i> Issue Tracker</a></li>
+  <!-- <li><a href="https://pypi.org/project/valkka-live/"><i class="fas fa-archive"></i> Package Repository</a></li> -->
+  <li><a href="https://elsampsa.github.io/valkka-examples/"><i class="fas fa-cog"></i> valkka library</a></li>
+  <li><a href="http://www.dasys.fi"><i class="fas fa-building"></i> Dasys Ltd.</a></li>
+</ul>
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="requirements.html">Getting started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#manage-cameras">1. Manage Cameras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#viewing-cameras">2. Viewing Cameras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#removing-cameras">3. Removing Cameras</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#saving-and-loading-the-layout">4. Saving and Loading the Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#machine-vision">5. Machine Vision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#playback">6. Playback</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">Copyright and License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+</ul>
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018 Sampsa Riikonen.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/manual.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

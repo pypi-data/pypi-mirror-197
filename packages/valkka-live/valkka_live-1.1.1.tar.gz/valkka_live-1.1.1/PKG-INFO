@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: valkka_live
+Version: 1.1.1
+Summary: Valkka Live video surveillance program
+Home-page: https://elsampsa.github.io/valkka-live/
+Author: Sampsa Riikonen
+Author-email: sampsa.riikonen@iki.fi
+License: AGPL
+Project-URL: Valkka library, https://elsampsa.github.io/valkka-examples/
+Description: 
+            Valkka Live is modular, hackable and customizable OpenSource approach to modern video surveillance and management solutions in local area networks
+            
+Keywords: valkka video surveillance
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Multimedia :: Video
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/plain
+Provides-Extra: www

@@ -1,0 +1,7 @@
+[console_scripts]
+run-valkka-live = valkka.live.main:main
+valkka-live-ws-server = valkka.web.ws_serve:main
+
+[paste.app_factory]
+main = valkka.web:main
+
