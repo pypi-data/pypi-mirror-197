@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+miniMLP/__init__.py
+miniMLP/activation.py
+miniMLP/engine.py
+miniMLP.egg-info/PKG-INFO
+miniMLP.egg-info/SOURCES.txt
+miniMLP.egg-info/dependency_links.txt
+miniMLP.egg-info/top_level.txt
