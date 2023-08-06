@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+chatgpter/__init__.py
+chatgpter/__main__.py
+chatgpter/app.py
+chatgpter/model.py
+go_chatgpt.egg-info/PKG-INFO
+go_chatgpt.egg-info/SOURCES.txt
+go_chatgpt.egg-info/dependency_links.txt
+go_chatgpt.egg-info/entry_points.txt
+go_chatgpt.egg-info/requires.txt
+go_chatgpt.egg-info/top_level.txt
