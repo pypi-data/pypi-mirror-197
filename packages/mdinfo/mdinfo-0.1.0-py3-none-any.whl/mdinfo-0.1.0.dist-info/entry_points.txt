@@ -1,0 +1,3 @@
+[console_scripts]
+mdinfo=mdinfo.__main__:cli
+
