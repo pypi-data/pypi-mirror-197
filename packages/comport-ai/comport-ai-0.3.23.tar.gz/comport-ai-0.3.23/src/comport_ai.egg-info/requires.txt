@@ -1,0 +1,12 @@
+numpy
+pandas
+fastapi
+uvicorn
+jinja2
+matplotlib
+python-multipart
+seaborn
+tensorflow<2.11
+openpyxl
+scikit-learn
+tabulate

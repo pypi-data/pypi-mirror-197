@@ -1,0 +1,2 @@
+[console_scripts]
+comport-ai = comport_ai.run:main

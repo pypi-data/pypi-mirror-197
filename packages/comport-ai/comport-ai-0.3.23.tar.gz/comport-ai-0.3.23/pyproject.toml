@@ -1,0 +1,21 @@
+[project]
+name = "comport-ai"
+version = "0.3.23"
+authors = [
+	{ name="Matthew E. Gladden", email="matthew.gladden@neuraxenetica.com" },
+]
+maintainers = [
+	{ name="Matthew E. Gladden" },
+]
+description = "An HR predictive analytics tool that forecasts the likely range of a worker’s future job performance, using ANNs whose custom loss functions enable them to formulate prediction intervals that are as small as possible, while being just large enough to contain a worker’s actual future performance in most cases."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Operating System :: Microsoft :: Windows",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/NeuraXenetica/comport_ai"
+"Bug Tracker" = "https://github.com/NeuraXenetica/comport_ai/issues"
