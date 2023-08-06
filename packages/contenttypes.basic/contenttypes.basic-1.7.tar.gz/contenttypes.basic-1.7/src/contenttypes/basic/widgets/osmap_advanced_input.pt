@@ -1,0 +1,384 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      i18n:domain="contenttypes.basic"
+      tal:omit-tag="">
+
+
+    <link rel="stylesheet" type="text/css" href="${python:view.portal_url}/++plone++contenttypes.basic/osmap/leaflet.css">
+    <style>
+        .ml-2{margin-left:2rem;}
+        .my-2{margin-top:2rem; margin-bottom:2rem;}
+
+        .nav-geo{
+    background-color: #F2F1F1;
+    border-radius: 5px;
+}
+
+.nav-geo ul li a{
+    background-color: #FCFCFD;
+    border: 1px solid #e5e5e5;
+}
+
+.buscador-geo{
+    margin-top: 15px;
+    align-items: center;
+}
+
+.seatchlocate{
+    width: 150px;
+}
+
+.clear-value-wrapper{
+    margin-top: 15px;
+}
+
+    </style>
+
+    <!-- Selector -->
+    <div class="nav-geo">
+        <ul class="list-inline nav nav-tabs">
+            <li id="li_menu_point" class="active"><a i18n:translate="" data-toggle="tab" href="#menu_point">Point</a></li>
+            <li id="li_menu_polygon"><a i18n:translate="" data-toggle="tab" href="#menu_polygon">Polygon</a></li>
+            <li id="li_menu_polyline"><a i18n:translate="" data-toggle="tab" href="#menu_polyline">Line</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Map -->
+    <div class="row">
+        <div class="col-xs-12">
+            <div id="osmap-widget-map-${python:view.timestamp}" style="height: 500px;z-index: 0;"></div>
+        </div>
+    </div>
+
+    <div class="tap-content">
+        <!-- Point -->
+        <div id="menu_point" class="tab-pane fade in active">
+            <div class="row">
+                <div class="buscador-geo display-flex alignitems-center col-xs-12">
+                    <input type="text" placeholder="Type an address" i18n:attributes="placeholder"
+                        tal:attributes="class python:'text-widget required textline-field' if view.required else 'text-widget textline-field'"
+                        id="osmap-widget-address-${python:view.timestamp}" />
+                    <button id="osmap-button-${python:view.timestamp}" class="ml-2 btn btn-primary seatchlocate" type="button" i18n:translate="">Search</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="buscador-geo display-flex alignitems-center col-xs-12">
+                    <input type="text" placeholder="Type coordinates" i18n:attributes="placeholder" id="osmap-input-corrdinates" />
+                    <button id="osmap-input-coordinates-button" class="ml-2 btn btn-primary seatchlocate" type="button" i18n:translate="">Locate</button>
+                </div>
+            </div>
+            <div class="row my-2 display-flex alignitems-center">
+                <div class="coordinates-wrapper col-xs-12 col-sm-3 hide" data-timestamp=${python:view.timestamp}
+                    tal:define="init_value python:view.value or False;
+                                init_value_map python:view.value or view.default_value_map();">
+                    <input type="text" id="osmap-widget-coordinates-${python:view.timestamp}" name="${python:view.name}" value="${init_value}"
+                        data-init-value="${init_value_map}" placeholder="${init_value}" />
+                </div>
+
+                <div class="clear-value-wrapper col-xs-12 col-sm-6">
+                    <button class="btn btn-primary" type="button" id="clear-coords-${python:view.timestamp}" i18n:translate=""> Clear coordinates </button>
+                </div>
+            </div>
+        </div>
+        <!-- Polygon -->
+        <div class="row tab-pane fade" id="menu_polygon">
+            <div class="clear-value-wrapper col-xs-6 col-sm-6">
+                <button class="btn btn-primary points_polygon_clear_last" type="button">
+                    <span class="glyphicon glyphicon-arrow-left mr-2"></span>
+                    <span i18n:translate="">Clear last</span>
+                </button>
+                <button class="btn btn-primary points_clear" type="button" i18n:translate=""> Clear points </button>
+            </div>
+        </div>
+
+        <!-- Line -->
+        <div class="row tab-pane fade" id="menu_polyline">
+            <div class="clear-value-wrapper col-xs-6 col-sm-6">
+                <button class="btn btn-primary points_polyline_clear_last" type="button">
+                    <span class="glyphicon glyphicon-arrow-left mr-2"></span>
+                    <span i18n:translate="">Clear last</span>
+                </button>
+                <button class="btn btn-primary polygon_clear" type="button" i18n:translate=""> Clear points </button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <script>
+        requirejs.config({
+            'baseUrl': PORTAL_URL,            
+            'paths':{            
+                "leaflet": "++plone++contenttypes.basic/osmap/leaflet",
+            }
+        })
+
+        require([
+            'jquery',
+            'leaflet',
+        ], function($, L) {
+            "use strict";
+
+            // Vars
+            var timestamp = ${python:view.timestamp};
+            var inputAddress = $('#osmap-widget-address-'+timestamp);
+            var inputCoordinates = $('#osmap-widget-coordinates-'+timestamp);
+            
+            const coord_data_parse = JSON.parse(inputCoordinates.attr('data-init-value'))
+            const element_type = coord_data_parse['type']
+            let marker = null
+            let polygon = null
+            let polyline = null
+            let points = []
+
+            let osmap = L.map('osmap-widget-map-'+timestamp).setView(coord_data_parse['coordinates'][0], 15);
+                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="//osm.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(osmap); 
+            
+            setMap(element_type)
+
+            function setMap(element_type) {
+                if (element_type === 'polyline'){
+                    renderPolyline()
+                }
+                else if (element_type === 'polygon'){
+                    renderPolygon()
+                }
+                else{
+                    renderPoint()
+                }
+            }
+
+            function renderPoint() { 
+                $('#menu_point').removeClass('hide')
+                $('#menu_point').addClass('active in')
+                setPoint()
+            }
+
+            function renderPolygon(){
+                $('#li_menu_point').removeClass('active')
+                $('#li_menu_polygon').addClass('active')
+
+                $('#menu_point').addClass('hide')
+                $('#menu_point').removeClass('active in')
+                $('#menu_polyline').addClass('hide')
+                $('#menu_polygon').removeClass('hide')
+                $('#menu_polygon').addClass('active in')
+                points = coord_data_parse['coordinates']
+                polygon = L.polygon(points).addTo(osmap);
+                osmap.fitBounds(polygon.getBounds())
+            }
+
+            function renderPolyline(){
+
+                $('#li_menu_point').removeClass('active')
+                $('#li_menu_polyline').addClass('active')  
+
+                $('#menu_point').addClass('hide')
+                $('#menu_point').removeClass('active in')
+                $('#menu_polygon').addClass('hide')
+                $('#menu_polyline').removeClass('hide')
+                $('#menu_polyline').addClass('active in') 
+                points = coord_data_parse['coordinates']    
+                polyline = L.polyline(points).addTo(osmap);
+                osmap.fitBounds(polyline.getBounds())  
+            }
+
+            // Distribution functions
+            
+            $('#li_menu_point').on('click', function(){
+                setPoint()
+                $('#menu_polygon').addClass('hide')
+                $('#menu_polyline').addClass('hide')
+                $('#menu_point').removeClass('hide')
+
+            })
+            $('#li_menu_polygon').on('click', function(){
+                setPolygon()
+                $('#menu_point').addClass('hide')
+                $('#menu_polyline').addClass('hide')
+                $('#menu_polygon').removeClass('hide')
+
+            })
+            $('#li_menu_polyline').on('click', function(){
+                setPolyline()
+                $('#menu_point').addClass('hide')
+                $('#menu_polygon').addClass('hide')
+                $('#menu_polyline').removeClass('hide')
+            })
+
+            function setPoint(){
+                osmap.off('click')
+                clearMap()
+                timestamp = ${python:view.timestamp};
+                inputAddress = $('#osmap-widget-address-'+timestamp);
+                inputCoordinates = $('#osmap-widget-coordinates-'+timestamp);
+                let coordinatesInfo = JSON.parse(inputCoordinates.attr('data-init-value'))
+                
+                marker = L.marker(coordinatesInfo['coordinates'][0], {draggable:true, autoPan:true}).addTo(osmap);
+                osmap.setView(coordinatesInfo['coordinates'][0], 15)
+                marker.on('move', debounce(updateInputCoordinatesPoint, 500));
+            }
+
+            function setPolygon(){
+                clearMap()
+                points = []
+                osmap.on('click', (e)=> {
+                    clearMap()
+                    points.push([e.latlng['lat'], e.latlng['lng']])
+                    polygon = L.polygon(points).addTo(osmap);
+                    updateInputCoordinates('polygon', points)
+                })
+            }
+
+            function setPolyline(){
+                clearMap()
+                points = []
+                osmap.on('click', (e) => {
+                    clearMap()
+                    points.push([e.latlng['lat'], e.latlng['lng']])
+                    polyline = L.polyline(points).addTo(osmap);
+                    updateInputCoordinates('polyline', points)
+
+                })
+            }
+
+            function clearMap(){
+                if(marker){
+                    osmap.removeLayer(marker)
+                }
+                if(polygon){
+                    osmap.removeLayer(polygon)
+                }
+                if(polyline){
+                    osmap.removeLayer(polyline)
+                }
+            }
+
+            // Show coordinates
+            $('#show-coords-${python:view.timestamp}').on('input, change, click', function(e){
+                $(this).is(":checked") ? inputCoordinates.css('display', 'block') : inputCoordinates.css('display', 'none')
+            });
+
+            // Clear coordinates
+            $('#clear-coords-${python:view.timestamp}').on('click', function(e){
+                inputCoordinates.val('0|0')
+                $('#osmap-input-corrdinates').val(null)
+            });
+
+            // Find location
+            $('#osmap-button-${python:view.timestamp}').on('click', function(){
+                geolocate();
+            });
+
+            // Clear points
+            $('.polygon_clear').on('click', () => {
+                clearMap()
+                points = []
+            });
+            // Clear last point
+            $('.points_clear').on('click', () => {
+                clearMap()
+                points = []
+            });
+            // Clear last point - polygon
+            $('.points_polygon_clear_last').on('click', () => {
+                points.pop()
+                clearMap()
+                polygon = L.polygon(points).addTo(osmap);
+            });
+            // Clear last point - polyline
+            $('.points_polyline_clear_last').on('click', () => {
+                points.pop()
+                clearMap()
+                polyline = L.polyline(points).addTo(osmap);
+            });
+            $('#osmap-input-coordinates-button').on('click', () => {
+                setGeolocation();
+            })
+
+            // Resize
+            let invalidateSize = setInterval(function(){ 
+                if (osmap.getSize().x !== '0')
+                    clearInterval(invalidateSize);
+                osmap.invalidateSize();
+            }, 500)
+
+            function geolocate(event){
+                $.ajax({
+                    url: 'https://nominatim.openstreetmap.org/search?q=' + $('#osmap-widget-address-${python:view.timestamp}')[0].value + '&format=json',
+                    type: "GET",
+                    success: function(data){
+                        if (data.length > 0){
+                            marker.setLatLng([data[0]['lat'],data[0]['lon']]);
+                            osmap.setView(marker.getLatLng());
+                        }
+                    }
+                });
+            };
+
+            function setGeolocation() {
+                let coord = $('#osmap-input-corrdinates').val()
+                if (coord){
+                    coord = coord.replace('|', ',')
+                    let coordinates = coord.split(',')
+                    coord = '{"type": "point", "coordinates": [["' + coordinates[0] + '", "' + coordinates[1] + '"]]}'
+                    inputCoordinates.val(coord)
+                    osmap.removeLayer(marker)
+                    marker = L.marker(coordinates, {draggable:true, autoPan:true}).addTo(osmap);
+                    osmap.setView(coordinates, 15)
+                    marker.on('move', debounce(updateInputCoordinatesPoint, 500));
+                }
+            }
+
+            function updateInputCoordinatesPoint(){
+                var coordinates = marker.getLatLng()
+                let coords = '{"type": "point", "coordinates": [["' + coordinates["lat"] + '", "' + coordinates["lng"] + '"]]}'
+                inputCoordinates.val(coords)
+                $('#osmap-input-corrdinates').val(coordinates['lat'] + ',' + coordinates['lng'])
+            }
+            function updateInputCoordinates(selector, coords){
+                var coordinates = '{"type": "' + selector + '", "coordinates": ' + JSON.stringify(coords) + '}'
+                inputCoordinates.val(coordinates)
+            }
+
+
+            // Parse coordinates
+            function parseLatLng(input){
+                if (typeof input ==  'object') {
+                    if (typeof input.lat == 'function')
+                        return input.lat() + '|' + input.lng();
+                    else
+                        return input.lat + '|' + input.lng;
+                } else if (typeof input == 'string') {
+                    var coors = input.split('|');
+                    coors = {
+                        lat: parseFloat(coors[0]),
+                        lng: parseFloat(coors[1])
+                    }
+                    return coors
+                }
+            }
+
+            // Debounce
+            function debounce(func, wait, immediate) {
+                var timeout;
+                return function() {
+                    var context = this, args = arguments;
+                    var later = function() {
+                        timeout = null;
+                        if (!immediate) func.apply(context, args);
+                    };
+                    var callNow = immediate && !timeout;
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                    if (callNow) func.apply(context, args);
+                };
+            };
+
+        });
+    </script>
+
+</html>
