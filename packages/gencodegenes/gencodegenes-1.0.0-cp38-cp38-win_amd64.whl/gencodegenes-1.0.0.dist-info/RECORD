@@ -1,0 +1,8 @@
+gencodegenes/__init__.py,sha256=yThJpOXUlha5JZYDNQqTkPfSGftxXiPm30NAo1-veww,200
+gencodegenes/gencode.cp38-win_amd64.pyd,sha256=Ne3ZPsHjrK29KTlxlmTyNfNKElyYSs-2bTSCcxvXWW4,335360
+gencodegenes/transcript.cp38-win_amd64.pyd,sha256=0OVFPa9GO_-AAqxEQZ7BpeF4_P8wkzerxdJuFMboLBY,195584
+gencodegenes-1.0.0.dist-info/LICENSE.txt,sha256=VZOR-Lfxl6k1FrB4TScu4Wk5ZUGry0eY30MunZTuBew,1127
+gencodegenes-1.0.0.dist-info/METADATA,sha256=hGh8eGKgyrIRzGS_AzNvYK83PdXmbdmgmIHTBe0af3U,1031
+gencodegenes-1.0.0.dist-info/WHEEL,sha256=b_PH-i_F2xFYDXcROE5vpDbWUcY020I0eLFvEIYA9Pc,100
+gencodegenes-1.0.0.dist-info/top_level.txt,sha256=1gFJpjhYQvKUEo7_TeXplxHArowufYehl165BPwVV74,13
+gencodegenes-1.0.0.dist-info/RECORD,,
