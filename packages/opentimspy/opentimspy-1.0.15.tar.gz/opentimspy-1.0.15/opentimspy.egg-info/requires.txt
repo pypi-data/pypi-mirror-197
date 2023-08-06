@@ -1,0 +1,8 @@
+pybind11
+numpy
+
+[bruker_proprietary]
+opentims_bruker_bridge>=1.0.3
+
+[plotting]
+matplotlib
