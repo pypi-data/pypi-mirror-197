@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+targpg/__init__.py
+targpg/__main__.py
+targpg/meta.py
+targpg/parser.py
+targpg/targpg.py
+targpg.egg-info/PKG-INFO
+targpg.egg-info/SOURCES.txt
+targpg.egg-info/dependency_links.txt
+targpg.egg-info/top_level.txt
+test/__init__.py
+test/test_targpg.py
