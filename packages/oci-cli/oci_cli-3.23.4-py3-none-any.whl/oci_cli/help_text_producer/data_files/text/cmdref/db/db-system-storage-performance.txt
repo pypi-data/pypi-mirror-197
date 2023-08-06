@@ -1,0 +1,14 @@
+db-system-storage-performance
+*****************************
+
+
+Description
+===========
+
+Representation of storage performance summary per shapeType .
+
+
+Available Commands
+==================
+
+* list
