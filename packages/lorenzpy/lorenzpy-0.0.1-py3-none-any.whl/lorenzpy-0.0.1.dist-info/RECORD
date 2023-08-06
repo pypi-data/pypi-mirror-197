@@ -1,0 +1,10 @@
+lorenzpy/__init__.py,sha256=TEcvqrw_wHNzKBDcgD1sYCDMpq4NpQjV2z4OA_Vk_To,317
+lorenzpy/measures.py,sha256=K8-tduFiHEood7OKn54wdaiTkrpOzzVcfUXaeSlU-bw,2924
+lorenzpy/simulations.py,sha256=6g5P7OsZMNRQGbnvXSiZ-EILKzyNMzoyMP7OVm2e3kc,6340
+lorenzpy/plot/__init__.py,sha256=YVIqkUsGXgXTwVRudY08jIoLFQbU45FzfoHse72MRbw,51
+lorenzpy/plot/plot_3d.py,sha256=urlj3Wb1PYEBeVwfwwZNLvA4zBamc-RnWiyRRHODfUo,514
+lorenzpy-0.0.1.dist-info/LICENSE,sha256=air4ryg8XRCPBPDySvUS4C7R0NB7Xj2k31ElCo-yMkA,1088
+lorenzpy-0.0.1.dist-info/METADATA,sha256=26x_epYZ0QsOYjjJB_Nc2WLrMqDBM1NQGiElt5XRMAw,5304
+lorenzpy-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+lorenzpy-0.0.1.dist-info/top_level.txt,sha256=uqdfBNfMKsgfB-mt9eku1ZVHY63Qz_9FBKlnsGcZRnc,9
+lorenzpy-0.0.1.dist-info/RECORD,,
