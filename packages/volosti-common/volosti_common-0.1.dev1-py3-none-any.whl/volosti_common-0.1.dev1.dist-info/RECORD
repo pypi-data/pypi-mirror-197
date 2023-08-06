@@ -1,0 +1,14 @@
+volosti_common/__init__.py,sha256=WHizC8UzElmTH3641zjnMTLUHmP2rliWLTalgHU6vMA,75
+volosti_common/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+volosti_common/common/schemas.py,sha256=JT532E7aL8JBMnhGWytBuZnlx_kPz4GXpqro2mH9inQ,1712
+volosti_common/person/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+volosti_common/person/dataclasses.py,sha256=nkEgwYmuSg2PodGkjjG1ZDmGr30DCP3XrTqkfg8u3Ts,542
+volosti_common/person/queries.py,sha256=_KDRLinwVxSp6bgtNvh07RY5l1aKu8lVj1UaKEBd-dA,686
+volosti_common/person/regexps.py,sha256=NH1yR55G5Kxxkq57lvjIbrwBaGTu8O-KO3YUYpY29zg,101
+volosti_common/person/schemas.py,sha256=Wz-tBhmuqPl6H7YBJTMM99K9P-7mNmHkQ2V_7V-_CBk,1614
+volosti_common/person/typedefs.py,sha256=Rv0x-k_aki6ghVf_uCsfvI6lKp4edYT8cPWrrmzu0xU,229
+volosti_common/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+volosti_common-0.1.dev1.dist-info/LICENSE,sha256=G9cAl6hC2dkggP2ywZl8UtOd-w5WQ11TwOwD8PLdBl4,1117
+volosti_common-0.1.dev1.dist-info/METADATA,sha256=B26ny9yt3EJ6ig4yHdGE3L5A5Uaue1vf27iRbGZCaPY,1556
+volosti_common-0.1.dev1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+volosti_common-0.1.dev1.dist-info/RECORD,,
