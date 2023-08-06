@@ -1,0 +1,6 @@
+README.md
+setup.py
+ytsaurus_spyt.egg-info/PKG-INFO
+ytsaurus_spyt.egg-info/SOURCES.txt
+ytsaurus_spyt.egg-info/dependency_links.txt
+ytsaurus_spyt.egg-info/top_level.txt
