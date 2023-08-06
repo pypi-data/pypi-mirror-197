@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: qaqc
+Version: 0.0.1
+Summary: Quality control for data series
+Author-email: Bert Palm <bert.palm.home@gmail.com>
+Project-URL: Homepage, https://github.com/palmb/qaqc
+Project-URL: Bug Tracker, https://github.com/palmb/qaqc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: typing-extensions (>4.0.0)
+Requires-Dist: sliceable-dict (>=0.3.0)
+Requires-Dist: pandas (>1.0.0)
+Requires-Dist: numpy (>1.0.0)
+Provides-Extra: tests
+Requires-Dist: black ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: mypy ; extra == 'tests'
+Requires-Dist: pandas-stubs ; extra == 'tests'
+
+# QaQc
+
+Project is WIP.
+
+See also [SaQC](https://git.ufz.de/rdm-software/saqc) which gave some major ideas for this project.
