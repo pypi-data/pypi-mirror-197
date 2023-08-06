@@ -1,0 +1,12 @@
+aiomisc_entrypoint/__init__.py,sha256=zdRaoOuxZ_Quv7xf_2c0fgE5s3I5h_rB92ZPG38MqCw,100
+aiomisc_entrypoint/abstractions.py,sha256=GMjiplSv6YAFbNnAC5U257gC8-zXZFLae6toAUBwwuw,1012
+aiomisc_entrypoint/entrypoint.py,sha256=qtlU1T3W4yBkoYhufr-mHGNLnObpfznDcr7w07pHxl8,3109
+aiomisc_entrypoint/processors/__init__.py,sha256=Js746U7aOG0HOpE5iQoEAofe1NhRulGXnSDXUGlsXSI,351
+aiomisc_entrypoint/processors/change_user.py,sha256=b4YBF4KWkLoLWnkQ1ZGgP5ttDwOfDdm8-X0EzcoJiwM,898
+aiomisc_entrypoint/processors/clear_environ.py,sha256=DNJseO010cpsnIq4VGNX36ATigl2dAf3EvGweSUMTqw,553
+aiomisc_entrypoint/processors/svc_dependency.py,sha256=yQQjv_UYN5Ek96rOdMyFq1FvB5bDEAubJQf3C1Jqqe8,2503
+aiomisc_entrypoint/processors/svc_to_context.py,sha256=ZCO67_Syj0WyHa8rfipyotejGHkAoLkrna3AIkBHZjU,1344
+aiomisc_entrypoint/processors/sys_signals.py,sha256=Bc4AUKEPrCR_bl7r8Yyyb-soUvaeLxfoUwXxzu1d1EM,1496
+aiomisc_entrypoint-1.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+aiomisc_entrypoint-1.1.0.dist-info/METADATA,sha256=MpO8c5U6WxuScPYdLIAjoXU_2137P4t5llkQVZCavKc,1740
+aiomisc_entrypoint-1.1.0.dist-info/RECORD,,
