@@ -1,0 +1,10 @@
+README.rst
+setup.py
+quickgpt/__init__.py
+quickgpt.egg-info/PKG-INFO
+quickgpt.egg-info/SOURCES.txt
+quickgpt.egg-info/dependency_links.txt
+quickgpt.egg-info/top_level.txt
+quickgpt/thread/__init__.py
+quickgpt/thread/messagetypes.py
+quickgpt/thread/response.py
