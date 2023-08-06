@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: weworkapi
+Version: 0.1.6
+Summary: weworkapi修改了wework包中的WXBizMsgCrypt.py文件，修改结果另存为WXBizMsgCrypt3.py文件
+Home-page: UNKNOWN
+Author: may.xiaoya.zhang
+Author-email: may.xiaoya.zhang@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
