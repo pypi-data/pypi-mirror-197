@@ -1,0 +1,22 @@
+[project]
+name = "soraya_slog"
+version = "1.0.0"
+authors = [
+  { name="Rodrigo Laneth", email="contato@rlaneth.com" },
+]
+description = "A simple Python structured logging library that writes JSON-formatted output to stdout"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: The Unlicense (Unlicense)",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/SliceOfFile/soraya_slog"
+"Bug Tracker" = "https://github.com/SliceOfFile/soraya_slog/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
