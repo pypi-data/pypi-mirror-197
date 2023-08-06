@@ -1,0 +1,18 @@
+[build-system]
+requires = [
+	"certifi",
+	"chardet",
+	"idna",
+	"julian",
+	"numpy",
+	"pandas",
+	"python-dateutil",
+	"pytz",
+	"requests",
+	"six",
+	"urllib3",
+    "setuptools>=42",
+    "wheel",
+	"xlrd"
+]
+build-backend = "setuptools.build_meta"
