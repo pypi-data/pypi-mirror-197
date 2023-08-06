@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "streamlit-lianshan"
+version = "0.2.5"
+description = "Streamlit component implementation of lianshan"
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent"]
+homepage = "https://github.com/llllyang123/streamlit-lianshan"
+authors = ["Pablo Fonseca <yangxiaochuang2@163.com>"]
+readme = "README.md"
+exclude = ["**/node_modules/**/*", "**/frontend/src/**/*", "**/.yarn/**/*"]
+include = ["**/frontend/build/**/*"]
+packages = [{include="st_lianshan"}]
+
+[tool.poetry.dependencies]
+python = ">=3.7.1,<4.0"
+streamlit = ">=0.87.0"
+streamlit-aggrid-pro = ">=0.2.30"
+pandas = ">=1.2"
+simplejson = ">=3.0"
+python-dotenv = "^0.19.1"
+python-decouple = "^3.6"
+
+[tool.poetry.dev-dependencies]
+black = "*"
+watchdog = "^2.1.9"
+[build-system]  
+requires = ["poetry-core>=1.0.0", 'streamlit-aggrid-pro>=0.2.29', 'streamlit>=0.87.0']
+build-backend = "poetry.core.masonry.api"
