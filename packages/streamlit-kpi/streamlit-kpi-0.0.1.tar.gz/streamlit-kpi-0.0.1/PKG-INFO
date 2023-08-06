@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: streamlit-kpi
+Version: 0.0.1
+Summary: Streamlit component for displaying KPI's
+Author: Anthony Alteirac
+Author-email: anthony@alteirac.com
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# streamlit-kpi
+
+Streamlit component for displaying KPIs
+
+## Installation instructions 
+
+```sh
+pip install streamlit-kpi
+```
+
+## Usage instructions
+
+```python
+import streamlit as st
+
+from streamlit_login_page import streamlit_login_page
+
+value = streamlit_login_page()
+
+st.write(value)
