@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+Mogistics.egg-info/PKG-INFO
+Mogistics.egg-info/SOURCES.txt
+Mogistics.egg-info/dependency_links.txt
+Mogistics.egg-info/requires.txt
+Mogistics.egg-info/top_level.txt
