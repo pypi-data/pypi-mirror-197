@@ -1,0 +1,494 @@
+{
+  "dist/components/Dropdown/Dropdown.js": {
+    "description": "",
+    "displayName": "Dropdown",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "value": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "exact",
+                "value": {
+                  "label": {
+                    "name": "union",
+                    "value": [
+                      {
+                        "name": "string"
+                      },
+                      {
+                        "name": "number"
+                      }
+                    ],
+                    "required": true
+                  },
+                  "value": {
+                    "name": "union",
+                    "value": [
+                      {
+                        "name": "string"
+                      },
+                      {
+                        "name": "number"
+                      }
+                    ],
+                    "required": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "The value of the input. If `multi` is false\nthen value is just a string that corresponds to the values\nprovided in the `options` property. If `multi` is true, then\nmultiple values can be selected at once, and `value` is an\narray of items with values corresponding to those in the\n`options` prop.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "options": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "exact",
+                "value": {
+                  "label": {
+                    "name": "union",
+                    "value": [
+                      {
+                        "name": "string"
+                      },
+                      {
+                        "name": "number"
+                      }
+                    ],
+                    "required": true
+                  },
+                  "value": {
+                    "name": "union",
+                    "value": [
+                      {
+                        "name": "string"
+                      },
+                      {
+                        "name": "number"
+                      }
+                    ],
+                    "required": true
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "An array of options {label: [string|number], value: [string|number]},",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "isMulti": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "isMulti Selection bool.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "closeMenuOnSelect": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "close menu when selecting. if false keep menu open. default false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "hideSelectedOptions": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "hide the selection made or keep in list if false. default true",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "allowSelectAll": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "enable selection of all components in list, default true",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "isClearable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "clear selection default true",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "isDisabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "disable dropdown default false",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "append style to the div of dropdown component",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Append a class to the div of dropdown component",
+        "defaultValue": {
+          "value": "\"\"",
+          "computed": false
+        }
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Label above the dropdown.",
+        "defaultValue": {
+          "value": "\"\"",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that gets fired when the input changes",
+        "defaultValue": {
+          "value": "() => {\n    return;\n}",
+          "computed": false
+        }
+      }
+    }
+  },
+  "dist/components/Select/Select.js": {
+    "description": "Select is a dash wrapper for the html select tag.",
+    "displayName": "Select",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "size": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The number of visible options",
+        "defaultValue": {
+          "value": "4",
+          "computed": false
+        }
+      },
+      "options": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "exact",
+            "value": {
+              "label": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ],
+                "description": "The dropdown's label",
+                "required": true
+              },
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ],
+                "description": "The value of the dropdown. This value\ncorresponds to the items specified in the\n`value` property.",
+                "required": true
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "An array of options {label: [string|number], value: [string|number]},\nan optional disabled field can be used for each option",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "value": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            },
+            {
+              "name": "arrayOf",
+              "value": {
+                "name": "union",
+                "value": [
+                  {
+                    "name": "string"
+                  },
+                  {
+                    "name": "number"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "required": false,
+        "description": "The value of the input. If `multi` is false\nthen value is just a string that corresponds to the values\nprovided in the `options` property. If `multi` is true, then\nmultiple values can be selected at once, and `value` is an\narray of items with values corresponding to those in the\n`options` prop.",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "debounce_time_ms": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Debounce time for props update for user. The value prop for selected\nvalues for Dash callbacks are debounced with the configured number\nof milliseconds.",
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        }
+      },
+      "multi": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "If true, the user can select multiple values",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Appends a class to the select tag",
+        "defaultValue": {
+          "value": "\"\"",
+          "computed": false
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Appends styles to the select tag",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "parent_className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Appends a class to the wrapping div",
+        "defaultValue": {
+          "value": "\"\"",
+          "computed": false
+        }
+      },
+      "parent_style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Appends inline styles to the wrapping div",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that gets fired when the input changes",
+        "defaultValue": {
+          "value": "() => {\n    return;\n}",
+          "computed": false
+        }
+      },
+      "persistence": {
+        "type": {
+          "name": "union",
+          "value": [
+            {
+              "name": "bool"
+            },
+            {
+              "name": "string"
+            },
+            {
+              "name": "number"
+            }
+          ]
+        },
+        "required": false,
+        "description": "Used to allow user interactions in this component to be persisted when\nthe component - or the page - is refreshed. If `persisted` is truthy and\nhasn't changed from its previous value, a `value` that the user has\nchanged while using the app will keep that change, as long as\nthe new `value` also matches what was given originally.\nUsed in conjunction with `persistence_type`.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "persisted_props": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "enum",
+            "value": [
+              {
+                "value": "\"value\"",
+                "computed": false
+              }
+            ]
+          }
+        },
+        "required": false,
+        "description": "Properties whose user interactions will persist after refreshing the\ncomponent or the page. Since only `value` is allowed this prop can\nnormally be ignored.",
+        "defaultValue": {
+          "value": "[\"value\"]",
+          "computed": false
+        }
+      },
+      "persistence_type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "\"local\"",
+              "computed": false
+            },
+            {
+              "value": "\"session\"",
+              "computed": false
+            },
+            {
+              "value": "\"memory\"",
+              "computed": false
+            }
+          ]
+        },
+        "required": false,
+        "description": "Where persisted user changes will be stored:\nmemory: only kept in memory, reset on page refresh.\nlocal: window.localStorage, data is kept after the browser quit.\nsession: window.sessionStorage, data is cleared once the browser quit.",
+        "defaultValue": {
+          "value": "\"local\"",
+          "computed": false
+        }
+      }
+    }
+  }
+}
