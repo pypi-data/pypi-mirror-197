@@ -1,0 +1,19 @@
+pydantic
+durations
+jinja2
+humanize
+python-dateutil
+pyyaml
+pytz
+timeago
+gspread
+oauth2client
+inflect
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
