@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: clear_linux
+Version: 1.0.1
+Summary: Runs the linux clear command from python in one function
+Project-URL: Homepage, https://airplaneboy14mc.github.io/pypi-clear/
+Project-URL: Bug Tracker, https://github.com/airplaneboy14mc/pypi-clear/issues
+Author-email: Airplaneboy14 <airplaneboy14mc@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Clear Command for Linux
+Will clear your terminal output for you with one function
+
+# Requirements:
+ - os (default)
+ - time (default)
+ - python 3.7+
+
+# Latest Patch Notes:
+ - Changed package name to allow it to be imported in python
