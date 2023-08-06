@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: thundertools
+Version: 0.3.3
+Summary: Different tools for working with jupuyter notebooks
+Author: Arno De Donder
+Author-email: arno.dedonder@hotmail.com
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: IPython
+
