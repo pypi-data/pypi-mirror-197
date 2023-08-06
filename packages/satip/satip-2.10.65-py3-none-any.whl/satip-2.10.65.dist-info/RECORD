@@ -1,0 +1,17 @@
+raw/__init__.py,sha256=2HrjViGMyMEz7dtxuVd85I_uB5iPviH9ivagbgAoPyk,39
+satip/__init__.py,sha256=zMrx9ZAxOJI9cM1U1QbMDBLTWIraKCGIzFJxO-a2Ahw,75
+satip/app.py,sha256=Z8BsT1fIKkUlhNS3TTrJ5SATpDs_KH04JyTx7VrevTI,7995
+satip/data_store.py,sha256=7pJcuH4eNwnKoPgaCTDVd0VrsDnG968BwydMyoa9TTg,665
+satip/download.py,sha256=zUmQXkh6eClGLQ_6YLKF0L21UqxWM83uySfmBXtlWdQ,15828
+satip/eumetsat.py,sha256=Rz_7x4F2zAFABh5Mh-rLAf2wge4WxuEyYviCM0aUxCg,22385
+satip/geospatial.py,sha256=SUxDUIEPISHqWQi0G05Tiu8VKvpa8hs7p-c6rRL2UaM,1906
+satip/intermediate.py,sha256=RIFrrnp449JFYWF3FzbVZcze43Lrrr--MYhLhSTtzmo,13946
+satip/jpeg_xl_float_with_nans.py,sha256=81POQTdLo2KPlf4NpB9HFDAURihFGrhyqbuJIPEvpEg,8059
+satip/scale_to_zero_to_one.py,sha256=j7bpCNcPP52Pss3icuh4iRZG0D7eYWXrtwgERPnG0Vg,5319
+satip/serialize.py,sha256=V2jOcCDAOYQkLYGlMky4JuTEB_1qUh367hMjmXYwhRE,1621
+satip/utils.py,sha256=ax_pN8VEflLFwFecBeWFeP3TsNQvd6uiB-ZVcC-X1bU,36839
+satip-2.10.65.dist-info/LICENSE,sha256=apuQBDvX5oNtuaWBJcgRQaTuS4pTiqvjP23FGA7P8J8,1073
+satip-2.10.65.dist-info/METADATA,sha256=UV_3C7GwfxlRwx0k3E4uuaAZDZUKLlaAGwHM71zgjC8,10918
+satip-2.10.65.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+satip-2.10.65.dist-info/top_level.txt,sha256=FfiyjNPEro3SLJu--a_1HmQ4SjeIhhFHShqvqponW1s,10
+satip-2.10.65.dist-info/RECORD,,
