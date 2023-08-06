@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: imagesim
+Version: 1.0.3
+Summary: Python module for get different between two images
+Home-page: https://github.com/PavukEdya
+Download-URL: https://github.com/PavukEdya
+Author: PavukEdya
+Author-email: slaefir@mail.ru
+License: Apache License, Version 2.0, see LICENSE file
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+
+Python module for get different between two imagesclass ImagesDifferences with two functions:1) get_median_frame(video_name)2) check_differences(image1, image2, accuracy=0.85)
