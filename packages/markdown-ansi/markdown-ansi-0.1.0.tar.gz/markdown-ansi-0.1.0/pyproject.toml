@@ -1,0 +1,27 @@
+[project]
+name = "markdown-ansi"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Jan Graichen", email = "jgraichen@altimos.de" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "ansi2html>=1.8.0",
+]
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-pep517>=1.0",
+]
+build-backend = "pdm.pep517.api"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.1.0",
+    "mypy>=1.1.1",
+]
