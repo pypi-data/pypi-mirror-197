@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+whois.py
+whois_rdap.egg-info/PKG-INFO
+whois_rdap.egg-info/SOURCES.txt
+whois_rdap.egg-info/dependency_links.txt
+whois_rdap.egg-info/requires.txt
+whois_rdap.egg-info/top_level.txt
