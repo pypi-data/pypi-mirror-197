@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools==62.1.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "devi-cli"
+version = "0.1.4"
+authors = [
+  { name="Paolo Flores", email="paolo.flores2@unmsm.edu.pe" }
+]
+maintainers = []
+description = "devi is a cli tool for managing your project templates"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["templates", "project", "cli tool", "organization", "productivity"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'docopt',
+    'tomli; python_version < "3.11"',
+]
+
+[project.urls]
+homepage = "https://github.com/paoloose/devi"
+repository = "https://github.com/paoloose/devi"
+issues = "https://github.com/paoloose/devi/issues"
