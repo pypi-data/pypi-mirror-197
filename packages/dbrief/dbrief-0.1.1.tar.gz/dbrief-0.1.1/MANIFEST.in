@@ -1,0 +1,8 @@
+include *.ini
+include *.txt
+include *.md
+include *.rst
+include *.toml
+
+recursive-include tests *.py
+recursive-include dbrief *.html

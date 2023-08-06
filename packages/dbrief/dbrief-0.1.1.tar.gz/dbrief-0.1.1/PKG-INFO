@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: dbrief
+Version: 0.1.1
+Summary: Python package for quickly creating lightweight HTML reports
+Author-email: Chris Santiago <cjsantiago@gatech.edu>
+License: MIT License
+Project-URL: Sourcecode, https://github.com/chris-santiago/dbrief
+Project-URL: Documentation, https://chris-santiago.github.io/dbrief/
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: tests
+Provides-Extra: qa
+Provides-Extra: build
+Provides-Extra: dev
+License-File: LICENSE.txt
+
+# dBrief
+
+## Install
+
+Create a virtual environment with Python >= 3.9 and install from git:
+
+```bash
+pip install git+https://github.com/chris-santiago/dbrief.git
+```
+
+## Use
+
+
+## Documentation
+
+Documentation hosted on Github Pages: [https://chris-santiago.github.io/dbrief/](https://chris-santiago.github.io/dbrief/)
