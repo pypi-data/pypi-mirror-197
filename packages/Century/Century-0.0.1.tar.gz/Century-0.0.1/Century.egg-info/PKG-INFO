@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Century
+Version: 0.0.1
+Summary: Century - A ORM for SQL Databases.
+Home-page: https://github.com/Almas-Ali/Century
+Author: Md. Almas Ali
+Author-email: almaspr3@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Natural Language :: English
+Description-Content-Type: text/markdown
+
+# Century - A ORM for SQL Databases
+
+A simple ORM for SQL Databases. It is a simple ORM that can be used to create a database and tables. It can also be used to insert, update, delete and select data from the database.
+
+CREATED BY: [Md. Almas Ali](https://github.com/Almas-Ali)
+
+
+
