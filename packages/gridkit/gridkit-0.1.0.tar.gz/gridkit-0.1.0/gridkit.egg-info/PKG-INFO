@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: gridkit
+Version: 0.1.0
+Summary: Operations on, and tessellation of, regular grids
+Author: Timo Millenaar
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: doc
+License-File: LICENSE.txt
+
+GridKit
+=======
+
+GridKit is a tool to work with grids on a high abstraction level.
+
+Documentation
+=============
+Find the docs on [GitHub Pages](https://tmillenaar.github.io/GridKit).
+
+Examples
+========
+Find the examples in the [Example Gallery](https://tmillenaar.github.io/GridKit/example_gallery/index.html) section of the documentation.
+
+Installation
+============
+To install through PyPi, run `pip install gridkit`.
+Alternatively, clone from [GitHub](https://github.com/tmillenaar/GridKit) and run 
+`pip install ./`
