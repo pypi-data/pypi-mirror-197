@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: wp-enhanced
+Version: 0.1.1
+Summary: Wrapper of `wp.py`. Easy to premake, build, and deploy wwise plugins.
+Home-page: https://github.com/tgalpha/wp-enhanced
+License: MIT
+Author: tgalpha
+Author-email: tanalpha.zhy@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: kkpyutil (>=0.115.2,<0.116.0)
+Project-URL: Repository, https://github.com/tgalpha/wp-enhanced
+Description-Content-Type: text/markdown
+
+# wp-enhanced
+Wrapper of `wp.py`. Easy to premake, build, and deploy wwise plugins.
+
