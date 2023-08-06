@@ -1,0 +1,8 @@
+JSON_minify
+setuptools
+aiohttp
+websocket-client==1.3.1
+websockets
+requests
+ujson
+easy-events>=2.6.2
