@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: zernpol
+Version: 0.1.5
+Summary: Tools to handle Zernike polynoms and Indexing systems
+License: MIT
+Author: Sylvain Guieu
+Author-email: sylvain.guieu@univ-grenoble-alpes.fr
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.2,<2.0)
+Description-Content-Type: text/markdown
+
+
+This simple package offers tools to handle Zernike Polynoms and the different indexing systems (as the
+Noll system for instance).
+
+The package offers object and non-object oriented functions. 
+
+
+
+
+Install
+-------
+
+From pip:
+    
+    > pip install zernpol 
+    
+From sources:
+    
+    > git clone https://gricad-gitlab.univ-grenoble-alpes.fr/guieus/zernpol.git
+    > cd zernpol 
+    > python setup.py install 
+
+
+Documentation 
+-------------
+
+Please visits: https://zernpol.readthedocs.io/en/latest/#
+
+
+
+
