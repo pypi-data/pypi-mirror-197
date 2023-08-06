@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: knap
+Version: 0.0.5
+Summary: Knapsack - data management for AI/ML. Explore, find, and share datasets in your Knapsack.
+Author: Cooper Lindsey
+Author-email: cooper@knap.ai
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiohttp (>=3.8.3,<4.0.0)
+Requires-Dist: boto3 (==1.24.59)
+Requires-Dist: botocore (==1.27.59)
+Requires-Dist: psycopg2 (==2.9.5)
+Requires-Dist: requests (==2.28.1)
+Requires-Dist: rich (==13.3.1)
+Requires-Dist: tqdm (==4.64.1)
+Requires-Dist: typer[all] (>=0.1.0,<0.2.0)
+Requires-Dist: urllib3 (==1.26.13)
+Description-Content-Type: text/markdown
+
+# Knapsack
+
