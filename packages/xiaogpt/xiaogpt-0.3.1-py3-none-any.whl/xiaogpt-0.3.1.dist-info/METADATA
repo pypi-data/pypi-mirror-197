@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xiaogpt
+Version: 0.3.1
+Summary: Play ChatGPT with xiaomi AI speaker
+Home-page: https://github.com/yihong0618/xiaogpt
+Author: yihong0618
+Author-email: zouzou0208@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: miservice-fork
+Requires-Dist: requests
+Requires-Dist: revChatGPT
+Requires-Dist: rich
+
