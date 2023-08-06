@@ -1,0 +1,11 @@
+pyproj>=2.1.0
+shapely
+
+[dev]
+reproj[test]
+twine
+
+[test]
+coverage
+pytest>=4.6
+pytest-cov>=2.2.0
