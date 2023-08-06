@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: cigit
+Version: 0.0.3
+Summary: CI/CD Python Scripting
+Author-email: hlop3z <23062270+hlop3z@users.noreply.github.com>
+Requires-Python: >=3.10
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: pyyaml>=6.0
+Project-URL: Documentation, https://hlop3z.github.io/cigit/
+Project-URL: Homepage, https://github.com/hlop3z/cigit/
+Description-Content-Type: text/markdown
+
+# Welcome to **Ci-Git**
+
+**Scripting** build(s) for **C**ontinuous **I**ntegration and **C**ontinuous **D**elivery (**CI/CD**)
+
+## **Installation**
+
+```sh
+python -m pip install cigit
+```
+
+## **Credentials**
+
+```yaml
+# Git Config
+url: https://github.com/hlop3z/cigit.git
+path: ./demo
+
+# Auth Config
+username: hlop3z
+password: (P)ersonal-(A)ccess-(T)oken
+```
+
+## **Pipeline**
+
+```yaml
+# Define Stages
+stages:
+  - build
+  - test
+  - deploy
+
+# Define { build } stage jobs
+build:
+  stage: build
+  script:
+    - echo "Build"
+
+# Define { test } stage jobs
+unit_tests:
+  stage: test
+  script:
+    - echo "Unit-Tests"
+
+integration_tests:
+  stage: test
+  script:
+    - echo "Integration-Tests"
+
+# Define { deploy } stage jobs
+deploy_to_staging:
+  stage: deploy
+  script:
+    - echo "Deploy-To-Staging"
+
+deploy_to_production:
+  stage: deploy
+  script:
+    - echo "Deploy-To-Production"
+```
+
+## **File** "**`ci-bot.py`**"
+
+```python
+import cigit
+
+cigit.cli()
+```
+
+---
+
+## **Commands**
+
+---
+
+| Command     | Description                                          |
+| ----------- | ---------------------------------------------------- |
+| **`run`**   | **Run** the pipeline                                 |
+| **`pull`**  | **Git Pull** a remote repository & run the pipeline  |
+| **`clone`** | **Git Clone** a remote repository & run the pipeline |
+
+---
+
+## **Cheatsheet**
+
+---
+
+### **Clone**
+
+```sh
+python ci-bot.py clone
+```
+
+### **Pull**
+
+```sh
+python ci-bot.py pull
+```
+
+### **Run**
+
+```sh
+python ci-bot.py run
+```
+
