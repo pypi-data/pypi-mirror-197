@@ -1,0 +1,3 @@
+[console_scripts]
+commonfate-provider-py=commonfate_provider.cli.main:cli
+
