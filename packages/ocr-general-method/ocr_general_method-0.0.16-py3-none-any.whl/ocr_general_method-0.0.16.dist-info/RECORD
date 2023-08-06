@@ -1,0 +1,12 @@
+ocr_general_method/__init__.py,sha256=juWpM6Z7CJIXXBdWW_zx5LNdC3bLhCuXxBuNYFQ2P2Y,115
+ocr_general_method/coordinate.py,sha256=V3JXL57ye9y88anJahiGBsxz8oB7J3jId8OGjriQV-o,1389
+ocr_general_method/exception_utils.py,sha256=30a5K4HFBst9oJdxTVNVsl0Pn-ZCOnPfloH4NGwYxkw,713
+ocr_general_method/file_utils.py,sha256=3Noqt5WW63QopzdNds4bEqBxTpllE-Pw5qiYIR54nj8,5146
+ocr_general_method/http_utils.py,sha256=vNjGXiS6VyoCAnwS_vdDsyaeG5unNnGrNcuiTterR_w,1510
+ocr_general_method/mongo_utils.py,sha256=0wHRl7-SIoMgYLEuVbMD4CZUnO-E6TaVY8sKgDLV2kk,2383
+ocr_general_method/other_utils.py,sha256=f7Co63BLhZasYCyEUUjn5n4o4J-roVfnXrMxJgt3_Kw,1674
+ocr_general_method-0.0.16.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ocr_general_method-0.0.16.dist-info/METADATA,sha256=rtI_3KE1eCk9arxa2eyxfP9IF1SzcwzHR5qnCg6SOI8,673
+ocr_general_method-0.0.16.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+ocr_general_method-0.0.16.dist-info/top_level.txt,sha256=03Ut638AV-BvV69DHVa1UC6n4fKZj9B2Xrka5_sHcp8,19
+ocr_general_method-0.0.16.dist-info/RECORD,,
