@@ -1,0 +1,9 @@
+LICENSE
+pyproject.toml
+setup.cfg
+src/nuv_cd.egg-info/PKG-INFO
+src/nuv_cd.egg-info/SOURCES.txt
+src/nuv_cd.egg-info/dependency_links.txt
+src/nuv_cd.egg-info/top_level.txt
+src/packagecd/__init__.py
+src/packagecd/main.py
