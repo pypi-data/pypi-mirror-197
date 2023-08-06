@@ -1,0 +1,11 @@
+mini_afsd/__init__.py,sha256=jC0DRXYvX8JXZCIWvgy8WgxupwkIADcBFHZKLXzQhGk,436
+mini_afsd/__main__.py,sha256=daLn5xF1IpHYTtVg2NIkR4JyGPDyvkOpUDBGpSOmCFY,2994
+mini_afsd/controller.py,sha256=H5oIQUO2nFtwFZMJfyKUGRxG12VrwQAqGgmWg5cZdic,14974
+mini_afsd/gui.py,sha256=xi2PGQP4QkvUoDioU-HcTT_NbhaJk47TGjL2dKEnXCM,38584
+mini_afsd/labjack_handler.py,sha256=2v_miBh8GmsnwpeIRfJgEjhiYafsZ2BccBrRaTha-WY,8346
+mini_afsd/serial_processor.py,sha256=7xn-ip-S1X-gi3rU7dPob8XZIAQp4FTqlkPV08zSxuQ,22848
+mini_afsd-1.1.1.dist-info/LICENSE.txt,sha256=V_WYIf9FbOZlNAVwlGnpqqoP_gnNEg2DeY0DuHC1n00,527
+mini_afsd-1.1.1.dist-info/METADATA,sha256=qM4LM5SLVAN6tRXmrrJzACg64wwMkP1C2GxGQNVw2og,5911
+mini_afsd-1.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mini_afsd-1.1.1.dist-info/top_level.txt,sha256=S7ZjH-FmAM5NrAo_YnKMffhgmQqey2oavykVVc2JqDU,10
+mini_afsd-1.1.1.dist-info/RECORD,,
