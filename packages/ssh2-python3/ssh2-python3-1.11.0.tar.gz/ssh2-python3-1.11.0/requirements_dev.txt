@@ -1,0 +1,6 @@
+Cython
+flake8
+jinja2
+sphinx
+pytest
+setuptools_scm
