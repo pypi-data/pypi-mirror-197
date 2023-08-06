@@ -1,0 +1,16 @@
+meoteofence/__init__.py,sha256=fV-lyJiItOVHYpsDK_pnOADGdQM9UftVsr3t5b3fvZM,10930
+meoteofence/hook_impl.py,sha256=vlkIuJprr52hx3uyZBbsHLqfqfe3vyDkzc_7Kaee7yw,5461
+meoteofence/hook_manager.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meoteofence/hook_specs.py,sha256=GV03L313wsIfdIWhAW5ziz7fxo0X3oMwStNTROH8QkY,2642
+meoteofence/interface.py,sha256=IhNEhU012-6qzuNRXHLcWTqrRfpeLPJmHI5kfpC_tco,11364
+meoteofence/test/test_hook.py,sha256=4SmF6ukdxJbdKr5HhaaJBDAFmjHjTcE2dt9m_WOQd0s,4532
+meoteofence/test/test_interpolate.py,sha256=U76hUo8oqRdIIkOVZRxTV2csxQ0W1lIlgW6TJ1IDGe4,2104
+meoteofence/test/test_meoteofence.py,sha256=vPdDgwLnY8s-HlYGLnd27g6kVDWsPA7MAa_cZwm4t2Q,2677
+meoteofence/test/test_pluggy.py,sha256=QaktUafJ624lkuSTitEKkxpb-n9SmVPHYtftWI1pCQ8,967
+meoteofence/test/test_query.py,sha256=DDiqZQ_lTsCaFAirZbU4dvCdsPR2r-Lb5dZwUfI390E,2161
+meoteofence/test/test_tmp.py,sha256=4MIlA_RVkQ4l311ONscX9OfD3Vbh0rRSNDPspAdR19Q,6041
+shihua_meoteofence-0.1.dist-info/LICENSE,sha256=zf1bLnJerqSlkcITfyGwv2PjGrw-FuVqDKb7vp7xERQ,1084
+shihua_meoteofence-0.1.dist-info/METADATA,sha256=MIPvijoVMnXvsmx33jocx_NcNvv9AY27zOkk3cdUFck,6743
+shihua_meoteofence-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+shihua_meoteofence-0.1.dist-info/top_level.txt,sha256=6rx88AsX_ZHJvjNNxP3DaSmV4_bGW60_MmLU6F6mzCA,12
+shihua_meoteofence-0.1.dist-info/RECORD,,
