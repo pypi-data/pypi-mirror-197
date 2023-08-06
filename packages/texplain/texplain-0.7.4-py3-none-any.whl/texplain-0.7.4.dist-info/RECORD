@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_classify.py,sha256=vxYV-FUfbbiA_sA3l-zKeNJ8zfvhvxknI6LWmFCrF5A,1645
+tests/test_find_command.py,sha256=HlD_Hbehzo1PUJU_9cOZ1cy92IzMWxZjENc9nVfxNJQ,3949
+tests/test_indent.py,sha256=eQ8_FfkufkR-IdXJuK81A23Sux-a-AtYSEg07yVTO-Y,17247
+tests/test_indent_long.py,sha256=3sCHbxdu3mBcGyJHuX0440CGU-jrMv0dKp56VUoQ7cM,166511
+tests/test_placeholders.py,sha256=mD-7rUz-FQiZYbKD9XIdT11RdLFhwHNmfx-Xp1qDoeM,6308
+tests/test_simple.py,sha256=S7ISbaxGPwY6GNkHSiyX8Vd82d_Xxl1DEIEx_ZMPz-s,11674
+tests/test_texplain_example1.py,sha256=5gLK9Lio1mP-XPrY9y9021euIGvo_iHqfUK1w8hQ-Tg,1435
+texplain/__init__.py,sha256=6-fqTJKhnBlgXDjO--hQeNf5_X2L764a9K2cjdM5HQw,77028
+texplain/_version.py,sha256=_woi8-13OuMrGk1iueJQUN8Mi93aw4ahGYscEqgmeq8,160
+texplain-0.7.4.dist-info/LICENSE,sha256=TThVvgTUvAGbVLrQy6b6sEIRRuXBdWaLoHgctmDis94,1068
+texplain-0.7.4.dist-info/METADATA,sha256=olNolstOLTbuZ2umCgs9aLuzVBiZS-REJ54iDFeevGA,3824
+texplain-0.7.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+texplain-0.7.4.dist-info/entry_points.txt,sha256=gbmLbFjG-4YuEzUnqRgORckvx5ACfmH7ul1zHKlIeM8,126
+texplain-0.7.4.dist-info/top_level.txt,sha256=hFYfmiNH3f9-5U-c6TS2L9VoQz_1FDXvcmqODbfBE3k,15
+texplain-0.7.4.dist-info/RECORD,,
