@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: fastapi-router-crud
+Version: 0.0.24
+Summary: FastAPI API router that generates model based routes(CRUD operations) automatically.
+Home-page: https://github.com/milanchanstveni/fastapi-crud-router
+Author: Milan Pantelic
+Author-email: milanpantelic95@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: AsyncIO
+Classifier: Environment :: Web Environment
+Classifier: Environment :: Plugins
+Classifier: Framework :: FastAPI
+Classifier: Topic :: Database
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: tortoise-orm[all]
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+# fastapi-crud
+FastAPI API router that generates model based routes(CRUD operations) automatically. 
+
+
+
+
