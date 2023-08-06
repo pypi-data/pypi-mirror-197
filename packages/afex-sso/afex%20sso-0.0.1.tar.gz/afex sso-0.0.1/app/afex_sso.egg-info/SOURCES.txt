@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+app/afex_sso.egg-info/PKG-INFO
+app/afex_sso.egg-info/SOURCES.txt
+app/afex_sso.egg-info/dependency_links.txt
+app/afex_sso.egg-info/requires.txt
+app/afex_sso.egg-info/top_level.txt
+app/sso/__init__.py
+app/sso/src/__init__.py
+app/sso/src/sso.py
