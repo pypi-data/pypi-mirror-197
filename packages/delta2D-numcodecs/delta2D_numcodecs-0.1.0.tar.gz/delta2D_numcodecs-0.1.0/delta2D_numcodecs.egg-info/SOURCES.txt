@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+delta2D_numcodecs/__init__.py
+delta2D_numcodecs/delta2D.py
+delta2D_numcodecs/version.py
+delta2D_numcodecs.egg-info/PKG-INFO
+delta2D_numcodecs.egg-info/SOURCES.txt
+delta2D_numcodecs.egg-info/dependency_links.txt
+delta2D_numcodecs.egg-info/entry_points.txt
+delta2D_numcodecs.egg-info/requires.txt
+delta2D_numcodecs.egg-info/top_level.txt

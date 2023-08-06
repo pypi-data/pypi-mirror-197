@@ -1,0 +1,3 @@
+[numcodecs.codecs]
+delta2D = delta2D_numcodecs:Delta2D
+
