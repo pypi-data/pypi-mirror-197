@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: pyroll
+Version: 2.0
+Summary: A meta package for installing quickly the PyRolL Core, CLI, Report and Export. The provided functionality is similar to the old pyroll package, which was split up into distinct packages with version 2.0.
+Home-page: https://pyroll.readthedocs.io
+License: BSD-3-Clause
+Author: Max Weiner
+Author-email: max.weiner@imf.tu-freiberg.de
+Requires-Python: >=3.9
+Classifier: Intended Audience :: Manufacturing
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: pyroll-cli (>=2.0,<3.0)
+Requires-Dist: pyroll-core (>=2.0,<3.0)
+Requires-Dist: pyroll-export (>=2.0,<3.0)
+Requires-Dist: pyroll-report (>=2.0,<3.0)
+Project-URL: Documentation, https://pyroll.readthedocs.io/en/latest
+Project-URL: Repository, https://github.com/pyroll-project/pyroll
+Description-Content-Type: text/markdown
+
+# PyRolL Meta-Package
+
+This is a meta-package intended to replace the old version 1.0 `pyroll` package and protect from version conflicts.
+It installs the following packages:
+
+- `pyroll-core`
+- `pyroll-cli`
+- `pyroll-report`
+- `pyroll-export`
+
+## License
+
+The project is licensed under the [BSD 3-Clause license](LICENSE).
+
