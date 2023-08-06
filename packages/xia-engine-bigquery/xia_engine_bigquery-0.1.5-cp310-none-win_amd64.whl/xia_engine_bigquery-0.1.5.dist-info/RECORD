@@ -1,0 +1,9 @@
+xia_engine_bigquery/__init__.py,sha256=Mfz4Hix2UNMqNtYCxAC8iu2xctduM6RIn3m7aTLmvTs,361
+xia_engine_bigquery/engine.cp310-win_amd64.pyd,sha256=1fahYFC0VP0WXgZecD2G9yXUsQ9Qb-HMJs3lWylWx64,513536
+xia_engine_bigquery/proto.cp310-win_amd64.pyd,sha256=BWPF8lpjtrYLezxhNLOh8C6sZdJC6eHmcZoHIRrzeQw,310272
+xia_engine_bigquery/schema.cp310-win_amd64.pyd,sha256=9kh-0T606GX6JOOZfgmlALrzHW1UrhvmV721uFVn_Mg,297472
+xia_engine_bigquery-0.1.5.dist-info/LICENSE.txt,sha256=hxPR04Gu87DDUI5drgmeS7DmKKrZ3oegg3N-QQeTg8k,152
+xia_engine_bigquery-0.1.5.dist-info/METADATA,sha256=DmmaPDioWdafDJrV5eJuPthbJ9IGIcZo1J-g1aj8ZCY,849
+xia_engine_bigquery-0.1.5.dist-info/WHEEL,sha256=xKD-W076Kxa9P8HVHMBFDAZ44LgNHrPjF081MKvpixU,100
+xia_engine_bigquery-0.1.5.dist-info/top_level.txt,sha256=_yEmJhHpPT-DWURs_JBDhoK6nResg3ySwAYjmia8-Cg,20
+xia_engine_bigquery-0.1.5.dist-info/RECORD,,
