@@ -1,0 +1,36 @@
+
+{% macro menu_item(text, href, fa=none) -%}
+  <li class="menu-item {% if href.split('.')[0] == request.endpoint.split('.')[0] %}active{% endif %}">
+    <a href="{{ url_for(href) }}" >
+      <span class="menu-icon">{% if fa %}<i class="fas fa-{{ fa }}"></i>{% endif %}</span>
+      <span class="menu-text">{{ text }}</span>
+    </a>
+  </li>
+{%- endmacro %}
+
+{% macro version_info() -%}
+  version information:&#010;
+  {%- for k, v in pado_instance_version().items() -%}
+    - {{ k }} == {{ v }}{% if not loop.last %}&#010;{% endif %}
+  {%- endfor -%}
+{%- endmacro %}
+
+{% set instance_name = pado_instance_name() %}
+
+<div class="pado-sidebar container">
+  <div class="header">
+    <a href="{{ url_for('home.index') }}">
+      <h2>Pavo</h2>
+      <h3>Pathological Visualization Obsession</h3>
+      {% if instance_name %}<span class="host">{{ pado_instance_name() or "" }}</span>{% endif %}
+      <img alt="logo" title="{{ version_info() }}" src="{{ url_for('static', filename='images/pathological-heart.jpg') }}">
+    </a>
+  </div>
+
+  <ul class="menu">
+    {{ menu_item("Overview", 'home.index', fa='globe-europe') }}
+    {{ menu_item("Metadata", 'metadata.index', fa='file-alt') }}
+    {{ menu_item("Slides", 'slides.index', fa='microscope') }}
+  </ul>
+
+</div>

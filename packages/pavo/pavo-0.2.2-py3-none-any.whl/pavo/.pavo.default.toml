@@ -1,0 +1,29 @@
+# pavo default config
+# ===================
+[default]
+SERVER = "127.0.0.1"
+PORT = 8000
+
+# flask-caching
+CACHE_PATH = "/tmp/pavo_cache"
+CACHE_TYPE = "SimpleCache"
+CACHE_DEFAULT_TIMEOUT = 300
+
+# the datasets
+DATASET_PATHS = []
+DATASET_STORAGE_OPTIONS = []
+
+# columns
+metadata_extra_column_mode = "ignore_missing"
+metadata_extra_columns = [
+    { name = "compound_name", type = "categorical", label = "Compound" },
+    { name = "organ", type = "categorical", label = "Organ" },
+    { name = "species", type = "categorical", label = "Species" },
+]
+
+[development]
+DEBUG = true
+
+[production]
+DEBUG = false
+GUNICORN_NUM_WORKERS = 6

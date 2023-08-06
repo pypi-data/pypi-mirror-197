@@ -1,0 +1,2 @@
+[console_scripts]
+pavo = pavo.__main__:cli

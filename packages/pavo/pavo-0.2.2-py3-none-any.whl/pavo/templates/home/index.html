@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block styles %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ url_for_versioned('static', filename='home.css') }}">
+{% endblock styles %}
+
+{% block page_scripts %}
+  {{ super() }}
+  <script type="text/javascript" href="{{ url_for_versioned('static', filename='home.js') }}"></script>
+{% endblock page_scripts %}
+
+{% macro render_describe_table_value(key, val) %}
+  {# renders values for the overview table #}
+  {% if val is string %}
+    <td>{{ val }}</td>
+  {% elif val is number %}
+    <td>{{ val }}</td>
+  {% elif val is mapping and pado_is_number(val) %}
+    {# we need to special case a few mappings ... #}
+    <td>
+      {% if key in ["avg_image_width", "avg_image_height"] %}
+        {{ val|pado_number_to_str(prefix_unit=False) }}
+      {% elif key == "total_size_images" %}
+        {{ val|pado_number_to_str(prefix="~", prefix_unit=True) }}
+      {% else %}
+        {{ val|pado_number_to_str(prefix_unit=True) }}
+      {% endif %}
+    </td>
+  {% elif val is mapping and pado_is_mpp_count(val) %}
+    <td>{{ val["mpp"] }}</td>
+    <td>{{ val["num"] }}</td>
+  {% elif val is mapping %}
+    <td style="padding: 0;">
+      <table class="nested-table">
+        <tbody>
+        {% for k, v in val.items() %}
+          <tr>
+            <td>{{ k }}</td>
+            {{ render_describe_table_value(key, v) }}
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </td>
+  {% elif val is iterable %}
+    <td style="padding: 0;">
+      <table class="nested-table">
+        <tbody>
+        {% for v in val %}
+          <tr>
+          {{ render_describe_table_value(key, v) }}
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </td>
+  {% else %}
+    <td><!-- UNSUPPORTED TYPE {{ val|escape }} --></td>
+  {% endif %}
+{% endmacro %}
+
+
+{% macro render_describe_table(data) -%}
+  {# renders the overview table #}
+  <table class="overview-table">
+    <thead>
+      <tr>
+          <th>Dataset Attribute</th>
+          <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for key in data %}
+      <tr>
+        <td>
+          {{ key |
+            replace("_", " ") |
+            replace("num", "number of") |
+            replace("std", "standard deviation of") |
+            replace("avg", "Average of") |
+            title }}
+        </td>
+        {{ render_describe_table_value(key, data[key]) }}
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{%- endmacro %}
+
+{% block content %}
+  <div id="landing-container" class="container">
+    <h1>Dataset Overview</h1>
+    <div class="row">
+      <div class="col">
+        {{ render_describe_table(info) }}
+      </div>
+    </div>
+  </div>
+{% endblock content %}
