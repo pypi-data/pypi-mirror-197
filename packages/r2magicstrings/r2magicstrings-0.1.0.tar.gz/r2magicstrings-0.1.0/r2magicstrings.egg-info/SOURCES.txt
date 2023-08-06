@@ -1,0 +1,9 @@
+setup.py
+r2magicstrings/__init__.py
+r2magicstrings/r2_magic_strings.py
+r2magicstrings.egg-info/PKG-INFO
+r2magicstrings.egg-info/SOURCES.txt
+r2magicstrings.egg-info/dependency_links.txt
+r2magicstrings.egg-info/entry_points.txt
+r2magicstrings.egg-info/requires.txt
+r2magicstrings.egg-info/top_level.txt

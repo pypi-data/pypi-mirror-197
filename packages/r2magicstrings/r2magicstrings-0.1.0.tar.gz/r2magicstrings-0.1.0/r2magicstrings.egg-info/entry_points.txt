@@ -1,0 +1,2 @@
+[console_scripts]
+r2magicstrings = r2magicstrings.r2_magic_strings:main

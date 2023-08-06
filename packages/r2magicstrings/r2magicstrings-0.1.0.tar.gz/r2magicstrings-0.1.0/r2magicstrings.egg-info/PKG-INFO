@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: r2magicstrings
+Version: 0.1.0
+Summary: IDAMagicStrings ported to radare2
+Home-page: https://github.com/FernandoDoming/r2magicstrings
+Author: Fernando Domínguez
+Author-email: fernando.dom.del@gmail.com
+License: GNU GPL v3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10

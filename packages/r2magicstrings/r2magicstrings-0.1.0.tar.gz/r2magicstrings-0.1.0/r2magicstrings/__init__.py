@@ -1,0 +1,1 @@
+from .r2_magic_strings import get_source_strings, find_function_names
