@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: mercury-muscle
+Version: 0.1.2
+Summary: Utilities for working with Mercuri scores in the context of neuromuscular diseases.
+License: MIT
+Author: Jose-Verdu-Diaz
+Author-email: jose.verdu-diaz2@newcastle.ac.uk
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: matplotlib (>=3.7.0,<4.0.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: seaborn (>=0.12.2,<0.13.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Description-Content-Type: text/markdown
+
+<p align="center">
+  <img height="200" src="https://github.com/MYO-Guide/mercury/blob/b90cf29aca5e5a76e001f8fc0623653a35d3851e/res/img/bitmap.svg">
+</p>
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![Python Versions](https://img.shields.io/pypi/pyversions/mercury-muscle)
+[![Package Version](https://img.shields.io/pypi/v/mercury-muscle)](https://pypi.org/project/mercury-muscle/)
+
+This library contains a set of utilities for working with Mercuri scores in the context of neuromuscular diseases.
+
+### Install
+
+```
+pip install mercury-muscle
+```
