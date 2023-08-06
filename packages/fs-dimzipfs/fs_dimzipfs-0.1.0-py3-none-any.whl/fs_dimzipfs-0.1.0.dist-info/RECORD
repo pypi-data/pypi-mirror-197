@@ -1,0 +1,9 @@
+fs/dimzipfs/__init__.py,sha256=4om9rDa6JraUxuKscXjqWIkBfPg10ikZIwN-EZIpvv0,42
+fs/dimzipfs/dimzipfs.py,sha256=JigefZtspxbSOXhA9tzHyneetsd4BB1Xa6cwtgv0A-4,4177
+fs/dimzipfs/opener.py,sha256=-MJ9va0W2AFRYWpZmaMBN8AhLSGF-uswhjlpHx6fZec,667
+fs/dimzipfs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fs_dimzipfs-0.1.0.dist-info/entry_points.txt,sha256=rHOUtOpIwXbtNxzyrFnPDUzEVmFB5CFKHMfDwo9iSc4,52
+fs_dimzipfs-0.1.0.dist-info/LICENSE,sha256=S0lNboO0apXkx41ifqlkZLU3zM07lvOzz72kGmlz3nk,1085
+fs_dimzipfs-0.1.0.dist-info/METADATA,sha256=ANA2oQazO1K1aP8n0iK64A7mY2JOHYStOqMlyMDuueI,1643
+fs_dimzipfs-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fs_dimzipfs-0.1.0.dist-info/RECORD,,
