@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: tensorstate
+Version: 0.4.0
+Summary: 
+Author: Nicholas-Schaub
+Author-email: nicholas.j.schaub@gmail.com
+Requires-Python: >=3.8.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numcodecs (>=0.11.0,<0.12.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: zarr (>=2.14.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# TensorState (v0.4.0) - Neural Network Efficiency Tools
+
+TensorState is a toolbox to capture neural network information to better
+understand how information flows through the network. The core of the toolbox is
+the ability to capture and analyze neural layer state space, which logs unique
+firing states of neural network layers. This repository implements and extends
+the work by Schaub and Hotaling in their paper,
+[Assessing Intelligence in Artificial Neural Networks](https://arxiv.org/abs/2006.02909).
+
+## Installation
+
+Precompiled wheels exist for Windows, Linux, and MacOS for Python 3.6-3.8. No
+special installation instructions are required in most cases:
+
+`pip install pip --upgrade`
+
+`pip install TensorState`
+
+If the wheels don't download or you run into an error, try installing the
+pre-requisites for compiling before installing with `pip`.
+
+`pip install pip --upgrade`
+
+`pip install numpy==1.19.2 Cython==3.0a1`
+
+`pip install TensorState`
+
+## Documentation
+
+https://tensorstate.readthedocs.io/en/latest/
+
