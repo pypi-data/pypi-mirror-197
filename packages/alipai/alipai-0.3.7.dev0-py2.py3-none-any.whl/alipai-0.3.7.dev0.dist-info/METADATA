@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: alipai
+Version: 0.3.7.dev0
+Summary: Alibaba Cloud PAI Python SDK
+Home-page: https://www.aliyun.com/product/bigdata/product/learn
+Author: Alibaba PAI team
+License: Apache License 2.0
+Keywords: ML Alibaba Cloud PAI Training Inference Pipeline
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: aliyun-python-sdk-core (>=2.13.25)
+
+# Alibaba PAI Python SDK
