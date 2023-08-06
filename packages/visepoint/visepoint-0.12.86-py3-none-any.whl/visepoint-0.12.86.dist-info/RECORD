@@ -1,0 +1,14 @@
+visepoint/__init__.py,sha256=yJSLiqIsNut7HuhYnZrMGJE_OK7_Cu4SvyYCFUOefAg,169
+visepoint/requirements.txt,sha256=oROqvkM5YjN_aj2nheVO3tMTmJenMJgFXID8AnYsq0Y,17
+visepoint/connection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+visepoint/connection/models.py,sha256=t-gecggA3hufSuye9-FQh3GVjqPB5p4H5_Ybnby4aRw,2559
+visepoint/connection/users.py,sha256=TOeCS0vaCE043R0wDrpCMpJK9iLyY3yqR3JBB2j2I5o,709
+visepoint/connection/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+visepoint/connection/data/resources.py,sha256=OY1hNQjKBoa5-yQUen2U8ugJC3VSbMHIJoKchq6Wjrs,42
+visepoint/errors/__init__.py,sha256=MGJ8HLhYRQVeczKozTx4cz0BsdIko1DrSKbKGZa654c,18
+visepoint/errors/err.py,sha256=b_f1KbE37Hr9kwK1d69AGchrSwUPYOh3Ka7slE8no_4,1187
+visepoint-0.12.86.dist-info/LICENSE,sha256=F6kiGvdU_thRC8lpC2cUjwgfAZLuGq8-N6DbXlhWJzw,35818
+visepoint-0.12.86.dist-info/METADATA,sha256=QPzEoKQdfjT3LVUt5CaPffq9Q-rFYeokSu-ffJ2Hwys,3054
+visepoint-0.12.86.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+visepoint-0.12.86.dist-info/top_level.txt,sha256=1bNeRmpL9U30_TUsg3xsDVwGKarQgsq7PVl4T0HRCQw,10
+visepoint-0.12.86.dist-info/RECORD,,
