@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+flask_cache_manifest/__init__.py
+flask_cache_manifest/extension.py
+flask_cache_manifest.egg-info/PKG-INFO
+flask_cache_manifest.egg-info/SOURCES.txt
+flask_cache_manifest.egg-info/dependency_links.txt
+flask_cache_manifest.egg-info/requires.txt
+flask_cache_manifest.egg-info/top_level.txt
