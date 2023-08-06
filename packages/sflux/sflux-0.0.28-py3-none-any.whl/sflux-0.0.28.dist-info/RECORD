@@ -1,0 +1,9 @@
+sflux/__init__.py,sha256=GfZvNd5DZsm0v29fGhSaMBAvooD3BmcZy-r6lcWWa58,118
+sflux/client.py,sha256=UxuH7j2wfut5KjvVTBOiUQMYuFdlh7YgR3wqFe7xgho,12675
+sflux/measurement.py,sha256=vIo8zskbBoBzhp8h5s9l-cNvZ7_68Wo7uq0JmWKBFDU,2844
+sflux/utils.py,sha256=M8SCPeoqJHwbo3p1KO0A6XaIg8yLJqOI1W69QUrd03U,2169
+sflux-0.0.28.dist-info/LICENSE,sha256=-Dgao6stApeP3Wvl5dfXshU5KOhVRfAOXOWZrUCVlQ4,1074
+sflux-0.0.28.dist-info/METADATA,sha256=3RZiTb6NIfyE3LljMSOgPXMDEUtvdezc-PFf5g5_wow,1985
+sflux-0.0.28.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sflux-0.0.28.dist-info/top_level.txt,sha256=H21uECe75HjTVY2F1ZUPW9fhVALE2-oSJB26NiTNHnE,6
+sflux-0.0.28.dist-info/RECORD,,
