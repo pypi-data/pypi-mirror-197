@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "kmi2122"
+version = "0.1.3"
+description = "This dataset includes some macroeconomic indicators for South Korea in 2021-2022."
+authors = ["parkminwoo <parkminwoo1991@gmail.com>"]
+homepage = "https://github.com/DSDanielPark/kmi2122-dataset"
+repository = "https://github.com/DSDanielPark/kmi2122-dataset"
+license = "MIT"
+readme = "README.md"
+keywords = ["dataset", "science", "machine learning", "quant", "time-serise"]
+
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.group.dev.dependencies]
+jsons = "^1.6.3"
+pandas = "^1.5.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
