@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/eon4dice/__init__.py
+src/eon4dice/dice.py
+src/eon4dice.egg-info/PKG-INFO
+src/eon4dice.egg-info/SOURCES.txt
+src/eon4dice.egg-info/dependency_links.txt
+src/eon4dice.egg-info/top_level.txt
+tests/test_eon4dice.py
