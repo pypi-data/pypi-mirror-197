@@ -1,0 +1,11 @@
+LICENSE.rst
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+random_unicode_emoji/__init__.py
+random_unicode_emoji/random_unicode_emoji.py
+random_unicode_emoji.egg-info/PKG-INFO
+random_unicode_emoji.egg-info/SOURCES.txt
+random_unicode_emoji.egg-info/dependency_links.txt
+random_unicode_emoji.egg-info/top_level.txt
