@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyspmp
+Version: 0.1.4
+Summary: Busca e pré seleção de períodos para modelos de monitoramento e predição de máquinas e equipamentos
+Author: Leandro Ribeiro de Castro
+Author-email: lr.castro@yahoo.com.br
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: pandas (>=1.4.3,<2.0.0)
+Description-Content-Type: text/markdown
+
+# PySPMP GitLab
+
+## Descrição
+
+Este projeto tem como objetivo realizar buscas e pré seleção de períodos dentro dos parâmentros definidos pelo usuário para modelos de monitoramento e predição de máquinas e equipamentos, visando mitigar e reduzir o esforço de trabalho do usuário na busca de períodos adequados para um bom modelo de monitoramento e predição.
+
+## Fonte
+
+A fonte do PySPMP é [hospedado em
+GitLab.com](https://codigo-externo.petrobras.com.br/leandro.castro.prestserv/pyspmp).
+
+## Requisitos
+
+python = "^3.9"
+pandas = "^1.4.3"
+
+
