@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "wsgi-echo-server"
+version = "0.0.6"
+description = ""
+authors = ["Iuri de Silvio <iurisilvio@gmail.com>"]
+readme = "README.md"
+packages = [{include = "wsgi_echo_server.py"}]
+
+[tool.poetry.urls]
+Homepage = "https://github.com/buserbrasil/wsgi-echo-server"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.2"
+flask = "^2.2.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+pytest-black = "^0.3.12"
+pytest-cov = "^4.0.0"
+pytest-mock = "^3.10.0"
+pytest-ruff = "^0.0.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.pytest.ini_options]
+addopts = "--capture=no --cov --cov-report term --cov-report xml --ruff --black"
+filterwarnings = [
+    "ignore::PendingDeprecationWarning",
+    "ignore::DeprecationWarning"
+]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+precision = 2
+show_missing = true
+skip_covered = true
+
+[tool.ruff]
+line-length = 88
