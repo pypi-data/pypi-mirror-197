@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gitno/__init__.py
+gitno/__main__.py
+gitno/cli.py
+gitno/main.py
+gitno/version.py
+gitno.egg-info/PKG-INFO
+gitno.egg-info/SOURCES.txt
+gitno.egg-info/dependency_links.txt
+gitno.egg-info/entry_points.txt
+gitno.egg-info/requires.txt
+gitno.egg-info/top_level.txt
+tests/test_gitno.py

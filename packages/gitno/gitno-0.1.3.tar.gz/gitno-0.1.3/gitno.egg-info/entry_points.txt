@@ -1,0 +1,2 @@
+[console_scripts]
+gitno = gitno.main:cli
