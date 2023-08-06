@@ -1,0 +1,2 @@
+Version: 1.3.4
+Arguments: ['C:\\Python310\\Scripts\\delvewheel', 'repair', '--add-path', 'source\\x64\\Release', 'scripts\\wheel\\meshlib\\dist\\meshlib-2.1.0.6-cp310-none-win_amd64.whl']
