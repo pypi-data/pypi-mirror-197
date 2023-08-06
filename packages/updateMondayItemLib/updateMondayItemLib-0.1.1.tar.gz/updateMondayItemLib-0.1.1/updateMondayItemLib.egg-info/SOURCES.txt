@@ -1,0 +1,7 @@
+setup.py
+updateMondayItemLib/__init__.py
+updateMondayItemLib/monday.py
+updateMondayItemLib.egg-info/PKG-INFO
+updateMondayItemLib.egg-info/SOURCES.txt
+updateMondayItemLib.egg-info/dependency_links.txt
+updateMondayItemLib.egg-info/top_level.txt

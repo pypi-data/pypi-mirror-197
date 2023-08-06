@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: updateMondayItemLib
+Version: 0.1.1
+Summary: Update the existing items on monday board
+Author: Bilal Ashraf
+License: MIT
+Description-Content-Type: text/markdown
+
+This package allows you to update columns against item on monday.com board.It takes following parameters apiKey,apiUrl,board_id,item_id, **columnValuesDict. Columns ID and their values are passed as key value pair in dictionary.
