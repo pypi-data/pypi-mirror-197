@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/twnet_parser.egg-info/PKG-INFO
+src/twnet_parser.egg-info/SOURCES.txt
+src/twnet_parser.egg-info/dependency_links.txt
+src/twnet_parser.egg-info/top_level.txt
