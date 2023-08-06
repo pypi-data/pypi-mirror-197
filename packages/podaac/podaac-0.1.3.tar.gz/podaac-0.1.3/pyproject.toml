@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "podaac"
+version = "0.1.3"
+description = "PO.DAAC Tools"
+authors = ["PO.DAAC <podaac@podaac.jpl.nasa.gov>"]
+readme = "README.md"
+license = "Apache-2.0"
+repository = "https://github.com/podaac/podaacpy"
+exclude = ['examples']
+packages = [
+    { include = "podaac" },
+]
+
