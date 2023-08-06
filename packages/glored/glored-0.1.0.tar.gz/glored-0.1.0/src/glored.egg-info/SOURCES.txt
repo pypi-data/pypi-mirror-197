@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/glored/__init__.py
+src/glored/interface.py
+src/glored.egg-info/PKG-INFO
+src/glored.egg-info/SOURCES.txt
+src/glored.egg-info/dependency_links.txt
+src/glored.egg-info/requires.txt
+src/glored.egg-info/top_level.txt
