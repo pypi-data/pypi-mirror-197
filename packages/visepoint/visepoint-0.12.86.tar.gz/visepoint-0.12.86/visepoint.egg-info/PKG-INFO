@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: visepoint
+Version: 0.12.86
+Summary: "This Python module is for interacting with the visepoint API!"
+Home-page: https://github.com/visepoint/visepoint-py
+Author: "kitsu#0006"
+Author-email: "kitsu@visepoint.net"
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+___
+
+
+<div style="width: full; text-align: center;">
+    <img src="https://github.com/visepoint/visepoint-py/blob/main/banner.png">
+</div>
+
+___
+
+> `visepoint` is a Python package designed to provide a simple interface to interact with the `visepoint` API and prompt models. It can be used to build applications that require AI-based text completion, code completion, and other natural language processing tasks.
+___
+
+<div style="width: full; text-align: center;">
+    <br>
+    <span style="font-weight: bold; font-size: 1.6em;">
+        <span style="font-weight: 300">:</span> Installation <span style="font-weight: 300">:</span>
+    </span>
+    <br/> <br>
+</div>
+
+___ 
+<br>
+
+> `Optional: ` Install virtualenv:
+```bash
+[~$] - pip install virtualenv
+```
+<br>
+
+> `Optional: ` Set virtual environment:
+```bash
+[~$] - virtualenv venv && source venv/bin/activate
+```
+<br>
+
+> Install visepoint via pip:
+```bash
+[~$] - pip install visepoint
+```
+
+<br>
+
+___
+
+<div style="width: full; text-align: center;">
+    <br>
+    <span style="font-weight: bold; font-size: 1.6em;">
+        <span style="font-weight: 300">:</span> Usage <span style="font-weight: 300">:</span>
+    </span>
+    <br/> <br>
+</div>
+
+___
+
+<br>
+
+> To get started with `visepoint`, you will need to obtain an API token from the visepoint [checkout](https://api.visepoint.net/new) creator **or** create a checkout session using the built-in `generate_checkout()` function provided.
+
+```python
+import visepoint
+
+new_user = visepoint.UserCreate.generate_checkout()
+print(new_user)
+```
+
+<br>
+
+> `NOTE`: Upon completing checkout, you will be registered with visepoint and an email will be sent to you containing your api credentials.
+
+> Once you have your API key, you can start using the package to interface with the `visepoint` API. Here's an example of how to use the `completion_create` function to prompt one of our text completion models.
+
+<br>
+
+### Synchronous method
+```python
+import visepoint
+
+data = visepoint.Models.completion_create("visepoint", "your_api_token_here", "your_query_here")
+```
+
+### Asynchronous method
+```python
+import visepoint
+
+data = await visepoint.Models.completion_create_async("visepoint", "your_api_token_here", "your_query_here")
+```
+
+<br>
+
+___
+
+<div style="width: full; text-align: center;">
+    <br>
+    <span style="font-weight: bold; font-size: 1.6em;">
+        <span style="font-weight: 300">:</span> License <span style="font-weight: 300">:</span>
+    </span>
+    <br/> <br>
+</div>
+
+___ 
+
+<br>
+
+> `visepoint` is distributed under the `GNU General Public License v3.0` License. See the `LICENSE` file for more information.
