@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "linelog"
+version = "1.0.3"
+description = "Track your total lines of code committed in git, and view the trend over time via a simple TUI graph visualization"
+authors = ["keagud <keagud@protonmail.com>"]
+license = "0BSD"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pygit2 = "^1.11.1"
+argparse = "^1.4.0"
+pyyaml = "^6.0"
+rich = "^13.3.1"
+plotille = "^5.0.0"
+toml = "^0.10.2"
+
+
+[tool.poetry.scripts]
+linelog = 'linelog.console:run'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
