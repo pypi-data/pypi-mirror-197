@@ -1,0 +1,11 @@
+D:\a\ket\ket\src\ket\clib\libs\kbw\target\release\deps\ppv_lite86-8a9d3094df17b983.rmeta: C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\lib.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\soft.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\types.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\x86_64\mod.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\x86_64\sse2.rs
+
+D:\a\ket\ket\src\ket\clib\libs\kbw\target\release\deps\libppv_lite86-8a9d3094df17b983.rlib: C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\lib.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\soft.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\types.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\x86_64\mod.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\x86_64\sse2.rs
+
+D:\a\ket\ket\src\ket\clib\libs\kbw\target\release\deps\ppv_lite86-8a9d3094df17b983.d: C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\lib.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\soft.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\types.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\x86_64\mod.rs C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\x86_64\sse2.rs
+
+C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\lib.rs:
+C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\soft.rs:
+C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\types.rs:
+C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\x86_64\mod.rs:
+C:\Users\runneradmin\.cargo\registry\src\github.com-1ecc6299db9ec823\ppv-lite86-0.2.17\src\x86_64\sse2.rs:
