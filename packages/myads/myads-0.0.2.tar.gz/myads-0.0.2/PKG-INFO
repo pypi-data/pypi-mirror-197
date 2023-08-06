@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: myads
+Version: 0.0.2
+Summary: Simple ADS API query package and citation tracker
+License: BSD 3-Clause License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# myADS
+
+## Installation
+
+### From source
+
+To install from source:
+
+* Clone the repository using ``git clone https://github.com/stuartmcalpine/myADS.git``
+* Navigate to the ``myADS`` folder
+* Install using `pip install .`
+
+## Keep track of your citations
+
+## Simple ADS API query package
