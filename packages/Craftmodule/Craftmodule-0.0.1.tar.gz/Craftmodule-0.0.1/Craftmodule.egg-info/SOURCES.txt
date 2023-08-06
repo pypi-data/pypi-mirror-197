@@ -1,0 +1,8 @@
+setup.py
+CRAFT/__init__.py
+CRAFT/craft_utils.py
+CRAFT/predict.py
+Craftmodule.egg-info/PKG-INFO
+Craftmodule.egg-info/SOURCES.txt
+Craftmodule.egg-info/dependency_links.txt
+Craftmodule.egg-info/top_level.txt
