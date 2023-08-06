@@ -1,0 +1,35 @@
+import json
+
+class BaseAddressDto:
+    lat = None
+    long = None
+    province_name = None
+    province_code = None
+    subdistrict_code = None
+    subdistrict_name = None
+    city_code = None
+    city_name = None
+    postal_code = None
+
+class OriginDto(BaseAddressDto):
+    pass
+
+class DestinationDto(BaseAddressDto):
+    pass
+
+
+class ItemDto:
+    name = None
+    description = None
+    weight = None
+    weight_uom = None
+    qty = 1
+    value = 0
+    width = 0
+    height = 0
+    length = 0
+    is_wood_package = False
+    dimension_uom = None
+
+    def to_json(self):
+        return json.dumps(self.__dict__)
