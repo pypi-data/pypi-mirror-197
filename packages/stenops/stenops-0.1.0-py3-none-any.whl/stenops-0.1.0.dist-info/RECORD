@@ -1,0 +1,10 @@
+stenops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stenops/acrostic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stenops/acrostic/app.py,sha256=mpSjmNhpiaK0GZrCcmJGa4ObT6UoD3NyuMKurVn8tWc,3012
+stenops/acrostic/chains.py,sha256=pAAhfIEeRTcsfu9ukw3aYetVjyLEv2oQI-PrqbMoFtA,3497
+stenops/acrostic/params.py,sha256=mZvrZ38F8tjWISGQAnviMNinEAzrf5Q5LstWEQER1o4,1037
+stenops/acrostic/prompts.py,sha256=zIFg_Lfalqcv3xHuTZ-StUCLmYegrlXnjgm27DJ9R54,7067
+stenops/acrostic/transforms.py,sha256=dcRFtJcaNK252Wgyd54VRwTHLR0TkajwgODL488BwSs,5787
+stenops-0.1.0.dist-info/METADATA,sha256=vsQ5CTXvpjXH0Tal5pCP5IAHaAykqmGE03xjGgbcgQs,788
+stenops-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+stenops-0.1.0.dist-info/RECORD,,
