@@ -1,0 +1,5 @@
+setup.py
+furuyu.egg-info/PKG-INFO
+furuyu.egg-info/SOURCES.txt
+furuyu.egg-info/dependency_links.txt
+furuyu.egg-info/top_level.txt
