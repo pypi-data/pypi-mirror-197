@@ -1,0 +1,2 @@
+[console_scripts]
+regexexercises = regexexercises.pyregex_exercises:main
