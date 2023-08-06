@@ -1,0 +1,7 @@
+django-allauth>=0.52.0
+
+[dev]
+check-manifest
+
+[test]
+coverage

@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+django_allauth_keycloak_ext.egg-info/PKG-INFO
+django_allauth_keycloak_ext.egg-info/SOURCES.txt
+django_allauth_keycloak_ext.egg-info/dependency_links.txt
+django_allauth_keycloak_ext.egg-info/requires.txt
+django_allauth_keycloak_ext.egg-info/top_level.txt
+keycloak_ext/__init__.py
+keycloak_ext/provider.py
+keycloak_ext/tests.py
+keycloak_ext/urls.py
+keycloak_ext/views.py
