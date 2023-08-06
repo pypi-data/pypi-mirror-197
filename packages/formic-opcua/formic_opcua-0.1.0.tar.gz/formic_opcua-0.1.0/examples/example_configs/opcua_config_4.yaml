@@ -1,0 +1,14 @@
+# Copyright Formic Technologies 2023
+server_settings:
+  url: "opc.tcp://localhost:4840/robox/opcua/"
+  uri: "http://robox.com"
+  server_name: robox_opcua
+
+opcua_nodes:
+  robox:
+    critical_system_statuses:
+      other_faults:
+        misc:
+          door_status:
+            initial_value: 0
+            type: UInt32
