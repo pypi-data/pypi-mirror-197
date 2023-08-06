@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: odoo14-addons-oca-vertical-abbey
+Version: 14.0.20230315.0
+Summary: Meta package for oca-vertical-abbey Odoo addons
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 14.0
+Requires-Dist: odoo14-addon-donation-mass
+Requires-Dist: odoo14-addon-donation-stay
+Requires-Dist: odoo14-addon-mass
+Requires-Dist: odoo14-addon-stay
+Requires-Dist: odoo14-addon-stay-report-py3o
+
+UNKNOWN
+
