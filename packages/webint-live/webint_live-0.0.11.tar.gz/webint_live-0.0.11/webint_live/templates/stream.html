@@ -1,0 +1,16 @@
+$def with ()
+$var title: Live Stream
+
+<link href=https://vjs.zencdn.net/5.8.8/video-js.css rel=stylesheet>
+<script src=https://vjs.zencdn.net/5.8.8/video.js></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/3.6.12/videojs-contrib-hls.js></script>
+
+<!-- width=640 height=360 -->
+<video id=video-player width=192 height=108 class="video-js vjs-default-skin" controls>
+<source src=$tx.origin/hls/foo.m3u8 type=application/x-mpegURL>
+</video>
+
+<script>
+player = videojs('video-player')
+player.play()
+</script>
