@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: jcmutils
+Version: 1.0.1
+Summary: A general utils for jcmsuite
+Author: crafter-z
+Author-email: crafterz@163.com
+Keywords: jcmsuite,utils
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
