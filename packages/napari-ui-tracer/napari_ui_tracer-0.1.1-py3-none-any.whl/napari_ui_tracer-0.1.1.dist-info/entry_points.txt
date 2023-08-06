@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-ui-tracer = napari_ui_tracer:napari.yaml
