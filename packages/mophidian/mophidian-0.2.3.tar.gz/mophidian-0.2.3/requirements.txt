@@ -1,0 +1,11 @@
+# First party
+saimll
+tcfg
+watchserver
+
+# Third party
+markdown
+pymdown-extensions
+python-frontmatter
+click
+Pygments
