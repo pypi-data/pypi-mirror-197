@@ -1,0 +1,17 @@
+numpy
+
+[docs]
+sphinx
+sphinx_book_theme
+myst_nb
+
+[lint]
+flake8
+black
+isort
+
+[tests]
+pytest
+pytest-cov
+nbval
+matplotlib
