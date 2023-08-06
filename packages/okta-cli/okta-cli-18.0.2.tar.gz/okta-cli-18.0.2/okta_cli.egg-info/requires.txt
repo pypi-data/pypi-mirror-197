@@ -1,0 +1,15 @@
+appdirs
+click
+requests
+openpyxl
+pony
+pyyaml
+
+[dev]
+bumpversion
+pre-commit
+pytest
+responses
+tox
+twine
+wheel
