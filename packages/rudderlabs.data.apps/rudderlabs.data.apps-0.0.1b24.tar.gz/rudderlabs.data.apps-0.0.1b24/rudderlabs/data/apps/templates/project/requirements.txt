@@ -1,0 +1,10 @@
+rudderlabs.data.apps
+snowflake-sqlalchemy
+boto3==1.24.70
+matplotlib
+seaborn==0.11.2
+xgboost==1.6.2
+hyperopt==0.2.7
+joblib==1.1.0
+scikit-learn==1.0.2
+pycaret==3.0.0rc4
