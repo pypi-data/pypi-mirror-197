@@ -1,0 +1,8 @@
+setup.py
+math_t/__init__.py
+math_t/demo1.py
+math_t/demo2.py
+math_t.egg-info/PKG-INFO
+math_t.egg-info/SOURCES.txt
+math_t.egg-info/dependency_links.txt
+math_t.egg-info/top_level.txt
