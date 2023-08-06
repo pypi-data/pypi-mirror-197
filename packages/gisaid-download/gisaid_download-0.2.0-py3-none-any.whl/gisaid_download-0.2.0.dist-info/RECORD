@@ -1,0 +1,12 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/file_getter.py,sha256=QpkguRyYdTBtY26YW0fpCUfzM9brVZIftE42x8jegIc,915
+example/gisaid_config.ini,sha256=0QVBu-zW_TDIr6NRUyxjtPFLA7JlabysULYOkzG5pFc,2486
+example/test.sh,sha256=OjocoNzS8nC_7Td20PD_5p2kt7GAEuBcksn6KomjKP8,400
+gisaid_download/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gisaid_download/gisaid_download.py,sha256=7ZSeU_aXyg37g1--jEves3K46l8xYjLt6q0Bk92gUDw,31056
+gisaid_download/version.py,sha256=As3DmCztlzGQgLIitK-jH0ljjGOGfy0X1n9pP-6Jhgs,93
+gisaid_download-0.2.0.dist-info/LICENSE,sha256=vKMZMLtbZnV2tUsnh2IBEMPLWWqSJRMloI7RgrmVsWQ,1065
+gisaid_download-0.2.0.dist-info/METADATA,sha256=WbK_TyMQjolpk0KwaPESJQ56aZDKwXm5iTPwvz4NYZw,1048
+gisaid_download-0.2.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+gisaid_download-0.2.0.dist-info/entry_points.txt,sha256=wbOOtCN1oiEdVbj7O3g2By-Ro60MKwOroCwwNLX_VRg,72
+gisaid_download-0.2.0.dist-info/RECORD,,
