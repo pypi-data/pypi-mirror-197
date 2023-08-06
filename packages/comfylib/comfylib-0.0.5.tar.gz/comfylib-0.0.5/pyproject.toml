@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comfylib"
+version = "0.0.5"
+authors = [
+  {name="comfyanonymous"},
+  {name="Alex Dodge", email="alexdodge@gmail.com"},
+]
+description = "Stable Diffusion library, based on the implementation in ComfyUI"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+	"Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+]
+keywords = ["stable diffusion"]
+
+[project.urls]
+"Library Homepage" = "https://github.com/adodge/ComfyLib"
+"Library Bug Tracker" = "https://github.com/adodge/ComfyLib/issues"
+"Original Project Homepage" = "https://github.com/comfyanonymous/ComfyUI"
