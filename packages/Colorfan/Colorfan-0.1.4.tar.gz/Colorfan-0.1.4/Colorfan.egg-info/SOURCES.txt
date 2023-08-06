@@ -1,0 +1,7 @@
+README.md
+colorfan.py
+setup.py
+Colorfan.egg-info/PKG-INFO
+Colorfan.egg-info/SOURCES.txt
+Colorfan.egg-info/dependency_links.txt
+Colorfan.egg-info/top_level.txt
