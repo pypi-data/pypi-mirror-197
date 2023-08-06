@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+./ms_entropy/flash_entropy_search.py
+./ms_entropy/flash_entropy_search_core.py
+./ms_entropy/tools.py
+ms_entropy/tools_cython.c
+ms_entropy.egg-info/PKG-INFO
+ms_entropy.egg-info/SOURCES.txt
+ms_entropy.egg-info/dependency_links.txt
+ms_entropy.egg-info/requires.txt
+ms_entropy.egg-info/top_level.txt
