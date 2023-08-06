@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+pyspa/__init__.py
+pyspa/pyspa.py
+pyspa.egg-info/PKG-INFO
+pyspa.egg-info/SOURCES.txt
+pyspa.egg-info/dependency_links.txt
+pyspa.egg-info/requires.txt
+pyspa.egg-info/top_level.txt
+template_input_files/A_matrix_template.csv
+template_input_files/Infosheet_template.csv
+template_input_files/Thresholds_template.csv
+template_input_files/Thresholds_template_perc.csv
+template_input_files/__init__.py
