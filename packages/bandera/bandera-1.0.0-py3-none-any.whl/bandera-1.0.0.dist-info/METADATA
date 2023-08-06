@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bandera
+Version: 1.0.0
+Summary: Library for interacting with ukrainian Bandera
+Author-email: ftdot <ftdoot@gmail.com>
+Keywords: bandera,ukraine,culture,fun,sounds,images
+Classifier: Development Status :: 1 - Planning
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Ukrainian
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Sociology :: History
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+
+### Bandera - Interact with ukrainian meme culture
+
+This package is reserved and will be developed in future!
+There is have many fun and cool ideas for it.
