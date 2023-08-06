@@ -1,0 +1,13 @@
+itchiodl/__init__.py,sha256=eeYloreN81syVjB-1cM5M6o41PEiYR9TBS2vHPv2eww,193
+itchiodl/bundle.py,sha256=Gl81Emwro_gaKSNJ7cJUqyw0d9HxVVNQ4groEU-cL1E,1412
+itchiodl/bundle_tool/__main__.py,sha256=OPYidwY_sAaNNgiTeKZO420-LTwoLHBYB3YDVkQPC4k,293
+itchiodl/downloader/__main__.py,sha256=x4v20ZZrjFOyZqQG7N-6Sf013VCOJ_Tfz8x8QLrWdVo,1574
+itchiodl/game.py,sha256=A-ip2gmC8NvqrOUr5T68RryDq7HtIDbno85MWoct_oo,6515
+itchiodl/library.py,sha256=-btLwbU4_wk_6_a1rF3CN6PgopOG_Ogo-TiauFdAKiI,3384
+itchiodl/login.py,sha256=LH0Wd3DT058oX-Vuy8JppsXLypFNdU73Jv1Bn9QCldo,1351
+itchiodl/utils.py,sha256=2xNTtM4B4ojJwLodtUp61a8AR-W9fE_wZ1YdlzZA1BI,1400
+itchiodl-2.3.0.dist-info/LICENSE,sha256=gYA8wWH8xCUsvE2vPAnvEFo0ZfPD2CO84dVa-WzYnSs,1074
+itchiodl-2.3.0.dist-info/METADATA,sha256=pOLCISO4xoxxE5uaP6FPyi-qGWzw8xrbVZrcJ65OPnY,2785
+itchiodl-2.3.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+itchiodl-2.3.0.dist-info/entry_points.txt,sha256=KCjO8I2gG2PhakOYety9mPDo37W8fqkdtX0TuhxrhYw,119
+itchiodl-2.3.0.dist-info/RECORD,,
