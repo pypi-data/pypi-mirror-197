@@ -1,0 +1,12 @@
+umarkdown/__init__.py,sha256=YDjZh6WfDGFiFGv659ccHjJjdY38kaujtAnri3RHraE,546
+umarkdown/_internal.c,sha256=g_Oi9t9HQ_AnzSr2ITURRRVOc_WuWgLsBkAIvisjXrc,3609
+umarkdown/_internal.pyd,sha256=3chbtIbgZu4OkJ3I9XygPIT1PHdsu52OL4nKStuP4KE,190976
+umarkdown/_internal.pyi,sha256=ZARBMOYWMrKJxkMUbTM8gYC1TdAiHas06lgC-OJFdL4,327
+umarkdown/cli.py,sha256=GJ4nO5FeaF9RePijCpsT1NYnBdQagYrbZVoVhKIXOxs,2541
+umarkdown/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umarkdown-1.6.dist-info/LICENSE.md,sha256=yVA2Q6R3_TegV7iQv46d1MpCaPTRqt1Xserak7Of9to,1549
+umarkdown-1.6.dist-info/METADATA,sha256=4U6XDeTGoTk6j_sWBnEQG4Js2VbkIMl_j0WmdlLSFIY,3301
+umarkdown-1.6.dist-info/WHEEL,sha256=JjDd0FQBSruYmZy_b8ddnWkQmalS34MTxErrvze-qAs,96
+umarkdown-1.6.dist-info/entry_points.txt,sha256=TcXtVdB_09Lk0cG5EPp7_YzuUBn2IJTDRTf_PXCUx0k,49
+umarkdown-1.6.dist-info/top_level.txt,sha256=mTzOfkL8mIF0RlJclkcVcdrwVO6TDxV3tc7dPKrYYIE,10
+umarkdown-1.6.dist-info/RECORD,,
