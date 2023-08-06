@@ -1,0 +1,6 @@
+.env/*
+*/__pycache__/*
+._*
+models/*/*
+__pycache__
+dist/*
