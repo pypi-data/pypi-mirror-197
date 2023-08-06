@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "tfp-causalimpact"
+version = "0.0.1"
+description = ""
+authors = ["The TFP CausalImpact Authors <no-reply@google.com>"]
+readme = "README.md"
+packages = [{include = "tfp_causalimpact"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
