@@ -1,0 +1,2 @@
+[console_scripts]
+pdstools = pdstools.app.pds_app:main
