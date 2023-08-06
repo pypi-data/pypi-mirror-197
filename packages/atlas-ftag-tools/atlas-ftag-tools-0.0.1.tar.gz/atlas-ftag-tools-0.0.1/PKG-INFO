@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: atlas-ftag-tools
+Version: 0.0.1
+Summary: ATLAS Flavour Tagging Tools
+License: MIT
+Requires-Python: >=3.11
+Provides-Extra: dev
