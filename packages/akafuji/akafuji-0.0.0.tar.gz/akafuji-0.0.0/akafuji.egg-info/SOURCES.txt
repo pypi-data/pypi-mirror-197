@@ -1,0 +1,5 @@
+setup.py
+akafuji.egg-info/PKG-INFO
+akafuji.egg-info/SOURCES.txt
+akafuji.egg-info/dependency_links.txt
+akafuji.egg-info/top_level.txt
