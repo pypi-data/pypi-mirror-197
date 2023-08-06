@@ -1,0 +1,9 @@
+pepperize_cdk_vpc/__init__.py,sha256=F2izkMIxzyl5C2jY8mrbGYGYJUPDfjklPJWo2LTOGbw,22162
+pepperize_cdk_vpc/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pepperize_cdk_vpc/_jsii/__init__.py,sha256=1zvfAowVGaWzwAAZ9w5uQ0M1r36XLNy2jw6uX3eWygw,396
+pepperize_cdk_vpc/_jsii/cdk-vpc@0.0.521.jsii.tgz,sha256=wHUVAOitv0v5gRfRoAar55w36nkdOjoIJ_VfOYRQOe8,25625
+pepperize.cdk_vpc-0.0.521.dist-info/LICENSE,sha256=az47MmrAaaeZIWZVK36UcPYCz0H8mI0DFHdJhzt_Bv4,1078
+pepperize.cdk_vpc-0.0.521.dist-info/METADATA,sha256=StYtuCVdoDQUh-97Eb_OxAFlbQmOAW6hQ5k3kQi5BII,5055
+pepperize.cdk_vpc-0.0.521.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+pepperize.cdk_vpc-0.0.521.dist-info/top_level.txt,sha256=x00NtuaLE0ZKNef9iurazeBCozEVJenpS3NafSJG2Ck,18
+pepperize.cdk_vpc-0.0.521.dist-info/RECORD,,
