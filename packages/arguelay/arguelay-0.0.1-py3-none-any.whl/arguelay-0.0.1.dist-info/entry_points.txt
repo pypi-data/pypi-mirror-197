@@ -1,0 +1,2 @@
+[console_scripts]
+arguelay = arguelay.main:run
