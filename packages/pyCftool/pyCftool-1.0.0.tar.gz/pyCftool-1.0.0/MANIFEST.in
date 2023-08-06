@@ -1,0 +1,3 @@
+include *.ui
+recursive-include pyCftool *.ui
+
