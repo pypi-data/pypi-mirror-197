@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: openghg_defs
+Version: 0.0.1
+Summary: Supplementary definition data for OpenGHG
+Project-URL: Homepage, https://github.com/openghg/supplementary_data
+Project-URL: Bug Tracker, https://github.com/openghg/supplementary_data/issues
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# openghg_metadata
+
+The path to the overall data path and primary definition JSON files are accessible using:
+
+```python
+import openghg_defs
+
+data_path = openghg_defs.data_path
+
+species_info_file = openghg_defs.species_info_file
+site_info_file = openghg_defs.site_info_file
+domain_info_file = openghg_defs.domain_info_file
+```
