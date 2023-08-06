@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mycometo
+Version: 0.0.3
+Summary: A multi-layer IPC framework for Python
+Home-page: https://github.com/alentoghostflame/mycometo
+Author: Alex Schoenhofen
+Author-email: alexanderschoenhofen@gmail.com
+License: MIT
+Keywords: ipc,development
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mycometo
+Multi-layer IPC framework for Python
