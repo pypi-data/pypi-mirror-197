@@ -1,0 +1,10 @@
+shell_craft/__init__.py,sha256=WOq7zQ6XlGQH0tjGamZ9kbEGjiGdrwn3h63lhnUIuV0,1151
+shell_craft/__main__.py,sha256=hu2Xfibd22TvHWYHxE4p3g4q8kNnL1VtPBmyXkmIKS8,1171
+shell_craft/cli.py,sha256=S2ECkH4bsY2z0fhDffoPWBi0JzeX9J_IgTFCvr_LPPk,2065
+shell_craft/service.py,sha256=s-5g-sOMHhf2zjaU0_Qvo3G4EiVe9-xTdt60yAqtz4w,2443
+openai_shell_craft-0.0.3.dist-info/LICENSE,sha256=Gu3VJV8ox0lEDGZuMMHEYPG81OkKYRIqXsZsTafMzMg,1061
+openai_shell_craft-0.0.3.dist-info/METADATA,sha256=ivXbvZRkg_1QQlXjGH0CUUkbJadl6iC4kzIZCMdU9KM,1851
+openai_shell_craft-0.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+openai_shell_craft-0.0.3.dist-info/entry_points.txt,sha256=HNPT77XIoe6QcoWtpZkKD_WhLbnTIER15tVg1NoJDW8,53
+openai_shell_craft-0.0.3.dist-info/top_level.txt,sha256=i8xfg37QQnMxLb0DXAqwaV3m68at79mrcdAeDnWvLmY,12
+openai_shell_craft-0.0.3.dist-info/RECORD,,
