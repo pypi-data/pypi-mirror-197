@@ -1,0 +1,15 @@
+kavk_api/__init__.py,sha256=AY6j4_jUagIIYEUIjhlTvkb13qOlGXoPjtVWW8iDnXo,71
+kavk_api/bot_enums.py,sha256=DboNhdhSvHpFx92wlwFdBdx9UHnk445pauO4ahMG4tM,2328
+kavk_api/bot_longpoll.py,sha256=znnILClpppPGK9hxQXGvhBaZAFCK2I1W3Bcb4iEsiug,2559
+kavk_api/enums.py,sha256=ceErF2A9Io7Znq5i-uCb67VyWycwAXR9uHtJ7tonwr0,10766
+kavk_api/exceptions.py,sha256=_Z-ZPxYCLvQmIVyHyYCF4QPsABwxDt6OEKcwK4hcboI,546
+kavk_api/kavk_api.py,sha256=hP95Jmkwfa3sIAqwvUjeTeIncV-YTZJuMMk-AKvUZDU,4143
+kavk_api/longpoll.py,sha256=B4kTUZLPK0w7Bxa6_FAa09-s8wAZhpHHWQgeYrKzBT0,7918
+kavk_api/types/base.py,sha256=l9OvC2ZjHJa-IUX2dcGCCA_Iwj5I3k0RsUGjmrBDOco,449
+kavk_api/types/methods.py,sha256=sJpWO0Ve1BlLDLtGAyYMyNJNpwGMugvOcOL6JsbYlFs,204688
+kavk_api/types/objects.py,sha256=6_GkaC-Rjj2YTwQ_N_Zj-fYj9E4nESLeWKZPuVmHYRA,118081
+kavk_api/types/responses.py,sha256=6o2ArRMVuO90Ambtydwfx_doeUB81MeEHvFRpzXID7g,31438
+kavk_api-0.9.2.dist-info/LICENSE,sha256=31C5a8whH_97oRU3-tklkrRXr0SwSepv_8E7_V9JZTU,1066
+kavk_api-0.9.2.dist-info/METADATA,sha256=vtNohFy7wZ_Y6K9HKDIo0ddco-rt1wtzHFhKKKtvySU,1314
+kavk_api-0.9.2.dist-info/WHEEL,sha256=UTbu2d3PIo7FtACOQrq825bNtQhldwLx2SG2oh0Fl8Q,88
+kavk_api-0.9.2.dist-info/RECORD,,
