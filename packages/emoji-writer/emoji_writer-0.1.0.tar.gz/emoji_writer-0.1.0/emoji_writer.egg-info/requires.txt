@@ -1,0 +1,2 @@
+click
+emoji==2.2.0
