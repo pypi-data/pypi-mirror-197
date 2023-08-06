@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: iqa-jax
+Version: 0.0.1
+Summary: IQA library for Jax
+Home-page: https://github.com/dslisleedh/IQA-jax
+Author: dslisleedh
+Author-email: dslisleedh@gmail.com
+Project-URL: Bug Tracker, https://github.com/dslisleedh/IQA-jax/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+License-File: LICENSE
+
+# IQA-jax
+Image Quality Assessment library for Jax.  
+Implementations are Jax.numpy ported versions of the original Numpy-based [BasicSR](https://github.com/XPixelGroup/BasicSR).  
+
+## NOTE
+<b>Current implementations have not been tested. There is no guarantee that the outputs will be the same as BasicSR (MATLAB).</b>  
+Functions marked as tested below ensure that the results match the original BasicSR's implementation.  
+Check the test codes under ./tests.  
+
+## Metrics
+ - [X] PSNR
+ - [X] SSIM
+ - [ ] NIQE
+ - [X] FID
+
+## Tests
+ - [X] PSNR
+ - [X] SSIM
+ - [ ] NIQE
+ - [ ] FID
+ - [ ] InceptionV3
+ - [X] Preprocessing(RGB2Y Conversion)
