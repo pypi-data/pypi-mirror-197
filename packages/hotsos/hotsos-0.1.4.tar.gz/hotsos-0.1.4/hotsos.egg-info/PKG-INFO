@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: hotsos
+Version: 0.1.4
+Summary: Software analysis toolkit. Define checks in high-level language and leverage library to perform analysis of common Cloud applications.
+Requires-Python: >=3.8
+License-File: LICENSE
