@@ -1,0 +1,9 @@
+greeting_package/__init__.py,sha256=xUen3BvsqDsiMWHwb2vlpIQLWzVUSIDegCyy8810gUg,32
+greeting_package/greeting.py,sha256=ptwgjAD8h1gz_8pFwuD5OF7GjKfkHKRhYmBDXQNltRc,75
+greeting_package/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+greeting_package/tests/test_greeting.py,sha256=mguYMKCoMGvVcAWQ7M26aMXFbmiJ4va7C4Q_wQpU3Ps,173
+greeting_package-0.1.3.dist-info/LICENSE,sha256=zupfKKrm3N6J6360ucXhoXBN1rTDnoOeGNxBxU_9eOg,1077
+greeting_package-0.1.3.dist-info/METADATA,sha256=SeUMmUVI87P3KqU97olWfp0K4fqoY8wxt_cHDe8V6DA,2137
+greeting_package-0.1.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+greeting_package-0.1.3.dist-info/top_level.txt,sha256=D5_do6RWIjVlYG5mdLZvkYGx3rZHQJCZbANwAtYjygQ,17
+greeting_package-0.1.3.dist-info/RECORD,,
