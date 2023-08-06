@@ -1,0 +1,17 @@
+[console_scripts]
+cat = zcmds_win32.cat:main
+cp = zcmds_win32.cp:main
+du = zcmds_win32.du:main
+fixvmmem = zcmds_win32.fixvmmem:main
+git-bash = zcmds_win32.git_bash:main
+grep = zcmds_win32.grep:main
+home = zcmds_win32.home:main
+ls = zcmds_win32.ls:main
+mv = zcmds_win32.mv:main
+nano = zcmds_win32.nano:main
+open = zcmds_win32.open:main
+pico = zcmds_win32.pico:main
+rm = zcmds_win32.rm:main
+touch = zcmds_win32.touch:main
+unzip = zcmds_win32.unzip:main
+which = zcmds_win32.which:main
