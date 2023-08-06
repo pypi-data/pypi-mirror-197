@@ -1,0 +1,74 @@
+{
+    "CATEGORICAL_ENCODER": [
+        "sklearn.preprocessing.OneHotEncoder"
+    ],
+    "CLASSIFICATION": [
+        "sklearn.discriminant_analysis.LinearDiscriminantAnalysis",
+        "sklearn.discriminant_analysis.QuadraticDiscriminantAnalysis",
+        "sklearn.ensemble.BaggingClassifier",
+        "sklearn.ensemble.ExtraTreesClassifier",
+        "sklearn.ensemble.GradientBoostingClassifier",
+        "sklearn.ensemble.RandomForestClassifier",
+        "sklearn.naive_bayes.BernoulliNB",
+        "sklearn.naive_bayes.GaussianNB",
+        "sklearn.naive_bayes.MultinomialNB",
+        "sklearn.neighbors.KNeighborsClassifier",
+        "sklearn.linear_model.LogisticRegression",
+        "sklearn.linear_model.PassiveAggressiveClassifier",
+        "sklearn.linear_model.SGDClassifier",
+        "sklearn.svm.LinearSVC",
+        "sklearn.svm.SVC",
+        "sklearn.tree.DecisionTreeClassifier"
+    ],
+    "CLUSTERING": [
+        "sklearn.cluster.KMeans",
+        "sklearn.cluster.AgglomerativeClustering"
+    ],
+    "DATETIME_ENCODER": [
+        "sklearn.preprocessing.OrdinalEncoder"
+    ],
+    "FEATURE_SCALING": [
+        "sklearn.preprocessing.MaxAbsScaler",
+        "sklearn.preprocessing.RobustScaler",
+        "sklearn.preprocessing.StandardScaler"
+    ],
+    "FEATURE_SELECTION": [
+        "sklearn.feature_selection.GenericUnivariateSelect",
+        "sklearn.feature_selection.SelectPercentile",
+        "sklearn.feature_selection.SelectKBest"
+    ],
+    "IMPUTATION": [
+        "sklearn.impute.SimpleImputer"
+    ],
+    "REGRESSION": [
+        "sklearn.linear_model.ARDRegression",
+        "sklearn.tree.DecisionTreeRegressor",
+        "sklearn.ensemble.ExtraTreesRegressor",
+        "sklearn.gaussian_process.GaussianProcessRegressor",
+        "sklearn.ensemble.GradientBoostingRegressor",
+        "sklearn.neighbors.KNeighborsRegressor",
+        "sklearn.linear_model.Lars",
+        "sklearn.linear_model.Lasso",
+        "sklearn.linear_model.LassoCV",
+        "sklearn.svm.LinearSVR",
+        "sklearn.linear_model.PassiveAggressiveRegressor",
+        "sklearn.ensemble.RandomForestRegressor",
+        "sklearn.linear_model.Ridge",
+        "sklearn.linear_model.SGDRegressor",
+        "sklearn.svm.SVR",
+        "sklearn.linear_model.BayesianRidge",
+        "sklearn.linear_model.ElasticNet",
+        "sklearn.linear_model.HuberRegressor",
+        "sklearn.linear_model.LinearRegression",
+        "sklearn.linear_model.RANSACRegressor",
+        "sklearn.linear_model.RidgeCV",
+        "sklearn.linear_model.TheilSenRegressor"
+    ],
+    "TEXT_ENCODER": [
+        "sklearn.feature_extraction.text.CountVectorizer",
+        "sklearn.feature_extraction.text.TfidfVectorizer"
+    ],
+    "COLUMN_TRANSFORMER": [
+        "sklearn.compose.ColumnTransformer"
+    ]
+}
