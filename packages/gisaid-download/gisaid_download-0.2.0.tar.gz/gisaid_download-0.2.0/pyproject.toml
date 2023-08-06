@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "gisaid-download"
+version = "0.2.0"
+description = "Assisted download of selected gisaid metadata or EPI_SET creation"
+license = "MIT"
+authors = ["Sam Kunkleman <skunklem@uncc.edu>"]
+maintainers = ["Sam Kunkleman <skunklem@uncc.edu>"]
+readme = "README.md"
+packages = [
+    {include = "gisaid_download"},
+    {include = "example"},
+]
+repository = "https://github.com/enviro-lab/gisaid-download"
+keywords = ["gisaid","download","sequences","select","EPI_SET","epicov"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+hpc-interact = ">=0.1.0"
+pypdf = ">=3.1.0"
+
+[tool.poetry.scripts]
+gisaid_download = 'gisaid_download.gisaid_download:main'
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

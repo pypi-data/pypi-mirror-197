@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: gisaid-download
+Version: 0.2.0
+Summary: Assisted download of selected gisaid metadata or EPI_SET creation
+Home-page: https://github.com/enviro-lab/gisaid-download
+License: MIT
+Keywords: gisaid,download,sequences,select,EPI_SET,epicov
+Author: Sam Kunkleman
+Author-email: skunklem@uncc.edu
+Maintainer: Sam Kunkleman
+Maintainer-email: skunklem@uncc.edu
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: hpc-interact (>=0.1.0)
+Requires-Dist: pypdf (>=3.1.0)
+Project-URL: Repository, https://github.com/enviro-lab/gisaid-download
+Description-Content-Type: text/markdown
+
+# gisaid-download
+Assisted download of selected samples from GISAID or EPI_SET creation.
+
+## Installation
+```console
+pip install gisaid-download
+```
+
+## Usage
+
