@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: ayla
+Version: 1.0.2
+Summary: Some functions used in KuuhakuTeam projects
+Home-page: https://github.com/KuuhakuTeam/Ayla
+Author: fnixdev
+Author-email: luisgatn000@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >3.6, <3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+## Usage
+
+```py
+from ayla import RankCard
+
+rank = RankCard(
+    pfp=pfp,
+    background=bg,
+    nickname=nick,
+    level=level,
+    current_xp=current,
+    xp_max=max_xp,
+    text_color=text_color,
+    bar_color=bar_color
+)
+
+image = rank.card1()
+```
+<br>
+
+## Functions
+
+- RankCard
+- ScrobbleCard (soon)
+
