@@ -1,0 +1,27 @@
+/**
+ * File              : {{ tmpl.name }}.sv
+ * License           : MIT license <Check LICENSE>
+ * Author            : IPSoCGen
+ * Date              : {{ tmpl.date }}
+ * Description       : {{ tmpl.desc }}
+ * --------------------------------------------
+ * ---- Do not edit, design auto-generated ----
+ * --------------------------------------------
+ **/
+{{ tmpl.defines }}
+module {{ tmpl.name }}
+  {%- if tmpl.type == 'mpsoc' %}
+  import amba_axi_pkg::*;
+  import ravenoc_pkg::*;
+  {%- endif %}
+(
+  {% for io in tmpl.io_list -%}
+  {% if loop.last%}
+  {{- io -}}
+  {% else %}
+  {{- io }},
+  {% endif %}
+  {%- endfor %}
+);
+
+
