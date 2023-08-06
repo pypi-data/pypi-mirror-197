@@ -1,0 +1,12 @@
+edlib
+mappy
+matplotlib
+more-itertools
+natsort
+numpy
+pandas
+parasail
+pod5
+pyfastx>=0.9.0
+pysam
+tqdm
