@@ -1,0 +1,76 @@
+[CONFIGS]
+  # OS architecture by default.
+  OS_ARCH = "x86_64"
+  # Tmp path for slpkg.
+  TMP_SLPKG = "/tmp/slpkg/"
+  # Path for building source and the script.
+  BUILD_PATH = "/tmp/slpkg/build/"
+  # The name of the database. Default name is 'database.slpkg'.
+  DATABASE_NAME = "database.slpkg"
+  # Where the packages download.
+  # This path working only with the command download.
+  DOWNLOAD_ONLY_PATH = "/tmp/slpkg/"
+  # File suffix for list packages.
+  FILE_LIST_SUFFIX = ".pkgs"
+  # Configs for displaying colorful menu. Default is true. [true/false].
+  COLORS = true
+  # Dialog is a program that will let you present a variety of questions or
+  # display messages using dialog boxes from a shell script.
+  # Default is true. [true/false].
+  DIALOG = true
+  # If silent mode is true, it does not print the commands as they are executed.
+  # Default is true. [true/false].
+  SILENT_MODE = true
+  # Choose ascii printable characters.
+  # If true, it uses the extended characters, otherwise the basic ones.
+  # Default is true. [true/false].
+  ASCII_CHARACTERS = true
+  # Set false to all the questions. If set false option --yes will not work.
+  # Default is true. [true/false].
+  ASK_QUESTION = true
+  # Download parallel multi-sources. Default is false. [true/false].
+  PARALLEL_DOWNLOADS = false
+  # Pass your file pattern here, instead, you can use '--file-pattern=' option.
+  FILE_PATTERN = ""
+
+  # SLACKBUILDS.ORG REPOSITORY CONFIGS.
+  SBO_REPO_PATH = "/var/lib/slpkg/repositories/sbo/"
+  SBO_REPO_URL = "https://slackbuilds.org/slackbuilds/15.0/"
+  SBO_TXT = "SLACKBUILDS.TXT"
+  SBO_CHGLOG_TXT = "ChangeLog.txt"
+  SBO_TAR_SUFFIX = ".tar.gz"
+  SBO_REPO_TAG = "_SBo"
+
+  # PONCE REPOSITORY CONFIGS.
+  # Set the 'PONCE_REPO = true' to switch with the ponce repository and
+  # run 'slpkg update' to update the database.
+  # Default is false. [true/false].
+  PONCE_REPO = false
+  PONCE_REPO_PATH = "/var/lib/slpkg/repositories/ponce/"
+  PONCE_REPO_URL = "https://cgit.ponce.cc/slackbuilds/plain/"
+  PONCE_TXT = "SLACKBUILDS.TXT"
+  PONCE_CHGLOG_TXT = "ChangeLog.txt"
+  PONCE_REPO_TAG = "_SBo"
+
+  # Slackware command for install packages, instead, you can use 'installpkg'.
+  INSTALLPKG = "upgradepkg --install-new"
+  # Slackware command to reinstall packages.
+  REINSTALL = "upgradepkg --reinstall"
+  # Slackware command to remove packages.
+  REMOVEPKG = "removepkg"
+
+  # You can choose a downloader among wget, curl lftp.
+  # Default is wget. [wget/curl/lftp].
+  DOWNLOADER = "wget"
+  # Wget downloader options.
+  # -c, --continue: resume getting a partially-downloaded file.
+  # -N, --timestamping: don't re-retrieve files unless newer.
+  # -q, Turn off Wget's output.
+  # --show-progress, Force wget to display the progress bar in any verbosity.
+  WGET_OPTIONS = "-c -N -q --progress=bar:force:noscroll --show-progress"
+  # Curl downloader options.
+  CURL_OPTIONS = ""
+  # Lftp donwloader options.
+  LFTP_GET_OPTIONS = "-c get -e"
+  # Lftp mirror options are used to synchronize with the ponce repository.
+  LFTP_MIRROR_OPTIONS = "-c mirror --parallel=100 --only-newer"
