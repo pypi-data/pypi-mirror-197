@@ -1,0 +1,13 @@
+chatgpt/VERSION,sha256=VYa6smQV_hWo1aznerkyNY0_8K9ii4rK8yZBUpODiqY,5
+chatgpt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt/main.py,sha256=QGe88kgXIheY5Y5ND-NBijW9y1Yq87ujQOhSK2sSuZM,2096
+chatgpt/requirements.txt,sha256=QoNROtx7Rp3zwT-pNwZDYD4eNYqiWQ3rJ3UdRbK22V0,14
+chatgpt/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chatgpt/core/gpt_35_turbo.py,sha256=w8xZAelV6r7ZcOizUCgxxCDJLRwXNGO5l244_SfcdJg,3598
+chatgpt/core/text_davinci_003.py,sha256=Kc5mYEUYO0RIWwT3CGWfLTawiKOiZQeb03fow6zZ5Ms,2364
+asst-2.0.6.dist-info/LICENSE,sha256=_cdFfDpRnQl1R9CXRANvPdw97I6Jof2ir-eVf7XT1_M,1102
+asst-2.0.6.dist-info/METADATA,sha256=2D6mP_zhk0C9fZjXpgqUCY5esV5N1GC6YxWfSgoeCHg,2073
+asst-2.0.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+asst-2.0.6.dist-info/entry_points.txt,sha256=V2aeIaUA2oo2z2aV-Lc4lHgtF1upg85jIlgJf0Au1mk,43
+asst-2.0.6.dist-info/top_level.txt,sha256=ogfFw9mYdqL6TZsrlfGumrd61piUQvJzgEobqC7_tio,8
+asst-2.0.6.dist-info/RECORD,,

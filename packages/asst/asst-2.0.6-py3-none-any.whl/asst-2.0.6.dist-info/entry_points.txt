@@ -1,0 +1,2 @@
+[console_scripts]
+asst = chatgpt.main:main
