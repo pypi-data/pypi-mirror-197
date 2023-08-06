@@ -1,0 +1,16 @@
+app:
+  device_id: null
+  errors:
+  - resourceId: com.qizhidao.clientapp:id/bottom_btn
+  pkg_name: null
+common:
+  base_url: null
+  common: screenshot
+  env: null
+  login: {}
+  platform: null
+  screenshot: false
+  timeout: null
+  visit: {}
+web:
+  browser: null
