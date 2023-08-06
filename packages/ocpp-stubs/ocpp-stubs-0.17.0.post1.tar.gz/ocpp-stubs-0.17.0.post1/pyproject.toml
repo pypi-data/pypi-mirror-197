@@ -1,0 +1,25 @@
+[project]
+name = "ocpp-stubs"
+version = "0.17.0-1"
+authors = [ { name = "Hugo O. Rivera", email = "hugo.rivera@powerflex.com" } ]
+readme = "README.md"
+# PEP 561 requires these
+dependencies = [
+    "ocpp>=0.17,<0.18",
+    'typing_extensions; python_version<"3.10"',
+]
+
+classifiers = [
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.7'
+]
+
+[project.urls]
+repository = "https://github.com/edf-re/ocpp-stubs"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"

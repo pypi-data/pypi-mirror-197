@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ocpp-stubs
+Version: 0.17.0.post1
+Author-email: "Hugo O. Rivera" <hugo.rivera@powerflex.com>
+Project-URL: repository, https://github.com/edf-re/ocpp-stubs
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# Stub package for OCPP
+
+This is a PEP-561 compliant stub package for the [Python OCPP library](https://pypi.org/project/ocpp/).
+# License
+
+Any original work within is licensed under the [CC0](https://wiki.creativecommons.org/wiki/CC0).
+
+This repo was forked from [a sample repo](https://github.com/ethanhs/stub-package) found via the official [description of PEP-561](https://peps.python.org/pep-0561/).
