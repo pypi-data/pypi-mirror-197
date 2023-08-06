@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+torchmsat/__init__.py
+torchmsat/py.typed
+torchmsat/version.py
+torchmsat.egg-info/PKG-INFO
+torchmsat.egg-info/SOURCES.txt
+torchmsat.egg-info/dependency_links.txt
+torchmsat.egg-info/requires.txt
+torchmsat.egg-info/top_level.txt

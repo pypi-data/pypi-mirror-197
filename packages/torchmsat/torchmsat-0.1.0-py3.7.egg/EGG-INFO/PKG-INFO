@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: torchmsat
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/scale-lab/torchmsat
+Author: Abdelrahman Hosny
+Author-email: abdelrahman_hosny@brown.edu
+License: Apache
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# torchmsat
+
+`pip install torchmsat`
+
