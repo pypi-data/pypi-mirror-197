@@ -1,0 +1,16 @@
+LICENSE.md
+README.md
+setup.py
+src/django_app_tree/__init__.py
+src/django_app_tree/__main__.py
+src/django_app_tree/something.py
+src/django_app_tree.egg-info/PKG-INFO
+src/django_app_tree.egg-info/SOURCES.txt
+src/django_app_tree.egg-info/dependency_links.txt
+src/django_app_tree.egg-info/entry_points.txt
+src/django_app_tree.egg-info/not-zip-safe
+src/django_app_tree.egg-info/requires.txt
+src/django_app_tree.egg-info/top_level.txt
+src/django_app_tree/management/commands/dependency_tree.py
+src/django_app_tree/management/commands/pip_for_apps.py
+src/django_app_tree/management/commands/template_graph.py
