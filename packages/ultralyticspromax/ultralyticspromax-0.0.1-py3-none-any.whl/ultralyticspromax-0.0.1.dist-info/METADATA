@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ultralyticspromax
+Version: 0.0.1
+Author: Ayush
+Author-email: ayush.chaurarsia@gmail.com
+License: GPL-3.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: img2vec-pytorch
+Requires-Dist: faiss-cpu
+Requires-Dist: scikit-learn
+
