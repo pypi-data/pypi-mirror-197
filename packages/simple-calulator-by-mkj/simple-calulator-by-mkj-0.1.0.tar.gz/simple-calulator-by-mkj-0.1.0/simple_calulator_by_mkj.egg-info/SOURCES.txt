@@ -1,0 +1,8 @@
+README.md
+setup.py
+simple-calulator-by-mkj/__init__.py
+simple-calulator-by-mkj/catculator.py
+simple_calulator_by_mkj.egg-info/PKG-INFO
+simple_calulator_by_mkj.egg-info/SOURCES.txt
+simple_calulator_by_mkj.egg-info/dependency_links.txt
+simple_calulator_by_mkj.egg-info/top_level.txt
