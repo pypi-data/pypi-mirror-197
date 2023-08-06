@@ -1,0 +1,145 @@
+from dataclasses import dataclass, field
+from datetime import datetime
+from typing import Iterator, List, Optional, Union
+
+from isar.apis.models.models import StartMissionResponse, TaskResponse
+from isar.config.settings import settings
+from isar.models.mission_metadata.mission_metadata import MissionMetadata
+from isar.services.utilities.uuid_string_factory import uuid4_string
+from robot_interface.models.mission import (
+    STEPS,
+    InspectionStep,
+    MotionStep,
+    Step,
+    StepStatus,
+)
+from robot_interface.models.mission.step import DriveToPose
+
+from .status import MissionStatus, TaskStatus
+
+
+@dataclass
+class Task:
+    steps: List[STEPS]
+    status: TaskStatus = field(default=TaskStatus.NotStarted, init=False)
+    tag_id: Optional[str] = field(default=None)
+    id: str = field(default_factory=uuid4_string, init=True)
+    _iterator: Iterator = None
+
+    def next_step(self) -> Step:
+        step: Step = next(self._iterator)
+        while step.status != StepStatus.NotStarted:
+            step = next(self._iterator)
+        return step
+
+    def is_finished(self) -> bool:
+        for step in self.steps:
+            if step.status is StepStatus.Failed and isinstance(step, MotionStep):
+                # One motion step has failed meaning the task as a whole should be
+                # considered as failed
+                return True
+
+            elif (step.status is StepStatus.Failed) and isinstance(
+                step, InspectionStep
+            ):
+                # It should be possible to perform several inspections per task. If
+                # one out of many inspections fail the task is considered as
+                # partially successful.
+                continue
+
+            elif step.status is StepStatus.Successful:
+                # The task is complete once all steps are completed
+                continue
+            else:
+                # Not all steps have been completed yet
+                return False
+
+        return True
+
+    def update_task_status(self) -> None:
+        for step in self.steps:
+            if step.status is StepStatus.Failed and isinstance(step, MotionStep):
+                self.status = TaskStatus.Failed
+                return
+
+            elif (step.status is StepStatus.Failed) and isinstance(
+                step, InspectionStep
+            ):
+                self.status = TaskStatus.PartiallySuccessful
+                continue
+
+            elif step.status is StepStatus.Successful:
+                continue
+
+        if self.status is not TaskStatus.PartiallySuccessful:
+            self.status = TaskStatus.Successful
+
+        elif self._all_inspection_steps_failed():
+            self.status = TaskStatus.Failed
+
+    def reset_task(self):
+        for step in self.steps:
+            if isinstance(step, DriveToPose):
+                step.status = StepStatus.NotStarted
+            elif (
+                isinstance(step, InspectionStep)
+                and step.status == StepStatus.InProgress
+            ):
+                step.status = StepStatus.NotStarted
+        self._iterator = iter(self.steps)
+
+    def _all_inspection_steps_failed(self) -> bool:
+        for step in self.steps:
+            if isinstance(step, MotionStep):
+                continue
+            elif step.status is not StepStatus.Failed:
+                return False
+
+        return True
+
+    def __post_init__(self) -> None:
+        if self._iterator is None:
+            self._iterator = iter(self.steps)
+
+    def api_response(self) -> TaskResponse:
+        return TaskResponse(
+            id=self.id,
+            tag_id=self.tag_id,
+            steps=list(
+                map(lambda x: {"id": x.id, "type": x.__class__.__name__}, self.steps)
+            ),
+        )
+
+
+@dataclass
+class Mission:
+    tasks: List[Task]
+    id: str = field(default_factory=uuid4_string, init=True)
+    status: MissionStatus = MissionStatus.NotStarted
+    metadata: MissionMetadata = None
+
+    def set_unique_id_and_metadata(self) -> None:
+        self._set_unique_id()
+        self.metadata = MissionMetadata(mission_id=self.id)
+
+    def _set_unique_id(self) -> None:
+        plant_short_name: str = settings.PLANT_SHORT_NAME
+        robot_name: str = settings.ROBOT_NAME
+        now: datetime = datetime.utcnow()
+        self.id = (
+            f"{plant_short_name.upper()}{robot_name.upper()}"
+            f"{now.strftime('%d%m%Y%H%M%S%f')[:-3]}"
+        )
+
+    def __post_init__(self) -> None:
+        if self.id is None:
+            self._set_unique_id()
+
+        if self.metadata is None:
+            self.metadata = MissionMetadata(mission_id=self.id)
+
+    def api_response(self) -> StartMissionResponse:
+        return StartMissionResponse(
+            id=self.id,
+            tasks=[task.api_response() for task in self.tasks],
+        )
