@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-vemseg = napari_vemseg:napari.yaml
