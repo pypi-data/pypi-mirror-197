@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: usr-agent-rnd-rs
+Version: 0.0.5
+Summary: A simple user agent random
+Author-email: Rosario Sensale <pcassistenzatecnica@gmail.com>
+Project-URL: Homepage, https://pypi.org/user/AloneInTheDark/
+Project-URL: Bug Tracker, https://pypi.org/user/AloneInTheDark/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+A simple user agent random. 
+
+### Usage
+
+``` python
+import usr_agent_rnd_rs import useragent
+
+
+s = requests.Session()
+print(s.headers['User-Agent'])
+
+# Without a session
+resp = requests.get('https://httpbin.org/user-agent')
+print(resp.json()['user-agent'])
+```
+
