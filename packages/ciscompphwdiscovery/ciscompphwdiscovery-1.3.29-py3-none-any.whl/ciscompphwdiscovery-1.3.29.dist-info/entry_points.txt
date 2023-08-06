@@ -1,0 +1,3 @@
+[console_scripts]
+ciscompphwdiscovery=ciscompphwdiscovery.__main__:main
+
