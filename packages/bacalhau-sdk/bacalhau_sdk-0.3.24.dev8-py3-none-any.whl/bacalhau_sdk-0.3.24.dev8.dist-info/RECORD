@@ -1,0 +1,7 @@
+bacalhau_sdk/__init__.py,sha256=62ygHikCf_k0M7XTeeGYd0JnYezUwfFOxAXKe5KXLZk,133
+bacalhau_sdk/api.py,sha256=t9LHNxivSiu16viZ5xEZWdJS0LoY3seSS3qnowFVSIo,3031
+bacalhau_sdk/config.py,sha256=Qw87cdmn5kbItnjmsu-Q58wtSPTdEvxA9D3R_xIAxcY,5375
+bacalhau_sdk-0.3.24.dev8.dist-info/LICENSE,sha256=QFchhCg0ioWaGFxByqQpop3NlqE3tWmSPRRlYHew8H0,10247
+bacalhau_sdk-0.3.24.dev8.dist-info/METADATA,sha256=BEmDPuJO8KRcIcFhEwbD06ZS7ad3DCcEni28LshGC_o,9261
+bacalhau_sdk-0.3.24.dev8.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+bacalhau_sdk-0.3.24.dev8.dist-info/RECORD,,
