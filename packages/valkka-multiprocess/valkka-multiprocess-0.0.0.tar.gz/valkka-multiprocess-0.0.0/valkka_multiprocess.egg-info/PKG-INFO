@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: valkka-multiprocess
+Version: 0.0.0
+Summary: Valkka multiprocessing classes as separate package
+Home-page: https://elsampsa.github.io/valkka-multiprocess/
+Author: Sampsa Riikonen
+Author-email: sampsa.riikonen@iki.fi
+License: MIT
+Description: 
+            Valkka multiprocessing classes as separate package
+            
+Keywords: valkka multiprocessing
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/plain
