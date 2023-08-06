@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/armone/__init__.py
+src/armone/armone.py
+src/armone/cleaner.py
+src/armone/encoder.py
+src/armone/renamer.py
+src/armone.egg-info/PKG-INFO
+src/armone.egg-info/SOURCES.txt
+src/armone.egg-info/dependency_links.txt
+src/armone.egg-info/entry_points.txt
+src/armone.egg-info/top_level.txt

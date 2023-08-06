@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "armone"
+version = "0.0.4"
+authors = [
+  { name="Kanav Bhasin", email="kanbhasin@gmail.com" },
+]
+description = "A powerful command line tool to obfuscate python scripts effectively!"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+armone = "armone.armone:main"
+
+[project.urls]
+"Homepage" = "https://github.com/nixdonut/armone"
+"Bug Tracker" = "https://github.com/nixdonut/armone/issues"

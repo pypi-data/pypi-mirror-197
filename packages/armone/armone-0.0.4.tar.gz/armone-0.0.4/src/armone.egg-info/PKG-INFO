@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: armone
+Version: 0.0.4
+Summary: A powerful command line tool to obfuscate python scripts effectively!
+Author-email: Kanav Bhasin <kanbhasin@gmail.com>
+Project-URL: Homepage, https://github.com/nixdonut/armone
+Project-URL: Bug Tracker, https://github.com/nixdonut/armone/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Armone
+
+A powerful command-line tool to obfuscate python scripts effectively!
+
+## Installation
+```sh
+pip install armone pipx
+pipx ensurepath
+pipx install armone
+```
+## Usage
+Obfuscate `my_code.py` and generate a new file `obfuscated.py` in the cwd:
+```sh
+armone my_code.py
+```
+Specify the output file:
+```sh
+armone my_code.py -o obfuscated.py
+```
+## Features
+* Removes all comments and docstrings
+* Renames all the functions, classes, and variables
+* Inflates code by inserting junk code [IN PROGRESS]
+* Messes up the formatting and adds confusing comments [IN PROGRESS]
+* Puts the code through up to 32 layers of encoding ranging from base 1 to base 90
+* Uses zlib and LZMA for further obfuscation and to reduce file size [IN PROGRESS]
