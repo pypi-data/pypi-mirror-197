@@ -1,0 +1,7 @@
+{{ step.render_prompt() }}
+{% if step.output and step.output.value %}
+Observation: {{ step.output.value }}
+{% endif %}
+{% if step.is_exiting %}
+Output:
+{% endif %}
