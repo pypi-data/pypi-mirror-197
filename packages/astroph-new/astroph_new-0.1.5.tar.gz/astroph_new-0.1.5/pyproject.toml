@@ -1,0 +1,23 @@
+[project]
+name = "astroph_new"
+description = "python functions to search and report new submissions in astro-ph based on user interests"
+version = "0.1.5"
+authors = [{ name = "Shinyoung Kim", email = "radioshiny@gmail.com" }]
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+    "bs4", "markdown", "numpy", "selenium", "whoswho"
+]
+
+[project.urls]
+Documentation = "https://astroph-new.readthedocs.io"
+Source = "https://github.com/radioshiny/astroph_new"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
