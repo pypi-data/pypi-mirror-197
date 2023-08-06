@@ -1,0 +1,5 @@
+setup.py
+tempt.egg-info/PKG-INFO
+tempt.egg-info/SOURCES.txt
+tempt.egg-info/dependency_links.txt
+tempt.egg-info/top_level.txt

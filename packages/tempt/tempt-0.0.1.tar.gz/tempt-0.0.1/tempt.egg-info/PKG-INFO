@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: tempt
+Version: 0.0.1
+Summary: tempt is a flexible and powerful Python template engine for dynamic substitution of values in templates.
+Author: Dekel Cohen
+Author-email: <dcohen52@gmail.com>
+Keywords: python,template engine,templating,web development,template,dynamic templates,template inheritance,control structures,filters,reusability
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+
+tempt is a flexible and powerful Python template engine designed to make it 
+easy to substitute placeholders in templates with actual values. 
+
+### Supported features:
+* template inheritance. 
+* control structures. 
+* filters
+
+With a simple syntax, tempt makes it easy to create dynamic and customizable templates for web applications. The 
+engine is safe to use and undergoes ongoing development to meet our needs as web developers.
+
+For more information and examples, check out tempt's documentation ( coming soon) and Github 
+repository at https://github.com/Dcohen52/tempt.
