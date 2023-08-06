@@ -1,0 +1,8 @@
+psqlpandas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+psqlpandas/__version__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+psqlpandas/postgresql.py,sha256=WTCAD2TFv2Vi7fBBWJmYFdd64bnzkxDOdkN0wE5VukQ,8037
+psqlpandas/scripts/script.py,sha256=zHB0eYawNCB7jQ0iaJ1xSOpJ-SdzwqgyWo7E3cBh5Ic,88
+psqlpandas-0.0.1.dist-info/LICENSE,sha256=1Hs3vxoPxJkQ848uvNK1mBdWoBDUCyNW0DzgTux4Vds,900
+psqlpandas-0.0.1.dist-info/METADATA,sha256=4hbE6W3dHbBvmQW1hjCY82xlYu2UQzSxeUOYBfl3udE,964
+psqlpandas-0.0.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+psqlpandas-0.0.1.dist-info/RECORD,,
