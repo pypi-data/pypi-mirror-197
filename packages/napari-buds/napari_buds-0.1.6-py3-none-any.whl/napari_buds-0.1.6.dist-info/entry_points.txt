@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-buds = napari_buds:napari.yaml

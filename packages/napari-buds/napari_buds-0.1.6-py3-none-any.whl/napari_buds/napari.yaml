@@ -1,0 +1,45 @@
+name: napari-buds
+display_name: napari BudAnnotation
+contributions:
+  commands:
+    - id: napari-buds.get_reader
+      python_name: napari_buds._reader:napari_get_reader
+      title: Open data with napari BudAnnotation
+    - id: napari-buds.write_multiple
+      python_name: napari_buds._writer:write_multiple
+      title: Save multi-layer data with napari BudAnnotation
+    - id: napari-buds.write_single_image
+      python_name: napari_buds._writer:write_single_image
+      title: Save image data with napari BudAnnotation
+    - id: napari-buds.make_sample_data
+      python_name: napari_buds._sample_data:make_sample_data
+      title: Load sample data from napari BudAnnotation
+    - id: napari-buds.translate
+      python_name: napari_buds._translate:translate
+      title: translate image layer
+    - id: napari-buds.testing
+      python_name: napari_buds._widget:Main
+      title: Napari bud annotation
+    - id: napari-buds.redecorated
+      python_name: napari_buds._widget_overview:UIWidget
+      title: Napari bud annotation redecorated
+  readers:
+    - command: napari-buds.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.npy']
+  writers:
+    - command: napari-buds.write_multiple
+      layer_types: ['image*','labels*']
+      filename_extensions: []
+    - command: napari-buds.write_single_image
+      layer_types: ['image']
+      filename_extensions: ['.npy']
+  sample_data:
+    - command: napari-buds.make_sample_data
+      display_name: napari BudAnnotation
+      key: unique_id.1
+  widgets:
+    - command: napari-buds.translate
+      display_name: Translate image layers (controls ASWD, T = register)
+    - command: napari-buds.redecorated
+      display_name: bud annotation                                       
