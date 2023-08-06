@@ -1,0 +1,80 @@
+metadata:
+  name: HostSummary
+  description: Host summary
+  default_options:
+    - summary: Get a Summary of the host.
+    - heartbeat: Query Heartbeat table for host information.
+    - azure_net: '
+        Query AzureNetworkAnalytics table for host
+        network topology information.'
+    - alerts: Query any alerts for the host.
+    - bookmarks: Query any bookmarks for the host.
+    - azure_api: Query Azure API for VM information.
+    - scheduled_tasks: Get details of scheduled tasks on a host.
+    - account_actions: Get account related events for the host.
+    - notable_events: Get key events from the host.
+    - processes: Get process execution events from the host.
+  other_options:
+    - process_ti: Lookup process command line events in TI.
+  keywords:
+    - host
+    - computer
+    - heartbeat
+    - windows
+    - linux
+  entity_types:
+    - host
+  req_providers:
+    - LogAnalytics|LocalData
+    - azuredata
+output:
+  run:
+    title: Host Entity Summary
+    hd_level: 1
+    text:
+      This shows a summary data for a host.
+      It shows host properties obtained from OMS Heartbeat and Azure API.
+
+      It also lists Azure Sentinel alerts and bookmakrs related to to
+      the host.
+
+      Data and plots are stored in the result class returned by this function.
+  show_host_entity:
+    title: Host Entity details
+    text:
+      These are the host entity details gathered from Heartbeat
+      and, if applicable, AzureNetworkAnalytics and Azure management
+      API.
+
+      The data shows OS information, IP Addresses assigned the
+      host and any Azure VM information available.
+    md: True
+  show_alert_timeline:
+    title: Timeline of related alerts
+    text:
+      Each marker on the timeline indicates one or more alerts related to the
+      host.
+  show_bookmarks:
+    title: Related Bookmarks
+    text:
+      Bookmarks related to the host.
+  show_scheduled_tasks:
+    title: Scheduled Tasks
+    text:
+      These are the scheduled tasks observed being created and run on the host.
+  show_account_actions:
+    title: Account Actions
+    text:
+      These are actions observed on the host where accounts have been created or modified.
+  show_notable_events:
+    title: Noteable Host Events
+    text:
+      These are noteable events on the host, either in the type of event or severity.
+  show_process_ti:
+    title: Process Threat Intelligence
+    text:
+      This shows Threat Intelligence results from indicators present in Command Line activty on the host.
+  show_processes:
+    title: Host Processes
+    text:
+      Process execution events from the host.
