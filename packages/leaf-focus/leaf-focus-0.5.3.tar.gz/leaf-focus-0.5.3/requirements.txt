@@ -1,0 +1,12 @@
+# ocr
+keras-ocr~=0.9;python_version<"3.10"
+tensorflow~=2.10;python_version<"3.10"
+numpy~=1.24
+matplotlib~=3.7
+
+# xml
+defusedxml~=0.7
+
+# compatibility
+importlib_resources~=5.12
+importlib_metadata~=6.0
