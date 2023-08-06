@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "mkdocs_image_captions"
+version = "0.1.0"
+description = "MkDocs plugin that added captions to images by converting markdown encoded images into <figure> elements."
+authors = ["Andrii Babenko"]
+license = "MIT"
+readme = "README.md"
+homepage = ""
+repository = ""
+keywords = ["mkdocs"]
+classifiers=[
+    'Intended Audience :: Developers',
+    'Intended Audience :: Information Technology',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.7'
+]
+packages = [{include = "mkdocs_image_captions"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+mkdocs = "1.4.2"
+
+[tool.poetry.scripts]
+mkdocs_image_captions = 'mkdocs_image_captions.plugin:ImageCaptionsPlugin'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
