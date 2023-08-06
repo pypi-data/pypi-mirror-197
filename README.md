@@ -3,36 +3,10 @@
 This repo contains 40000 packages uploaded to PyPI between 
 2023-03-13 14:07 and 2023-03-18 05:40.
 
-The repo is 39% (15992/40000) complete.
+The repo is 44% (17991/40000) complete.
 
-## Packages:
+Package contents can be found [in the code branch](https://github.com/pypi-data/pypi-mirror-197/tree/code/packages).
 
-| Name  | Count |
-| ----- | ----- |
-| pydantic-core | 395 |
-| hacktools | 312 |
-| netbox-storage | 288 |
-| kolo | 171 |
-| light-curve | 163 |
-| orso | 130 |
-| LCSFinder | 114 |
-| vplanet | 107 |
-| chiapos | 100 |
-| certora-cli-alpha-master | 98 |
-| ujrpc | 92 |
-| jijmodeling | 90 |
-| geventhttpclient | 90 |
-| simplejson | 85 |
-| py-slvs | 84 |
-| gencodegenes | 79 |
-| simplepyble | 78 |
-| pytket | 71 |
-| regress | 69 |
-| ddtrace | 69 |
-| simple-manylinux-demo | 68 |
-| pygame | 68 |
-| openjij | 68 |
-| jij-cimod | 68 |
-| globsters | 66 |
+A browsable package list for all repositories [all packages here](https://pypi-data.github.io/website/repositories/pypi-mirror-197).
 
 
