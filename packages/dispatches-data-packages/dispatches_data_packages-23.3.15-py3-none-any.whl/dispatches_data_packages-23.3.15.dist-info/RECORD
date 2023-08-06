@@ -1,0 +1,12 @@
+dispatches_data/api/__init__.py,sha256=vUEXTOROlfGGOmPBYy782h8kFu0FmoskZ_YHKVuUNH4,6444
+dispatches_data/packages/_for_api_testing/README.md,sha256=fHJXntPlPHVdJyNCivahcXAByKeR7eePeuV_qU7unCE,41
+dispatches_data/packages/_for_api_testing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dispatches_data/packages/_for_api_testing/data.jsonl,sha256=63-3opOvyVCE1-EWkLKXGcFz3rvDIkbKT20gfkkSPJ0,30
+dispatches_data/testing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dispatches_data/testing/plugins.py,sha256=RlaMbJZxIYstqNqtWBTCXcsdC5nqG0MYaUoZiR6Ow2E,2739
+dispatches_data_packages-23.3.15.dist-info/LICENSE.md,sha256=_G1Pnj7TMUzV_CvOtAZE2QRsjACUjj1uh-aqjScKAOo,2914
+dispatches_data_packages-23.3.15.dist-info/METADATA,sha256=2k4jOEF49DWuHpIW9lnoLpCjSSVL9m1gIBBB1PLz-wM,5281
+dispatches_data_packages-23.3.15.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dispatches_data_packages-23.3.15.dist-info/entry_points.txt,sha256=xZNsxh_t_khZCsLvHNI0W3jcbEtlGmyY7xKxBj_DrXk,66
+dispatches_data_packages-23.3.15.dist-info/top_level.txt,sha256=gqVf28ohryhDpMVNpL9lcRTKJ1HpMyrwh6X_YCpBQCQ,16
+dispatches_data_packages-23.3.15.dist-info/RECORD,,

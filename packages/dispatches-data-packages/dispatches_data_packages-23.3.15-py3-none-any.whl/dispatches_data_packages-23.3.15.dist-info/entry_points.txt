@@ -1,0 +1,2 @@
+[pytest11]
+data_packages = dispatches_data.testing.plugins:plugin
