@@ -1,0 +1,3 @@
+Correct how coordinate transformations are applied in the inverse telescope model. The default Mueller Matrix will now
+place data into the same coordinate frame used by SDO and HINODE (that is, with North/South oriented along the axis of *solar rotation*).
+It will also apply a sign flip to U and V. All of these options can still be turned off if desired.
