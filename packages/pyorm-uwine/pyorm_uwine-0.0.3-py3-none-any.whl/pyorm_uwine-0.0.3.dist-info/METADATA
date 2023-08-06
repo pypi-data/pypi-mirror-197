@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyorm-uwine
+Version: 0.0.3
+Summary: ORM for Python.
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: mysql-connector-python
+Requires-Dist: pytest
+
