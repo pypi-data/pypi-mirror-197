@@ -1,0 +1,10 @@
+pyarrow>=11.0.0
+python-dotenv>=0.21.1
+msgpack>=1.0.4
+
+[dev]
+torch>=1.13.1
+datasets>=2.9.0
+pre-commit>=3.0.0
+yapf>=0.32.0
+jupyterlab>=3.6.1

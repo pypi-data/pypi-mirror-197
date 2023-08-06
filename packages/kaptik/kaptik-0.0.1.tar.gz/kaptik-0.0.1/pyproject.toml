@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaptik"
+version = "0.0.1"
+authors = [
+  { name="Corey Hu", email="contact@coreyhu.com" }
+]
+description = "Datastreaming Client"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers"
+]
+dependencies = [
+  'pyarrow >= 11.0.0',
+  'python-dotenv>=0.21.1',
+  'msgpack >= 1.0.4'
+]
+
+[project.urls]
+homepage = "https://github.com/coreyhu/kaptik"
+repository = "https://github.com/coreyhu/kaptik"
+
+[project.optional-dependencies]
+dev = [
+  'torch>=1.13.1',
+  'datasets>=2.9.0',
+  'pre-commit>=3.0.0',
+  'yapf>=0.32.0',
+  'jupyterlab>=3.6.1'
+]

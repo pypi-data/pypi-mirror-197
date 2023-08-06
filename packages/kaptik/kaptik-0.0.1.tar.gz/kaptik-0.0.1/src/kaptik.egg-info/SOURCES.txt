@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/kaptik/__init__.py
+src/kaptik/api.py
+src/kaptik/pytorch.py
+src/kaptik/utils.py
+src/kaptik.egg-info/PKG-INFO
+src/kaptik.egg-info/SOURCES.txt
+src/kaptik.egg-info/dependency_links.txt
+src/kaptik.egg-info/requires.txt
+src/kaptik.egg-info/top_level.txt
