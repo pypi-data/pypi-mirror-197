@@ -1,0 +1,27 @@
+[tool.poetry]
+authors = ["Oğuz Altun <oguz@gmail.com>"]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+description = "Various utilities used in our projects."
+homepage = "https://razalt.com"
+include = [
+    "LICENSE",
+]
+keywords = ["razalt", "utility"]
+license = "MIT"
+name = "razaltlib"
+readme = "README.md"
+repository = ""
+version = "0.1.1"
+
+
+
+[tool.poetry.dependencies]
+python = "^3.8.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
