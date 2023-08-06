@@ -1,0 +1,4 @@
+nltk
+tika
+beautifulsoup4
+lxml
