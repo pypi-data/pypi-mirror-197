@@ -1,0 +1,3 @@
+[trac.plugins]
+checklist.macros = checklist.macros
+checklist.plugin = checklist.plugin
