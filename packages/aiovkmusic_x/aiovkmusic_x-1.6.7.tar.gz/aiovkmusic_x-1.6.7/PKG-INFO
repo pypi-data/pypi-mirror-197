@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aiovkmusic_x
+Version: 1.6.7
+Summary: aiovkmusic-x
+Home-page: https://codeberg.org/agark0vlad21/aiovkmusic-x
+Author: lavacat
+Author-email: steveharris2828@gmail.com
+Requires-Python: >=3.6
+Requires-Dist: python-ffmpeg
+Requires-Dist: loguru
+Requires-Dist: ujson
+Requires-Dist: pyre2
