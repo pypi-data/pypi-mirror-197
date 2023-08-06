@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: zsdstools
+Version: 0.0.2
+Summary: For quickly create statistics analysis tools on Machine Learning models
+Home-page: https://github.com/EasonJia9598/zsdstool
+Author: Eason Jia
+Author-email: will.jia.sheng@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# dstools
+
+Create functions that help analyze models
+
+## Instructions
+
+1. Install:
+
+```
+pip install zsdstools
+```
+
+2. Create Entropy plot for Probability outputs:
+
+```python
+from zsdstools import dstools
+
+dstools.entropy_plot(entropy_report, type_report = 'facetgrid', type_plot = 'violinplopt')
+dstools.entropy_plot(entropy_report, type_report = 'facetgrid', type_plot = 'boxplot')
+dstools.entropy_plot(entropy_report, type_report = 'facetgrid', type_plot = 'histogram')
+
+dstools.entropy_plot(entropy_report, type_report = 'summary', type_plot = 'violinplopt')
+dstools.entropy_plot(entropy_report, type_report = 'summary', type_plot = 'boxplot')
+dstools.entropy_plot(entropy_report, type_report = 'summary', type_plot = 'histogram')
+
+dstools.max_print_out()
+```
