@@ -1,0 +1,8 @@
+KEGG_parser/__init__.py,sha256=eB5tEg_BNHHsJgQexgmpZJr4c2VbfooQZMXAWuDHoIg,22
+KEGG_parser/downloader.py,sha256=yb5s5TLiFBwRZN5bfe1LFhq7juloI1-mKifGgp7RB_M,2922
+KEGG_parser/parsers.py,sha256=p6mySWeUJuq5uqi3NOy2RW2AlZXvgP_Ze4-WFAWJQO8,13727
+KEGG_parser-0.0.5.dist-info/LICENSE,sha256=ZucTQ4qKUwzYQYAU-XS-JorTiYFu2GO4AvQoMaGjem0,1069
+KEGG_parser-0.0.5.dist-info/METADATA,sha256=SO77Q6aypMBwqQqfHe_qpu_d1bcvW5jVLXBiivpnrfk,928
+KEGG_parser-0.0.5.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+KEGG_parser-0.0.5.dist-info/top_level.txt,sha256=bm2SBXCdl97EJekNsCYLNqqKmjzmiS-p9OeUV3lIdT8,12
+KEGG_parser-0.0.5.dist-info/RECORD,,
