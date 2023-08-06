@@ -1,0 +1,17 @@
+build/*
+*.ipynb_checkpoints*
+*.DS_Store
+streamtracer.egg-info*
+dist/*
+*.pyc
+.coverage
+*.so
+.asv/*
+MANIFEST
+coverage.xml
+
+doc/_build/*
+doc/api/*
+
+target/*
+Cargo.lock
