@@ -1,0 +1,3 @@
+openai
+textual >= 0.15
+pydantic
