@@ -1,0 +1,9 @@
+jupyter_compare_view/__init__.py,sha256=-Xw6qFy75KETllwAEFzSCGagMdtAiE1EAF9ETTJZIyQ,418
+jupyter_compare_view/compare.py,sha256=VgDxqqxpwO6HKUZSl4lK8dhM7_GqCfLNHiX5gAlOjck,4225
+jupyter_compare_view/sw_cellmagic.py,sha256=1q_GMkK-WFxfSqKr2dDoZr_3iTYm0dPf3oAXr4VC1QU,2885
+jupyter_compare_view/template.html,sha256=h71OxKqmfiAwTt1t6ozVDHJNNby1Pv_fUk4PKAD3-vQ,485
+vendor/compare_view/browser_compare_view.js,sha256=YDYxxaFKw26FLaDZF8EytBbYc38dNxDyaA1GHx6r5Nw,10399
+jupyter_compare_view-0.2.4.dist-info/LICENSE,sha256=uI2CjWLBt1bPvrHAgpq2wEH1MkuvsegUOAVWPGYDR7A,1067
+jupyter_compare_view-0.2.4.dist-info/METADATA,sha256=8cDa5oZF4jnXOeJPA8SFxDevlzs6g7KRogiyY8HbNU8,6651
+jupyter_compare_view-0.2.4.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+jupyter_compare_view-0.2.4.dist-info/RECORD,,
