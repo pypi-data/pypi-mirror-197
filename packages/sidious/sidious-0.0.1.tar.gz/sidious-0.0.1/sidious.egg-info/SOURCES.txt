@@ -1,0 +1,8 @@
+README.md
+setup.py
+sidious/__init__.py
+sidious.egg-info/PKG-INFO
+sidious.egg-info/SOURCES.txt
+sidious.egg-info/dependency_links.txt
+sidious.egg-info/requires.txt
+sidious.egg-info/top_level.txt
