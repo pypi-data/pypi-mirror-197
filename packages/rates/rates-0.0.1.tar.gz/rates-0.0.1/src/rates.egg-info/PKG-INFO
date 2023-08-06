@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: rates
+Version: 0.0.1
+Summary: Research library to study empirical convergence rates.
+Author-email: Vivien Cabannes <vivien.cabannes@gmail.com>
+Project-URL: Homepage, https://github.com/VivienCabannes/rates
+Project-URL: Bug Tracker, https://github.com/VivienCabannes/rates/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# Convergence rates study with kernels
+
+This repository contains the code for the convergence rates study with reproducing kernels. 
+
+## Installation
+
+The code is written in Python 3.6. The required packages are listed in `requirements.txt`. To install them, run:
+```
+pip install -r requirements.txt
+```
+Once the dependencies are installed, the package can be installed with
+```
+cd <path to folder>
+pip install .
+```
+
+## Usage
+
+Examples are provided in the `scripts` folder.
