@@ -1,0 +1,1 @@
+Remove all constraints on the dimensionality of input data (previously input data were required to be 3D).

@@ -1,0 +1,2 @@
+Replace default `logging.info` with `logger.info` and default logger from `logger = logging.getLogger(__name__)`.
+

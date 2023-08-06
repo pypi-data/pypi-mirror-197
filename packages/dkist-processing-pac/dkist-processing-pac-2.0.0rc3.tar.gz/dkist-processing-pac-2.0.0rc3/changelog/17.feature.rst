@@ -1,0 +1,1 @@
+Add flag to fit modes ("I_sys_per_CS_step") that allows I_sys to be freely for for every CS step in the polcal input.
