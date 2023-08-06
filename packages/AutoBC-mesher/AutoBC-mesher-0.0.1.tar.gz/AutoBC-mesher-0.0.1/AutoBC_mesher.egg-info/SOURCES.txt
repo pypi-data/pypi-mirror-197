@@ -1,0 +1,8 @@
+README.md
+setup.py
+AutoBC-mesher/__init__.py
+AutoBC-mesher/mesh.py
+AutoBC_mesher.egg-info/PKG-INFO
+AutoBC_mesher.egg-info/SOURCES.txt
+AutoBC_mesher.egg-info/dependency_links.txt
+AutoBC_mesher.egg-info/top_level.txt
