@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: servicenow-api
+Version: 0.12.0
+Summary: Python ServiceNow API Wrapper
+Home-page: https://github.com/Knuckles-Team/servicenow-api
+Author: Audel Rouhi
+Author-email: knucklessg1@gmail.com
+License: Unlicense
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Public Domain
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: urllib3 (>=1.26.13)
+
+# ServiceNow API
+*Version: 0.12.0*
+
+ServiceNow API Python Wrapper
+
+This repository is actively maintained and will continue adding more API calls
+
+### API Calls:
+- Table
+- CI/CD
+- Import Sets
+
+Coming Soon:
+- Incident
+- CMDB
+- Application Service
+
+### Usage:
+
+```python
+#!/usr/bin/python
+# coding: utf-8
+import servicenow_api
+
+username = "<SERVICENOW USERNAME>"
+password = "<SERVICENOW PASSWORD>"
+servicenow_api_url = "<SERVICENOW_URL>"
+client = servicenow_api.Api(url=servicenow_api_url, username=username, password=password)
+
+table = client.get_table(table="<TABLE NAME>")
+print(f"Table: {table}")
+```
+
+#### Install Instructions
+Install Python Package
+
+```bash
+python -m pip install servicenow-api
+```
+
+#### Build Instructions
+Build Python Package
+
+```bash
+sudo chmod +x ./*.py
+pip install .
+python setup.py bdist_wheel --universal
+# Test Pypi
+twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose -u "Username" -p "Password"
+# Prod Pypi
+twine upload dist/* --verbose -u "Username" -p "Password"
+```
+
+
