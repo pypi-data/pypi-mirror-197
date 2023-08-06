@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+dailyfresh/__init__.py
+dailyfresh/utility.py
+dailyfresh.egg-info/PKG-INFO
+dailyfresh.egg-info/SOURCES.txt
+dailyfresh.egg-info/dependency_links.txt
+dailyfresh.egg-info/requires.txt
+dailyfresh.egg-info/top_level.txt
+dailyfresh.egg-info/zip-safe

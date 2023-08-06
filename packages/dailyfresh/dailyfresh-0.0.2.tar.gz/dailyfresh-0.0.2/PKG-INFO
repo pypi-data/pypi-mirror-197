@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dailyfresh
+Version: 0.0.2
+Summary: dailyfresh: python tools for descriptive and comparitive effectiveness studies
+Home-page: UNKNOWN
+Author: Epic
+License: Epic
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3
+Provides-Extra: all
+Provides-Extra: dev
+Provides-Extra: docs
