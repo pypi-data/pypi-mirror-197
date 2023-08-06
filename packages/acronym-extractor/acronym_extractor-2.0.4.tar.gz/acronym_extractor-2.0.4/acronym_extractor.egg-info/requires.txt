@@ -1,0 +1,6 @@
+python
+nltk
+tika
+beautifulsoup4
+lxml
+openjdk>=11
