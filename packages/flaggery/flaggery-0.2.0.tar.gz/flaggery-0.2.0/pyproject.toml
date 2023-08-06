@@ -1,0 +1,80 @@
+[tool.poetry]
+name = "flaggery"
+version = "0.2.0"
+description = "Feature flag management framework for serving rollouts, ab-tests and feature groups"
+authors = ["Lariel Fernandes <lariel.c2.fernandes@gmail.com>"]
+readme = "README.md"
+license = "CDDL-1.1"
+repository = "https://gitlab.com/lariel.fernandes/flaggery"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+cassandra-driver = "^3.25.0"
+fastapi = "^0.92.0"
+alembic = "^1.9.4"
+sqlalchemy = "^2.0.4"
+pydantic = "^1.10.5"
+pyyaml = "^6.0"
+jinja2 = "^3.1.2"
+uvicorn = "^0.20.0"
+gunicorn = "^20.1.0"
+merge-args = "^0.1.5"
+loguru = "^0.6.0"
+prometheus-fastapi-instrumentator = "^5.11.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+jupyter = "^1.0.0"
+pysqlite3-binary = "^0.5.0"
+psycopg2-binary = "^2.9.5"
+pytest-env = "^0.8.1"
+httpx = "^0.23.3"
+pytest-cov = "^4.0.0"
+coverage = "^7.2.1"
+twine = "^4.0.2"
+pylint = "^2.17.0"
+black = "^23.1.0"
+anybadge = "^1.14.0"
+
+[tool.poetry.scripts]
+flaggery = 'flaggery.scripts.start_server:main'
+
+[tool.poetry.plugins."flaggery.plugins.cache"]
+'flaggery.cache.MemoryCache' = 'flaggery.cache.MemoryCache'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = 20
+env = [
+    "FLAGGERY_DB_AUTO_UPGRADE = Yes",
+    "FLAGGERY_ADMIN_MODE = Yes",
+]
+
+[tool.pylint]
+max-line-length = 200
+max-module-lines = 15000
+disable = [
+    "C0114",  # module docstring
+    "C0115",  # class docstring
+    "C0116",  # method/function docstring
+    "E1101",  # no member (sqlalchemy.sessionmaker)
+]
+
+[tool.pylint.main]
+source-roots = ["flaggery", "tests"]
+ignore-paths = ["flaggery/db/migrations", ".venv"]
+recursive = true
+fail-under = 8
+jobs = 0
+
+[tool.pylint.basic]
+good-names = ["i", "j", "k", "ex", "Run", "_", "rv", "x"]
+
+[tool.pylint.design]
+max-args = 8
+min-public-methods = 0
+max-public-methods = 32
