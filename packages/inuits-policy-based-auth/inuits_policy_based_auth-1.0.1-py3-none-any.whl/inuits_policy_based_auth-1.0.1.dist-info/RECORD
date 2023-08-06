@@ -1,0 +1,8 @@
+inuits_policy_based_auth/__init__.py,sha256=YSxj8IiLacN7Ruub_CdisCKHE89SB5UehiHpuWwn4oo,1100
+inuits_policy_based_auth/exceptions.py,sha256=Jd4Ig5VumC1QMc6HcYjAkiejW4dvtmcPuv_bczBJilA,1193
+inuits_policy_based_auth/policy_factory.py,sha256=_EMdjW8awi4HyTCdqEyuLq3bj_KHTKf_sdgD3DhPFt0,5307
+inuits_policy_based_auth-1.0.1.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+inuits_policy_based_auth-1.0.1.dist-info/METADATA,sha256=V2uHJnPQrgA1LXnr5pfkI71J-ujFyBAhhT4YnB1mLcI,7069
+inuits_policy_based_auth-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+inuits_policy_based_auth-1.0.1.dist-info/top_level.txt,sha256=jMC-m6LqpOKzN8WrhnnkJ65fCl188TDBECqJIODY8ME,25
+inuits_policy_based_auth-1.0.1.dist-info/RECORD,,
