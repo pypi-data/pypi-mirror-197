@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gptswe
+Version: 1.1.0
+Summary: A command-line tool that converts Git repositories into a text format readable by GPT-4 and copies it to your clipboard
+Home-page: https://github.com/lwneal/gptswe
+Author: Larry Neal
+Author-email: nealla@lwneal.com
+License: MIT
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: gptwc
+Requires-Dist: pathspec
+
+UNKNOWN
+
