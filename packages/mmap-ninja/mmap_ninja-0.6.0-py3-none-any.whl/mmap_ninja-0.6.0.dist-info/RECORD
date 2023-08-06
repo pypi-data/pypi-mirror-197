@@ -1,0 +1,10 @@
+mmap_ninja/__init__.py,sha256=cID1jLnC_vj48GgMN6Yb1FA3JsQ95zNmCHmRYE8TFhY,22
+mmap_ninja/base.py,sha256=ueduTNM8skh4bFEA6W7fHCCl6LjkUnI1I19xLrvGnJw,7125
+mmap_ninja/generic.py,sha256=fQp3sB1hu1ZouoS1Yt_Ogp_yQJuWZ8Xxc9N_HS3Q80Y,955
+mmap_ninja/numpy.py,sha256=CjdpYl5n2U1gVsPoiTT6A2IqyK-U2ZbTQvQ2f2-ONKY,6973
+mmap_ninja/ragged.py,sha256=Vbxwm5yQb0qTPSiaC508hQK05mFNjGF_8DVaq8Hnx_k,6467
+mmap_ninja/string.py,sha256=8Z6Bm5mjJ-fKZt_cCBu3X0jVqKO-jzmcKsqKZ8qR7fE,4607
+mmap_ninja-0.6.0.dist-info/METADATA,sha256=bqwf56EIE6xO0uxXJgqinypskm-jUy9dAv9qq_ne9ps,11780
+mmap_ninja-0.6.0.dist-info/WHEEL,sha256=ewwEueio1C2XeHTvT17n8dZUJgOvyCWCt0WVNLClP9o,92
+mmap_ninja-0.6.0.dist-info/top_level.txt,sha256=y8zRRUVfcqWXvQmwYYwZvDFN6vZkRMBmbflRvHWWb88,11
+mmap_ninja-0.6.0.dist-info/RECORD,,
