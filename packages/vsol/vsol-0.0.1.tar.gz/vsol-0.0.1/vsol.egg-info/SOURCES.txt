@@ -1,0 +1,7 @@
+README.md
+setup.py
+vsol/__init__.py
+vsol.egg-info/PKG-INFO
+vsol.egg-info/SOURCES.txt
+vsol.egg-info/dependency_links.txt
+vsol.egg-info/top_level.txt
