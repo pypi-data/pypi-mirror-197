@@ -1,0 +1,9 @@
+include LICENSE
+include MANIFEST.in
+include README.md
+include *.rst
+graft parsing_steps
+graft docs
+graft tests
+global-exclude __pycache__
+global-exclude *.py[co]
