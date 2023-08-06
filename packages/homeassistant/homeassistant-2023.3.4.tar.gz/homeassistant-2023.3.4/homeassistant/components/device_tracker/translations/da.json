@@ -1,0 +1,19 @@
+{
+    "device_automation": {
+        "condition_type": {
+            "is_home": "{entity_name} er hjemme",
+            "is_not_home": "{entity_name} er ikke hjemme"
+        },
+        "trigger_type": {
+            "enters": "{entity_name} kommer ind i en zone",
+            "leaves": "{entity_name} forlader en zone"
+        }
+    },
+    "state": {
+        "_": {
+            "home": "Hjemme",
+            "not_home": "Ude"
+        }
+    },
+    "title": "Enhedssporing"
+}

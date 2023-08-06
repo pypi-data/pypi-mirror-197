@@ -1,0 +1,13 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Gazd\u0103 (host)"
+                },
+                "description": "Introdu hostname-ul sau adresa IP a dispozitivului Heos (preferabil unul conectat prin cablu la re\u021bea).",
+                "title": "Conectat la Heos"
+            }
+        }
+    }
+}

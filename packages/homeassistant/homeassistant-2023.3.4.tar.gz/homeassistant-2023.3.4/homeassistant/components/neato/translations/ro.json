@@ -1,0 +1,10 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Dispozitivul a fost configurat deja"
+        },
+        "create_entry": {
+            "default": "Autentificare realizat\u0103 cu succes"
+        }
+    }
+}

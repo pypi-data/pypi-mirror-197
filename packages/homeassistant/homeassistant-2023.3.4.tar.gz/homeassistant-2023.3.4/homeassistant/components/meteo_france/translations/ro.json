@@ -1,0 +1,16 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Localizarea a fost configurat\u0103 deja",
+            "unknown": "Eroare nea\u0219teptat\u0103"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "city": "Ora\u0219"
+                },
+                "description": "Introdu codul po\u0219tal (doar pentru Fran\u021ba, recomandat) sau numele ora\u0219ului"
+            }
+        }
+    }
+}
