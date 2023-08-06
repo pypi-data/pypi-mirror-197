@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+pftag/__init__.py
+pftag/__main__.py
+pftag/data.py
+pftag/pftag.py
+pftag.egg-info/PKG-INFO
+pftag.egg-info/SOURCES.txt
+pftag.egg-info/dependency_links.txt
+pftag.egg-info/entry_points.txt
+pftag.egg-info/requires.txt
+pftag.egg-info/top_level.txt
