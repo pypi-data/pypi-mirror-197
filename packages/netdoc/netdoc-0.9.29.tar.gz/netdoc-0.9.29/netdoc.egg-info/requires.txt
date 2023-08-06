@@ -1,0 +1,9 @@
+ipaddress
+jsonschema
+macaddress
+n2g==0.3.3
+nornir==3.3.0
+nornir_netmiko
+nornir_utils
+ouilookup
+python-slugify
