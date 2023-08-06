@@ -1,0 +1,9 @@
+larray_eurostat/__init__.py,sha256=MItVbdt7znYjF37yUzzy_szgNB8cR5fmTZNVEcJH2tI,70
+larray_eurostat/tsv.py,sha256=z_sEjN6y1KHrfiuY6Rk0VHVmD8A70pJccZs4CPOjK1c,2710
+larray_eurostat/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+larray_eurostat/tests/test_tsv.py,sha256=Y9vzo84ruxckuHLXz9KDExJyao7DggKJF_6dCNgaK3U,327
+larray_eurostat-0.34.dist-info/LICENSE,sha256=U5J70Lc504yHoKgiNv2bBwwt__EcDBGb5QNyAF1QR60,35815
+larray_eurostat-0.34.dist-info/METADATA,sha256=J1-qRGv7-DGFrxHChIe_rzthok-Fzr19QxO70saQpyY,1105
+larray_eurostat-0.34.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+larray_eurostat-0.34.dist-info/top_level.txt,sha256=K1b6T0jnB6ny9PmZTMNzANh0Wo9NfEo1NYB6j9BswCo,16
+larray_eurostat-0.34.dist-info/RECORD,,
