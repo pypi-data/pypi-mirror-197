@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+setup.py
+py_slvs.egg-info/PKG-INFO
+py_slvs.egg-info/SOURCES.txt
+py_slvs.egg-info/dependency_links.txt
+py_slvs.egg-info/top_level.txt
