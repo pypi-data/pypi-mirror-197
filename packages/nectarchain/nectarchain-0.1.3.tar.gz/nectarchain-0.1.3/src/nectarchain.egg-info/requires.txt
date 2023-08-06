@@ -1,0 +1,15 @@
+astropy~=4.2
+ctapipe~=0.12
+numpy~=1.22
+protozfits~=2.0
+tables>=3.7
+
+[all]
+pytest
+setuptools_scm[toml]
+
+[dev]
+setuptools_scm[toml]
+
+[tests]
+pytest
