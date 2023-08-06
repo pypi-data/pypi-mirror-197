@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: tpmstream
+Version: 0.1.0
+Summary: "A tool to help you understand TPM commands and responses. "
+Author: joholl
+License: BSD
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: <3.12,>=3.9
+License-File: LICENSE
+Requires-Dist: colorama
+Requires-Dist: dpkt
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+
