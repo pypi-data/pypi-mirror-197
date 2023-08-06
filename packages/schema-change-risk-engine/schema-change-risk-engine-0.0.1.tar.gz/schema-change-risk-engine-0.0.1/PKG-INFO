@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: schema-change-risk-engine
+Version: 0.0.1
+Summary: Common MySQL Schema Alter Issues Check Engine Package
+Home-page: https://github.com/dbmruphy/SchemaAlterRulesEngine
+Author: David Murphy
+Author-email: David Murphy <david.b.murphy.tx@gmail.com>
+Project-URL: homepage, https://github.com/dbmurphy/SchemaAlterRulesEngine
+Project-URL: bugs, https://github.com/dbmurphy/SchemaAlterRulesEngine/issues
+Project-URL: source, https://github.com/dbmurphy/SchemaAlterRulesEngine
+Project-URL: changelog, https://github.com/dbmurphy/SchemaAlterRulesEngine
+Keywords: mysql,schema,
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: typing
+Provides-Extra: virtualenv
+License-File: LICENSE
+
+# SchemaAlterRulesEngine
+A simple python based module to check for common schema alter issues for ghost by examining a .sql and validating it.
