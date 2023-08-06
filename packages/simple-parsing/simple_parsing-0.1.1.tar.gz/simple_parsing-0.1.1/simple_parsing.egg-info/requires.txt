@@ -1,0 +1,16 @@
+docstring-parser~=0.15
+typing_extensions>=4.3.0
+
+[all]
+pytest-regressions
+pytest
+pytest-xdist
+pyyaml
+
+[test]
+pytest
+pytest-xdist
+pytest-regressions
+
+[yaml]
+pyyaml
