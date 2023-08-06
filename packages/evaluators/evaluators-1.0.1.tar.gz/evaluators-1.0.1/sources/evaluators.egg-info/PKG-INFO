@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: evaluators
+Version: 1.0.1
+Summary: Various scene understanding and perception evaluation metrics.
+Author-email: Kurt Stolle <k.h.w.stolle@gmail.com>
+Keywords: evaluation,metrics,scene understanding,perception
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: docs
+Provides-Extra: test
+License-File: LICENSE
+
+# Evaluators
+
+Ports of various scene understanding and perception evaluators implemented for the [Detectron2](https://github.com/facebookresearch/detectron2) framework.
+
+Currently implemented tasks are:
+
+- Monocular depth estimation
+- Depth-aware video panoptic segmentation
+
+## Prerequisites
+
+- [Python 3.10](https://www.python.org/downloads/)
+- [PyTorch 2.0](https://pytorch.org/get-started/)
+
+## Acknowledgements
+
+Each metric in this repository was ported from the canonical implementations kindly provided by the authors of each task.
