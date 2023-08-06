@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: qb-core-all
+Version: 0.0.26
+Summary: Basic app to demonstrate simple architectural concepts
+Author-email: Dinesh Kamath <dmkamath@gmail.com>
+Project-URL: Homepage, https://github.com/dmkamath/quick_bytes
+Project-URL: Bug Tracker, https://github.com/dmkamath/quick_bytes/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+This is a core package for qb app
+
+qb app is a complete application that implements simple architectural concepts. Its goal to separate business logic from infrastructure. 
+
+Core modules will contain only logic/code that captures business concepts.
+
+Infrastructure modules will implement infrastructure specific code.
+
+In this version, all core modules will be in a single package. Future versions will split core modules in a more granular scope to help implementers focus on specific modules
+
+see documentation/packaging_concepts.md
