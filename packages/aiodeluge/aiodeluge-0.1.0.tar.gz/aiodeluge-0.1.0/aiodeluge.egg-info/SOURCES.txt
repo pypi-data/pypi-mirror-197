@@ -1,0 +1,11 @@
+setup.py
+aiodeluge/__init__.py
+aiodeluge/client.py
+aiodeluge/exception.py
+aiodeluge/protocol.py
+aiodeluge/request.py
+aiodeluge.egg-info/PKG-INFO
+aiodeluge.egg-info/SOURCES.txt
+aiodeluge.egg-info/dependency_links.txt
+aiodeluge.egg-info/requires.txt
+aiodeluge.egg-info/top_level.txt
