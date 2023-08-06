@@ -1,0 +1,8 @@
+README.md
+license.txt
+setup.py
+Polthon.egg-info/PKG-INFO
+Polthon.egg-info/SOURCES.txt
+Polthon.egg-info/dependency_links.txt
+Polthon.egg-info/top_level.txt
+polthon/__init__.py
