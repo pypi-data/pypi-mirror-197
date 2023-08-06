@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "webint-auth"
+version = "0.0.9"
+description = "manage website owner authentication"
+authors = ["Angelo Gladding <angelo@ragt.ag>"]
+license = "BSD-2-Clause"
+packages = [{include = "webint_auth"}]
+
+[tool.poetry.plugins."webapps"]
+auth = "webint_auth:app"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+indieauth = ">=0.0"
+webint = ">=0.0"
+
+[tool.poetry.group.dev.dependencies]
+# gmpg = "^0.0"
+gmpg = {path="../gmpg", develop=true}
+bgq = {path="../bgq", develop=true}
+microformats = {path="../python-microformats", develop=true}
+indieauth = {path="../python-indieauth", develop=true}
+newmath = {path="../newmath", develop=true}
+sqlyte = {path="../sqlyte", develop=true}
+webint = {path="../webint", develop=true}
+webagt = {path="../webagt", develop=true}
+
+# [[tool.poetry.source]]
+# name = "main"
+# url = "https://ragt.ag/code/pypi"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
