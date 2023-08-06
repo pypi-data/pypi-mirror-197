@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "requests==2.28.1", "pdf2image==1.16.0"]
+build-backend = "setuptools.build_meta"
+
+#[tool.setuptools]
+#package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["*"]  # alternatively: `exclude = ["additional*"]`
+namespaces = false
+
+[project]
+name = "ocr_general_method"
+version = "0.0.15"
+authors = [
+  { name="Example Author", email="author@example.com" },
+]
+description = "test PyPI"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
