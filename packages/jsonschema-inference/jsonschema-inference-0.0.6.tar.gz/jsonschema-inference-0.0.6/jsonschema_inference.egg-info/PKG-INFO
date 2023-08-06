@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: jsonschema-inference
+Version: 0.0.6
+Summary: Fast Json Schema Inference Engine for API and Jsonl
+Home-page: https://github.com/jeffrey82221/jsonschema_inference
+Author: jeffreylin
+Author-email: jeffrey82221@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: ray
+License-File: LICENSE
+
+# jsonschema_inference
+Fast Schema Inferencing of JSON from jsonl file or web API. 
+
+# TODO:
+
+- [ ] Try to convert the schema inference result to the Draft 7 Json schema specification. (It is the most popular schema format currently) 
+

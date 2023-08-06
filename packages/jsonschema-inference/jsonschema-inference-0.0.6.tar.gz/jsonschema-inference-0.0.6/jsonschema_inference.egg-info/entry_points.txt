@@ -1,0 +1,3 @@
+[console_scripts]
+jsonschema-inference = jsonschema_inference.cmd.inference:run
+
