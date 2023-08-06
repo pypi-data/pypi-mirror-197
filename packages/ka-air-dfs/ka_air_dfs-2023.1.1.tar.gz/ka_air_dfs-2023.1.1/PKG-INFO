@@ -1,0 +1,251 @@
+Metadata-Version: 2.1
+Name: ka_air_dfs
+Version: 2023.1.1
+Summary: Airflow Dag Source Factory
+Author-email: Bernd Stroehle <bernd.stroehle@bs29.com>
+Maintainer-email: Bernd Stroehle <bernd.stroehle@bs29.com>
+Project-URL: Source Code, https://github.com/bs29/ka_air_dfs/tree/master
+Project-URL: Homepage, https://kosakya.de/
+Project-URL: Documentation, https://ka-apc.readthedocs.io/en/latest
+Project-URL: Apache-2.0 License, https://apache.org/licenses/LICENSE-2.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+
+ka_air_dfs Readme
+=================
+
+--------
+Overview
+--------
+
+**ka_air_dfs** is a Command Line Package with the Module **dfs**.
+
+- dfs is used to create dags in Python source format from files in portable Workflow DSL format
+
+------------
+Installation
+------------
+
+.. start installation
+
+``pyproject-parser`` can be installed from PyPI or Anaconda.
+
+To install with ``pip``:
+
+.. code-block:: shell
+
+        $ python -m pip install ka_uts
+
+To install with ``conda``:
+
+.. code-block:: shell
+
+        $ conda install -c conda-forge ka_uts
+
+.. end installation
+
+
+-------------
+Configuration
+-------------
+
+Module Configuration in the package data directory :
+====================================================
+
+The Configuration of Module dfs of Package ka_air_dfs is defined in the Yaml Configuration File dfs.yaml described in the following Table:
+
+  .. _ka_air_dfs.dfs-configuration-label:
+
+  .. table:: **ka_air_dfs.dfs Configuration**
+
+    +------------+-------------+-------------------------+
+    | Package    | Module      | Configuration File      |
+    +------------+-------------+-------------------------+
+    | ka_air_dfs | dfs         | ka_air_dfs/data/dfs.yml |
+    +------------+-------------+-------------------------+
+
+The Configuration could be changed according to the Module Configuration File Rules
+described inherently in the Configuration File.
+
+Logging Configuration:
+======================
+
+c.f.:
+
+- KA_Architecture_Logging_Configuration
+
+-------------
+Documentation
+-------------
+
+This library provides the sub-package dfs to create Reporting profiles for selected Persons Profiles.
+
+--------------------------------------
+Command Line Usage for sub-package dfs
+--------------------------------------
+
+Calling Convention
+==================
+
+  - Call using python module convention
+
+    .. code-block::
+
+     /usr/bin/env python3 -m ka_air_dfs.dfs \
+     /opt/airflow/dev1/latest/python/bin/ka_air_dfs-dfs \
+       tenant='DB' \
+       \
+       path_in_mask='/data/DB/prj/FDW/PWF/wfl/tsk/all/*.yaml' \
+       dir_out_dag_src='/data/DB/prj/FDW/AIR/dags/tsk/all' \
+       a_tags='[FDW_TSK]' \
+       sw_cmd_ix=True \
+       \
+       sw_async=False \
+       sw_debug=False \
+       sw_run_pid_ts=False
+       \
+       1>dfs_tsk_all.1 2>dfs_tsk_all.2
+ 
+  - Call using the module executable
+
+    .. code-block::
+
+     /opt/airflow/dev1/latest/python/bin/ka_air_dfs-dfs \
+       tenant='DB' \
+       \
+       path_in_mask='/data/DB/prj/FDW/PWF/wfl/tsk/all/*.yaml' \
+       dir_out_dag_src='/data/DB/prj/FDW/AIR/dags/tsk/all' \
+       a_tags='[FDW_TSK]' \
+       sw_cmd_ix=True \
+       \
+       sw_async=False \
+       sw_debug=False \
+       sw_run_pid_ts=False
+       \
+       1>dfs_tsk_all.1 2>dfs_tsk_all.2
+ 
+Parameters
+==========
+
+The Parameters are entered on the call as **Equates**: <Parameter Name>=<Parameter Value>
+
+-------------------------------
+Application specific Parameters
+-------------------------------
+
+.. _application-specific-parameter-label:
+
+.. table:: **Application specific Parameters**
+
+    +-----------------+-----------------------------------+---------+--------+---------+
+    | Name            | Description                       | Type    | Values | Default |
+    +=================+===================================+=========+========+=========+
+    | path_in_mask    | input path mask which defines the | string  |        |         |
+    |                 | set of workflow files in portable |         |        |         |
+    |                 | Workflow DSL yaml format which has|         |        |         |
+    |                 | to be converted into dags in      |         |        |         |
+    |                 | python source format              |         |        |         |
+    +-----------------+-----------------------------------+---------+--------+---------+
+    | dir_out_dag_src | output directory for the converted| string  |        |         |
+    |                 | dags                              |         |        |         |
+    +-----------------+-----------------------------------+---------+--------+---------+
+    | a_tags          | tags array of the converted dags  | string  |        |         |
+    +-----------------+-----------------------------------+---------+--------+---------+
+    | sw_cmd_ix       | if the switch is true then the    | boolean | True,  | False   |
+    |                 | workflow tasks are relatively     |         | False  |         |
+    |                 | numbered per task group otherwise |         |        |         |
+    |                 | per workflow                      |         |        |         |
+    +-----------------+-----------------------------------+---------+--------+---------+
+
+Special Parameters
+------------------
+
+.. _special-parameter-label:
+
+.. table:: **Special Parameters**
+
+    +-----------------+--------------------------------+---------+--------+---------+
+    | Name            | Description                    | Type    | Values | Default |
+    +=================+================================+=========+========+=========+
+    | tenant          | application tenant             | string  |        | DB      |
+    +-----------------+--------------------------------+---------+--------+---------+
+    | sw_async        | enables asynchronous processing| boolean | True,  | False   |
+    |                 |                                |         | False  |         |
+    +-----------------+--------------------------------+---------+--------+---------+
+    | sw_debug        | enables the output of debug    | boolean | True,  | False   |
+    |                 | messages                       |         | False  |         |
+    +-----------------+--------------------------------+---------+--------+---------+
+    | sw_run_pid_ts   | if the switch is True then the | boolean | True,  | True    |
+    |                 | Run Filenames contains pid and |         | False  |         |
+    |                 | timestamp otherwise no pid and |         |        |         |
+    |                 | timestamp                      |         |        |         |
+    +-----------------+--------------------------------+---------+--------+---------+
+
+------------------------------------------------------------------
+Directory Structure of the Run directory for module ka_air_dfs.dfs
+------------------------------------------------------------------
+
+Directory Tree if sw_filename_pid_ts=True
+=========================================
+
+.. code-block::
+
+  data/
+  ├── <tenant>/
+  │   └── RUN/
+  │       └── ka_air_dfs/
+  │           └── dfs/
+  │               ├── debs/
+  │               │   └── debs_<pid>_<timestamp>.log
+  │               ├── errs/
+  │               │   └── errs_<pid>_<timestamp>.log
+  │               ├── logs/
+  │               │   └── logs_<pid>_<timestamp>.log
+  │               └── reps/
+  │                   └── <email>_logs_<pid>_<timestamp>.log
+  ...
+
+Directory Tree if sw_filename_pid_ts=False
+==========================================
+
+.. code-block::
+
+  data/
+  ├── <tenant>/
+  │   └── RUN/
+  │       └── ka_air_dfs/
+  │           └── dfs/
+  │               ├── debs/
+  │               │   └── debs.log
+  │               ├── errs/
+  │               │   └── errs.log
+  │               ├── logs/
+  │               │   └── logs.log
+  │               └── reps/
+  │                   ├── <email>.json
+  ...
+
+Rationale
+=========
+
+---------------
+Library Purpose
+---------------
+
+The purpose of this library is to migrate files in portable Workflow DSL yaml file format into Dags in Python source format.
+
+# .. include:: ka_air_dfs/data/dfs.yml.rst
+# .. include:: KA-Architecture.rst
+
+Appendix
+========
+
+.. contents:: **Table of Content**
