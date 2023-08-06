@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: zam-authentic
+Version: 0.0.1
+Summary: A validation library for Zambia
+Author: Munalula Sikazwe
+Author-email: munalulasikazwe67@gmail.com
+Keywords: validation,zambia,zambia_kyc,kyc
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Natural Language :: English
+License-File: LICENSE
+
+A validation library meant to support application software built for the Zambian market. This may includes NRC,PHONENUMBER_VALIDATION AND LOCATIONS
