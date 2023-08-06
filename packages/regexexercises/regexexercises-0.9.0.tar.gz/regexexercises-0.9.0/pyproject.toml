@@ -1,0 +1,29 @@
+[project]
+name = "regexexercises"
+version = "0.9.0"
+authors = [
+  { name="Sundeep Agarwal", email="learnbyexample.net@gmail.com" },
+]
+description = "100+ exercises for Python Regular Expressions"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "textual>=0.14.0",
+  "regex",
+]
+
+[project.scripts]
+regexexercises = "regexexercises.pyregex_exercises:main"
+
+[project.urls]
+"Source" = "https://github.com/learnbyexample/TUI-apps/tree/main/PyRegexExercises"
+"Issues" = "https://github.com/learnbyexample/TUI-apps/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
