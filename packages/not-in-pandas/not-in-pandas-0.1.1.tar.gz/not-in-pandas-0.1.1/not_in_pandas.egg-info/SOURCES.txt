@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+not_in_pandas/__init__.py
+not_in_pandas.egg-info/PKG-INFO
+not_in_pandas.egg-info/SOURCES.txt
+not_in_pandas.egg-info/dependency_links.txt
+not_in_pandas.egg-info/requires.txt
+not_in_pandas.egg-info/top_level.txt
