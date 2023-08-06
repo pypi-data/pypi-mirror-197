@@ -1,0 +1,9 @@
+py_slvs.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+py_slvs.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+py_slvs/_slvs.so,sha256=-BKnuDc8NUhJViob-N9FdWcyejnHgV5OoAFHXS9Kz-o,867489
+py_slvs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_slvs/slvs.py,sha256=ajdIUoR-EJeZ9xcumzJAeO76cwsjG-pkqEpaJL9Np-s,23782
+py_slvs-1.0.6.dist-info/METADATA,sha256=Jfa3Iux5TH8meQL5mJdFL0KoiZQPKvRoYrocmyh1AaU,1093
+py_slvs-1.0.6.dist-info/WHEEL,sha256=Rhl5cYa7sY5OCB1N2SZ8lXfqTE_f9avDqSoRiaU78io,103
+py_slvs-1.0.6.dist-info/top_level.txt,sha256=ExQaSNEnlFfOx83vuPyt4wHTIAdHysMOLYxwQUiy1_8,8
+py_slvs-1.0.6.dist-info/RECORD,,
