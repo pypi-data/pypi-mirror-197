@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/egnar/__init__.py
+src/egnar.egg-info/PKG-INFO
+src/egnar.egg-info/SOURCES.txt
+src/egnar.egg-info/dependency_links.txt
+src/egnar.egg-info/top_level.txt

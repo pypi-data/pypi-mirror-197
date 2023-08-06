@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "egnar"
+version = "0.1"
+authors = [
+	{ name = "Michael Bäck", email = "bmh4080@naver.com" },
+]
+description = "Python range class for float, decimal.Decimal and fractions.Fraction"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+	"Programming Language :: Python :: 3 :: Only",
+	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+	"Topic :: Utilities",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/mhcoma/egnar"
+"Bug Tracker" = "https://github.com/mhcoma/egnar/issues"

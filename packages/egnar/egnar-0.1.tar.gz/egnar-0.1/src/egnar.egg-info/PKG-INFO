@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: egnar
+Version: 0.1
+Summary: Python range class for float, decimal.Decimal and fractions.Fraction
+Author-email: Michael Bäck <bmh4080@naver.com>
+Project-URL: Homepage, https://github.com/mhcoma/egnar
+Project-URL: Bug Tracker, https://github.com/mhcoma/egnar/issues
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# egnar
+Python range class for float, decimal.Decimal and fractions.Fraction
