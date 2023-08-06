@@ -1,0 +1,11 @@
+astypes/__init__.py,sha256=rWc1hIJ_QYpCpoZMsIu9J_iaxwdOVrCBtw7VKqxbI_0,215
+astypes/_ass.py,sha256=wUgARgtm_HxVpoJtx_oPWnZrOoPVxVA6RoaaLmV9nb8,1055
+astypes/_ast.py,sha256=CDK-3FwHplk47zICzjvI8y4O-x5nzZ04wCRFt5XjgFo,1912
+astypes/_handlers.py,sha256=BL521m-b7VNnZtRQR0DhLK_B3oPzT7U50A_EkDzqwuA,8580
+astypes/_helpers.py,sha256=jiF9wF2FL-Tpdh8dqOiOWBz2KfG6igDH5mT-Lufl3Kw,3527
+astypes/_type.py,sha256=NfEe436T8owNuMVrtDe7mNgqrDbU42oN_irbfLiTMNE,5368
+astypes/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astypes-0.2.4.dist-info/LICENSE,sha256=s1X_JkJciAgWY1Lw4f4cxSHrpocUTbDsKvF3814zEZw,1048
+astypes-0.2.4.dist-info/WHEEL,sha256=4TfKIB_xu-04bc2iKz6_zFt-gEFEEDU_31HGhqzOCE8,81
+astypes-0.2.4.dist-info/METADATA,sha256=r4FzdmQloqjxzNCpBUjD9TE4YA0NU8a2POCmVBesano,3053
+astypes-0.2.4.dist-info/RECORD,,
