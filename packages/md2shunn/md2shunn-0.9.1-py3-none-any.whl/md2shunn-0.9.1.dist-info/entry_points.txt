@@ -1,0 +1,2 @@
+[console_scripts]
+md2shunn = md2shunn.cli:main
