@@ -1,0 +1,10 @@
+setup.py
+JohnServerAPI.egg-info/PKG-INFO
+JohnServerAPI.egg-info/SOURCES.txt
+JohnServerAPI.egg-info/dependency_links.txt
+JohnServerAPI.egg-info/requires.txt
+JohnServerAPI.egg-info/top_level.txt
+senders/JohnAuthenticationHandler_client.py
+senders/TCPsender.py
+senders/UDPsender.py
+senders/xmlrpc_client.py

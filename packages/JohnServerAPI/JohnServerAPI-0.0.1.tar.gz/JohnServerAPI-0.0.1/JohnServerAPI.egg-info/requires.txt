@@ -1,0 +1,7 @@
+requests
+numpy
+matplotlib
+socket
+socketserver
+ipaddress
+tkinter
