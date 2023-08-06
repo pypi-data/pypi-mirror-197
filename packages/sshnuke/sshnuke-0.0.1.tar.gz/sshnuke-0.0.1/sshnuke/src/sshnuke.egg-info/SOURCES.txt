@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sshnuke/src/sshnuke.egg-info/PKG-INFO
+sshnuke/src/sshnuke.egg-info/SOURCES.txt
+sshnuke/src/sshnuke.egg-info/dependency_links.txt
+sshnuke/src/sshnuke.egg-info/top_level.txt
