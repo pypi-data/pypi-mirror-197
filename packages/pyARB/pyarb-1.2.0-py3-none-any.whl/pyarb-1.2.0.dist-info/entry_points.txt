@@ -1,0 +1,2 @@
+[console_scripts]
+pyarb = pyARB.__main__:main
