@@ -1,0 +1,17 @@
+[Unit]
+Description=Medicine for care laws, Poison for genocide laws
+After=multi-user.target
+
+[Service]
+#Type=simple
+User=gcid
+Group=gcid
+DynamicUser=yes
+StateDirectory=gcid
+LogsDirectory=gcid
+CacheDirectory=gcid
+ExecStart=/usr/local/bin/gcided
+CapabilityBoundingSet=CAP_NET_RAW
+
+[Install]
+WantedBy=multi-user.target

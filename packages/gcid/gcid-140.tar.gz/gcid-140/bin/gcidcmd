@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"Medicine for care laws, Poison for genocide laws"
+
+
+import os
+import readline
+import sys
+import termios
+import time
+import traceback
+
+
+from gcid.clients import Client
+from gcid.command import command, scan
+from gcid.default import Default
+from gcid.message import Message
+from gcid.modules import cmd, irc, log, mdl, rss, tdo
+from gcid.objects import Object
+from gcid.storage import Storage
+from gcid.threads import launch
+
+
+Storage.workdir = "/var/lib/gcid/"
+
+
+scan(cmd)
+scan(irc)
+scan(log)
+scan(mdl)
+scan(rss)
+scan(tdo)
+
+
+class CLI(Client):
+
+    def announce(self, txt):
+        pass
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+def main():
+    cfg = Message()
+    cfg.parse(" ".join(sys.argv[1:]))
+    cli = CLI()
+    command(cli, cfg.otxt)
+
+
+main()
