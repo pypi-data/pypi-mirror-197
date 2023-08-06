@@ -1,0 +1,79 @@
+[project]
+name = "patch-denoise"
+description = "Denoising method for sequence of images or volumes. Primarly targeting fMRI data."
+authors = [{name="Pierre-antoine Comby", email="pierre-antoine.comby@crans.org"}]
+
+readme = "README.rst"
+license = {file = "LICENSE.txt"}
+dependencies = ["numpy", "scipy", "matplotlib", "scikit-image", "tqdm"]
+requires-python = ">=3.8"
+
+dynamic = ["version"]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Scientific/Engineering :: Image Processing",
+  "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+
+[project.optional-dependencies]
+optional = ["modopt", "nipype", "numba"]
+test = ["pytest", "pytest-cov", "pytest-xdist", "pytest-sugar"]
+# sphinx 6 failes with pydata, sphinx 5 with sphinx gallery...
+doc = ["pydata-sphinx-theme", "numpydoc", "sphinx_gallery", "sphinx<5"]
+dev = ["black", "isort", "ruff"]
+
+[project.scripts]
+patch-denoise = "patch_denoise.bindings.cli:main"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm[toml]", "wheel"]
+
+[tool.setuptools_scm]
+write_to = "src/patch_denoise/_version.py"
+version_scheme = "python-simplified-semver"
+local_scheme="no-local-version"
+
+[tool.coverage.run]
+omit = ["*tests*"]
+
+[tool.coverage.report]
+precision = 2
+exclude_lines = ["pragma: no cover", "raise NotImplementedError"]
+
+
+# Formatting using black.
+[tool.black]
+
+#linting using ruff
+[tool.ruff]
+src = ["src", "tests"]
+select = ["E", "F", "B", "Q", "UP", "D"]
+
+ignore = ["B905"]
+exclude = ["examples/", "tests/"]
+
+[tool.ruff.pydocstyle]
+convention="numpy"
+
+[tool.isort]
+profile="black"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = [
+    "--cov=patch_denoise",
+    "--cov-report=term-missing",
+    "--cov-report=xml"
+]
