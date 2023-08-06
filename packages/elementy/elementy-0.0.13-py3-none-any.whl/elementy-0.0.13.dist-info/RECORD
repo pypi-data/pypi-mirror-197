@@ -1,0 +1,11 @@
+elementy/__init__.py,sha256=N-4sDrwmgeM7hPywrxzr36N9Qk21mjQ9D7ikOJ8VeOQ,185
+elementy/_version.py,sha256=hFF7tqYJ7eYZR_Ae6XErILfdXmw4giGBpShfPqnr5tg,162
+elementy/element.py,sha256=WVUzWil7nMUxAuHvzPF9XGP5iiHikCt5N1oW6ddQIs8,6333
+elementy/elements.py,sha256=20itCr0By_G-eA0QuxIHZlH5p0EXZA0tYt76h7Jw_Oc,171926
+elementy/periodictable.py,sha256=KXK0AxU-p2rBdT65EIVF4zbnHJW2gHl75ZCLXiLzaqQ,1094
+elementy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elementy-0.0.13.dist-info/LICENSE,sha256=30JX_lxHe6nRlugeSNNm_crhLnwsndludCKuQVlYGEI,1522
+elementy-0.0.13.dist-info/METADATA,sha256=y-4qvda69wMkx4yu-QKLnWPs86zp9NL1VC-jx2CdUGQ,2750
+elementy-0.0.13.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+elementy-0.0.13.dist-info/top_level.txt,sha256=mfKbTrMm76urXi3pQ4O3eFQREAsQmC422I97EdQagjk,9
+elementy-0.0.13.dist-info/RECORD,,
