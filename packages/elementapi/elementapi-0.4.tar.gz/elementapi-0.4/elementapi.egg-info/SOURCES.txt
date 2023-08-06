@@ -1,0 +1,7 @@
+setup.py
+elementapi/__init__.py
+elementapi.egg-info/PKG-INFO
+elementapi.egg-info/SOURCES.txt
+elementapi.egg-info/dependency_links.txt
+elementapi.egg-info/requires.txt
+elementapi.egg-info/top_level.txt
