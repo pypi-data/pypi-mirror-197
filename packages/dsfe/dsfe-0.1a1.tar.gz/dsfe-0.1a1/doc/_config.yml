@@ -1,0 +1,54 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: DSFE module
+author: Matthew Brett
+logo: images/dsfe_logo.png
+email: matthew.brett@gmail.com
+
+description: >-
+  Documentation for DSFE package, supporting various data science textbooks.
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: auto
+  timeout: 180
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: dsfe_package.tex
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/odsti/dsfe-package  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: main  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  favicon: images/dsfe_favicon.ico
+  home_page_in_navbar: false
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+  baseurl: https://odsti.github.io/dsfe-package
+
+launch_buttons:
+  # The interface interactive links will activate ["classic", "jupyterlab"]
+  notebook_interface: "classic"
+  # The URL of the BinderHub (e.g., https://mybinder.org)
+  binderhub_url: "https://mybinder.org"
+  # The URL of Google Colab (e.g., https://colab.research.google.com)
+  # colab_url: "https://colab.research.google.com"
+  thebe: true
+
+sphinx:
+  config:
+    nb_custom_formats:
+      .Rmd:
+        - jupytext.reads
+        - fmt: Rmd
+

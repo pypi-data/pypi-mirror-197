@@ -1,0 +1,264 @@
+---
+jupyter:
+  jupytext:
+    notebook_metadata_filter: all,-language_info
+    split_at_heading: true
+    text_representation:
+      extension: .Rmd
+      format_name: rmarkdown
+      format_version: '1.2'
+      jupytext_version: 1.14.1
+  kernelspec:
+    display_name: Python 3 (ipykernel)
+    language: python
+    name: python3
+  orphan: true
+---
+
+# Chi-squared and the lady tasting tea
+
+In this page, we analyze the famous experiment of the [lady tasting
+tea](https://en.wikipedia.org/wiki/Lady_tasting_tea).
+
+This is an experiment discussed by [Ronald
+Fisher](https://en.wikipedia.org/wiki/Ronald_Fisher) and
+
+> ... loosely based on an event in Fisher's life. The lady in question,
+> Muriel Bristol, claimed to be able to tell whether the tea or the milk
+> was added first to a cup. Her future husband, William Roach, suggested
+> that Fisher give her eight cups, four of each variety, in random
+> order. One could then ask what the probability was for her getting the
+> specific number of cups she identified correct (in fact all eight),
+> but just by chance.
+>
+> ...
+>
+> The experiment provides a subject with eight randomly ordered cups of
+> tea – four prepared by pouring milk and then tea, four by pouring tea
+> and then milk. The subject attempts to select the four cups prepared
+> by one method or the other, and may compare cups directly against each
+> other as desired.
+
+In fact, Muriel Bristol was able to correctly identify the four cups of tea for
+which milk had been poured before the tea.
+
+Fisher didn't believe her, so they ended up with an experiment where Muriel got
+8 cups of tea, four with milk-first, and four with milk-second.  She had to
+choose the 4 milk-first cups, and she got them all right.
+
+```{python}
+import numpy as np
+# A numpy random number generator
+rng = np.random.default_rng()
+
+import pandas as pd
+# Safe setting for Pandas.  Needs Pandas version >= 1.5.
+pd.set_option('mode.copy_on_write', True)
+
+# Load the library for plotting, name it 'plt'
+import matplotlib.pyplot as plt
+# Make plots look a little more fancy
+plt.style.use('fivethirtyeight')
+```
+
+We reconstruct something like the experimental data.
+
+```{python}
+# Whether the milk went into the cup first.
+milk_first = np.repeat(['yes', 'no'], [4, 4])
+# Muriel's identifications were all correct.
+says_milk_first = np.repeat(['yes', 'no'], [4, 4])
+tea_df = pd.DataFrame()
+tea_df['milk_first'] = milk_first
+tea_df['says_milk_first'] = says_milk_first
+# Fisher randomized the order.   We'll just make any random order.
+tea_df = tea_df.sample(8).reset_index(drop=True)
+tea_df
+```
+
+This gave us the following cross-tabulation:
+
+```{python}
+tea_counts = pd.crosstab(tea_df['milk_first'], tea_df['says_milk_first'])
+tea_counts
+```
+
+In what follows, we will refer to this DataFrame as the *counts table*, because it is the result of the *cross-tabulation* function.
+
+In fact we will refer to this particular counts table as the *observed counts table*, because it has the counts that we saw in the real world, where Muriel identified the cups in Fisher's experiment.
+
+```{python}
+observed_counts = tea_counts
+observed_counts
+```
+
+The sum over the rows give us the total counts of Muriels "no" and of Muriel's "yes" answers. These are the column totals:
+
+```{python}
+# Sum over the rows (one sum per column)
+column_totals = observed_counts.sum(axis='index')
+```
+
+In fact, summing over the rows is the default:
+
+```{python}
+observed_counts.sum()
+```
+
+Summing over the columns gives the row totals, one sum per row.  These are the total number of "yes" and "no" for milk-first:
+
+```{python}
+row_totals = observed_counts.sum(axis='columns')
+row_totals
+```
+
+As usual, we wanted to know whether we could get evidence against the null-model, in which Muriel was choosing randomly.  
+
+As usual, to do this, we had to select a *statistic* that represented the effect we were interested in.
+
+The statistic we will use is called chi-squared, and it is a statistic we can
+calculate from the counts table.
+
+## Chi-squared is two things
+
+Chi-squared can refer to two things:
+
+* The chi-squared *statistic*
+* The chi-squared *test*, a mathematical test that uses the
+  chi-squared statistic to calculate a probability value.
+
+**Note** - we sometimes write *chi-squared* as $\chi^2$, using
+the [Greek letter
+chi](https://en.wikipedia.org/wiki/Chi_(letter)) (pronounced to
+rhyme with "pie").
+
+The chi-squared *statistic* is a statistic we can calculate from
+any given counts table.  It is a measure of how far the table is
+from the table we expect when there is a random association
+between the categories — in our case, between `milk_first` "yes"
+/"no" and Muriel's decision "yes" / "no".
+
+The chi-squared *test* is a particular mathematical procedure to
+calculate a probability value from a given chi-squared
+*statistic*, without doing thousands of simulation trials.
+
+We could use the chi-squared *statistic* as the statistic to
+calculate on a real observed counts table, and then shuffle the
+labels, as we have done above, to find the distribution of the
+chi-squared value in the null-world.  This is what we do below.
+Or you could use the mathematical techniques embedded in the
+chi-squared *test* to generate a probability value.  The two
+values will usually be very similar, and have the same
+interpretation. See below for discussion of when you might use
+the *chi-squared* *test* in preference to the randomization /
+simulation method you have seen so far.
+
+
+## The Chi-squared statistic
+
+
+The chi-squared statistic is a measure of how far the counts table deviates from the counts table we would expect, if the relationship between the two observation columns is random.
+
+What does this mean in our case?   The expected table is the table we expect when Muriel cannot tell whether the cup is milk-first or not.
+
+We have already done our simulation to estimate the distribution of correct counts when Muriel is guessing, but let's go back and get the distribution of each cell when Muriel is guessing.   In the next cell, we follow the same procedure as before, shuffling Muriel's 'yes' and 'no' answers randomly so they have a random relationship to the actual 'yes' and 'no' for milk first.  This time we will look at the answers we get for a single cell of the counts table, the "yes", "yes" cell.
+
+
+Here is one trial, where we permute and rebuild the counts table:
+
+```{python}
+fake_says = rng.permutation(says_milk_first)
+fake_counts = pd.crosstab(milk_first, fake_says)
+fake_counts
+```
+
+Because the total number of "yes" and "no" labels have not changed, the column totals and the row totals cannot change:
+
+```{python}
+# In fact, axis='index' is the default.  Sum downwards.
+column_totals = fake_counts.sum(axis='index')
+column_totals
+```
+
+```{python}
+# Sum left to right.
+row_totals = fake_counts.sum(axis='columns')
+row_totals
+```
+
+In particular, we want the "yes", "yes" cell of that table:
+
+```{python}
+fake_counts.loc['yes', 'yes']
+```
+
+Now we know how to do one trial, we can extend to 1000 trials:
+
+```{python}
+n_iters = 1000
+# Make array of *integers* to store counts for each trial.
+fake_yes_yes = np.zeros(n_iters, dtype=int)
+for i in np.arange(n_iters):
+    fake_says = rng.permutation(says_milk_first)
+    fake_counts = pd.crosstab(milk_first, fake_says)
+    fake_yes_yes[i] = fake_counts.loc['yes', 'yes']
+fake_yes_yes[:10]
+```
+
+```{python}
+plt.hist(fake_yes_yes, bins=np.arange(6));
+```
+
+In this case the histogram is a little difficult to read, because
+the x-axis labels.  The first bar goes from x=0 to x=1, but in
+fact the height is for all values equal to 0.  Likewise the 1 to
+2 bar refers to values equal to 1.  We will use a simple routine
+that counts the number of 0s, 1s, 2s ... and then plots those
+counts as a bar graph, to make the meaning of the x-axis and bars
+more clear.
+
+
+The main engine for the function below is `np.bincount`.  This takes an array of integers, and counts the number of 0s, the number of 1s, 2s, 3s etc.  The array that comes back has the counts of 0s at position 0, the count of 1 at position 1, and so on.
+
+We could do this the long way round like this:
+
+```{python}
+print('Count of 0s:', np.count_nonzero(fake_yes_yes == 0))
+print('Count of 1s:', np.count_nonzero(fake_yes_yes == 1))
+print('Count of 2s:', np.count_nonzero(fake_yes_yes == 2))
+print('Count of 3s:', np.count_nonzero(fake_yes_yes == 3))
+print('Count of 4s:', np.count_nonzero(fake_yes_yes == 4))
+```
+
+`np.bincount` does this job for us:
+
+```{python}
+counts_of_counts = np.bincount(fake_yes_yes)
+counts_of_counts
+```
+
+```{python}
+counts_of_counts[2]
+```
+
+Notice that the array is of length 5, because the largest value that Numpy found was 5, with the count stored at position 5.
+
+We can use `np.bincount` to make a nice-looking plot of the counts, that is a bit clearer than the standard histogram:
+
+```{python}
+def plot_int_counts(arr):
+    """ Do bar plot of counts for integers in `arr`
+    """
+    # Convert arr to integers if necessary.
+    to_count = arr.astype(int)
+    # Counts for each integer in to_count
+    counts = np.bincount(arr)
+    # Do bar graph with integer on x axis, counts on y.
+    x_vals = np.arange(len(counts))
+    plt.bar(x_vals, counts)
+    plt.xticks(x_vals)
+```
+
+```{python}
+plot_int_counts(fake_yes_yes)
+```

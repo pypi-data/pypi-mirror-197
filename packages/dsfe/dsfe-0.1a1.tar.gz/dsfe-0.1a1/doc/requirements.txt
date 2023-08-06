@@ -1,0 +1,6 @@
+jupyter-book
+jupytext
+matplotlib
+scipy
+# To allow static build / upload
+ghp-import
