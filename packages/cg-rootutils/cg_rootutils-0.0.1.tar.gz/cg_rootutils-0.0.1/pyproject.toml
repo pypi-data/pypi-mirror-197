@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "cg-rootutils"
+version = "0.0.1"
+description = "A Suite of Utilities for ROOT"
+license = "MIT"
+authors = ["ChunkyGrumbler <ChunkyGrumbler@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/ChunkyGrumbler/ROOTUtils"
+classifiers = ["Development Status :: 1 - Planning"]
+packages = [{include = "cg", from = "src"}]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
