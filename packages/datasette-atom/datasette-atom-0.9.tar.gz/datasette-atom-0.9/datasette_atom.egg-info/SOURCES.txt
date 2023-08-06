@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+datasette_atom/__init__.py
+datasette_atom.egg-info/PKG-INFO
+datasette_atom.egg-info/SOURCES.txt
+datasette_atom.egg-info/dependency_links.txt
+datasette_atom.egg-info/entry_points.txt
+datasette_atom.egg-info/requires.txt
+datasette_atom.egg-info/top_level.txt
+tests/test_atom.py
