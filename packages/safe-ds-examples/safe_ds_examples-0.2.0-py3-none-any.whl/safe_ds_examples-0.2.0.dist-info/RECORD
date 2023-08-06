@@ -1,0 +1,9 @@
+safeds_examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safeds_examples/tabular/__init__.py,sha256=Ml4oaIdVUCbqAN4OKQsWG4EcPaDLzHRoR14t6QEDJjI,35
+safeds_examples/tabular/_titanic/__init__.py,sha256=WWwsEIesgpIeCFzv-W3xg-pj-9bdNcA9ghdMtgK5_tU,40
+safeds_examples/tabular/_titanic/_load_titanic.py,sha256=55-AnLnrR4eQfYpcL-UWLACI0fTu1ITBzd5egbxuIj4,297
+safeds_examples/tabular/_titanic/data/titanic.csv,sha256=_qqkSE6MFZ-N36xs_UVU-SmjJagffh_KpR4XQjxttsc,97471
+safe_ds_examples-0.2.0.dist-info/LICENSE,sha256=XJXd6q3ERDDfapWSw77_JxnIGm2oXXZo1MGfpa_CGy4,1069
+safe_ds_examples-0.2.0.dist-info/METADATA,sha256=gc2snxl9hlh4v5d5l1zvDp6yr5c-lpQEdqu4iajBIlk,1515
+safe_ds_examples-0.2.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+safe_ds_examples-0.2.0.dist-info/RECORD,,
