@@ -1,0 +1,10 @@
+django_chip/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_chip/settings.py,sha256=tCw_JoQt-sv8P70DhgZW2rpOqShkTNNmuvjqgbckvgM,100
+django_chip/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_chip/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_chip/management/commands/create_deploy.py,sha256=ORRkM69rfISheIqoCd3TiTZ9WojIMetXSwg3uhc40OY,282
+django_chip-0.0.1.dist-info/LICENSE,sha256=BGHjp3pa9laomBJxQX9jEsruVLONmd1pq2BL4LLr8BY,1056
+django_chip-0.0.1.dist-info/METADATA,sha256=yfEmLyVZCMysCHGaJ1KjFzZ1Fn1wnVnbZNXgp0-ObEY,1302
+django_chip-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+django_chip-0.0.1.dist-info/top_level.txt,sha256=bs5eC-x74I5cUK9wwRTLTWhK6hZ-QLJ6RDMpN7Pj0fA,12
+django_chip-0.0.1.dist-info/RECORD,,
