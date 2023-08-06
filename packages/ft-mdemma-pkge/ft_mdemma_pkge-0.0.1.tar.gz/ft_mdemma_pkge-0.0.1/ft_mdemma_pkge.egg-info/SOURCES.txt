@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+ft_mdemma_pkge.egg-info/PKG-INFO
+ft_mdemma_pkge.egg-info/SOURCES.txt
+ft_mdemma_pkge.egg-info/dependency_links.txt
+ft_mdemma_pkge.egg-info/top_level.txt
