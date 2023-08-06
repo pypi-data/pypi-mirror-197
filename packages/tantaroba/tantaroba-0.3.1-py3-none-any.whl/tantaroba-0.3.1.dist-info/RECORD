@@ -1,0 +1,14 @@
+tantaroba/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tantaroba/__version__.py,sha256=r4xAFihOf72W9TD-lpMi6ntWSTKTP2SlzKP1ytkjRbI,22
+tantaroba/dynamic_import.py,sha256=FBL6g-UxvLkCH6NMWDgE6U9Lz-OZItNLNt8kr5d55OQ,499
+tantaroba/iterator_helpers.py,sha256=Hz2g2DArKRZacs9_0TE8fLBlm05rKPnp2GocJ6KLQeU,641
+tantaroba/log.py,sha256=wxhxK86HRlilr3SQ6ezskMfVqa3yF8eNjaUBUtkUNGA,936
+tantaroba/postgresql.py,sha256=tEhz1q4x3i0Tkx8bSqeYxESqSMKMxazONYYelHPFb74,7992
+tantaroba/profile.py,sha256=5rpj2afgA2hsg5j1Y4x62aPM73TBILkV279vdOFoqgI,683
+tantaroba/scripts/script.py,sha256=zHB0eYawNCB7jQ0iaJ1xSOpJ-SdzwqgyWo7E3cBh5Ic,88
+tantaroba/strings.py,sha256=54GYmuoOg_cIcup-3-utxLUW1HuSRcPMkV5gB5yZC6Q,691
+tantaroba/yaml.py,sha256=VIlTZpWaMaGUhaEr01YeODKVCGqRCoc_7LgzaQZCbHk,528
+tantaroba-0.3.1.dist-info/LICENSE,sha256=1Hs3vxoPxJkQ848uvNK1mBdWoBDUCyNW0DzgTux4Vds,900
+tantaroba-0.3.1.dist-info/METADATA,sha256=3WEsq7lfixJI1xxObCj4DTjuyc2c3ClLBNIOY25d95A,1076
+tantaroba-0.3.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+tantaroba-0.3.1.dist-info/RECORD,,
