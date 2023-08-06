@@ -1,0 +1,9 @@
+README.md
+setup.py
+numeric_grad/__init__.py
+numeric_grad/numeric_grad.py
+numeric_grad.egg-info/PKG-INFO
+numeric_grad.egg-info/SOURCES.txt
+numeric_grad.egg-info/dependency_links.txt
+numeric_grad.egg-info/requires.txt
+numeric_grad.egg-info/top_level.txt
