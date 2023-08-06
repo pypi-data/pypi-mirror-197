@@ -1,0 +1,5 @@
+setup.py
+padrao_projetos_webscraping.egg-info/PKG-INFO
+padrao_projetos_webscraping.egg-info/SOURCES.txt
+padrao_projetos_webscraping.egg-info/dependency_links.txt
+padrao_projetos_webscraping.egg-info/top_level.txt

@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: padrao_projetos_webscraping
+Version: 0.1.0
+Summary: Uma biblioteca para criar a estrutura padrão de pastas para projetos
+Author: Eduardo Levi Cordeiro
+Author-email: eduardocordeiro1906@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
