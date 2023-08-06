@@ -1,0 +1,3 @@
+[console_scripts]
+gisaid_download=gisaid_download.gisaid_download:main
+
