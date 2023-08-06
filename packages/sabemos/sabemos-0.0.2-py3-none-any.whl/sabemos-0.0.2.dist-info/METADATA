@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: sabemos
+Version: 0.0.2
+Summary: A cloud-native self-hosting-friendly Q&A application
+Author-email: Rainer Schwarzbach <undisclosed@example.com>
+License: MIT License
+        
+        Copyright (c) 2023 Rainer Schwarzbach
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: homepage, https://gitlab.com/blackstream-x/sabemos
+Project-URL: documentation, https://blackstream-x.gitlab.io/sabemos
+Project-URL: repository, https://gitlab.com/blackstream-x/sabemos.git
+Project-URL: Bug Tracker, https://gitlab.com/blackstream-x/sabemos/-/issues
+Keywords: questions,answers,knowledge base
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Natural Language :: English
+Classifier: Topic :: Documentation
+Classifier: Topic :: Office/Business :: Groupware
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: oic
+Requires-Dist: PyYaml
+Requires-Dist: SQLAlchemy
+
+# sabemos
+
+_(Portuguese and Spanish: “we know”)_
+
+A cloud-native self-hosting-friendly Q&A application
+
+## Declaration of Intent
+
+Build a web application using the following techniques:
+
+- Python WSGI
+- OIDC authentication
+- RDBMS backend
+- Container build
+
+Features:
+
+- Few application roles: admin, moderator, user
+- Questions and answers (Q&A) are written and stored in a [GitHub](https://github.github.com/gfm/) or [GitLab](https://docs.gitlab.com/ee/user/markdown.html) flavored MarkDown subset
+- Q&A can be tagged
+- Answers can be voted for or against by all users
+- One answer can be marked as the selected solution by the question poster
+- Search over Q&A, questions only or answers only
+
+
+## Contributions welcome
+
+If you would like to contribute, please request project access using the link on the [overview page](https://gitlab.com/blackstream-x/sabemos).
