@@ -1,0 +1,12 @@
+xmipp_metadata/__init__.py,sha256=KpF76xfS--6R01YW9Ef9p-B1a_x-__TzupfBZYwaTe8,1144
+xmipp_metadata/utils.py,sha256=_Bs-bhTJOOFV-OazSbgYOkqrBVObspnRV5SvOAmDAPM,1821
+xmipp_metadata/image_handler/__init__.py,sha256=OBtN_VgZNCpOsuI1rBTPPuM2vHRCxGoyMXfyZooln-M,1200
+xmipp_metadata/image_handler/image_handler.py,sha256=qdJbCrQbEHmJ7T0RXE4fH5WCv_Cwf_l6kVtKDiaBfeI,3046
+xmipp_metadata/image_handler/image_spider.py,sha256=LOeNVaJuwfJpgaTdx4MKhA66lOf4HwWN72BlGM9lP7c,4492
+xmipp_metadata/metadata/__init__.py,sha256=wllz8WX83FFkha3kipgOSgxmE4WN7KDKA8yrZbaGx9c,1164
+xmipp_metadata/metadata/xmipp_metadata.py,sha256=lFiiNyIyx8aiZufzZDcQoCYi7gbfB22i76XYS2NjdyI,8125
+xmipp_metadata-1.0.4.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+xmipp_metadata-1.0.4.dist-info/METADATA,sha256=jy451KXWgB3noCXYne6gUTFtH8IPTf3MphtcEBTA9QU,1052
+xmipp_metadata-1.0.4.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+xmipp_metadata-1.0.4.dist-info/top_level.txt,sha256=pDHLMU4pDaU_pS6johwqLwGQTVfDpqhQzTarvbkRnKk,15
+xmipp_metadata-1.0.4.dist-info/RECORD,,
