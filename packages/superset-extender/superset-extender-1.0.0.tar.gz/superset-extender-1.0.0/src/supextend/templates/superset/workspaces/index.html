@@ -1,0 +1,191 @@
+{% extends "superset/base.html" %}
+
+{% block subheading %}
+<nav class="navbar bg-white navbar-light navbar-title mb-4">
+    <div class="container-fluid">
+        <a class="navbar-brand">Workspaces</a>
+    </div>
+</nav>
+{% endblock subheading %}
+
+
+{% block mainContent %}
+<div class="row">
+
+    <!-- Workspace Card-->
+    {% for workspace in workspaces %}
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card shadow h-100" style="border-left:.25rem solid {{workspace.color}}!important">
+            <div class="card-body pt-0">
+                <!-- Card Header - Dropdown -->
+                <div class="py-4 d-flex flex-row align-items-center justify-content-between">
+                    <a href="{{url_for('workspaces.list_dashboard_workspace', workspace_id=workspace.id)}}" class="btn btn-light btn-circle btn-sm link_list" style="color: {{workspace.color}}">
+                        <i class="fas fa-fw fa-folder"></i>
+                    </a>
+                    <div class="dropdown no-arrow">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLinkWorkspace{{workspace.id}}"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-700"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                             aria-labelledby="dropdownMenuLinkWorkspace{{workspace.id}}">
+                            <a class="dropdown-item  text-capitalize" href="#" data-toggle="modal" data-target="#workspaceModal{{workspace.id}}">
+                                <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>Edit workspace settings
+                            </a>
+                            <a class="dropdown-item  text-capitalize" href="#" data-toggle="modal" data-target="#workspaceAppendDashboardModal{{workspace.id}}">
+                                <i class="fas fa-fw fa-tachometer-alt fa-sm mr-2 text-gray-400"></i>Manage dashboards
+                            </a>
+                            <a class="dropdown-item  text-capitalize text-danger" href="#" data-toggle="modal" data-target="#workspaceDeleteModal{{workspace.id}}">
+                                <i class="fas fa-trash fa-sm mr-2 text-gray-400"></i>Delete workspace
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2 py-3">
+                        <div class="h5 font-weight-bold text-gray-800 text-capitalize mb-1">
+                            {{workspace.title}}</div>
+                        <div class="mb-0 text-gray-700">{{workspace.description}}</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock mainContent %}
+
+
+{% block editModal %}
+{% for workspace in workspaces %}
+<div class="modal fade" id="workspaceModal{{workspace.id}}" tabindex="-1" role="dialog" aria-labelledby="workspaceModal{{workspace.id}}"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title h6 text-dark" id="workspaceModalLabel{{workspace.id}}">Edit workspace</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" action="{{url_for('workspaces.update_workspace', workspace_id=workspace.id)}}">
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="workspaceLable{{workspace.id}}">Workspace title</label>
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <input type="text" name="title" class="form-control" id="workspaceLable{{workspace.id}}" value="{{workspace.title}}" required>
+                        </div>
+                        <div class="col-md-2 mb-3">
+                            <div class="form-group">
+                                <label for="colorPicker{{workspace.id}}" class="form-label">Color</label>
+                                <input type="color"
+                                       class="form-control form-control-color"
+                                       name="color"
+                                       id="colorPicker{{workspace.id}}"
+                                       value="{{workspace.color}}"
+                                       title="Choose workspace color">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+                        <div class="col-12 mb-3">
+                            <label for="workspaceDescription{{workspace.id}}" class="form-label">Description</label>
+                            <textarea class="form-control" name="description" id="workspaceDescription{{workspace.id}}" rows="3" placeholder="{{workspace.description}}"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-light text-uppercase" type="button" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-info text-uppercase">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock editModal %}
+
+
+{% block deleteModal %}
+{% for workspace in workspaces %}
+<div class="modal fade" id="workspaceDeleteModal{{workspace.id}}" tabindex="-1" role="dialog" aria-labelledby="workspaceDelModalLabel{{workspace.id}}"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title h6 text-dark text-capitalize" id="workspaceDelModalLabel{{workspace.id}}">Delete workspace</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" action="{{url_for('workspaces.delete_workspace', workspace_id=workspace.id)}}">
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="col-12 mb-3">
+                            <label for="validationDefault01">Are you sure you want to delete the workspace?
+                                Deleting this workspace is not recoverable. To confirm, enter
+                                "<b>DELETE</b>" in the field below.
+                            </label>
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            <input name="confirm" type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-light text-uppercase" type="button" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-danger text-uppercase">delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock deleteModal %}
+
+<!--#workspaceAppendDashboardModal{{workspace.id}}-->
+{% block appendWorkspaceDashboardModal %}
+{% for workspace in workspaces %}
+<div class="modal fade" id="workspaceAppendDashboardModal{{workspace.id}}" tabindex="-1" role="dialog" aria-labelledby="workspaceAppendDashboardModalLabel{{workspace.id}}"
+     aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title h6 text-dark text-capitalize" id="workspaceAppendDashboardModalLabel{{workspace.id}}">Manage dashboards</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="POST" action="{{url_for('workspaces.add_dashboards', workspace_id=workspace.id)}}">
+                <div class="modal-body">
+                    <div class="form-row">
+                        <div class="col-12 mb-3">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                            {% for dashboard in dashboards %}
+                                {% if dashboard in workspace.dashboards %}
+                                    <div class="form-check form-switch">
+                                        <input name="dashboards" value="{{dashboard.id}}" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck{{dashboard.id}}"  checked disabled>
+                                        <label class="form-check-label" for="flexSwitchCheck{{dashboard.id}}">{{dashboard.title}}</label>
+                                    </div>
+                                {% else %}
+                                    <div class="form-check form-switch">
+                                        <input name="dashboards" value="{{dashboard.id}}" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheck{{dashboard.id}}">
+                                        <label class="form-check-label" for="flexSwitchCheck{{dashboard.id}}">{{dashboard.title}}</label>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-light text-uppercase" type="button" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-info text-uppercase">proceed</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock appendWorkspaceDashboardModal %}

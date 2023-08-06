@@ -1,0 +1,24 @@
+python-dotenv
+flask
+flask-sqlalchemy
+requests
+python-dateutil
+flask-wtf
+loguru
+prettytable
+pdoc3
+flask-bcrypt
+flask-login
+psycopg2-binary
+flask-oidc
+flask-migrate
+waitress
+itsdangerous==2.0.1
+sphinx
+sphinx-tabs
+karma-sphinx-theme
+build
+twine
+
+[:python_version < "3.10"]
+importlib-metadata

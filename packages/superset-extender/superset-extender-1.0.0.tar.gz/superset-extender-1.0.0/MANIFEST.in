@@ -1,0 +1,9 @@
+include LICENSE.txt
+include README.md
+include src/supextend/docker/init.sql
+include src/supextend/.env.dev
+recursive-include src/supextend/migrations *
+recursive-include src/supextend/templates *
+recursive-include src/supextend/static *
+recursive-exclude tests *
+global-exclude *.pyc
