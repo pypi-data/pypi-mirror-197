@@ -1,0 +1,6 @@
+taskiq_redis/__init__.py,sha256=7APdvz7YtRB2VpB0PvCvgIF_f4cPTXG5XyIBvdmfEVE,212
+taskiq_redis/redis_backend.py,sha256=N6XH_XWUQr2VBoNTe1ZbwgxHh8c4yWW5fF0mkBsXQ1c,2979
+taskiq_redis/redis_broker.py,sha256=l8bwfh2qKzqukJwAYY7wJ0aReMd7Ihme_1eUsxR4TPU,4279
+taskiq_redis-0.2.0.dist-info/METADATA,sha256=SvT_vjNmL4trJ7Md84uo75FRcq9bMYDEscXGxha7SSg,3130
+taskiq_redis-0.2.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+taskiq_redis-0.2.0.dist-info/RECORD,,
