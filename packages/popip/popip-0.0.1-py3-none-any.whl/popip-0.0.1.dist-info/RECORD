@@ -1,0 +1,11 @@
+popip/__init__.py,sha256=wa1eWSxYOHXY5keOIrWVaeOPwStwxhrmIrhpC5zm0RI,29
+popip/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+popip/api/api.py,sha256=wIjlvV1-rMIx7O9NMWD0Esl8pH7Mb3VAe0pnyFBY-pM,414
+popip/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=_Jtf1OTsAD40RR2FSuDgNbCL7bJAPIfyD8TFYdq9qUY,181
+tests/test_file.py,sha256=pXWoD4TrfYYAXjv1XITaKqHkqbyel_cdgAYbfRLvlVI,1113
+popip-0.0.1.dist-info/LICENSE,sha256=GQ6XaGbsxl2OlUBlk1jLBtkHC8U1p6Bw9E1P1XqYAlU,1093
+popip-0.0.1.dist-info/METADATA,sha256=RM-kLLz_6jMSxh-sX7arHgX9WXyNMqxFqoOHDjc8uXw,5172
+popip-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+popip-0.0.1.dist-info/top_level.txt,sha256=9777tlGwb-l_5QzfSGngge8t0pNpX519JVyY34TuFuw,12
+popip-0.0.1.dist-info/RECORD,,
