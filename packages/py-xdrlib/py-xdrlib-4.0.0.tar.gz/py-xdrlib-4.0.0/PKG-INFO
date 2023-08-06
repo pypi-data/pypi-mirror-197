@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: py-xdrlib
+Version: 4.0.0
+Summary: Encode or decode XDR (IETF RFC-4506/1832/1014)
+Author-email: David Arnold <davida@pobox.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Project-URL: Bug Tracker, https://github.com/da4089/py-xdrlib/issues
+Project-URL: Homepage, https://github.com/da4089/py-xdrlib
+
+# xdrlib
+
