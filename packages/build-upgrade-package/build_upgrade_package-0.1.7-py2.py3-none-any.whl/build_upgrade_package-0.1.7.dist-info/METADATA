@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: build-upgrade-package
+Version: 0.1.7
+Summary: build upgrade package.
+Home-page: 
+Author: bing.feng
+Author-email: bing.feng@iquantex.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+
+
+# data-generator
+## Getting started

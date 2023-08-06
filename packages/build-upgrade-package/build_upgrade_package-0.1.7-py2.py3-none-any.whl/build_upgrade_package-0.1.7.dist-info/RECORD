@@ -1,0 +1,8 @@
+datagen.py,sha256=vKi7LiRBv3aSnkCyfhC1HZEvsxnqV4kh4NmTRad0tfo,3275
+base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+base/logger.py,sha256=OmfUgSJRe2KHq0hoL2P4BUEsXsrX0sVujKLSMUnHUU8,977
+build_upgrade_package-0.1.7.dist-info/METADATA,sha256=cNx7kMPBosq5MZNOv5R1xgfa-bA0YcUbBS6tqZlQzao,636
+build_upgrade_package-0.1.7.dist-info/WHEEL,sha256=z9j0xAa_JmUKMpmz72K0ZGALSM_n-wQVmGbleXx2VHg,110
+build_upgrade_package-0.1.7.dist-info/entry_points.txt,sha256=EIfKKkcofgrD6uupNsCBuygHKTnk_S1BTWmZFm6oCQ0,37
+build_upgrade_package-0.1.7.dist-info/top_level.txt,sha256=G_3uivfxeHbFucBDOrIk8cKBokCMXD8rH-kV41FpC6s,13
+build_upgrade_package-0.1.7.dist-info/RECORD,,
