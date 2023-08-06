@@ -1,0 +1,17 @@
+llama/__init__.py,sha256=z_X6VtDIpQ6Q_tNwV3_FpOoZYcs5zIL7X1vs2lHWN4w,484
+llama/convert_llama.py,sha256=cSTMVr4aQ2ot6g_BGhW2hJ_9ZKfMGQfXhxD3EKckMuQ,13542
+llama/download.py,sha256=OG_WMjD3M1VYe8LbBrW60QtvaGMUEIgBLU57zsnnyR8,1073
+llama/download_community.sh,sha256=aj5bQOmyG5ode__pPxuJ2xi7jQJohxkMZ5c3cPbFY8I,2042
+llama/generation.py,sha256=Eg5w4TyvuF-w6E-G-QX1W77129W8jQIFLjJ-8Uc_8Ts,4735
+llama/llama_infer.py,sha256=22O0dP53M8CNUPSItwLCNGR0ckjEsBmJtb1nxxUpWpI,2656
+llama/llama_multigpu.py,sha256=RT2hW1ACtq0iCaIBTUYdKn9E49RX1BN9xl4WA6eF6uU,2582
+llama/llama_quant.py,sha256=IveAz6wzdSfKg1QivL0HUPGy3VB8yY1F9Rd7yY65oZA,15401
+llama/model_parallel.py,sha256=RIHGkjMfHRFWc69MqJ2NzbH6xpOmZF9fW_TjHqONrTY,8415
+llama/model_single.py,sha256=DvKBdEbg87rO15p63sNtrQ2AH9ZTnYq05YGWNzvvyVA,7502
+llama/tokenizer.py,sha256=Eo7U7YwVeOngLHQ7FCWcamCNAZV_3QWCtd9CfBxxLlI,1749
+llama/version.py,sha256=QiiYsv0kcJaB8wCWyT-FnI2b6be87HA-CrrIUn8LQhg,22
+pyllama-0.0.6.dist-info/LICENSE,sha256=hGDSSng8ArXjH6Oz2u5DyV8sSaStQrrZKNzgH7Bri0g,35149
+pyllama-0.0.6.dist-info/METADATA,sha256=TvKaIYVXmG5ABolj-qbrvEfcTTBLQtTsdBMlF86nLKI,10908
+pyllama-0.0.6.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+pyllama-0.0.6.dist-info/top_level.txt,sha256=vXIfhTMeFFl71QrVVrWCJGS0tzlBB5vynlR-iGsCqZ4,6
+pyllama-0.0.6.dist-info/RECORD,,
