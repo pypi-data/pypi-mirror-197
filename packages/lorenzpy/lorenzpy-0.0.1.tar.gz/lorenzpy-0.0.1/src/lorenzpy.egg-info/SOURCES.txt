@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/lorenzpy/__init__.py
+src/lorenzpy/measures.py
+src/lorenzpy/simulations.py
+src/lorenzpy.egg-info/PKG-INFO
+src/lorenzpy.egg-info/SOURCES.txt
+src/lorenzpy.egg-info/dependency_links.txt
+src/lorenzpy.egg-info/requires.txt
+src/lorenzpy.egg-info/top_level.txt
+src/lorenzpy/plot/__init__.py
+src/lorenzpy/plot/plot_3d.py
+tests/test_measures.py
+tests/test_simulations.py
