@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: AuSeSol-isg
+Version: 1.0.1
+Summary: Package to process, train and evaluate time series related data in solar energy field
+Home-page: https://gitlab.com/alaan.sheikhani/isg_project
+Author-email: alaan.sheikhani@industrial-solar.de
+License: MIT
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: dev
+Requires-Dist: pandas (>=1.4.0) ; extra == 'dev'
+Requires-Dist: scipy (>=1.9.0) ; extra == 'dev'
+Requires-Dist: scikit-learn (>=1.0.0) ; extra == 'dev'
+
+# description general of the project
+
+
+# Installation
+
+# Usage
+example code
+
+# Developing with isg
+if you want to help in isg package development install our package along the required dev requirements in your virtual env
+
+'''
+bash
+$ pip install isg -e .[dev]
+'''
