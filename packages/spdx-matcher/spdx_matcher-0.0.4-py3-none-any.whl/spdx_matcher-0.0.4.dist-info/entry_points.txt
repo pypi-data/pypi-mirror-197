@@ -1,0 +1,2 @@
+[console_scripts]
+build_spdx_matcher_cache = spdx_matcher:cache_builder
