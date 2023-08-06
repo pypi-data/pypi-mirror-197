@@ -1,0 +1,8 @@
+License
+setup.py
+src/statsflow.py
+statsflow.egg-info/PKG-INFO
+statsflow.egg-info/SOURCES.txt
+statsflow.egg-info/dependency_links.txt
+statsflow.egg-info/requires.txt
+statsflow.egg-info/top_level.txt
