@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+mkdocs-image-captions=mkdocs_image_captions.plugin:ImageCaptionsPlugin
+
