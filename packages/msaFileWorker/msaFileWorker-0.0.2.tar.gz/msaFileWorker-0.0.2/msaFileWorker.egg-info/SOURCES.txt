@@ -1,0 +1,16 @@
+LICENCE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+msaFileWorker/__init__.py
+msaFileWorker.egg-info/PKG-INFO
+msaFileWorker.egg-info/SOURCES.txt
+msaFileWorker.egg-info/dependency_links.txt
+msaFileWorker.egg-info/requires.txt
+msaFileWorker.egg-info/top_level.txt
+msaFileWorker.egg-info/zip-safe
+msaFileWorker/utils/__init__.py
+msaFileWorker/utils/constans.py
+msaFileWorker/utils/exc.py
+msaFileWorker/utils/file_worker.py
