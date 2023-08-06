@@ -1,0 +1,11 @@
+pyaitools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyaitools/detect.py,sha256=03d_TxUebiFqkXxkmv46nmlsEKZ7QDu5NEs1cETI90Y,2263
+pyaitools/loss.py,sha256=Kf8MmEKYj8XB4VGuKxs9nTVvWX-JCDmWAXTMwNItWnU,1353
+pyaitools/similar.py,sha256=7bquXJtTGfpZQxc2z_uCYsrli4osgpyQr90AXvonq6Y,902
+pyaitools/theT.py,sha256=edQVnZi9w4pghYDNpC_zirFfKY-r5ltzDOPDthGKS6w,12212
+pyaitools/weight_pooled_output.py,sha256=LZEr81WW00J1bEVKjWtKQMEeczctB8K0GuUIM90ZAhc,1277
+pyaitools-1.4.8.dist-info/LICENSE,sha256=9_eb6SsXV_eoQn5zonyGCh7Hq6-Jn4UbaIuK1tbzNOo,1096
+pyaitools-1.4.8.dist-info/METADATA,sha256=RS85hczoSLXYj4RZNvOzgaVVZDz2Ex08RHemDIg0PNw,698
+pyaitools-1.4.8.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyaitools-1.4.8.dist-info/top_level.txt,sha256=3FI82e5r8Sv9GdwaEhMUlLJaoAGgHb7118to2WGTcXk,10
+pyaitools-1.4.8.dist-info/RECORD,,
