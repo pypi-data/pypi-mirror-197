@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: doccano-mini
+Version: 0.0.1
+Summary: Generate LangChain config quickly
+Home-page: https://github.com/doccano/doccano-mini
+License: MIT
+Author: Hironsan
+Author-email: hiroki.nakayama.py@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: langchain (>=0.0.112,<0.0.113)
+Requires-Dist: openai (>=0.27.2,<0.28.0)
+Requires-Dist: streamlit (>=1.20.0,<2.0.0)
+Project-URL: Repository, https://github.com/doccano/doccano-mini
+Description-Content-Type: text/markdown
+
+# doccano-mini
+
+doccano-mini is a few-shot annotation tool to assist the development of applications with Large language models (LLMs). Once you annotate a few text, you can test your task (e.g. text classification) with LLMs, then download the [LangChain](https://github.com/hwchase17/langchain)'s config.
+
+![Demo](./docs/images/demo.jpg)
+
+Note: This is an experimental project.
+
+## Installation
+
+```bash
+pip install doccano-mini
+```
+
+## Usage
+
+For this example, we will be using OpenAI’s APIs, so we need to set the environment variable in the terminal.
+
+```bash
+export OPENAI_API_KEY="..."
+```
+
+Then, we can run the server.
+
+```bash
+doccano-mini
+```
+
+Now, we can open the browser and go to `http://localhost:8501/` to see the interface.
+
+## Development
+
+```bash
+poetry install
+streamlit run doccano_mini/app.py
+```
+
