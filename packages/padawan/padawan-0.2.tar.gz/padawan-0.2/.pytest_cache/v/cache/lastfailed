@@ -1,0 +1,9 @@
+{
+  "tests/test_slice.py::test__slice__unknown_stats": true,
+  "tests/test_slice.py::test__slice__known_stats": true,
+  "tests/test_slice.py::test__slice__exclusive_upper": true,
+  "tests/test_slice.py::test__slice__column_subset": true,
+  "tests/test_slice.py::test__slice__column_superset": true,
+  "tests/test_collate.py::test__collate__parallel": true,
+  "tests/test_join.py::test__join__right": true
+}
