@@ -1,0 +1,89 @@
+[tool.poetry]
+name = "xil"
+version = "0.1.0"
+description = ""
+# TODO: decide on license
+authors = ["Jonathan Daniel <jonathand655@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/jond01/xil"
+documentation = "https://github.com/jond01/xil#readme"
+keywords = ["foreign exchange", "Israeli banks", "Shekel", "finance"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Information Technology",
+    "Natural Language :: English",
+    "Natural Language :: Hebrew",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = ">= 3.10, < 3.12"
+pandas = "^1.5.3"
+beautifulsoup4 = {version = "^4.11.1", extras = ["lxml", "html5lib"]}
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.1.1"
+pylint = "^2.17.0"
+
+[tool.poetry.group.typing.dependencies]
+mypy = "^1.1.1"
+pandas-stubs = "^1.5.3.230304"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.2"
+coverage = {extras = ["toml"], version = "^7.2.1"}
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/jond01/xil/issues"
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint]
+enable = ["I"]
+fail-on = ["useless-suppression"]
+good-names = ["df"]
+
+[tool.mypy]
+check_untyped_defs = true
+disallow_untyped_defs = true
+warn_unused_ignores = true
+warn_return_any = true
+show_error_codes = true
+exclude = ["dist/"]
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "error",
+    # Allow using the debugger in PyCharm when IPython is installed.
+    # See: https://youtrack.jetbrains.com/issue/PY-44199/IPython-console-fails-when-running-Python-with-W-error
+    '''
+ignore:
+Passing unrecognized arguments to super\(PyDevIPCompleter6\).__init__\(use_readline=False\).
+object.__init__\(\) takes exactly one argument \(the instance to initialize\)
+This is deprecated in traitlets 4.2.This error will be raised in a future release of traitlets.
+:DeprecationWarning
+    ''',
+]
+addopts = ["--import-mode=importlib"]
+
+[tool.coverage.run]
+branch = true
+source = ["xil"]
+
+[tool.coverage.report]
+fail_under = 0
+show_missing = true
+skip_empty = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
