@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+kikyo_sz/__init__.py
+kikyo_sz/config.py
+kikyo_sz/oss.py
+kikyo_sz.egg-info/PKG-INFO
+kikyo_sz.egg-info/SOURCES.txt
+kikyo_sz.egg-info/dependency_links.txt
+kikyo_sz.egg-info/entry_points.txt
+kikyo_sz.egg-info/not-zip-safe
+kikyo_sz.egg-info/requires.txt
+kikyo_sz.egg-info/top_level.txt
+requirements/test.txt
+tests/__init__.py
+tests/test_filesys_oss.py
