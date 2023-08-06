@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: matter-exceptions
+Version: 1.0.0
+Project-URL: Documentation, https://github.com/Matter/matter-exceptions#readme
+Project-URL: Issues, https://github.com/Matter/matter-exceptions/issues
+Project-URL: Source, https://github.com/Matter/matter-exceptions
+Author-email: Rômulo Jales <romulo@thisismatter.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Provides-Extra: fastapi
+Requires-Dist: fastapi<=0.94.1,>=0.88.0; extra == 'fastapi'
+Description-Content-Type: text/markdown
+
+# matter-exceptions
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install matter-exceptions
+```
+
+## Contributing
+
+Make sure you have all supported python versions installed in your machine:
+
+* 3.10
+* 3.11
+
+### Install hatch in your system
+
+```https://hatch.pypa.io/latest/install/```
+
+### Create the environment
+
+```console
+hatch env create
+```
+
+Do your changes...
+
+### Run the tests
+
+```console
+hatch run test
+```
+
+The command above will run the tests against all supported python versions
+installed in your machine. For testing in other operating system you may use the
+configured CI in github. 
+
+### Bump a new version
+
+In general, you just need to execute:
+
+```console
+hatch version
+```
+
+This command will update the minor version. i.e.:
+No breaking changes and new feature has been added
+
+We are using [semantic version](https://semver.org/), if you are doing a bug fix:
+
+```console
+hatch version fix
+```
