@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pyblackbird/__init__.py
+pyblackbird.egg-info/PKG-INFO
+pyblackbird.egg-info/SOURCES.txt
+pyblackbird.egg-info/dependency_links.txt
+pyblackbird.egg-info/requires.txt
+pyblackbird.egg-info/top_level.txt
+pyblackbird.egg-info/zip-safe
+tests/test_blackbird.py
