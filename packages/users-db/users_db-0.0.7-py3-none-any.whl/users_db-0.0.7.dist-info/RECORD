@@ -1,0 +1,16 @@
+users_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+users_db/alembic.ini,sha256=wbTA716Q7r2bqJa54-qfGZ1tjCSOnGZN6IeWMM_ueAI,3090
+users_db/commands.py,sha256=-l5yib726YPAD5Gk7mGhsVsq62AHm98rAKn6-nVm7E0,1313
+users_db/config.py,sha256=EiZa6z9e3S_unz0Ny5sQzT1_PH7I9fahxbbNF_DaPE0,464
+users_db/db.py,sha256=tJiwLm2rBKlbUnCAPCU6-SqBq8_IW1Mqh_glaH6qqf8,1404
+users_db/migrations/README,sha256=MVlc9TYmr57RbhXET6QxgyCcwWP7w-vLkEsirENqiIQ,38
+users_db/migrations/__init__.py,sha256=Re2zAIQFPxE1RiIRNUVYgbOYZNnBHm74sRETOV_uyok,457
+users_db/migrations/env.py,sha256=0Ot_bv5Ww-FAroHjRZvVDO1y1pQrK9Nsy1RGiVVhsm0,2027
+users_db/migrations/script.py.mako,sha256=HNlf26BI1xvQKjiUojnj15BPrVUfVVr81IOgliJf83c,510
+users_db/migrations/versions/f46112e923d8_.py,sha256=oxr65isdgUDgSMjQJLWOFLPcys4cSA4SbfiUYMdRMys,905
+users_db/schema.py,sha256=x2OR-YNeofshDNYQ3DSQmxY3E-QCCQgtb6H-YjJcj3U,381
+users_db/users.py,sha256=ipOBgUbOZTq-H95e4AYnj8OGJurE6cfSI6Ioa_1xEPE,1580
+users_db-0.0.7.dist-info/METADATA,sha256=0etUgy7NtRxR9wbu34I-AZ-LygL4577rJWK6R--qH-c,662
+users_db-0.0.7.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+users_db-0.0.7.dist-info/entry_points.txt,sha256=4Iobfh5SfdVugyc3xq8Vpk-rKcfQ9xWswJKbgKgF2Gw,170
+users_db-0.0.7.dist-info/RECORD,,
