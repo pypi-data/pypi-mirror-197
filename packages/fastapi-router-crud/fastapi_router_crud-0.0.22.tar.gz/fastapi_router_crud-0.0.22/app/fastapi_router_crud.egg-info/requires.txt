@@ -1,0 +1,6 @@
+fastapi
+tortoise-orm[all]
+
+[dev]
+pytest
+twine
