@@ -1,0 +1,4 @@
+faker
+polars[all]
+requests
+sqlalchemy
