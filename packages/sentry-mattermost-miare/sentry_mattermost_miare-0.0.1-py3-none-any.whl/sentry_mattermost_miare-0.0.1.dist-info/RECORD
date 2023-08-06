@@ -1,0 +1,8 @@
+sentry_mattermost/__init__.py,sha256=HineJq8FO-asKV1UjgHMJrAefHORswLAObiisih8VTg,138
+sentry_mattermost/plugin.py,sha256=k0Vw2gGdZuIpu83aCyRwvxDZRHljESGxTM11Uhi788w,4335
+sentry_mattermost_miare-0.0.1.dist-info/LICENSE,sha256=qVmGA7kqlWhZtuN8fVnLpeh3OJCI1rCEgMSq06nLubk,1053
+sentry_mattermost_miare-0.0.1.dist-info/METADATA,sha256=qKaplG2d3k82iBDS2Uc54XuDCGaJ_efpmeSV-unNhMo,333
+sentry_mattermost_miare-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+sentry_mattermost_miare-0.0.1.dist-info/entry_points.txt,sha256=iiYy2NAeKraVFVNITHPDg3cg0FRi2ACedhNv1zOpPd0,67
+sentry_mattermost_miare-0.0.1.dist-info/top_level.txt,sha256=K_y_gE--QAPgF25hsqKeBEQwgi6UX1pLu9dAp7h7wwc,18
+sentry_mattermost_miare-0.0.1.dist-info/RECORD,,

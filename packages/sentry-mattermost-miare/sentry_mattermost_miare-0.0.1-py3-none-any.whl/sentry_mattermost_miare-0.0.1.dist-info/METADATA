@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sentry-mattermost-miare
+Version: 0.0.1
+Summary: A Sentry plugin to send Mattermost notifications
+Home-page: https://github.com/NDrive/sentry-mattermost
+Author: Andre Freitas and Miare Team
+Author-email: andre.freitas@ndrive.com
+License: MIT
+Keywords: sentry mattermost devops
+Platform: UNKNOWN
+
+UNKNOWN
+
+
