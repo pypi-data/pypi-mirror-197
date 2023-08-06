@@ -1,0 +1,12 @@
+veda_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+veda_cli/applications/__init__.py,sha256=aTShSUlr1orfmXhkh25ow9p-wTF7fA4YtsEkIQKA2es,915
+veda_cli/applications/ecco/__init__.py,sha256=PVSJqgGxMHbhxKJJCq-EuTMZA0o7jEMSbrhSs-Hmg4o,1063
+veda_cli/applications/ecco/ecco_app.py,sha256=1ke7-7mieanCW76KKI3TWWw81aIR3OfyUN8E-ZA7DpE,10910
+veda_cli/applications/wrf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+veda_cli/datasets/__init__.py,sha256=Aj7GV8NQ-zlthG_6hvbLv95OCwcufttVJ58oq3ouRaM,515
+veda_cli/executions/__init__.py,sha256=9Rci6vwRVUWzFM2Ldky4rtva9s6yVyvlOq0T_83Bx8M,1972
+veda_cli/main.py,sha256=z2WPlQUokMJtj0FIPUpONhe4-4TbgW_EDwTSwB-bvuE,1113
+veda_cli-0.0.3.dist-info/METADATA,sha256=DW4nQeOW2Hb7s2UgeeVcInLLlg0jV3xgtbWWMYLLLMk,645
+veda_cli-0.0.3.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+veda_cli-0.0.3.dist-info/entry_points.txt,sha256=kHI3hwZZ4ppJfb-C97kY8YiNaLzHaDaN5eCSHC8qu_w,42
+veda_cli-0.0.3.dist-info/RECORD,,
