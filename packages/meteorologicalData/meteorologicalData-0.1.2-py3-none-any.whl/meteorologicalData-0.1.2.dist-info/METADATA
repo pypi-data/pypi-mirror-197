@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: meteorologicalData
+Version: 0.1.2
+Summary: Um simples pacote para retornar ou visualizar dados meteorológicos de uma determinada cidade
+Author: David Moura, Enzo Sá
+Author-email: davidmoura0102@gmail.com, enzosa90@gmail.com
+License: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: folium
+Requires-Dist: PyQt5
+Requires-Dist: requests
+
+# meteorologicalData
+==============================
+
+### Atraves desse pacote, o usuario podera visualizar os dados meteorologicos e a localizacao exata de uma determinada cidade.
+
+## Instalacao
+
+Para instalar o pacote, basta executar o comando abaixo:
+
+<pre><code>pip install meteorologicalData</code></pre>
+
+## Uso
+
+<pre><code>
+from meteorologicalData import main
+md = main.MD(cidade, tipo) """ tipo == 'visualizar' or 'retornar' """
+md.retorna_dados()
+
+Se tipo for igual a 'retornar', use uma variavel para receber a lista com os dados meteorologicos.
+
+lista = md.retorna_dados()
+</code></pre>
+
+
