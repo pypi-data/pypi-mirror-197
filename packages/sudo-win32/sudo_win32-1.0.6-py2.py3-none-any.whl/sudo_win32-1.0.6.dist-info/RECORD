@@ -1,0 +1,11 @@
+sudo_win32/__init__.py,sha256=gzwhGhMPokx6H-1eeQzbIY9jhjLlDicSsDyDkgL-rh4,81
+sudo_win32/cli.py,sha256=IrRToF02Do0fZfBjcfhtH5PiUje_NC0gBvZ_JjFZTjM,394
+sudo_win32/elevated_exec.py,sha256=sDVn50iw3lQ_054bS-x-u4KoXiGD28nFrXghnmLwcYo,994
+sudo_win32/gsudo.7z,sha256=ElRWnO5H4hXV5rHfKlE1nhdavetX9XtWMAsWIHuDozo,1768105
+sudo_win32/install.py,sha256=TUnCUpPerWg1J2VDUW-VESPakaOGYURVeogM3Sx-cYU,1205
+sudo_win32-1.0.6.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+sudo_win32-1.0.6.dist-info/METADATA,sha256=LXpLt-n_ejNH364KeMwlrWsXgV4LVQHauN_jKBbZzXM,1764
+sudo_win32-1.0.6.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+sudo_win32-1.0.6.dist-info/entry_points.txt,sha256=l-ufQ4FXgQiyUIUOgTds8uaNIe9PzY8QpAjrJynbHEk,51
+sudo_win32-1.0.6.dist-info/top_level.txt,sha256=errJEh5WcYlj_J72U5qsE_kDwCxOnbt7LUJMXx-CzXo,11
+sudo_win32-1.0.6.dist-info/RECORD,,
