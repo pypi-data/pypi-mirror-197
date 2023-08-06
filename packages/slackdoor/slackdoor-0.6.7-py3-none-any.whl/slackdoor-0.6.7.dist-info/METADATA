@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: slackdoor
+Version: 0.6.7
+Summary: An opinionated and powerful chatbot framework for Slack
+Home-page: https://github.com/eddyg/slackdoor
+License: MIT
+Author: Eddy G
+Author-email: eddyg@users.noreply.github.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: aiorun (>=2022,<2023)
+Requires-Dist: case-insensitive-dictionary
+Requires-Dist: python-dotenv (>=0,<1)
+Requires-Dist: pytz
+Requires-Dist: sentry-sdk (>=1.16,<2)
+Requires-Dist: slack-bolt[async] (>=1.15.2,<2.0.0)
+Requires-Dist: slack-sdk (>=3.19.2,<4.0.0)
+Project-URL: Repository, https://github.com/eddyg/slackdoor
