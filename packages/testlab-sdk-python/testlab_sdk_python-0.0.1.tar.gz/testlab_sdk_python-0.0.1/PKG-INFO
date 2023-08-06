@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: testlab_sdk_python
+Version: 0.0.1
+Summary: Python SDK for using the TestLab A/B Testing Platform
+Project-URL: Homepage, https://testl-ab.github.io/docs/docs/react-SDK
+Author-email: Alison Martinez <alison@alisonmartinez.dev>, Chelsea Saunders <c.c.saunders@protonmail.com>, Sarah Bunker <chemencoder@gmail.com>, Abbie Papka <abbiepapka@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7

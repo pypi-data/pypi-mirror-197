@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "testlab_sdk_python"
+version = "0.0.1"
+authors = [
+  { name="Alison Martinez", email="alison@alisonmartinez.dev" },
+  { name="Chelsea Saunders", email="c.c.saunders@protonmail.com" },
+  { name="Sarah Bunker", email="chemencoder@gmail.com" },
+  { name="Abbie Papka", email="abbiepapka@gmail.com" },
+]
+description = "Python SDK for using the TestLab A/B Testing Platform"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://testl-ab.github.io/docs/docs/react-SDK"
