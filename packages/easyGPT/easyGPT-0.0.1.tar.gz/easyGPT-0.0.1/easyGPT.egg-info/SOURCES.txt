@@ -1,0 +1,8 @@
+setup.py
+easyGPT/__init__.py
+easyGPT/main.py
+easyGPT.egg-info/PKG-INFO
+easyGPT.egg-info/SOURCES.txt
+easyGPT.egg-info/dependency_links.txt
+easyGPT.egg-info/entry_points.txt
+easyGPT.egg-info/top_level.txt
