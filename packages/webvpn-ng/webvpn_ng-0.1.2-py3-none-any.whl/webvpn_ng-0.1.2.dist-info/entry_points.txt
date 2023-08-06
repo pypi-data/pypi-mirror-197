@@ -1,0 +1,3 @@
+[console_scripts]
+wvpn=webvpn_ng.cmd:app
+

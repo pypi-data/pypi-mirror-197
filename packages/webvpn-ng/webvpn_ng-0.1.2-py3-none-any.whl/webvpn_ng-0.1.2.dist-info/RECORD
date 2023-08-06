@@ -1,0 +1,9 @@
+webvpn_ng/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+webvpn_ng/chisel.py,sha256=s_5L7soYGb2C_yEWhQh1v48cYRrfHsh5PF6s4IH664I,3165
+webvpn_ng/cmd.py,sha256=ysmL4kQB7t7CaUVs_kuWoHHTGrLQcRxevTmxtpT9MJo,1452
+webvpn_ng/login.py,sha256=jLtkK1Fo4YUFlK6LWKfbWZxSC7hFyZb5pvaY0iH72jU,2811
+webvpn_ng/utils.py,sha256=BT4HdCxfgycvelGJjpGHGZBiOvDr4cAeOWxZtujgpGo,246
+webvpn_ng-0.1.2.dist-info/METADATA,sha256=4cXZStOoWYdQvi_rDFLN86-YUFrKK5bp9aXXTAT12gA,1486
+webvpn_ng-0.1.2.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+webvpn_ng-0.1.2.dist-info/entry_points.txt,sha256=SiOQpKq8ubP9-1XvXXnphLrDq9H-L0YUvQU0FUAiBFg,42
+webvpn_ng-0.1.2.dist-info/RECORD,,
