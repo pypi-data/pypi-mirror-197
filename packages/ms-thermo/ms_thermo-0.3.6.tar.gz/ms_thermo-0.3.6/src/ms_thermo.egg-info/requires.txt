@@ -1,0 +1,14 @@
+numpy<2
+scipy<2
+h5py
+PyYAML
+click
+h5cross
+
+[docs]
+myst-parser
+sphinx_rtd_theme
+
+[tests]
+pytest
+pytest-coverage
