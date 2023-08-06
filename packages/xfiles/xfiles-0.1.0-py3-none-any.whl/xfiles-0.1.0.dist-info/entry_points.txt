@@ -1,0 +1,3 @@
+[console_scripts]
+xfiles=xfiles.__main__:main
+
