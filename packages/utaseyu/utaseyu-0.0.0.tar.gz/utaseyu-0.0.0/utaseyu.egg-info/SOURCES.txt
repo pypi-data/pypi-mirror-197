@@ -1,0 +1,5 @@
+setup.py
+utaseyu.egg-info/PKG-INFO
+utaseyu.egg-info/SOURCES.txt
+utaseyu.egg-info/dependency_links.txt
+utaseyu.egg-info/top_level.txt
