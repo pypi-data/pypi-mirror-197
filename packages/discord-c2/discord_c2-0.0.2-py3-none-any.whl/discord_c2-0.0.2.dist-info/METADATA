@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: discord-c2
+Version: 0.0.2
+Summary: A package to interact with discord webhooks/pull-down files from Discord's CDN
+Author-email: Evan Huff <ehuff007@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Discord Interface
+
+This is a simple package used to interface with discord CDNs and webhooks specifically. You can use this to download a file from a CDN, or exfiltrate data via a webhook, allowing for an extremely basic C2 infrastructure.
