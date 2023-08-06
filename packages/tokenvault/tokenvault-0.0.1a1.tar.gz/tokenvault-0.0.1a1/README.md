@@ -1,0 +1,113 @@
+<p align="center">
+   <img src="docs/images/logo.png" alt="logo" width="400" />
+</p>
+
+# TokenVault
+
+TokenVault is a lightweight package to manage users and validate them using tokens in your application in a single
+encrypted file and asymmetric token encryption.
+
+It was designed to manage users within a file in a repository such that if the file is compromised, the tokens and
+metadata are still safe.
+
+## Installation
+
+```bash
+pip install tokenvault
+```
+
+## Quickstart
+
+```python
+from tokenvault import TokenVault
+
+vault = TokenVault()
+# you give this token to the user for authentication
+token = vault.add("alon@gmail.com", metadata={"name": "Alon Sababa", 
+                                              "Country": "Israel"})
+vault.validate(token)
+{'name': 'Alon Sababa', 'Country': 'Israel'}
+
+assert vault.validate('not a token in the vault') is None
+
+vault.save("vault.db")
+TokenVault("vault.db").validate(token)
+{'name': 'Alon Sababa', 'Country': 'Israel'}
+```
+
+## Encrypt the vault
+
+For added security, by adding a password to the vault, the file itself get encrypted and therefore the list of keys
+too.   
+You can provide the password manually or it is automatically picked-up from the environment
+variable `TOKENVAULT_PASSWORD` if it exists.
+
+* You can share the environment variable with your team members and server secrets so that they decrypt the file
+  automatically.
+
+```python
+import os
+from tokenvault import TokenVault
+
+vault = TokenVault()
+token = vault.add("alon@gmail.com", metadata={"name": "Alon Sababa", "Country": "Israel"})
+password = vault.generate_key()
+vault.save("vault.db", password=password)
+
+TokenVault("vault.db", password=password).validate(token)
+# using the environment variable
+os.environ['TOKENVAULT_PASSWORD'] = password
+TokenVault("vault.db").validate(token)
+{'name': 'Alon Sababa', 'Country': 'Israel'}
+```
+
+## CLI
+
+An easy way to manage users manually is to use the CLI.
+
+* Default vault file is `vault.db` in the current directory.
+* When a password or token is generated, it is copied to the clipboard. You can add a flag to print it to the screen
+  too.
+
+```
+tv --help
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Commands:
+  add        Add a new key to the vault and copy the token to the clipboard
+  encrypted  Check if the vault is encrypted
+  init       Initialize a vault file in 'path' argument.
+  list       List existing keys in the vault
+  remove     Add a new key to the vault and copy the token to the clipboard
+  validate   Add a new key to the vault and copy the token to the clipboard
+
+```
+
+### Quickstart without password:
+
+```bash
+$ tv init vault.db --no-password 
+# this copy the token to the clipboard
+$ tv add alon@gmail.com vault.db --metadata='{"some":"information"}' 
+$ tv list vault.db
+alon
+$ tv validate <token>
+{'some': 'information'}
+$ tv remove alon@gmail.com vault.db
+```
+
+### Quickstart with password:
+
+```bash
+$ tv init vault.db --echo-password # this copy the password to the clipboard
+password: G99********
+Vault created at vault.db and encrypted with password
+
+$ export TOKENVAULT_PASSWORD=G99********
+$ tv add alon@gmail.com vault.db  # this copy the token to the clipboard
+$ tv validate <token>
+{} # no metadata provided
+```

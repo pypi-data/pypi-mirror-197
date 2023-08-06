@@ -1,0 +1,13 @@
+pyjwt
+cryptography
+cloudpickle
+click
+pyperclip
+
+[dev]
+pytest
+sphinx
+sphinx-rtd-theme
+sphinx-autodoc-typehints
+sphinxcontrib-napoleon
+sphinxcontrib-apidoc
