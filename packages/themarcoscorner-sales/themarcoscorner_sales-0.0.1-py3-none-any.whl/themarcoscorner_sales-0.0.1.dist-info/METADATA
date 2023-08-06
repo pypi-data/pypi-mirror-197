@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: themarcoscorner_sales
+Version: 0.0.1
+Summary: My customized ORM on Sales
+Project-URL: Homepage, https://github.com/TheMarcosCorner/themarcoscorner_ibd1
+Project-URL: Bug Tracker, https://github.com/TheMarcosCorner/themarcoscorner_ibd1/issues
+Author-email: TheMarcosCorner <marcoscorner03@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
