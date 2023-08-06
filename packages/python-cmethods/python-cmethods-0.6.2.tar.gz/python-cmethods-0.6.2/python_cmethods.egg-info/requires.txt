@@ -1,0 +1,11 @@
+xarray>=2022.11.0
+netCDF4>=1.6.1
+numpy
+tqdm
+
+[tests]
+scikit-learn
+scipy
+
+[working examples notebook]
+matplotlib

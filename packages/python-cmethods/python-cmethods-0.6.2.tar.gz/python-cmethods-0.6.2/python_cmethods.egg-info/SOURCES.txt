@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cmethods/CMethods.py
+cmethods/__init__.py
+python_cmethods.egg-info/PKG-INFO
+python_cmethods.egg-info/SOURCES.txt
+python_cmethods.egg-info/dependency_links.txt
+python_cmethods.egg-info/requires.txt
+python_cmethods.egg-info/top_level.txt
+tests/test_methods.py
