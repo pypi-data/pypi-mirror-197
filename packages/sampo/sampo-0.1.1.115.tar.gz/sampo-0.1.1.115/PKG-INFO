@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sampo
+Version: 0.1.1.115
+Summary: Open-source framework for adaptive manufacturing processes scheduling
+Home-page: None
+Author: iAirLab
+Author-email: iairlab@yandex.ru
+Maintainer: None
+Maintainer-email: None
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.10,<3.11
+License-File: LICENSE
+
+None
+
