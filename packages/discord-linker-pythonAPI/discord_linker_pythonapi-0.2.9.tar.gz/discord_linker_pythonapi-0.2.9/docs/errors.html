@@ -1,0 +1,458 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="wordpress_client module" href="wordpress_client.html" /><link rel="prev" title="dlxedd_client module" href="dlxedd_client.html" />
+
+    <!-- Generated with Sphinx 6.1.3 and Furo 2022.12.07 -->
+        <title>errors module - discord-linker-pythonAPI 0.2.9 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">discord-linker-pythonAPI 0.2.9 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">discord-linker-pythonAPI 0.2.9 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="modules.html">discord_linker_pythonAPI</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="dlxedd_client.html">dlxedd_client module</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">errors module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wordpress_client.html">wordpress_client module</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          
+<div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section id="module-errors">
+<span id="errors-module"></span><h1>errors module<a class="headerlink" href="#module-errors" title="Permalink to this heading">#</a></h1>
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.ACCOUNT_ALREADY_LINKED">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">ACCOUNT_ALREADY_LINKED</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#ACCOUNT_ALREADY_LINKED"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.ACCOUNT_ALREADY_LINKED" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+<p>Represents an error where the account is already linked.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>details (dict): The details of the exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.ACCOUNT_NOT_LINKED">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">ACCOUNT_NOT_LINKED</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#ACCOUNT_NOT_LINKED"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.ACCOUNT_NOT_LINKED" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+<p>Represents an error where the account was not linked.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>details (dict): The details of the exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="errors.ALL_EXCEPTIONS">
+<span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">ALL_EXCEPTIONS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'ACCOUNT_ALREADY_LINKED':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.ACCOUNT_ALREADY_LINKED'&gt;,</span> <span class="pre">'ACCOUNT_NOT_LINKED':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.ACCOUNT_NOT_LINKED'&gt;,</span> <span class="pre">'INCORRECT_PRODUCT_ID_TYPE':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.INCORRECT_PRODUCT_ID_TYPE'&gt;,</span> <span class="pre">'INSUFFICIENT_PERMISSIONS':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.INSUFFICIENT_PERMISSIONS'&gt;,</span> <span class="pre">'INVALID_DISCORD_ID_SIZE':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.INVALID_DISCORD_ID_SIZE'&gt;,</span> <span class="pre">'INVALID_DISCORD_ID_TYPE':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.INVALID_DISCORD_ID_TYPE'&gt;,</span> <span class="pre">'INVALID_TOKEN_SIZE':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.INVALID_TOKEN_SIZE'&gt;,</span> <span class="pre">'LINK_TOKEN_NOT_FOUND':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.LINK_TOKEN_NOT_FOUND'&gt;,</span> <span class="pre">'NOT_IMPERSONATING':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.NOT_IMPERSONATING'&gt;,</span> <span class="pre">'PRODUCT_NOT_FOUND':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.PRODUCT_NOT_FOUND'&gt;,</span> <span class="pre">'PRODUCT_NOT_IN_CART':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.PRODUCT_NOT_IN_CART'&gt;,</span> <span class="pre">'PRODUCT_QUANTITY_DISABLED':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.PRODUCT_QUANTITY_DISABLED'&gt;,</span> <span class="pre">'UNKNOWN_ERROR':</span> <span class="pre">&lt;class</span> <span class="pre">'errors.UNKNOWN_ERROR'&gt;}</span></em><a class="headerlink" href="#errors.ALL_EXCEPTIONS" title="Permalink to this definition">#</a></dt>
+<dd><p>Holds all the exceptions of the API.</p>
+<p>This variable is a dictionary where the following is True:</p>
+<ul class="simple">
+<li><p>key =&gt; Name of exception</p></li>
+<li><p>value =&gt; Reference to the exception’s class</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.INCORRECT_PRODUCT_ID_TYPE">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">INCORRECT_PRODUCT_ID_TYPE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#INCORRECT_PRODUCT_ID_TYPE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.INCORRECT_PRODUCT_ID_TYPE" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.INSUFFICIENT_PERMISSIONS">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">INSUFFICIENT_PERMISSIONS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#INSUFFICIENT_PERMISSIONS"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.INSUFFICIENT_PERMISSIONS" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+<p>Represents an error where the user has insufficient permissions.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>details (dict): The details of the exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.INVALID_DISCORD_ID_SIZE">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">INVALID_DISCORD_ID_SIZE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#INVALID_DISCORD_ID_SIZE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.INVALID_DISCORD_ID_SIZE" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+<p>Represents an error where the discord ID length was incorrect.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>details (dict): The details of the exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.INVALID_DISCORD_ID_TYPE">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">INVALID_DISCORD_ID_TYPE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#INVALID_DISCORD_ID_TYPE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.INVALID_DISCORD_ID_TYPE" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+<p>Represents an error where the discord ID type was incorrect.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>details (dict): The details of the exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.INVALID_TOKEN_SIZE">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">INVALID_TOKEN_SIZE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#INVALID_TOKEN_SIZE"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.INVALID_TOKEN_SIZE" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+<p>Represents an error where the token size was not correct.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>details (dict): The details of the exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.LINK_TOKEN_NOT_FOUND">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">LINK_TOKEN_NOT_FOUND</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#LINK_TOKEN_NOT_FOUND"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.LINK_TOKEN_NOT_FOUND" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+<p>Represents an error where the token was not found.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>details (dict): The details of the exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.NOT_IMPERSONATING">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">NOT_IMPERSONATING</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#NOT_IMPERSONATING"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.NOT_IMPERSONATING" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+<p>Represents an error where the user is not impersonating anyone.</p>
+<p>NOTE: This exception should not be thrown, but it’s here since it exists.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>details (dict): The details of the exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.PRODUCT_NOT_FOUND">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">PRODUCT_NOT_FOUND</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#PRODUCT_NOT_FOUND"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.PRODUCT_NOT_FOUND" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.PRODUCT_NOT_IN_CART">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">PRODUCT_NOT_IN_CART</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#PRODUCT_NOT_IN_CART"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.PRODUCT_NOT_IN_CART" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.PRODUCT_QUANTITY_DISABLED">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">PRODUCT_QUANTITY_DISABLED</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#PRODUCT_QUANTITY_DISABLED"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.PRODUCT_QUANTITY_DISABLED" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.UNKNOWN_ERROR">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">UNKNOWN_ERROR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#UNKNOWN_ERROR"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.UNKNOWN_ERROR" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#errors.WP_Error" title="errors.WP_Error"><code class="xref py py-class docutils literal notranslate"><span class="pre">WP_Error</span></code></a></p>
+<p>Represents an unknown error.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>details (dict): The details of the exception.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="errors.WP_Error">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">WP_Error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UNKNOWN_ERROR'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'An</span> <span class="pre">unknown</span> <span class="pre">error</span> <span class="pre">occurred!'</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#WP_Error"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.WP_Error" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Represents an API (wordpress) error.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>details (Optional[dict]): The details to store to the object.
+default_code (Optional[str]): The default error code of the exception. Defaults to “UNKNOWN_ERROR”.
+default_message (str, optional): The default error message of the exception. Defaults to “An unknown error occurred!”.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="errors.WP_Error.sanitize_kwargs">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sanitize_kwargs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#WP_Error.sanitize_kwargs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.WP_Error.sanitize_kwargs" title="Permalink to this definition">#</a></dt>
+<dd><p>Remove some keyword-only parameters from the kwargs dictionary.
+Easy cleaning for child exception parameters.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>kwargs (dict): The dictionary to sanitize.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="errors.get_exception">
+<span class="sig-prename descclassname"><span class="pre">errors.</span></span><span class="sig-name descname"><span class="pre">get_exception</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">details</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/errors.html#get_exception"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#errors.get_exception" title="Permalink to this definition">#</a></dt>
+<dd></dd></dl>
+
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="wordpress_client.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">wordpress_client module</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="dlxedd_client.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">dlxedd_client module</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, Vbrawl
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">errors module</a><ul>
+<li><a class="reference internal" href="#errors.ACCOUNT_ALREADY_LINKED"><code class="docutils literal notranslate"><span class="pre">ACCOUNT_ALREADY_LINKED</span></code></a></li>
+<li><a class="reference internal" href="#errors.ACCOUNT_NOT_LINKED"><code class="docutils literal notranslate"><span class="pre">ACCOUNT_NOT_LINKED</span></code></a></li>
+<li><a class="reference internal" href="#errors.ALL_EXCEPTIONS"><code class="docutils literal notranslate"><span class="pre">ALL_EXCEPTIONS</span></code></a></li>
+<li><a class="reference internal" href="#errors.INCORRECT_PRODUCT_ID_TYPE"><code class="docutils literal notranslate"><span class="pre">INCORRECT_PRODUCT_ID_TYPE</span></code></a></li>
+<li><a class="reference internal" href="#errors.INSUFFICIENT_PERMISSIONS"><code class="docutils literal notranslate"><span class="pre">INSUFFICIENT_PERMISSIONS</span></code></a></li>
+<li><a class="reference internal" href="#errors.INVALID_DISCORD_ID_SIZE"><code class="docutils literal notranslate"><span class="pre">INVALID_DISCORD_ID_SIZE</span></code></a></li>
+<li><a class="reference internal" href="#errors.INVALID_DISCORD_ID_TYPE"><code class="docutils literal notranslate"><span class="pre">INVALID_DISCORD_ID_TYPE</span></code></a></li>
+<li><a class="reference internal" href="#errors.INVALID_TOKEN_SIZE"><code class="docutils literal notranslate"><span class="pre">INVALID_TOKEN_SIZE</span></code></a></li>
+<li><a class="reference internal" href="#errors.LINK_TOKEN_NOT_FOUND"><code class="docutils literal notranslate"><span class="pre">LINK_TOKEN_NOT_FOUND</span></code></a></li>
+<li><a class="reference internal" href="#errors.NOT_IMPERSONATING"><code class="docutils literal notranslate"><span class="pre">NOT_IMPERSONATING</span></code></a></li>
+<li><a class="reference internal" href="#errors.PRODUCT_NOT_FOUND"><code class="docutils literal notranslate"><span class="pre">PRODUCT_NOT_FOUND</span></code></a></li>
+<li><a class="reference internal" href="#errors.PRODUCT_NOT_IN_CART"><code class="docutils literal notranslate"><span class="pre">PRODUCT_NOT_IN_CART</span></code></a></li>
+<li><a class="reference internal" href="#errors.PRODUCT_QUANTITY_DISABLED"><code class="docutils literal notranslate"><span class="pre">PRODUCT_QUANTITY_DISABLED</span></code></a></li>
+<li><a class="reference internal" href="#errors.UNKNOWN_ERROR"><code class="docutils literal notranslate"><span class="pre">UNKNOWN_ERROR</span></code></a></li>
+<li><a class="reference internal" href="#errors.WP_Error"><code class="docutils literal notranslate"><span class="pre">WP_Error</span></code></a><ul>
+<li><a class="reference internal" href="#errors.WP_Error.sanitize_kwargs"><code class="docutils literal notranslate"><span class="pre">WP_Error.sanitize_kwargs()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#errors.get_exception"><code class="docutils literal notranslate"><span class="pre">get_exception()</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    </body>
+</html>
