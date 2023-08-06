@@ -1,0 +1,2 @@
+[console_scripts]
+gptrepo = gpt_repository_loader.cli:main
