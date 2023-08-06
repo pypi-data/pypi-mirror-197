@@ -1,0 +1,4 @@
+[console_scripts]
+browse=juftin_scripts.code_browser:browse
+juftin=juftin_scripts.__main__:cli
+

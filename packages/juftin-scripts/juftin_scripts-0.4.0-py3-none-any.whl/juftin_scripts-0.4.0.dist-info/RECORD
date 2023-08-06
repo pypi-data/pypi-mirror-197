@@ -1,0 +1,13 @@
+juftin_scripts/__init__.py,sha256=kNMuzxfeTyA06uGLC0O9peSSabt56ufjFjWPhG5A1FU,190
+juftin_scripts/__main__.py,sha256=8B4xz-JCeTrDD7EIB6luFTJk6mGdrn1cbalBXdSiKwY,1713
+juftin_scripts/_base.py,sha256=YrqaSY4sfeIK5dfaYD__UWMNf5G-E3Qs2OQ85FWBRWw,3941
+juftin_scripts/_version.py,sha256=HzW9IvjYlOzHt0K_g1wktNXKlbbJ6nA5WnX5u8gTwko,157
+juftin_scripts/code_browser.css,sha256=0F_CyiRzGfbRyBpYr_eXNjU06vWY0yWC-s0CwLi_xK8,352
+juftin_scripts/code_browser.py,sha256=Sq5n4VFz8VFk8YozEE88JeDHnYF5bfAHI0VmRRYBgDQ,11075
+juftin_scripts/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+juftin_scripts/rotation.py,sha256=nkTiYXZilSOkQxOmA8fYYTnb4jXm5gIhPh0oIdRbV-Q,4815
+juftin_scripts-0.4.0.dist-info/LICENSE,sha256=BNOvOCNcLr-XtKAOd_L6JtwgEuMFQCUOi3WGMqkrCUE,1071
+juftin_scripts-0.4.0.dist-info/METADATA,sha256=Z-5RT3rv0uBINLBkvcLTT1rco5IGmG4C51jHK0bh4Pg,2417
+juftin_scripts-0.4.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+juftin_scripts-0.4.0.dist-info/entry_points.txt,sha256=rraWkQVO0fHUAKUx8OoYS3qNPgc_Z67q5bTa3QK1PqA,96
+juftin_scripts-0.4.0.dist-info/RECORD,,
