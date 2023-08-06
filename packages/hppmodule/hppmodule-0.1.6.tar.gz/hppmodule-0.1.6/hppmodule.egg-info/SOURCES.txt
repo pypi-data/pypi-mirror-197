@@ -1,0 +1,6 @@
+setup.py
+hppmodule.egg-info/PKG-INFO
+hppmodule.egg-info/SOURCES.txt
+hppmodule.egg-info/dependency_links.txt
+hppmodule.egg-info/requires.txt
+hppmodule.egg-info/top_level.txt
