@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: rombus
+Version: 1.0.0
+Summary: Reduced order modeling for the masses
+Home-page: https://github.com/ADACS-Australia/rombus
+License: MIT-expat
+Author: Gregory Poole
+Author-email: gbpoole@gmail.com
+Requires-Python: >=3.11
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: dev
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=6.1.3,<7.0.0) ; extra == "docs"
+Requires-Dist: black (>=22.10.0,<23.0.0) ; extra == "dev"
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: h5py (>=3.8.0,<4.0.0)
+Requires-Dist: matplotlib (>=3.6.2,<4.0.0)
+Requires-Dist: mpi4py (>=3.1.4,<4.0.0)
+Requires-Dist: myst-parser (>=1.0.0,<2.0.0) ; extra == "docs"
+Requires-Dist: pre-commit (>=3.0.4,<4.0.0) ; extra == "dev"
+Requires-Dist: pytest (>=7.0,<8.0) ; extra == "dev"
+Requires-Dist: ruff (>=0.0.243,<0.0.244) ; extra == "dev"
+Requires-Dist: scipy (>=1.9.3,<2.0.0)
+Requires-Dist: six (>=1.16.0,<2.0.0)
+Requires-Dist: sphinx-click (>=4.4.0,<5.0.0) ; extra == "docs"
+Requires-Dist: sphinx-rtd-theme (==1.2.0) ; extra == "docs"
+Requires-Dist: tqdm (>=4.64.1,<5.0.0)
+Project-URL: Documentation, https://rombus.readthedocs.io/en/latest/
+Description-Content-Type: text/markdown
+
+Rombus
+======
+
+This project is being developed in the course of delivering the RSmith_2022B ADACS Merit Allocation Program project.
+
