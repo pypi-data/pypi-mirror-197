@@ -1,0 +1,131 @@
+from __future__ import annotations
+
+from typing import Optional, Any, List
+from threading import Lock, Thread
+from logging import LogRecord, StreamHandler
+
+import time
+import sys
+import logging
+
+from .log import Log
+from .log_severity import LogSeverity
+from ..networking import NetworkManager
+from ..networking import RequestType
+
+
+# Logs from library that is being used for making api requests is causing project to freeze because
+# logs inside requests library are going to be called while api request for log in coretexpylib is not finished
+# so request will never be done and it will enter infinite loop
+IGNORED_LOGGERS = [
+    "urllib3.connectionpool",
+    "coretexnode"
+]
+MAX_WAIT_TIME_BEFORE_UPDATE = 5
+
+
+class _LoggerUploadWorker(Thread):
+
+    def __init__(self) -> None:
+        super().__init__()
+
+        self.setDaemon(True)
+        self.setName("LoggerUploadWorker")
+
+        self.__waitTime = MAX_WAIT_TIME_BEFORE_UPDATE
+
+    def run(self) -> None:
+        while True:
+            logging.getLogger("coretexpylib").debug(f">> [Coretex] LoggerUploadWorker sleeping for: {self.__waitTime}s")
+            time.sleep(self.__waitTime)
+
+            customLogHandler = LogHandler.instance()
+
+            # Check if logger is attached to a experiment
+            if customLogHandler.currentExperimentId is None:
+                continue
+
+            success = customLogHandler.flushLogs()
+            if success:
+                # If upload of logs was success reset wait time
+                self.__waitTime = MAX_WAIT_TIME_BEFORE_UPDATE
+            else:
+                # If upload of logs failed, double the wait time
+                self.__waitTime *= 2
+
+
+class LogHandler(StreamHandler):
+
+    __instanceLock = Lock()
+    __instance: Optional[LogHandler] = None
+
+    @classmethod
+    def instance(cls) -> LogHandler:
+        if cls.__instance is None:
+            with cls.__instanceLock:
+                if cls.__instance is None:
+                    cls.__instance = LogHandler(sys.stdout)
+
+        return cls.__instance
+
+    def __init__(self, stream: Any) -> None:
+        super().__init__(stream)
+
+        self.__lock = Lock()
+        self.__pendingLogs: List[Log] = []
+        self.__uploadWorker = _LoggerUploadWorker()
+
+        self.currentExperimentId: Optional[int] = None
+        self.severity = LogSeverity.info
+
+        self.__uploadWorker.start()
+
+    def __restartUploadWorker(self) -> None:
+        if self.__uploadWorker.is_alive():
+            raise RuntimeError(">> [Coretex] Upload worker is already running")
+
+        self.__uploadWorker = _LoggerUploadWorker()
+        self.__uploadWorker.start()
+
+    def emit(self, record: LogRecord) -> None:
+        super().emit(record)
+
+        if record.name in IGNORED_LOGGERS:
+            return
+
+        with self.__lock:
+            if not self.__uploadWorker.is_alive():
+                self.__restartUploadWorker()
+
+            severity = LogSeverity.fromStd(record.levelno)
+            log = Log.create(record.message, severity)
+
+            self.__pendingLogs.append(log)
+
+    def flushLogs(self) -> bool:
+        with self.__lock:
+            if len(self.__pendingLogs) == 0:
+                return True
+
+            if self.currentExperimentId is None:
+                self.__pendingLogs.clear()
+                return True
+
+            response = NetworkManager.instance().genericJSONRequest(
+                endpoint = "model-queue/add-console-log",
+                requestType = RequestType.post,
+                parameters = {
+                    "model_queue_id": self.currentExperimentId,
+                    "logs": [log.encode() for log in self.__pendingLogs]
+                }
+            )
+
+            # Only clear logs if they were successfully uploaded to coretex
+            if not response.hasFailed():
+                self.__pendingLogs.clear()
+
+            return not response.hasFailed()
+
+    def reset(self) -> None:
+        with self.__lock:
+            self.currentExperimentId = None
