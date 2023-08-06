@@ -1,0 +1,6 @@
+[poetry.application.plugin]
+dev-version=poetry_dev_version:DevVersionPlugin
+
+[poetry.plugin]
+dev-version=poetry_dev_version:DevVersionPlugin
+
