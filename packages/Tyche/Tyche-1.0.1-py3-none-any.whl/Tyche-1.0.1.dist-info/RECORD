@@ -1,0 +1,17 @@
+test/__init__.py,sha256=AlVT0QFENvcPF-ZNc-AB4HFqgjvxloq4ngfkLq982Tc,47
+test/__main__.py,sha256=n92wsYw1JBpH1X1MzjwjLRmOZ0lXkvH5Uq8Nzqe43lw,206
+test/test_distributions.py,sha256=GHUUS5gNJ9YQrNHXcC4ADMWgGUkMAbTJf65vfQ5Y8qs,11357
+test/test_individuals.py,sha256=XnGqCEwLj0I0r6F6NK2qdznJ9ApBg7nG9OUFgkDjJrk,12606
+test/test_language.py,sha256=enFWZCclnwzWKCxd9VTrhHFWax6KEBT50Efg4FUM50o,2953
+tyche/__init__.py,sha256=guEUM-wW9ySiKYc3x1rZ57-TuRSlHhnHs_44C2p96Kw,57
+tyche/distributions.py,sha256=G8SyRw5jI9DQMBJwdcyraErhK0iSVq5q8tiQVyrCjIQ,22161
+tyche/individuals.py,sha256=VN13Yqi8vMa4Mxm3sYnSPlPlOVYIe-KqnnluRXmXrWU,41800
+tyche/language.py,sha256=la1to3aSJjRMAR8JVjdl9hXbmOYW_2Og0f3SEr7VddY,57300
+tyche/probability.py,sha256=iHQjZDVuYNQmKUOaW_yZIk8sSLdqNve1EMbF0AmrmKY,2538
+tyche/references.py,sha256=tzbBbTdGkxuAp6VrYwO4fExIM5POLiqpcID0OU05WZw,4569
+Tyche-1.0.1.dist-info/LICENSE,sha256=Jd_Or06uTYa3e31A-f_UDjg9IiJDcQ1zycNsmqHCdUM,1076
+Tyche-1.0.1.dist-info/METADATA,sha256=gQ5aK4SV9mTGEaLUgXCTEoQAGhSSEhISKAjRZyOU5Pc,4552
+Tyche-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+Tyche-1.0.1.dist-info/top_level.txt,sha256=N2na3JczbQS-GaLobNuMFxV0qmrG-YZXQw2FjB2HYrU,11
+Tyche-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+Tyche-1.0.1.dist-info/RECORD,,
