@@ -1,0 +1,5 @@
+setup.py
+bantou.egg-info/PKG-INFO
+bantou.egg-info/SOURCES.txt
+bantou.egg-info/dependency_links.txt
+bantou.egg-info/top_level.txt
