@@ -1,0 +1,6 @@
+[mycroft.plugin.tts]
+ovos-tts-plugin-google-tx = ovos_tts_plugin_google_tx:GoogleTranslateTTS
+
+[mycroft.plugin.tts.config]
+ovos-tts-plugin-google-tx.config = ovos_tts_plugin_google_tx:GoogleTranslateTTSPluginConfig
+
