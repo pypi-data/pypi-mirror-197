@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+real_time_flights_api/__init__.py
+real_time_flights_api/client.py
+real_time_flights_api.egg-info/PKG-INFO
+real_time_flights_api.egg-info/SOURCES.txt
+real_time_flights_api.egg-info/dependency_links.txt
+real_time_flights_api.egg-info/requires.txt
+real_time_flights_api.egg-info/top_level.txt

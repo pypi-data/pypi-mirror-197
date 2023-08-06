@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: real_time_flights_api
+Version: 1.0
+Summary: A Python package to get real time flights information from the website https://www.goflightlabs.com/
+Home-page: https://github.com/secrojas/Zyla-Real-Time-Flights-API
+Download-URL: https://github.com/secrojas/Zyla-Real-Time-Flights-API/archive/refs/tags/v.1.tar.gz
+Author: Zyla Labs
+Author-email: hello@zylalabs.com
+License: MIT
+Keywords: flights,real time flights,scraping,easy,scraper,website,download,links,images,videos
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.11
+License-File: LICENSE.txt
