@@ -1,0 +1,3 @@
+[console_scripts]
+pyaddlicense=pyaddlicense.main:main
+
