@@ -1,0 +1,11 @@
+pyvscode/__init__.py,sha256=GvV1CUdlShSdPwinz6H7mJ0s_CEVEkhgCXaGpnbzEPc,1182
+pyvscode/extension.py,sha256=Fl3KzAz11A8dal2gOjWOdfwilMQFMx6Ms5F9e4U8z1M,3758
+pyvscode/extension.pyi,sha256=AyuqAghZAWuuaI8eW5Q9acyOYZygoLKjEfWeMYYmMz4,865
+pyvscode/pyvscode.py,sha256=y4F93zi9gIpDKVBfiaMg_wXPZFTmhlvqv2Nr32Shhms,859
+pyvscode/pyvscode.pyi,sha256=hvLdOkjz7uVa1wlRCcf9l3lFL38GrkFoVzFfYr_Y9fE,76
+pyvscode/runner.py,sha256=fdwdQLgag8_KjNHdT4-cY3JPtrtqo3FVqiae534m6XM,5287
+pyvscode/runner.pyi,sha256=unNiltGSzku2PCHJU0NRwy9AqGWYqTpUbqaGwZohuss,1484
+pyvscode-2.2.1.dist-info/METADATA,sha256=UiKxp-3mKxsOlI6lsRp1PzWAlKWQeFfPI_FyaZNn4L0,1091
+pyvscode-2.2.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+pyvscode-2.2.1.dist-info/licenses/LICENSE,sha256=0dYUDqXFqWG4gqF_1ik6Q2M4bgeKJcmpSSMgCGZ4zac,1129
+pyvscode-2.2.1.dist-info/RECORD,,
