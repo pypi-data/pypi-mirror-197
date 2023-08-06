@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: interval-timer-python
+Version: 0.1.3
+Summary: interval-timer for python: Windows:waitabletimer wrapper, Linux:timerfd wrapper
+Home-page: https://github.com/tkshkwn/interval-timer-python
+Author: tkshkwn
+Author-email: nekotk37@gmail.com
+License: MIT-License
+Keywords: timer,periodic,interval,timerfd
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## interval-timer-python
+
+### overview
+- interval timer library for python
+    - on Windows: Waitable Timer wrapper
+    - on Linux: timerfd wrapper
+
+### OS
+- Windows & Linux
+
+### installation
+```bash
+python -m pip install interval-timer-python
+```
+
+### usage
+```python
+import interval_timer
+
+INTERVAL_TIME_MS = 100
+itimer = interval_timer.IntervalTimer()
+itimer.settime(INTERVAL_TIME_MS)
+while True:
+    print("Hello,World!")
+    itimer.wait()  # periodic blocking
+```
