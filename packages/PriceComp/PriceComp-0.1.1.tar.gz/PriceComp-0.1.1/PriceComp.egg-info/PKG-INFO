@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: PriceComp
+Version: 0.1.1
+Summary: Comparador de preços
+Author: Ueslei Ferreira
+Author-email: <ueslei392@gmail.com>
+Keywords: python,first package
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
+Faz web scraping de uma pagina de produtos da amazon e mostra um gráfico de barras com todos os preços

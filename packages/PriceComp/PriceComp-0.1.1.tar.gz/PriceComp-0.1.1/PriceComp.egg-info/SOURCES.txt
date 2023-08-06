@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+PriceComp.egg-info/PKG-INFO
+PriceComp.egg-info/SOURCES.txt
+PriceComp.egg-info/dependency_links.txt
+PriceComp.egg-info/requires.txt
+PriceComp.egg-info/top_level.txt
