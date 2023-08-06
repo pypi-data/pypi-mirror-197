@@ -1,0 +1,8 @@
+pgwrapper/__init__.py,sha256=9l94V-xEq4QvpIYMaYstjfZrlULL0BjqsyJG0WVg3g0,127
+pgwrapper/pgpool.py,sha256=b_n84tITPM7Ph-Jv_UQgH2HGIB3ePunMgeh7Lp9a1-0,4805
+pgwrapper/pgwrap.py,sha256=K_sqXRSubGVr-9bt49qRDBa-o7dFa67Sx3urbGHm83c,9234
+pgwrapper-0.3.1.dist-info/LICENSE,sha256=U9lgr8_mntnL-cqU-DupTkMOFg9MsYlOMA5FHZsFHoM,35108
+pgwrapper-0.3.1.dist-info/METADATA,sha256=VkYluKpcW6vr9HRjPbKWSl9gQp1aMblWBr-HuiiigEU,3143
+pgwrapper-0.3.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pgwrapper-0.3.1.dist-info/top_level.txt,sha256=Q_-pOPwRryqcvDx3sD_TLYvRoIP8lrQw1OxsG1Ad0o0,10
+pgwrapper-0.3.1.dist-info/RECORD,,
