@@ -1,0 +1,16 @@
+matplotlib>=3.2.0
+numpy
+scipy>=1.7.0
+tqdm
+simpleitk>=2.1.0
+scikit-learn>=1.0.0
+requests
+ipywidgets
+imgaug
+
+[testing]
+pytest>=6.0
+pytest-cov>=2.0
+mypy>=0.910
+flake8>=3.9
+tox>=3.24
