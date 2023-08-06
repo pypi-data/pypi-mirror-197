@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/geopylib/Classes.py
+src/geopylib/__init__.py
+src/geopylib/main.py
+src/geopylib/tela_calc_dist.py
+src/geopylib/tela_conversor.py
+src/geopylib/tela_dados_meteoro.py
+src/geopylib/tela_main.py
+src/geopylib/tela_mapa.py
+src/geopylib/tela_marcador.py
+src/geopylib.egg-info/PKG-INFO
+src/geopylib.egg-info/SOURCES.txt
+src/geopylib.egg-info/dependency_links.txt
+src/geopylib.egg-info/top_level.txt
