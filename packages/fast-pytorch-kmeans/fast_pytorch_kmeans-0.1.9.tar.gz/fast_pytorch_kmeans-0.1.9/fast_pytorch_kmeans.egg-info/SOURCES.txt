@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+fast_pytorch_kmeans/__init__.py
+fast_pytorch_kmeans/kmeans.py
+fast_pytorch_kmeans/multi_kmeans.py
+fast_pytorch_kmeans.egg-info/PKG-INFO
+fast_pytorch_kmeans.egg-info/SOURCES.txt
+fast_pytorch_kmeans.egg-info/dependency_links.txt
+fast_pytorch_kmeans.egg-info/requires.txt
+fast_pytorch_kmeans.egg-info/top_level.txt
