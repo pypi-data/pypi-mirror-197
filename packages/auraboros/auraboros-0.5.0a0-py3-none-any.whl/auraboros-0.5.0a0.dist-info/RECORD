@@ -1,0 +1,17 @@
+auraboros/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+auraboros/animation.py,sha256=QmXJtWiJ-TW4nszPBqA8EP_RWbZgYyxmjdkdqcxWULY,5203
+auraboros/entity.py,sha256=Qgd_EiWUOfacAlYnRl__5bUF-zCVBdILrd1ivZMVIyg,10881
+auraboros/gameinput.py,sha256=s8QFji1g-Lpq8mcMso1PsxlABs3XK3ntxjbtyPW2Sag,4157
+auraboros/gamelevel.py,sha256=ykj6itGrbaHumOyeCqD059Ce9-V2vJ7VrpogWencATY,9333
+auraboros/gamescene.py,sha256=zVNa8v4cn8vd0Of_lhL0kegSb9dB4CSePNdzd7TkBOk,3404
+auraboros/gametext.py,sha256=P_BHDvqLOwXILc0K_4TQEZuMpDP7pf7iO543PCZxDZg,3441
+auraboros/global_.py,sha256=pvRQWC1OVCFV9I5yPqfOXJupv-a7fxriCmqWYOnn7g0,839
+auraboros/schedule.py,sha256=TZKmANmg4mju0jP4s7K5xFSiBBb8NquJdHcl-QAugsk,3035
+auraboros/sound.py,sha256=N7Iy2OUzc_dbo6aqMERvVjTBL7UyfSeZdaEX7E86NcA,1563
+auraboros/terrain.py,sha256=p9b3PgJQ8fHQGMz784saonDSTx61Uw4Q11osFOh7tSw,225
+auraboros/ui.py,sha256=v45qzRi7ZahpmZ-SHfJ2SLZEbWbHUvoKn6IzHP2colU,4103
+auraboros/utilities.py,sha256=u4Fn61jYQWRsbUf_AFfUMe6RPOzwuMu1xd5F4PZUS7M,4254
+auraboros-0.5.0a0.dist-info/METADATA,sha256=zNnmeo1snq4IZvqxR1S5fRawH0XHIpsIrzm3YRc6Fi8,125
+auraboros-0.5.0a0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+auraboros-0.5.0a0.dist-info/licenses/LICENSE,sha256=OXUzQQAxCym7KiO2c1mtwDDdmdFL712uQbLeWKn1J44,1072
+auraboros-0.5.0a0.dist-info/RECORD,,
