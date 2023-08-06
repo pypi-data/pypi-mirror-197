@@ -1,0 +1,10 @@
+hdpws/__init__.py,sha256=SAvY2Cqa-kS9K2QEivqKxwM50CBACr-oVGoSMVQ27zw,2153
+hdpws/__main__.py,sha256=mv57eDc5Se3wT2RbfItM3M7mG6hU6kKY4j-3LIbwUys,10402
+hdpws/dateinterval.py,sha256=OwFRQUbTMyzR1R7T5gSKT2st4PbLWAwOtcsP7_PqQys,4901
+hdpws/hdpws.py,sha256=kZJQ7h1360coz9sYmndiYLcGGPS1g7oRYbmkeimwC9g,25950
+hdpws/resourcetype.py,sha256=-tVuPiT9exyiiyuI8i_61TJjBhEQOoE9Me4B3q_hCSc,1719
+hdpws-0.4.dist-info/LICENSE,sha256=9VDxMcDDn3_T-sDQTMPxmiPZBDkPIiTO4OzYK5olDmk,12589
+hdpws-0.4.dist-info/METADATA,sha256=iyxrPHuNFZ0hQifwQgtN5iUbGjWskOd5YQYiMc1nNhs,3392
+hdpws-0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+hdpws-0.4.dist-info/top_level.txt,sha256=BTo-2sxU1YuKAD5Ykfc8bNQvgVX486A74voiQxV4NiQ,6
+hdpws-0.4.dist-info/RECORD,,
