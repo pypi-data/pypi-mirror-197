@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: filestream-y
+Version: 0.1.7
+Summary: Resolve file suffix
+Home-page: https://github.com/YSH0313/FileStream_y
+Author: yuanshaohang
+Author-email: ysh17600824539@163.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://github.com/YSH0313/FileStream_y
+Description-Content-Type: text/markdown
+
+# A package that can automatically obtain the file suffix
+
+### Install
+    pip install filestream-y
+
+### Use
+    from filestream_y import stream_type
+    stream = stream_type(<file_bytes>)
+    print(stream)
+
+
