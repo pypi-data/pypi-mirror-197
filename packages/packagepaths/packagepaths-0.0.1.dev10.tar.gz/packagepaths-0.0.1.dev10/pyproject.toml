@@ -1,0 +1,133 @@
+# SPDX-FileCopyrightText: 2023, Metify, Inc. <metify@metify.io>
+# SPDX-License-Identifier: BSD-3-Clause
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools-scm[toml]>=7.1",
+    "setuptools>=67.4",
+    "wheel>=0.38",
+]
+
+[project]
+authors = [
+    { email = "metify@metify.io", name = "Metify Development Team" },
+    { email = "spencersr@gmail.com", name = "Spencer R. Spencer" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "importlib-metadata>=6.0",
+]
+description = "Extensible and configurable utility to determine platform-specific user and site data paths."
+dynamic = [
+    "version",
+]
+keywords = [
+    "application",
+    "cache",
+    "config",
+    "configuration",
+    "directory",
+    "log",
+    "packages",
+    "packaging",
+    "platform",
+    "user",
+]
+license = { file = "LICENSE" }
+name = "packagepaths"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[project.optional-dependencies]
+dev = [
+    "bandit[toml]>=1.7",
+    "black[colorama]>=23.1",
+    "build[virtualenv]>=0.10",
+    "coverage[toml]>=7.2",
+    "flake8-bandit>=4.1",
+    "flake8-bugbear>=23.2",
+    "flake8-builtins>=2.1",
+    "flake8-comprehensions>=3.10",
+    "flake8-isort>=6.0",
+    "flake8-print>=5.0",
+    "flake8-pyproject>=1.2",
+    "flake8-return>=1.2",
+    "flake8-use-pathlib>=0.3",
+    "flake8>=6.0",
+    "isort[colors,plugins]>=5.12",
+    "mypy[install-types]>=1.0",
+    "pep8-naming>=0.13",
+    "pre-commit>=3.0",
+    "pycln>=2.1",
+    "pytest-cov>=4.0",
+    "pytest-env>=0.8",
+    "pytest-mock>=3.10",
+    "pytest>=7.2",
+    "toml-sort>=0.22",
+    "tox>=4.4",
+    "twine>=4.0",
+]
+
+[project.urls]
+repository = "https://github.com/Metify/packagepaths-python"
+
+[tool.black]
+line_length = 120
+
+[tool.flake8]
+doctests = true
+max-line-length = 120
+
+[tool.isort]
+line_length = 120
+profile = "black"
+
+[tool.mypy]
+explicit_package_bases = true
+mypy_path = "src"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --cov"
+testpaths = [
+    "src",
+    "tests",
+]
+
+[tool.setuptools.packages.find]
+where = [
+    "src",
+]
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+version_scheme = "python-simplified-semver"
+
+[tool.tox]
+legacy_tox_ini = """
+    [tox]
+    envlist = py{39,310,311}
+    isolated_build = True
+
+    [testenv]
+    extras = dev
+    download = True
+    commands =
+        pytest
+"""
