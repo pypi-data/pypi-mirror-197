@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+./browser/__init__.py
+./browser/browser.py
+superbrowser.egg-info/PKG-INFO
+superbrowser.egg-info/SOURCES.txt
+superbrowser.egg-info/dependency_links.txt
+superbrowser.egg-info/requires.txt
+superbrowser.egg-info/top_level.txt
