@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: tantaroba
+Version: 0.3.1
+Summary: Python package template
+Home-page: https://gitlab.com/tantardini/tantaroba
+Keywords: utils,postgresql,yaml
+Author: Mattia Tantardini
+Author-email: mattia.tantardini@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: loguru (>=0.6.0,<0.7.0)
+Requires-Dist: numpy (>=1.24.2,<2.0.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: psycopg2-binary (>=2.9.5,<3.0.0)
+Requires-Dist: sqlalchemy (>=2.0.3,<3.0.0)
+Project-URL: Repository, https://gitlab.com/tantardini/tantaroba
+Description-Content-Type: text/markdown
+
+# tantaroba
+
+Collection of miscellanoeus utilities commonly used across different projects.
+
+## Installation
+```
+pip install tantaroba
+```
+
+## Usage
+Describe how to launch and use tantaroba project.
+
