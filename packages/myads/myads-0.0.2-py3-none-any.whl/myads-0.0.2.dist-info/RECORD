@@ -1,0 +1,12 @@
+myads/__init__.py,sha256=rHHQJT_a7-KcXSnCRvHAGjKy8tiLZMFb4Bs4rXRA1pc,769
+myads/query.py,sha256=DFXC0yny5e92Rl01a9mnHTZf6_Q8aVEwHe2NUGxOSfY,9426
+myads/cite_tracker/__init__.py,sha256=JeKw74SwgnZyXir9vAlZfSVgTmhyPQhphXrklZ--A2A,587
+myads/cite_tracker/check.py,sha256=pMsjoKdBtwxX_ROw4-roaVhyWzBI6wuTXEmIusYpZdA,5570
+myads/cite_tracker/report.py,sha256=aWP8Dw3SZUfkvbr8fHAejbCs_poEsa60fLlAXndGXfQ,2311
+myads/cite_tracker/users.py,sha256=_BNGUwoKG8Z6CCTc6aA2xCOpakFTnaOGxsRx1B2PMlI,2279
+myads/scripts/myads.py,sha256=aHuyqdZ_TQEjzJ6GH-Z33Ub-T8N0BxgCP3hCPKPv3GA,1364
+myads-0.0.2.dist-info/METADATA,sha256=ufquZ4S_AtPcKWTFOuGQUxxCZwu7mHVQPIcDepUo3iE,616
+myads-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+myads-0.0.2.dist-info/entry_points.txt,sha256=AGc3IBYPetPb52GAc6NQebWPuwEuYQ8kAR1RRbn5SHk,51
+myads-0.0.2.dist-info/top_level.txt,sha256=uJbsV7RMGXvpnuP0tYc-vbU-ZQ4YEmW6hvJDyu7t8AA,6
+myads-0.0.2.dist-info/RECORD,,
