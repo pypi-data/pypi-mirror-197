@@ -1,0 +1,49 @@
+{% load i18n %}
+
+<div class="card mb-5 mb-lg-10">
+  <div class="card-header">
+    <div class="card-title">
+      <h3>{% trans 'Status Log' %}</h3>
+      <div class="card-tools">
+        <span class="badge badge-light-info mx-3">{{ object.get_status }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="card-body p-0">
+    <div class="table-responsive">
+      <table class="table table-flush align-middle table-row-bordered table-row-solid gy-4 gs-9">
+        <thead class="border-gray-200 fs-5 fw-semibold bg-lighten">
+        <tr>
+          <th class="">{% trans "Status" %}</th>
+          <th class="">{% trans "Date" %}</th>
+          <th class="text-end">{% trans "Actor" %}</th>
+        </tr>
+        </thead>
+        <tbody class="fw-6 fw-semibold text-gray-600">
+        <tr>
+          <td>{% translate 'Created At' %}</td>
+          <td>{{ object.created_at }}</td>
+          <td class="text-end">-------</td>
+        </tr>
+        <tr>
+          <td>{% translate 'Updated At' %}</td>
+          <td>{{ object.updated_at }}</td>
+          <td class="text-end">-------</td>
+        </tr>
+
+        {% for status in object.status_log.all %}
+          <tr>
+            <td>{{ status.get_status }}</td>
+            <td>{{ status.at }}</td>
+            <td class="text-end">
+              <a href="{{ status.user.get_details_url }}"
+                 class="text-hover-primary text-gray-600">{{ status.user }}</a>
+            </td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
