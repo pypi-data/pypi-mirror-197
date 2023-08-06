@@ -1,0 +1,604 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div id="connection_lost_modal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger">
+                <h5 class="modal-title">Warning !!!</h5>
+            </div>
+            <div class="modal-body bg-danger">
+                <span><i class="bi bi-exclamation-triangle"></i>&nbsp;Connection to the web server is lost!</span>
+            </div>
+            <div class="modal-footer bg-danger">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container p-0 mt-1">
+    <div class="alert alert-warning ms-2 me-2 mb-0 text-danger" id="alert_section" role="alert" style="display: none; visibility: hidden;">
+        <span id="alert_message"><i class="bi bi-exclamation-triangle"></i>This is the alert message placeholder</span>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="d-lg-flex flex-lg-row d-sm-flex flex-sm-row mb-1">
+        <div class="col-lg-5 col-md-4 col-sm-4 m-2 border border-5 border-success rounded text-center">
+            <!-- System metrics column-->
+            <h5>System metrics</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-1" style="font-weight: regular;">Battery SOC</div>
+                        <canvas id="battery_soc_gauge" style="width: 200px; height: 95px;"></canvas>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <span>
+                                    <span id="battery_soc_value"></span>&nbsp;%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-1" style="font-weight: regular;">Fuel Tank Level</div>
+                        <canvas id="fuel_tank_gauge" style="width: 200px; height: 95px;"></canvas>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <span>
+                                    <span id="fuel_tank_value"></span>&nbsp;%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="mb-1" style="font-weight: regular;">Starter Batt. V.</div>
+                        <canvas id="starter_battery_voltage_gauge" style="width: 200px; height: 95px;"></canvas>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <span>
+                                    <span id="starter_battery_voltage_value"></span>&nbsp;V
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-1" style="font-weight: regular;">Water Tank Level</div>
+                        <canvas id="water_tank_gauge" style="width: 200px; height: 95px;"></canvas>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <span>
+                                    <span id="water_tank_value"></span>&nbsp;%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col align-items-center">
+                        <div class="mb-1" style="font-weight: regular;">PV Power</div>
+                        <canvas id="pv_power_gauge" style="width: 200px; height: 95px;"></canvas>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <span>
+                                    <span id="pv_power_value"></span>&nbsp;W
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col align-items-start">
+                        <div class="container border-1 border border-light rounded gx-0 gy-0 text-start">
+                            <div class="row ms-1 mt-1">
+                                <span>
+                                    Active input source:&nbsp;<span id="active_input_source_value">N/A</span>
+                                </span>
+                            </div>
+                            <div class="row ms-1">
+                                <span>
+                                    VE.Bus state:&nbsp;<span id="ve_bus_state_value">N/A</span>
+                                </span>
+                            </div>
+                            <div class="row ms-1">
+                                <span>
+                                    Housing battery state:&nbsp;<span id="housing_battery_state_value">N/A</span>
+                                </span>
+                            </div>
+                            <div class="row ms-1">
+                                <span>
+                                    Housing battery current:&nbsp;<span id="housing_battery_current_value">N/A</span>A
+                                </span>
+                            </div>
+                            <div class="row ms-1 mb-1">
+                                <span>
+                                    PV current:&nbsp;<span id="pv_current_value">N/A</span>A
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col m-2 border border-5 border-danger rounded text-center d-flex">
+            <!-- Session column-->
+            <div id="no_session_message" class="container-fluid align-self-center">
+                <h5>No session in progress</h5>
+            </div>
+            <div id="session_container" style="display: none; visibility: hidden;" class="container-fluid align-self-top">
+                    <h5 id="session_name">Session name</h5>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Start time (Local):&nbsp;<span id="start_time"></span></span>
+                        </div>
+                        <div class="col">
+                            <span>Start time (UTC):&nbsp;<span id="start_time_utc"></span></span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <span>Duration:&nbsp;<span id="duration"></span></span>
+                    </div>
+                    <div class="row">
+                        <hr class="mt-1 mb-1"/>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Starting GPS latitude:&nbsp;<span id="start_gps_lat"></span></span>
+                        </div>
+                        <div class="col">
+                            <span>Starting GPS longitude:&nbsp;<span id="start_gps_lon"></span></span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Distance:&nbsp;<span id="distance"></span>&nbsp;miles</span>
+                        </div>
+                        <div class="col">
+                            <span>Heading:&nbsp;<span id="heading"></span>&nbsp;Degrees</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Average wind speed:&nbsp;<span id="average_wind_speed"></span>&nbsp;knots</span>
+                        </div>
+                        <div class="col">
+                            <span>Average wind direction:&nbsp;<span id="average_wind_direction"></span>&nbsp;Degrees</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Average water temperature:&nbsp;<span id="average_water_temperature"></span>&nbsp;Celsius</span>
+                        </div>
+                        <div class="col">
+                            <span>Average depth:&nbsp;<span id="average_depth"></span>&nbsp;meters</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Average speed over ground:&nbsp;<span id="average_sog"></span>&nbsp;knots</span>
+                        </div>
+                        <div class="col">
+                            <span>Average speed over water:&nbsp;<span id="average_sow"></span>&nbsp;knots</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Housing battery max voltage:&nbsp;<span id="housing_battery_max_voltage"></span>&nbsp;V</span>
+                        </div>
+                        <div class="col">
+                            <span>Housing battery min voltage:&nbsp;<span id="housing_battery_min_voltage"></span>&nbsp;V</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Housing battery avg. voltage:&nbsp;<span id="housing_battery_avg_voltage"></span>&nbsp;V</span>
+                        </div>
+                        <div class="col">
+                            <span>Housing battery max current:&nbsp;<span id="housing_battery_max_current"></span>&nbsp;A</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Housing battery avg. current:&nbsp;<span id="housing_battery_avg_current"></span>&nbsp;A</span>
+                        </div>
+                        <div class="col">
+                            <span>Housing battery max power:&nbsp;<span id="housing_battery_max_power"></span>&nbsp;W</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Housing battery avg. power:&nbsp;<span id="housing_battery_avg_power"></span>&nbsp;W</span>
+                        </div>
+                        <div class="col">
+                            <span>PV max power:&nbsp;<span id="pv_max_power"></span>&nbsp;W</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>PV avg. power:&nbsp;<span id="pv_avg_power"></span>&nbsp;W</span>
+                        </div>
+                        <div class="col">
+                            <span>PV max current:&nbsp;<span id="pv_max_current"></span>&nbsp;A</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>PV avg. current:&nbsp;<span id="pv_avg_current"></span>&nbsp;A</span>
+                        </div>
+                        <div class="col">
+                            <span>Starter battery max voltage:&nbsp;<span id="starter_battery_max_voltage"></span>&nbsp;V</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Starter battery min voltage:&nbsp;<span id="starter_battery_min_voltage"></span>&nbsp;V</span>
+                        </div>
+                        <div class="col">
+                            <span>Starter battery avg. voltage:&nbsp;<span id="starter_battery_avg_voltage"></span>&nbsp;V</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Tank 1 max level:&nbsp;<span id="tank1_max_level"></span>&nbsp;%</span>
+                        </div>
+                        <div class="col">
+                            <span>Tank 1 min level:&nbsp;<span id="tank1_min_level"></span>&nbsp;%</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Tank 1 avg. level:&nbsp;<span id="tank1_avg_level"></span>&nbsp;%</span>
+                        </div>
+                        <div class="col">
+                            <span>Tank 2 max level:&nbsp;<span id="tank2_max_level"></span>&nbsp;%</span>
+                        </div>
+                    </div>
+                    <div class="row text-start">
+                        <div class="col">
+                            <span>Tank 2 min level:&nbsp;<span id="tank2_min_level"></span>&nbsp;%</span>
+                        </div>
+                        <div class="col">
+                            <span>Tank 2 avg. level:&nbsp;<span id="tank2_avg_level"></span>&nbsp;%</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col d-flex justify-content-center">
+            <span>
+                <span class="spinner-grow text-danger me-2" style="width: 1rem; height: 1rem;" id="victron_module_spinner" role="status"></span>Victron module:&nbsp;<span id="victron_module_status"></span>
+            </span>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <span>
+                <span class="spinner-grow text-danger me-2" style="width: 1rem; height: 1rem;" id="nmea_module_spinner" role="status"></span>NMEA0183 module:&nbsp;<span id="nmea_module_status"></span>
+            </span>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <span>
+                <span class="spinner-grow text-danger me-2" style="width: 1rem; height: 1rem;" id="gps_module_spinner" role="status"></span>GPS module:&nbsp;<span id="gps_module_status"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+{% if session_run_mode == 'manual' %}
+document.getElementById('session_button_id').disabled = false;
+{% else %}
+document.getElementById('session_button_id').disabled = true;
+{% endif %}
+
+const connectionLostModal = new bootstrap.Modal(document.getElementById('connection_lost_modal'), {backdrop: 'static'})
+is_toast_shown = false;
+
+var common_gauge_options = {
+  angle: 0.15, // The span of the gauge arc
+  lineWidth: 0.44, // The line thickness
+  radiusScale: 1, // Relative radius
+  pointer: {
+    length: 0.6, // // Relative to gauge radius
+    strokeWidth: 0.035, // The thickness
+    color: '#ffffff' // Fill color
+  },
+  limitMax: false,     // If false, max value increases automatically if value > maxValue
+  limitMin: false,     // If true, the min value of the gauge will be fixed
+  percentColors: [[0.0, "#ff0000" ], [0.5, "#f9c802"], [1, "#a9d70b"]], // !!!!
+  colorStart: '#6FADCF',   // Colors
+  colorStop: '#8FC0DA',    // just experiment with them
+  strokeColor: '#E0E0E0',  // to see which ones work best for you
+  generateGradient: true,
+  highDpiSupport: true,     // High resolution support
+  staticLabels: {
+  font: "10px sans-serif",  // Specifies font
+  labels: [25, 50, 75, 100],  // Print labels at these values
+  color: "#ffffff",  // Optional: Label text color
+  fractionDigits: 0  // Optional: Numerical precision. 0=round off.
+	},
+};
+
+var battery_voltage_gauge_options = {
+  lines: 12,
+  angle: 0.15,
+  lineWidth: 0.44,
+  pointer: {
+    length: 0.6, // // Relative to gauge radius
+    strokeWidth: 0.035, // The thickness
+    color: '#ffffff' // Fill color
+  },
+  limitMax: 'false',
+  percentColors: [[0.0, "#ff0000" ], [0.6, "#f9c802"], [0.7, "#a9d70b"]], // !!!!
+  strokeColor: '#E0E0E0',
+  generateGradient: true,
+  staticLabels: {
+  font: "10px sans-serif",  // Specifies font
+  labels: [11, 12, 13, 14],  // Print labels at these values
+  color: "#ffffff",  // Optional: Label text color
+  fractionDigits: 0  // Optional: Numerical precision. 0=round off.
+    },
+    renderTicks: {
+          divisions: 3,
+          divWidth: 1.2,
+          divLength: 0.7,
+          divColor: "#333333",
+          subDivisions: 3,
+          subLength: 0.5,
+          subWidth: 0.6,
+          subColor: "#666666",
+        },
+};
+
+var power_gauge_options = {
+  angle: 0.15, // The span of the gauge arc
+  lineWidth: 0.44, // The line thickness
+  radiusScale: 1, // Relative radius
+  pointer: {
+    length: 0.6, // // Relative to gauge radius
+    strokeWidth: 0.035, // The thickness
+    color: '#ffffff' // Fill color
+  },
+  limitMax: false,     // If false, max value increases automatically if value > maxValue
+  limitMin: false,     // If true, the min value of the gauge will be fixed
+  percentColors: [[0.0, "#ff0000" ], [0.5, "#f9c802"], [1, "#a9d70b"]], // !!!!
+  colorStart: '#6FADCF',   // Colors
+  colorStop: '#8FC0DA',    // just experiment with them
+  strokeColor: '#E0E0E0',  // to see which ones work best for you
+  generateGradient: true,
+  highDpiSupport: true,     // High resolution support
+  staticLabels: {
+  font: "10px sans-serif",  // Specifies font
+  labels: [100, 200, 300, 400, 450],  // Print labels at these values
+  color: "#ffffff",  // Optional: Label text color
+  fractionDigits: 0  // Optional: Numerical precision. 0=round off.
+	},
+};
+
+var target = document.getElementById('battery_soc_gauge'); // your canvas element
+var battery_soc_gauge = new Gauge(target).setOptions(common_gauge_options); // create sexy gauge!
+battery_soc_gauge.maxValue = 100; // set max gauge value
+battery_soc_gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+battery_soc_gauge.setTextField(document.getElementById("battery_soc_value"));
+battery_soc_gauge.animationSpeed = 32; // set animation speed (32 is default value)
+
+var target = document.getElementById('starter_battery_voltage_gauge'); // your canvas element
+var starter_battery_voltage_gauge = new Gauge(target).setOptions(battery_voltage_gauge_options); // create sexy gauge!
+starter_battery_voltage_gauge.maxValue = 14; // set max gauge value
+starter_battery_voltage_gauge.setMinValue(11);  // Prefer setter over gauge.minValue = 0
+starter_battery_voltage_gauge.setTextField(document.getElementById("starter_battery_voltage_value"));
+starter_battery_voltage_gauge.animationSpeed = 32; // set animation speed (32 is default value)
+
+var target = document.getElementById('pv_power_gauge'); // your canvas element
+var pv_power_gauge = new Gauge(target).setOptions(power_gauge_options); // create sexy gauge!
+pv_power_gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+pv_power_gauge.setTextField(document.getElementById("pv_power_value"));
+pv_power_gauge.animationSpeed = 32; // set animation speed (32 is default value)
+
+target = document.getElementById('fuel_tank_gauge'); // your canvas element
+var fuel_tank_gauge = new Gauge(target).setOptions(common_gauge_options); // create sexy gauge!
+fuel_tank_gauge.maxValue = 100; // set max gauge value
+fuel_tank_gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+fuel_tank_gauge.setTextField(document.getElementById("fuel_tank_value"));
+fuel_tank_gauge.animationSpeed = 32; // set animation speed (32 is default value)
+
+target = document.getElementById('water_tank_gauge'); // your canvas element
+var water_tank_gauge = new Gauge(target).setOptions(common_gauge_options); // create sexy gauge!
+water_tank_gauge.maxValue = 100; // set max gauge value
+water_tank_gauge.setMinValue(0);  // Prefer setter over gauge.minValue = 0
+water_tank_gauge.setTextField(document.getElementById("water_tank_value"));
+water_tank_gauge.animationSpeed = 32; // set animation speed (32 is default value)
+
+document.getElementById("session_button_id").onclick = toggleSession;
+
+function toggleSession() {
+    $.ajax({
+        type: 'GET',
+        url: '/toggle_session',
+        success: function(data) {
+        }
+    });
+}
+
+function refreshData() {
+    $.ajax({
+        type: 'GET',
+        url: '/data',
+        success: function(data) {
+            if (is_toast_shown) {
+                connectionLostModal.hide();
+                is_toast_shown = false;
+            }
+
+            // Update the relevant part of the webpage with the new data
+            document.getElementById('curr_time_id').innerHTML = data['curr_time'];
+
+            if (data['last_notification'] != '') {
+                document.getElementById('alert_section').style.display = 'block';
+                document.getElementById('alert_section').style.visibility = 'visible';
+                if (data['last_notification'].toLowerCase().includes('cleared')) {
+                    document.getElementById('alert_message').innerHTML = "<i class=\"bi bi-check-circle\"></i>" + " " + data['last_notification'];
+                    if (document.getElementById("alert_section").classList.contains('alert-warning'))
+                    {
+                        document.getElementById("alert_section").classList.remove('alert-warning');
+                        document.getElementById("alert_section").classList.add('alert-success');
+                    }
+                } else {
+                    document.getElementById('alert_message').innerHTML = "<i class=\"bi bi-exclamation-triangle\"></i>" + " " + data['last_notification'];
+                    if (document.getElementById("alert_section").classList.contains('alert-success'))
+                    {
+                        document.getElementById("alert_section").classList.remove('alert-success');
+                        document.getElementById("alert_section").classList.add('alert-warning');
+                    }
+                }
+            } else {
+                document.getElementById('alert_message').innerHTML = "This is the alert message placeholder";
+                document.getElementById('alert_section').style.display = 'none';
+                document.getElementById('alert_section').style.visibility = 'hidden';
+            }
+
+            if (data['victron_module']) {
+                battery_soc_gauge.set(data['battery_soc']);
+                document.getElementById('battery_soc_value').innerHTML = data['battery_soc'];
+                starter_battery_voltage_gauge.set(data['starter_battery_voltage']);
+                document.getElementById('starter_battery_voltage_value').innerHTML = data['starter_battery_voltage'];
+                pv_power_gauge.maxValue = data['pv_max_configured_power']
+                pv_power_gauge.set(data['pv_power']);
+                document.getElementById('pv_power_value').innerHTML = data['pv_power'];
+                fuel_tank_gauge.set(data['fuel_tank']);
+                document.getElementById('fuel_tank_value').innerHTML = data['fuel_tank'];
+                water_tank_gauge.set(data['water_tank']);
+                document.getElementById('water_tank_value').innerHTML = data['water_tank'];
+                document.getElementById('active_input_source_value').innerHTML = data['active_input_source'];
+                document.getElementById('ve_bus_state_value').innerHTML = data['ve_bus_state'];
+                document.getElementById('housing_battery_state_value').innerHTML = data['housing_battery_state'];
+                document.getElementById('housing_battery_current_value').innerHTML = data['housing_battery_current'];
+                document.getElementById('pv_current_value').innerHTML = data['pv_current'];
+                document.getElementById('victron_module_status').innerHTML = data['victron_status'];
+                if (data['victron_status'] == "Running") {
+                    document.getElementById("victron_module_spinner").className = "spinner-border text-success me-2";
+                } else if (data['victron_status'] == "Down") {
+                    document.getElementById("victron_module_spinner").className = "spinner-grow text-danger me-2";
+                } else if (data['victron_status'] == "Starting") {
+                    document.getElementById("victron_module_spinner").className = "spinner-grow text-warning me-2";
+                }
+            } else {
+                document.getElementById('victron_module_status').innerHTML = "Disabled";
+                document.getElementById("victron_module_spinner").className = "spinner-grow text-secondary me-2";
+            }
+
+            if (data['nmea_module']) {
+                document.getElementById('nmea_module_status').innerHTML = data['nmea_status'];
+                if (data['nmea_status'] == "Running") {
+                    document.getElementById("nmea_module_spinner").className = "spinner-border text-success me-2";
+                } else if (data['nmea_status'] == "Down") {
+                    document.getElementById("nmea_module_spinner").className = "spinner-grow text-danger me-2";
+                } else if (data['nmea_status'] == "Starting") {
+                    document.getElementById("nmea_module_spinner").className = "spinner-grow text-warning me-2";
+                }
+            } else {
+                document.getElementById('nmea_module_status').innerHTML = "Disabled";
+                document.getElementById("nmea_module_spinner").className = "spinner-grow text-secondary me-2";
+            }
+
+            if (data['gps_module']) {
+                document.getElementById('gps_module_status').innerHTML = data['gps_status'];
+                if (data['gps_status'] == "Running") {
+                    document.getElementById("gps_module_spinner").className = "spinner-border text-success me-2";
+                } else if (data['gps_status'] == "Down") {
+                    document.getElementById("gps_module_spinner").className = "spinner-grow text-danger me-2";
+                } else if (data['gps_status'] == "Starting") {
+                    document.getElementById("gps_module_spinner").className = "spinner-grow text-warning me-2";
+                }
+            } else {
+                document.getElementById('gps_module_status').innerHTML = "Disabled";
+                document.getElementById("gps_module_spinner").className = "spinner-grow text-secondary me-2";
+            }
+
+            if (data['status'] === "idle") {
+                if (document.getElementById("session_button_id").classList.contains('btn-danger'))
+                {
+                    document.getElementById('session_button_text').innerHTML = "Start Session";
+                    document.getElementById("session_button_id").classList.remove('btn-danger');
+                    document.getElementById("session_button_id").classList.add('btn-success');
+                    document.getElementById('session_button_spinner').style.display = 'none';
+                    document.getElementById('session_button_spinner').style.visibility = 'hidden';
+                }
+
+                document.getElementById('session_container').style.display = 'none';
+                document.getElementById('session_container').style.visibility = 'hidden';
+                document.getElementById('no_session_message').style.display = 'block';
+                document.getElementById('no_session_message').style.visibility = 'visible';
+                document.getElementById('session_name').innerHTML = "Session name";
+            }
+            else
+            {
+                if (document.getElementById("session_button_id").classList.contains('btn-success'))
+                {
+                    document.getElementById('session_button_text').innerHTML = "End Session";
+                    document.getElementById("session_button_id").classList.remove('btn-success');
+                    document.getElementById("session_button_id").classList.add('btn-danger');
+                    document.getElementById('session_button_spinner').style.display = 'inline-block';
+                    document.getElementById('session_button_spinner').style.visibility = 'visible';
+                }
+                document.getElementById('no_session_message').style.display = 'none';
+                document.getElementById('no_session_message').style.visibility = 'hidden';
+                document.getElementById('session_container').style.display = 'block';
+                document.getElementById('session_container').style.visibility = 'visible';
+                document.getElementById('session_name').innerHTML = data['session_name'];
+                document.getElementById('start_time').innerHTML = data['start_time'];
+                document.getElementById('start_time_utc').innerHTML = data['start_time_utc'];
+                document.getElementById('duration').innerHTML = data['duration'];
+                document.getElementById('start_gps_lat').innerHTML = data['start_gps_lat'];
+                document.getElementById('start_gps_lon').innerHTML = data['start_gps_lon'];
+                document.getElementById('distance').innerHTML = data['distance'];
+                document.getElementById('heading').innerHTML = data['heading'];
+                document.getElementById('average_wind_speed').innerHTML = data['average_wind_speed'];
+                document.getElementById('average_wind_direction').innerHTML = data['average_wind_direction'];
+                document.getElementById('average_water_temperature').innerHTML = data['average_water_temperature'];
+                document.getElementById('average_depth').innerHTML = data['average_depth'];
+                document.getElementById('average_sog').innerHTML = data['average_sog'];
+                document.getElementById('average_sow').innerHTML = data['average_sow'];
+                document.getElementById('housing_battery_max_voltage').innerHTML = data['housing_battery_max_voltage'];
+                document.getElementById('housing_battery_min_voltage').innerHTML = data['housing_battery_min_voltage'];
+                document.getElementById('housing_battery_avg_voltage').innerHTML = data['housing_battery_avg_voltage'];
+                document.getElementById('housing_battery_max_current').innerHTML = data['housing_battery_max_current'];
+                document.getElementById('housing_battery_avg_current').innerHTML = data['housing_battery_avg_current'];
+                document.getElementById('housing_battery_max_power').innerHTML = data['housing_battery_max_power'];
+                document.getElementById('housing_battery_avg_power').innerHTML = data['housing_battery_avg_power'];
+                document.getElementById('pv_max_power').innerHTML = data['pv_max_power'];
+                document.getElementById('pv_avg_power').innerHTML = data['pv_avg_power'];
+                document.getElementById('pv_max_current').innerHTML = data['pv_max_current'];
+                document.getElementById('pv_avg_current').innerHTML = data['pv_avg_current'];
+                document.getElementById('starter_battery_max_voltage').innerHTML = data['starter_battery_max_voltage'];
+                document.getElementById('starter_battery_min_voltage').innerHTML = data['starter_battery_min_voltage'];
+                document.getElementById('starter_battery_avg_voltage').innerHTML = data['starter_battery_avg_voltage'];
+                document.getElementById('tank1_max_level').innerHTML = data['tank1_max_level'];
+                document.getElementById('tank1_min_level').innerHTML = data['tank1_min_level'];
+                document.getElementById('tank1_avg_level').innerHTML = data['tank1_avg_level'];
+                document.getElementById('tank2_max_level').innerHTML = data['tank2_max_level'];
+                document.getElementById('tank2_min_level').innerHTML = data['tank2_min_level'];
+                document.getElementById('tank2_avg_level').innerHTML = data['tank2_avg_level'];
+            }
+        }
+    });
+}
+
+$(document).ready(function() {
+    // Call the refreshData function every 1 seconds
+    setInterval(refreshData, 1000);
+});
+
+$(document).ajaxError(function( event, request, settings ) {
+        //When XHR Status code is 0 there is no connection with the server
+        if (request.status == 0){
+            if (!is_toast_shown) {
+                connectionLostModal.show();
+                is_toast_shown = true;
+            }
+        }
+
+    });
+</script>
+
+{% endblock %}
