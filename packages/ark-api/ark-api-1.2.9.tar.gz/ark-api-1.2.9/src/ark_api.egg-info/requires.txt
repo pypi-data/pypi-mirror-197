@@ -1,0 +1,17 @@
+dacite
+requests
+pyautogui
+pydirectinput
+pynput
+pytesseract
+opencv-python
+pillow
+numpy
+mss
+pywin32
+screeninfo
+pygetwindow
+psutil
+keyboard
+mouse
+python-a2s
