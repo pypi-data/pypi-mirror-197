@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: astroph_new
+Version: 0.2.0
+Summary: python module to make summary of astro-ph based on user interests
+Author-email: Shinyoung Kim <radioshiny@gmail.com>
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: bs4
+Requires-Dist: markdown
+Requires-Dist: numpy
+Requires-Dist: selenium
+Requires-Dist: whoswho
+Project-URL: Documentation, https://astroph-new.readthedocs.io
+Project-URL: Source, https://github.com/radioshiny/astroph_new
+
+===========
+astroph_new
+===========
+
+``astropy_new`` is a python module to search for
+`new astrophysics submissions <https://arxiv.org/list/astro-ph/new>`_
+in `arXiv <https://arxiv.org>`_ based on the user interests and to create a
+summarized document that can be easily opened in any browser.
+
+- Docs: https://astroph-new.readthedocs.io
+
+Installation: ``pip install astroph-new``
+
+Features
+========
+
+- Managing user interests (subjects, author names, and keywords)
+- Searching for new submissions in
+  `astro-ph <https://arxiv.org/list/astro-ph/new>`_ based on the user interests
+- Creating a summarized HTML document of the interested submissions
+- Daily automatic searching and summary on a set time.
+
+License
+=======
+
+All files are under MIT License, see `LISENCE <LICENSE>`_.
+
