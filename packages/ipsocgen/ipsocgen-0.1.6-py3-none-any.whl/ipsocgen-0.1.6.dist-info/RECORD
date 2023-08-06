@@ -1,0 +1,13 @@
+ipsocgen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipsocgen/ipsocgen_cli.py,sha256=B1-PhB6A-umX89ZOeR4VFIfBP7Tnp9iflmf3FjaEEFU,2832
+ipsocgen/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipsocgen/common/constants.py,sha256=u2OgaufVH6sM_PcseHQYcVt3KTRAIT-K4hWGlGLp-s4,3902
+ipsocgen/common/generate.py,sha256=Su5vbYUX9Cv3V3-wnrxtAlriwLQSe3oexx-h7tJooUY,10371
+ipsocgen/common/modules.py,sha256=tJ8kr1z3GFe3iHIOJjQuB6o5uvXRrxBH_r7brxYtasw,17779
+ipsocgen/common/validate.py,sha256=hr9j3daeHkusyAuiQ7imdNbDkiPw9Z1uXHYvah3TOO8,7181
+ipsocgen-0.1.6.dist-info/LICENSE,sha256=SPXdMzcw1LCpAirJHC5f9yZ9gE9JJLhTNdSZmOG9uM8,1073
+ipsocgen-0.1.6.dist-info/METADATA,sha256=oCugnJ973OUGk3iekrsgwwrSH1QE_z6hea8ygnmNHn0,989
+ipsocgen-0.1.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ipsocgen-0.1.6.dist-info/entry_points.txt,sha256=k8pLuao9iLIPTvcEmeHZwOh8CfIEk7SNHmXqB2AekyE,56
+ipsocgen-0.1.6.dist-info/top_level.txt,sha256=53U1ncMPUUw8tmyzmGIH0WWemD1QtIOcMa8_n-xi6SY,9
+ipsocgen-0.1.6.dist-info/RECORD,,
