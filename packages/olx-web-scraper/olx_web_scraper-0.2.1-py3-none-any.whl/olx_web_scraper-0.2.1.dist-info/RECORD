@@ -1,0 +1,14 @@
+olx_web_scraper/__init__.py,sha256=Dy6X8SVGgYHQO90i9AW5MWG8F-FlCOtkrVNscVYxEWI,645
+olx_web_scraper/__main__.py,sha256=4GxTDXGotiQJvoM-y1V40IQ1KqdfqWzt2GcMcFDResc,70
+olx_web_scraper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+olx_web_scraper/utils/db.py,sha256=TAIqxHIUYrA1NMfHrI1s4QR1PcYsTu-c_da9f7i6-Oc,171
+olx_web_scraper/utils/loader.py,sha256=Qnje7FJljYnZQjJZu9J3XZdIF-9g2r0r1T_AJtSI2g0,1719
+olx_web_scraper/utils/parser.py,sha256=Ewsz5sb3cvFbDCSuN-S_TPh56BLxbCbXouvNXXNyuQU,225
+olx_web_scraper/utils/reader.py,sha256=Vwnmo2eakxI-ZrhBKvw8ro7MBq1QGYm4eWPJhIClqJM,1954
+olx_web_scraper/utils/uploader.py,sha256=QJ4teOyStXsPyPPCgNotbXsNt0m75rh5JME7rtdrI04,1016
+olx_web_scraper/utils/writer.py,sha256=gS8E-pU5dHaYBFk0mJXYPuOeITjGvfCvaiVTrF8TV-Q,348
+olx_web_scraper-0.2.1.dist-info/entry_points.txt,sha256=W60h0dpvh5H4hVSxqKWk6NLjzvJ3mm91I7i-hXQULXU,56
+olx_web_scraper-0.2.1.dist-info/LICENSE.md,sha256=_NydVuQuXzJNeC9J-xeYOYlhb4_vhMGGRM_3mTmM6Lk,1065
+olx_web_scraper-0.2.1.dist-info/METADATA,sha256=a5qeHrOwbeK8zZpnwvrSiv2xiB43Ia17RVfOWXYZ1NQ,1620
+olx_web_scraper-0.2.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+olx_web_scraper-0.2.1.dist-info/RECORD,,
