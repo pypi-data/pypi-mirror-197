@@ -1,0 +1,130 @@
+Metadata-Version: 2.1
+Name: rssbot
+Version: 300
+Summary: feeding rss into your channel
+Home-page: http://github.com/thatebhj/rssbot
+Author: B.H.J. Thate
+Author-email: thatebhj@gmail.com
+License: Public Domain
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Public Domain
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/x-rst
+
+README
+######
+
+
+**NAME**
+
+
+**RSSBOT** - feeding rss into your channel
+
+
+**SYNOPSIS**
+
+::
+
+ $ sudo python3 -m pip install rssbot
+ $ sudo cp /usr/local/rssbot/rssbot.service /etc/systemd/system
+ $ sudo systemctl enable rssbot --now
+
+ (*) default channel/server is #rssbot on localhost
+
+
+**DESCRIPTION**
+
+
+**RSSBOT** is a python3 irc bot that feeds rss into your channel.it uses
+systemd to run a 24/7 presence in a channel.
+
+
+**CONFIGURATION**
+
+
+configuration is done by calling the ``cfg`` command of ``rssctl``
+
+
+**irc**
+
+
+::
+
+ $ rssctl cfg server=<server> channel=<channel> nick=<nick>
+
+ (*) default channel/server is #operbot on localhost
+
+
+**sasl**
+
+::
+
+ $ rssctl pwd <nickservnick> <nickservpass>
+ $ rssctl cfg password=<outputfrompwd>
+
+
+**users**
+
+
+as default the user's userhost is not checked when a user types a command in a
+channel. To disable userhost checking disable users with the ``cfg``
+command::
+
+ $ rssctl cfg users=False
+
+
+To add a user to the bot use the met command::
+
+ $ rssctl met <userhost>
+
+
+to delete a user use the del command with a substring of the userhost::
+
+
+ $ rssctl del <substring>
+
+
+**rss**
+
+::
+
+ $ rssctl rss <url>
+
+
+**COMMANDS**
+
+
+here is a short description of the commands::
+
+
+ cfg - show the irc configuration, also edits the config
+ cmd - show all commands
+ dlt - remove a user
+ dne - flag todo as done
+ dpl - set display items for a rss feed
+ ftc - run a rss feed fetching batch
+ met - add a users with there irc userhost
+ mre - displays cached output, channel wise.
+ nme - set name of a rss feed
+ pwd - combine a nickserv name/password into a sasl password
+ rem - remove a rss feed by matching is to its url
+ rss - add a feed to fetch, fetcher runs every 5 minutes
+ tdo - adds a todo item, no options returns list of todo's
+ upt - show uptime
+
+
+**AUTHOR**
+
+
+ B.H.J. Thate - thatebhj@gmail.com
+
+
+**COPYRIGHT**
+
+
+**RSSBOT** is a contribution back to society, placed in the Public Domain.
+
+

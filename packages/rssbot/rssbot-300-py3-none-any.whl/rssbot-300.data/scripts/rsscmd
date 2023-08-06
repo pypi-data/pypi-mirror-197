@@ -1,0 +1,51 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+"feeding rss into your channel"
+
+
+import os
+import readline
+import sys
+import termios
+import time
+import traceback
+
+
+from rssbot.clients import Client
+from rssbot.command import command, scan
+from rssbot.default import Default
+from rssbot.message import Message
+from rssbot.modules import cmd, irc, rss
+from rssbot.objects import Object
+from rssbot.storage import Storage
+from rssbot.threads import launch
+
+
+Storage.workdir = "/var/lib/rssbot/"
+
+
+scan(cmd)
+scan(irc)
+scan(rss)
+
+
+class CLI(Client):
+
+    def announce(self, txt):
+        pass
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+def main():
+    cfg = Message()
+    cfg.parse(" ".join(sys.argv[1:]))
+    cli = CLI()
+    command(cli, cfg.otxt)
+
+
+main()

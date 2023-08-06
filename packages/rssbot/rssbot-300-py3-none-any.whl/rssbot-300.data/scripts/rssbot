@@ -1,0 +1,124 @@
+#!python
+# This file is placed in the Public Domain.
+
+
+'feeding rss into your channel'
+
+
+import os
+import readline
+import sys
+import termios
+import time
+import traceback
+
+
+sys.path.insert(0, os.getcwd())
+
+
+from rssbot.clients import Client
+from rssbot.command import Command, command, scan
+from rssbot.handler import Handler
+from rssbot.listens import Listens
+from rssbot.message import Message
+from rssbot.modules import cmd, irc, rss
+from rssbot.objects import update
+from rssbot.storage import Storage
+from rssbot.threads import launch
+from rssbot.utility import wait
+
+
+Storage.workdir = os.path.expanduser('~/.rssbot')
+
+
+scan(cmd)
+scan(irc)
+scan(rss)
+
+
+class CLI(Client):
+
+    def announce(self, txt):
+        pass
+
+    def raw(self, txt):
+        print(txt)
+        sys.stdout.flush()
+
+
+class Console(CLI):
+
+    def handle(self, event):
+        CLI.handle(self, event)
+
+    def poll(self):
+        event = Message()
+        event.orig = repr(self)
+        event.txt = input('> ')
+        event.parse(event.txt)
+        return event
+
+
+def daemon():
+    pid = os.fork()
+    if pid != 0:
+        os._exit(0)
+    os.setsid()
+    os.umask(0)
+    sis = open('/dev/null', 'r')
+    os.dup2(sis.fileno(), sys.stdin.fileno())
+    sos = open('/dev/null', 'a+')
+    ses = open('/dev/null', 'a+')
+    os.dup2(sos.fileno(), sys.stdout.fileno())
+    os.dup2(ses.fileno(), sys.stderr.fileno())
+
+
+def waiter():
+    got = []
+    for ex in Handler.errors:
+        traceback.print_exception(type(ex), ex, ex.__traceback__)
+        got.append(ex)
+    for exc in got:
+        Handler.errors.remove(exc)
+
+
+def wrap(func):
+    fds = sys.stdin.fileno()
+    gotterm = True
+    try:
+        old = termios.tcgetattr(fds)
+    except termios.error:
+        gotterm = False
+    try:
+        func()
+    except (EOFError, KeyboardInterrupt):
+        print('')
+    finally:
+        if gotterm:
+            termios.tcsetattr(fds, termios.TCSADRAIN, old)
+        waiter()
+      
+
+def main():
+    cfg = Message()
+    cfg.parse(' '.join(sys.argv[1:]))
+    dowait = False
+    if cfg.txt:
+        cli = CLI()
+        command(cli, cfg.otxt)
+    elif 'd' in cfg.opts:
+        daemon()
+        dowait = True
+    elif 'c' in cfg.opts:
+        date = time.ctime(time.time()).replace('  ', ' ')
+        print(f'RSSBOT started {date}')
+        csl = Console()
+        launch(csl.loop)
+        dowait = True
+    if dowait:
+        irc.init()
+        rss.init()
+        wait(waiter)
+
+
+wrap(main)
