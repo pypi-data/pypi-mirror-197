@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+bbplot/__init__.py
+bbplot/bijan.py
+bbplot.egg-info/PKG-INFO
+bbplot.egg-info/SOURCES.txt
+bbplot.egg-info/dependency_links.txt
+bbplot.egg-info/top_level.txt
