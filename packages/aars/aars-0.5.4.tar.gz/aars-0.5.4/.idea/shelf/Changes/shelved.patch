@@ -1,0 +1,459 @@
+Index: pyproject.toml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>[build-system]\r\nrequires = [\"hatchling\"]\r\nbuild-backend = \"hatchling.build\"\r\n\r\n[project]\r\nname = \"aars\"\r\nversion = \"0.3.3\"\r\nauthors = [\r\n  { name=\"Mike Hukiewitz\", email=\"mike.hukiewitz@robotter.ai\" },\r\n]\r\ndescription = \"Experimental Object-Document-Mapper using pydantic to store objects on Aleph.im\"\r\nreadme = \"README.md\"\r\nrequires-python = \">=3.7\"\r\nclassifiers = [\r\n    \"Programming Language :: Python :: 3\",\r\n    \"License :: OSI Approved :: MIT License\",\r\n    \"Operating System :: OS Independent\",\r\n]\r\n\r\n[dependencies]\r\npydantic = \"^1.8.2\"\r\naleph_client = \"^0.5.0\"\r\n\r\n[project.urls]\r\n\"Homepage\" = \"https://github.com/aleph-im/active-record-sdk\"\r\n\"Bug Tracker\" = \"https://github.com/aleph-im/active-record-sdk/issues\"
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/pyproject.toml b/pyproject.toml
+--- a/pyproject.toml	(revision 7d05dee6942b1a217b400c5ee326ab87e0d2638e)
++++ b/pyproject.toml	(date 1677519048948)
+@@ -4,7 +4,7 @@
+ 
+ [project]
+ name = "aars"
+-version = "0.3.3"
++version = "0.3.4"
+ authors = [
+   { name="Mike Hukiewitz", email="mike.hukiewitz@robotter.ai" },
+ ]
+Index: src/aars/utils.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import operator\r\nfrom itertools import *\r\nfrom typing import AsyncIterator, List, TypeVar, OrderedDict, Generic, Type, Optional\r\n\r\nT = TypeVar(\"T\")\r\n\r\n\r\nclass IndexQuery(OrderedDict, Generic[T]):\r\n    record_type: Type[T]\r\n\r\n    def __init__(self, record_type: Type[T], **kwargs):\r\n        super().__init__({item[0]: item[1] for item in sorted(kwargs.items())})\r\n        self.record_type = record_type\r\n\r\n    def get_index_name(self) -> str:\r\n        return self.record_type.__name__ + \".\" + \".\".join(self.keys())\r\n\r\n    def get_subquery(self, keys: List[str]) -> \"IndexQuery\":\r\n        return IndexQuery(\r\n            self.record_type, **{key: arg for key, arg in self.items() if key in keys}\r\n        )\r\n\r\n\r\ndef subslices(seq):\r\n    \"\"\"\r\n    Return all contiguous non-empty subslices of a sequence.\r\n    Taken from more_itertools.\r\n\r\n    Example:\r\n        list(subslices([1, 2, 3])) == [[1], [1, 2], [1, 2, 3], [2], [2, 3], [3]]\r\n    \"\"\"\r\n    #\r\n    slices = starmap(slice, combinations(range(len(seq) + 1), 2))\r\n    return map(operator.getitem, repeat(seq), slices)\r\n\r\n\r\ndef possible_index_names(seq):\r\n    \"\"\"\r\n    Return all possible index names for a sequence of properties.\r\n\r\n    Example:\r\n        list(possible_index_names(['A', 'B', 'C'])) == [['A'], ['A.B'], ['A.B.C'], ['B'], ['B.C'], ['C']]\r\n    \"\"\"\r\n    return map(\".\".join, subslices(seq))\r\n\r\n\r\nasync def async_iterator_to_list(\r\n    iterator: AsyncIterator[T], count: Optional[int] = None\r\n) -> List[T]:\r\n    \"\"\"\r\n    Return a list from an async iterator.\r\n    \"\"\"\r\n    if count is None:\r\n        return [item async for item in iterator]\r\n    else:\r\n        items = []\r\n        async for item in iterator:\r\n            items.append(item)\r\n            if len(items) == count:\r\n                break\r\n        return items\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/aars/utils.py b/src/aars/utils.py
+--- a/src/aars/utils.py	(revision 7d05dee6942b1a217b400c5ee326ab87e0d2638e)
++++ b/src/aars/utils.py	(date 1677519039976)
+@@ -1,6 +1,20 @@
+ import operator
+ from itertools import *
+-from typing import AsyncIterator, List, TypeVar, OrderedDict, Generic, Type, Optional
++from typing import (
++    AsyncIterator,
++    List,
++    TypeVar,
++    OrderedDict,
++    Generic,
++    Type,
++    Optional,
++    Awaitable,
++    Callable,
++    Tuple,
++    Dict,
++)
++
++from .exceptions import AlreadyUsedError
+ 
+ T = TypeVar("T")
+ 
+@@ -21,6 +35,94 @@
+         )
+ 
+ 
++class PageableResponse(AsyncIterator[T], Generic[T]):
++    """
++    A wrapper around an AsyncIterator that allows for easy pagination and iteration, while also preventing multiple
++    iterations. This is mainly used for nicer syntax when not using the async generator syntax.
++    """
++    record_generator: AsyncIterator[T]
++    used: bool = False
++
++    def __init__(self, record_generator: AsyncIterator[T]):
++        self.record_generator = record_generator
++
++    async def all(self) -> List[T]:
++        if self.used:
++            raise AlreadyUsedError()
++        self.used = True
++        return await async_iterator_to_list(self.record_generator)
++
++    async def page(self, page: int, page_size: int) -> List[T]:
++        if self.used:
++            raise AlreadyUsedError()
++        self.used = True
++        return await async_iterator_to_list(
++            self.record_generator, page * page_size, page_size
++        )
++
++    async def first(self) -> Optional[T]:
++        if self.used:
++            raise AlreadyUsedError()
++        self.used = True
++        return await self.record_generator.__anext__()
++
++    def __anext__(self) -> Awaitable[T]:
++        try:
++            self.used = True
++            return self.record_generator.__anext__()
++        except StopAsyncIteration:
++            raise
++
++
++class PageableRequest(AsyncIterator[T], Generic[T]):
++    """
++    A wrapper around a request that returns a PageableResponse. Useful if performance improvements can be obtained by
++    passing page and page_size parameters to the request.
++    """
++
++    func: Callable[..., AsyncIterator[T]]
++    args: Tuple
++    kwargs: Dict
++    response: Optional[PageableResponse] = None
++
++    def __init__(self, func: Callable[..., AsyncIterator[T]], *args, **kwargs):
++        self.func = func
++        self.args = args
++        self.kwargs = kwargs
++
++    def __await__(self):
++        self.response = PageableResponse(self.func(*self.args, **self.kwargs))
++        return self.response
++
++    def __aiter__(self) -> AsyncIterator[T]:
++        self._prepare_response()
++        assert self.response is not None
++        return self.response
++
++    def __anext__(self) -> Awaitable[T]:
++        return PageableResponse(self.func(*self.args, **self.kwargs, page=1, page_size=20)).__anext__()
++
++    def _prepare_response(self):
++        if self.response is not None:
++            return self.response
++        self.response = PageableResponse(self.func(*self.args, **self.kwargs, page=1, page_size=20))
++
++    async def all(self) -> List[T]:
++        return await PageableResponse(
++            self.func(*self.args, **self.kwargs, page=1, page_size=20)
++        ).all()
++
++    async def page(self, page, page_size) -> List[T]:
++        return await PageableResponse(
++            self.func(*self.args, **self.kwargs, page=page, page_size=page_size)
++        ).page(page=page, page_size=page_size)
++
++    async def first(self) -> Optional[T]:
++        return await PageableResponse(
++            self.func(*self.args, **self.kwargs, page=1, page_size=20)
++        ).first()
++
++
+ def subslices(seq):
+     """
+     Return all contiguous non-empty subslices of a sequence.
+@@ -45,16 +147,20 @@
+ 
+ 
+ async def async_iterator_to_list(
+-    iterator: AsyncIterator[T], count: Optional[int] = None
++    iterator: AsyncIterator[T], skip: int = 0, count: Optional[int] = None
+ ) -> List[T]:
+     """
+     Return a list from an async iterator.
+     """
+-    if count is None:
++    if count is None and skip == 0:
+         return [item async for item in iterator]
+     else:
+         items = []
+         async for item in iterator:
++            if skip > 0:
++                skip -= 1
++                continue
++
+             items.append(item)
+             if len(items) == count:
+                 break
+Index: tests/fetch_all.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import pytest\r\nimport asyncio\r\n\r\nfrom aleph_client.asynchronous import get_fallback_session\r\n\r\nfrom src.aars import Record, AARS\r\n\r\nAARS(session=get_fallback_session())\r\n\r\n\r\n@pytest.fixture(scope=\"session\")\r\ndef event_loop():\r\n    yield AARS.session.loop\r\n    asyncio.run(AARS.session.close())\r\n\r\n\r\nclass Book(Record):\r\n    title: str\r\n    author: str\r\n\r\n\r\n@pytest.mark.asyncio\r\nasync def test_fetch_all():\r\n    books = await Book.fetch_all()\r\n    print(len(books))\r\n    assert len(books) > 0\r\n    for book in books:\r\n        assert isinstance(book, Book)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tests/fetch_all.py b/tests/fetch_all.py
+--- a/tests/fetch_all.py	(revision 7d05dee6942b1a217b400c5ee326ab87e0d2638e)
++++ b/tests/fetch_all.py	(date 1677498890941)
+@@ -21,7 +21,7 @@
+ 
+ @pytest.mark.asyncio
+ async def test_fetch_all():
+-    books = await Book.fetch_all()
++    books = await Book.fetch_objects()
+     print(len(books))
+     assert len(books) > 0
+     for book in books:
+Index: tests/aars.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import asyncio\r\nfrom typing import List, Optional\r\n\r\nfrom aleph_client import AuthenticatedUserSession\r\nfrom aleph_client.conf import settings\r\nfrom aleph_client.chains.ethereum import get_fallback_account\r\n\r\nfrom src.aars import Record, Index, AARS\r\nfrom src.aars.exceptions import AlreadyForgottenError\r\nimport pytest\r\n\r\nAARS(session=AuthenticatedUserSession(get_fallback_account(), settings.API_HOST))\r\n\r\n\r\n@pytest.fixture(scope=\"session\")\r\ndef event_loop():\r\n    yield AARS.session.http_session.loop\r\n    asyncio.run(AARS.session.http_session.close())\r\n\r\n\r\n@pytest.fixture(scope=\"session\", autouse=True)\r\ndef create_indices(request):\r\n    Index(Book, 'title')\r\n    Index(Book, ['title', 'author'])\r\n    Index(Library, on='name')\r\n\r\n\r\nclass Book(Record):\r\n    title: str\r\n    author: str\r\n    year: Optional[int]\r\n\r\n\r\nclass Library(Record):\r\n    name: str\r\n    books: List[Book]\r\n\r\n\r\n@pytest.mark.asyncio\r\nasync def test_store_and_index():\r\n    new_book = await Book(title='Atlas Shrugged', author='Ayn Rand').save()\r\n    assert new_book.title == 'Atlas Shrugged'\r\n    assert new_book.author == 'Ayn Rand'\r\n    await asyncio.sleep(1)\r\n    fetched_book = (await Book.where_eq(title='Atlas Shrugged'))[0]\r\n    assert new_book == fetched_book\r\n\r\n\r\n@pytest.mark.asyncio\r\nasync def test_multi_index():\r\n    new_book = await Book(title='Lila', author='Robert M. Pirsig', year=1991).save()\r\n    # wait a few secs\r\n    await asyncio.sleep(1)\r\n    should_be_none = (await Book.where_eq(title='Lila', author='Yo Momma'))\r\n    assert len(should_be_none) == 0\r\n    fetched_book = (await Book.where_eq(title='Lila', author='Robert M. Pirsig'))[0]\r\n    assert new_book == fetched_book\r\n\r\n\r\n@pytest.mark.asyncio\r\nasync def test_amending_record():\r\n    book = await Book(title='Neurodancer', author='William Gibson').save()\r\n    assert book.current_revision == 0\r\n    book.title = 'Neuromancer'\r\n    book = await book.save()\r\n    assert book.title == 'Neuromancer'\r\n    assert len(book.revision_hashes) == 2\r\n    assert book.current_revision == 1\r\n    assert book.revision_hashes[0] == book.id_hash\r\n    assert book.revision_hashes[1] != book.id_hash\r\n    await asyncio.sleep(1)\r\n    old_book = await book.fetch_revision(rev_no=0)\r\n    old_timestamp = old_book.timestamp\r\n    assert old_book.title == 'Neurodancer'\r\n    new_book = await book.fetch_revision(rev_no=1)\r\n    assert new_book.title == 'Neuromancer'\r\n    assert new_book.timestamp > old_timestamp\r\n\r\n\r\n@pytest.mark.asyncio\r\nasync def test_store_and_index_record_of_records():\r\n    books = await asyncio.gather(\r\n        Book(title='Atlas Shrugged', author='Ayn Rand').save(),\r\n        Book(title='The Martian', author='Andy Weir').save()\r\n    )\r\n    new_library = await Library(name='The Library', books=books).save()\r\n    await asyncio.sleep(1)\r\n    fetched_library = (await Library.where_eq(name='The Library'))[0]\r\n    assert new_library == fetched_library\r\n\r\n\r\n@pytest.mark.asyncio\r\nasync def test_forget_object():\r\n    forgettable_book = await Book(title=\"The Forgotten Book\", author=\"Mechthild Gläser\").save()  # I'm sorry.\r\n    await asyncio.sleep(1)\r\n    await forgettable_book.forget()\r\n    assert forgettable_book.forgotten is True\r\n    await asyncio.sleep(1)\r\n    assert len(await Book.fetch(forgettable_book.id_hash)) == 0\r\n    with pytest.raises(AlreadyForgottenError):\r\n        await forgettable_book.forget()\r\n\r\n\r\n@pytest.mark.asyncio\r\nasync def test_store_and_wrong_where_eq():\r\n    new_book = await Book(title='Atlas Shrugged', author='Ayn Rand').save()\r\n    assert new_book.title == 'Atlas Shrugged'\r\n    assert new_book.author == 'Ayn Rand'\r\n    with pytest.warns(UserWarning):\r\n        fetched_book = (await Book.where_eq(title='Atlas Shrugged', foo=\"bar\"))\r\n    assert len(fetched_book) == 0\r\n\r\n\r\n@pytest.mark.asyncio\r\nasync def test_fetch_all_pagination():\r\n    page_one = await Book.fetch_all(page_size=1, page=1)\r\n    page_two = await Book.fetch_all(page_size=1, page=2)\r\n    assert len(page_one) == 1\r\n    assert len(page_two) == 1\r\n    assert page_one[0] != page_two[0]\r\n\r\n\r\n@pytest.mark.asyncio\r\n@pytest.mark.skip(reason=\"This takes a long time\")\r\nasync def test_sync_indices():\r\n    await AARS.sync_indices()\r\n    assert len(Record.get_indices()) == 3\r\n    assert len(Book.get_indices()) == 2\r\n    assert len(Library.get_indices()) == 1\r\n    assert len(list(Book.get_indices()[0].hashmap.values())) > 0\r\n    assert len(list(Book.get_indices()[1].hashmap.values())) > 0\r\n    assert len(list(Library.get_indices()[0].hashmap.values())) > 0
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tests/aars.py b/tests/aars.py
+--- a/tests/aars.py	(revision ee6bb5586ea3ae6350ce998633a72c00b3c1081e)
++++ b/tests/aars.py	(date 1677516768879)
+@@ -42,7 +42,7 @@
+     assert new_book.title == 'Atlas Shrugged'
+     assert new_book.author == 'Ayn Rand'
+     await asyncio.sleep(1)
+-    fetched_book = (await Book.where_eq(title='Atlas Shrugged'))[0]
++    fetched_book = (await Book.where_eq(title='Atlas Shrugged').page(1, 1))[0]
+     assert new_book == fetched_book
+ 
+ 
+@@ -113,8 +113,8 @@
+ 
+ @pytest.mark.asyncio
+ async def test_fetch_all_pagination():
+-    page_one = await Book.fetch_all(page_size=1, page=1)
+-    page_two = await Book.fetch_all(page_size=1, page=2)
++    page_one = await Book.fetch_objects().page(1, 1)
++    page_two = await Book.fetch_objects().page(2, 1)
+     assert len(page_one) == 1
+     assert len(page_two) == 1
+     assert page_one[0] != page_two[0]
+Index: src/aars/exceptions.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>class AlephError(Exception):\r\n    \"\"\"Base class for exceptions in this module.\"\"\"\r\n\r\n    pass\r\n\r\n\r\nclass AlreadyForgottenError(AlephError):\r\n    def __init__(\r\n        self,\r\n        content,\r\n        message=\"Object '{0}' has already been forgotten. It is recommended to delete the \"\r\n        \"called object locally.\",\r\n    ):\r\n        self.item_hash = content.id_hash\r\n        self.message = f\"{message.format(self.item_hash)}\"\r\n        super().__init__(self.message)\r\n\r\n\r\nclass PostTypeIsNoClassError(AlephError):\r\n    \"\"\"Exception raised when a received post_type is not resolvable to any python class in current runtime.\"\"\"\r\n\r\n    def __init__(\r\n        self,\r\n        content,\r\n        message=\"Received post_type '{0}' from channel '{1}' does not currently exist as a \"\r\n        \"class.\",\r\n    ):\r\n        self.post_type = content[\"type\"]\r\n        self.content = content[\"content\"]\r\n        self.channel = content[\"channel\"]\r\n        self.message = f\"\"\"{message.format(self.post_type, self.channel)}\\n\r\n        Response of {self.post_type} provides the following fields:\\n\r\n        {[key for key in self.content.keys()]}\"\"\"\r\n        super().__init__(self.message)\r\n\r\n\r\nclass InvalidMessageTypeError(AlephError):\r\n    \"\"\"Exception raised when program received a different message type than expected.\"\"\"\r\n\r\n    def __init__(\r\n        self,\r\n        received,\r\n        expected,\r\n        message=\"Expected message type '{0}' but actually received '{1}'\",\r\n    ):\r\n        self.received = received\r\n        self.expected = expected\r\n        self.message = f\"{message.format(self.expected, self.received)}\"\r\n        super().__init__(self.message)\r\n\r\n\r\nclass SchemaAlreadyExists(AlephError):\r\n    \"\"\"Exception raised when user tries to update a schema that already exists, without incrementing the version.\"\"\"\r\n\r\n    def __init__(\r\n        self,\r\n        schema,\r\n        message=\"Schema for channel '{0}' and owner '{1}' already exists. Try using upgrade() \"\r\n        \"instead.\",\r\n    ):\r\n        self.channel = schema[\"channel\"]\r\n        self.owner = schema[\"owner\"]\r\n        self.message = f\"{message.format(self.channel, self.owner)}\"\r\n        super().__init__(self.message)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/aars/exceptions.py b/src/aars/exceptions.py
+--- a/src/aars/exceptions.py	(revision 7d05dee6942b1a217b400c5ee326ab87e0d2638e)
++++ b/src/aars/exceptions.py	(date 1677497210918)
+@@ -4,6 +4,18 @@
+     pass
+ 
+ 
++class AlreadyUsedError(AlephError):
++    """Exception raised when a PageableResponse has already been used."""
++
++    def __init__(
++        self,
++        message="PageableResponse has already been iterated over. It is recommended to "
++        "to store the result of all() or page() or to create a new query.",
++    ):
++        self.message = message
++        super().__init__(self.message)
++
++
+ class AlreadyForgottenError(AlephError):
+     def __init__(
+         self,
+Index: src/aars/core.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import asyncio\r\nimport math\r\nimport warnings\r\nfrom abc import ABC\r\nfrom operator import attrgetter\r\nfrom typing import (\r\n    Type,\r\n    TypeVar,\r\n    Dict,\r\n    ClassVar,\r\n    List,\r\n    Set,\r\n    Any,\r\n    Union,\r\n    Tuple,\r\n    Optional,\r\n    Generic,\r\n    AsyncIterator,\r\n)\r\n\r\nfrom aiohttp import ServerDisconnectedError\r\nfrom pydantic import BaseModel\r\n\r\nfrom aleph_client import UserSession, AuthenticatedUserSession\r\nfrom aleph_client.types import Account\r\nfrom aleph_client.chains.ethereum import get_fallback_account\r\nfrom aleph_client.conf import settings\r\nfrom aleph_client.vm.cache import VmCache\r\nfrom aleph_message.models import PostMessage\r\n\r\nfrom .utils import subslices, async_iterator_to_list, IndexQuery\r\nfrom .exceptions import AlreadyForgottenError\r\n\r\nR = TypeVar(\"R\", bound=\"Record\")\r\n\r\n\r\nclass Record(BaseModel, ABC):\r\n    \"\"\"\r\n    A basic record which is persisted on Aleph decentralized storage.\r\n\r\n    Records can be updated: revision numbers begin at 0 (original upload) and increment for each `save()` call.\r\n\r\n    Previous revisions can be restored by calling `fetch_revision(rev_no=<number>)` or `fetch_revision(\r\n    rev_hash=<item_hash of inserted update>)`.\r\n\r\n    They can also be forgotten: Aleph will ask the network to forget given item, in order to allow for GDPR-compliant\r\n    applications.\r\n\r\n    Records have an `indices` class attribute, which allows one to select an index and query it with a key.\r\n    \"\"\"\r\n\r\n    forgotten: bool = False\r\n    id_hash: Optional[str] = None\r\n    current_revision: Optional[int] = None\r\n    revision_hashes: List[str] = []\r\n    timestamp: Optional[float] = None\r\n    __indices: ClassVar[Dict[str, \"Index\"]] = {}\r\n\r\n    def __repr__(self):\r\n        return f\"{type(self).__name__}({self.id_hash})\"\r\n\r\n    def __str__(self):\r\n        return f\"{type(self).__name__} {self.__dict__}\"\r\n\r\n    @property\r\n    def content(self) -> Dict[str, Any]:\r\n        \"\"\"\r\n        :return: content dictionary of the object, as it is to be stored on Aleph.\r\n        \"\"\"\r\n        return self.dict(\r\n            exclude={\"id_hash\", \"current_revision\", \"revision_hashes\", \"forgotten\", \"timestamp\"}\r\n        )\r\n\r\n    async def update_revision_hashes(self: R):\r\n        \"\"\"\r\n        Updates the list of available revision hashes, in order to fetch these.\r\n        \"\"\"\r\n        assert self.id_hash is not None\r\n        self.revision_hashes = [self.id_hash] + await async_iterator_to_list(\r\n            AARS.fetch_revisions(type(self), ref=self.id_hash)\r\n        )\r\n        if self.current_revision is None:\r\n            # latest revision\r\n            self.current_revision = len(self.revision_hashes) - 1\r\n\r\n    async def fetch_revision(\r\n        self: R, rev_no: Optional[int] = None, rev_hash: Optional[str] = None\r\n    ) -> R:\r\n        \"\"\"\r\n        Fetches a revision of the object by revision number (0 => original) or revision hash.\r\n        :param rev_no: the revision number of the revision to fetch.\r\n        :param rev_hash: the hash of the revision to fetch.\r\n        \"\"\"\r\n        assert (\r\n            self.id_hash is not None\r\n        ), \"Cannot fetch revision of an object which has not been posted yet.\"\r\n        assert self.current_revision is not None\r\n\r\n        if rev_no is not None:\r\n            if rev_no < 0:\r\n                rev_no = len(self.revision_hashes) + rev_no\r\n            if self.current_revision == rev_no:\r\n                return self\r\n            elif rev_no > len(self.revision_hashes):\r\n                raise IndexError(f\"No revision no. {rev_no} found for {self}\")\r\n            else:\r\n                self.current_revision = rev_no\r\n        elif rev_hash is not None:\r\n            if rev_hash == self.revision_hashes[self.current_revision]:\r\n                return self\r\n            try:\r\n                self.current_revision = self.revision_hashes.index(rev_hash)\r\n            except ValueError:\r\n                raise IndexError(f\"{rev_hash} is not a revision of {self}\")\r\n        else:\r\n            raise ValueError(\"Either rev or hash must be provided\")\r\n\r\n        resp = await AARS.fetch_exact(\r\n            type(self), self.revision_hashes[self.current_revision]\r\n        )\r\n        self.__dict__.update(resp.content)\r\n        self.timestamp = resp.timestamp\r\n\r\n        return self\r\n\r\n    async def save(self):\r\n        \"\"\"\r\n        Posts a new item to Aleph or amends it, if it was already posted. Will add new items to local indices.\r\n        For indices to be persisted on Aleph, you need to call `save()` on the index itself or `cls.save_indices()`.\r\n        \"\"\"\r\n        await AARS.post_or_amend_object(self)\r\n        if self.current_revision == 0:\r\n            self._index()\r\n        return self\r\n\r\n    def _index(self):\r\n        for index in self.get_indices():\r\n            index.add_record(self)\r\n\r\n    async def forget(self):\r\n        \"\"\"\r\n        Orders Aleph to forget a specific object with all its revisions.\r\n        The forgotten object should be deleted afterward, as it is useless now.\r\n        \"\"\"\r\n        if not self.forgotten:\r\n            await AARS.forget_objects([self])\r\n            [index.remove_record(self) for index in self.get_indices()]\r\n            self.forgotten = True\r\n        else:\r\n            raise AlreadyForgottenError(self)\r\n\r\n    @classmethod\r\n    async def from_post(cls: Type[R], post: PostMessage) -> R:\r\n        \"\"\"\r\n        Initializes a record object from its PostMessage.\r\n        :param post: the PostMessage to initialize from.\r\n        \"\"\"\r\n        obj = cls(**post.content.content)\r\n        if post.content.ref is None:\r\n            obj.id_hash = post.item_hash\r\n        else:\r\n            obj.id_hash = post.content.ref\r\n        await obj.update_revision_hashes()\r\n        assert obj.id_hash is not None\r\n        obj.current_revision = obj.revision_hashes.index(obj.id_hash)\r\n        obj.timestamp = post.time\r\n        return obj\r\n\r\n    @classmethod\r\n    async def from_dict(cls: Type[R], post: Dict[str, Any]) -> R:\r\n        \"\"\"\r\n        Initializes a record object from its raw Aleph data.\r\n        :post: Raw Aleph data.\r\n        \"\"\"\r\n        obj = cls(**post[\"content\"])\r\n        if post.get(\"ref\") is None:\r\n            obj.id_hash = post[\"item_hash\"]\r\n        else:\r\n            obj.id_hash = post[\"ref\"]\r\n        await obj.update_revision_hashes()\r\n        assert obj.id_hash is not None\r\n        obj.current_revision = obj.revision_hashes.index(obj.id_hash)\r\n        obj.timestamp = post[\"time\"]\r\n        return obj\r\n\r\n    @classmethod\r\n    async def fetch(\r\n        cls: Type[R], hashes: Union[str, List[str]], regenerate_index=False\r\n    ) -> List[R]:\r\n        \"\"\"\r\n        Fetches one or more objects of given type by its/their item_hash[es].\r\n        \"\"\"\r\n        if not isinstance(hashes, List):\r\n            hashes = [hashes]\r\n        items = await async_iterator_to_list(AARS.fetch_records(cls, list(hashes)))\r\n        if regenerate_index:\r\n            for item in items:\r\n                item._index()\r\n        return items\r\n\r\n    @classmethod\r\n    async def fetch_all(\r\n        cls: Type[R],\r\n        page_size: Optional[int] = None,\r\n        page: Optional[int] = None,\r\n        regenerate_index: bool = False,\r\n    ) -> List[R]:\r\n        \"\"\"\r\n        Fetches all objects of given type.\r\n\r\n        WARNING: This can take quite some time, depending on the amount of records to be fetched.\r\n\r\n        :param page: If set, will fetch records of given page.\r\n        :param page_size: If set, will fetch records in pages of given size. Requires `page` to be set.\r\n        :param regenerate_index: If set to `True`, will (re-)add all items to the existing indices.\r\n        :return: All items of class type.\r\n        \"\"\"\r\n        if page_size is not None and page is not None:\r\n            items = await async_iterator_to_list(\r\n                AARS.fetch_records(cls, page_size=page_size, page=page), page_size\r\n            )\r\n        else:\r\n            items = await async_iterator_to_list(AARS.fetch_records(cls))\r\n        if regenerate_index:\r\n            for item in items:\r\n                item._index()\r\n        return items\r\n\r\n    @classmethod\r\n    async def where_eq(cls: Type[R], **kwargs) -> List[R]:\r\n        \"\"\"\r\n        Queries an object by given properties through an index, in order to fetch applicable records.\r\n        An index name is defined as '<object_class>.[<object_properties>.]' and is initialized by creating\r\n        an Index instance, targeting a BaseRecord class with a list of properties.\r\n\r\n        >>> Index(MyRecord, ['property1', 'property2'])\r\n\r\n        This will create an index named 'MyRecord.property1.property2' which can be queried with:\r\n\r\n        >>> MyRecord.where_eq(property1='value1', property2='value2')\r\n\r\n        If no index is defined for the given properties, an IndexError is raised.\r\n\r\n        If only a part of the keys is indexed for the given query, a fallback index is used and locally filtered.\r\n        \"\"\"\r\n        query = IndexQuery(cls, **kwargs)\r\n        index = cls.get_index(query.get_index_name())\r\n        return await index.lookup(query)\r\n\r\n    @classmethod\r\n    def add_index(cls: Type[R], index: \"Index\") -> None:\r\n        cls.__indices[repr(index)] = index\r\n\r\n    @classmethod\r\n    def get_index(cls: Type[R], index_name: str) -> \"Index[R]\":\r\n        \"\"\"\r\n        Returns an index or any of its subindices by its name. The name is defined as\r\n        '<object_class>.[<object_properties>.]' with the properties being sorted alphabetically. For example,\r\n        Book.author.title is a valid index name, while Book.title.author is not.\r\n        :param index_name: The name of the index to fetch.\r\n        :return: The index instance or a subindex.\r\n        \"\"\"\r\n        index = cls.__indices.get(index_name)\r\n        if index is None:\r\n            key_subslices = subslices(list(index_name.split(\".\")[1:]))\r\n            # returns all plausible combinations of keys\r\n            key_subslices = sorted(key_subslices, key=lambda x: len(x), reverse=True)\r\n            for keys in key_subslices:\r\n                name = cls.__name__ + \".\" + \".\".join(keys)\r\n                if cls.__indices.get(name):\r\n                    warnings.warn(f\"No index {index_name} found. Using {name} instead.\")\r\n                    return cls.__indices[name]\r\n            raise IndexError(f\"No index or subindex for {index_name} found.\")\r\n        return index\r\n\r\n    @classmethod\r\n    def get_indices(cls: Type[R]) -> List[\"Index\"]:\r\n        if cls == Record:\r\n            return list(cls.__indices.values())\r\n        return [index for index in cls.__indices.values() if index.record_type == cls]\r\n\r\n    @classmethod\r\n    async def save_indices(cls: Type[R]) -> None:\r\n        \"\"\"Updates all indices of given type.\"\"\"\r\n        tasks = [index.save() for index in cls.get_indices()]\r\n        await asyncio.gather(*tasks)\r\n\r\n    @classmethod\r\n    async def regenerate_indices(cls: Type[R]) -> List[R]:\r\n        \"\"\"\r\n        Regenerates all indices of given type.\r\n\r\n        WARNING: This can take quite some time, depending on the amount of records to be fetched.\r\n        \"\"\"\r\n        return await cls.fetch_all(regenerate_index=True)\r\n\r\n\r\nclass Index(Record, Generic[R]):\r\n    \"\"\"\r\n    Class to define Indices.\r\n    \"\"\"\r\n\r\n    record_type: Type[R]\r\n    index_on: List[str]\r\n    hashmap: Dict[Tuple, Set[str]] = {}\r\n\r\n    def __init__(self, record_type: Type[R], on: Union[str, List[str], Tuple[str]]):\r\n        \"\"\"\r\n        Creates a new index given a record_type and a single or multiple properties to index on.\r\n\r\n        >>> Index(MyRecord, 'foo')\r\n\r\n        This will create an index named 'MyRecord.foo', which is stored in the `MyRecord` class.\r\n        It is not recommended using the index directly, but rather through the `where_eq` method of the `Record` class like\r\n        so:\r\n\r\n        >>> MyRecord.where_eq(foo='bar')\r\n\r\n        This returns all records of type MyRecord where foo is equal to 'bar'.\r\n\r\n        :param record_type: The record_type to index.\r\n        :param on: The properties to index on.\r\n        \"\"\"\r\n        if isinstance(on, str):\r\n            on = [on]\r\n        super(Index, self).__init__(record_type=record_type, index_on=sorted(on))\r\n        record_type.add_index(self)\r\n\r\n    def __str__(self):\r\n        return f\"Index({self.record_type.__name__}.{'.'.join(self.index_on)})\"\r\n\r\n    def __repr__(self):\r\n        return f\"{self.record_type.__name__}.{'.'.join(self.index_on)}\"\r\n\r\n    async def lookup(self, query: IndexQuery) -> List[R]:\r\n        \"\"\"\r\n        Fetches records with given values for the indexed properties.\r\n\r\n        :param query: The query to lookup items with.\r\n        \"\"\"\r\n        assert query.record_type == self.record_type\r\n        id_hashes: Optional[Set[str]]\r\n        needs_filtering = False\r\n\r\n        subquery = query\r\n        if repr(self) != query.get_index_name():\r\n            subquery = query.get_subquery(self.index_on)\r\n            needs_filtering = True\r\n        id_hashes = self.hashmap.get(tuple(subquery.values()))\r\n\r\n        if id_hashes is None:\r\n            return []\r\n\r\n        items = await async_iterator_to_list(\r\n            AARS.fetch_records(self.record_type, list(id_hashes))\r\n        )\r\n\r\n        if needs_filtering:\r\n            return self._filter_index_items(items, query)\r\n        return items\r\n\r\n    @classmethod\r\n    def _filter_index_items(cls, items: List[R], query: IndexQuery) -> List[R]:\r\n        sorted_keys = query.keys()\r\n        filtered_items = list()\r\n        for item in items:\r\n            # eliminate the item which does not fulfill the properties\r\n            class_properties = vars(item)\r\n            required_class_properties = {\r\n                key: class_properties.get(key) for key in sorted_keys\r\n            }\r\n            if required_class_properties == dict(query):\r\n                filtered_items.append(item)\r\n        return filtered_items\r\n\r\n    def add_record(self, obj: R):\r\n        \"\"\"Adds a record to the index.\"\"\"\r\n        assert issubclass(type(obj), Record)\r\n        assert obj.id_hash is not None\r\n        key = attrgetter(*self.index_on)(obj)\r\n        if isinstance(key, str):\r\n            key = (key,)\r\n        if key not in self.hashmap:\r\n            self.hashmap[key] = set()\r\n        self.hashmap[key].add(obj.id_hash)\r\n\r\n    def remove_record(self, obj: R):\r\n        \"\"\"Removes a record from the index, i.e. when it is forgotten.\"\"\"\r\n        assert obj.id_hash is not None\r\n        key = attrgetter(*self.index_on)(obj)\r\n        if isinstance(key, str):\r\n            key = (key,)\r\n        if key in self.hashmap:\r\n            self.hashmap[key].remove(obj.id_hash)\r\n\r\n    def regenerate(self, items: List[R]):\r\n        \"\"\"Regenerates the index with given items.\"\"\"\r\n        self.hashmap = {}\r\n        for item in items:\r\n            self.add_record(item)\r\n\r\n\r\nclass AARS:\r\n    account: Account\r\n    channel: str\r\n    api_url: str\r\n    retry_count: int\r\n    session: AuthenticatedUserSession\r\n    cache: Optional[VmCache]\r\n\r\n    def __init__(\r\n        self,\r\n        account: Optional[Account] = None,\r\n        channel: Optional[str] = None,\r\n        api_url: Optional[str] = None,\r\n        session: Optional[AuthenticatedUserSession] = None,\r\n        cache: Optional[VmCache] = None,\r\n        retry_count: Optional[int] = None,\r\n    ):\r\n        \"\"\"\r\n        Initializes the SDK with an account and a channel.\r\n        :param cache: Whether to use Aleph VM caching when running AARS code.\r\n        :param account: Account with which to sign the messages.\r\n        :param channel: Channel to which to send the messages.\r\n        :param api_url: The API URL to use. Defaults to an official Aleph API host.\r\n        :param session: An aiohttp session to use. Defaults to a new session.\r\n        \"\"\"\r\n        AARS.account = account if account else get_fallback_account()\r\n        AARS.channel = channel if channel else \"AARS_TEST\"\r\n        AARS.api_url = api_url if api_url else settings.API_HOST\r\n        AARS.session = (\r\n            session\r\n            if session\r\n            else AuthenticatedUserSession(\r\n                account=AARS.account, api_server=settings.API_HOST\r\n            )\r\n        )\r\n        AARS.cache = cache\r\n        AARS.retry_count = retry_count if retry_count else 3\r\n\r\n    @classmethod\r\n    async def sync_indices(cls):\r\n        \"\"\"\r\n        Synchronizes all the indices created so far, by iteratively fetching all the messages from the channel,\r\n        having post_types of the Record subclasses that have been declared so far.\r\n        \"\"\"\r\n        for record in Record.__subclasses__():\r\n            if record.get_indices():\r\n                await record.regenerate_indices()\r\n\r\n    @classmethod\r\n    async def post_or_amend_object(cls, obj: R, channel: Optional[str] = None) -> R:\r\n        \"\"\"\r\n        Posts or amends an object to Aleph. If the object is already posted, it's list of revision hashes is updated and\r\n        the object receives the latest revision number.\r\n        :param obj: The object to post or amend.\r\n        :param channel: The channel to post the object to. If None, will use the configured channel.\r\n        :return: The object, as it is now on Aleph.\r\n        \"\"\"\r\n        if channel is None:\r\n            channel = cls.channel\r\n        assert isinstance(obj, Record)\r\n        post_type = type(obj).__name__ if obj.id_hash is None else \"amend\"\r\n        message, status = await cls.session.create_post(\r\n            post_content=obj.content,\r\n            post_type=post_type,\r\n            channel=channel,\r\n            ref=obj.id_hash,\r\n        )\r\n        if obj.id_hash is None:\r\n            obj.id_hash = message.item_hash\r\n        obj.revision_hashes.append(message.item_hash)\r\n        obj.current_revision = len(obj.revision_hashes) - 1\r\n        if cls.cache:\r\n            await cls.cache.set(message.item_hash, obj.json())\r\n        return obj\r\n\r\n    @classmethod\r\n    async def forget_objects(\r\n        cls,\r\n        objs: List[R],\r\n        channel: Optional[str] = None,\r\n    ):\r\n        \"\"\"\r\n        Forgets multiple objects from Aleph and local cache. All related revisions will be forgotten too.\r\n        :param objs: The objects to forget.\r\n        :param channel: The channel to delete the object from. If None, will use the TEST channel of the object.\r\n        \"\"\"\r\n        if channel is None:\r\n            channel = cls.channel\r\n        hashes = []\r\n        for obj in objs:\r\n            assert obj.id_hash is not None\r\n            hashes += [obj.id_hash] + obj.revision_hashes\r\n        forget_task = cls.session.forget(\r\n            hashes=hashes,\r\n            reason=None,\r\n            channel=channel,\r\n        )\r\n        if cls.cache:\r\n            await asyncio.gather(forget_task, *[cls.cache.delete(h) for h in hashes])\r\n        else:\r\n            await forget_task\r\n\r\n    @classmethod\r\n    async def fetch_records(\r\n        cls,\r\n        record_type: Type[R],\r\n        item_hashes: Optional[List[str]] = None,\r\n        channel: Optional[str] = None,\r\n        owner: Optional[str] = None,\r\n        page_size: Optional[int] = None,\r\n        page: Optional[int] = None,\r\n    ) -> AsyncIterator[R]:\r\n        \"\"\"\r\n        Retrieves posts as objects by its aleph item_hash.\r\n\r\n        :param record_type: The type of the objects to retrieve.\r\n        :param item_hashes: Aleph item_hashes of the objects to fetch.\r\n        :param channel: Channel in which to look for it.\r\n        :param owner: Account that owns the object.\r\n        :param page_size: Number of items to fetch per page.\r\n        :param page: Page number to fetch, based on page_size.\r\n        \"\"\"\r\n        assert issubclass(record_type, Record)\r\n        channels = None if channel is None else [channel]\r\n        owners = None if owner is None else [owner]\r\n        if item_hashes is None and channels is None and owners is None:\r\n            channels = [cls.channel]\r\n\r\n        if cls.cache and item_hashes is not None:\r\n            # TODO: Add some kind of caching for channels and owners or add recent item_hashes endpoint to the Aleph API\r\n            records = await cls._fetch_records_from_cache(record_type, item_hashes)\r\n            cached_ids = []\r\n            for r in records:\r\n                cached_ids.append(r.id_hash)\r\n                yield r\r\n            item_hashes = [h for h in item_hashes if h not in cached_ids]\r\n            if len(item_hashes) == 0:\r\n                return\r\n\r\n        page_size = page_size if page_size else 50\r\n        page = page if page else 1\r\n        async for record in cls._fetch_records_from_api(\r\n            record_type=record_type,\r\n            item_hashes=item_hashes,\r\n            channels=channels,\r\n            owners=owners,\r\n            page_size=page_size,\r\n            page=page,\r\n        ):\r\n            yield record\r\n\r\n    @classmethod\r\n    async def _fetch_records_from_cache(\r\n        cls, record_type: Type[R], item_hashes: List[str]\r\n    ) -> List[R]:\r\n        assert cls.cache\r\n        raw_records = await asyncio.gather(*[cls.cache.get(h) for h in item_hashes])\r\n        return [record_type.parse_raw(r) for r in raw_records if r is not None]\r\n\r\n    @classmethod\r\n    async def _fetch_records_from_api(\r\n        cls,\r\n        record_type: Type[R],\r\n        item_hashes: Optional[List[str]] = None,\r\n        channels: Optional[List[str]] = None,\r\n        owners: Optional[List[str]] = None,\r\n        refs: Optional[List[str]] = None,\r\n        page_size: int = 50,\r\n        page: int = 1,\r\n    ) -> AsyncIterator[R]:\r\n        aleph_resp = None\r\n        retries = cls.retry_count\r\n        while aleph_resp is None:\r\n            try:\r\n                aleph_resp = await cls.session.get_posts(\r\n                    hashes=item_hashes,\r\n                    channels=channels,\r\n                    types=[record_type.__name__],\r\n                    addresses=owners,\r\n                    refs=refs,\r\n                    pagination=page_size,\r\n                    page=page,\r\n                )\r\n            except ServerDisconnectedError:\r\n                retries -= 1\r\n                if retries == 0:\r\n                    raise\r\n        for post in aleph_resp[\"posts\"]:\r\n            yield await record_type.from_dict(post)\r\n\r\n        if page == 1:\r\n            # If there are more pages, fetch them\r\n            total_items = aleph_resp[\"pagination_total\"]\r\n            per_page = aleph_resp[\"pagination_per_page\"]\r\n            if total_items > per_page:\r\n                for next_page in range(2, math.ceil(total_items / per_page) + 1):\r\n                    async for record in cls._fetch_records_from_api(\r\n                        record_type=record_type,\r\n                        item_hashes=item_hashes,\r\n                        channels=channels,\r\n                        owners=owners,\r\n                        refs=refs,\r\n                        page=next_page,\r\n                    ):\r\n                        yield record\r\n\r\n    @classmethod\r\n    async def fetch_revisions(\r\n        cls,\r\n        record_type: Type[R],\r\n        ref: str,\r\n        channel: Optional[str] = None,\r\n        owner: Optional[str] = None,\r\n        page=1,\r\n    ) -> AsyncIterator[str]:\r\n        \"\"\"Retrieves posts of revisions of an object by its item_hash.\r\n        :param record_type: The type of the objects to retrieve.\r\n        :param ref: item_hash of the object, whose revisions to fetch.\r\n        :param channel: Channel in which to look for it.\r\n        :param owner: Account that owns the object.\r\n        :param page: Page number to fetch.\"\"\"\r\n        owners = None if owner is None else [owner]\r\n        channels = None if channel is None else [channel]\r\n        if owners is None and channels is None:\r\n            channels = [cls.channel]\r\n\r\n        aleph_resp = None\r\n        retries = cls.retry_count\r\n        while aleph_resp is None:\r\n            try:\r\n                aleph_resp = await cls.session.get_messages(\r\n                    channels=channels,\r\n                    addresses=owners,\r\n                    refs=[ref],\r\n                    pagination=50,\r\n                )\r\n            except ServerDisconnectedError:\r\n                retries -= 1\r\n                if retries == 0:\r\n                    raise\r\n        for message in aleph_resp.messages:\r\n            yield message.item_hash\r\n\r\n        if page == 1:\r\n            # If there are more pages, fetch them\r\n            total_items = aleph_resp.pagination_total\r\n            per_page = aleph_resp.pagination_per_page\r\n            if total_items > per_page:\r\n                for next_page in range(2, math.ceil(total_items / per_page) + 1):\r\n                    async for item_hash in cls.fetch_revisions(\r\n                        record_type=record_type,\r\n                        ref=ref,\r\n                        channel=channel,\r\n                        owner=owner,\r\n                        page=next_page,\r\n                    ):\r\n                        yield item_hash\r\n\r\n    @classmethod\r\n    async def fetch_exact(cls, record_type: Type[R], item_hash: str) -> R:\r\n        \"\"\"Retrieves the revision of an object by its item_hash of the message. The content will be exactly the same\r\n        as in the referenced message, so no amendments will be applied.\r\n\r\n        :param item_hash:\r\n        :param record_type: The type of the objects to retrieve.\r\n        \"\"\"\r\n        if cls.cache:\r\n            cache_resp = await cls._fetch_records_from_cache(record_type, [item_hash])\r\n            if len(cache_resp) > 0:\r\n                return cache_resp[0]\r\n        aleph_resp = await cls.session.get_messages(hashes=[item_hash])\r\n        if len(aleph_resp.messages) == 0:\r\n            raise ValueError(f\"Message with hash {item_hash} not found.\")\r\n        message: PostMessage = aleph_resp.messages[0]\r\n        return await record_type.from_post(message)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/aars/core.py b/src/aars/core.py
+--- a/src/aars/core.py	(revision ee6bb5586ea3ae6350ce998633a72c00b3c1081e)
++++ b/src/aars/core.py	(date 1677509946474)
+@@ -21,14 +21,20 @@
+ from aiohttp import ServerDisconnectedError
+ from pydantic import BaseModel
+ 
+-from aleph_client import UserSession, AuthenticatedUserSession
++from aleph_client import AuthenticatedUserSession
+ from aleph_client.types import Account
+ from aleph_client.chains.ethereum import get_fallback_account
+ from aleph_client.conf import settings
+ from aleph_client.vm.cache import VmCache
+ from aleph_message.models import PostMessage
+ 
+-from .utils import subslices, async_iterator_to_list, IndexQuery
++from .utils import (
++    subslices,
++    async_iterator_to_list,
++    IndexQuery,
++    PageableResponse,
++    PageableRequest,
++)
+ from .exceptions import AlreadyForgottenError
+ 
+ R = TypeVar("R", bound="Record")
+@@ -186,48 +192,31 @@
+     @classmethod
+     async def fetch(
+         cls: Type[R], hashes: Union[str, List[str]], regenerate_index=False
+-    ) -> List[R]:
++    ) -> PageableResponse[R]:
+         """
+         Fetches one or more objects of given type by its/their item_hash[es].
+         """
+         if not isinstance(hashes, List):
+             hashes = [hashes]
+-        items = await async_iterator_to_list(AARS.fetch_records(cls, list(hashes)))
++        items = AARS.fetch_records(cls, list(hashes))
+         if regenerate_index:
+-            for item in items:
++            async for item in items:
+                 item._index()
+-        return items
++        return PageableResponse(items)
+ 
+     @classmethod
+-    async def fetch_all(
+-        cls: Type[R],
+-        page_size: Optional[int] = None,
+-        page: Optional[int] = None,
+-        regenerate_index: bool = False,
+-    ) -> List[R]:
++    def fetch_objects(cls: Type[R]) -> PageableRequest[R]:
+         """
+         Fetches all objects of given type.
+ 
+         WARNING: This can take quite some time, depending on the amount of records to be fetched.
+ 
+-        :param page: If set, will fetch records of given page.
+-        :param page_size: If set, will fetch records in pages of given size. Requires `page` to be set.
+-        :param regenerate_index: If set to `True`, will (re-)add all items to the existing indices.
+-        :return: All items of class type.
++        :return: A PageableRequest, which can be used to iterate, paginate or fetch all results at once.
+         """
+-        if page_size is not None and page is not None:
+-            items = await async_iterator_to_list(
+-                AARS.fetch_records(cls, page_size=page_size, page=page), page_size
+-            )
+-        else:
+-            items = await async_iterator_to_list(AARS.fetch_records(cls))
+-        if regenerate_index:
+-            for item in items:
+-                item._index()
+-        return items
++        return PageableRequest(AARS.fetch_records, record_type=cls)
+ 
+     @classmethod
+-    async def where_eq(cls: Type[R], **kwargs) -> List[R]:
++    def where_eq(cls: Type[R], **kwargs) -> PageableResponse[R]:
+         """
+         Queries an object by given properties through an index, in order to fetch applicable records.
+         An index name is defined as '<object_class>.[<object_properties>.]' and is initialized by creating
+@@ -242,10 +231,23 @@
+         If no index is defined for the given properties, an IndexError is raised.
+ 
+         If only a part of the keys is indexed for the given query, a fallback index is used and locally filtered.
++
++        It will return a PageableResponse, which can be used to iterate, paginate or fetch all results at once.
++
++        >>> response = MyRecord.where_eq(property1='value1', property2='value2')
++        >>> async for record in response:
++        >>>     print(record)
++
++        >>> response = await MyRecord.where_eq(property2='value2').all()
++
++        >>> response = await MyRecord.where_eq(property1='value1').page(2, 10)
++
++        :param kwargs: The properties to query for.
+         """
+         query = IndexQuery(cls, **kwargs)
+         index = cls.get_index(query.get_index_name())
+-        return await index.lookup(query)
++        generator = index.lookup(query)
++        return PageableResponse(generator)
+ 
+     @classmethod
+     def add_index(cls: Type[R], index: "Index") -> None:
+@@ -292,7 +294,13 @@
+ 
+         WARNING: This can take quite some time, depending on the amount of records to be fetched.
+         """
+-        return await cls.fetch_all(regenerate_index=True)
++        response = cls.fetch_objects()
++
++        records = []
++        async for record in response:
++            record._index()
++            records.append(record)
++        return records
+ 
+ 
+ class Index(Record, Generic[R]):
+@@ -332,7 +340,7 @@
+     def __repr__(self):
+         return f"{self.record_type.__name__}.{'.'.join(self.index_on)}"
+ 
+-    async def lookup(self, query: IndexQuery) -> List[R]:
++    def lookup(self, query: IndexQuery) -> AsyncIterator[R]:
+         """
+         Fetches records with given values for the indexed properties.
+ 
+@@ -349,29 +357,27 @@
+         id_hashes = self.hashmap.get(tuple(subquery.values()))
+ 
+         if id_hashes is None:
+-            return []
++            raise StopAsyncIteration
+ 
+-        items = await async_iterator_to_list(
+-            AARS.fetch_records(self.record_type, list(id_hashes))
+-        )
++        items = AARS.fetch_records(self.record_type, list(id_hashes))
+ 
+         if needs_filtering:
+             return self._filter_index_items(items, query)
+         return items
+ 
+     @classmethod
+-    def _filter_index_items(cls, items: List[R], query: IndexQuery) -> List[R]:
++    async def _filter_index_items(
++        cls, items: AsyncIterator[R], query: IndexQuery
++    ) -> AsyncIterator[R]:
+         sorted_keys = query.keys()
+-        filtered_items = list()
+-        for item in items:
++        async for item in items:
+             # eliminate the item which does not fulfill the properties
+             class_properties = vars(item)
+             required_class_properties = {
+                 key: class_properties.get(key) for key in sorted_keys
+             }
+             if required_class_properties == dict(query):
+-                filtered_items.append(item)
+-        return filtered_items
++                yield item
+ 
+     def add_record(self, obj: R):
+         """Adds a record to the index."""
+@@ -509,8 +515,8 @@
+         item_hashes: Optional[List[str]] = None,
+         channel: Optional[str] = None,
+         owner: Optional[str] = None,
+-        page_size: Optional[int] = None,
+-        page: Optional[int] = None,
++        page_size: int = 50,
++        page: int = 1,
+     ) -> AsyncIterator[R]:
+         """
+         Retrieves posts as objects by its aleph item_hash.
+@@ -539,8 +545,6 @@
+             if len(item_hashes) == 0:
+                 return
+ 
+-        page_size = page_size if page_size else 50
+-        page = page if page else 1
+         async for record in cls._fetch_records_from_api(
+             record_type=record_type,
+             item_hashes=item_hashes,
+@@ -555,9 +559,13 @@
+     async def _fetch_records_from_cache(
+         cls, record_type: Type[R], item_hashes: List[str]
+     ) -> List[R]:
+-        assert cls.cache
++        assert cls.cache, "Cache is not set"
+         raw_records = await asyncio.gather(*[cls.cache.get(h) for h in item_hashes])
+-        return [record_type.parse_raw(r) for r in raw_records if r is not None]
++        return [
++            record_type.parse_raw(r)
++            for r in raw_records
++            if r is not None or not isinstance(r, BaseException)
++        ]
+ 
+     @classmethod
+     async def _fetch_records_from_api(
