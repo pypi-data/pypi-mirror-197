@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/jetsam/__init__.py
+src/jetsam/detach.c
+src/jetsam/log.c
+src/jetsam/log.h
+src/jetsam.egg-info/PKG-INFO
+src/jetsam.egg-info/SOURCES.txt
+src/jetsam.egg-info/dependency_links.txt
+src/jetsam.egg-info/top_level.txt
+src/jetsam/__pycache__/__init__.cpython-310.pyc
