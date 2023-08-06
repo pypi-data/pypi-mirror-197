@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pyStormworksLuaInject
+Version: 0.1.6.1
+Summary: pyStormworksLuaInject - A Python library for injecting Lua code into Stormworks Lua scripts.
+Author: Trapdoor
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+
+pyStormworksLuaInject
