@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: barchart-api
+Version: 0.4.0
+Summary: Unofficial API for https://www.barchart.com/
+Home-page: https://github.com/Knuckles-Team/barchart-api
+Author: Audel Rouhi
+Author-email: knucklessg1@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: Public Domain
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests (>=2.28.1)
+Requires-Dist: urllib3 (>=1.26.13)
+
+# Barchart API
+*Version: 0.4.0*
+
+Unofficial API for https://www.barchart.com/
+
+### API Calls:
+- Top Stocks to Own
+- Top ETFs to Own
+
+### Usage:
+```python
+#!/usr/bin/python
+# coding: utf-8
+import barchart_api
+
+barchart_client = barchart_api.Api(url="https://barchart.com")
+
+top_stocks_top_own = barchart_client.get_top_stocks_top_own()
+print(top_stocks_top_own)
+```
+
+#### Install Instructions
+Install Python Package
+
+```bash
+python -m pip install barchart-api
+```
+
+#### Build Instructions
+Build Python Package
+
+```bash
+sudo chmod +x ./*.py
+sudo pip install .
+python3 setup.py bdist_wheel --universal
+# Test Pypi
+twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose -u "Username" -p "Password"
+# Prod Pypi
+twine upload dist/* --verbose -u "Username" -p "Password"
+```
+
+
