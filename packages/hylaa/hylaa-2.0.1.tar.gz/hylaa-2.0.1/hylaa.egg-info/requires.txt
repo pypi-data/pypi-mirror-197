@@ -1,0 +1,9 @@
+ffmpeg-python
+pytest
+numpy
+scipy
+sympy
+matplotlib
+termcolor
+swiglpk
+graphviz
