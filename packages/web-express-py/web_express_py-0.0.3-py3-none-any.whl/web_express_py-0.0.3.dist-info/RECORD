@@ -1,0 +1,10 @@
+ab*cd.py,sha256=2LQAbp1WRquqonfa2b6KzNknrIXXFBo7M2aAMm-m08E,124
+express/__init__.py,sha256=RvBmLjpcPdmBtxS4HrTOPi2W0Ij5ipnv-Lahd8qnxUA,7308
+express/helpers.py,sha256=5tHbpDR5heLgU0ipaqfW9BsPqqAxRS_jYq94R6w-0vA,27406
+express/request.py,sha256=ex-Fb064xJc9e5xjwF-greOcE4BvltuuxpZuTa1BPrM,4174
+express/response.py,sha256=zhMuthILVyrkso5KoHUcxsRQUvMcqYbt2qwUL5WYAMc,6419
+express/router.py,sha256=4-GwusOKiXHabmxB93WJI6ztWHF8_F3g3k3u9GcsBDE,1551
+web_express_py-0.0.3.dist-info/METADATA,sha256=iP1MShoPut41DGC2IF2xfz_opjdhiDDdy2AT80sxNAk,1560
+web_express_py-0.0.3.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+web_express_py-0.0.3.dist-info/licenses/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+web_express_py-0.0.3.dist-info/RECORD,,
