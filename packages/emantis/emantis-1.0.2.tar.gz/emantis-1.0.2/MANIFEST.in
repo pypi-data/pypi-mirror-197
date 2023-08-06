@@ -1,0 +1,2 @@
+include src/emantis/data/fofr_matter_power_boost/*.txt
+include src/emantis/data/fofr_matter_power_boost/*.h5

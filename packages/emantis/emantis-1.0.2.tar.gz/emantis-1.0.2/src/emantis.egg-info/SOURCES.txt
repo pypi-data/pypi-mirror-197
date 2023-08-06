@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+pyproject.toml
+src/emantis/__init__.py
+src/emantis/powerspectrum_matter.py
+src/emantis.egg-info/PKG-INFO
+src/emantis.egg-info/SOURCES.txt
+src/emantis.egg-info/dependency_links.txt
+src/emantis.egg-info/requires.txt
+src/emantis.egg-info/top_level.txt
+src/emantis/data/fofr_matter_power_boost/cosmo_params.txt
+src/emantis/data/fofr_matter_power_boost/kbins.h5
+src/emantis/data/fofr_matter_power_boost/power_boosts_train.h5
