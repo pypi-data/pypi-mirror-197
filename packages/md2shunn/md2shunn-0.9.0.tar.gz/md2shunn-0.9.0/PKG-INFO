@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: md2shunn
+Version: 0.9.0
+Summary: Converts Markdown (.md) files into Proper Manuscript
+Format for fiction writers (a.k.a. Shunn Format, https://www.shunn.net/format/)
+as a Word (.docx) file.
+Project-URL: Homepage, https://github.com/brnstz/md2shunn
+Project-URL: Bug Tracker, https://github.com/brnstz/md2shunn/issues
+Author-email: Brian Seitz <brnstz@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: lxml
+Requires-Dist: marko
+Requires-Dist: python-docx
+Description-Content-Type: text/markdown
+
+# md2shunn
+
+Converts Markdown (.md) files into Proper Manuscript Format for fiction writers
+(a.k.a. Shunn Format, https://www.shunn.net/format/) as a Word (.docx) file.
+
+## Example usage
+
+```
+md2shunn --input draft01.md --author 'Edgar Allan Poe' --title 'The Tell-Tale Heart'
+# Outputs to draft01.docx
+```
+
+## Features
+
+* Automatic conversion of straight to smart quotes and apostrophes
+* Automatic word count
+* Automatic conversion of full title and author to truncated versions for header
+* Supports both [Modern](https://www.shunn.net/format/story/) and [Classic](https://www.shunn.net/format/classic/) formats via `--format` flag
