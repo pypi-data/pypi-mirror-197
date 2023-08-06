@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/stactools/datacube/__init__.py
+src/stactools/datacube/commands.py
+src/stactools/datacube/stac.py
+src/stactools_datacube.egg-info/PKG-INFO
+src/stactools_datacube.egg-info/SOURCES.txt
+src/stactools_datacube.egg-info/dependency_links.txt
+src/stactools_datacube.egg-info/requires.txt
+src/stactools_datacube.egg-info/top_level.txt
+tests/test_module.py
+tests/test_stac.py
