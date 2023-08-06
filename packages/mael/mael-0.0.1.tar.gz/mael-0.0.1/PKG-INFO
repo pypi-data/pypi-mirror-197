@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: mael
+Version: 0.0.1
+Summary: A tool to convert markdown file to excel.
+Author: Kenji Otsuka
+Author-email: kok.fdcm@gmail.com
+License: MIT
+License-File: LICENSE
+
+# mael
+
+Tool to convert markdown list to Excel
