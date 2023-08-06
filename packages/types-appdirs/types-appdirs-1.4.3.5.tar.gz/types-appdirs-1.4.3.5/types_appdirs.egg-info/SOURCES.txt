@@ -1,0 +1,9 @@
+CHANGELOG.md
+MANIFEST.in
+setup.py
+appdirs-stubs/METADATA.toml
+appdirs-stubs/__init__.pyi
+types_appdirs.egg-info/PKG-INFO
+types_appdirs.egg-info/SOURCES.txt
+types_appdirs.egg-info/dependency_links.txt
+types_appdirs.egg-info/top_level.txt
