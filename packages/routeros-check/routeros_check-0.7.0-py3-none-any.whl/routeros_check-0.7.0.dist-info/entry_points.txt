@@ -1,0 +1,2 @@
+[console_scripts]
+check_routeros = check_routeros.__main__:cli
