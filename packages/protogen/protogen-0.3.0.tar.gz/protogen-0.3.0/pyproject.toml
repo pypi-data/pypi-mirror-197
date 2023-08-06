@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "protogen"
+version = "0.3.0"
+description = "protogen makes writing protoc plugins easy."
+authors = ["fischor <fischor.sh@gmail.com>"]
+maintainers = ["fischor <fischor.sh@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = ""
+repository = "https://github.com/fischor/protogen-python"
+keywords = [
+    "proto",
+    "protoc",
+    "Protobuf",
+    "Protocol buffers",
+    "Code generation",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+protobuf = "^3.20.3"
+
+[tool.poetry.dev-dependencies]
+pylint = "^2.9.6"
+Sphinx = "^4.1.2"
+sphinx-rtd-theme = "^0.5.2"
+black = "^21.7b0"
+pydocstyle = "^6.1.1"
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pydocstyle]
+inherit = false
+convention = "numpy"
+add_select = "D212,D402,D415,D417"
+match_dir = "protogen"
+match = ".*\\.py"
