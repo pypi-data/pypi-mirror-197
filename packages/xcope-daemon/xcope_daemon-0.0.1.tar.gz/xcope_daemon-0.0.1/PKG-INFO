@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: xcope_daemon
+Version: 0.0.1
+Summary: Xcope diagnose daemon sdk. 
+Home-page: https://github.com/pypa/sampleproject
+Author: rwecho
+Author-email: rwecho@live.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PyXcope.Daemon
+
+## How to compile protobuf
+The *diagnose_daemon.proto* is a grpc protobuf file. It should keep consistent with the server endpoint.
+Whenever it changes, we must regenerate with commands on linux(dont' use on windows):
+
+``` bash
+cd xcope_daemon
+python3 -m grpc_tools.protoc -I=. --python_out=. --pyi_out=. --grpc_python_out=. ./diagnose_daemon.proto
+```
+
+
+

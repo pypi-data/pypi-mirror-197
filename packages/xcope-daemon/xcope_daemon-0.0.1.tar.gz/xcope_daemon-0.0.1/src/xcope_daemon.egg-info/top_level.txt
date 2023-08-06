@@ -1,0 +1,1 @@
+xcope_daemon
