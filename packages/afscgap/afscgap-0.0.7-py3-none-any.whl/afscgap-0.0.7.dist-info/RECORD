@@ -1,0 +1,13 @@
+afscgap/README.md,sha256=PiwyXrF5AU-EpWBn30fX9CUPiDvg9DmVjVVQVeMRt10,217
+afscgap/__init__.py,sha256=-DMuKakEQcsjZaN2-iqSRxjupxhzuMecc5m8lrIG3go,13113
+afscgap/client.py,sha256=hwA-q_THW29zstEOxJjcZN7_oMVrbIGWu4yZ8u9-gfo,42288
+afscgap/cursor.py,sha256=khx0m6ZQXmBENSwE1nHW-ekC-aqLbLPwRuSeyg89S3M,5129
+afscgap/inference.py,sha256=9eK6zLxWM_i0eKfWdbk-PvhFZmTx4bgLgpu3VrY3YtI,35177
+afscgap/model.py,sha256=MrVPxh1EASHmaaIpHxAaFWbQqlKRRKcRJHQRvKA6_vE,35443
+afscgap/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+afscgap/query_util.py,sha256=Tb4DJeXZ2gFDk2nrllPgO_x1JbYgKnpP8Nu1uzdo648,2376
+afscgap/util.py,sha256=MgqmZ_dSEUkzXPg6flRaUvPiGObR8wnYiqZhyD1X5S4,4608
+afscgap-0.0.7.dist-info/METADATA,sha256=b-cDFP-5-XOACzZIbJApqJBHj1o5bfWIHFIOMCp_Bfg,38048
+afscgap-0.0.7.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+afscgap-0.0.7.dist-info/licenses/LICENSE.md,sha256=T7ef9hHhOKhwJ91clj-4pptEMrQa4Zg7tfGIOeFzvo8,1613
+afscgap-0.0.7.dist-info/RECORD,,
