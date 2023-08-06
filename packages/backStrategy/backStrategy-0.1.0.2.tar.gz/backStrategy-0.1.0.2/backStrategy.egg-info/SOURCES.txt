@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+backStrategy/__init__.py
+backStrategy/main.py
+backStrategy.egg-info/PKG-INFO
+backStrategy.egg-info/SOURCES.txt
+backStrategy.egg-info/dependency_links.txt
+backStrategy.egg-info/top_level.txt
+backStrategy/engine/__init__.py
+backStrategy/engine/backEngine.py
+backStrategy/engine/template.py
+backStrategy/strategy/__init__.py
+backStrategy/strategy/test_demo.py
+backStrategy/utils/__init__.py
+backStrategy/utils/object.py

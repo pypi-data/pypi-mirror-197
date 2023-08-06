@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: backStrategy
+Version: 0.1.0.2
+Summary: 读取数据更新,接口更新
+Home-page: https://gitee.com/Jason520deng/back-strategy
+Author: Kevin
+Author-email: 1782552261@qq.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# backStrategy
+
+### 介绍:
+backStrategy 是关于策略回测的库，web3 大学推出的一款回测策略库，
+
