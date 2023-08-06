@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: evaluators
+Version: 1.0.1
+Summary: Various scene understanding and perception evaluation metrics.
+Author-email: Kurt Stolle <k.h.w.stolle@gmail.com>
+Keywords: evaluation,metrics,scene understanding,perception
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch (>=2.0.0)
+Requires-Dist: torchvision
+Requires-Dist: scikit-learn
+Requires-Dist: numba
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: hypothesis ; extra == 'test'
+Requires-Dist: bandit[toml] (==1.7.4) ; extra == 'test'
+Requires-Dist: black (==23.1.0) ; extra == 'test'
+Requires-Dist: check-manifest (==0.48) ; extra == 'test'
+Requires-Dist: flake8-bugbear (==23.3.12) ; extra == 'test'
+Requires-Dist: flake8-docstrings ; extra == 'test'
+Requires-Dist: flake8-formatter-junit-xml ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: flake8-pyproject ; extra == 'test'
+Requires-Dist: pre-commit (==2.17.0) ; extra == 'test'
+Requires-Dist: pylint (==2.17.0) ; extra == 'test'
+Requires-Dist: pylint-junit ; extra == 'test'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'test'
+Requires-Dist: pytest-mock (<3.10.1) ; extra == 'test'
+Requires-Dist: pytest-runner ; extra == 'test'
+Requires-Dist: pytest (==7.2.2) ; extra == 'test'
+Requires-Dist: pytest-github-actions-annotate-failures ; extra == 'test'
+Requires-Dist: shellcheck-py (==0.9.0.2) ; extra == 'test'
+
+# Evaluators
+
+Ports of various scene understanding and perception evaluators implemented for the [Detectron2](https://github.com/facebookresearch/detectron2) framework.
+
+Currently implemented tasks are:
+
+- Monocular depth estimation
+- Depth-aware video panoptic segmentation
+
+## Prerequisites
+
+- [Python 3.10](https://www.python.org/downloads/)
+- [PyTorch 2.0](https://pytorch.org/get-started/)
+
+## Acknowledgements
+
+Each metric in this repository was ported from the canonical implementations kindly provided by the authors of each task.
