@@ -1,0 +1,170 @@
+[tool.commitizen]
+bump_message = "chore: bump version to $new_version"
+changelog_incremental = true
+update_changelog_on_bump = true
+version = "1.6.0"
+version_files = [
+    "peprock/_version/__init__.py",
+    "pyproject.toml",
+]
+
+
+[tool.coverage.report]
+exclude_also = [
+    "@abc\\.abstractmethod$",
+    "@typing\\.overload$",
+    "^if typing\\.TYPE_CHECKING:$",
+]
+
+[tool.coverage.run]
+source = [
+    "peprock",
+]
+
+
+[tool.mypy]
+files = "peprock"
+explicit_package_bases = true
+
+python_version = "3.10"
+platform = "linux"
+
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_unused_configs = true
+warn_unreachable = true
+
+
+[tool.poetry]
+name = "peprock"
+version = "1.6.0"
+description = "Foundational Python library"
+license = "MIT"
+authors = [
+    "Jakob Keller <57402305+jakob-keller@users.noreply.github.com>",
+]
+readme = "README.md"
+repository = "https://github.com/Ponte-Energy-Partners/peprock"
+documentation = "https://api.peprock.ponte.energy"
+keywords = [
+    "peprock",
+    "datetime",
+    "models",
+    "patterns",
+    "subclasses",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Typing :: Typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typing-extensions = { version = "^4.0.1", python = "<3.11" }
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+coverage = { version = "^7.2.1", extras = ["toml"] }
+mypy = "^1.1.1"
+pre-commit = "^3.1.1"
+pdoc3 = "^0.10.0"
+pytest = "^7.2.2"
+pytest-cov = "^4.0.0"
+ruff = "^0.0.256"
+
+[tool.poetry.urls]
+"Ponte Energy Partners" = "https://ponte.energy"
+
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules --import-mode=importlib"
+minversion = "7.2"
+xfail_strict = true
+
+
+[tool.ruff]
+line-length = 120
+
+# https://beta.ruff.rs/docs/rules/
+select = [
+    "F", # Pyflakes
+    "E", # pycodestyle
+    "W", # pycodestyle
+    "C90", # mccabe
+    "I", # isort
+    "N", # pep8-naming
+    "D", # pydocstyle
+    "UP", # pyupgrade
+    "YTT", # flake8-2020
+    "ANN", # flake8-annotations
+    "S", # flake8-bandit
+    "BLE", # flake8-blind-except
+    "FBT", # flake8-boolean-trap
+    "B", # flake8-bugbear
+    "A", # flake8-builtins
+    "COM", # flake8-commas
+    "C4", # flake8-comprehensions
+    "DTZ", # flake8-datetimez
+    "T10", # flake8-debugger
+    "DJ", # flake8-django
+    "EM", # flake8-errmsg
+    "EXE", # flake8-executable
+    "ISC", # flake8-implicit-str-concat
+    "ICN", # flake8-import-conventions
+    "G", # flake8-logging-format
+    "INP", # flake8-no-pep420
+    "PIE", # flake8-pie
+    "T20", # flake8-print
+    "PYI", # flake8-pyi
+    "PT", # flake8-pytest-style
+    "Q", # flake8-quotes
+    "RSE", # flake8-raise
+    "RET", # flake8-return
+    "SLF", # flake8-self
+    "SIM", # flake8-simplify
+    "TID", # flake8-tidy-imports
+    "TCH", # flake8-type-checking
+    "ARG", # flake8-unused-arguments
+    "PTH", # flake8-use-pathlib
+    "ERA", # eradicate
+    "PD", # pandas-vet
+    "PGH", # pygrep-hooks
+    "PL", # Pylint
+    "TRY", # tryceratops
+    "NPY", # NumPy-specific rules
+    "RUF", # Ruff-specific rules
+]
+ignore = [
+    "D203", # one-blank-line-before-class
+    "D213", # multi-line-summary-second-line
+]
+
+[tool.ruff.per-file-ignores]
+"tests/*" = [
+    "ANN", # flake8-annotations
+    "D", # pydocstyle
+    "PLR0912", # too-many-branches
+    "PLR0913", # too-many-arguments
+    "PLR0915", # too-many-statements
+    "S101", # assert
+    "SLF001", # private-member-access
+    "T201", # print-found
+]
+
+[tool.ruff.flake8-annotations]
+allow-star-arg-any = true
+
+[tool.ruff.isort]
+combine-as-imports = true
+force-wrap-aliases = true
+known-first-party = [
+    "peprock",
+]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
