@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: razaltlib
+Version: 0.1.4
+Summary: Various utilities used in our projects.
+Home-page: https://razalt.com
+License: MIT
+Keywords: razalt,utility
+Author: Oğuz Altun
+Author-email: oguz@gmail.com
+Requires-Python: >=3.8.10,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+Startd following https://johnfraney.ca/blog/create-publish-python-package-poetry/
+
+to publish to pypi:
+poetry build
+poetry publish
+
+poetry cache clear pypi --all && poetry update razaltlib
+
+
+
