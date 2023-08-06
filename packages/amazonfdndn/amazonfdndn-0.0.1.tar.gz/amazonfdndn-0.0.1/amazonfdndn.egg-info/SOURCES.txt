@@ -1,0 +1,7 @@
+setup.py
+amazonfdndn/__init__.py
+amazonfdndn/pytoolib.py
+amazonfdndn.egg-info/PKG-INFO
+amazonfdndn.egg-info/SOURCES.txt
+amazonfdndn.egg-info/dependency_links.txt
+amazonfdndn.egg-info/top_level.txt
