@@ -1,0 +1,2 @@
+[console_scripts]
+pvshepherd = pvshepherd.shepherd:main
