@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cligpt
+Version: 2.6
+Summary: A handy CLI interface for ChatGPT
+Home-page: http://www.example.com/~cschultz/bvote/
+Author: skvn
+Author-email: xxx@gmail.com
+Project-URL: Bug Tracker, http://bitbucket.org/tarek/distribute/issues/
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Command Line Inferface for ChatGPT
+
+### Install 
+```shell
+pip install cligpt
+```
+
+### Usage
+```shell
+export OPENAI_API_KEY=[Your OpenAI API Key]
+
+# launch
+cligpt
+
+# switch between roles
+input `@role` then Enter
+
+# exit
+input `q` then Enter or input `exit` then Enter
+
+# customize your roles
+customize ~/.cligpt/config.json
+```
+
+### Uninstall
+```shell
+pip uninstall cligpt
+(rm -rf ~/.cligpt)
+```
+

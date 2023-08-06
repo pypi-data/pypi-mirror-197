@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cligpt/__init__.py
+src/cligpt/__main__.py
+src/cligpt/cli.py
+src/cligpt/cligpt.py
+src/cligpt/config.json
+src/cligpt.egg-info/PKG-INFO
+src/cligpt.egg-info/SOURCES.txt
+src/cligpt.egg-info/dependency_links.txt
+src/cligpt.egg-info/entry_points.txt
+src/cligpt.egg-info/requires.txt
+src/cligpt.egg-info/top_level.txt
+test/test.py
