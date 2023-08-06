@@ -1,0 +1,16 @@
+_gdxcc.cpython-36m-i386-linux-gnu.so,sha256=HD98mbiQabb65BWocoAuBoJiYo4c8WbE0FD9sKK10YI,783556
+gdxcc/gdxcc.py,sha256=x7wGbyW9ASYy2i5DOznkmTWv2KmTjfig2N-C9R-0xvk,24577
+gdxcc/__init__.py,sha256=KA90WYO6xqqRj8HYVuD0uW6UC0RIfhMUnFJ6QwTN25s,20
+gdxcc/gdxcc.i,sha256=guzKuxor0ebANFaREgC4qGyNnJnm5il2dPCUWLDPicc,20210
+gdxcc/C/gcmt.h,sha256=YnhUhBqNts7qvx61QqIz3bsoiQGBIENZPjfayN_bPNE,3571
+gdxcc/C/gcmt.c,sha256=Kb1ZGDXChc6BskHCDbXK_he93qCCymUaqAqUBbztikQ,11716
+gdxcc/C/gdxcc_wrap.c,sha256=ust8nLQgCcrD3RAuKDKMJCFF0Qmm5br9iCbLjlJUIxc,354029
+gdxcc/C/gclgms.c,sha256=BX1vATmk-Jt-cBD35KOKFyOnRwT7gX3avCX9aoawTb8,6347
+gdxcc/C/gdxcc.h,sha256=vcFHl5CdnmkViAjnBqjTgrlZ2qtvfLoZo57tDuhjSAA,23227
+gdxcc/C/gdxcc.c,sha256=F26ghAgsyzRKZDp_Yq38HNZDxbW-F-kpABHpp_om1qE,43227
+gdxcc/C/gclgms.h,sha256=13L74ugo4Xyt21VyNMjtsW6pw535BCT3Q6ZsCOCDJEw,5553
+gdxcc-8.33.2.post1.dist-info/METADATA,sha256=xljovoD3vyk1Rh2uN8Y61pPOBjuWE8sAOM0qlVKAK6M,308
+gdxcc-8.33.2.post1.dist-info/LICENSE,sha256=CePlUVOEsjuhV2l2Kq_Y5wSw6D-FD11faJo2iOku5DM,1204
+gdxcc-8.33.2.post1.dist-info/WHEEL,sha256=fi4cVfpey3xcdlS41G0BGLav86L8eWRKj9oEclxTRG0,213
+gdxcc-8.33.2.post1.dist-info/top_level.txt,sha256=02BsMmc80jxW-8n2In6s0qNYZZsPePBn59tVeaAd8gc,13
+gdxcc-8.33.2.post1.dist-info/RECORD,,
