@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sparseprop
+Version: 0.1.12
+Summary: SparseProp: Efficient Sparse Backpropagation for Faster Training of Neural Networks
+Home-page: https://github.com/IST-DASLab/sparseprop
+Author: Mahdi Nikdan, Tommaso Pegolotti, Eugenia Iofinova, Eldar Kurtic, Dan Alistarh
+Author-email: mahdi.nikdan@ist.ac.at, tommaso.pegolotti@inf.ethz.ch, eugenia.iofinova@ist.ac.at, eldar.kurtic@ist.ac.at, dan.alistarh@ist.ac.at
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+License-File: LICENSE
+
+UNKNOWN
+
