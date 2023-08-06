@@ -1,0 +1,2 @@
+[console_scripts]
+volumouse = volumouse.volumouse:main
