@@ -1,0 +1,14 @@
+README.md
+setup.py
+SciDataContainer.egg-info/PKG-INFO
+SciDataContainer.egg-info/SOURCES.txt
+SciDataContainer.egg-info/dependency_links.txt
+SciDataContainer.egg-info/requires.txt
+SciDataContainer.egg-info/top_level.txt
+scidatacontainer/__init__.py
+scidatacontainer/config.py
+scidatacontainer/container.py
+scidatacontainer/filebase.py
+scidatacontainer/fileimage.py
+scidatacontainer/filenumpy.py
+test/test.py
