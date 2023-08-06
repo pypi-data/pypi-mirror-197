@@ -1,0 +1,10 @@
+pymaxed/__init__.py,sha256=lNsVIX9WMTcZeX1CGTR-RwDLvt2RVv2lhFIRpyqetUA,100
+pymaxed/lagrangian.py,sha256=FIEoJnzOXojtHFojoPrrLwHt_YydSQRvrWzC72Corrg,5611
+pymaxed/maxed.py,sha256=F1-V0dyrFmitubdHl2TIGGrdYLgLt1yY9jGBb3h7yHI,4088
+pymaxed/minimize.py,sha256=4CLFIiGBVZreAgefaVY9JjxSVwEmF7jO6QUAwk7aBBs,11661
+pymaxed/pdfs.py,sha256=-pIuWT_B3GtYyRrPvaxyno2nwLchc5sZ5eVoJhDe6Mw,2180
+pymaxed/tools.py,sha256=Si0vGqo22DeTpNyZGSBbuVFau49hSv0-ZH3lHK-KTMY,7506
+pymaxed/vectors.py,sha256=bbvEHIAc-cSCLSABRsg4f7TLW7Ro6fKOcCBi2rARjOc,10664
+pymaxed-0.1.4.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+pymaxed-0.1.4.dist-info/METADATA,sha256=1efv-YdkxF-t8XO9rfQXYUYFm7ld5gCS0SAmULJaMgY,347
+pymaxed-0.1.4.dist-info/RECORD,,
