@@ -1,0 +1,17 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+mintlemon/__init__.py
+mintlemon/normalizer/__init__.py
+mintlemon/normalizer/_builtin.py
+mintlemon/normalizer/normalizer.py
+mintlemon/sentence_splitter/__init__.py
+mintlemon/sentence_splitter/sentence_splitter.py
+mintlemon_turkish_nlp.egg-info/PKG-INFO
+mintlemon_turkish_nlp.egg-info/SOURCES.txt
+mintlemon_turkish_nlp.egg-info/dependency_links.txt
+mintlemon_turkish_nlp.egg-info/top_level.txt
+tests/test_normalizer.py
+tests/test_sentence_splitter.py
