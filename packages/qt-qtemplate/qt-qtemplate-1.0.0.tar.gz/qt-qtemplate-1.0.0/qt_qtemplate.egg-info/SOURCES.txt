@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+qt_qtemplate.egg-info/PKG-INFO
+qt_qtemplate.egg-info/SOURCES.txt
+qt_qtemplate.egg-info/dependency_links.txt
+qt_qtemplate.egg-info/requires.txt
+qt_qtemplate.egg-info/top_level.txt
+qtemplate/__init__.py
+qtemplate/base.py
+qtemplate/datastore.py
+qtemplate/qtemplate.py
+qtemplate/utils.py

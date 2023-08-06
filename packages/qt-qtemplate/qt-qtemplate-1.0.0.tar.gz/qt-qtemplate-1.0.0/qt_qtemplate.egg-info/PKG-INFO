@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qt-qtemplate
+Version: 1.0.0
+Summary: Simple but powerful QT template language for PySide6.
+Home-page: https://github.com/pkkid/python-qtemplate
+Author: Michael Shepanski
+Author-email: michael.shepanski@gmail.com
+Keywords: pyside6,qt,template
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.7
+License-File: LICENSE
+
+# Python QTemplate
+Simple but powerful QT template language for PySide6.
