@@ -1,0 +1,8 @@
+README.md
+setup.py
+iflo.egg-info/PKG-INFO
+iflo.egg-info/SOURCES.txt
+iflo.egg-info/dependency_links.txt
+iflo.egg-info/entry_points.txt
+iflo.egg-info/requires.txt
+iflo.egg-info/top_level.txt
