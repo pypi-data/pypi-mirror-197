@@ -1,0 +1,8 @@
+README.md
+renko_pattern_finder.py
+setup.py
+renko_pattern_finder.egg-info/PKG-INFO
+renko_pattern_finder.egg-info/SOURCES.txt
+renko_pattern_finder.egg-info/dependency_links.txt
+renko_pattern_finder.egg-info/requires.txt
+renko_pattern_finder.egg-info/top_level.txt
