@@ -1,0 +1,9 @@
+bsa/__init__.py,sha256=gVu8IMdbBv6cDz3AH4CXTtXf5HnNz33l_RlvHJDjZZg,319
+bsa/branches.py,sha256=7oXB120E00S9yn93zdhxq-VtepqQmhbjWZ0vW56pWY8,14114
+bsa/instrumentation.py,sha256=7z0VNhoj93zE80kgx7n_vGGiFtphQSiT19P342OC-MQ,12674
+bsa/kripke.py,sha256=l2t18Kz5VWm28Oj0oEjXQxF1zYPFLILpFIQSd116A7c,8777
+bsa/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+branch_statement_analyzer-1.0.0.dist-info/LICENSE.txt,sha256=nM7J2UU06lXw9QDyW4ssw3bWI3thiYQWDSbdkRiU8II,1502
+branch_statement_analyzer-1.0.0.dist-info/METADATA,sha256=MKo2zi47QotlG9hlPcuv2RfjdfAsnPXg0-Yi3ZD-ByY,2240
+branch_statement_analyzer-1.0.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+branch_statement_analyzer-1.0.0.dist-info/RECORD,,
