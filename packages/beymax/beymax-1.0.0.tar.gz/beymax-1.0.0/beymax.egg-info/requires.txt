@@ -1,0 +1,9 @@
+discord.py==2.1.0
+aiohttp
+PyYAML
+editdistance
+aiohttp
+emoji
+python-dateutil
+sqlalchemy<2.0.0,>=1.4.0
+aiofiles
