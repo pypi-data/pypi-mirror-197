@@ -1,0 +1,16 @@
+dask
+fire
+jupyterlab
+matplotlib
+napari
+nd2
+numpy
+pandas
+pyqt6
+pyyaml
+scikit-image
+scipy
+seaborn
+tifffile
+zarr-tools
+zenodo-get
