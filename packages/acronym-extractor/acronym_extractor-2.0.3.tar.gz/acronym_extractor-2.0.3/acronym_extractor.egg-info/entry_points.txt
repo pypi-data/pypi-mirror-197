@@ -1,0 +1,2 @@
+[console_scripts]
+acronym_extractor = acronym_extractor.__main__:main
