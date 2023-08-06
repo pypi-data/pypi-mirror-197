@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: python-supporter
+Version: 0.0.7
+Summary: Python supporter
+Home-page: https://github.com/automatethem/python-supporter
+Author: Sang Ki Kwon
+Author-email: automatethem@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# python-supporter
+
+https://pypi.org/project/python-supporter
+<pre>
+pip install python-supporter
+</pre>
