@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "opensesame-extension-updater"
+version = "0.1.0"
+description = "Checks for updates to extensions and plugins in OpenSesame"
+authors = ["Sebastiaan Mathôt <s.mathot@cogsci.nl>"]
+readme = "readme.md"
+packages = [
+    {include = "opensesame_extensions"},
+]
+license = "COPYING"
+
+[tool.poetry.dependencies]
+python = ">= 3.7"
+opensesame-core = ">= 4.0.0a0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
