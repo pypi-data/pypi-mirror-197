@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: gptwc
+Version: 1.0.0
+Summary: A package to count tokens in input text using OpenAI's tiktoken library.
+Home-page: https://github.com/lwneal/gptwc
+Author: Lawrence Neal
+Author-email: nealla@lwneal.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tiktoken
+
+## gptwc: wc for GPT tokens
+
+A simple utility for counting tokens. Uses `tiktoken`
+
+Example Usage:
+
+```
+cat logs.txt | gptwc
+
+gptwc < input.txt
+```
+
+Prints the number of tokens in the input stdin text, similar to how `wc` prints the number of words.
+
+
