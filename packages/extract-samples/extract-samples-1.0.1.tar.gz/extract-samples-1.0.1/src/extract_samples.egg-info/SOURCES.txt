@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/extract_samples.egg-info/PKG-INFO
+src/extract_samples.egg-info/SOURCES.txt
+src/extract_samples.egg-info/dependency_links.txt
+src/extract_samples.egg-info/top_level.txt
+src/extract_samples_dirs/__init__.py
+src/extract_samples_dirs/example.py
