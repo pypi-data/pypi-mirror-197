@@ -1,0 +1,12 @@
+ai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai/ai.py,sha256=rUVGpyedKNGsaeoIxTaGLhJx79RhLunRIJtAu12eiK0,2301
+ai/cli.py,sha256=hA_EKYCipEd5JvsmvAItv_U_J_dG3VWB_d2JTuimBKo,3596
+ai/crud.py,sha256=t-P0sqA5d-c19KowcW61JLixZn0p9ITgE5AowJ5gHLg,511
+ai/database.py,sha256=lywT8wS25xmlE2IIfYxSwxDCu7x3A2jNEDIxVzDbiJk,4105
+ai/tui.py,sha256=_gWtkTw2PmeOVJT4I1Gw8L7dWg791N06gf8zisM-rYE,5159
+ai/css/style.css,sha256=_l-RIbvwl63kYf3skSg6IOwtD8JBcp9FK5x8V_K8Bc8,269
+aitui-0.0.2.dist-info/METADATA,sha256=gJWJYrvw-b3b3nPBXn54X8KjwKEaAhathLaOlrHUHP4,1886
+aitui-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+aitui-0.0.2.dist-info/entry_points.txt,sha256=jS-MvSm8vryLYlTNgq7CuGRd2M54kFZvPVVcVgHS7x0,35
+aitui-0.0.2.dist-info/top_level.txt,sha256=TJAp5TUfTUztZSUatbygths7CWRrFfnOMCtZ-DIcw6c,3
+aitui-0.0.2.dist-info/RECORD,,
