@@ -1,0 +1,10 @@
+chatgpter/__init__.py,sha256=1VzzkHuqLcQHKdV9jecYVkQ2xvTxBU4fuTRKPeywd_U,83
+chatgpter/__main__.py,sha256=FbZhHk2Gc9AYuEF4rknFariNaJe3lkfpYE-P8gVAGic,30
+chatgpter/app.py,sha256=B6fbyiqkcl_Bb3bx5lWO6m7GOHMiOjNfSNW0rWC6Weg,13905
+chatgpter/model.py,sha256=UvG617KCqP-S24_oDQJQMZ4x3L019AZxj9fe9e97Hg0,9122
+go_chatgpt-0.0.4.dist-info/LICENSE,sha256=-6twnyNMFVd1n5wMaakRQvdi0K_-06rZiTqATdq8ecE,1064
+go_chatgpt-0.0.4.dist-info/METADATA,sha256=LMyGi-yn5Y8M8WdI_J9gAIlYU-CfrsYJbeK6VHvepMA,1926
+go_chatgpt-0.0.4.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+go_chatgpt-0.0.4.dist-info/entry_points.txt,sha256=yGzXcGUi5ZUld2Yf2a7_7m8x3AaQJIkWil-kYUBmhAQ,50
+go_chatgpt-0.0.4.dist-info/top_level.txt,sha256=wWquU6ysh-6apmoTK7SZ0iCqK8bHTzKCzk4fJx2K-Nw,18
+go_chatgpt-0.0.4.dist-info/RECORD,,
