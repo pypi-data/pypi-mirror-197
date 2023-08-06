@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/DukeTypem2D.egg-info/PKG-INFO
+src/DukeTypem2D.egg-info/SOURCES.txt
+src/DukeTypem2D.egg-info/dependency_links.txt
+src/DukeTypem2D.egg-info/entry_points.txt
+src/DukeTypem2D.egg-info/requires.txt
+src/DukeTypem2D.egg-info/top_level.txt
+src/DukeTypem2D.egg-info/zip-safe
+src/duke_typem/__init__.py
+src/duke_typem/cli.py
+tests/test_cli.py
