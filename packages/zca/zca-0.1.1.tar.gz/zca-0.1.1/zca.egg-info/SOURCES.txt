@@ -1,0 +1,12 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+zca/__init__.py
+zca/version.py
+zca/zca.py
+zca.egg-info/PKG-INFO
+zca.egg-info/SOURCES.txt
+zca.egg-info/dependency_links.txt
+zca.egg-info/requires.txt
+zca.egg-info/top_level.txt
