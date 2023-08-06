@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sakurapkg
+Version: 0.1.0
+Summary: sakurapkg: Python pyproject.toml Genelator
+Home-page: https://github.com/sonyakun/sakurapkg
+Download-URL: https://github.com/sonyakun/sakurapkg/releases
+Author: sonyakun
+Author-email: sonyakun217@gmail.com
+Maintainer: sonyakun
+Maintainer-email: sonyakun217@gmail.com
+License: MIT
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: toml
+Requires-Dist: cleo
+
+https://github.com/sonyakun/sakurapkg
