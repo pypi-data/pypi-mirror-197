@@ -1,0 +1,12 @@
+fakesnow/__init__.py,sha256=ogZl2Z61FIiU2fg8WiM1FhXYLpG-Phvg855nmuMhdqQ,2992
+fakesnow/checks.py,sha256=2Zfn11A0DLbhiPQ-Hjr7PZYNZLL55-BwClZFURbz3b4,2360
+fakesnow/expr.py,sha256=CAxuYIUkwI339DQIBzvFF0F-m1tcVGKEPA5rDTzmH9A,892
+fakesnow/fakes.py,sha256=nUDes66Gv3bIR2h-a7uoXIs4zZ3Kv-WsQqChhXafyiM,15862
+fakesnow/fixtures.py,sha256=LANb4LuiUjKbTZRHmgnAi50xC1rs1xF8SHLoBikB88c,509
+fakesnow/py.typed,sha256=B-DLSjYBi7pkKjwxCSdpVj2J02wgfJr-E7B1wOUyxYU,80
+fakesnow/transforms.py,sha256=NFautl6QEk6rLYP6lADu4wWhvcMKnXoFnx6EbAut6gA,17143
+fakesnow-0.0.2.dist-info/LICENSE,sha256=BL6v_VTnU7xdsocviIQJMFr3stX_-uRfTyByo3gRu4M,1071
+fakesnow-0.0.2.dist-info/METADATA,sha256=zkKpTfyPCm3ftgpARctAeXAOByjJBvMewVYdvqLDjMg,4247
+fakesnow-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+fakesnow-0.0.2.dist-info/top_level.txt,sha256=cSm2ZczdfQn-wA6-HQVxiDEMWpLFpzJQkVKxV41rdvY,27
+fakesnow-0.0.2.dist-info/RECORD,,
