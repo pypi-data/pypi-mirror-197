@@ -1,0 +1,13 @@
+[console_scripts]
+yafti=yafti.__main__:run
+
+[yafti.plugin]
+run=yafti.plugin.run:Run
+yafti.plugin.flatpak=yafti.plugin.flatpak:Flatpak
+yafti.plugin.run=yafti.plugin.run:Run
+
+[yafti.screen]
+yafti.screen.console=yafti.screen.console:ConsoleScreen
+yafti.screen.package=yafti.screen.package:PackageScreen
+yafti.screen.title=yafti.screen.title:TitleScreen
+
