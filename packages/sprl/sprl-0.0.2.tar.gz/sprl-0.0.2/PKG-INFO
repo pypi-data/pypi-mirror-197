@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: sprl
+Version: 0.0.2
+Summary: A simple SPRL file parser
+Home-page: https://github.com/yourusername/sprl-parser
+Author: promptlib
+Author-email: test@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# SPRL Parser
+
+sprl-parser is a simple Python library for parsing and generating prompts from .sprl files. The library uses the SPRL format to define prompts and their associated parameters. It allows users to easily generate prompts with custom parameters programmatically.
+
+## Installation
+
+You can install the sprl-parser library using pip:
+```
+pip install sprl
+```
+## Usage
+
+Here's a basic example of how to use sprl-parser:
+
+python
+```
+from sprl.parser import parse_sprl_file, make_prompt
+
+file_path = 'example.sprl'
+parsed_data = parse_sprl_file(file_path)
+
+if parsed_data:
+    custom_params = {'name': 'Fluffy'}
+    prompt = make_prompt(parsed_data, custom_params)
+    print(prompt)
+else:
+    print("Error parsing the .sprl file.")
+```
+This code reads an example.sprl file, parses its content, and generates a prompt using the provided custom parameters.
+
+## SPRL File Format
+
+An example .sprl file looks like this:
+
+python
+```
+title = "Example Prompt"
+
+[context]
+
+header = "Choose an animal and its sound."
+
+body = """
+Imagine you have a {animal} that makes the sound {animal_noise}.
+
+What would you name your {animal}? Maybe {name}?
+"""
+
+footer = "Have fun choosing a name!"
+
+[parameters]
+
+animal = "dog"
+animal_noise = "woof"
+name = "*"
+```
+The file contains a title, context (with optional header, body, and footer), and parameters. Parameters marked with * can be set programmatically using the make_prompt function.
+
+## Contributing
+
+Contributions to the sprl-parser library are welcome. Please fork the repository, create a branch with your changes, and submit a pull request. Ensure that any changes you make are properly documented and tested.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.

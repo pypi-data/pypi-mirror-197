@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sprl/__init__.py
+sprl/parser.py
+sprl.egg-info/PKG-INFO
+sprl.egg-info/SOURCES.txt
+sprl.egg-info/dependency_links.txt
+sprl.egg-info/requires.txt
+sprl.egg-info/top_level.txt
+tests/__init__.py
+tests/test_parser.py
