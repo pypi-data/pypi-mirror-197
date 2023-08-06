@@ -1,0 +1,8 @@
+CHANGELOG.md,sha256=hEHf9YKAEx87k1Y2pKOvq1Cpg2-CRmogql8M7mopHwI,2120
+neptune_fastai/__init__.py,sha256=thN0v-4K8-1Wrgg1NAEXFuokyM2ycEFQJgR3XcfF994,777
+neptune_fastai/impl/__init__.py,sha256=ub93qSewpfybFIYskX5YfD0FpmbRkpJgCE59g_aPS1Q,12896
+neptune_fastai/impl/version.py,sha256=U4Ic4J_gnYEXzU3UZ0s-7y7tptCk8LHeLge25ORFCsQ,735
+neptune_fastai-1.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+neptune_fastai-1.1.0.dist-info/METADATA,sha256=cUoEXOmyIkfPgZRfUQ1X6XuXoITxOJj3ZZEBZH9LoJg,4373
+neptune_fastai-1.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+neptune_fastai-1.1.0.dist-info/RECORD,,
