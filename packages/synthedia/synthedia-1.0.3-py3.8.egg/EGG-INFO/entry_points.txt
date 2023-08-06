@@ -1,0 +1,3 @@
+[console_scripts]
+synthedia = synthedia.__main__:main
+
