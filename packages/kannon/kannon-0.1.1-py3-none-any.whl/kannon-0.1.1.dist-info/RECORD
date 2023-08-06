@@ -1,0 +1,8 @@
+kannon/__init__.py,sha256=oPLWfoqsIFAphVxhxljSHQcqI6gjuEYftpUzMCx0VpI,70
+kannon/kube_util.py,sha256=9kx4vatUiw641Bz5dfDEpuh3HdQC0fgpz8HM1RSOZeg,1321
+kannon/master.py,sha256=iQroKctZWP16fMogh9_UdRjUDzAJ_xTartOvfafTDAw,7302
+kannon/task.py,sha256=yVbgJy7U6o3QxBZhWn3mXgd_f61z8AF6EuxxqUJspas,64
+kannon-0.1.1.dist-info/LICENSE,sha256=-1jMyYL6GYDVMygZkRZCeMH65Cp_FJ_cIGiA-YgWoTM,1065
+kannon-0.1.1.dist-info/METADATA,sha256=T_U3HrBewee1kUpYbgC_ZSCcO6MXgng1wVbCyfxBf_Q,3771
+kannon-0.1.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+kannon-0.1.1.dist-info/RECORD,,
