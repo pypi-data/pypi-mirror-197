@@ -1,0 +1,4 @@
+[console_scripts]
+cmk=checkmk.cli:main
+omd=checkmk.cli:main
+

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: checkmk
+Version: 0.2.2.1
+Summary: Checkmk placeholder
+Home-page: https://projects.om-office.de/frans/checkmk-pip.git
+Author: Frans Fürst
+Author-email: frans.fuerst+gitlab@protonmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Project-URL: Repository, https://projects.om-office.de/frans/checkmk-pip.git
+Description-Content-Type: text/markdown
+
+# Checkmk placeholder
+
