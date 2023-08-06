@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: rust_circuit
+Version: 0.4.8
+Requires-Dist: torch
+Requires-Dist: attrs
+Requires-Dist: cattrs
+Requires-Dist: blake3
+Requires-Dist: numpy
+Requires-Dist: msgpack
+Requires-Dist: typing_extensions
