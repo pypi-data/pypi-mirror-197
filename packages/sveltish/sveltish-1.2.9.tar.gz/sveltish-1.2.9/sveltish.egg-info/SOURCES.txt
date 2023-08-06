@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+sveltish/__init__.py
+sveltish/_modidx.py
+sveltish/signals.py
+sveltish/stores.py
+sveltish/utils.py
+sveltish.egg-info/PKG-INFO
+sveltish.egg-info/SOURCES.txt
+sveltish.egg-info/dependency_links.txt
+sveltish.egg-info/entry_points.txt
+sveltish.egg-info/not-zip-safe
+sveltish.egg-info/requires.txt
+sveltish.egg-info/top_level.txt

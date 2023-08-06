@@ -1,0 +1,5 @@
+fastcore
+typing
+typing_extensions
+
+[dev]
