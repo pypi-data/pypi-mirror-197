@@ -1,0 +1,17 @@
+conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+italy_geopop/__init__.py,sha256=9ppxeUpyVmfcYWnLhDYn7hxDBY-2wrONXNyLVMRQmQE,90
+italy_geopop/__version__.py,sha256=6hfVa12Q-nXyUEXr6SyKpqPEDJW6vlRHyPxlA27PfTs,22
+italy_geopop/_utils.py,sha256=soiGO9pPswVLOgbzAvM2C5OejtsgwHKglr8p-BYt2ww,3670
+italy_geopop/geopop.py,sha256=Suq1viZtKUcl56T4kdlL7kw92yDKx90BMBvMeoL8XBc,14248
+italy_geopop/pandas_extension.py,sha256=784kUrPAe0RhC6hkemEAba_1pKy1tczb-KgVeZoiZlI,18821
+italy_geopop/data/italy_geo_municipalities.feather,sha256=tMD4ZyM-SSR6BTRpsNLpb2pUmVZTokAadaETghnHJdI,12299978
+italy_geopop/data/italy_geo_provinces.feather,sha256=Fy2yP6ZPaJBPZ-yK1B0LEeC2ggIIJU5KPnhoieMfsak,2274146
+italy_geopop/data/italy_geo_regions.feather,sha256=PZy9cHTKJDXDBgsz_ovlQ9KINvguCDU7ZrEuVFg9kOg,1195706
+italy_geopop/data/italy_municipalities_2022.feather,sha256=b1r2-0Mee06kf44WxvX2i6kx0sgFTTPelTEvb1HYsk4,232090
+italy_geopop/data/italy_pop_2022.feather,sha256=qvbTIGn6TOb9AUmq0NgaoApbSa_c11cwKhuPGCUmVrg,8533914
+italy_geopop/data/italy_provinces_2022.feather,sha256=4L9Eop5dEoOIQv6iu5AvJ1fCt2kXx5bjbdBseiRsW04,129874
+italy_geopop/data/italy_regions_2022.feather,sha256=Q82Jh0uSFvGtOrwX4Jq46E64c1kQzK9B5CqhpnnnOsY,125538
+italy_geopop-0.4.2.dist-info/METADATA,sha256=PUfsMKEJoaBAj8kjFi29ifAnFxh9a2EFKr9oPiz98Us,32585
+italy_geopop-0.4.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+italy_geopop-0.4.2.dist-info/licenses/LICENSE,sha256=PylBRewaLC_oz9YD8tbmi20Dic-gILT41OPSAZtfiyE,18175
+italy_geopop-0.4.2.dist-info/RECORD,,
