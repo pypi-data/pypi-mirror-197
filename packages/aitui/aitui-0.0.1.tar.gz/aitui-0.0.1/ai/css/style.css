@@ -1,0 +1,23 @@
+Screen {
+}
+
+.chat-window {
+  height: 100%;
+}
+
+Prompt {
+  padding: 0 1;
+  box-sizing: border-box;
+  width: 100%;
+  background: rgb(20, 20, 20);
+  border: tall grey;
+}
+
+Footer {
+  background: rgb(20, 20, 20);
+}
+
+ConversationScreen {
+  background: black;
+  height: 1fr;
+}
