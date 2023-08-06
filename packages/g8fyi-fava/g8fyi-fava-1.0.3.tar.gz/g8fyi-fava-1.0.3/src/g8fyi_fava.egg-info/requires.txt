@@ -1,0 +1,17 @@
+Babel<3,>=2.7
+Flask-Babel<4,>=1
+Flask<3,>=2
+Jinja2<4,>=3
+Werkzeug<3,>=2
+beancount<3,>=2.3.5
+cheroot<10,>=8
+click<9,>=7
+markdown2<3,>=2.3.0
+ply
+simplejson<4,>=3.16.0
+
+[excel]
+pyexcel>=0.2.2
+pyexcel-ods3>=0.1.1
+pyexcel-xls>=0.1.0
+pyexcel-xlsx>=0.1.0
