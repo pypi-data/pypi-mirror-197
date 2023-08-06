@@ -1,0 +1,10 @@
+dash
+
+[dev]
+black
+build
+isort
+mkdocs-material
+pip-tools
+ruff
+twine
