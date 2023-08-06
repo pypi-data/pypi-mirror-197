@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+zsdstools/__init__.py
+zsdstools/dstools.py
+zsdstools.egg-info/PKG-INFO
+zsdstools.egg-info/SOURCES.txt
+zsdstools.egg-info/dependency_links.txt
+zsdstools.egg-info/top_level.txt
