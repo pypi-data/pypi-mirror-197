@@ -1,0 +1,11 @@
+kpcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kpcli/cli.py,sha256=M0nqMNBY9SlVgOX-x5F2vkn06Xwhp0AiRERZt5PI6cY,14157
+kpcli/comparator.py,sha256=mWa7S_ZGudVgp5VcrdyjGPYx5Qn9Ow_gJfc8wiHG6zw,6667
+kpcli/connector.py,sha256=OwKjkPW5CHF8nyynI5JCJdAzvPeqE7Nu9YDwE4gPKyU,4408
+kpcli/datastructures.py,sha256=8k41XjSmWhJTV3O9YVZQGkS3Q26lwRxZ26cxTwV6X5c,5099
+kpcli/utils.py,sha256=NfTdUraA_uKcHxiVwR-GP4__e11IXnsorh83Z9O5nHk,3121
+kpcli-0.3.0.dist-info/LICENSE,sha256=xTplwv1WHIfqq_EHLvXcq4ZTBCvBUwhGX1JBNYXrYnE,35146
+kpcli-0.3.0.dist-info/METADATA,sha256=bKGsucRb9-f_UrvpzhayXKyL61T8SlzdB9OBjwgwZgs,8298
+kpcli-0.3.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+kpcli-0.3.0.dist-info/entry_points.txt,sha256=kkhHuhCvnzFNPoo6zBpu_xJ8yWta7Ym9ev_YozS14sQ,39
+kpcli-0.3.0.dist-info/RECORD,,
