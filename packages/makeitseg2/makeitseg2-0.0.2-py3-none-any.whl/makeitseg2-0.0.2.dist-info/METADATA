@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: makeitseg2
+Version: 0.0.2
+Summary: makeitseg2
+Author: Shanu Biswas
+Author-email: shanubiswas119@gmail.com
+Keywords: segy,seismic,seg2,segy to seg2 converter,segy to dat file converter,segy to dat file converter using python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: obspy
+
+# makeitseg2
+
+`makeitseg2` is a Python module that provides functionality to convert SEGY or SU (Seismic Un*x) files to SEG2 (or DAT) files.
+## Getting Started
+
+A working example is provided in the "test.ipynb" file.
+### Prerequisites
+
+Before installing `makeitseg2`, ensure that `obspy` is installed. You can install it via pip using the following command:
+```
+pip install obspy
+```
+### Installation 
+You can install `makeitseg2` via pip using the following command:
+
+```
+pip install makeitseg2
+```
+### How it works
+To use `makeitseg2`, you can import it and call the `convert` function, passing in the name of the SEGY or SU file and an optional name for the new converted SEG2 file.
+``` python
+ import makeitseg2
+ makeitseg2.convert(SEGY_or_SU_filename, newConverted_SEG2_file_name)
+```
+
+If `newConverted_SEG2_file_name` is not provided, the new SEG2 file will have the same name as the original and will be placed in the `Converted_SEG2` folder.
