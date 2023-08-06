@@ -1,0 +1,130 @@
+# Linode DynDNS
+
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-iarekylew00t%2Flinode--dyndns-blue)](https://hub.docker.com/r/iarekylew00t/linode-dyndns)
+[![PyPI](https://img.shields.io/pypi/v/linode-dyndns)](https://pypi.org/project/linode-dyndns/)
+[![GitHub build status](https://img.shields.io/github/actions/workflow/status/IAreKyleW00t/linode-dyndns/main.yml?style=flat)](https://github.com/IAreKyleW00t/linode-dyndns/actions/workflows/main.yml)
+[![License](https://img.shields.io/github/license/IAreKyleW00t/linode-dyndns)](https://github.com/IAreKyleW00t/linode-dyndns/blob/main/LICENSE)
+
+A Python tool for dynamically updating Linode Domain Records with your current IP address. Inspired by [nvllsvm/linode-dynamic-dns](https://github.com/nvllsvm/linode-dynamic-dns) but now utilizes the official [linode_api4](https://github.com/linode/linode_api4-python) package for Python.
+
+## Installation
+
+```sh
+pip install linode-dyndns
+```
+
+### Docker
+
+```sh
+# Docker Hub
+docker pull iarekylew00t/linode-dyndns:latest
+
+# GHCR
+docker pull ghcr.io/iarekylew00t/linode-dyndns:latest
+```
+
+#### Tags
+
+The following tags are available for the `iarekylew00t/linode-dyndns` image.
+
+- `latest`
+- `<version>` (eg: `1.2.2`, including: `1.2`, `1`, etc.)
+
+## Usage
+
+Full usage and defaults can be found using the `--help` flag. Each option has a matching env variable associated with it which can be set instead of setting flags on the cli tool itself, see the [Environment variables](#Environment-variables) section.
+
+Multiple hosts can be specified by passing multiple `--host` flags, or if using the `HOST` env variable then separate each host by space.
+
+When running the tool in a loop (`--interval` flag), if for some reason the tool cannot get your IP during a run, it will skip it and retry during the next interval.
+
+```sh
+linode_dyndns \
+  --domain exmaple.com \
+  --host mylab \
+  --token abc...789 \
+  --interval 60
+```
+
+or, running it via Docker (which also supports passing flags)
+
+```sh
+docker run --rm -it --name linode_dyndns \
+    -e DOMAIN=exmaple.com \
+    -e HOST=mylab \
+    -e TOKEN=abc...789 \
+    -e INTERVAL=15 \
+    iarekylew00t/linode-dyndns
+```
+
+### Environment variables
+
+| Name       | Flag         |
+| ---------- | ------------ |
+| `DOMAIN`   | `--domain`   |
+| `HOST`     | `--host`     |
+| `TOKEN`    | `--token`    |
+| `INTERVAL` | `--interval` |
+| `IPV6`     | `--ipv6`     |
+| `IPV4_URL` | `--ipv4-url` |
+| `IPV6_URL` | `--ipv6-url` |
+
+## Local development
+
+The `requirements.txt` file is mainly for dependencies required for a developer, including stuff like the [black](https://github.com/psf/black) formatter.
+
+Setup your local environmnet (ensure you are using Python 3.9 or newer)
+
+```sh
+git clone https://github.com/IAreKyleW00t/linode-dyndns.git
+cd linode-dyndns
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install all the dependencies
+
+```sh
+pip install -r requirements.txt
+```
+
+## Building
+
+You can build the package yourself via the [build](https://pypi.org/project/build/) module (included in `requirements.txt`)
+
+```sh
+python -m build --sdist --wheel --outdir dist/ .
+```
+
+or build the Docker image instead
+
+```sh
+docker build -t linode-dyndns .
+```
+
+## Container signatures
+
+All container images will be automatically signed via [Cosign](https://docs.sigstore.dev/cosign/overview/) using [keyless signatures](https://docs.sigstore.dev/cosign/keyless/). You can use the following command to verify the integrity of these images yourself.
+
+```sh
+cosign verify \
+  --certificate-oidc-issuer https://token.actions.githubusercontent.com \
+  --certificate-identity-regexp https://github.com/IAreKyleW00t/linode-dyndns/.github/workflows/ \
+  iarekylew00t/linode-dyndns:latest
+```
+
+## Contributing
+
+Feel free to contribute and make things better by opening an [Issue](https://github.com/IAreKyleW00t/linode-dyndns/issues) or [Pull Request](https://github.com/IAreKyleW00t/linode-dyndns/pulls).
+
+### Code Styling
+
+This tool is painted [black](https://github.com/psf/black) and has a corresponding [workflow](https://github.com/IAreKyleW00t/linode-dyndns/actions/workflows/black.yml) to enforce it. If you plan to contribute anything, please ensure you run `black` against your files first (included in `requirements.txt`).
+
+```sh
+black .
+```
+
+## License
+
+See [LICENSE](https://github.com/IAreKyleW00t/linode-dyndns/blob/main/LICENSE).
