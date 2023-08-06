@@ -1,0 +1,9 @@
+dagster==1.2.2
+dagster-duckdb==0.18.2
+pandas
+
+[:python_version < "3.8"]
+pyspark>=2.0.2
+
+[:python_version >= "3.8"]
+pyspark>=3.0.0
