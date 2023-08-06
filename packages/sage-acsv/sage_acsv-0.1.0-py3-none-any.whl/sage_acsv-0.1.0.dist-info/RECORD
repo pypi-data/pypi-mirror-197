@@ -1,0 +1,9 @@
+sage_acsv/__init__.py,sha256=E3roBs9lvi4OqOB1XlVryPqNU80RitBwnel8yMJlNqg,70
+sage_acsv/asymptotics.py,sha256=i0V55cQoJbL2EKrgqzRiGOdj7q2ixc4EVgldgk6ohPs,10489
+sage_acsv/debug.py,sha256=vJ2FPaq3ErDVWwRW5kimi9mx3eA7Y8dxGFPnT-Zd6us,1125
+sage_acsv/helpers.py,sha256=Cf2jnkNf1ZNkzjYcPx9qz-j4Zba7AfhjMHtaRDcjpm0,3139
+sage_acsv/kronecker.py,sha256=JFCVCHHx77c-UYjf95fkgZWXKQEQs23_f6_yCgpc3UU,5156
+sage_acsv-0.1.0.dist-info/LICENSE,sha256=1-CA_JOjisoi68pDpHnryw08xsbcuU84PcyOShdcY9g,1066
+sage_acsv-0.1.0.dist-info/METADATA,sha256=rdL-biQ4NRDmFGP02OFKLid5ReHDJQzSheRg9c9KURQ,1999
+sage_acsv-0.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+sage_acsv-0.1.0.dist-info/RECORD,,
