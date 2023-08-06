@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: fakesnow
+Version: 0.0.0
+Summary: Mock SnowflakeDB locally
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: duckdb (~=0.7.0)
+Requires-Dist: snowflake-connector-python[pandas]
+Requires-Dist: sqlglot (~=11.3.6)
+Provides-Extra: dev
+Requires-Dist: black (~=22.12) ; extra == 'dev'
+Requires-Dist: build (~=0.10) ; extra == 'dev'
+Requires-Dist: docformatter (~=1.5) ; extra == 'dev'
+Requires-Dist: snowflake-connector-python (!=3.0.1) ; extra == 'dev'
+Requires-Dist: snowflake-connector-python[secure-local-storage] ; extra == 'dev'
+Requires-Dist: pandas ; extra == 'dev'
+Requires-Dist: pre-commit (~=3.0) ; extra == 'dev'
+Requires-Dist: pytest (~=7.2) ; extra == 'dev'
+Requires-Dist: ruff (~=0.0.235) ; extra == 'dev'
+Requires-Dist: twine (~=4.0) ; extra == 'dev'
+Provides-Extra: notebook
+Requires-Dist: duckdb-engine ; extra == 'notebook'
+Requires-Dist: ipykernel ; extra == 'notebook'
+Requires-Dist: jupysql ; extra == 'notebook'
+Requires-Dist: snowflake-sqlalchemy ; extra == 'notebook'
+
+# fakesnow ❄️
+
+Fake [Snowflake Connector for Python](https://docs.snowflake.com/en/user-guide/python-connector). Run Snowflake DB locally.
+
+## Usage
+
+```python
+import fakesnow
+import snowflake.connector
+
+with fakesnow.patch():
+    conn = snowflake.connector.connect()
+
+    print(conn.cursor().execute("SELECT 'Hello fake world!'").fetchone())
+```
+
+Standard imports (eg: `snowflake.connector.connect`) are patched. To patch additional imports, eg:
+
+```python
+with fakesnow.patch("mymodule.connect"):
+    ...
+```
+
+pytest [fixtures](fakesnow/fixtures.py) are provided for testing. Example _conftest.py_:
+
+```python
+from typing import Iterator
+
+import fakesnow.fixtures
+import pytest
+
+pytest_plugins = fakesnow.fixtures.__name__
+
+@pytest.fixture(scope="session", autouse=True)
+def setup(_fakesnow_session: None) -> Iterator[None]:
+    # the standard imports are now patched
+    ...
+    yield
+```
+
+## Implementation coverage
+
+- [x] multiple databases
+- [x] cursors
+- [x] [get_result_batches()](https://docs.snowflake.com/en/user-guide/python-connector-api#get_result_batches)
+- [x] [write_pandas(..)](https://docs.snowflake.com/en/user-guide/python-connector-api#write_pandas)
+- [x] table comments
+- [x] [qmark binding](https://docs.snowflake.com/en/user-guide/python-connector-example#binding-data)
+- [ ] [access control](https://docs.snowflake.com/en/user-guide/security-access-control-overview)
+- [ ] standalone/out of process api/support for faking non-python connectors
+- [ ] [stored procedures](https://docs.snowflake.com/en/sql-reference/stored-procedures)
+
+Partial support
+- [x] date functions
+- [x] tags
+- [x] semi-structured data
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) to get started and develop in this repo.
