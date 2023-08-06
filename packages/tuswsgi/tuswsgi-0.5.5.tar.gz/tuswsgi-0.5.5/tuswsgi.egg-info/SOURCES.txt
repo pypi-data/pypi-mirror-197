@@ -1,0 +1,15 @@
+.gitignore
+LICENSE
+README.rst
+dev-requirements.txt
+setup.cfg
+setup.py
+test_tuswsgi.py
+tox.ini
+tuswsgi.py
+example/flask.py
+tuswsgi.egg-info/PKG-INFO
+tuswsgi.egg-info/SOURCES.txt
+tuswsgi.egg-info/dependency_links.txt
+tuswsgi.egg-info/requires.txt
+tuswsgi.egg-info/top_level.txt
