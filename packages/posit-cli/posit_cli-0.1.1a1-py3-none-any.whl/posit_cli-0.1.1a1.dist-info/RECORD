@@ -1,0 +1,7 @@
+posit_cli/__init__.py,sha256=uoXQXRyg3px_qyAmbzNFljgXYcorG7hjd6dpY6wJgsk,81
+posit_cli/__main__.py,sha256=wcG2CZunqrXhDgoqlZXAmGsjuNvBWSTVOjzLk5SAISw,44
+posit_cli/cli.py,sha256=KYt9Jp_o1DJvpENLfHd7gtR3-Re0ZOdvVRB8IJvfsAU,272
+posit_cli-0.1.1a1.dist-info/METADATA,sha256=BQTe9SLt3T1DLtJK3Izc2jcrEyKfh_QjJkQypYg2CKY,1063
+posit_cli-0.1.1a1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+posit_cli-0.1.1a1.dist-info/entry_points.txt,sha256=nGDm00fdtns0vxEo39pAYfN4CXej55qXKki5XKnukKs,43
+posit_cli-0.1.1a1.dist-info/RECORD,,
