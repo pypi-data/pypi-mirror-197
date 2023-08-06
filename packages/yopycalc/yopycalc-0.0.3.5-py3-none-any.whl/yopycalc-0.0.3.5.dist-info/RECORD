@@ -1,0 +1,8 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_calc.py,sha256=HPROCsYMJjSIcB9awuH9D-V7eF-fTPyJ22hNqr2QnCY,958
+yopycalc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yopycalc/calc.py,sha256=VNEKNRCFc469MO-tzc_4woqstOVBiU3h61QF4ss4JyM,472
+yopycalc-0.0.3.5.dist-info/METADATA,sha256=S_liGQUAo03cGkAxBmwk2isvNaUDrj5dV9_Eg9G3qz8,397
+yopycalc-0.0.3.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+yopycalc-0.0.3.5.dist-info/top_level.txt,sha256=KWZTz-7NUGikH86KBi7-7oRr6-ERsTVNwiwce2LrX8k,14
+yopycalc-0.0.3.5.dist-info/RECORD,,
