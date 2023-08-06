@@ -1,0 +1,17 @@
+setuptools
+six
+plone.base
+plone.intelligenttext
+zope.interface
+zope.structuredtext
+Pillow>=3.1.0
+Products.CMFCore
+Products.MimetypesRegistry
+Acquisition
+ZODB
+Zope
+Markdown>=2.6.5
+
+[test]
+zope.testing
+Pillow
