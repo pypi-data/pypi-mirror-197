@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: lccpy
+Version: 1.0.1
+Summary: Make Python simpler
+Author-email: 许灿标 <lcctoor@outlook.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Project-URL: Documentation, https://www.yuque.com/lcctoor/lccpy/desc
+Project-URL: Source, https://github.com/lcctoor/lccpy
+
+<center>make Python simpler</center>
+
+# Project description
+
+This is an open source Python project called "lccpy", committed to 'make Python simpler'. The main content is some Python packages independently developed by myself. All packages are designed to be 'concise, clear and easy to remember' and will be maintained for a long time.
+
+# [Documentation](https://www.yuque.com/lcctoor/lccpy/desc)
+
+# [Source](https://github.com/lcctoor/lccpy)
+
+# [Update Log](https://github.com/lcctoor/lccpy/commits/main)
+
+# Catalogue
+
+| **Package name** | Documentation                                               | **文档**                                        | **Description**                          |
+| ---------------------- | ----------------------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------- |
+| coolmysql              | [Documentation](https://www.yuque.com/lcctoor/lccpy/coolmysql) | [文档](https://www.yuque.com/lcctoor/lccpy/coolmysql_zh) | The most elegant mysql ORM in history.        |
+| coolmongo              | [Documentation](https://www.yuque.com/lcctoor/lccpy/coolmongo) | [文档](https://www.yuque.com/lcctoor/lccpy/coolmongo_zh) | The most elegant MongoDB ORM in history.       |
+| rstyleslice            |                                                             | [文档](https://www.yuque.com/lcctoor/lccpy/rstyleslice)  | An Intuitive Index and Slice Syntax            |
+| encrypt256             |                                                             | [文档](https://www.yuque.com/lcctoor/lccpy/encrypt256)   | An encryptor for encrypting str and bytes data |
+| asymysql               |                                                             | [文档](https://www.yuque.com/lcctoor/lccpy/asymysql)     | Asynchronous mysql ORM                         |
+| asymongo               |                                                             | [文档](https://www.yuque.com/lcctoor/lccpy/asymongo)     | Asynchronous MongoDB ORM                       |
+
+# About the author
+
+Author：许灿标
+
+Email：lcctoor@outlook.com
+
+Home Page：[Yuque](https://www.yuque.com/lcctoor)
