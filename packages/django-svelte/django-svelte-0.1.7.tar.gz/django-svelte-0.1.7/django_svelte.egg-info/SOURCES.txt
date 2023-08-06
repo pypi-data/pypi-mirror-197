@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_svelte/__init__.py
+django_svelte.egg-info/PKG-INFO
+django_svelte.egg-info/SOURCES.txt
+django_svelte.egg-info/dependency_links.txt
+django_svelte.egg-info/top_level.txt
+django_svelte/templates/display_svelte.html
+django_svelte/templatetags/__init__.py
+django_svelte/templatetags/django_svelte.py
