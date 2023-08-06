@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['iotcoreapi']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['pandas==1.5.3', 'requests>=2.28.2,<3.0.0']
+
+setup_kwargs = {
+    'name': 'iotcore-api',
+    'version': '1.0.0',
+    'description': 'IoT core connection methods and utilities',
+    'long_description': '# IoTCoreAPI\n\nClass to interact with IoT Core API. Reference (Docs) is still _WIP_\n\n# Table Of Contents\n\n1. [Installation](#installation)\n2. [Use](#Use)\n3. [Explanation](#explanation)\n\n# Installation\n\nThis library requieres Python 3.8 or higher. \nIoTCore API can be installed with ```pip```. Dependencies will be installed along with the library.\n\n**PIP**\n\n```bash\npip install iotcore-api\n```\n\n# Use\n\nIn this section we will cover basic usage of the methods.\n\nFirst, import IoTCoreAPI class from module\n\n```python\nfrom iotcoreapi import IoTCoreAPI\n```\n\nTo keep it simple, start\nby initializing IoTCoreAPI class\n\n```\nAPI_Host = \'[base-url]\'\nAPI_Port = 56000\ntoken = \'xxxxxxxxxxxxxxxxx\'\nversion = \'v3\'\nlogger = [logging.Logger object. Can be None or ignored]\n\niot_api = IoTCoreAPI(API_Host, API_Port, token, version, logger)\n```\n\nAsk about base endpoint url and token to your provider. API Port will be (almost) always 56000.\nLogger support is enabled in this class, so if a logger object is provided, will print out information\nto the loggerfile.\n\nOutput format can be specified for most of catalogue and reading methods.\n\nBasic usages of this library cover three types of methods:\n- Catalogue: methods related to schema information in the IoTCore (tag info, documents, alarms...)\n- Reading operations: read real time or historic data from tags. Obtain alarm status\n- Write operations: insert data into real time or historic. Also edit alarm information\n- Operation: write directly into PLC tags\n\nOnce the class is created methods will be accesible from it. Let\'s start reading catalogue info.\nWe will ask for all the tags available in the token\n\n```python\ntags = iot_api.catalogue_tags()\n```\n\nInformation will be retrieved in dataframe format. If json is prefered, can be specified\nin the "output_format" parameter. Let\'s read again tags in the token, but this time, we will filter the result\nby tag names and driver and specify json format.\n\n```python\ndriver = [\'Test\']\nnames = \'api_test\'\ntags_filtered = iot_api.catalogue_tags(drivers=drivers, tags=names, output_format=\'json\')\n```\n\nOne of the most basic usages of the library is to retrieve data from historic. For example, to read a day data from a tagview:\n```python\nimport datetime\n\nUID_TAGVIEW = \'xxxxxxxxxxxx\'\n\nend_ts = datetime.now()\nstart_ts = end_ts - datetime.timedelta(days=1)\n\n\ndata = iotcore_api.read_tagview_historic(UID_TAGVIEW, end_ts, start_ts)\n```\n\nIt is also possible filter data by tag uid or even use text filters by using corresponding methods:\n```python\nimport datetime\n\nUID_TAGVIEW = \'xxxxxxxxxxxx\'\nfilters_txt = [\'Random_Int1\', \'Random_Int2\']\n\nend_ts = datetime.now()\nstart_ts = end_ts - datetime.timedelta(days=1)\n\n\ndata = iotcore_api.read_tagview_historic_text_filters(UID_TAGVIEW, end_ts, start_ts, filters_txt)\n```\n\nTo write data into the IoT Core use the corresponding writing methods. Tags must exist before trying to insert data.\n\nTo create a tag with writing permissions, use this method:\n\n```python\ntags_to_create = [\'api_test\', \'api_test20\', \'api_test33\', \'api_test\']\niotcore_api.write_tags_insert(tags_to_create)\n```\n\nFor writing data operations, a dataframe must be passed.\nDataframe must have the following columns:\n- timeStamp: time data\n- name: name of the tag\n- value: value (int or float)\n\n```python\nimport pandas as pd\n\ntest_df = pd.DataFrame([{\'timeStamp\': time.time(), \'name\': \'api_test\', \'value\': 1},\n                        {\'timeStamp\': time.time(), \'name\': \'api_test_20\', \'value\': 1}])\ndata = iotcore_api.write_tags_historic_insert(test_df)\n```\n\nSome recommendations to use reading methods:\n- Time data can be passed in datetime or unix format\n- Usually uid tagview is required. This can be read by using catalogue methods\n- Tag filtering by uid is faster than text filters. Text filters methods call uid methods before to retrieve tag name data.\n\nSee Docs (_WIP_) for more information\n\n# Explanation\n\nThis library was created to simplify the use of the available GET and POST methods available in the IoTCore API.\nTo understand better the intention behind this library, ask about API reference to your provider.\n\nInstead of dealing with complex and repetitive requests, all functions are written inside IoTCoreAPI class,\nallowing easier use and avoiding code repetition.\n\nFor example, to set up a basic request to get all tags available in the token, you should:\n```python\nimport requests\n\n#1. Configure specific endpoint for this request\nendpoint = \'iotcoreurl:PORT/api/Tags\'\n#2. Provide token and version in the headers\nheaders = {\'token\': \'xxxxxx\', \'version\': \'3.0\'}\n#3. Parameter data\nparameters = {\'IncludeAttributes\': True}\n\n# Set up request using requests library\nresponse = requests.get(endpoint, params=parameters, headers=headers)\n\n# Deal with request format\ndata = response.json()\n```\n\nThis is required for each one of the endpoints listed in the API. Instead, you could use this library as follows:\n```python\nAPI_Host = \'[base-url]\'\nAPI_Port = 56000\ntoken = \'xxxxxxxxxxxxxxxxx\'\nversion = \'v3\'\n\niot_api = IoTCoreAPI(API_Host, API_Port, token, version)\n\ntags = iot_api.catalogue_tags(include_attributes=True)\n```\n\n',
+    'author': 'Nexus Integra',
+    'author_email': 'None',
+    'maintainer': 'None',
+    'maintainer_email': 'None',
+    'url': 'https://nexusintegra.io',
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.8,<4.0',
+}
+
+
+setup(**setup_kwargs)
