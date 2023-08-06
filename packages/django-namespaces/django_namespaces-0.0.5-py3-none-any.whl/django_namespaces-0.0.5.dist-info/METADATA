@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: django-namespaces
+Version: 0.0.5
+Home-page: https://github.com/jmitchel3/django-namespaces
+Author: Justin Mitchel
+Author-email: hello@teamcfe.com
+License: MIT
+Project-URL: Documentation, https://github.com/jmitchel3/django-namespaces
+Project-URL: Changelog, https://github.com/jmitchel3/django-namespaces/blob/main/HISTORY.rst
+Project-URL: Twitter, https://twitter.com/joincfe
+Keywords: Django
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: Django (>=3.2)
+
