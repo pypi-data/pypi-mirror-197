@@ -1,0 +1,10 @@
+nomiden/__init__.py,sha256=2GWffEF1rjyrveUGdfR8y3cl3JUnX0gJjr8Ryy_u4JQ,21
+nomiden/kk.py,sha256=wQHhSW9V9WjH3lYm804WVnhAVDqeycfT9ymtfsMZjCQ,3086
+nomiden/nik.py,sha256=jFMcgyMb5YtorJbFODMlQVmySDZgxOvMf5mE4WZgCrk,3806
+nomiden/reader.py,sha256=OVNxDloqpNQzx9tTbt3Yb7lM8FHMofhXxoONl4egebs,3414
+nomiden/data/regioncode.csv,sha256=F7QlLd1bn6ZtWchfu44lgx6no2GXW5-WDbviaYwGGN8,2824531
+nomiden-0.0.4.dist-info/LICENSE,sha256=uEgLLcJVi2clRhOg9E7aHk9pxnUGMpyV4rEh6IM6aEI,1097
+nomiden-0.0.4.dist-info/METADATA,sha256=q0cYBIjSm95qNQXXRDuCqlboucdz81RWD-9KC3zKVDs,2922
+nomiden-0.0.4.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+nomiden-0.0.4.dist-info/top_level.txt,sha256=LkbTRmNBTZ2QBRcfqOhDXjwo2XV4LPFL9cgoqlNNXeE,8
+nomiden-0.0.4.dist-info/RECORD,,
