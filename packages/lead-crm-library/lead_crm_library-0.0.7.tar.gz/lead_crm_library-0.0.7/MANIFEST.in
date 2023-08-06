@@ -1,0 +1,2 @@
+recursive-include lead_crm_library/salesforce *.py
+recursive-include lead_crm_library/hubspot *.py
