@@ -1,0 +1,10 @@
+ftag/__init__.py,sha256=EiMuyL94-Ic3ZhNXq4jipRpRIrP6sgHGCT-N8h_Rgng,662
+ftag/cuts.py,sha256=pQujIkvjfaJA4aF54M77su5zKeEh16yDrPXUE5wpyiQ,2721
+ftag/flavour.py,sha256=mWMTFXU9hQnyJM3Rsuw880biGr40TccMqDIBvGweSMc,1199
+ftag/region.py,sha256=Tbw7o7cqdeZcu3x49n1iXUxR0apHaUSAsSY_vTHPuGI,371
+ftag/sample.py,sha256=NU_BVcvnehPNy4RV9Uo0AXgqtr48KguQ5j9yW9RroFU,579
+ftag/vds.py,sha256=ytI0GZaUsdV7_1-0emIjz_S4w3tBy4KZL4scTOG_Vcs,1541
+atlas_ftag_tools-0.0.1.dist-info/METADATA,sha256=ylKnyTZY9wp-0AtEZ1bIbUFd8J-2nxOuSAccDVwATfs,560
+atlas_ftag_tools-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+atlas_ftag_tools-0.0.1.dist-info/top_level.txt,sha256=qiYQuKcAvMim-31FwkT3MTQu7WQm0s58tPAia5KKWqs,5
+atlas_ftag_tools-0.0.1.dist-info/RECORD,,
