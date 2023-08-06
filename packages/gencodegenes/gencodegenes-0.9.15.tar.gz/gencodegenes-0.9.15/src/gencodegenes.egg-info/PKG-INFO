@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: gencodegenes
+Version: 0.9.15
+Summary: Package to load genes from GENCODE GTF files
+Home-page: https://github.com/jeremymcrae/gencodegenes
+Author: Jeremy McRae
+Author-email: jeremy.mcrae@gmail.com
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+
+### GENCODEGenes
+
+This code loads genes from GENCODE GTF files into, groups transcripts by gene, 
+and provides methods for transcripts, so you can find CDS distances and sequences.
+
+### Install
+```sh
+pip install gencodegenes
+```
+
+### Usage
+
+```py
+from gencodegenes import Gencode
+
+gencode = Gencode('PATH_TO_GTF')
+
+# get gene by HGNC symbol
+gene = gencode['OR5A1]
+transcripts = gene.transcripts
+canonical = gene.canonical
+
+```
