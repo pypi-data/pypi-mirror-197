@@ -1,0 +1,21 @@
+# 说明：如下配置的索引均从0开始计数，第1列为0、第2列为1，依此类推
+# 环境
+environment: production
+
+email:
+  smtp: smtp.126.com
+  username: exceedego@126.com
+  password: RGRNMTMNBZDXVRNN
+  sender_name: exceedego
+  subject: "证书可以领了！"
+  receiver:
+    - exceedego@126.com
+
+html:
+  url: "http://rsj.gz.gov.cn/ywzt/rcgz/rsks/lztz/"
+  host: "rsj.gz.gov.cn"
+  tag: "a"
+  keywords:
+    - "2022"
+    - "下半年"
+    - "翻译"

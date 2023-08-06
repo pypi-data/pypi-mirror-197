@@ -1,0 +1,2 @@
+[console_scripts]
+sc-gzhr-notification = sc_gzhr_notification.main:main

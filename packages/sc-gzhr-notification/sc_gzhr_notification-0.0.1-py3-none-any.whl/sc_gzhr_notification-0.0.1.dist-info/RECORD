@@ -1,0 +1,11 @@
+sc_gzhr_notification/__init__.py,sha256=d26i80fZPiuHFGOqSz0dw0EyKzSXoYXSbOxqIFud4B8,1176
+sc_gzhr_notification/email_utils.py,sha256=YZJZ6wCtsYXjta-QD91CxVSe5uC9SqQ_wu0XZ5uPqaE,4175
+sc_gzhr_notification/main.py,sha256=n1yDevegS2LzHrVs-oBoPlk2CTZgXXA93NyduRyFGqU,4578
+sc_gzhr_notification/tests/__init__.py,sha256=KvGoxV4nH5zdTkJRnjOhPNgeWObpV2_l9SKmSj-kcrA,1114
+sc_gzhr_notification/tests/sample_config/production.yml,sha256=5Ns_XtAb5FqzRVdOB2LYwd5Od0OKBVisl45w601GHXY,463
+sc_gzhr_notification-0.0.1.dist-info/LICENSE,sha256=cbGBNsuEk9mX9OJnfFqaeRQMWkM--mrl3fzsoaA2jaw,1076
+sc_gzhr_notification-0.0.1.dist-info/METADATA,sha256=6yDCdoMtqnxqRuYwZl1l-aCsWkKe_zbYtbj-oj2XP7o,2027
+sc_gzhr_notification-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sc_gzhr_notification-0.0.1.dist-info/entry_points.txt,sha256=LaVMjzriFeg4aDH6GsnBncmjCIcRPLYu1pFfVxRf-GU,72
+sc_gzhr_notification-0.0.1.dist-info/top_level.txt,sha256=KaP8rQiD7lQyViWYB87LPOf1tXyHanFmz1MIP7VV3GE,21
+sc_gzhr_notification-0.0.1.dist-info/RECORD,,
