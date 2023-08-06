@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: opensesame-plugin-example
+Version: 0.0.1
+Summary: An example plugin for OpenSesame
+Author: Sebastiaan Mathôt
+Author-email: s.mathot@cogsci.nl
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: opensesame-core (>=4.0.0a0)
+Description-Content-Type: text/markdown
+
+# OpenSesame example plugin
+
+## About
+
+This is an example plugin for OpenSesame 4.0 or later. For more information about creating OpenSesame extensions, see the OpenSesame documentation site:
+
+- http://osdoc.cogsci.nl/dev/plugin
+
+You can package the extension as a `.whl` using [Poetry](https://python-poetry.org/):
+
+```
+poetry build
+```
+
+## License
+
+No rights reserved. All files in this repository are released into the public domain.
+

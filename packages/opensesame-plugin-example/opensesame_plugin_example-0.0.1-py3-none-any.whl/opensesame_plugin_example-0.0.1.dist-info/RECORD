@@ -1,0 +1,9 @@
+opensesame_plugins/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opensesame_plugins/example/example_plugin/__init__.py,sha256=XLyHABnHtpciq6dodI-U6GLuej91QSJ_qEVaIFUsYjY,1987
+opensesame_plugins/example/example_plugin/example_plugin.md,sha256=0oBTm8pJu88bJbdrVT_4kHuP-szszKy0jPGUCLIyz1o,120
+opensesame_plugins/example/example_plugin/example_plugin.png,sha256=rwaEgMN_OI3QuXE0xIU5f8FwQCo386hUORyYhqDvna8,311
+opensesame_plugins/example/example_plugin/example_plugin.py,sha256=Q6Z1Ap54NF5XB3cPD2N88y9cuYsJTypPeBOO5ubLHkM,3750
+opensesame_plugins/example/example_plugin/example_plugin_large.png,sha256=5BfWutAQN57owqvtcW0Gqn9qro-qtk_Urj_PuThXLWI,678
+opensesame_plugin_example-0.0.1.dist-info/METADATA,sha256=NbRLCazrXVEDkRctPr1h32Si_l2wPVSo7n3EvEU-dFg,1016
+opensesame_plugin_example-0.0.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+opensesame_plugin_example-0.0.1.dist-info/RECORD,,
