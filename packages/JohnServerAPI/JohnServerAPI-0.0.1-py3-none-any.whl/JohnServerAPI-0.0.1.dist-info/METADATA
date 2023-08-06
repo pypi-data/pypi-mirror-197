@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: JohnServerAPI
+Version: 0.0.1
+Summary: This is a module to interact with Server and Client
+Author: John
+Author-email: myemail@example.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: socket
+Requires-Dist: socketserver
+Requires-Dist: ipaddress
+Requires-Dist: tkinter
+
+# Socket and SSL 
+## Create crt and key files for server and client
+Here are the steps to create a self-signed SSL/TLS certificate and private key for a server:
+
+Generate a private key for the server:
+
+
+```
+openssl genrsa -out server.key 2048
+```
+Generate a certificate signing request (CSR) for the server:
+
+```
+openssl req -new -key server.key -out server.csr
+```
+Generate a self-signed SSL/TLS certificate for the server:
+
+```
+openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+```
+
+Here are the steps to create a self-signed SSL/TLS certificate and private key for a client:
+Generate a private key for the client:
+
+```
+openssl genrsa -out client.key 2048
+```
+Generate a certificate signing request (CSR) for the client:
+
+```
+openssl req -new -key client.key -out client.csr
+```
+Generate a self-signed SSL/TLS certificate for the client:
+
+```
+openssl x509 -req -days 365 -in client.csr -signkey client.key -out client.crt```
+
+
+## share certificate files between the server and client
+Sure, here are the codes for each step:
+
+Create a new file called chain.pem and open it in a text editor:
+```
+with open('chain.pem', 'w') as f:
+    pass
+    ```
+Copy the contents of the client's SSL/TLS certificate (client.crt) into the chain.pem file:
+```
+with open('client.crt', 'r') as client_cert_file, open('chain.pem', 'a') as chain_file:
+    client_cert_contents = client_cert_file.read()
+    chain_file.write(client_cert_contents)
+```
+Copy the contents of the server's SSL/TLS certificate (server.crt) into the chain.pem file, below the client's certificate:
+```
+with open('server.crt', 'r') as server_cert_file, open('chain.pem', 'a') as chain_file:
+    server_cert_contents = server_cert_file.read()
+    chain_file.write(server_cert_contents)
+```
+Save and close the chain.pem file:
+
+
+Note that you can combine steps 2 and 3 into a single block of code, like this:
+
+```
+with open('client.crt', 'r') as client_cert_file, open('server.crt', 'r') as server_cert_file, open('chain.pem', 'w') as chain_file:
+    client_cert_contents = client_cert_file.read()
+    server_cert_contents = server_cert_file.read()
+    chain_file.write(client_cert_contents + server_cert_contents)
+```
+This code block opens both the client.crt and server.crt files, reads their contents, and writes them to the chain.pem file.
+
+## codes for server and client
+
+For Server: 
+
+```
+import ssl
+
+# Create an SSL context and load the server's certificate and private key
+ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
+ssl_context.load_cert_chain(certfile='server.crt', keyfile='server.key')
+
+# Load the certificate chain file
+ssl_context.load_verify_locations(cafile='chain.pem')
+```
+For Client
+```
+import ssl
+
+# Create an SSL context and load the client's certificate and private key
+ssl_context = ssl.SSLContext(ssl.PROTOCOL_TLS_CLIENT)
+ssl_context.load_cert_chain(certfile='client.crt', keyfile='client.key')
+
+# Load the CA file as a trusted root CA
+ssl_context.load_verify_locations(cafile='ca.crt')
+
+# Create a socket and connect to the server
+ssl_sock = ssl_context.wrap_socket(socket.socket(socket.AF_INET, socket.SOCK_STREAM))
+ssl_sock.connect((HOST, PORT))
+
+# Perform the SSL/TLS handshake and send data
+ssl_sock.sendall(b'Hello, server!')
+data = ssl_sock.recv(1024)
+
+# Close the SSL/TLS connection
+ssl_sock.close()
+```

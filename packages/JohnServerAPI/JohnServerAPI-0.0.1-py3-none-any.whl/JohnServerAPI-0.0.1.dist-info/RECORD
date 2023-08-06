@@ -1,0 +1,8 @@
+senders/JohnAuthenticationHandler_client.py,sha256=g4JoIqZZwDFiPFChaXNnU2LmzdwzcH549eseWoSchkk,1124
+senders/TCPsender.py,sha256=j-QfF6tDRRD4GiO77DGbUnT5vz4yA3TF_dEvGgFLOWE,348
+senders/UDPsender.py,sha256=5-EHpKMLxinGpsscqT7v6hRCoSWzHLzpdtR712Z9qa0,287
+senders/xmlrpc_client.py,sha256=9OHfmTXlSHeyBhboo-Yh50vNyF50jV5M_9ZQtrWXKuw,190
+JohnServerAPI-0.0.1.dist-info/METADATA,sha256=CAWWFB5_59m03ihDg1kw5JcD_SlykxKmEe_csbINgUg,3701
+JohnServerAPI-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+JohnServerAPI-0.0.1.dist-info/top_level.txt,sha256=ZbXTvBIHy06_wtGk-M1zPco3A5RXCtf-rUe91IBc1Z4,8
+JohnServerAPI-0.0.1.dist-info/RECORD,,
