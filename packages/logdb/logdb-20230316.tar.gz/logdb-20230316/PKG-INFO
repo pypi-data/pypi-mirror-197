@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: logdb
+Version: 20230316
+Summary: A simple queue - with only append/tail operations.
+Home-page: https://github.com/magicray/logdb
+Author: Bhupendra Singh
+Author-email: bhsingh@gmail.com
+License: UNKNOWN
+Description: It uses Paxos for replication. Leaderless and highly available. Uses mTLS for privacy, authentication and autorization
+Keywords: queue,paxos,pubsub,mtls
+Platform: UNKNOWN
