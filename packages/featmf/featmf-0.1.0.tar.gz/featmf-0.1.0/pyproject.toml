@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "FeatMF"
+version = "0.1.0"
+authors = [
+    { name="Avneesh Mishra", email="123avneesh+featmf@gmail.com"},
+]
+description = "A Feature Matching Framework"
+license = {file = "LICENSE"}
+readme = "README.rst"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+"Documentation" = "https://featmf.readthedocs.io/en/latest/"
+"Bug Tracker" = "https://github.com/TheProjectsGuy/FeatMF/issues"
+"Repository" = "https://github.com/TheProjectsGuy/FeatMF"
