@@ -1,0 +1,7 @@
+setup.py
+testnetdubled/__init__.py
+testnetdubled/pytoolib.py
+testnetdubled.egg-info/PKG-INFO
+testnetdubled.egg-info/SOURCES.txt
+testnetdubled.egg-info/dependency_links.txt
+testnetdubled.egg-info/top_level.txt
