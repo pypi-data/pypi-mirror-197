@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+scikit-spatial
+vg
+pytransform3d
+matplotlib
+seaborn
+jupyter
