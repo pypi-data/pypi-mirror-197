@@ -1,0 +1,9 @@
+fringes/__init__.py,sha256=xO8ePkgoL5TI6iZ8u_usCOWWEjelP4T3eJ8EVYhkxag,100
+fringes/decoder.py,sha256=P7qFjDsXY2Zt9Q0DJPzAWGRIXj8QAg_eEdgsVdUsM0c,15097
+fringes/fringes.py,sha256=ffHobedUx5Z4UjVcj4kJ2yTGyxRt-fLyk2yDpwG8YJ4,99728
+fringes/grid.py,sha256=XQv2BLH7MAZkTvDPMk-6GKb94Mn-jb0BW-vnzk8vIa8,4250
+fringes/util.py,sha256=KvLE7yrT9xQ6NtODWbZgDMpCgy2kUbnxHihy-OAbpb8,12568
+fringes-0.1.1.dist-info/LICENSE,sha256=f31gAGveKAadeDhLwyYVewa1cvt1CbdvrpcoDWjb6ik,21278
+fringes-0.1.1.dist-info/METADATA,sha256=C6OaE7OOmL74qxj3zCbSC1ir14lMV1OLhXvAq1rD5EU,25825
+fringes-0.1.1.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fringes-0.1.1.dist-info/RECORD,,
