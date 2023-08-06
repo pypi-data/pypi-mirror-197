@@ -1,0 +1,4 @@
+py7zr
+
+[sudo]
+sudo-win32-extras
