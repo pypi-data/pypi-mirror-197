@@ -1,0 +1,10 @@
+azureml/__init__.py,sha256=ybCtCrXNS3six25SvldGKjcl-9eR9CzOMgoUjbRBdBQ,249
+azureml/acft/__init__.py,sha256=ybCtCrXNS3six25SvldGKjcl-9eR9CzOMgoUjbRBdBQ,249
+azureml/acft/contrib/__init__.py,sha256=ybCtCrXNS3six25SvldGKjcl-9eR9CzOMgoUjbRBdBQ,249
+azureml/acft/contrib/hf/__init__.py,sha256=ybCtCrXNS3six25SvldGKjcl-9eR9CzOMgoUjbRBdBQ,249
+azureml/acft/contrib/hf/nlp/__init__.py,sha256=ybCtCrXNS3six25SvldGKjcl-9eR9CzOMgoUjbRBdBQ,249
+azureml_acft_contrib_hf_nlp-0.0.0b1.dist-info/LICENSE.txt,sha256=FOfkEEz4uS7g278F9Rq12rqKF3lLyBUZhVpLetuZrTg,1021
+azureml_acft_contrib_hf_nlp-0.0.0b1.dist-info/METADATA,sha256=lXFhD2LJUpSjlBuVl7s82-A2M7YMKHk0ljLltgmCFU4,413
+azureml_acft_contrib_hf_nlp-0.0.0b1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+azureml_acft_contrib_hf_nlp-0.0.0b1.dist-info/top_level.txt,sha256=ZOeEa0TAXo6i5wOjwBoqfIGEuxOcKuscGgNSpizqREY,8
+azureml_acft_contrib_hf_nlp-0.0.0b1.dist-info/RECORD,,
