@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: socianAuthPySDK
+Version: 0.1.8
+Summary: socianAuthPySDK test publish.
+Home-page: UNKNOWN
+Author: socian
+Author-email: contact@socian.ai
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.27.1)
+
+pip install socianAuthPySDK
+
+
+import socianAuthPyTest
+
+socian_auth = socianAuthPyTest.authSDK()
+test_data = socian_auth.test(5,2)
+
+print(test_data)
+
