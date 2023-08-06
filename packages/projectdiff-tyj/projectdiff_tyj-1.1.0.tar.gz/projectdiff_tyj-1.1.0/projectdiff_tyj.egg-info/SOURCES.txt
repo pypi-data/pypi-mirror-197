@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+merge_project_diff/__init__.py
+merge_project_diff/__main__.py
+merge_project_diff/manifest_diff.py
+merge_project_diff/merge_project_files.py
+merge_project_diff/merge_public.py
+merge_project_diff/merge_xml_diff.py
+projectdiff_tyj.egg-info/PKG-INFO
+projectdiff_tyj.egg-info/SOURCES.txt
+projectdiff_tyj.egg-info/dependency_links.txt
+projectdiff_tyj.egg-info/entry_points.txt
+projectdiff_tyj.egg-info/top_level.txt
