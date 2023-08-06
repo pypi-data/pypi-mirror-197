@@ -1,0 +1,16 @@
+from functools import wraps
+
+from django_namespaces.conf import settings
+
+
+def namespace_required(view_func):
+    @wraps(view_func)
+    def _wrapped_view(request, *args, **kwargs):
+        if not hasattr(request, 'namespace'):
+            template = loader.get_template(settings.DJANGO_NAMESPACE_WARNING_TEMPLATE)
+            return HttpResponse(template.render({}, request))
+        if not request.namespace:
+            template = loader.get_template(settings.DJANGO_NAMESPACE_WARNING_TEMPLATE)
+            return HttpResponse(template.render({}, request))
+        return view_func(request, *args, **kwargs)
+    return _wrapped_view
