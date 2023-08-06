@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sciml/__init__.py
+sciml/pipelines.py
+sciml/utils.py
+sciml.egg-info/PKG-INFO
+sciml.egg-info/SOURCES.txt
+sciml.egg-info/dependency_links.txt
+sciml.egg-info/top_level.txt
