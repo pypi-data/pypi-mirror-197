@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: strbuilder
+Version: 1.1.3
+Summary: A simple string builder
+Home-page: https://github.com/am230/strbuilder
+Author: am230
+Author-email: am.230@outlook.jp
+License: MIT Licence
+Keywords: builder
+Platform: any
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# A simple string builder
+
+## sample
+
+```python
+from strbuilder import Builder, SurroundBuilder
+
+condition = False
+
+print(
+Builder('base', separator='\n')
+.write('header')
+.write(Builder(separator=', ')
+.write('aaa')
+.write_if(condition, 'bbb')
+.write_if(condition, 'ccc', or_else='ddd'))
+.write(SurroundBuilder(surround='{}')
+.write('surrounded!'))
+.write('footer')
+.build()
+)
+```
+
+## output
+
+```txt
+base
+header
+aaa, ddd
+{surrounded!}
+footer
+```
