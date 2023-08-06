@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+talbots/__init__.py
+talbots/bibtex.py
+talbots/download.py
+talbots/extraction.py
+talbots/filters.py
+talbots/paths.py
+talbots.egg-info/PKG-INFO
+talbots.egg-info/SOURCES.txt
+talbots.egg-info/dependency_links.txt
+talbots.egg-info/requires.txt
+talbots.egg-info/top_level.txt
