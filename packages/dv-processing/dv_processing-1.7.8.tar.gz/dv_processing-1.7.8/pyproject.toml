@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "numpy",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.cibuildwheel.linux]
+archs = ["x86_64", "i686", "aarch64"]
+skip = "*musllinux*"
+manylinux-x86_64-image = "registry.gitlab.com/inivation/infra/docker-files/manylinux2014_x86_64_ini:latest"
+manylinux-i686-image = "registry.gitlab.com/inivation/infra/docker-files/manylinux2014_i686_ini:latest"
+manylinux-aarch64-image = "registry.gitlab.com/inivation/infra/docker-files/manylinux2014_aarch64_ini:latest"
+manylinux-pypy_x86_64-image = "registry.gitlab.com/inivation/infra/docker-files/manylinux2014_x86_64_ini:latest"
+manylinux-pypy_i686-image = "registry.gitlab.com/inivation/infra/docker-files/manylinux2014_i686_ini:latest"
+manylinux-pypy_aarch64-image = "registry.gitlab.com/inivation/infra/docker-files/manylinux2014_aarch64_ini:latest"
+
+[tool.cibuildwheel.windows]
+before-build = "pip install delvewheel"
+repair-wheel-command = "delvewheel repair -w {dest_dir} {wheel}"
