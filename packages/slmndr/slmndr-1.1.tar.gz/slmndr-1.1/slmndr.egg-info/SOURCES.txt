@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+slmndr.egg-info/PKG-INFO
+slmndr.egg-info/SOURCES.txt
+slmndr.egg-info/dependency_links.txt
+slmndr.egg-info/requires.txt
+slmndr.egg-info/top_level.txt
