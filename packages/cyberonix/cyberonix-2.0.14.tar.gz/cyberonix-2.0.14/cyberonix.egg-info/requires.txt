@@ -1,0 +1,5 @@
+beautifulsoup4
+requests
+ipwhois
+dnspython==2.3.0
+selenium==4.7.2
