@@ -1,0 +1,5 @@
+src/thonnycontrib/pololu-3pi-2040-robot/__init__.py,sha256=Cy8BGPSzFfPWsGKT7PEHzdtwf0gFW2pi61bqvzrCvSU,2401
+thonny_pololu-0.0.2.dist-info/METADATA,sha256=V_DxhD7yu2tw1jV-QRzAx0oe56l3lqT1HGJbRX0IyRU,833
+thonny_pololu-0.0.2.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+thonny_pololu-0.0.2.dist-info/licenses/LICENSE.txt,sha256=7Ccs7lilEOSD-PetYfZPJ4M8bmMDuRReCRQMNuysPfw,1102
+thonny_pololu-0.0.2.dist-info/RECORD,,
