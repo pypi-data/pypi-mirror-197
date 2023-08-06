@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+elleneiapdf/__init__.py
+elleneiapdf/pdf2image.py
+elleneiapdf/pdf2text.py
+elleneiapdf.egg-info/PKG-INFO
+elleneiapdf.egg-info/SOURCES.txt
+elleneiapdf.egg-info/dependency_links.txt
+elleneiapdf.egg-info/top_level.txt
