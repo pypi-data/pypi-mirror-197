@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: gaia_var
+Version: 0.9.3
+Summary: Gaia variability utility packages
+Author: Maja Jablonska
+Author-email: majajjablonska@gmail.com
+
+Package providing utility functions
+    such as downloading the lightcurves and variability tables.
