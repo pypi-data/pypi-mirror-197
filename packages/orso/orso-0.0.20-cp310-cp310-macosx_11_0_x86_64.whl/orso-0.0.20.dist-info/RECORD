@@ -1,0 +1,17 @@
+cbitarray.cpython-310-darwin.so,sha256=R-Tqs5Q6eeZAPAuMJEimgZ9PjVd80whQXWa80ayUOCI,177548
+cityhash.cpython-310-darwin.so,sha256=B9ZqIxlfiGDLyTX3o72WjrefM6zbm30-SxA3euSdWio,195851
+orso/__init__.py,sha256=iouAxY85btQbcfoY9EOjenCl7lAJ8xdXEkdi09Vd5T4,54
+orso/_tools.py,sha256=tnFM6FKGEI_7gO-rrzviYoMkKjNKcYMeW8dL_n4_8LM,629
+orso/converters.py,sha256=zr9qqK7xpBM0ZqRyhK0Wo33040VThco5JcdYIsPFvX0,3809
+orso/dataframe.py,sha256=7dAr-5eaFTUSFGHBrz0cGK7E8KWAHN5K-0a8fyQ2u8I,7200
+orso/display.py,sha256=7490Ud6iDQThiwvQ_RdDL4jXLoCsOGgeqQjuYYEqpvU,8261
+orso/exceptions.py,sha256=UnV6-XHi8jS-5400jaNLksrgvhZaPLZtBldNJgOxU-Y,806
+orso/row.py,sha256=60Zwra1typHk9VTMxkZuzWIZoevosWYb7zDFhdMYWog,2673
+orso/version.py,sha256=XqgFhIMcashJYvYcr2UZr500LHTVvKTLZmVJTpvqX1U,601
+orso/bitarray/__init__.py,sha256=UY91QvT9RmqXHfzkKjWw96WlM6DgeOKtbZF-UwjlTso,31
+orso/cityhash/__init__.py,sha256=7Qob8vSa3JtxQDeT7MDYbfG_Drm4-nA2PcrocAAbNeo,64
+orso-0.0.20.dist-info/LICENSE,sha256=5BC_pasqk78lx9EWpHRsHBcgW3yYyTIpjGvZlh6O0hY,11346
+orso-0.0.20.dist-info/METADATA,sha256=tzAZKj79RacKEqhDSuJTKRyJtD2B9Gxw0FUg5VJv32Y,1890
+orso-0.0.20.dist-info/WHEEL,sha256=tNYyggI0QC5GD4MVHQuiVTUUU_cLi9bibpSukmwhhdM,111
+orso-0.0.20.dist-info/top_level.txt,sha256=5hHudg6Ynxccj3n_yT-uzKl8PRvoKnfVqVpS9I570Lw,24
+orso-0.0.20.dist-info/RECORD,,
