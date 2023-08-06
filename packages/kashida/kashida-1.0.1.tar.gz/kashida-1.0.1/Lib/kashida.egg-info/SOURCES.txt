@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+Lib/kashida/__init__.py
+Lib/kashida.egg-info/PKG-INFO
+Lib/kashida.egg-info/SOURCES.txt
+Lib/kashida.egg-info/dependency_links.txt
+Lib/kashida.egg-info/top_level.txt
+tests/test_kashida.py
