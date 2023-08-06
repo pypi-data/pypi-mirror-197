@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qiuying
+Version: 0.0.1
+Summary: A plain, simple and this-is-the-way library for RPA developing.
+Home-page: https://github.com/qiuying-rpa/qiuying
+Author: Allen Tao, Ziqiu Li
+Author-email: allen@tkzt.cn, lcmail1001@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Qiuying RPA
+
+A plain, simple and this-is-the-way library for RPA developing.
+
+## Functions
+
+- web
+- excel
