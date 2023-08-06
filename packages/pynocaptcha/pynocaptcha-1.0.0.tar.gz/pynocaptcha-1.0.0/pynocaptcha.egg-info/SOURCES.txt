@@ -1,0 +1,8 @@
+README.md
+setup.py
+pynocaptcha/__init__.py
+pynocaptcha.egg-info/PKG-INFO
+pynocaptcha.egg-info/SOURCES.txt
+pynocaptcha.egg-info/dependency_links.txt
+pynocaptcha.egg-info/not-zip-safe
+pynocaptcha.egg-info/top_level.txt
