@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: utf64
+Version: 0.0.1
+Summary: Codec for UTF-64, a base64-like format for Unicode text
+Author-email: Iain Merrick <iain@moreplease.com>
+Requires-Python: >=3.3
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Project-URL: Home, https://github.com/more-please/utf64
