@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: metroscore
+Version: 0.1.1
+Home-page: https://github.com/agupta01/metroscore
+Author: Arunav Gupta
+Author-email: centaurus.ab@gmail.com
+License: Apache
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE
+
+# metroscore
