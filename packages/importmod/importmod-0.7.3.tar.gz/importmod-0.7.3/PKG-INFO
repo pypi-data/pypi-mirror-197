@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: importmod
+Version: 0.7.3
+Summary: A CLI tool to import mods into the Portmod repository format
+Home-page: https://gitlab.com/portmod/importmod
+Author: Portmod Authors
+License: GPLv3
+Requires-Python: >=3.7
+License-File: LICENSE

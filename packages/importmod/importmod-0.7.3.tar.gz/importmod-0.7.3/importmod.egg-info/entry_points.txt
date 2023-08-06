@@ -1,0 +1,2 @@
+[console_scripts]
+importmod = importmod_core.main:main

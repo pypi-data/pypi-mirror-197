@@ -1,0 +1,14 @@
+portmod>=2.4
+gitpython
+requests
+redbaron
+isort>=5.0.0
+black
+beautifulsoup4
+pygithub
+python-gitlab
+ruamel.yaml
+pypi-simple
+virtualenv
+tomlkit
+prompt_toolkit
