@@ -1,0 +1,10 @@
+torch
+numpy
+open3d
+arm-pytorch-utilities
+multidim-indexing
+pytorch-kinematics
+
+[test]
+pytest
+pybullet
