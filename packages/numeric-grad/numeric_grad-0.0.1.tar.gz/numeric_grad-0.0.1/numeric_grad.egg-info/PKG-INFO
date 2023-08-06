@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: numeric-grad
+Version: 0.0.1
+Summary: Small library for computing gradients of functions that are commonly used in Machine Learning and Deep Learning.
+Home-page: https://github.com/anil-gurbuz/numeric_grad
+Author: Anil Gurbuz
+Author-email: anlgrbz91@gmail.com
+License: MIT
+Keywords: Deep learning,Machine Learning,Gradient,Backpropagation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Numeric Gradients
+Small library for computing gradients of functions that are commonly used in Machine Learning and Deep Learning.
+
+
+## Acknowledgements
+This library is originated from [micrograd](https://github.com/karpathy/micrograd) implementation and extended to support more functions.
+
+
+## Installation
+```bash
+pip install numeric_gradients
+```
+
+##
