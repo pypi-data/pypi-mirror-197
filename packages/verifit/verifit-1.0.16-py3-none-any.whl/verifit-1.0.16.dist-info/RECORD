@@ -1,0 +1,14 @@
+verifit/__init__.py,sha256=f37dT-gas1_8rsB5Q-agwOqcwqAnK2OuGxSVfy5WpZA,161
+verifit/cache.py,sha256=cw9F1hEwaNYjXzCMVUUKh46IJ7Rz4piZslRM8p5uXGY,1438
+verifit/config.py,sha256=LZa7rq3ATQoSTUSdEIdrRj8f1UGERcqMeSxapGx4d98,671
+verifit/date_and_time.py,sha256=eIjWZueuHDxncDgdGVtIqH6y-pY01NDRVeh3pye8xlE,635
+verifit/driver.py,sha256=uulLQClqZkw7uA2sbEZOKSI6ajMs0oQs5g2pAPId6QI,1127
+verifit/iam_token.py,sha256=9QkFLmRpqLXlSiva7Vd8z-ZuVnYgJ8sbf9SLggnqB74,441
+verifit/login.py,sha256=bz_-FTeBlCPgUjZjpnPCwhwGlY3R2GCO2E3gRS9VvaQ,4089
+verifit/memoize.py,sha256=XFanp17EFsRItA-xugEDE0UV-WGP4aKKr6moGPMV-aE,378
+verifit/web_sockets.py,sha256=Ln_ifLneigGtdu_NfxbskEm4FmJU8riDaJ0YLnXbvvc,2043
+verifit-1.0.16.dist-info/LICENSE,sha256=9Ts2kE8HT-4K9zrodwiHfOiR62nf9GfCRJdTgPr32Zs,1067
+verifit-1.0.16.dist-info/METADATA,sha256=OCM3RsFULwUMDcAxiBZzjUxcjjvrT05JB_1PK63BxH8,20101
+verifit-1.0.16.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+verifit-1.0.16.dist-info/top_level.txt,sha256=njDwbtPMPZ_7sRdoOIv8jZoG2-Y_LfQrIziOPojk8Ss,8
+verifit-1.0.16.dist-info/RECORD,,
