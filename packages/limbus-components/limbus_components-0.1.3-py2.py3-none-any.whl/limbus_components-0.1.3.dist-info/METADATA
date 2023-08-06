@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: limbus-components
+Version: 0.1.3
+Summary: Components to be used with limbus.
+Home-page: https://github.com/kornia/limbus-components
+Author: Luis Ferraz
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: limbus (>=0.1.4)
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: kornia
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-flake8 ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-mypy ; extra == 'dev'
+Requires-Dist: pytest-pydocstyle ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: flake8 (<5.0.0) ; extra == 'dev'
+Requires-Dist: pep8-naming ; extra == 'dev'
+
+# Limbus-Components: Set of basic components for Limbus
+
+[![CI](https://github.com/kornia/limbus-components/actions/workflows/ci.yml/badge.svg)](https://github.com/kornia/limbus-components/actions/workflows/ci.yml)
+
+This package is part of [Limbus](https://github.com/kornia/limbus) and contains a bunch of useful components.
+
+## Installation
+
+This package can be automatically installed by Limbus. If you want to install it manually, you can do it with:
+
+```bash
+git clone https://github.com/kornia/limbus-components
+cd limbus-components
+pip install -e .
+```
+
+For development purposes, you can install it with:
+
+```bash
+pip install -e .[dev]  # also installs limbus
+```
+
+### Dev Requirements
+
+To add new components that must be done in the folder `limbus_components_dev` and then in order to release the changes you must run the the `release` script.
+
+All the `__init__.py` files inside the folder `limbus_components_dev` must have the imports following the next patterns:
+
+```python
+    from . import <component_module>  # to import modules
+    from .<component_module> import <component_class0>, <component_class1>, ...  # to import components
+    # IMPORTANT NOTE: imports with () are not allowed
+```
+
+if they are not following these patterns, the `release` script will fail. Check examples in the folder `limbus_components_dev`.
