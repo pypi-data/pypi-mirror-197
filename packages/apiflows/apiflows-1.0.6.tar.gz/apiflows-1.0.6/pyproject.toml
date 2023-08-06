@@ -1,0 +1,18 @@
+[project]
+name = "apiflows"
+version = "1.0.6"
+authors = [
+  { name="Allen", email="aiddroid@gmail.com" },
+]
+description = "A yaml data-drive HTTP API testing tools."
+readme = "README.md"
+requires-python = ">=3.5"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/aiddroid/apiflows"
+"Bug Tracker" = "https://github.com/aiddroid/apiflows"
