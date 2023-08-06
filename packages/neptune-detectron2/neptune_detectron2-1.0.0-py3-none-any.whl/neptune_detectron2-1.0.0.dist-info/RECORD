@@ -1,0 +1,8 @@
+CHANGELOG.md,sha256=2Vv2ZC5H67mtwwcSWVvOw91iOGvGz0fiUsD4A5dSFz0,1382
+neptune_detectron2/__init__.py,sha256=ELvLJdnVJVNwIs1apJE6NZ-QjuEKljXmSB3IdtbYl2s,724
+neptune_detectron2/impl/__init__.py,sha256=vWXKXzY4atxEOLtf7wLKhcgL7zRjA9z22jKARXvp2k8,6666
+neptune_detectron2/impl/version.py,sha256=k1fP1kU_tmb2pOdd8KUC4qQeG96hpcIuvJOr4jXIAuA,739
+neptune_detectron2-1.0.0.dist-info/LICENSE,sha256=eflwnyAc4dmNFtHIFCk_Y3QtgOGz9x_fey1CuqALPw8,11354
+neptune_detectron2-1.0.0.dist-info/METADATA,sha256=j2KOxSnC8XTi68YZjaLxQZV8cwrcWQ__PqMx_QHRrRY,2164
+neptune_detectron2-1.0.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+neptune_detectron2-1.0.0.dist-info/RECORD,,
