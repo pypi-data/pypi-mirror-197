@@ -1,0 +1,17 @@
+funml/__init__.py,sha256=-qDbwLd1Y3xXBm9mfa5fSDDgtRD36cNnD0-UC_NpSOE,1902
+funml/data/__init__.py,sha256=M8-S5YnfWoK15CJux8Ioo1tXlK7j2Mu-f62w1owAnAk,35
+funml/data/enum.py,sha256=kuVjqEppjdMdf0JzE3wDJ9rtQeQvLGSrIj7B9oWTrnE,7450
+funml/data/lists.py,sha256=ZlkDDhX2fpKnUY1c_EjPHvY4Ua2hKgAMVK2BFehB5RI,12352
+funml/data/monads.py,sha256=WUmRA4DRA8lH0Sa32sUEGoAzpE_wn0gooK6Aa5j3VHM,11472
+funml/data/records.py,sha256=l5sBa2dgw-qOZt59QRQGjRIViTLxsqeU3RwzD-WyPOk,10416
+funml/errors.py,sha256=4rlIMW55SUd4GyJSo7sOzzUUu1cbihxEpW9v_27Mh2Q,365
+funml/expressions.py,sha256=xAIbY_D0EmUZHLO9E5GE9jMR9Im8xSJIb1CD9SSNs4U,957
+funml/json.py,sha256=BvX_iMsHZA6MRuu4TyCAQyrkf8XmJfnbsRzmoxLH4SM,12427
+funml/pattern_match.py,sha256=ziKP-aXblD4rUiMahJIc4VDM-xd5IewhPd3tQU-GGPI,1340
+funml/pipeline.py,sha256=YMtMbJUQ9G7XbLoGsDa-o0E_tnZQYuNW8F7zP4hLoYo,906
+funml/types.py,sha256=NyT34zONkB2ZlrBrHQ4SUEmrXI7n0-OWg0tM-mW_gqA,13688
+funml/utils.py,sha256=VTOJnJ0fThzwWdbvM3UZlc3lgg-C4tAJcrxKjxORCpY,3422
+funml-0.3.17.dist-info/LICENSE,sha256=aplW1wCJu2M7e6HQFMfUSDOu1muuq1NuvKi1ttP9q-A,1072
+funml-0.3.17.dist-info/METADATA,sha256=52F3TOmd0OomA5BEh6UKMM3GbdBCDb0sqpT3GYSODVA,9125
+funml-0.3.17.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+funml-0.3.17.dist-info/RECORD,,
