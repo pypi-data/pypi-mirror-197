@@ -1,0 +1,14 @@
+pytorch-lightning==2.0.0rc0
+
+[examples]
+jsonargparse[signatures]
+
+[test]
+codecov>=2.1
+coverage>=5.0
+mypy==1.0.1
+pytest-cov
+pytest-forked==1.4.0
+pytest>=6.0
+scikit-learn<1.2.1,>0.22.1
+torchmetrics<0.11.0,>=0.8.0
