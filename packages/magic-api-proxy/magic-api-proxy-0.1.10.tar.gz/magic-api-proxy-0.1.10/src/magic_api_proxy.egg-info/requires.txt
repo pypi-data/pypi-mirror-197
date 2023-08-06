@@ -1,0 +1,7 @@
+google-auth
+flask
+cryptography
+attrs
+requests
+aiohttp
+pyopenssl
