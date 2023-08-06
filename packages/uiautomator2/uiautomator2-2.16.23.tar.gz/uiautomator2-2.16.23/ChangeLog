@@ -1,0 +1,16 @@
+CHANGES
+=======
+
+2.16.23
+-------
+
+* update adbutils rep
+* Addresses issue #823 in owner repo. (#870)
+* Update README.md
+* Update README.md
+* update sponsors information
+* fix gateway init error
+* change reset\_uiautomator raise error from OSError to GatewayError
+* add searching apk from cwd assets directory. (#845)
+* update adbutils to 1.0.9
+* 修复 arm64-v8a 机器无法正常启动 atx agent问题 (#801)
