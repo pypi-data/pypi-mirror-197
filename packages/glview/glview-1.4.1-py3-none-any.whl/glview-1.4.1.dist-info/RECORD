@@ -1,0 +1,15 @@
+glview/__init__.py,sha256=6qYGm5PNP59vy9fCl3A70OGG_wtSWQr7lYq6cZZY9MA,322
+glview/argv.py,sha256=HQjXpTqr6yDLkpmnp-miv4c3Ypd6BXUMEpIx573Qars,15417
+glview/glrenderer.py,sha256=yjpWafABd-P9ty5D4bOZ2k4ngh0j2qiLRlayi_B4OSY,10110
+glview/glview.py,sha256=DWcn9ubtCFeWikXFzc8AjW9GMXeE0CwkBwHAI_stC0o,7748
+glview/imageprovider.py,sha256=cytMSbgzvFdMif3XGW7OH5KEUEdt82N_FhYYgVD2I7E,6950
+glview/panzoom.vs,sha256=haiKW-WVN0eQowdm_OsGp83t4hxyAkLROSTFUH1HpP4,285
+glview/pygletui.py,sha256=92KjZesWVPBdM3esyt7Zp6vKjuVZsgWMSww6GzQBeuM,16148
+glview/texture.fs,sha256=KInS87pVTZ_zeNtbgOpPeuDE6nR06yU3LHTarXz1Vp8,1728
+glview-1.4.1.dist-info/LICENSE,sha256=bSIARDN4zEJfvbGbb_R1iMr2Rcs_OBARPmavhGXhADw,1068
+glview-1.4.1.dist-info/METADATA,sha256=hfuKIg5ZhUQtfX1fdfAKuvp78VH_SYY53j4VQ9zM_-M,1098
+glview-1.4.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+glview-1.4.1.dist-info/entry_points.txt,sha256=WqApSTratj6vDJhkk9HXszduF9gBUKyuCfWPJWoIMYI,40
+glview-1.4.1.dist-info/top_level.txt,sha256=sWkqOMLeCMR7gAAvItGtTB9CrPRb-yBzw2PbMVoIuFk,7
+glview-1.4.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+glview-1.4.1.dist-info/RECORD,,
