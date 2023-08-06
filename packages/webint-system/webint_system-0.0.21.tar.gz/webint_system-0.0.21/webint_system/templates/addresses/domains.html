@@ -1,0 +1,19 @@
+$def with (ip_address, domain, records)
+$var title: $domain
+
+$# ip_address == records["A"][0]:
+$if True:
+    <form method=post action=/addresses/domains>
+    <input type=hidden name=domain value=$domain>
+    <button>Add domain</button>
+    </form>
+$else:
+    <p>This machine's IP address does not match this domain's IP address.</p>
+
+$# <p>This machine's address: $ip_address</p>
+$# <p>Domain's address: $records["A"][0]</p>
+
+$if "CNAME" in records:
+    <p>$records["CNAME"][0]</p>
+$# <p>$records["MX"][0]</p>
+$# <p>$records["NS"][0]</p>
