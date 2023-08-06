@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: pritunl-api
+Version: 1.0.3
+Summary: Pritunl API Client for Python
+License: MIT
+Author-email: Nathaniel Varona <nathaniel.varona+pypi@gmail.com>
+Requires-Python: >=3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Systems Administration
+Provides-Extra: repl
+Project-URL: Documentation, https://github.com/nathanielvarona/pritunl-api-python
+Project-URL: Downloads, https://github.com/nathanielvarona/pritunl-api-python
+Project-URL: Homepage, https://github.com/nathanielvarona/pritunl-api-python
+Project-URL: Source, https://github.com/nathanielvarona/pritunl-api-python
+Project-URL: Tracker, https://github.com/nathanielvarona/pritunl-api-python
+Description-Content-Type: text/markdown
+
+# Pritunl API client for Python 3
+
+This is a simple api client written in Python 3. View example in
+example.py.
+Python 2 is not supported. You need to refer Pritunl api doc to get the
+idea on how to use this.
+
+Basically this api client use almost same command like in the doc.
+For example:
+
+
+## Quick Usage
+
+```bash
+import os
+
+from pritunl_api import Pritunl
+
+PRITUNL_BASE_URL = os.environ.get('PRITUNL_BASE_URL')
+PRITUNL_API_TOKEN = os.environ.get('PRITUNL_API_TOKEN')
+PRITUNL_API_SECRET= os.environ.get('PRITUNL_API_SECRET')
+
+pritunl = Pritunl(
+    url=PRITUNL_BASE_URL,
+    token=PRITUNL_API_TOKEN,
+    secret=PRITUNL_API_SECRET
+    )
+
+```
+
+## Example
+
+* Example 1
+
+  [(in source)](https://github.com/pritunl/pritunl-web/blob/master/handlers/server.go#L9-L30) `GET /server/:server_id`
+
+  ```python
+  pritunl.server.get()
+  ```
+
+* Example 2
+
+  [(in source)](https://github.com/pritunl/pritunl-web/blob/master/handlers/server.go#L140-L150) `PUT /server/:server_id/organization/:organization_id`
+
+  ```python
+  pritunl.server.put(srv_id='', org_id='')
+  ```
+
+* Example 3
+
+  [(in source)](https://github.com/pritunl/pritunl-web/blob/master/handlers/user.go#L142-L152) `DELETE /user/:organization_id/:user_id`
+
+  ```python
+  pritunl.user.delete(org_id='', usr_id='')
+  ```
+
+* Example 4
+
+  [(in source)](https://github.com/pritunl/pritunl-web/blob/master/handlers/server.go#L81-L97) `POST /server**`
+
+  ```python
+  pritunl.server.post(data={
+    'name': 'new server name'})
+  ```
+
+   \* _If there is data available, you must pass it through data parameter._
+
+   \* _Command above works well because there are template available for
+   creating a new server._
+
+* Example 5
+
+  [(in source)](https://github.com/pritunl/pritunl-web/blob/master/handlers/user.go#L122-L140) `PUT /user/:organization_id/:user_id`
+
+  ```python
+  api.user.put(org_id='', usr_id='', data={
+    'name': 'modified org name',
+    'disabled': True})
+  ```
+
+
+## Installation
+
+```bash
+pip install pritunl-api
+```
+
+Include REPL Tools
+
+```bash
+pip install pritunl-api[repl]
+```
+
+## API Development
+
+### Docker Environment
+
+Building a Development Container
+```sh
+docker buildx build . \
+  --progress plain \
+  --file dev.Dockerfile \
+  --tag pritunl_api:development
+```
+
+Running a Development Container
+
+```sh
+docker run --rm -it \
+  --volume $(PWD):/pritunl-api \
+  --env-file EnvironmentFile \
+  pritunl_api:development
+```
+
+***
+This api client is not fully complete. There are some features missing,
+feel free to fork and pull request to add new features.
+
+Tested working on **`Pritunl v1.30.3354.99`**.
+
