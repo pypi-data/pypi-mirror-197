@@ -1,0 +1,12 @@
+autotranscribe/__init__.py,sha256=epPoq5X92c3jUhHni6PK6VFkhHm37KUEpU0gFOjhAQw,70
+autotranscribe/advanced.py,sha256=ghGbK_EP9Goeed2YCLJF-XU08OE3z4tsAhMzf2eoTNg,762
+autotranscribe/setup.py,sha256=sT3U4qdw-8RJLzW7WiQu482lIj1cmFQHhpfDaK12aA4,247
+autotranscribe/splitter.py,sha256=KHMxe4nPlFGD6BRRl40X8uts6iyBNz7KiXbd_wTGG74,445
+autotranscribe/transcribe_cli.py,sha256=qhItfbSIGgwgeuib_WX8_ZWa65jFivFBux5jYFq_N8o,2625
+autotranscribe/transcriber.py,sha256=4nZtABX1DRoLQXrLWvEwRmBs4d6RMu9bO5XygFPQCss,2702
+autotranscribe/videoproc.py,sha256=XDPEYjwwQRKIDeKQhvR43PMfC1-EjYD0HtaZ-M1MOMQ,670
+autotranscribe-0.0.5.dist-info/LICENSE,sha256=tvkmFKxB4YUU07wK2gnfmU_MEMWjIelOegA3oojH-wY,1072
+autotranscribe-0.0.5.dist-info/METADATA,sha256=jcR2pn64dTotsPvDAid5aRJHZaxHGVCLmiyb6YwMyXs,1330
+autotranscribe-0.0.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+autotranscribe-0.0.5.dist-info/top_level.txt,sha256=dnHN8W17ZSue55w6iRFcYMKlJzFjpp2362KJHXGm_7w,15
+autotranscribe-0.0.5.dist-info/RECORD,,
