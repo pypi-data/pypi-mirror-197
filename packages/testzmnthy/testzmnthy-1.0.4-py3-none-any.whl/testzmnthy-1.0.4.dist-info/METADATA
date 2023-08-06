@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: testzmnthy
+Version: 1.0.4
+Summary: test zmn
+Home-page: UNKNOWN
+Author: tianheyi
+Author-email: 485280869@qq.com
+Maintainer: tianheyi
+Maintainer-email: 485280869@qq.com
+License: apache 3.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests
+
+UNKNOWN
+
