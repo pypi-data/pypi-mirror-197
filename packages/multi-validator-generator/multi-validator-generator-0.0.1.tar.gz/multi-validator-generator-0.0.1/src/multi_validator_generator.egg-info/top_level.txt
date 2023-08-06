@@ -1,0 +1,11 @@
+__init__
+bank_card
+cnpj
+cpf
+date
+emails
+fake_data
+fone_number
+passport
+password
+url
