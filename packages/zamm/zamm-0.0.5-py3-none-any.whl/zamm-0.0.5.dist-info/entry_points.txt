@@ -1,0 +1,3 @@
+[console_scripts]
+zamm=zamm.cli:app
+
