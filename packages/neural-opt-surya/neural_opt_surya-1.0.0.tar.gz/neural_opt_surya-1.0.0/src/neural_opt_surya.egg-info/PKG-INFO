@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: neural-opt-surya
+Version: 1.0.0
+Summary: My package short description
+Home-page: https://github.com/me/packaging_tutorial
+Author: Surya
+Author-email: my_email@email.address
+License: MIT License
+Keywords: keyword_1,keyword_2
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# neural_opt
+Tools for analyzing the optimization dynamics in neural reparameterization of objectives
+
+The tools used here as derived from the following repositories
+- Hoyer
+- PyHessian
+- GradVis
+
+The available tools are:
+1. Visualization of loss landscapes
+  - Linear interpolation plots
+  - 2D random filter normalized plots
+  - 2D Hessian eigenvector / PCA component plots
+  - t-SNE (To be done)
+2. Hessian based tools
+  - Hessian trace and frobenius norm
+  - Eigenvalue Density Spectrum
+  - Hessian top & Bottom k eigenvalues and their combinations
+3. Trajectory based tools
+  - Angles between various important directions (gradient, minima direction, successive steps etc.)
+  - Distance travelled by optimizer
+
+Apart from these tools, two optimizers derived from L-BFGS (Hessian descent and Gradient descent with line_search) are available
+
+Note:
+In order to save the weights of the model when using L-BFGS, a script has to be added to the lbfgsb.py file in your environment's Scipy package file.
