@@ -1,0 +1,38 @@
+[project]
+name = "yoyox"
+version = "2023.03.16.0"
+authors = [
+    { name = "Chris Halbersma", email = "chris@halbersma.us" },
+]
+description = "A fork of yoyo that's designed to support the 3.10+ python versions, you probably shoul not use this"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Environment :: Console",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Software Development :: Version Control"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+
+
+[options]
+packages = [
+    "yoyo",
+    "yoyo.scripts",
+    "yoyo.internalmigrations"
+]
+install_requires = [
+    "text-unidecode",
+    "iniherit>=0.0.3",
+    "tabulate>=0.9.0"
+]
+
+[options.entry_points]
+console_scripts = [
+    { "yoyo" = "yoyo.scripts.main:main" },
+    { "yoyo-migrate" = "yoyo.scripts.main:main" }
+]
