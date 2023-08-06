@@ -1,0 +1,15 @@
+adsctl/__about__.py,sha256=clRY643pas9ltA8_bdFJ_0YlgoOPe0jlNXCD93vUO-o,141
+adsctl/__init__.py,sha256=kikFhfGd9FIEqYjbkFztpkTdU1_oZGoQW36BqfJfR1k,119
+adsctl/prompt.py,sha256=k1eKqVReUFh8QIF0Waf6uSZl48iI50lcZ0B7eGP_CQw,2909
+adsctl/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adsctl/cli/auth.py,sha256=2zeoGt2cXsh-tBTPuDr7zkGgdviisCSnUiCPXEATNus,5053
+adsctl/cli/cli.py,sha256=kBq1EfkDgcFoC8ImglytPr5ADtVC5uubHRoVO2o-YWQ,925
+adsctl/cli/utils.py,sha256=jMA7w34LIcuekg4TWcoD3KLzq3strRjenznZeDJbmA4,258
+adsctl/cli/edit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adsctl/cli/edit/edit.py,sha256=oOS3SMcVwoUZHCMw7tyrer4m5XH8ySpOSM8JCEyTCPY,2171
+adsctl/cli/edit/campaign/budget.py,sha256=ZFHkSNNA4tG2i5F3enlHTT9_nzk5leFLVew9mdNOv4U,1795
+adsctl-0.1.0.dist-info/METADATA,sha256=gF7dURjVOGea9rXXWnvo2DkD4GOQzxajefL2RW2u7JY,2502
+adsctl-0.1.0.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+adsctl-0.1.0.dist-info/entry_points.txt,sha256=zYEuQl3HXNkhHLj57TFUnuEcieW0rcO6I6h55_P-RRY,73
+adsctl-0.1.0.dist-info/licenses/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+adsctl-0.1.0.dist-info/RECORD,,
