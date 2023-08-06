@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+slackfix.desktop
+slackfix.py
+slackfix.egg-info/PKG-INFO
+slackfix.egg-info/SOURCES.txt
+slackfix.egg-info/dependency_links.txt
+slackfix.egg-info/entry_points.txt
+slackfix.egg-info/top_level.txt
