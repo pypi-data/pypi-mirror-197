@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+bfgdealer/__init__.py
+bfgdealer/_version.py
+bfgdealer.egg-info/PKG-INFO
+bfgdealer.egg-info/SOURCES.txt
+bfgdealer.egg-info/dependency_links.txt
+bfgdealer.egg-info/top_level.txt
+bfgdealer/source/__init__.py
+bfgdealer/source/board.py
+bfgdealer/source/dealer.py
+bfgdealer/source/dealer_duo.py
+bfgdealer/source/dealer_engine.py
+bfgdealer/source/dealer_solo.py
