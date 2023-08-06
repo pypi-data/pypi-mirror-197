@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: django_po_translator
+Version: 0.1.0
+Summary: Translate PO files and resolve fuzziness
+Home-page: https://github.com/waseem-hamoolaila/django-po-translator
+Author: Waseem Hamoolaila
+Author-email: waseem.97.laila@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
