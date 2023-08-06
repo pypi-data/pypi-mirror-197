@@ -1,0 +1,8 @@
+beancmb/__init__.py,sha256=QHXF1PD-7nXd5Tn6QBsEfRdps6pacqvQqo86NgL_KyY,34
+beancmb/pdf_importer.py,sha256=b8ek-tKdhN77g2udhP-rEJwHxHH3fhl9NAi6NMCFZ4A,5767
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/pdf_test.py,sha256=RAdsvGvgpyRO6WhADmmfVI-fIHKCNEekG6QtEBxD6gI,6264
+beancount_cmb_importer-0.1.1.dist-info/METADATA,sha256=O3RTwikmD1JmzYaNjo17DW0nIjN5MrnUuJavOdEKkGA,2765
+beancount_cmb_importer-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+beancount_cmb_importer-0.1.1.dist-info/top_level.txt,sha256=zNi_MpurJsiP_h7Ol3bbeGE4wSjw8T6cP_n1h8ddbyk,14
+beancount_cmb_importer-0.1.1.dist-info/RECORD,,
