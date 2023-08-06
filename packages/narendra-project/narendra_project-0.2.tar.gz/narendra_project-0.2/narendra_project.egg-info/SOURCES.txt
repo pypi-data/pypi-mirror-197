@@ -1,0 +1,9 @@
+Licence.txt
+setup.py
+narendra_project/__init__.py
+narendra_project/__main__.py
+narendra_project.egg-info/PKG-INFO
+narendra_project.egg-info/SOURCES.txt
+narendra_project.egg-info/dependency_links.txt
+narendra_project.egg-info/requires.txt
+narendra_project.egg-info/top_level.txt
