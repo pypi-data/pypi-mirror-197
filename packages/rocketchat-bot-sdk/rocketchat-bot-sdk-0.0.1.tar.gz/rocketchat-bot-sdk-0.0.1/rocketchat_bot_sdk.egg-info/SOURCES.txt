@@ -1,0 +1,7 @@
+README.md
+setup.py
+rocketchat_bot_sdk.egg-info/PKG-INFO
+rocketchat_bot_sdk.egg-info/SOURCES.txt
+rocketchat_bot_sdk.egg-info/dependency_links.txt
+rocketchat_bot_sdk.egg-info/requires.txt
+rocketchat_bot_sdk.egg-info/top_level.txt
