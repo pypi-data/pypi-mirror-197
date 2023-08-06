@@ -1,0 +1,11 @@
+sveltish/__init__.py,sha256=Oh3Y6CIypkhAjW-aquBTyP3_cA-gKgKTwq9EpcWpjps,22
+sveltish/_modidx.py,sha256=-832Vn8iA_HDKpl8HDwES336hc0ETKuZBKYAA6T1zvk,7400
+sveltish/signals.py,sha256=rRfqNGxRu0mdturniZ3lBRXUFUQqHlGecjFp2sxJZkc,5181
+sveltish/stores.py,sha256=yUM0mUoo-uvIxrDmPx0ZrD8uPpHgphd5YFV-zPrxvg4,8881
+sveltish/utils.py,sha256=Jn3zAwuaHhuRprj9_0cnqw_7Uz7uYnPGKm4_WGdtTvk,1999
+sveltish-1.2.9.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+sveltish-1.2.9.dist-info/METADATA,sha256=30COkLoITnnk0r4vWiYM6zMP9kNfSNvacKntE-G5LLg,11503
+sveltish-1.2.9.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+sveltish-1.2.9.dist-info/entry_points.txt,sha256=AJ1flo4CwCrXLx1DwBYMAA00ZZahltZ7EVwDkrtEy6s,38
+sveltish-1.2.9.dist-info/top_level.txt,sha256=-U9WWtt_xNII7goU5zi1ThxH6mzkxY9M6TgxNcO9Jsk,9
+sveltish-1.2.9.dist-info/RECORD,,
