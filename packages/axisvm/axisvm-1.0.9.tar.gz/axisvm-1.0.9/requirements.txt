@@ -1,0 +1,11 @@
+setuptools>=65.5.1 # pinned by Snyk to avoid a vulnerability
+wheel>=0.38.0 # pinned by Snyk to avoid a vulnerability
+pywin32
+appdirs
+sigmaepsilon==0.0.27
+polymesh==0.0.15
+neumann==1.0.4
+dewloosh.mpl==0.0.6
+dewloosh.plotly==0.0.4
+nbformat
+comtypes==1.1.11
