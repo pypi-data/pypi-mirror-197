@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyconman
+Version: 0.0.5
+Summary: Package for managing and profiling JSON configurations in Python-based libraries and web applications.
+Home-page: https://mahajanankur.github.io
+Author: Ankur Mahajan
+Author-email: mahajanankur.nith@gmail.com
+License: Apache License
+Project-URL: Documentation, https://github.com/mahajanankur/conman-py/blob/main/README.md
+Project-URL: Source, https://github.com/mahajanankur/conman-py
+Description: # conman-py
+        This module offers a package to manage and profile JSON configurations in Python-based libraries and web applications. It provides an environment-specific configuration management system, making it simpler to handle multiple secure and critical configurations in different environments.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >= 3
+Description-Content-Type: text/markdown
