@@ -1,0 +1,15 @@
+dist/ka_com-2023.2.1.tar.gz,sha256=W12St3Ezna2_sqN0a8mqIGXOxpZfBK7bGCKSoxkOacA,9600
+ka_com/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ka_com/__version__.py,sha256=_WebtQC0Dn3xJ6kdVNVCrmCQaoA-ifJfiR3UOCivTCY,348
+ka_com/com.py,sha256=I-Or9vskBfSm-Hc-P96EiWx2uAnIk28IRVOQaY3KWwI,5954
+ka_com/ioc.py,sha256=h3Qv8CwNry19qNHTAy7lcUwRzVQ04PCN3rB8DLbyUdI,1279
+ka_com/pacmod.py,sha256=7wbFSjvZE6BJsknttD_mSVBAZ2pKBJD6K-cRgNHLv40,3546
+ka_com/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ka_com/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ka_com/data/log.main.tenant.yml,sha256=ONqKV6nOGQS1ZYLFGH64_jf8fyMk60lZqnd5GK5j-qs,2423
+ka_com/data/log.yml,sha256=hCBsy34Nb3cHObRtMcjB2GtRLFqh-pzr3vuC1xB8PWY,2281
+ka_com-2023.2.1.dist-info/LICENSE.txt,sha256=1NG3lZzl4JyP_dVIoFfHr-ycMHJMLY1j6sjzjxBzqXo,858
+ka_com-2023.2.1.dist-info/METADATA,sha256=0JlamYTLARb6qrbmsaYx87JeQUn0v1yFcoNeMquvtE8,2532
+ka_com-2023.2.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+ka_com-2023.2.1.dist-info/top_level.txt,sha256=5YAzw2A4wkzyO-boqEBEPJ-xjXQ4vultVSNC0r66c88,17
+ka_com-2023.2.1.dist-info/RECORD,,
