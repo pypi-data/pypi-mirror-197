@@ -1,0 +1,5 @@
+setup.py
+fujisan.egg-info/PKG-INFO
+fujisan.egg-info/SOURCES.txt
+fujisan.egg-info/dependency_links.txt
+fujisan.egg-info/top_level.txt
