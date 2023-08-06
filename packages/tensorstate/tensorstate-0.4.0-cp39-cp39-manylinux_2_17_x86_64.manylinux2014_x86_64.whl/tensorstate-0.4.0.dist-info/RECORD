@@ -1,0 +1,14 @@
+TensorState/_TensorState.pyx,sha256=eL2lHpz7whFDOArF474NFuw-RFAuJW-DZ0iVe1Q9DEw,11186
+TensorState/TensorState.py,sha256=c_L1quARDT4lVFRthhiuMfnVFDLpvt_g-LJpWUL-x-0,11556
+TensorState/_TensorState.cpp,sha256=-sp-dlHrQbKXe5J_UaC8xE0xXf-yFyJeLHrDqQdQdEQ,1201635
+TensorState/States.py,sha256=Kv3kvJwJ_iyyviTEgUTEh85XklM9AfUgErDcK0_9euQ,5750
+TensorState/_TensorState.cpython-39-x86_64-linux-gnu.so,sha256=F53wXQCDdXVhV0QPhbtr1ZCIQceVzkGHxIIiM4Gfflo,1592360
+TensorState/Layers.py,sha256=DYwsDrwTaLi0IMvbFTYzkfKNg6o40GUIBcTRc2aR1a0,19283
+TensorState/__init__.py,sha256=lQ9s0twspKC60TgX_Ynnrh39Mp5bAWUUMgYqvLdTRkI,978
+TensorState/models/MobileNetV2.py,sha256=nqKI_ix13piu7k6FKgXmz8vi4oKNtcp3AqazAf3agNk,2036
+TensorState/models/LeNet.py,sha256=JaQlm3KqgSXOo0A1txUN2jaT1wHTeB9j3g89EaW-sd0,3866
+TensorState/models/__init__.py,sha256=QBrFpSyvTIn8aa2fNKUzxkxZwKcfTlYdkSRDV7tVwxY,224
+tensorstate-0.4.0.dist-info/RECORD,,
+tensorstate-0.4.0.dist-info/LICENSE,sha256=8p8I3uBRNftZAUvlCvd3i_grmpwM_4AACjU5qnheL00,1080
+tensorstate-0.4.0.dist-info/WHEEL,sha256=tFm8N2JIP0ZhPxdxIhnctxeoGzlq5YU9A4URio2rIvM,145
+tensorstate-0.4.0.dist-info/METADATA,sha256=cq9h9U3ChZn1gfRQYDRi8s9NwQutUHBTngU0t8uKfOM,1546
