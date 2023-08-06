@@ -1,0 +1,16 @@
+mesibo/Mesibo.py,sha256=IQJD1XSwkLQyQfFEJ1xNLTtP_e9YDPTyU-Xf6mSMmhU,16324
+mesibo/MesiboListener.py,sha256=jymy2YiCQkUmkJTy4kjax_vTaHIbrWYNnNm8fB_mfjA,1234
+mesibo/__init__.py,sha256=a8oZ027JHozYC6keelM10Kp5Det-JdWR3bhDx94cp70,146
+mesibo/version.py,sha256=Lj2623wlZqXICg6KdWU3f5Sz-_t35cenmI9jXRRzq6o,29
+mesibo/clib/libmesibo_darwin_arm64.so,sha256=LtZzIQJ93AFvBGZqGLWjdGfY3Vf2BamlWSk58mxqT0k,4678208
+mesibo/clib/libmesibo_darwin_x86_64.so,sha256=OVZfutfVyyg12cA3dYlxUSJbPPPx4ha5krPPXWAsDK4,5218576
+mesibo/clib/libmesibo_linux_aarch64.so,sha256=xSWx41wXwZ_9TKPX3yQfE1ar9VSmDm-VNPzjDNe54PE,4994672
+mesibo/clib/libmesibo_linux_x86_64.so,sha256=5lmNmvqP7yqCCSl-lplWGEdxoHB-WkCD1tXZ1_iJq5c,5813984
+mesibo/clib/libpymesibo3_darwin_arm64.so,sha256=n6p045I6RqTvcaZFU0Q9qKla9GAJ0Fdn6UeB7LsLggw,39369
+mesibo/clib/libpymesibo3_darwin_x86_64.so,sha256=lVzcGQeSotqQSYgONHFZWkXtnnkqqA2G4hECTV10cUg,55712
+mesibo/clib/libpymesibo3_linux_aarch64.so,sha256=3Z8pFM7D3REpXxks4Wvq7uPXrJ2kNVuUNmVUVtsmXq8,34392
+mesibo/clib/libpymesibo3_linux_x86_64.so,sha256=dlG_dL__u62uIK2oIdy9xVC-ULOjbpUgo8YYuYC4Mwg,33896
+mesibo-2.0.1.dist-info/METADATA,sha256=ZIn4Mqa_ey_zgL_efO3PewCsRCui5NcFhCQFnF_DVnk,6306
+mesibo-2.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+mesibo-2.0.1.dist-info/top_level.txt,sha256=t11hTy0vqKe3HC4iZJx4o_d98UhVFVF3RFgReAih8Zw,7
+mesibo-2.0.1.dist-info/RECORD,,
