@@ -1,0 +1,15 @@
+voicevox/__init__.py,sha256=AWE4C51WCI-sxp1EZ3POXQObP9isNOrDPlqcPHd0DsE,355
+voicevox/audio_query.py,sha256=sVblHlFMAUnEt3Rmvrfw1URMFBN7pLfqa4A_fro4Po8,5054
+voicevox/client.py,sha256=2G5q2he9jC-AGQE-FivegO9RdHXnMMMZ4hoLmhv75-o,5734
+voicevox/errors.py,sha256=cJx_0b-dtFFkgUKiVTZxOlIgvbGBfkQ-D3s3CQLzJvo,109
+voicevox/http.py,sha256=RPsdU15MeOW73ccgmJmNtZ9eyEaSQo4_oxPsc2rM_Z0,2835
+voicevox/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+voicevox/speakers.py,sha256=K-h4MjDEBMK7ILqDihsKD4LSwJRmHDVOADQzOp_58_c,1554
+voicevox/types/__init__.py,sha256=UxOQr0o-2fRJXRczKXJnmXwO3-nYqVsQ75K6rS2vq9k,280
+voicevox/types/audio_query.py,sha256=Bb6566JcGy3j-qBOP4aJMLuWB-COUG2z7YsWnIrrBsk,601
+voicevox/types/speakers.py,sha256=OKbMOB2r3vIw3hKdiKenza75jCr0JNAYNOQHGDeS8HA,357
+voicevox_client-0.2.0a0.dist-info/LICENSE,sha256=0zSvuB3fgCOBy8IFPikUmd4dbEugdU0s0NLQjE2fbgg,1065
+voicevox_client-0.2.0a0.dist-info/METADATA,sha256=Iz8AS9FMg7kKrqf6XhO-DSaTtiJNQaNvDp6b8jP0FFk,1322
+voicevox_client-0.2.0a0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+voicevox_client-0.2.0a0.dist-info/top_level.txt,sha256=LeMmsVqtZnEq3BdYDAUn8XmfofcqrwH6vJe14vYNM-s,9
+voicevox_client-0.2.0a0.dist-info/RECORD,,
