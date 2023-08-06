@@ -1,0 +1,6 @@
+module.py
+setup.py
+w_gstats.egg-info/PKG-INFO
+w_gstats.egg-info/SOURCES.txt
+w_gstats.egg-info/dependency_links.txt
+w_gstats.egg-info/top_level.txt
