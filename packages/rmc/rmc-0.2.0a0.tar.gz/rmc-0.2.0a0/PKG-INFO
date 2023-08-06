@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: rmc
+Version: 0.2.0a0
+Summary: Convert to/from v6 .rm files from the reMarkable tablet
+License: MIT
+Author: Rick Lupton
+Author-email: mail@ricklupton.name
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: click (>=8.0,<9.0)
+Requires-Dist: rmscene (>=0.3.0,<0.4.0)
