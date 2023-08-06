@@ -1,0 +1,2 @@
+[console_scripts]
+bplate = bplate.__main__:cli
