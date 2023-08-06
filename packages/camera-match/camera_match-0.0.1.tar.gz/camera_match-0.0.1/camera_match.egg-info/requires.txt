@@ -1,0 +1,7 @@
+numpy
+scipy
+matplotlib
+colour-science>=0.3.16
+
+[RBF]
+xalglib
