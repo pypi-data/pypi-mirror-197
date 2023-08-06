@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/jpbuilder/__init__.py
+src/jpbuilder/__main__.py
+src/jpbuilder.egg-info/PKG-INFO
+src/jpbuilder.egg-info/SOURCES.txt
+src/jpbuilder.egg-info/dependency_links.txt
+src/jpbuilder.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: jpbuilder
+Version: 0.1.2
+Summary: merge requirements from different folders and more
+Home-page: https://github.com/erictroebs/jpbuilder
+Author: Eric Tröbs
+Author-email: eric.troebs@tu-ilmenau.de
+Project-URL: Bug Tracker, https://github.com/erictroebs/jpbuilder/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# JPBuilder
