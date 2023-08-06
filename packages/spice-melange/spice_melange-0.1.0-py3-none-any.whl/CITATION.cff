@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: 'spice_melange'
+type: software
+version: '0.1.0'
+description: A utility library for SPICE.
+license: BSD-3-Clause
+authors:
+- email: gavin.medley@lasp.colorado.edu
+  name: Gavin Medley
+  orcid: "0000-0002-3520-9715"
+maintainers:
+- email: gavin.medley@lasp.colorado.edu
+  name: Gavin Medley
+  orcid: "0000-0002-3520-9715"
+repository-code: "https://github.com/medley56/spice_melange"
+url: "TBD"

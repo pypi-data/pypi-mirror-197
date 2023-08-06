@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: spice-melange
+Version: 0.1.0
+Summary: A utility library for SPICE.
+License: BSD-3-Clause
+Author: Gavin Medley
+Author-email: gavin.medley@lasp.colorado.edu
+Maintainer: Gavin Medley
+Maintainer-email: gavin.medley@lasp.colorado.edu
+Requires-Python: >=3.8,<3.12
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.26.0,<3.0.0)
+Requires-Dist: spiceypy (>=4.0.3,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Melange - a utility library for SPICE
