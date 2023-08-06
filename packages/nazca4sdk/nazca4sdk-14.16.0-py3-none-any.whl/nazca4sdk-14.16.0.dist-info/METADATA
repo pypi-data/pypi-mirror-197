@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: nazca4sdk
+Version: 14.16.0
+Summary: nazca4sdk
+Home-page: https://www.apagroup.pl
+Author: nazca4.0
+Author-email: sebastian.temich@apagroup.pl
+License: Apache License 2.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyyaml
+Requires-Dist: mysql-connector-python
+Requires-Dist: configparser
+Requires-Dist: py
+Requires-Dist: tzlocal
+Requires-Dist: six
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: clickhouse-driver
+Requires-Dist: urllib3
+Requires-Dist: kafka-python
+Requires-Dist: datetime
+Requires-Dist: typing
+Requires-Dist: dask
+Requires-Dist: clickhouse-connect
+
+pythonowe SDK
+
+plik Dockerfile jest do budowania kontenera z dokumentacja
+
+dokuentacja dostepna na porcie 40000 
