@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+vot.egg-info/PKG-INFO
+vot.egg-info/SOURCES.txt
+vot.egg-info/dependency_links.txt
+vot.egg-info/top_level.txt

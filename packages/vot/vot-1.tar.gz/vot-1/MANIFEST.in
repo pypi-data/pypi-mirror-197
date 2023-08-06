@@ -1,0 +1,6 @@
+include MANIFEST.in
+include README.md
+
+recursive-include vot *.py
+recursive-include vot *.sh
+recursive-exclude z_test *
