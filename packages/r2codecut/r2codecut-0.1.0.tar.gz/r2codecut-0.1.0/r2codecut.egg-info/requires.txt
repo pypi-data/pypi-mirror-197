@@ -1,0 +1,4 @@
+nltk>=3.8.1
+r2pipe>=1.6.3
+r2magicstrings>=0.1.0
+ida2r2>=0.1.0
