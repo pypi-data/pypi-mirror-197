@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+LmPdf/__init__.py
+LmPdf/infoPdf.py
+LmPdf.egg-info/PKG-INFO
+LmPdf.egg-info/SOURCES.txt
+LmPdf.egg-info/dependency_links.txt
+LmPdf.egg-info/requires.txt
+LmPdf.egg-info/top_level.txt
