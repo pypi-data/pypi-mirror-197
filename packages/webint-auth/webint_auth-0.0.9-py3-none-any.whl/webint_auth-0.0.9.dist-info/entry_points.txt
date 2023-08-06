@@ -1,0 +1,3 @@
+[webapps]
+auth=webint_auth:app
+

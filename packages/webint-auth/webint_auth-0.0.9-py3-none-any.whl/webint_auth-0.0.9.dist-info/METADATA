@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: webint-auth
+Version: 0.0.9
+Summary: manage website owner authentication
+License: BSD-2-Clause
+Author: Angelo Gladding
+Author-email: angelo@ragt.ag
+Requires-Python: >=3.10,<3.11
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: indieauth (>=0.0)
+Requires-Dist: webint (>=0.0)

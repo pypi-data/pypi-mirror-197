@@ -1,0 +1,12 @@
+webint_auth/__init__.py,sha256=p0i0dRsikYiCHLT5ODcikTlVdCwiKcZWXAe4uhA9V4s,10391
+webint_auth/templates/__init__.py,sha256=8KGXUIlT7ImgogTbJKVNc3Dy_-jbUNh3jskSikbSmYo,92
+webint_auth/templates/authorizations.html,sha256=UPteHWincIScZvGlKYeduWCHQj81d3wJ4oxuOYgXyJY,1559
+webint_auth/templates/client.html,sha256=uMWX8HabsRs3NMzlZ4KBDU1-LmqPxGt0sy6RwEyM8FM,375
+webint_auth/templates/clients.html,sha256=h1r4xcFyPthhEEyeXq4VpAfMzF8Qym0cPPWh1ZfsOPo,196
+webint_auth/templates/consent.html,sha256=9F6gOVKoTQDoTm1nBj4lgdir1hp5lofdHSBa59umz2g,953
+webint_auth/templates/root.html,sha256=h4V7ivI0-e8DeCKqXg1JX-L3quqWo3Q5F7oilUfE3sc,1927
+webint_auth/templates/unauthorized.html,sha256=Sy8WLNZm0cnmlB7HuuSKKE_waiBxuwzOSMehOKBiBvA,79
+webint_auth-0.0.9.dist-info/METADATA,sha256=-kmwLyg-RWQ9XgUSKDqWpPuTeXvna10DT2QqxFN37NE,418
+webint_auth-0.0.9.dist-info/entry_points.txt,sha256=ZP2mbXyiis29NoO66M--Y0X8PDwSSiulhAop5wPa0IM,32
+webint_auth-0.0.9.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+webint_auth-0.0.9.dist-info/RECORD,,
