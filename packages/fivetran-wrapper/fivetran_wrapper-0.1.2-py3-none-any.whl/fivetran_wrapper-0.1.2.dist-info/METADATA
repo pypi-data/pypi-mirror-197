@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: fivetran-wrapper
+Version: 0.1.2
+Summary: Fivetran service API wrapper
+Home-page: https://github.com/glavmotor/fivetraner
+Author: Dmitry Kravtsov
+License: MIT
+Requires-Dist: requests (==2.*)
+Requires-Dist: error-wrapper (==0.9.*)
+
+Fivetran service API Wrapper
+============================
+
+
+
+Installation
+============
+
+Install from PyPI with:
+
+.. code::
+
+    pip install fivetraner
+
+Usage
+=====
+
+.. code:: python
+
+    from fivetraner import FivetranWrapper
+
+
+    logger = logging.getLogger(__name__)
+
+    fw = FivetranWrapper(logger=logger)
