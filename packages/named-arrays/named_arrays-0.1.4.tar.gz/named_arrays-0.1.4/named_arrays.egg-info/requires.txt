@@ -1,0 +1,13 @@
+typing_extensions
+numpy
+matplotlib
+scipy
+astropy
+
+[doc]
+sphinx-autodoc-typehints
+pydata-sphinx-theme
+jupyter-sphinx
+
+[test]
+pytest
