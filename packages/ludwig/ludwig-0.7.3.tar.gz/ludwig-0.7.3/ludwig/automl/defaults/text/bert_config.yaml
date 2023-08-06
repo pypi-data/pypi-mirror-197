@@ -1,0 +1,24 @@
+trainer:
+  epochs: 10
+  learning_rate_scheduler:
+    warmup_fraction: 0.1
+    decay: linear
+  optimizer:
+    type: adamw
+  use_mixed_precision: true
+
+defaults:
+  text:
+    encoder:
+      type: bert
+      trainable: true
+
+hyperopt:
+  # goal: maximize
+  parameters:
+    trainer.learning_rate:
+      space: choice
+      categories: [0.00002, 0.00003]
+    trainer.batch_size:
+      space: choice
+      categories: [16, 32, 64, 128]
