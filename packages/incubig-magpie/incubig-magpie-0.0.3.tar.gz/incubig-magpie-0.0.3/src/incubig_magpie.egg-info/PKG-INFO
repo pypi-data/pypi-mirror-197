@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: incubig-magpie
+Version: 0.0.3
+Summary: This module is used to save the crawled/downloaded information into talos network on a private repository
+Author-email: Ketan Chandra <ketan@incubig.org>
+Project-URL: Homepage, https://github.com/IncubigInnovations/mining/incubig-magpie
+Project-URL: Bug Tracker, https://github.com/IncubigInnovations/mining/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+#magpie documentation
+
+This module saves crawled data in private bucket protected by talos
+
+The function takes following inputs(two)
+- binary oject (to be stored)
+- endpoint
+- credentials
+- bucket/folder

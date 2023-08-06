@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/__init__.py
+src/download_ipindia_data.py
+src/insert_into_db.py
+src/hash_files/__init__.py
+src/hash_files/industry.py
+src/hash_files/ipc.py
+src/hash_files/sector.py
+src/hash_files/sub_sector.py
+src/incubig_magpie.egg-info/PKG-INFO
+src/incubig_magpie.egg-info/SOURCES.txt
+src/incubig_magpie.egg-info/dependency_links.txt
+src/incubig_magpie.egg-info/top_level.txt
+src/tools/ipindia_sequence_generator.py
