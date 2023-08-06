@@ -1,0 +1,12 @@
+variable_lib_drturtle/__init__.py,sha256=Uw_7kbkmVtyrFCm92_G4AmzQQuSipKKP9aUtohQLYN0,161
+variable_lib_drturtle/arrays.py,sha256=nRaoQgg1bRGQbLg_gLCoor_ENH-auDvVczqNiISX0N0,5245
+variable_lib_drturtle/earth.py,sha256=ph0O_Ul8ujvTemjX5QrtPVt61xWfSRqSrl0wrNOCouU,1049
+variable_lib_drturtle/forces.py,sha256=8UKfZ2gpbQihPekcgRBHuUbSM6nnAnRYM_UCW3cszYo,2538
+variable_lib_drturtle/resource.py,sha256=_qA_N8EeGBbttKaJo0K8JM3rF5BmAaSXurl14b775J4,5272
+variable_lib_drturtle/simul.py,sha256=mGrcShe3XUHhMh0DmvqSBv9VFGg8u6ckw3KMJNGkRK8,703
+variable_lib_drturtle/utils.py,sha256=WUFcznOwiTXVn-pLeprSvQCjtQBTYN-qKxvFD7x04pI,546
+variable_lib_drturtle/variables.py,sha256=v9qc5p_W7-wkAZuJzS23cvMpt4GwqS9DQpJymTuVIQU,3506
+variable_lib_drturtle-0.5.7.dist-info/METADATA,sha256=BPFVYZRfLGdCRYGRAZOvAWwq6QNXrzgUwjSjkccsSfk,654
+variable_lib_drturtle-0.5.7.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+variable_lib_drturtle-0.5.7.dist-info/licenses/LICENSE,sha256=KZ-pwE1uvs2SbIjpaN2DgsU3K4QmFnjH9eaXlIMZoWM,1087
+variable_lib_drturtle-0.5.7.dist-info/RECORD,,
