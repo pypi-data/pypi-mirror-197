@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/VERSION
+src/ssm_tool_test/__init__.py
+src/ssm_tool_test/ssm.py
+src/ssm_tool_test.egg-info/PKG-INFO
+src/ssm_tool_test.egg-info/SOURCES.txt
+src/ssm_tool_test.egg-info/dependency_links.txt
+src/ssm_tool_test.egg-info/requires.txt
+src/ssm_tool_test.egg-info/top_level.txt

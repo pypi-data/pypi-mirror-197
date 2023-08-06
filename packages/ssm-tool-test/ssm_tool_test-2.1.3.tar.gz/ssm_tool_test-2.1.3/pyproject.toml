@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools >= 66.1.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ssm_tool_test"
+dynamic = ["version"]
+dependencies = [
+  "boto3==1.18.44"
+]
+authors = [
+  { name="Roldan Author", email="jdroldan@playvox.com" },
+]
+description = "A small example package to get ssm parameters from aws"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.dynamic]
+version = {file = "src/VERSION"}
+
+[project.urls]
+"Homepage" = "https://github.com/pypa/sampleproject"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
