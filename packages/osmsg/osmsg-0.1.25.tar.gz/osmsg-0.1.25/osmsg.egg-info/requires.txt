@@ -1,0 +1,9 @@
+osmium
+pandas
+requests
+Shapely
+geopandas
+tqdm
+seaborn
+matplotlib
+humanize
