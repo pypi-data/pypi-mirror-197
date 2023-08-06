@@ -1,0 +1,4006 @@
+{
+  "src/components/badge/Badge.tsx": {
+    "displayName": "Badge",
+    "description": "",
+    "props": {
+      "appearance": {
+        "description": "A button can have its content and borders styled for greater emphasis or to be subtle.\n\n - 'secondary' (default): Gives emphasis to the button in such a way that it indicates a secondary action.\n - 'primary': Emphasizes the button as a primary action.\n - 'outline': Removes background styling.\n - 'subtle': Minimizes emphasis to blend into the background until hovered or focused.\n - 'transparent': Removes background and border styling.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'filled'",
+              "computed": false
+            },
+            {
+              "value": "'ghost'",
+              "computed": false
+            },
+            {
+              "value": "'outline'",
+              "computed": false
+            },
+            {
+              "value": "'tint'",
+              "computed": false
+            }
+          ],
+          "raw": "\"filled\" | \"ghost\" | \"outline\" | \"tint\""
+        }
+      },
+      "color": {
+        "description": "Disabled state of button",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'brand'",
+              "computed": false
+            },
+            {
+              "value": "'danger'",
+              "computed": false
+            },
+            {
+              "value": "'important'",
+              "computed": false
+            },
+            {
+              "value": "'informative'",
+              "computed": false
+            },
+            {
+              "value": "'severe'",
+              "computed": false
+            },
+            {
+              "value": "'subtle'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            }
+          ],
+          "raw": "\"brand\" | \"danger\" | \"important\" | \"informative\" | \"severe\" | \"subtle\" | \"success\" | \"warning\""
+        }
+      },
+      "shape": {
+        "description": "A Badge can be square, circular or rounded.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'circular'",
+              "computed": false
+            },
+            {
+              "value": "'square'",
+              "computed": false
+            },
+            {
+              "value": "'rounded'",
+              "computed": false
+            }
+          ],
+          "raw": "\"circular\" | \"square\" | \"rounded\""
+        }
+      },
+      "size": {
+        "description": "A Badge can be of several preset sizes.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'tiny'",
+              "computed": false
+            },
+            {
+              "value": "'extra-small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            },
+            {
+              "value": "'extra-large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"tiny\" | \"extra-small\" | \"medium\" | \"large\" | \"extra-large\""
+        }
+      },
+      "icon_position": {
+        "description": "A Badge can position the icon before or after the content.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'before'",
+              "computed": false
+            },
+            {
+              "value": "'after'",
+              "computed": false
+            }
+          ],
+          "raw": "\"before\" | \"after\""
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "children": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/badge/CounterBadge.tsx": {
+    "displayName": "CounterBadge",
+    "description": "",
+    "props": {
+      "count": {
+        "description": "Value displayed by the Badge",
+        "required": false,
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        },
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "icon": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "Element"
+        }
+      },
+      "appearance": {
+        "description": "A button can have its content and borders styled for greater emphasis or to be subtle.\n\n - 'secondary' (default): Gives emphasis to the button in such a way that it indicates a secondary action.\n - 'primary': Emphasizes the button as a primary action.\n - 'outline': Removes background styling.\n - 'subtle': Minimizes emphasis to blend into the background until hovered or focused.\n - 'transparent': Removes background and border styling.",
+        "required": false,
+        "defaultValue": {
+          "value": "'filled'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'filled'",
+              "computed": false
+            },
+            {
+              "value": "'ghost'",
+              "computed": false
+            }
+          ],
+          "raw": "\"filled\" | \"ghost\""
+        }
+      },
+      "color": {
+        "description": "Disabled state of button",
+        "required": false,
+        "defaultValue": {
+          "value": "'brand'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'brand'",
+              "computed": false
+            },
+            {
+              "value": "'danger'",
+              "computed": false
+            },
+            {
+              "value": "'important'",
+              "computed": false
+            },
+            {
+              "value": "'informative'",
+              "computed": false
+            }
+          ],
+          "raw": "\"brand\" | \"danger\" | \"important\" | \"informative\""
+        }
+      },
+      "shape": {
+        "description": "A Badge can be square, circular or rounded.",
+        "required": false,
+        "defaultValue": {
+          "value": "'circular'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'circular'",
+              "computed": false
+            },
+            {
+              "value": "'rounded'",
+              "computed": false
+            }
+          ],
+          "raw": "\"circular\" | \"rounded\""
+        }
+      },
+      "size": {
+        "description": "A Badge can be of several preset sizes.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'tiny'",
+              "computed": false
+            },
+            {
+              "value": "'extra-small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            },
+            {
+              "value": "'extra-large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"tiny\" | \"extra-small\" | \"medium\" | \"large\" | \"extra-large\""
+        }
+      },
+      "icon_position": {
+        "description": "A Badge can position the icon before or after the content.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'before'",
+              "computed": false
+            },
+            {
+              "value": "'after'",
+              "computed": false
+            }
+          ],
+          "raw": "\"before\" | \"after\""
+        }
+      },
+      "dot": {
+        "description": "If a dot should be displayed without the count",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "overflow_count": {
+        "description": "Max number to be displayed",
+        "required": false,
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "show_zero": {
+        "description": "Max number to be displayed",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "children": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/button/Button.tsx": {
+    "displayName": "Button",
+    "description": "A button triggers an action or event when activated.\n### Layout\n - For dialog boxes and panels, where people are moving through a sequence of screens,\n   right-align buttons with the container.\n - For single-page forms and focused tasks, left-align buttons with the container.\n - Always place the primary button on the left, the secondary button just to the right of it.\n - Show only one primary button that inherits theme color at rest state. If there are more\n   than two buttons with equal priority, all buttons should have neutral backgrounds.\n - Don't use a button to navigate to another place; use a link instead. The exception\n   is in a wizard where \"Back\" and \"Next\" buttons may be used.\n - Don't place the default focus on a button that destroys data. Instead, place the\n   default focus on the button that performs the \"safe act\" and retains the content\n   (such as \"Save\") or cancels the action (such as \"Cancel\").\n### Content\n- Use sentence-style capitalization\u2014only capitalize the first word.\n- Make sure it's clear what will happen when people interact with the button.\n  Be concise; usually a single verb is best. Include a noun if there is any room\n  for interpretation about what the verb means. For example, \"Delete folder\" or \"Create account\".",
+    "props": {
+      "children": {
+        "description": "The children of this component.",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "appearance": {
+        "description": "A button can have its content and borders styled for greater emphasis or to be subtle.\n\n - 'secondary' (default): Gives emphasis to the button in such a way that it indicates a secondary action.\n - 'primary': Emphasizes the button as a primary action.\n - 'outline': Removes background styling.\n - 'subtle': Minimizes emphasis to blend into the background until hovered or focused.\n - 'transparent': Removes background and border styling.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'subtle'",
+              "computed": false
+            },
+            {
+              "value": "'outline'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'transparent'",
+              "computed": false
+            }
+          ],
+          "raw": "\"subtle\" | \"outline\" | \"secondary\" | \"primary\" | \"transparent\""
+        }
+      },
+      "disabled": {
+        "description": "Disabled state of button",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "shape": {
+        "description": "A button can be rounded, circular, or square.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'circular'",
+              "computed": false
+            },
+            {
+              "value": "'square'",
+              "computed": false
+            },
+            {
+              "value": "'rounded'",
+              "computed": false
+            }
+          ],
+          "raw": "\"circular\" | \"square\" | \"rounded\""
+        }
+      },
+      "size": {
+        "description": "A button supports different sizes.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "n_clicks": {
+        "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "required": false,
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        },
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/button/CompoundButton.tsx": {
+    "displayName": "CompoundButton",
+    "description": "A compound button is a button with an additional slot for secondary textual content.\nSince both primary and secondary textual contents are part of a compound button's name they should be kept concise.\n### Layout\n- For dialog boxes and panels, where people are moving through a sequence of screens,\n  right-align buttons with the container.\n- For single-page forms and focused tasks, left-align buttons with the container.\n- Always place the primary button on the left, the secondary button just to the right of it.\n- Show only one primary button that inherits theme color at rest state. If there are more\n  than two buttons with equal priority, all buttons should have neutral backgrounds.\n- Don't use a button to navigate to another place; use a link instead. The exception\n  is in a wizard where \"Back\" and \"Next\" buttons may be used.\n- Don't place the default focus on a button that destroys data. Instead, place the\n  default focus on the button that performs the \"safe act\" and retains the content\n  (such as \"Save\") or cancels the action (such as \"Cancel\").\n### Content\n- Use sentence-style capitalization\u2014only capitalize the first word.\n- Make sure it's clear what will happen when people interact with the button.\n  Be concise; usually a single verb is best. Include a noun if there is any room\n  for interpretation about what the verb means. For example, \"Delete folder\" or \"Create account\".",
+    "props": {
+      "children": {
+        "description": "The children of this component.",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "secondary_content": {
+        "description": "Second line of text that describes the action this button takes.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "appearance": {
+        "description": "A button can have its content and borders styled for greater emphasis or to be subtle.\n\n - 'secondary' (default): Gives emphasis to the button in such a way that it indicates a secondary action.\n - 'primary': Emphasizes the button as a primary action.\n - 'outline': Removes background styling.\n - 'subtle': Minimizes emphasis to blend into the background until hovered or focused.\n - 'transparent': Removes background and border styling.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'subtle'",
+              "computed": false
+            },
+            {
+              "value": "'outline'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'transparent'",
+              "computed": false
+            }
+          ],
+          "raw": "\"subtle\" | \"outline\" | \"secondary\" | \"primary\" | \"transparent\""
+        }
+      },
+      "disabled": {
+        "description": "Disabled state of button",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "shape": {
+        "description": "A button can be rounded, circular, or square.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'circular'",
+              "computed": false
+            },
+            {
+              "value": "'square'",
+              "computed": false
+            },
+            {
+              "value": "'rounded'",
+              "computed": false
+            }
+          ],
+          "raw": "\"circular\" | \"square\" | \"rounded\""
+        }
+      },
+      "size": {
+        "description": "A button supports different sizes.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "n_clicks": {
+        "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "required": false,
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        },
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/button/ToggleButton.tsx": {
+    "displayName": "ToggleButton",
+    "description": "A button triggers an action or event when activated.\n### Layout\n - For dialog boxes and panels, where people are moving through a sequence of screens,\n   right-align buttons with the container.\n - For single-page forms and focused tasks, left-align buttons with the container.\n - Always place the primary button on the left, the secondary button just to the right of it.\n - Show only one primary button that inherits theme color at rest state. If there are more\n   than two buttons with equal priority, all buttons should have neutral backgrounds.\n - Don't use a button to navigate to another place; use a link instead. The exception\n   is in a wizard where \"Back\" and \"Next\" buttons may be used.\n - Don't place the default focus on a button that destroys data. Instead, place the\n   default focus on the button that performs the \"safe act\" and retains the content\n   (such as \"Save\") or cancels the action (such as \"Cancel\").\n### Content\n- Use sentence-style capitalization\u2014only capitalize the first word.\n- Make sure it's clear what will happen when people interact with the button.\n  Be concise; usually a single verb is best. Include a noun if there is any room\n  for interpretation about what the verb means. For example, \"Delete folder\" or \"Create account\".",
+    "props": {
+      "children": {
+        "description": "The children of this component.",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "appearance": {
+        "description": "A button can have its content and borders styled for greater emphasis or to be subtle.\n\n - 'secondary' (default): Gives emphasis to the button in such a way that it indicates a secondary action.\n - 'primary': Emphasizes the button as a primary action.\n - 'outline': Removes background styling.\n - 'subtle': Minimizes emphasis to blend into the background until hovered or focused.\n - 'transparent': Removes background and border styling.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'subtle'",
+              "computed": false
+            },
+            {
+              "value": "'outline'",
+              "computed": false
+            },
+            {
+              "value": "'secondary'",
+              "computed": false
+            },
+            {
+              "value": "'primary'",
+              "computed": false
+            },
+            {
+              "value": "'transparent'",
+              "computed": false
+            }
+          ],
+          "raw": "\"subtle\" | \"outline\" | \"secondary\" | \"primary\" | \"transparent\""
+        }
+      },
+      "disabled": {
+        "description": "Disabled state of button",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "shape": {
+        "description": "A button can be rounded, circular, or square.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'circular'",
+              "computed": false
+            },
+            {
+              "value": "'square'",
+              "computed": false
+            },
+            {
+              "value": "'rounded'",
+              "computed": false
+            }
+          ],
+          "raw": "\"circular\" | \"square\" | \"rounded\""
+        }
+      },
+      "size": {
+        "description": "A button supports different sizes.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "checked": {
+        "description": "An integer that represents the number of times\nthat this element has been clicked on.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "n_clicks": {
+        "description": "",
+        "required": false,
+        "defaultValue": {
+          "value": "0",
+          "computed": false
+        },
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/card/Card.tsx": {
+    "displayName": "Card",
+    "description": "",
+    "props": {
+      "appearance": {
+        "description": "Sets the appearance of the card.\n- \"filled\": The card will have a shadow, border and background color.\n- \"filled-alternative\": This appearance is similar to filled, but the background color will be a little darker.\n- \"outline\": This appearance is similar to filled, but the background color will be transparent and no shadow applied.\n- \"subtle\": This appearance is similar to filled-alternative, but no border is applied.",
+        "required": false,
+        "defaultValue": {
+          "value": "'filled'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'filled'",
+              "computed": false
+            },
+            {
+              "value": "'subtle'",
+              "computed": false
+            },
+            {
+              "value": "'outline'",
+              "computed": false
+            },
+            {
+              "value": "'filled-alternative'",
+              "computed": false
+            }
+          ],
+          "raw": "\"filled\" | \"subtle\" | \"outline\" | \"filled-alternative\""
+        }
+      },
+      "orientation": {
+        "description": "Defines the orientation of the card.",
+        "required": false,
+        "defaultValue": {
+          "value": "'vertical'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            }
+          ],
+          "raw": "\"horizontal\" | \"vertical\""
+        }
+      },
+      "size": {
+        "description": "Controls the card's border radius and padding between inner elements.",
+        "required": false,
+        "defaultValue": {
+          "value": "'medium'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "selected": {
+        "description": "Defines the controlled selected state of the card.",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "show_loading": {
+        "description": "Denotes wether a loading bar should be displayed when content is loading.",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "loading_state": {
+        "description": "Object that holds the loading state object coming from dash-renderer",
+        "required": false,
+        "type": {
+          "name": "shape",
+          "value": {
+            "is_loading": {
+              "description": "Determines if the component is loading or not",
+              "required": true,
+              "name": "bool",
+              "raw": "boolean"
+            },
+            "prop_name": {
+              "description": "Holds which property is loading",
+              "required": true,
+              "name": "string",
+              "raw": "string"
+            },
+            "component_name": {
+              "description": "Holds the name of the component that is loading",
+              "required": true,
+              "name": "string",
+              "raw": "string"
+            }
+          },
+          "raw": "DashLoadingState"
+        }
+      },
+      "header": {
+        "description": "Content displayed in card header",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "Element"
+        }
+      },
+      "footer": {
+        "description": "Content displayed in card footer",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "Element"
+        }
+      },
+      "header_style": {
+        "description": "Styles applied to header container",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "header_class": {
+        "description": "CSS class applied to header container",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "footer_style": {
+        "description": "Styles applied to footer container",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "footer_class": {
+        "description": "CSS class applied to footer container",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "children": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/checkbox/Checkbox.tsx": {
+    "displayName": "Checkbox",
+    "description": "Checkboxes give people a way to select one or more items from a group,\nor switch between two mutually exclusive options (checked or unchecked).",
+    "props": {
+      "checked": {
+        "description": "Checked state.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "any",
+          "raw": "boolean | \"mixed\""
+        }
+      },
+      "disabled": {
+        "description": "Disabled state of button",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "label": {
+        "description": "Label to display next to the checkbox.\n\n\nThe label associated with the field.",
+        "required": false,
+        "defaultValue": {
+          "value": "'Checkbox'",
+          "computed": false
+        },
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "label_position": {
+        "description": "The position of the label relative to the checkbox indicator.",
+        "required": false,
+        "defaultValue": {
+          "value": "'after'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'before'",
+              "computed": false
+            },
+            {
+              "value": "'after'",
+              "computed": false
+            }
+          ],
+          "raw": "\"before\" | \"after\""
+        }
+      },
+      "shape": {
+        "description": "The shape of the checkbox indicator.\n\nThe circular variant is only recommended to be used in a tasks-style UI (checklist),\nsince it otherwise could be confused for a RadioItem.",
+        "required": false,
+        "defaultValue": {
+          "value": "'square'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'circular'",
+              "computed": false
+            },
+            {
+              "value": "'square'",
+              "computed": false
+            }
+          ],
+          "raw": "\"circular\" | \"square\""
+        }
+      },
+      "size": {
+        "description": "The size of the checkbox indicator.",
+        "required": false,
+        "defaultValue": {
+          "value": "'medium'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"medium\" | \"large\""
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "validation_message": {
+        "description": "A message about the validation state. By default, this is an error message,\nbut it can be a success, warning, or custom message by setting validationState.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "orientation": {
+        "description": "The orientation of the label relative to the field component. This only affects the label,\nand not the validationMessage or hint (which always appear below the field component).",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            }
+          ],
+          "raw": "\"horizontal\" | \"vertical\""
+        }
+      },
+      "validation_state": {
+        "description": "The validationState affects the display of the validationMessage and validationMessageIcon.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'none'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            }
+          ],
+          "raw": "\"none\" | \"success\" | \"warning\" | \"error\""
+        }
+      },
+      "required": {
+        "description": "Marks the Field as required. If true, an asterisk will be appended to the label,\nand aria-required will be set on the Field's child.",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "label_size": {
+        "description": "The size of the Field's label.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            },
+            {
+              "value": "'small'",
+              "computed": false
+            }
+          ],
+          "raw": "\"medium\" | \"large\" | \"small\""
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/dialog/Dialog.tsx": {
+    "displayName": "Dialog",
+    "description": "`Dialog` is a window overlaid on either the primary window or another dialog window. Windows\nunder a modal dialog are inert. That is, users cannot interact with content outside an active\ndialog window. Inert content outside an active dialog is typically visually obscured or\ndimmed so it is difficult to discern, and in some implementations, attempts to interact\nwith the inert content cause the dialog to close.\n### Do\n- Dialog boxes consist of a header (`DialogTitle`), content (`DialogSurface`), and footer (`DialogActions`),\n  which should all be included inside a body (DialogBody).\n- Validate that people\u2019s entries are acceptable before closing the dialog. Show an inline validation error\n  near the field they must correct.\n- Modal dialogs should be used very sparingly\u2014only when it\u2019s critical that people make a choice or provide\n  information before they can proceed. Thee dialogs are generally used for irreversible or potentially\n  destructive tasks. They\u2019re typically paired with an backdrop without a light dismiss.\n- Add a aria-describedby attribute on DialogSurface pointing to the dialog content on short confirmation like dialogs.\n### Don't\n- Don't use more than three buttons between `DialogActions`.\n- Don't open a `Dialog` from a `Dialog`\n- Don't use a `Dialog` with no focusable elements",
+    "props": {
+      "children": {
+        "description": "Can contain two children including \n{@link \nDialogTrigger \n}\n and \n{@link \nDialogSurface \n}\n.\nAlternatively can only contain \n{@link \nDialogSurface \n}\n if using trigger outside dialog, or controlling state",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "title": {
+        "description": "Title displayed in the Dialog header",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "trigger": {
+        "description": "Usually a button component o.a. If the state is not controlled (externally managed), clicking\nthis component will open the dialog. This component will also be rendered when the dialog is not open.",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "Element"
+        }
+      },
+      "actions": {
+        "description": "Additional components - often buttons for invoking actions - that are rendered in the Dialog footer.",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "trigger_action": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "Element"
+        }
+      },
+      "modal_type": {
+        "description": "Dialog variations.\n\n- `modal`: When this type of dialog is open, the rest of the page is dimmed out and cannot be interacted with.\n  The tab sequence is kept within the dialog and moving the focus outside the dialog will imply closing it.\n  This is the default type of the component.\n- `non-modal`: When a non-modal dialog is open, the rest of the page is not dimmed out and users can interact\n  with the rest of the page. This also implies that the tab focus can move outside the dialog when it reaches\n  the last focusable element.\n- `alert`: is a special type of modal dialogs that interrupts the user's workflow to communicate an important\n  message or ask for a decision. Unlike a typical modal dialog, the user must take an action through the\n  options given to dismiss the dialog, and it cannot be dismissed through the dimmed background or escape key.",
+        "required": false,
+        "defaultValue": {
+          "value": "'modal'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'alert'",
+              "computed": false
+            },
+            {
+              "value": "'modal'",
+              "computed": false
+            },
+            {
+              "value": "'non-modal'",
+              "computed": false
+            }
+          ],
+          "raw": "\"alert\" | \"modal\" | \"non-modal\""
+        }
+      },
+      "open": {
+        "description": "Controls the open state of the dialog",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/divider/Divider.tsx": {
+    "displayName": "Divider",
+    "description": "## Overview\nA separator visually separates content into groups.\nYou can render content in the separator by specifying the component's children.\nThe component's children can be plain text or a component like Icon. The content\nis center-aligned by default.",
+    "props": {
+      "children": {
+        "description": "The children of this component",
+        "required": true,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "align_content": {
+        "description": "Where the content should be aligned in the separator.",
+        "required": false,
+        "defaultValue": {
+          "value": "'center'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'start'",
+              "computed": false
+            },
+            {
+              "value": "'center'",
+              "computed": false
+            },
+            {
+              "value": "'end'",
+              "computed": false
+            }
+          ],
+          "raw": "\"start\" | \"center\" | \"end\""
+        }
+      },
+      "vertical": {
+        "description": "Whether the content should be aligned vertically.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "apperance": {
+        "description": "A divider can have one of the preset appearances. When not specified, the divider has its default appearance.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'strong'",
+              "computed": false
+            },
+            {
+              "value": "'brand'",
+              "computed": false
+            },
+            {
+              "value": "'subtle'",
+              "computed": false
+            },
+            {
+              "value": "'default'",
+              "computed": false
+            }
+          ],
+          "raw": "\"strong\" | \"brand\" | \"subtle\" | \"default\""
+        }
+      },
+      "inset": {
+        "description": "Adds padding to the beginning and end of the divider.",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/dropdown/ComboBox.tsx": {
+    "displayName": "ComboBox",
+    "description": "A combo box (Combobox) combines a text field and a dropdown giving people\na way to select an option from a list or enter their own choice.",
+    "props": {
+      "label": {
+        "description": "A label to be displayed above the dropdown component.\n\n\nThe label associated with the field.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "value": {
+        "description": "The value of the input.",
+        "required": false,
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string",
+            "raw": "string"
+          },
+          "raw": "string[]"
+        }
+      },
+      "multiselect": {
+        "description": "If true, the user can select multiple values",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "options": {
+        "description": "Choices to be displayed in the dropdown control.",
+        "required": false,
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        },
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "label": {
+                "description": "The Radio's label.",
+                "required": true,
+                "name": "string",
+                "raw": "string"
+              },
+              "value": {
+                "description": "The Radio's value.",
+                "required": true,
+                "name": "string",
+                "raw": "string"
+              },
+              "disabled": {
+                "description": "denotes if radio is disabled",
+                "required": false,
+                "name": "bool",
+                "raw": "boolean"
+              }
+            },
+            "raw": "Option"
+          },
+          "raw": "Option[]"
+        }
+      },
+      "placeholder": {
+        "description": "A string value to be displayed if no item is selected.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "disabled": {
+        "description": "If true, the dropdown is disabled and can't be clicked on.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "size": {
+        "description": "Controls the size of the combobox faceplate",
+        "required": false,
+        "defaultValue": {
+          "value": "'medium'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "appearance": {
+        "description": "Controls the colors and borders of the combobox trigger.",
+        "required": false,
+        "defaultValue": {
+          "value": "'outline'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'outline'",
+              "computed": false
+            },
+            {
+              "value": "'underline'",
+              "computed": false
+            },
+            {
+              "value": "'filled-darker'",
+              "computed": false
+            },
+            {
+              "value": "'filled-lighter'",
+              "computed": false
+            }
+          ],
+          "raw": "\"outline\" | \"underline\" | \"filled-darker\" | \"filled-lighter\""
+        }
+      },
+      "freeform": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "search_max_results": {
+        "description": "Maximum number of results returned on search",
+        "required": false,
+        "defaultValue": {
+          "value": "10",
+          "computed": false
+        },
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "validation_message": {
+        "description": "A message about the validation state. By default, this is an error message,\nbut it can be a success, warning, or custom message by setting validationState.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "orientation": {
+        "description": "The orientation of the label relative to the field component. This only affects the label,\nand not the validationMessage or hint (which always appear below the field component).",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            }
+          ],
+          "raw": "\"horizontal\" | \"vertical\""
+        }
+      },
+      "validation_state": {
+        "description": "The validationState affects the display of the validationMessage and validationMessageIcon.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'none'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            }
+          ],
+          "raw": "\"none\" | \"success\" | \"warning\" | \"error\""
+        }
+      },
+      "required": {
+        "description": "Marks the Field as required. If true, an asterisk will be appended to the label,\nand aria-required will be set on the Field's child.",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "label_size": {
+        "description": "The size of the Field's label.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/dropdown/Dropdown.tsx": {
+    "displayName": "Dropdown",
+    "description": "A Dropdown is a selection component composed of a button and a list of options.\nThe button displays the current selected item or a placeholder, and the list is\nvisible on demand by clicking the button. Dropdowns are typically used in forms.",
+    "props": {
+      "value": {
+        "description": "The value of the input.",
+        "required": false,
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string",
+            "raw": "string"
+          },
+          "raw": "string[]"
+        }
+      },
+      "multiselect": {
+        "description": "If true, the user can select multiple values",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "options": {
+        "description": "Choices to be displayed in the dropdown control.",
+        "required": false,
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        },
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "label": {
+                "description": "The Radio's label.",
+                "required": true,
+                "name": "string",
+                "raw": "string"
+              },
+              "value": {
+                "description": "The Radio's value.",
+                "required": true,
+                "name": "string",
+                "raw": "string"
+              },
+              "disabled": {
+                "description": "denotes if radio is disabled",
+                "required": false,
+                "name": "bool",
+                "raw": "boolean"
+              }
+            },
+            "raw": "Option"
+          },
+          "raw": "Option[]"
+        }
+      },
+      "placeholder": {
+        "description": "A string value to be displayed if no item is selected.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "disabled": {
+        "description": "If true, the dropdown is disabled and can't be clicked on.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "size": {
+        "description": "Controls the size of the combobox faceplate",
+        "required": false,
+        "defaultValue": {
+          "value": "'medium'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "appearance": {
+        "description": "Controls the colors and borders of the combobox trigger.",
+        "required": false,
+        "defaultValue": {
+          "value": "'outline'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'outline'",
+              "computed": false
+            },
+            {
+              "value": "'underline'",
+              "computed": false
+            },
+            {
+              "value": "'filled-darker'",
+              "computed": false
+            },
+            {
+              "value": "'filled-lighter'",
+              "computed": false
+            }
+          ],
+          "raw": "\"outline\" | \"underline\" | \"filled-darker\" | \"filled-lighter\""
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "label": {
+        "description": "The label associated with the field.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "validation_message": {
+        "description": "A message about the validation state. By default, this is an error message,\nbut it can be a success, warning, or custom message by setting validationState.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "orientation": {
+        "description": "The orientation of the label relative to the field component. This only affects the label,\nand not the validationMessage or hint (which always appear below the field component).",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            }
+          ],
+          "raw": "\"horizontal\" | \"vertical\""
+        }
+      },
+      "validation_state": {
+        "description": "The validationState affects the display of the validationMessage and validationMessageIcon.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'none'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            }
+          ],
+          "raw": "\"none\" | \"success\" | \"warning\" | \"error\""
+        }
+      },
+      "required": {
+        "description": "Marks the Field as required. If true, an asterisk will be appended to the label,\nand aria-required will be set on the Field's child.",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "label_size": {
+        "description": "The size of the Field's label.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/input/Input.tsx": {
+    "displayName": "Input",
+    "description": "Input allows the user to enter and edit text.",
+    "props": {
+      "appearance": {
+        "description": "Controls the colors and borders of the input.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'outline'",
+              "computed": false
+            },
+            {
+              "value": "'underline'",
+              "computed": false
+            },
+            {
+              "value": "'filled-darker'",
+              "computed": false
+            },
+            {
+              "value": "'filled-lighter'",
+              "computed": false
+            },
+            {
+              "value": "'filled-darker-shadow'",
+              "computed": false
+            },
+            {
+              "value": "'filled-lighter-shadow'",
+              "computed": false
+            }
+          ],
+          "raw": "\"outline\" | \"underline\" | \"filled-darker\" | \"filled-lighter\" | \"filled-darker-shadow\" | \"filled-lighter-shadow\""
+        }
+      },
+      "type": {
+        "description": "An input can have different text-based types based on the type of value the user will enter.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'number'",
+              "computed": false
+            },
+            {
+              "value": "'time'",
+              "computed": false
+            },
+            {
+              "value": "'text'",
+              "computed": false
+            },
+            {
+              "value": "'search'",
+              "computed": false
+            },
+            {
+              "value": "'tel'",
+              "computed": false
+            },
+            {
+              "value": "'url'",
+              "computed": false
+            },
+            {
+              "value": "'email'",
+              "computed": false
+            },
+            {
+              "value": "'date'",
+              "computed": false
+            },
+            {
+              "value": "'datetime-local'",
+              "computed": false
+            },
+            {
+              "value": "'month'",
+              "computed": false
+            },
+            {
+              "value": "'password'",
+              "computed": false
+            }
+          ],
+          "raw": "\"number\" | \"time\" | \"text\" | \"search\" | \"tel\" | \"url\" | \"email\" | \"date\" | \"datetime-local\" | \"month\" | \"password\""
+        }
+      },
+      "size": {
+        "description": "Size of the input (changes the font size and spacing).",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "value": {
+        "description": "Current value of the input.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "placeholder": {
+        "description": "Placeholder text for the input.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "content_before": {
+        "description": "Element before the input text, within the input border",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "Element"
+        }
+      },
+      "content_after": {
+        "description": "Element after the input text, within the input border",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "Element"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "label": {
+        "description": "The label associated with the field.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "validation_message": {
+        "description": "A message about the validation state. By default, this is an error message,\nbut it can be a success, warning, or custom message by setting validationState.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "orientation": {
+        "description": "The orientation of the label relative to the field component. This only affects the label,\nand not the validationMessage or hint (which always appear below the field component).",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            }
+          ],
+          "raw": "\"horizontal\" | \"vertical\""
+        }
+      },
+      "validation_state": {
+        "description": "The validationState affects the display of the validationMessage and validationMessageIcon.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'none'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            }
+          ],
+          "raw": "\"none\" | \"success\" | \"warning\" | \"error\""
+        }
+      },
+      "required": {
+        "description": "Marks the Field as required. If true, an asterisk will be appended to the label,\nand aria-required will be set on the Field's child.",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "label_size": {
+        "description": "The size of the Field's label.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/radio/RadioGroup.tsx": {
+    "displayName": "RadioGroup",
+    "description": "RadioGroup lets people select a single option from two or more Radio items.\nUse RadioGroup to present all available choices if there's enough space.\nFor more than 5 choices, consider using a different component such as Dropdown.",
+    "props": {
+      "label": {
+        "description": "A label to be displayed above the RadioGroup component.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "value": {
+        "description": "The value of the input corresponds to the values provided in the `options` property.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "options": {
+        "description": "Configuration for individual choices within the radio group",
+        "required": false,
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        },
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "label": {
+                "description": "The Radio's label.",
+                "required": true,
+                "name": "string",
+                "raw": "string"
+              },
+              "value": {
+                "description": "The Radio's value.",
+                "required": true,
+                "name": "string",
+                "raw": "string"
+              },
+              "disabled": {
+                "description": "denotes if radio is disabled",
+                "required": false,
+                "name": "bool",
+                "raw": "boolean"
+              }
+            },
+            "raw": "Option"
+          },
+          "raw": "Option[]"
+        }
+      },
+      "layout": {
+        "description": "How the radio items are laid out in the group.",
+        "required": false,
+        "defaultValue": {
+          "value": "'vertical'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            },
+            {
+              "value": "'horizontal-stacked'",
+              "computed": false
+            }
+          ],
+          "raw": "\"horizontal\" | \"vertical\" | \"horizontal-stacked\""
+        }
+      },
+      "disabled": {
+        "description": "Disable all Radio items in this group.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "required": {
+        "description": "Require a selection in this group.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/slider/Slider.tsx": {
+    "displayName": "Slider",
+    "description": "A Slider represents an input that allows user to choose a value from within a specific range.",
+    "props": {
+      "label": {
+        "description": "Description label of the Slider\n\n\nThe label associated with the field.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "value": {
+        "description": "The initial value of the Slider",
+        "required": false,
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "min": {
+        "description": "The min value of the Slider",
+        "required": true,
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "max": {
+        "description": "The max value of the Slider",
+        "required": true,
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "step": {
+        "description": "The difference between the two adjacent values of the Slider",
+        "required": false,
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "vertical": {
+        "description": "Optional flag to render the slider vertically. Defaults to rendering horizontal.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "size": {
+        "description": "The size of the Slider.",
+        "required": false,
+        "defaultValue": {
+          "value": "'medium'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\""
+        }
+      },
+      "disabled": {
+        "description": "Optional flag to render the Slider as disabled",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "validation_message": {
+        "description": "A message about the validation state. By default, this is an error message,\nbut it can be a success, warning, or custom message by setting validationState.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "orientation": {
+        "description": "The orientation of the label relative to the field component. This only affects the label,\nand not the validationMessage or hint (which always appear below the field component).",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'vertical'",
+              "computed": false
+            },
+            {
+              "value": "'horizontal'",
+              "computed": false
+            }
+          ],
+          "raw": "\"vertical\" | \"horizontal\""
+        }
+      },
+      "validation_state": {
+        "description": "The validationState affects the display of the validationMessage and validationMessageIcon.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'none'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            }
+          ],
+          "raw": "\"none\" | \"success\" | \"warning\" | \"error\""
+        }
+      },
+      "required": {
+        "description": "Marks the Field as required. If true, an asterisk will be appended to the label,\nand aria-required will be set on the Field's child.",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "label_size": {
+        "description": "The size of the Field's label.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/switch/Switch.tsx": {
+    "displayName": "Switch",
+    "description": "A switch represents a physical switch that allows someone to choose between two mutually exclusive options.\nFor example, \"On/Off\" and \"Show/Hide\". Choosing an option should produce an immediate result.",
+    "props": {
+      "label": {
+        "description": "A label to be displayed along with the toggle component.\n\n\nThe label associated with the field.",
+        "required": false,
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        },
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "checked": {
+        "description": "Checked state of the toggle",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "label_postion": {
+        "description": "The position of the label relative to the Switch.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'before'",
+              "computed": false
+            },
+            {
+              "value": "'after'",
+              "computed": false
+            },
+            {
+              "value": "'above'",
+              "computed": false
+            }
+          ],
+          "raw": "\"before\" | \"after\" | \"above\""
+        }
+      },
+      "disabled": {
+        "description": "If true, the switch is disabled and can't be clicked on.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "validation_message": {
+        "description": "A message about the validation state. By default, this is an error message,\nbut it can be a success, warning, or custom message by setting validationState.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "orientation": {
+        "description": "The orientation of the label relative to the field component. This only affects the label,\nand not the validationMessage or hint (which always appear below the field component).",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            }
+          ],
+          "raw": "\"horizontal\" | \"vertical\""
+        }
+      },
+      "validation_state": {
+        "description": "The validationState affects the display of the validationMessage and validationMessageIcon.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'none'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            }
+          ],
+          "raw": "\"none\" | \"success\" | \"warning\" | \"error\""
+        }
+      },
+      "required": {
+        "description": "Marks the Field as required. If true, an asterisk will be appended to the label,\nand aria-required will be set on the Field's child.",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "label_size": {
+        "description": "The size of the Field's label.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/tab_list/Tab.tsx": {
+    "displayName": "Tab",
+    "description": "",
+    "props": {
+      "value": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "children": {
+        "description": "Array that holds PivotItem components",
+        "required": true,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "icon": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "Element"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/tab_list/TabList.tsx": {
+    "displayName": "TabList",
+    "description": "",
+    "props": {
+      "children": {
+        "description": "Array that holds PivotItem components",
+        "required": true,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "selected_key": {
+        "description": "Currently selected key.",
+        "required": false,
+        "defaultValue": {
+          "value": "''",
+          "computed": false
+        },
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "loading_state": {
+        "description": "Object that holds the loading state object coming from dash-renderer",
+        "required": false,
+        "type": {
+          "name": "shape",
+          "value": {
+            "is_loading": {
+              "description": "Determines if the component is loading or not",
+              "required": true,
+              "name": "bool",
+              "raw": "boolean"
+            },
+            "prop_name": {
+              "description": "Holds which property is loading",
+              "required": true,
+              "name": "string",
+              "raw": "string"
+            },
+            "component_name": {
+              "description": "Holds the name of the component that is loading",
+              "required": true,
+              "name": "string",
+              "raw": "string"
+            }
+          },
+          "raw": "DashLoadingState"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/templates/Page.tsx": {
+    "displayName": "Page",
+    "description": "A page within a multi page layout",
+    "props": {
+      "children": {
+        "description": "child components",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "controls": {
+        "description": "child components",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "label": {
+        "description": "Show clear button",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "page_key": {
+        "description": "Show clear button",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "icon": {
+        "description": "Icon for display in page navigation",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "loading_state": {
+        "description": "Object that holds the loading state object coming from dash-renderer",
+        "required": false,
+        "type": {
+          "name": "shape",
+          "value": {
+            "is_loading": {
+              "description": "Determines if the component is loading or not",
+              "required": true,
+              "name": "bool",
+              "raw": "boolean"
+            },
+            "prop_name": {
+              "description": "Holds which property is loading",
+              "required": true,
+              "name": "string",
+              "raw": "string"
+            },
+            "component_name": {
+              "description": "Holds the name of the component that is loading",
+              "required": true,
+              "name": "string",
+              "raw": "string"
+            }
+          },
+          "raw": "DashLoadingState"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/templates/PagesWithSidebar.tsx": {
+    "displayName": "PagesWithSidebar",
+    "description": "",
+    "props": {
+      "children": {
+        "description": "Array of @link(Page) components",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "selected_key": {
+        "description": "Key of the currently selected page item in navigation controls.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "collapsible": {
+        "description": "whether the Sidebar element should be collapsible.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "collapsed": {
+        "description": "whether the Sidebar element is collapsed.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "sidebar_width": {
+        "description": "width of the PagesWithSidebar element.",
+        "required": false,
+        "defaultValue": {
+          "value": "300",
+          "computed": false
+        },
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "sidebar_collapsed_width": {
+        "description": "width of the collapsed Sidebar element.",
+        "required": false,
+        "defaultValue": {
+          "value": "80",
+          "computed": false
+        },
+        "type": {
+          "name": "number",
+          "raw": "number"
+        }
+      },
+      "loading_state": {
+        "description": "Object that holds the loading state object coming from dash-render+er",
+        "required": false,
+        "type": {
+          "name": "shape",
+          "value": {
+            "is_loading": {
+              "description": "Determines if the component is loading or not",
+              "required": true,
+              "name": "bool",
+              "raw": "boolean"
+            },
+            "prop_name": {
+              "description": "Holds which property is loading",
+              "required": true,
+              "name": "string",
+              "raw": "string"
+            },
+            "component_name": {
+              "description": "Holds the name of the component that is loading",
+              "required": true,
+              "name": "string",
+              "raw": "string"
+            }
+          },
+          "raw": "DashLoadingState"
+        }
+      },
+      "content_style": {
+        "description": "Defines CSS styles which will be applied to content container.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/templates/TabbedPages.tsx": {
+    "displayName": "TabbedPages",
+    "description": "",
+    "props": {
+      "header": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "Element"
+        }
+      },
+      "selected_key": {
+        "description": "Key of the currently selected page item in navigation controls.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "children": {
+        "description": "",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/text/Label.tsx": {
+    "displayName": "Label",
+    "description": "A label provides a name or title for an input.",
+    "props": {
+      "children": {
+        "description": "",
+        "required": true,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "disabled": {
+        "description": "Renders the label as disabled",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "required": {
+        "description": "Displays an indicator that the label is for a required field.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "size": {
+        "description": "A label supports different sizes.",
+        "required": false,
+        "defaultValue": {
+          "value": "'medium'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "weight": {
+        "description": "A label supports regular and semibold fontweight.",
+        "required": false,
+        "defaultValue": {
+          "value": "'regular'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'regular'",
+              "computed": false
+            },
+            {
+              "value": "'semibold'",
+              "computed": false
+            }
+          ],
+          "raw": "\"regular\" | \"semibold\""
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/text/Text.tsx": {
+    "displayName": "Text",
+    "description": "Typography and styling abstraction component used to ensure\nconsistency and standardize text throughout your application.\n### Do\n- Use Text whenever you need to display stylized text\n- Use Text to display read-only text",
+    "props": {
+      "children": {
+        "description": "The children of this component",
+        "required": false,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "align": {
+        "description": "Aligns text based on the parent container.",
+        "required": false,
+        "defaultValue": {
+          "value": "'start'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'center'",
+              "computed": false
+            },
+            {
+              "value": "'start'",
+              "computed": false
+            },
+            {
+              "value": "'end'",
+              "computed": false
+            },
+            {
+              "value": "'justify'",
+              "computed": false
+            }
+          ],
+          "raw": "\"center\" | \"start\" | \"end\" | \"justify\""
+        }
+      },
+      "block": {
+        "description": "Applies a block display for the content.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "italic": {
+        "description": "Applies the italic font style to the content.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "size": {
+        "description": "Applies font size and line height based on the theme tokens.",
+        "required": false,
+        "defaultValue": {
+          "value": "300",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": 100,
+              "computed": false
+            },
+            {
+              "value": 200,
+              "computed": false
+            },
+            {
+              "value": 300,
+              "computed": false
+            },
+            {
+              "value": 400,
+              "computed": false
+            },
+            {
+              "value": 500,
+              "computed": false
+            },
+            {
+              "value": 600,
+              "computed": false
+            },
+            {
+              "value": 700,
+              "computed": false
+            },
+            {
+              "value": 800,
+              "computed": false
+            },
+            {
+              "value": 900,
+              "computed": false
+            },
+            {
+              "value": 1000,
+              "computed": false
+            }
+          ],
+          "raw": "100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 1000"
+        }
+      },
+      "strikethrough": {
+        "description": "Applies the strikethrough text decoration to the content.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "truncate": {
+        "description": "Truncate overflowing text for block displays.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "underline": {
+        "description": "Applies the underline text decoration to the content.",
+        "required": false,
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "weight": {
+        "description": "Applies font weight to the content.",
+        "required": false,
+        "defaultValue": {
+          "value": "'regular'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'regular'",
+              "computed": false
+            },
+            {
+              "value": "'semibold'",
+              "computed": false
+            },
+            {
+              "value": "'bold'",
+              "computed": false
+            }
+          ],
+          "raw": "\"medium\" | \"regular\" | \"semibold\" | \"bold\""
+        }
+      },
+      "wrap": {
+        "description": "Applies the underline text decoration to the content.",
+        "required": false,
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        },
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "style": {
+        "description": "Defines CSS styles which will override styles previously set.",
+        "required": false,
+        "type": {
+          "name": "object",
+          "raw": "object"
+        }
+      },
+      "class_name": {
+        "description": "Often used with CSS to style elements with common properties.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/text/Textarea.tsx": {
+    "displayName": "Textarea",
+    "description": "Textarea allows the user to enter and edit multiline text.\n### Do\n- Consider using Textarea with outline appearance. When the contrast ratio against\n  the immediate surrounding color is less than 3:1, consider using outline styles\n  which has a bottom border stroke. But please ensure the color of bottom border stroke\n  has a sufficient contrast which is greater than 3 to 1 against the immediate surrounding.\n### Don't\n- Don\u2019t place Textarea on a surface which doesn't have a sufficient contrast.\n  The colors adjacent to the input should have a sufficient contrast. Particularly,\n  the color of input with filled darker and lighter styles needs to provide greater\n  than 3 to 1 contrast ratio against the immediate surrounding color to pass accessibility\n  requirements.",
+    "props": {
+      "appearance": {
+        "description": "Styling the Textarea should use",
+        "required": false,
+        "defaultValue": {
+          "value": "'outline'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'outline'",
+              "computed": false
+            },
+            {
+              "value": "'filled-darker'",
+              "computed": false
+            },
+            {
+              "value": "'filled-lighter'",
+              "computed": false
+            }
+          ],
+          "raw": "\"outline\" | \"filled-darker\" | \"filled-lighter\""
+        }
+      },
+      "resize": {
+        "description": "Which direction the Textarea is allowed to be resized.",
+        "required": false,
+        "defaultValue": {
+          "value": "'none'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'none'",
+              "computed": false
+            },
+            {
+              "value": "'both'",
+              "computed": false
+            },
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            }
+          ],
+          "raw": "\"none\" | \"both\" | \"horizontal\" | \"vertical\""
+        }
+      },
+      "size": {
+        "description": "Size of the Textarea.",
+        "required": false,
+        "defaultValue": {
+          "value": "'medium'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      },
+      "value": {
+        "description": "The value of the Textarea.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      },
+      "label": {
+        "description": "The label associated with the field.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "validation_message": {
+        "description": "A message about the validation state. By default, this is an error message,\nbut it can be a success, warning, or custom message by setting validationState.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "orientation": {
+        "description": "The orientation of the label relative to the field component. This only affects the label,\nand not the validationMessage or hint (which always appear below the field component).",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'horizontal'",
+              "computed": false
+            },
+            {
+              "value": "'vertical'",
+              "computed": false
+            }
+          ],
+          "raw": "\"horizontal\" | \"vertical\""
+        }
+      },
+      "validation_state": {
+        "description": "The validationState affects the display of the validationMessage and validationMessageIcon.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'none'",
+              "computed": false
+            },
+            {
+              "value": "'success'",
+              "computed": false
+            },
+            {
+              "value": "'warning'",
+              "computed": false
+            },
+            {
+              "value": "'error'",
+              "computed": false
+            }
+          ],
+          "raw": "\"none\" | \"success\" | \"warning\" | \"error\""
+        }
+      },
+      "required": {
+        "description": "Marks the Field as required. If true, an asterisk will be appended to the label,\nand aria-required will be set on the Field's child.",
+        "required": false,
+        "type": {
+          "name": "bool",
+          "raw": "boolean"
+        }
+      },
+      "label_size": {
+        "description": "The size of the Field's label.",
+        "required": false,
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'small'",
+              "computed": false
+            },
+            {
+              "value": "'medium'",
+              "computed": false
+            },
+            {
+              "value": "'large'",
+              "computed": false
+            }
+          ],
+          "raw": "\"small\" | \"medium\" | \"large\""
+        }
+      }
+    },
+    "isContext": false
+  },
+  "src/components/FluentProvider.tsx": {
+    "displayName": "FluentProvider",
+    "description": "",
+    "props": {
+      "children": {
+        "description": "Array that holds PivotItem components",
+        "required": true,
+        "type": {
+          "name": "node",
+          "raw": "ReactNode"
+        }
+      },
+      "theme": {
+        "description": "",
+        "required": false,
+        "defaultValue": {
+          "value": "'light'",
+          "computed": false
+        },
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'light'",
+              "computed": false
+            },
+            {
+              "value": "'dark'",
+              "computed": false
+            },
+            {
+              "value": "'teamsLight'",
+              "computed": false
+            },
+            {
+              "value": "'teamsDark'",
+              "computed": false
+            }
+          ],
+          "raw": "\"light\" | \"dark\" | \"teamsLight\" | \"teamsDark\""
+        }
+      },
+      "id": {
+        "description": "Unique ID to identify this component in Dash callbacks.",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "key": {
+        "description": "A unique identifier for the component, used to improve\nperformance by React.js while rendering components\nSee https://reactjs.org/docs/lists-and-keys.html for more info",
+        "required": false,
+        "type": {
+          "name": "string",
+          "raw": "string"
+        }
+      },
+      "setProps": {
+        "description": "Update props to trigger callbacks.",
+        "required": false,
+        "type": {
+          "name": "func",
+          "raw": "(props: Record<string, any>) => void"
+        }
+      }
+    },
+    "isContext": false
+  }
+}
