@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: snraspi-lib
+Version: 1.0.3
+Summary: Convenience utilities for Raspberry Pi
+Home-page: https://github.com/signag/snraspi-lib
+Author: signag
+Author-email: siegfried.nagel@t-online.de
+Project-URL: Source, https://github.com/signag/snraspi-lib/
+Keywords: Raspberry Pi sensors
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: adafruit-blinka (==8.16.1)
+Requires-Dist: adafruit-circuitpython-bme280 (==2.6.19)
+Requires-Dist: adafruit-circuitpython-busdevice (==5.2.3)
+Requires-Dist: adafruit-circuitpython-dht (==3.7.8)
+Requires-Dist: adafruit-circuitpython-requests (==1.13.0)
+Requires-Dist: adafruit-circuitpython-typing (==1.8.3)
+Requires-Dist: logging-plus (==1.1.0)
+Requires-Dist: pyserial (==3.5)
+Requires-Dist: rpi.gpio (==0.7.1)
+Requires-Dist: adafruit-pureio (==1.1.10) ; python_full_version >= "3.5.0"
+Requires-Dist: pyusb (==1.2.1) ; python_full_version >= "3.6.0"
+Requires-Dist: adafruit-platformdetect (==3.41.0) ; python_version >= "3.5"
+Requires-Dist: pyftdi (==0.54.0) ; python_version >= "3.7"
+Requires-Dist: typing-extensions (==4.5.0) ; python_version >= "3.7"
+Provides-Extra: dev
+
+# snraspi-lib
+
+This Package includes convenience functions for Raspberry Pi
+
+## Package 'sensors'
+
+- [Environment Sensors](https://github.com/signag/snraspi-lib/blob/main/docs/EnvironmentSensors.md)

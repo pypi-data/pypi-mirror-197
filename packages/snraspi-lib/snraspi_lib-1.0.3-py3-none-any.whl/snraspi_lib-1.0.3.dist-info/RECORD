@@ -1,0 +1,8 @@
+snraspi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snraspi/sensors/EnvironmentSensor.py,sha256=vvZ2JgMUuUTMyO3C_KMDR8tr97cUvtgg9saH4rM6-90,9045
+snraspi/sensors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snraspi_lib-1.0.3.dist-info/LICENSE,sha256=cwXFbEYYVVmD1qQgIl05WKTEfrRdj9EsSCWpTji87JM,1063
+snraspi_lib-1.0.3.dist-info/METADATA,sha256=b0imNcfYJajCFvZZLCqs5WBR6vscWvVaDezRqAFjY_0,1601
+snraspi_lib-1.0.3.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+snraspi_lib-1.0.3.dist-info/top_level.txt,sha256=sgFM23EFfgkOov3ytwbTjlOTqUlalmMePgR3qt_Uvpc,8
+snraspi_lib-1.0.3.dist-info/RECORD,,
