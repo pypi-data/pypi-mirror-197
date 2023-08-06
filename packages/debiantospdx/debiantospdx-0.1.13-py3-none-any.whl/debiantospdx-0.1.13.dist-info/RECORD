@@ -1,0 +1,14 @@
+debiantospdx/__init__.py,sha256=HRHaQiq-HnAd36EM-P1pn6GbXreZCyu9We0naLkq6Vg,186
+debiantospdx/__main__.py,sha256=mq6vuh5ORxPBRje4aLjdo7j-o6_XQ9DYRaBLhRF1tCA,222
+debiantospdx/cli.py,sha256=mellS-1K96VDiYch0zWzeJddlalfoSPKxNZyhYQLCsI,6156
+debiantospdx/control_to_dict.py,sha256=xslW5Q7CQrcYqumRPI0XbcNovQYUyKJ4tlFfcnwuytw,2448
+debiantospdx/deb_spdx.py,sha256=4O1SeeWhz1atJM6WfD9p-F5qKgZK_ceGVs4lyMBXmjM,15584
+debiantospdx/dict_to_tv.py,sha256=mw_Ib16_oJSjJnsibGGGrAMkgFuq43pwzBKXKISGmL8,652
+debiantospdx/make_tv_dict.py,sha256=A_ok8Jqf1S88PsYlMySjFE0VnpLINJT4SNxwEkn2Vas,6199
+debiantospdx/search.py,sha256=BXYHlrL7x6S1LEfa2LFdv3ANqhuQzY8YJ32KFOqVWxI,7482
+debiantospdx/tv_to_dict.py,sha256=bGmxvDUVBf6MbHip0prLuFqKqVcnpaUMsm5d5KsXTdo,2793
+debiantospdx-0.1.13.dist-info/entry_points.txt,sha256=idPaYaqzD7RgyPiNeKTNSC6UxKBBbK_I-74j3bCRR6Y,55
+debiantospdx-0.1.13.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+debiantospdx-0.1.13.dist-info/WHEEL,sha256=bbU3AyvhQ312rVm7zzRQjs6axI1UYWC3nmFA2E6FFSI,88
+debiantospdx-0.1.13.dist-info/METADATA,sha256=OAL11dm1xds-_YisuXcOSiz3GycEy95oPqLEDaQ7iUk,2579
+debiantospdx-0.1.13.dist-info/RECORD,,
