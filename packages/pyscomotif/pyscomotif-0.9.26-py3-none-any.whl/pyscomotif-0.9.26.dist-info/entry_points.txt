@@ -1,0 +1,3 @@
+[console_scripts]
+pyscomotif=pyscomotif.pyscomotif:command_line_interface
+
