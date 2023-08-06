@@ -1,0 +1,10 @@
+crelm/__init__.py,sha256=U1W0taNPo0JmiXVSP_vi4z_W5_CQ1F6Iln7kSqpRlnA,134
+crelm/factory.py,sha256=R6ZK5_T7jMUfb8BPsLVWUllhND0rTrKKMc8zWeK9mjM,2972
+crelm/libcrelm.py,sha256=qlUPCmSWqHZRETEAqEiQIPCRiA3w_4jkFvi4z1uiaxw,380
+crelm/makeheaders.c,sha256=kxqwTGdgnd6zeWwHjt4fdXVjqMKX9n59bY0MY-YwcOw,103701
+crelm/makeheaders_crelm.c,sha256=STLFuQIizg7aY6ZDlwRV9a0Bb1e5et7QpznRonx4-lg,3817
+crelm/tube.py,sha256=hTXesi3aU17ihhZ52cq61vv3ebp8wcgkZC9gv6vvuMk,11344
+crelm-0.0.26a16.dist-info/LICENSE,sha256=Aq1O2Fm1sfMQNpe1_yyVzW56JYyaozI3MY1nWI7Fd7Q,1088
+crelm-0.0.26a16.dist-info/METADATA,sha256=B3VMQaLGNLP_LCeleObnKci_d3R3CcWAQW8SSznzXqc,1055
+crelm-0.0.26a16.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+crelm-0.0.26a16.dist-info/RECORD,,
