@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+Elasticity/Elasticity.py
+Elasticity/__init__.py
+ElasticityProject.egg-info/PKG-INFO
+ElasticityProject.egg-info/SOURCES.txt
+ElasticityProject.egg-info/dependency_links.txt
+ElasticityProject.egg-info/requires.txt
+ElasticityProject.egg-info/top_level.txt
