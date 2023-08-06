@@ -1,0 +1,14 @@
+README.md
+setup.py
+bin/nudecrawler
+nudecrawler/__init__.py
+nudecrawler/page.py
+nudecrawler/remoteimage.py
+nudecrawler/unbuffered.py
+nudecrawler/verbose.py
+nudecrawler/version.py
+nudecrawler.egg-info/PKG-INFO
+nudecrawler.egg-info/SOURCES.txt
+nudecrawler.egg-info/dependency_links.txt
+nudecrawler.egg-info/requires.txt
+nudecrawler.egg-info/top_level.txt
