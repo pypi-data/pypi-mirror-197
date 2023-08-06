@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: textoir
+Version: 0.0.5
+Summary: TEXTOIR is the first high-quality Text Open Intent Recognition platform.
+Author: wangxin
+Author-email: 1506542922@qq.com
+License: apache 3.0
+Requires-Python: >=3.6
+License-File: LICENSE

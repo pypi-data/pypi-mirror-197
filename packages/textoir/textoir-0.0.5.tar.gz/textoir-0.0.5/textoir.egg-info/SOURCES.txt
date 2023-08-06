@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+textoir.egg-info/PKG-INFO
+textoir.egg-info/SOURCES.txt
+textoir.egg-info/dependency_links.txt
+textoir.egg-info/requires.txt
+textoir.egg-info/top_level.txt
