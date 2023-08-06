@@ -1,0 +1,14 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "swissknife"
+version = "0.0.1"
+authors = [
+ { name="Giancarlo Romeo", email="giancarloromeo@gmail.com" },
+ ]
+
+[project.urls]
+"Homepage" = "https://github.com/giancarloromeo/swissknife"
+"Bug Tracker" = "https://github.com/giancarloromeo/swissknife/issues"
