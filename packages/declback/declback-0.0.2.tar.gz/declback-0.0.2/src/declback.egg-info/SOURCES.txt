@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/main.py
+src/declback.egg-info/PKG-INFO
+src/declback.egg-info/SOURCES.txt
+src/declback.egg-info/dependency_links.txt
+src/declback.egg-info/requires.txt
+src/declback.egg-info/top_level.txt
