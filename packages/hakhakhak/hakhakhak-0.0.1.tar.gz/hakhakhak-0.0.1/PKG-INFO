@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: hakhakhak
+Version: 0.0.1
+Summary: isoweek calculation and so on
+Home-page: https://github.com/GitHayang/python
+Author: white
+Author-email: 
+License: MIT
+Keywords: calendar,isoweek,listsum
