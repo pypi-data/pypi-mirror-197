@@ -1,0 +1,11 @@
+dbrief/__init__.py,sha256=B2RYBR2Em8eby7ULkC5iG56Rxd50_gF8ELyF_QzNccQ,102
+dbrief/report.py,sha256=ZMZPyCKUozG3pc5Vwdd_-ZC_NsWTe12Ln4B8Yslj5G0,5085
+dbrief/templates/default.html,sha256=UV8d8WNjkLusRU4HzS-ocBj0lvjxFPLQgnmaT7IsfKo,3667
+docs/source/conf.py,sha256=aWNlZCw68xDlApX9P6mk1PCvD_8IyaR3U0smUt5abzQ,3502
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dbrief-0.1.1.dist-info/LICENSE.txt,sha256=GNt5B-QNu2IHf8GmXd4Ah-CGtT_WPF3YgnG3eT-IUfI,1071
+dbrief-0.1.1.dist-info/METADATA,sha256=abDKF40mNuGxUcgd0IlKhB9vcZpCw3YSj_ZsS2c-jZ8,2004
+dbrief-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+dbrief-0.1.1.dist-info/top_level.txt,sha256=oLCCQfifGEmgTo7MkxAUKVwtoC-24oyh_e-dv88AOp0,18
+dbrief-0.1.1.dist-info/RECORD,,
