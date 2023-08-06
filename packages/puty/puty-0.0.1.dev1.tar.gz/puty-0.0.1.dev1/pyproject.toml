@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "puty"
+version = "0.0.1.dev1"
+description = "data purifier with schema"
+authors = ["jrog612 <jrog612@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = 'https://github.com/jrog612/puty'
+homepage = 'https://github.com/jrog612/puty'
+packages = [
+    { include = "puty.py" }
+]
+include = [
+    { path = "test*", format = "sdist" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
