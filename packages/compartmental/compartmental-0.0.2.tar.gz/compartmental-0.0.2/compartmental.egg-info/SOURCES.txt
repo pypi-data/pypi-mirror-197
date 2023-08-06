@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+compartmental/__init__.py
+compartmental/generic_model.py
+compartmental/util.py
+compartmental/parameters/__init__.py
+compartmental/parameters/parameters_manager.py
