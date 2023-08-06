@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: feather-api
+Version: 0.1.0
+Summary: Python wrapper for Feather's API
+Home-page: http://github.com/Feather-Official/featherdbtools
+Author: Feather
+Author-email: support@try-feather.com
+Requires-Dist: setuptools
+
