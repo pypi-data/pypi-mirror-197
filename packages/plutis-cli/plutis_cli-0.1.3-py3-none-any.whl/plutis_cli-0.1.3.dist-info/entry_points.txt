@@ -1,0 +1,2 @@
+[console_scripts]
+plutis = plutis_cli.main:main
