@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "cirillo"
+version = "1.0.0"
+authors = [
+    { name = "Ankit Chandawala", email = "ankitchandawala@gmail.com" },
+]
+description = "Command line Pomodoro timer"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "click",
+    "tqdm",
+    "colorama",
+    "plyer"
+]
+
+[project.scripts]
+cirillo = "cirillo:main"
+
+[project.urls]
+"Homepage" = "https://github.com/nerandell/cirillo"
+"Bug Tracker" = "https://github.com/nerandell/cirillo/issues"
