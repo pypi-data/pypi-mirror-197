@@ -1,0 +1,5 @@
+numpy>=1.21
+trimesh[easy]>=3.16.0
+vedo
+PyQt5
+image_grid
