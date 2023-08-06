@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sakkara
+Version: 0.5.3
+Summary: Tools for simplified creation of PyMC models
+Author: Henrik Håkansson
+Author-email: henrik.hakansson@fcc.chalmers.se
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.23,<2.0)
+Requires-Dist: pandas (>=1.4,<2.0)
+Requires-Dist: pymc (>=5.0.0,<6.0.0)
+Requires-Dist: pytensor (>=2.9.1,<3.0.0)
