@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/willowavif/AvifPlugin.py
+src/willowavif/__init__.py
+src/willowavif.egg-info/PKG-INFO
+src/willowavif.egg-info/SOURCES.txt
+src/willowavif.egg-info/dependency_links.txt
+src/willowavif.egg-info/requires.txt
+src/willowavif.egg-info/top_level.txt
+tests/test_willow.py
