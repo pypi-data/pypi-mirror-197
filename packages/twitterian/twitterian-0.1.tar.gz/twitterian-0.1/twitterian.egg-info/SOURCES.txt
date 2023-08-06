@@ -1,0 +1,8 @@
+README.md
+setup.py
+twitterian/__init__.py
+twitterian.egg-info/PKG-INFO
+twitterian.egg-info/SOURCES.txt
+twitterian.egg-info/dependency_links.txt
+twitterian.egg-info/requires.txt
+twitterian.egg-info/top_level.txt
