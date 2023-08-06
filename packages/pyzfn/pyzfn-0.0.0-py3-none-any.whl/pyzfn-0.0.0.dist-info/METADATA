@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyzfn
+Version: 0.0.0
+Summary: micromagnetic post processing library
+Author: Mathieu Moalic
+License: GPL-3.0
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: cmocean (>=2.0)
+Requires-Dist: ipympl (>=0.9.2)
+Requires-Dist: ipytree (>=0.2.2)
+Requires-Dist: matplotlib (>=3.6.2)
+Requires-Dist: numpy (>=1.23.5)
+Requires-Dist: psutil (>=5.9.4)
+Requires-Dist: tqdm (>=4.64.1)
+Requires-Dist: zarr (>=2.13.3)
+Requires-Dist: pyfftw (>=0.13.0)
+Requires-Dist: nptyping (>=2.4.1)
+Provides-Extra: testing
+Requires-Dist: pytest (>=6.0) ; extra == 'testing'
+Requires-Dist: pytest-cov (>=2.0) ; extra == 'testing'
+Requires-Dist: mypy (>=0.910) ; extra == 'testing'
+Requires-Dist: flake8 (>=3.9) ; extra == 'testing'
+Requires-Dist: tox (>=3.24) ; extra == 'testing'
+
