@@ -1,0 +1,29 @@
+name: Test CBsyst
+
+on:
+  pull_request:
+  push:
+    branches: [master, dev]
+
+jobs:
+  run:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8", "3.9", "3.10"]
+        os: [windows-latest, ubuntu-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Testing ${{ matrix.os }}, python ${{ matrix.python-version }}
+      shell: bash -l {0}
+      run: |
+        python3 -m pip install -e .
+        pushd tests/test_data/GLODAP_data && python3 get_GLODAP_data.py && popd
+        python3 -m unittest
