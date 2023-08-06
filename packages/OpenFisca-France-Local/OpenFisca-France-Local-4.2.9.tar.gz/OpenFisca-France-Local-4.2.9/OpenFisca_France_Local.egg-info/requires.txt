@@ -1,0 +1,9 @@
+OpenFisca-Core<36,>=35.2.0
+OpenFisca-France<143,>=126
+pandas==1.0.3
+
+[excel-reader]
+xlrd==1.2.0
+
+[test]
+nose
