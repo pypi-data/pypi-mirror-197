@@ -1,0 +1,9 @@
+kaptik/__init__.py,sha256=WJ-c7XLZBUZwW_GRkWlGAgRw4Kbuh7Gm1hzy9xFTXgQ,255
+kaptik/api.py,sha256=otggMgz2ydmAFFUYqHzlm-3iRrqHdsPqN6kA9YEHWFg,3184
+kaptik/pytorch.py,sha256=gTIaQEp2vMghLEcbA948W82yyK3WYldT9xFjn_Hgjws,1633
+kaptik/utils.py,sha256=1ZgM58JdK6CyODwuRBhTywm0q_-fBOE5UnWQ8XerOxU,992
+kaptik-0.0.1.dist-info/LICENSE,sha256=9nC1p_4DLjqwTsFOACEl8gO7c0ymJNceMhEyG3ldzMo,35086
+kaptik-0.0.1.dist-info/METADATA,sha256=xn4sWVWPpwWjrkDIalP2H0pVyzLafEol_2TIIJ7o7Mc,1009
+kaptik-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+kaptik-0.0.1.dist-info/top_level.txt,sha256=l7JhrJ1SQtNXm2uEBnRc9siY3b8sDQcfL1ET9TIC4cA,7
+kaptik-0.0.1.dist-info/RECORD,,
