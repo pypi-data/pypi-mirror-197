@@ -1,0 +1,7 @@
+{
+  "items": [
+    {"name": "Serial modules", "options": [
+      {"type": "serial"}
+    ]}
+  ]
+}
