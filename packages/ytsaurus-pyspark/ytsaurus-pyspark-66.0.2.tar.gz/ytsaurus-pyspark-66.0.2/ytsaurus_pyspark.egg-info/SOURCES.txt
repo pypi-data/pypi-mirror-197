@@ -1,0 +1,6 @@
+README.md
+setup.py
+ytsaurus_pyspark.egg-info/PKG-INFO
+ytsaurus_pyspark.egg-info/SOURCES.txt
+ytsaurus_pyspark.egg-info/dependency_links.txt
+ytsaurus_pyspark.egg-info/top_level.txt
