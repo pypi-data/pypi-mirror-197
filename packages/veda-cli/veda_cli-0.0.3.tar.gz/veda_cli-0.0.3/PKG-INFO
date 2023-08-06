@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: veda-cli
+Version: 0.0.3
+Summary: Command Line Client NASA VEDA Analytics
+Author: Dimuthu Wannipurage
+Author-email: dwannipu@iu.edu
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: boto3 (>=1.26.0,<2.0.0)
+Requires-Dist: paramiko (>=3.0.0,<4.0.0)
+Requires-Dist: pick (==2.2.0)
+Requires-Dist: pysondb (>=1.6.6,<2.0.0)
+Requires-Dist: typer[all] (>=0.7.0,<0.8.0)
+Description-Content-Type: text/markdown
+
+```
+pip3.10 install poetry
+
+poetry shell
+poetry install
+
+veda --help
+```
