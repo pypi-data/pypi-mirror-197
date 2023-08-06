@@ -1,0 +1,13 @@
+exciton/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exciton/nlp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exciton/nlp/sentence_tokenizer/__init__.py,sha256=yCvDHfXDtN24vbQWjSyAbESSw5c0Qh26EdheavCc_vk,55
+exciton/nlp/sentence_tokenizer/service.py,sha256=2sgBm1Y63nXfc4BLIiV6kFsRtl7dMCOw86PuOc9rudI,2323
+exciton/nlp/translation/__init__.py,sha256=gE0YV-s4pB7VQWdsg04hALOBBpuWaQ3AUqpY9rvgI_8,50
+exciton/nlp/translation/m2m100/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exciton/nlp/translation/m2m100/service.py,sha256=8wDWl_0oAwWm6PR5htSj4pYYK7ndNCr8tQEiFouK55M,4152
+exciton/nlp/translation/m2m100/utils.py,sha256=GE8qg2deaHBMVMIHS32Hb5TCxO453kuncQrdJsnRIoU,2172
+exciton-1.1.0.dist-info/LICENSE,sha256=eaaQRm1hnsFuOwXep1_FkcP0t2c5T_wkOJknzzhxf2U,11417
+exciton-1.1.0.dist-info/METADATA,sha256=yvegMpAzWuGCfDTxtShZsxeHgYIgBfHRvngQpLlBKAU,1565
+exciton-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+exciton-1.1.0.dist-info/top_level.txt,sha256=4a5H-nIPFHu7soZB2r0pfjYuciFSwQFnkl5PhaaT4pY,8
+exciton-1.1.0.dist-info/RECORD,,
