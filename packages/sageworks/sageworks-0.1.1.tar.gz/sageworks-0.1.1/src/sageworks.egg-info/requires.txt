@@ -1,0 +1,6 @@
+boto3
+awswrangler
+sagemaker
+pandas
+scikit-learn
+dash
