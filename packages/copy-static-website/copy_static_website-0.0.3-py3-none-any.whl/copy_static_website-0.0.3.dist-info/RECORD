@@ -1,0 +1,12 @@
+copy_static_website/deploy/ftp/__init__.py,sha256=Y4ZvaVhC68LSsx0seFNHxaFRHTU8CRzQNJ7BkKQni98,31
+copy_static_website/deploy/ftp/main.py,sha256=jV0RdNjjhZd6DpbFk3Dxs25cWmKfSsubKk6UWNYgjkM,3115
+copy_static_website/download/__init__.py,sha256=A--iKhrqWsojVn9PCGfoed5UIml-uLphh4SrEqHS4BE,93
+copy_static_website/download/main.py,sha256=qLUcip2GkjWRcct5Lqnp_uAsWNUKLmKG_jLByXLjOMg,10871
+copy_static_website/update_site_ftp/__init__.py,sha256=g44SFwC06jN5QfPLmZbRLFwgZtRbmvejkZ6k3eEKY7A,35
+copy_static_website/update_site_ftp/main.py,sha256=xzEoxphHIVQ9R_pbcNVBi_ODtiH_j0SCQv3RrfNaOz0,886
+copy_static_website/utils/__init__.py,sha256=nJQfBJdrF6CDIK_yBdAtR7Q5PSdzZ_aGyKLxoj6jnE4,127
+copy_static_website/utils/main.py,sha256=4XfWcaABa3MPNB7aTNguCLqjUJL3nCc3qs35JyG1aEw,1504
+copy_static_website-0.0.3.dist-info/LICENSE,sha256=YqHamheUnEA41bpGIYTWsR_WYWQwscgebxibMzNYulw,1098
+copy_static_website-0.0.3.dist-info/WHEEL,sha256=gSF7fibx4crkLz_A-IKR6kcuq0jJ64KNCkG8_bcaEao,88
+copy_static_website-0.0.3.dist-info/METADATA,sha256=B7WdpP9soHnVSC0E_OexsJUA7ykOjUG1R4MYccB_7E0,915
+copy_static_website-0.0.3.dist-info/RECORD,,
