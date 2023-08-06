@@ -1,0 +1,12 @@
+-r requirements.txt
+pytesseract
+pdf2image
+opencv-python
+
+# tests/linter
+black
+coverage
+flake8
+pytest
+pytest-mock>=3.6.1 
+yapf
