@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/quranic_nlp/__init__.py
+src/quranic_nlp/dependency_parsing.py
+src/quranic_nlp/language.py
+src/quranic_nlp/lemmatizer.py
+src/quranic_nlp/postagger.py
+src/quranic_nlp/root.py
+src/quranic_nlp/utils.py
+src/quranic_nlp.egg-info/PKG-INFO
+src/quranic_nlp.egg-info/SOURCES.txt
+src/quranic_nlp.egg-info/dependency_links.txt
+src/quranic_nlp.egg-info/requires.txt
+src/quranic_nlp.egg-info/top_level.txt
