@@ -1,0 +1,9 @@
+profiles:
+  dev:
+    type: postgres
+    credentials:
+      host: postgres
+      user: postgres
+      password: password
+      port: 5432
+      database: blackline

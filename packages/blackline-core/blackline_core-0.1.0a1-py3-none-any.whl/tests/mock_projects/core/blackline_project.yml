@@ -1,0 +1,8 @@
+name: test_project
+config-version: 1
+version: 0.0.1
+
+default-profile: dev
+
+catalogue-path: ./catalogue
+adapters-path: ./adapters
