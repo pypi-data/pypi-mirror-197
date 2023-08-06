@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ghversioner
+Version: 0.0.2
+Summary: A utility that helps retrieve information about releases from github release page
+Project-URL: Homepage, https://github.com/beerbox/ghversioner
+Project-URL: Bug Tracker, https://github.com/beerbox/ghversioner/issues
+Author-email: Radek Szpila <rszpila@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# ghversioner
+Webscraping tool to get release versions of the projects with timestamps.

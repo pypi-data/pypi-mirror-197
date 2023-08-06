@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ghversioner"
+version = "0.0.2"
+authors = [
+  { name="Radek Szpila", email="rszpila@gmail.com" },
+]
+description = "A utility that helps retrieve information about releases from github release page"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "requests",
+    "beautifulsoup4"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/beerbox/ghversioner"
+"Bug Tracker" = "https://github.com/beerbox/ghversioner/issues"
