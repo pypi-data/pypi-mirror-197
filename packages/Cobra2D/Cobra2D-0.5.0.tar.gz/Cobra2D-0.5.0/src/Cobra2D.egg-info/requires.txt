@@ -1,0 +1,14 @@
+prettytable
+rich
+cobra>=0.25.0
+typing_extensions
+xmlschema
+ipycytoscape
+networkx
+IPython
+ipywidgets>=7.6.0
+graphviz
+igraph
+requests
+tqdm
+importlib_resources
