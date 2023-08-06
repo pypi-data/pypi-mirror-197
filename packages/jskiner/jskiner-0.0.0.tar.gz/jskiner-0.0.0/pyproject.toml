@@ -1,0 +1,22 @@
+[build-system]
+requires = ["maturin>=0.14,<0.15"]
+build-backend = "maturin"
+
+[project]
+name = "jskiner"
+requires-python = ">=3.7"
+version = "0.0.0"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  'autopep8'
+]
+
+[tool.maturin]
+python-source = "python"
+
+[project.scripts]
+jskiner = "jskiner.cmd:run"

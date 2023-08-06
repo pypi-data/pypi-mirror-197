@@ -1,0 +1,2 @@
+Record({"events": Array(Record({"aid": Atomic(Int()), "ts": Atomic(
+    Int()), "type": Atomic(Str())})), "session": Atomic(Int())})

@@ -1,0 +1,1 @@
+Record({"age": Atomic(Int()), "name": Atomic(Str()), "surname": Atomic(Str())})
