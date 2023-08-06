@@ -1,0 +1,3 @@
+[console_scripts]
+gptswe = gptswe.gptswe:main
+
