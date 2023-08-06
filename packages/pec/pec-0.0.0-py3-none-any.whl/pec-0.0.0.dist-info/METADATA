@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pec
+Version: 0.0.0
+Summary: PEC - Progressive Ensemble Clustering
+Home-page: https://aware-diag-sapienza.github.io/pec
+Download-URL: https://github.com/aware-diag-sapienza/pec/archive/refs/tags/v0.0.0.tar.gz
+Author: A.WA.RE Research Group - Sapienza Università di Roma
+Author-email: blasilli@diag.uniroma1.it
+License: GNU General Public License (GPL)
+Platform: Linux
+Platform: Mac OS-X
+Platform: Solaris
+Platform: Unix
+Platform: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: joblib (>=1.2.0)
+Requires-Dist: numpy (>=1.24.0)
+Requires-Dist: pandas (>=1.5.0)
+Requires-Dist: python-dateutil (>=2.8.0)
+Requires-Dist: pytz (>=2022.7.0)
+Requires-Dist: scikit-learn (>=1.2.0)
+Requires-Dist: scipy (>=1.10.0)
+Requires-Dist: six (>=1.16.0)
+Requires-Dist: threadpoolctl (>=3.1.0)
+
+[//]: # (This file contains the descriptio that appear on the PyPI project page)
+
+# Progressive Ensemble Clustering
+
+This module (**pec**) implements the backend of _Progressive Ensemble Clustering_,
+Created by the **A.WA.RE Research Group** at _Sapienza Università di Roma_.
+
+Please find the documentation at [https://github.com/aware-diag-sapienza/pec](https://github.com/aware-diag-sapienza/pec).
