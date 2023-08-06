@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "spice_melange"
+version = "0.1.0"
+description = "A utility library for SPICE."
+authors = ["Gavin Medley <gavin.medley@lasp.colorado.edu>"]
+maintainers = ["Gavin Medley <gavin.medley@lasp.colorado.edu>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+include = ["LICENSE.txt", "CITATION.cff"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.12"
+spiceypy = "^4.0.3"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+pytest-randomly = "^3.10.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
