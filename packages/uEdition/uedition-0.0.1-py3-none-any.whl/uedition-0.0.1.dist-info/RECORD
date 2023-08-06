@@ -1,0 +1,10 @@
+uedition/__about__.py,sha256=PL4aN1XOZTDyfW7CMQNboUs4KGU-5qn7h4-Zmej5Ucg,157
+uedition/__init__.py,sha256=7bovG4fVjjWL6FqkL-5KhvCFxfm4dtd7SMk5RnQcL-w,137
+uedition/__main__.py,sha256=FpsS6LdCNPdC5twonoqvfrqWDyCNreKQz7t9ZeSHcLI,182
+uedition/settings.py,sha256=apaCOY9gwQYcUHE1oR2n5xyEIjhJrIy1ijPsu1-5RCA,1944
+uedition/cli/__init__.py,sha256=WozkN8MOZCssaHj0VNHJzZxkyqt5yfqzCqbpklV2N1A,997
+uedition-0.0.1.dist-info/METADATA,sha256=QoBYgcrDx5FNrCcfDKv7-N7ms_Omrg7hFyG4VEFF3wE,2028
+uedition-0.0.1.dist-info/WHEEL,sha256=Fd6mP6ydyRguakwUJ05oBE7fh2IPxgtDN9IwHJ9OqJQ,87
+uedition-0.0.1.dist-info/entry_points.txt,sha256=Mor9i2VYxcNQcLbMmWGpFYSwsMs3MyewnLmFI3IG0Ls,46
+uedition-0.0.1.dist-info/licenses/LICENSE.txt,sha256=MhLJl8GE8mnuO5i_pvKaobpIGnhiAEdkY-a6LKiuwCE,1101
+uedition-0.0.1.dist-info/RECORD,,
