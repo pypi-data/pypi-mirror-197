@@ -1,0 +1,5 @@
+cloudscraper>=0.0.1
+requests>=0.0.1
+threadwrapper>=0.0.1
+omnitools>=0.0.1
+lxml>=0.0.1
