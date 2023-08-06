@@ -1,0 +1,12 @@
+{
+    "basedir": "学习通资料图片\\课程名\\音频\\",
+    "url": "",
+    "loop_op": "2",
+    "mode_op": "8",
+    "file_class": 2,
+    "start_inPage": 0,
+    "end_inPage": 1,
+    "start_chapter": 0,
+    "end_chapter": 0,
+    "help":"mode_op 模式选择9自定义,0极简.loop_op 按2自动循环1手动单次.file_class 输入循环下载类型3全部2pdf1mp4不下载0,start_inPage章节内页面"
+}
