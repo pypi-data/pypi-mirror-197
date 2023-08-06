@@ -1,0 +1,17 @@
+#
+.idea
+.vscode
+.neptune
+**/.DS_Store
+**/__pycache__
+
+# local libraries
+data
+test_data
+tasks
+kaggle
+
+# extra files for local experiments
+feature-sales-full-path.ipynb
+drafts.ipynb
+notebook.ipynb
