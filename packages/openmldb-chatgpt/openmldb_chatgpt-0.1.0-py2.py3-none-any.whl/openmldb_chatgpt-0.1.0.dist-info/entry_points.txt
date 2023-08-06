@@ -1,0 +1,3 @@
+[console_scripts]
+openmldb-chatgpt = openmldb_chatgpt.cli:main
+
