@@ -1,0 +1,11 @@
+template_res/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+template_res/main.py,sha256=mfqftDJ0ap96511Lc9O9oaNOw2j31a7bpjH4yY713jc,636
+template_res/template.py,sha256=L66K0hW8VoHe16IT7Cec_-PDc9s4teOLhMa0cmDzfaQ,3438
+template_res/res/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+template_res/res/template_20230315_1.zip.py,sha256=ogLyfHpGkjcNvtsfz5l-vx-YOqj2GO3qOU9Fz0jIo7A,77152540
+p_template_res-0.1.0.dist-info/LICENSE,sha256=5hk5-PypMEFzj-YVsMgaHkR7R7rQlk9FMY__Vi3-AXE,1074
+p_template_res-0.1.0.dist-info/METADATA,sha256=qVhGc9OdmFL32UFpSHQ6ktqgYxy683pHk0kLplk8uO0,421
+p_template_res-0.1.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+p_template_res-0.1.0.dist-info/entry_points.txt,sha256=tDfnNI6u-t-XKBOPhsmsvSXPv0DgleKcLE9LebX9ZD0,56
+p_template_res-0.1.0.dist-info/top_level.txt,sha256=muVJsAMRX29BTzJRTK6O5URT1uB6wmiJ62U-0Nj31dA,13
+p_template_res-0.1.0.dist-info/RECORD,,
