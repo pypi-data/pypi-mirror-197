@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jsonb/__init__.py
+jsonb.egg-info/PKG-INFO
+jsonb.egg-info/SOURCES.txt
+jsonb.egg-info/dependency_links.txt
+jsonb.egg-info/top_level.txt
+jsonb.egg-info/zip-safe
