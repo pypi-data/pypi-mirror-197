@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sklab2
+Version: 0.0.1
+Summary: math function
+Home-page: http://github.com/Seoyeong-Kang
+Author: kangseoyeong
+Author-email: yeong4162@gmail.com
+License: MIT
+Keywords: calendar,isoweek,listsum
