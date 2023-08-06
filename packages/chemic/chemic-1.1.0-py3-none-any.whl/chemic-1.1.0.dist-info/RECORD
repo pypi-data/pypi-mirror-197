@@ -1,0 +1,10 @@
+chemic/__init__.py,sha256=4dcAE2_EdsaupZrPcIf7WbvuRTc7yq84FjK90LCFlMQ,58
+chemic/cli.py,sha256=RMCZz-Olee4UsNssXEaROUd6jjTYuz-DdC55bsXvv6o,5169
+chemic/common_formulas.csv,sha256=qwve5MjXxP9ob-gIUpAl57bfhCfSbawxu8DjDfS5GeE,92691
+chemic/gui.py,sha256=yYn3nsyimXArWVnExu6tQHrb_6hq_1hNj3YcQ0ALh0o,9731
+chemic/main.py,sha256=dmLPc-7NdqROtWPmnRuwhlzI7QiV0xflK1RyX8ikmCc,19679
+chemic/periodic_table.csv,sha256=5693ocW_Eff5cxFwZLRb1EmiCLK44Q_XG-EWzsbP55M,19381
+chemic/utils.py,sha256=TYdNtpdGWZYaqYslFVqtfYdmeXsK9C4XLgq2L8VnGx8,4472
+chemic-1.1.0.dist-info/METADATA,sha256=0X2HDfON14_i5-8GCCvJk3S-5k5n0AQNahjnkL2oL_E,1278
+chemic-1.1.0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+chemic-1.1.0.dist-info/RECORD,,
