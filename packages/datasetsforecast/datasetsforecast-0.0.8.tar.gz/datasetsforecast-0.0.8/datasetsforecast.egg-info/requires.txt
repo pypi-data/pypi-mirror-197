@@ -1,0 +1,11 @@
+aiohttp
+fugue>=0.8.1
+numba
+numpy
+pandas
+requests
+tqdm
+xlrd>=1.0.0
+
+[dev]
+fugue[dask,ray]>=0.8.1
