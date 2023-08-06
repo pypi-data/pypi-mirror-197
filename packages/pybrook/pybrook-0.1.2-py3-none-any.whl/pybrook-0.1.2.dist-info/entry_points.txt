@@ -1,0 +1,3 @@
+[console_scripts]
+pybrook=pybrook.__main__:main
+
