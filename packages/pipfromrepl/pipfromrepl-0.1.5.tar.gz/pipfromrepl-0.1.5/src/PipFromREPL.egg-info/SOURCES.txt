@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/PipFromREPL.egg-info/PKG-INFO
+src/PipFromREPL.egg-info/SOURCES.txt
+src/PipFromREPL.egg-info/dependency_links.txt
+src/PipFromREPL.egg-info/top_level.txt
+src/pipfromrepl/__init__.py
+src/pipfromrepl.egg-info/PKG-INFO
+src/pipfromrepl.egg-info/SOURCES.txt
+src/pipfromrepl.egg-info/dependency_links.txt
+src/pipfromrepl.egg-info/top_level.txt
