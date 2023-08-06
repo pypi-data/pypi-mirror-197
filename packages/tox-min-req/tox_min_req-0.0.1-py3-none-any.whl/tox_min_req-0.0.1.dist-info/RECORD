@@ -1,0 +1,10 @@
+tox_min_req/__init__.py,sha256=q4leychzXR0lpy8aaj3zcNjCKoCOpC0DsLCeEiOMcvQ,208
+tox_min_req/_parse_dependencies.py,sha256=uQ-vugyVQo4_RlOHnjmPzBqH0sj9npQAED-C0I1eZG4,2757
+tox_min_req/_tox_plugin.py,sha256=JOOQie46VuPQw4nfcw0aQ03ZTaL5UuHNlEA0aOtNXcc,3841
+tox_min_req/_version.py,sha256=0E2q3bbXSYHV7qQaXVj0To-J2XdlP2Roo0TsM8oQtR4,160
+tox_min_req-0.0.1.dist-info/LICENSE.txt,sha256=tJYIKBhVn3CkuFTGQXzIoYG1PgiWf2NDyog_jS_whTw,1106
+tox_min_req-0.0.1.dist-info/METADATA,sha256=5E8-i9agihQ3BjvDN1D8vZLE09_HBj63DJwcQKMcxDI,4574
+tox_min_req-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+tox_min_req-0.0.1.dist-info/entry_points.txt,sha256=fE8mlzmWoCGIRCPWMlEDbuaHVJ3o1yepkAVgNctetxE,40
+tox_min_req-0.0.1.dist-info/top_level.txt,sha256=S2CwxDF7as0rCfKsrqC3hzWUEBEXUAZSYjBEbFwS3x4,12
+tox_min_req-0.0.1.dist-info/RECORD,,
