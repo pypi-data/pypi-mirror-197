@@ -1,0 +1,12 @@
+pip
+packaging
+pandas
+numpy
+scipy
+seaborn
+matplotlib
+datetime
+nltk
+xlrd
+
+[dev]
