@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: ptolemy-iamc
+Version: 0.1
+Summary: A library for rasterizing shapefiles onto grids
+Author-email: Matthew Gidden <matthew.gidden@gmail.com>
+License: MIT
+Project-URL: homepage, https://github.com/gidden/ptolemy
+Project-URL: documentation, https://ptolemy.readthedocs.io/en/latest/
+Project-URL: repository, https://github.com/gidden/ptolemy.git
+Project-URL: changelog, https://github.com/gidden/ptolemy/blob/main/CHANGELOG.rst
+Keywords: pandas
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: lint
+License-File: LICENSE
+
+ptolemy: efficient rasterizing of shapefiles
+============================================
+
+.. image:: https://github.com/iiasa/ptolemy/workflows/ci/badge.svg?branch=main
+    :target: https://github.com/iiasa/ptolemy/actions?workflow=ci
+    :alt: CI
+
+.. image:: https://codecov.io/gh/iiasa/ptolemy/branch/main/graph/badge.svg
+    :target: https://codecov.io/gh/iiasa/ptolemy
+    :alt: Codecov
+
+.. image:: https://img.shields.io/readthedocs/ptolemy-iamc/latest?label=Read%20the%20Docs
+    :target: https://ptolemy-iamc.readthedocs.io/en/latest/
+    :alt: Read the Docs
+
+.. image:: https://img.shields.io/pypi/v/ptolemy-iamc
+    :target: https://pypi.org/project/ptolemy-iamc/
+    :alt: PyPI
+
+
+Summary
+-------
+
+Ptolemy provides support capabilities for rasterizing shapefiles on to grids. 
+
+Check out the `documentation`_
+
+Issues and Discussions
+----------------------
+
+As usual for any GitHub-based project, raise an `issue`_ if you find any bug or
+want to suggest an improvement, or open a discussion if you want to discuss.
+
+
+.. _PyPI: https://pypi.org
+.. _latest branch: https://github.com/gidden/ptolemy/tree/latest
+.. _master branch: https://github.com/gidden/ptolemy/tree/master
+.. _tox: https://tox.readthedocs.io/en/latest/
+.. _ReadTheDocs: https://readthedocs.org/
+.. _issue: htts://github.com/gidden/ptolemy/issues/new
+.. _documentation: https://ptolemy-iamc.readthedocs.io/en/latest/
