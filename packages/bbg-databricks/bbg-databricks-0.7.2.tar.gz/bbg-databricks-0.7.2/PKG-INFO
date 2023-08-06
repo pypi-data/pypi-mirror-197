@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: bbg-databricks
+Version: 0.7.2
+Summary: A repositiory for a useful package that will allow us to make querying a lot easier in bbg's databricks.
+License: mit
+Project-URL: Bug Tracker, https://github.com/danielwilczak101/bbg/issues
+Project-URL: Repository, https://github.com/danielwilczak101/bbg
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# BBG - Databricks
+A repositiory for a useful package that will allow us to make querying a lot easier in bbg's databricks. 
+
+The repository wiki can be found here:  [Wiki](https://danielwilczak101.github.io/bbg/)
+
