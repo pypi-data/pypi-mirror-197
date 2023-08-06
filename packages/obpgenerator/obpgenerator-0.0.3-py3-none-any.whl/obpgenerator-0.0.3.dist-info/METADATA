@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: obpgenerator
+Version: 0.0.3
+Summary: Package for generation of open beam path (obp) files
+Author: Anton Wiberg
+Project-URL: Homepage, https://github.com/wiberganton/obpgenerator
+Project-URL: Bug Tracker, https://github.com/wiberganton/obpgenerator/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: svgpathtools
+Requires-Dist: xml
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: obplib
+Requires-Dist: copy
+Requires-Dist: math
+Requires-Dist: pyvista
+Requires-Dist: svgwrite
+
+# obpgenerator
+
+This is a package to generate obp files which can e.g be used in Freemelt machines. The package is made to make it easy to implement new strategies for both line and point melting.  
+
+
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
