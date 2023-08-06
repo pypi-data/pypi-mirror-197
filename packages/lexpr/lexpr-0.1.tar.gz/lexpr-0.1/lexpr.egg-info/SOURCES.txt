@@ -1,0 +1,13 @@
+AUTHORS.txt
+LICENSE.txt
+README.md
+setup.py
+lexpr/__init__.py
+lexpr/error.py
+lexpr/parser.py
+lexpr.egg-info/PKG-INFO
+lexpr.egg-info/SOURCES.txt
+lexpr.egg-info/dependency_links.txt
+lexpr.egg-info/not-zip-safe
+lexpr.egg-info/requires.txt
+lexpr.egg-info/top_level.txt
