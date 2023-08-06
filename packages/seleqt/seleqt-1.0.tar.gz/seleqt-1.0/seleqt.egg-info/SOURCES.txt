@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+seleqt/__init__.py
+seleqt/selection.py
+seleqt/stats.py
+seleqt.egg-info/PKG-INFO
+seleqt.egg-info/SOURCES.txt
+seleqt.egg-info/dependency_links.txt
+seleqt.egg-info/requires.txt
+seleqt.egg-info/top_level.txt
