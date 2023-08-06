@@ -1,0 +1,7 @@
+numpy<=1.22.3
+vaex>=4.16.0
+radis
+jaxopt
+jax>=0.2.22
+numpyro
+hitran-api
