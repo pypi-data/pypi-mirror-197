@@ -1,0 +1,2 @@
+[mkdocs.themes]
+dark_enhanced_dirtree = dark_enhanced_dirtree

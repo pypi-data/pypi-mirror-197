@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: mkdocs-dark-enhanced-dirtree
+Version: 1.0.4
+Summary: MkDocs theme to praise the holy (dir) tree
+Home-page: https://github.com/Jakkins/dark_enhanced_dirtree
+Author: jakkins
+Author-email: sjakkins@proton.me
+License: MIT License
+License-File: LICENSE
