@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: testsetup-zdl
+Version: 1.0
+Summary: Learn to Pack Python Module
+Home-page: http://www.baidu.com/
+Author: Zhang Daoliang
+Author-email: zdkyzhangdl@gmail.com
+Requires-Python: >=3.7
+License-File: LICENSE

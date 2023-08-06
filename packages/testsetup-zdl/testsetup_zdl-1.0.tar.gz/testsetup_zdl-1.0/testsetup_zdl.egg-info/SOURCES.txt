@@ -1,0 +1,9 @@
+LICENSE
+setup.py
+packagetest/__init__.py
+packagetest/testClass.py
+packagetest/utils.py
+testsetup_zdl.egg-info/PKG-INFO
+testsetup_zdl.egg-info/SOURCES.txt
+testsetup_zdl.egg-info/dependency_links.txt
+testsetup_zdl.egg-info/top_level.txt
