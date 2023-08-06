@@ -1,0 +1,24 @@
+Change Log
+
+==========
+1.0.0.1  (14/03/2023)
+
+-----------------
+
+- First Release
+
+Functionality:
+    -> Hand Controlled Virtual mouse can able to move the mouse anywhere on the screen and can able to perform the click operation.
+    -> Index finger can be used to move the mouse over the screen.
+    -> When the Index finger and the Thumb come close to each other or touch each other then it performs the click operation.
+
+
+--------------------------------------------------
+
+smoothening = 9
+clocx = plocx + (index_x - plocx) /smoothening
+clocy = plocy + (index_y - plocy) /smoothening
+# you can multiply or divide with the smoothening
+
+- smoothening factor allows you to control the mouse pointer to move freely on the screen
+- Can move the mouse pointer like a feather using smoothening

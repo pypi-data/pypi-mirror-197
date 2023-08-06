@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+WaveMote/__init__.py
+WaveMote.egg-info/PKG-INFO
+WaveMote.egg-info/SOURCES.txt
+WaveMote.egg-info/dependency_links.txt
+WaveMote.egg-info/top_level.txt
