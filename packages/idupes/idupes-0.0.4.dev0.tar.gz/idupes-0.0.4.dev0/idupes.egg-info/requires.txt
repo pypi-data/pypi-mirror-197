@@ -1,0 +1,4 @@
+imagehash
+scikit-learn>=1.2.2
+joblib
+scipy>=1.10.1
