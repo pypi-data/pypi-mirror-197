@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+API_magister/API_magister.py
+API_magister/__init__.py
+Unifica_Base_Ouro_Ensalamento.egg-info/PKG-INFO
+Unifica_Base_Ouro_Ensalamento.egg-info/SOURCES.txt
+Unifica_Base_Ouro_Ensalamento.egg-info/dependency_links.txt
+Unifica_Base_Ouro_Ensalamento.egg-info/top_level.txt
+Unifica_base_ouro_ensalamento/Unifica_base_ouro_ensalamento.py
+Unifica_base_ouro_ensalamento/__init__.py

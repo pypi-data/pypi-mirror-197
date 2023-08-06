@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Unifica-Base-Ouro-Ensalamento
+Version: 0.0.5
+Summary: Unifica bases e envia via API para o magister
+Author: Matheus Henrique Rosa
+Author-email: m.rosa1@pucpr.br
+License: MIT
+Keywords: Unifica bases e envia via API para o magister
+
+Utilizado para gerar o unificado entre relatorio ensalamento e base ouro
+
+Funcoes 
+
+- gerarUnificado - Recebe o caminho de 3 arquivos,caminho_base_ouro, caminho_ensalamento e caminho_arquivo
