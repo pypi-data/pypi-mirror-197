@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+versions.md
+src/currency/__init__.py
+src/currency/currency.csv
+src/currency/functions.py
+src/currency/main.py
+src/currency_ch.egg-info/PKG-INFO
+src/currency_ch.egg-info/SOURCES.txt
+src/currency_ch.egg-info/dependency_links.txt
+src/currency_ch.egg-info/top_level.txt
