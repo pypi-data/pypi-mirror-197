@@ -1,0 +1,16 @@
+nonumpy/CMakeLists.txt,sha256=czQxC4afnqU2u1c6jSJ0zUHm-HGLsU1vl1af0vQR1FM,659
+nonumpy/__init__.py,sha256=S_YiGevMMsXdLNB5m4HfaO8HFkHY6de_1_cx4qoFvts,79
+nonumpy/ema.py,sha256=1JsuSYYyIa9NtaR4zjKOt7vhxrEAZNYoEz3JrrW7NmQ,542
+nonumpy/factory.py,sha256=or7T9NYiPagO2wixLYWPW0bPGwsXll5fhp-lQdNGrn4,2596
+nonumpy/filters.py,sha256=5MxYbqOqGPzsVsdKXlDDfOOqVlDzNPOrW4JszfqbwHg,1815
+nonumpy/libnonumpy.py,sha256=9McLry_RVmOONY_invhinxVzEikTWatUKJmBnTenFLg,27
+nonumpy/nonumpy.h,sha256=wxmrg6iUZu134dTdxych3DOkQavmqd7CBuRhikdHXaM,67
+nonumpy/nonumpy_config.h,sha256=-LzLY1rIu5ybs24I-1KP7OtbABL0rV6T8Sjna47GPS8,200
+nonumpy/nonumpy_ema.c,sha256=hGkeCsPFIKGoqHcYwBUB64UFLmTJfyK5_vU1fM4IRD8,469
+nonumpy/nonumpy_ema.h,sha256=FLyKmUC56MZrydW64HHVyvztCLVuGii9zQkRJr0BbhY,318
+nonumpy/nonumpy_filters.c,sha256=npuqSV0Gw3DU3Ead1YBlp0fCI4KFxhdQKdjkG5sF0vY,5612
+nonumpy/nonumpy_filters.h,sha256=sy7CWdT1EdzvQIq21GffZcypub1r3GHhdD50R5j6lrE,3747
+nonumpy-0.1.1a0.dist-info/LICENSE,sha256=Aq1O2Fm1sfMQNpe1_yyVzW56JYyaozI3MY1nWI7Fd7Q,1088
+nonumpy-0.1.1a0.dist-info/METADATA,sha256=gRRVQLuI4uncxClRfg50CjoppwLmaM70-_CcBR6BmtM,710
+nonumpy-0.1.1a0.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+nonumpy-0.1.1a0.dist-info/RECORD,,
