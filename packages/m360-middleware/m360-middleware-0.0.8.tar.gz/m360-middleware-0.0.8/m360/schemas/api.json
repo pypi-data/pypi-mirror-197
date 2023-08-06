@@ -1,0 +1,34 @@
+{
+    "$id": "api.schema.json",
+	"type": "object",
+	"patternProperties": {
+		"^\\S*$": {
+			"type": "object",
+			"required": [ "access", "label" ],
+			"properties": {
+				"access": { "type": "boolean" },
+				"label": { "type": "string" },
+				"rbac": {
+					"type": "object",
+					"properties": {
+						"fields": {
+							"oneOf": [
+								{
+									"type": "boolean"
+								}, {
+									"type": "array",
+									"items": { "type": "string" }
+								}
+							]
+						},
+						"resources": { "type": "boolean" },
+						"conditions": { "type": "boolean" }
+					},
+					"additionalProperties": false
+				}
+			},
+			"additionalProperties": false
+		}
+	},
+	"additionalProperties": false
+}
