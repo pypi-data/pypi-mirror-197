@@ -1,0 +1,14 @@
+openmldb_chatgpt/__init__.py,sha256=wMKlNPXIwuSME-OnqL9nUGgCNTDAWppNaAQH93PmOuM,563
+openmldb_chatgpt/cli.py,sha256=BsU9sJhH1VSL6Oes0vuZwBoE8HMKBCBGRNNlS6gmXXg,3993
+openmldb_chatgpt/config_util.py,sha256=Buz4bRHxEb7pvuAZf6HGDSbccmCj810-zrkWD4W8T5A,4031
+openmldb_chatgpt/gpt_manager.py,sha256=X1ookkKxV5584-6lAuybOdaGoLqcFmHq2yzWMhfIHAA,4802
+openmldb_chatgpt/help_util.py,sha256=squD6BHv2d8CM69vUVfeWoe8n3V8gLTLz6Rfk6dX41A,2570
+openmldb_chatgpt/openmldb_manager.py,sha256=eQ7qPiLAcIf_gkouhFDvneSwyhCnNf3vobd5hqCQO8M,3770
+openmldb_chatgpt/print_util.py,sha256=49wfC3RtqRVixI6hHh_TxQB_woj1lRZlZcc28wOjJRg,1402
+openmldb_chatgpt/sql_util.py,sha256=pdZz7KPYlj2fTtbJJWlDlPKzsr59IrAhCuftXEfQa6E,3094
+openmldb_chatgpt-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+openmldb_chatgpt-0.1.1.dist-info/METADATA,sha256=XunPwvy_TTf8L8hm9QsetMwsQTRL_XcN4gpmfBMESUs,419
+openmldb_chatgpt-0.1.1.dist-info/WHEEL,sha256=WzZ8cwjh8l0jtULNjYq1Hpr-WCqCRgPr--TX4P5I1Wo,110
+openmldb_chatgpt-0.1.1.dist-info/entry_points.txt,sha256=BRxwffs21hR_NBw5dyTRonf_r5bSFqAjUTu6CWLkJIM,64
+openmldb_chatgpt-0.1.1.dist-info/top_level.txt,sha256=fZz6iCd5CnFpSmlmiJZUCH3FmhIxTz8mL7bq8xcwDcM,17
+openmldb_chatgpt-0.1.1.dist-info/RECORD,,

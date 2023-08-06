@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: openmldb-chatgpt
+Version: 0.1.1
+Summary: The ChatGPT plugin to enhance OpenMLDB.
+Home-page: https://github.com/tobegit3hub/openmldb-chatgpt-plugin
+Author: tobe
+Author-email: tobeg3oogle@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+Requires-Dist: configparser
+Requires-Dist: prompt-toolkit
+Requires-Dist: tabulate
+Requires-Dist: openai
+Requires-Dist: openmldb
+
+UNKNOWN
+
