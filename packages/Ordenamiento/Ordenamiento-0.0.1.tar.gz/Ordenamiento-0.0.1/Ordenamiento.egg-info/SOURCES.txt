@@ -1,0 +1,9 @@
+README.md
+setup.py
+Ordenamiento/Funciones.py
+Ordenamiento/__init__.py
+Ordenamiento.egg-info/PKG-INFO
+Ordenamiento.egg-info/SOURCES.txt
+Ordenamiento.egg-info/dependency_links.txt
+Ordenamiento.egg-info/requires.txt
+Ordenamiento.egg-info/top_level.txt

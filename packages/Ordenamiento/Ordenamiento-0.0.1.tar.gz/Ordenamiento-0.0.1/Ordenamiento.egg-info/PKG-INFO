@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: Ordenamiento
+Version: 0.0.1
+Home-page: https://github.com/AbdielLopezVilla
+Author: Abdiel López Villa
+Author-email: 212t0218@itsm.edu.mx
+License: MIT
+Description-Content-Type: text/markdown
+
+# Librería de Métodos de Ordenamiento de Arreglos (MOA)
+## Creado por Abdiel López Villa
+
+
+## Métodos
+```convertir_arreglo(arreglo):```
+```burbuja_optimus(arreglo)```
+```shellSort(arreglo)```
+```quickSort(areglo, low, high)```
+```radixSort(arreglo):```
+
+## Licencia
+MIT
+
+**Software Gratis, ¡Genial! 😎**
