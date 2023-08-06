@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/bootstrap-icons/bootstrap-icons.css">
+    <script src="/static/jquery-3.6.0.js"></script>
+    <script src="/static/popper.min.js"></script>
+    <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/gauge.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/main.css" type="text/css">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <title>{{application_name}} v{{application_version}}</title>
+</head>
+<body class="container-fluid d-flex bg-dark bg-gradient text-light position-absolute mt-0 ms-0 me-0 mb-0">
+<div class="container-fluid p-0 m-0">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg bg-dark bg-gradient shadow">
+            <div class="container-fluid">
+                <div class="col">
+                    <a class="navbar-brand" href="#"><span><img src="/static/logo.png" alt="..." width="32" height="32"> {{application_name}} <small>({{application_version}})</small></span></a>
+                </div>
+                <div class="col text-center">
+                    <span><i class="bi bi-clock"></i>&nbsp</span><span class="navbar-text" id="curr_time_id"></span>
+                </div>
+                <div class="col">
+                    <span class="d-flex flex-nowrap align-items-center justify-content-end">
+                        <i class="bi bi-bootstrap-reboot"></i>
+                        &nbsp{{session_run_mode}}
+                        <button class="mx-2 btn btn-success" id="session_button_id" type="submit">
+                            <span>
+                                <span id="session_button_spinner" class="spinner-border spinner-border-sm"
+                                      style="visibility: hidden; display: none;" role="status" aria-hidden="true"></span>
+                                <span id="session_button_text">Start Session</span>
+                            </span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        {% block content %}
+        {% endblock %}
+    </div>
+</div>
+
+</body>
+
+</html>
