@@ -1,0 +1,523 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
+
+    <!-- Generated with Sphinx 6.1.3 and Furo 2022.12.07 -->
+        <title>errors - discord-linker-pythonAPI 0.2.8 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=91d0f0d1c444bdcb17a68e833c7a53903343c195" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="../index.html"><div class="brand">discord-linker-pythonAPI 0.2.8 documentation</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="../index.html">
+  
+  
+  <span class="sidebar-brand-text">discord-linker-pythonAPI 0.2.8 documentation</span>
+  
+</a><form class="sidebar-search-container" method="get" action="../search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../modules.html">discord_linker_pythonAPI</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../dlxedd_client.html">dlxedd_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../errors.html">errors module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../wordpress_client.html">wordpress_client module</a></li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <h1>Source code for errors</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+
+
+<span class="n">ALL_EXCEPTIONS</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># NAME: CLASS REFERENCE</span>
+<span class="sd">&quot;&quot;&quot;Holds all the exceptions of the API.</span>
+
+
+<span class="sd">This variable is a dictionary where the following is True:</span>
+
+<span class="sd">* key =&gt; Name of exception</span>
+<span class="sd">* value =&gt; Reference to the exception&#39;s class</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+
+
+<div class="viewcode-block" id="WP_Error"><a class="viewcode-back" href="../errors.html#errors.WP_Error">[docs]</a><span class="k">class</span> <span class="nc">WP_Error</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents an API (wordpress) error.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        details (Optional[dict]): The details to store to the object.</span>
+<span class="sd">        default_code (Optional[str]): The default error code of the exception. Defaults to &quot;UNKNOWN_ERROR&quot;.</span>
+<span class="sd">        default_message (str, optional): The default error message of the exception. Defaults to &quot;An unknown error occurred!&quot;.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;UNKNOWN_ERROR&quot;</span><span class="p">,</span> <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;An unknown error occurred!&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">default_code</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="n">default_message</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="k">if</span> <span class="n">details</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s2">&quot;code&quot;</span> <span class="ow">in</span> <span class="n">details</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">code</span> <span class="o">=</span> <span class="n">details</span><span class="p">[</span><span class="s2">&quot;code&quot;</span><span class="p">]</span>
+            <span class="k">if</span> <span class="s2">&quot;message&quot;</span> <span class="ow">in</span> <span class="n">details</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">message</span> <span class="o">=</span> <span class="n">details</span><span class="p">[</span><span class="s2">&quot;message&quot;</span><span class="p">]</span>
+            <span class="k">if</span> <span class="s2">&quot;data&quot;</span> <span class="ow">in</span> <span class="n">details</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">details</span><span class="p">[</span><span class="s2">&quot;data&quot;</span><span class="p">]</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s1">&#39;</span><span class="si">{k}</span><span class="s1">: </span><span class="si">{v}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="o">=</span><span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="n">details</span><span class="o">.</span><span class="n">items</span><span class="p">()]),</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="WP_Error.sanitize_kwargs"><a class="viewcode-back" href="../errors.html#errors.WP_Error.sanitize_kwargs">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">:</span><span class="nb">dict</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Remove some keyword-only parameters from the kwargs dictionary.</span>
+<span class="sd">        Easy cleaning for child exception parameters.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            kwargs (dict): The dictionary to sanitize.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="k">if</span> <span class="s2">&quot;default_code&quot;</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;default_code&quot;</span><span class="p">)</span>
+        
+        <span class="k">if</span> <span class="s2">&quot;default_message&quot;</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="p">:</span>
+            <span class="n">kwargs</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;default_message&quot;</span><span class="p">)</span></div></div>
+
+
+
+
+<div class="viewcode-block" id="UNKNOWN_ERROR"><a class="viewcode-back" href="../errors.html#errors.UNKNOWN_ERROR">[docs]</a><span class="k">class</span> <span class="nc">UNKNOWN_ERROR</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents an unknown error.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        details (dict): The details of the exception.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">details</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;UNKNOWN_ERROR&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">UNKNOWN_ERROR</span>
+
+
+
+<div class="viewcode-block" id="LINK_TOKEN_NOT_FOUND"><a class="viewcode-back" href="../errors.html#errors.LINK_TOKEN_NOT_FOUND">[docs]</a><span class="k">class</span> <span class="nc">LINK_TOKEN_NOT_FOUND</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents an error where the token was not found.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        details (dict): The details of the exception.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;LINK_TOKEN_NOT_FOUND&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;Link token was not found!&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;LINK_TOKEN_NOT_FOUND&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">LINK_TOKEN_NOT_FOUND</span>
+
+
+<div class="viewcode-block" id="ACCOUNT_NOT_LINKED"><a class="viewcode-back" href="../errors.html#errors.ACCOUNT_NOT_LINKED">[docs]</a><span class="k">class</span> <span class="nc">ACCOUNT_NOT_LINKED</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents an error where the account was not linked.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        details (dict): The details of the exception.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;ACCOUNT_NOT_LINKED&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;This discord is not linked to an account!&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;ACCOUNT_NOT_LINKED&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ACCOUNT_NOT_LINKED</span>
+
+
+<div class="viewcode-block" id="INVALID_TOKEN_SIZE"><a class="viewcode-back" href="../errors.html#errors.INVALID_TOKEN_SIZE">[docs]</a><span class="k">class</span> <span class="nc">INVALID_TOKEN_SIZE</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents an error where the token size was not correct.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        details (dict): The details of the exception.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;INVALID_TOKEN_SIZE&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;Wrong link token size!&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;INVALID_TOKEN_SIZE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">INVALID_TOKEN_SIZE</span>
+
+
+<div class="viewcode-block" id="INVALID_DISCORD_ID_TYPE"><a class="viewcode-back" href="../errors.html#errors.INVALID_DISCORD_ID_TYPE">[docs]</a><span class="k">class</span> <span class="nc">INVALID_DISCORD_ID_TYPE</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents an error where the discord ID type was incorrect.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        details (dict): The details of the exception.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;INVALID_DISCORD_ID_TYPE&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;Discord ID must be an integer!&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;INVALID_DISCORD_ID_TYPE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">INVALID_DISCORD_ID_TYPE</span>
+
+
+<div class="viewcode-block" id="INVALID_DISCORD_ID_SIZE"><a class="viewcode-back" href="../errors.html#errors.INVALID_DISCORD_ID_SIZE">[docs]</a><span class="k">class</span> <span class="nc">INVALID_DISCORD_ID_SIZE</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents an error where the discord ID length was incorrect.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        details (dict): The details of the exception.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;INVALID_DISCORD_ID_SIZE&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;Discord ID must be an 18-digit integer&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;INVALID_DISCORD_ID_SIZE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">INVALID_DISCORD_ID_SIZE</span>
+
+
+
+<div class="viewcode-block" id="ACCOUNT_ALREADY_LINKED"><a class="viewcode-back" href="../errors.html#errors.ACCOUNT_ALREADY_LINKED">[docs]</a><span class="k">class</span> <span class="nc">ACCOUNT_ALREADY_LINKED</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents an error where the account is already linked.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        details (dict): The details of the exception.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;ACCOUNT_ALREADY_LINKED&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;The discord or the account is already linked!&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;ACCOUNT_ALREADY_LINKED&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ACCOUNT_ALREADY_LINKED</span>
+
+
+<div class="viewcode-block" id="INSUFFICIENT_PERMISSIONS"><a class="viewcode-back" href="../errors.html#errors.INSUFFICIENT_PERMISSIONS">[docs]</a><span class="k">class</span> <span class="nc">INSUFFICIENT_PERMISSIONS</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents an error where the user has insufficient permissions.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        details (dict): The details of the exception.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;INSUFFICIENT_PERMISSIONS&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;You don&#39;t have enough permissions to perform this action&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;INSUFFICIENT_PERMISSIONS&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">INSUFFICIENT_PERMISSIONS</span>
+
+
+<div class="viewcode-block" id="NOT_IMPERSONATING"><a class="viewcode-back" href="../errors.html#errors.NOT_IMPERSONATING">[docs]</a><span class="k">class</span> <span class="nc">NOT_IMPERSONATING</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Represents an error where the user is not impersonating anyone.</span>
+
+<span class="sd">    NOTE: This exception should not be thrown, but it&#39;s here since it exists.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        details (dict): The details of the exception.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;NOT_IMPERSONATING&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;You are not impersonating anyone!&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;NOT_IMPERSONATING&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">NOT_IMPERSONATING</span>
+
+
+
+
+
+
+
+
+<span class="c1">#################### DLXEDD Errors ####################</span>
+
+<div class="viewcode-block" id="INCORRECT_PRODUCT_ID_TYPE"><a class="viewcode-back" href="../errors.html#errors.INCORRECT_PRODUCT_ID_TYPE">[docs]</a><span class="k">class</span> <span class="nc">INCORRECT_PRODUCT_ID_TYPE</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;INCORRECT_PRODUCT_ID_TYPE&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;Product ID must be integer!&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;INCORRECT_PRODUCT_ID_TYPE&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">INCORRECT_PRODUCT_ID_TYPE</span>
+
+
+
+
+<div class="viewcode-block" id="PRODUCT_NOT_FOUND"><a class="viewcode-back" href="../errors.html#errors.PRODUCT_NOT_FOUND">[docs]</a><span class="k">class</span> <span class="nc">PRODUCT_NOT_FOUND</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;PRODUCT_NOT_FOUND&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;There are no products with this ID!&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;PRODUCT_NOT_FOUND&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">PRODUCT_NOT_FOUND</span>
+
+
+<div class="viewcode-block" id="PRODUCT_NOT_IN_CART"><a class="viewcode-back" href="../errors.html#errors.PRODUCT_NOT_IN_CART">[docs]</a><span class="k">class</span> <span class="nc">PRODUCT_NOT_IN_CART</span><span class="p">(</span><span class="n">WP_Error</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">WP_Error</span><span class="o">.</span><span class="n">sanitize_kwargs</span><span class="p">(</span><span class="n">kwargs</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span>
+            <span class="n">details</span><span class="p">,</span>
+            <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+            <span class="n">default_code</span> <span class="o">=</span> <span class="s2">&quot;PRODUCT_NOT_IN_CART&quot;</span><span class="p">,</span>
+            <span class="n">default_message</span> <span class="o">=</span> <span class="s2">&quot;Your cart doesn&#39;t contain a product with this ID!&quot;</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+<span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="s2">&quot;PRODUCT_NOT_IN_CART&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">PRODUCT_NOT_IN_CART</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="viewcode-block" id="get_exception"><a class="viewcode-back" href="../errors.html#errors.get_exception">[docs]</a><span class="k">def</span> <span class="nf">get_exception</span><span class="p">(</span><span class="n">details</span><span class="p">:</span><span class="nb">dict</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">if</span> <span class="s1">&#39;code&#39;</span> <span class="ow">in</span> <span class="n">details</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">details</span><span class="p">[</span><span class="s1">&#39;code&#39;</span><span class="p">]</span> <span class="ow">in</span> <span class="n">ALL_EXCEPTIONS</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="n">details</span><span class="p">[</span><span class="s2">&quot;code&quot;</span><span class="p">]](</span><span class="n">details</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">details</span><span class="p">[</span><span class="s1">&#39;code&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;rest_invalid_param&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">&#39;details&#39;</span> <span class="ow">in</span> <span class="n">details</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">]:</span>
+                <span class="n">error_json</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">details</span><span class="p">[</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="s1">&#39;details&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">())[</span><span class="mi">0</span><span class="p">]</span>
+                <span class="k">return</span> <span class="n">ALL_EXCEPTIONS</span><span class="p">[</span><span class="n">error_json</span><span class="p">[</span><span class="s1">&#39;code&#39;</span><span class="p">]](</span><span class="n">error_json</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">UNKNOWN_ERROR</span><span class="p">(</span><span class="n">details</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+</pre></div>
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2023, Vbrawl
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer no-toc">
+      
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/scripts/furo.js"></script>
+    </body>
+</html>
