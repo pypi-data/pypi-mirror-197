@@ -1,0 +1,16 @@
+leaf_focus/__init__.py,sha256=rfia3rJZNFXBDUd7r6oppxik0qCb8OEFFoiYjshuY9A,116
+leaf_focus/app.py,sha256=-3Hgpuig-WXaKeNdWTIIj_1knv0X8Oc9-TCeJYIEkfM,5815
+leaf_focus/cli.py,sha256=1tsyhWQzsdmwaJOkK4HhGEGAUS03RfF7yx6L9BYvsTw,3127
+leaf_focus/utils.py,sha256=hcjOpW8G2mMADadI2yQywEbHY-8F_me43xb8x4l0b-c,7076
+leaf_focus/ocr/__init__.py,sha256=AdupFsqo3XVopLX-luP0ThfKBUdj5a8JaNHu4oRXeI8,46
+leaf_focus/ocr/keras_ocr.py,sha256=Gb-sSSlOatABlxhxz8tMbFN1Z_17OPFho9VwApMcmSs,10118
+leaf_focus/ocr/model.py,sha256=8t3m5MfhRJmJyvr_gj-4AAn7IuupKoBAgQSL9Rjfdyw,14278
+leaf_focus/pdf/__init__.py,sha256=bvLtv06YJZ8OHSJbfaGDBHMftArQnInKoxBzR0Vxb4s,45
+leaf_focus/pdf/model.py,sha256=dGjBYmnxlpifnn3mdmFjQ58Fl9OR_EFW-Sdhy7jZhoQ,18067
+leaf_focus/pdf/xpdf.py,sha256=5h_SFaUBamS3HZyI41QdolY5HMFOEF1UpoWii0EmEWo,13000
+leaf_focus-0.5.3.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+leaf_focus-0.5.3.dist-info/METADATA,sha256=tBd0n9Odf8T0rEP6SgAI8FJRAbl9Q1TrX5IWY-MA2js,5420
+leaf_focus-0.5.3.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+leaf_focus-0.5.3.dist-info/entry_points.txt,sha256=3xzRRbzvCN4XvInLQ0uVJNzRjOKqx0IwIeADKjaHrvg,51
+leaf_focus-0.5.3.dist-info/top_level.txt,sha256=8nXcdxsVvkFG7h0BLdCnU_6HvKU94ewIj1Vzv5Lq8jo,11
+leaf_focus-0.5.3.dist-info/RECORD,,
