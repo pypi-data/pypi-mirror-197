@@ -1,0 +1,18 @@
+feedparser>=5.2.0
+html2text
+opencv-python~=4.6.0.66
+keyboard
+numpy
+pefile
+requests
+PyYAML
+pyyaml
+numba
+scikit-learn
+setuptools
+moviepy
+imageio
+toml
+
+[:python_version < "3.11"]
+tomli
