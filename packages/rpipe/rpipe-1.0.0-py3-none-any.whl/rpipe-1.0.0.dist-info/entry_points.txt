@@ -1,0 +1,3 @@
+[console_scripts]
+rpipe = rpipe.client:main
+rpipe_server = rpipe.server:main
