@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "nonumpy"
+version = "0.1.1a0"
+description = ""
+authors = [
+  "WideOpenTech <foss@wideopentech.co.uk>",
+]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+john = "^0.1.1a3"
+crelm = "^0.0.26a16"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
