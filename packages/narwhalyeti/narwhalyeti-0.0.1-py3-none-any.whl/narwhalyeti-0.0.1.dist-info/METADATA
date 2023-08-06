@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: narwhalyeti
+Version: 0.0.1
+Summary: Asana
+Home-page: 
+Author: Asana Support
+Author-email: team@openapitools.org
+License: Apache 2.0
+Keywords: OpenAPI,OpenAPI-Generator,Asana
+Requires-Python: >=3.6
+Requires-Dist: urllib3 (>=1.25.3)
+Requires-Dist: python-dateutil
+
+    This is the interface for interacting with the [Asana Platform](https://developers.asana.com)   # noqa: E501
+    
