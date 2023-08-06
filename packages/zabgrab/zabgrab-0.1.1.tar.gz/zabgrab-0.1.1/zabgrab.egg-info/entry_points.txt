@@ -1,0 +1,2 @@
+[console_scripts]
+zabgrab = zabgrab.__main__:zabgrab
