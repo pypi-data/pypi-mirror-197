@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pydl8.5
+Version: 0.1.5
+Summary: A package to build an optimal binary decision tree classifier.
+Home-page: https://github.com/aia-uclouvain/pydl8.5
+Author: Gael Aglin, Siegfried Nijssen, Pierre Schaus
+Author-email: aglingael@gmail.com, siegfried.nijssen@gmail.com, pschaus@gmail.com
+Maintainer: Gael Aglin, Siegfried Nijssen, Pierre Schaus
+Maintainer-email: aglingael@gmail.com, siegfried.nijssen@gmail.com, pschaus@gmail.com
+License: LICENSE.txt
+Download-URL: https://github.com/aia-uclouvain/pydl8.5
+Project-URL: Source on github, https://github.com/aia-uclouvain/pydl8.5
+Project-URL: Documentation, https://pydl85.readthedocs.io/en/latest/?badge=latest
+Keywords: decision trees,discrete optimization,classification
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE.txt
+Requires-Dist: setuptools
+Requires-Dist: cython
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: gurobipy
+Requires-Dist: cvxpy
+
+UNKNOWN
+
