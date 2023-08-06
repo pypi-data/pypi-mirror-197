@@ -1,0 +1,15 @@
+_inherit_from:
+  - _lint_unix.yml
+  - _lint_win.yml
+
+dependencies:
+  - black-jupyter
+  - isort
+  - mypy >=1.0.0
+  - nbstripout
+  - pyflakes
+  - pyproject-fmt !=0.9.1
+  - pytest-check-links
+  - requests-cache
+  - ruff
+  - ssort
