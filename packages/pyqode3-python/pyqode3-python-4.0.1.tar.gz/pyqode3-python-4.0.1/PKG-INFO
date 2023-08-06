@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: pyqode3-python
+Version: 4.0.1
+Summary: pyqode.python is an extension of pyqode.core that brings support
+Keywords: CodeEdit,PyQt,editor,widget,qt,Python
+Author-email: Colin Duquesnoy <colin.duquesnoy@gmail.com>, Sebastiaan Mathôt <s.mathot@cogsci.nl>
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: qtawesome
+Requires-Dist: pyflakes
+Requires-Dist: autopep8
+Requires-Dist: pep8
+Requires-Dist: jedi
+Requires-Dist: docutils
+Project-URL: Documentation, https://github.com/open-cogsci/pyqode.python
+Project-URL: Source, https://github.com/open-cogsci/pyqode.python
+
+.. image:: https://raw.githubusercontent.com/pyQode/pyQode/master/media/pyqode-banner.png
+
+
+About
+-----
+
+This is a fork of PyQode, which is now developed as the editor component for Rapunzel_ and OpenSesame_. The original PyQode repository (<= v2) is no longer maintained.
+
+*pyqode.python* adds **python** support to `pyQode` (code completion,
+calltips, ...).
+
+.. _OpenSesame: https://osdoc.cogsci.nl/
+.. _Rapunzel: https://rapunzel.cogsci.nl/
+
+Features:
+---------
+
+* calltips mode (using `Jedi`)
+* code completion provider (using `Jedi`)
+* code folding mode
+* auto indent mode
+* on the fly code checkers (frosted (fork of PyFlakes), PEP8)
+* a customisable python specific syntax highlighter
+* a pre-configured QPythonCodeEdit (with the corresponding Qt Designer plugin)
+* automatic PEP8 formatting
+
+License
+-------
+
+pyQode is licensed under the **MIT license**.
+
+Requirements
+------------
+
+pyqode.python depends on the following libraries:
+
+- python (>= 3.7)
+- pyqode.core
+- jedi
+- pep8
+- frosted
+- docutils
+- autopep8
+
