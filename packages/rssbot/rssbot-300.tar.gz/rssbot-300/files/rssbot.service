@@ -1,0 +1,17 @@
+[Unit]
+Description=feeding rss into your channel
+After=multi-user.target
+
+[Service]
+#Type=simple
+User=rssbot
+Group=rssbot
+DynamicUser=yes
+StateDirectory=rssbot
+LogsDirectory=rssbot
+CacheDirectory=rssbot
+ExecStart=/usr/local/bin/rssd
+CapabilityBoundingSet=CAP_NET_RAW
+
+[Install]
+WantedBy=multi-user.target

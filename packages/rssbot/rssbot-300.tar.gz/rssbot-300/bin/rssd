@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# This file is placed in the Public Domain.
+
+
+"feeding rss into your channel"
+
+
+from rssbot.modules import irc, rss
+from rssbot.storage import Storage
+from rssbot.utility import privileges, wait
+
+
+Storage.workdir = "/var/lib/rssbot/"
+
+
+def main():
+    privileges("rssbot")
+    irc.init()
+    rss.init()
+    wait()
+
+
+main()
