@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "basexpy"
+description = "Fast Base X encoder/decoder"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["BaseX", "BASE58", "BASE62", "BASE64"]
+maintainers = [
+    {name = "Zhiyuan Chen", email = "this@zyc.ai"},
+]
+authors = [
+    {name = "Zhiyuan Chen", email = "this@zyc.ai"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3"
+dynamic = ["version"]
+
+[project.urls]
+repository = "https://github.com/ZhiyuanChen/basex"
+
+[tool.setuptools]
+packages = ["basex"]
+
+[tool.setuptools_scm]
+write_to = "basex/_version.py"
