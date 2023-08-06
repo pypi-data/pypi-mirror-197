@@ -1,0 +1,17 @@
+sudo_win32/__init__.py,sha256=gzwhGhMPokx6H-1eeQzbIY9jhjLlDicSsDyDkgL-rh4,81
+sudo_win32/cli.py,sha256=UeCmTZIEAud128IJJyVxma_3vrWtjz4s7OjBBl8LVIA,221
+sudo_win32/elevated_exec.py,sha256=7cQYMNxyHOh9rH6ntj9kkcjL_TsSzxnD1TUnmidisKQ,987
+sudo_win32/gsudo.7z,sha256=ElRWnO5H4hXV5rHfKlE1nhdavetX9XtWMAsWIHuDozo,1768105
+sudo_win32/install.py,sha256=TUnCUpPerWg1J2VDUW-VESPakaOGYURVeogM3Sx-cYU,1205
+sudo_win32/gsudo/Invoke-gsudo.ps1,sha256=Eg7cYqMis_Y1Qt5I9UYaq2qNw9MHbZrmRy-6NI0766Y,22576
+sudo_win32/gsudo/gsudo,sha256=rkcKW84d89kk1pWbbvcuQbK_AInYDkZUmvdxv3Mjfi8,695
+sudo_win32/gsudo/gsudo.exe,sha256=gGxBbjAWS47bpGbZZUoTAYidQYYOhHVoKNn-8njVFKM,5842896
+sudo_win32/gsudo/gsudo.exe.ignore,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sudo_win32/gsudo/gsudoModule.psd1,sha256=qkG3EuR-phz0gmgUgIrdOaWmRidj8cTSvpd3BQPXMeQ,19867
+sudo_win32/gsudo/gsudoModule.psm1,sha256=XeVnKAwxRV0_bi1EGPAspJBrhkeRyToJ8we3hnaW_Vo,16737
+sudo_win32-1.0.7.dist-info/LICENSE,sha256=b6pOoifSXiUaz_lDS84vWlG3fr4yUKwB8fzkrH9R8bQ,1064
+sudo_win32-1.0.7.dist-info/METADATA,sha256=jXE4dGqdgTkiVMe8hfLC39ShrjB6gcNGdDvuqmZ_O10,5353
+sudo_win32-1.0.7.dist-info/WHEEL,sha256=bb2Ot9scclHKMOLDEHY6B2sicWOgugjFKaJsT7vwMQo,110
+sudo_win32-1.0.7.dist-info/entry_points.txt,sha256=l-ufQ4FXgQiyUIUOgTds8uaNIe9PzY8QpAjrJynbHEk,51
+sudo_win32-1.0.7.dist-info/top_level.txt,sha256=errJEh5WcYlj_J72U5qsE_kDwCxOnbt7LUJMXx-CzXo,11
+sudo_win32-1.0.7.dist-info/RECORD,,
