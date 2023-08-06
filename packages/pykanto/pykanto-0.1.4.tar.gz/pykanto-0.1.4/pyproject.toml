@@ -1,0 +1,66 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pykanto"
+description = "A library for managing and analysing animal vocalisation data."
+version = "0.1.4"
+authors = [{ name = "Nilo M. Recalde", email = "nilomerinorecalde@gmail.com" }]
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    'Development Status :: 4 - Beta',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = { file = "LICENSE" }
+dependencies = [
+    "pandas >= 1",
+    "numpy >= 1.17",
+    "scipy >= 1.5",
+    "numba >= 0.49",
+    "tqdm",
+    "audio-metadata >= 0.11.1",
+    "ray[default]",
+    "pysoundfile >= 0.9",
+    "umap-learn >= 0.5",
+    "joblib >= 1.2.0",
+    "hdbscan >= 0.8.29",
+    "seaborn >= 0.11",
+    "scikit-image >= 0.18",
+    "librosa >= 0.8, <0.10.0",
+    "bokeh >=2.3.3, <3.0.0",
+    "ujson",
+    "psutil",
+    "attrs",
+    "gitpython",
+    "typer == 0.6",
+]
+
+[project.optional-dependencies]
+dev = ["ipywidgets", "ipykernel", "pytest", "nox", "black"]
+test = ["pytest >=7"]
+doc = [
+    "sphinx <5, >=3.5.4",
+    "sphinx-copybutton",
+    "sphinx_book_theme == 0.3.3",
+    "myst-nb ==  0.17",
+    "myst-parser == 0.18",
+]
+
+[project.urls]
+Source = "https://github.com/nilomr/pykanto"
+Documentation = "https://nilomr.github.io/pykanto"
+
+[project.scripts]
+pykanto-slaunch = 'pykanto.utils.slurm.launch:submit_job'
+
+[tool.black]
+line-length = 80
+
+[tool.isort]
+profile = "black"
+float_to_top = 'True'
