@@ -1,0 +1,21 @@
+future
+six
+docopt
+cachetools
+numpy
+scipy
+pandas
+scikit-learn
+dill
+torch>=1.3
+transformers>=3.0.2
+editdistance
+requests
+emoji
+pyrsistent
+tabulate
+tqdm
+muddler
+
+[:platform_system != "Windows"]
+camel-kenlm>=2023.3.17.2
