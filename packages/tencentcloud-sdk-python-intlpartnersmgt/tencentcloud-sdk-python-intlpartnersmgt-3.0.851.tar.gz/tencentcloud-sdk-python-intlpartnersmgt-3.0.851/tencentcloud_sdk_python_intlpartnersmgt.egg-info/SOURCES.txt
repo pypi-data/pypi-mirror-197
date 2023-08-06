@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+tencentcloud/__init__.py
+tencentcloud/intlpartnersmgt/__init__.py
+tencentcloud/intlpartnersmgt/v20220928/__init__.py
+tencentcloud/intlpartnersmgt/v20220928/errorcodes.py
+tencentcloud/intlpartnersmgt/v20220928/intlpartnersmgt_client.py
+tencentcloud/intlpartnersmgt/v20220928/models.py
+tencentcloud_sdk_python_intlpartnersmgt.egg-info/PKG-INFO
+tencentcloud_sdk_python_intlpartnersmgt.egg-info/SOURCES.txt
+tencentcloud_sdk_python_intlpartnersmgt.egg-info/dependency_links.txt
+tencentcloud_sdk_python_intlpartnersmgt.egg-info/top_level.txt
