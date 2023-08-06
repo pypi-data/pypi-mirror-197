@@ -1,0 +1,5 @@
+setup.py
+ashiyu.egg-info/PKG-INFO
+ashiyu.egg-info/SOURCES.txt
+ashiyu.egg-info/dependency_links.txt
+ashiyu.egg-info/top_level.txt
