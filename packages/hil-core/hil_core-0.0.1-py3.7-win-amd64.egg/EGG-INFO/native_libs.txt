@@ -1,0 +1,2 @@
+hil/core/doip_client.cp37-win_amd64.pyd
+hil/core/uds_client.cp37-win_amd64.pyd
