@@ -1,0 +1,5 @@
+{
+  "resource": true,
+  "name": "symbiosis",
+  "server": "github://api.github.com/symbiosis-cloud"
+}
