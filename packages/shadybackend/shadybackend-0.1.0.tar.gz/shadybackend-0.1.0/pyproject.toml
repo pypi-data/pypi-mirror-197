@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "shadybackend"
+version = "0.1.0"
+description = "The defualt tool-chain for the SHADY Stack."
+authors = ["USER 1103 <79700949+user-1103@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "shadybackend"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+"discord.py" = "^2.2.0"
+Jinja2 = "^3.1.2"
+
+[tool.poetry.group.dev.dependencies]
+# pytest = "^7.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+shadybackend = 'shadybackend:main'
