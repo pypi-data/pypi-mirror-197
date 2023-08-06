@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+./chat/__init__.py
+./chat/api.py
+./chat/chat.py
+./chat/chatmanager.py
+./chat/main.py
+./chat/path.py
+superchat_cli.egg-info/PKG-INFO
+superchat_cli.egg-info/SOURCES.txt
+superchat_cli.egg-info/dependency_links.txt
+superchat_cli.egg-info/entry_points.txt
+superchat_cli.egg-info/requires.txt
+superchat_cli.egg-info/top_level.txt

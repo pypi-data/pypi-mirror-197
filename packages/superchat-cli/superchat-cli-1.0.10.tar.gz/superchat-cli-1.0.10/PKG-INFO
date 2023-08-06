@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: superchat-cli
+Version: 1.0.10
+Summary: command-line interface for chatgpt
+Home-page: https://github.com/quintenroets/chat
+Author: Quinten Roets
+Author-email: quinten.roets@gmail.com
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Superchat-cli
+Command-line interface for Chatgpt
+
+## Usage
+
+```shell
+chat
+```
+
+## Installation
+
+```shell
+pip install superchat-cli
+requires python version >= 3.9
+```
+
+Obtain [API token](https://beta.openai.com/account/api-keys)
