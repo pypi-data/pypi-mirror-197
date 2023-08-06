@@ -1,0 +1,3 @@
+//>>built
+define("app/utils/DomUtils",["dojo/_base/array","dojo/dom-construct","dojo/_base/lang","dojo/_base/connect"],function(e,d,f,g){return{addOptionsToSelect:function(b,a){a.data.forEach(function(c){d.place('\x3coption value\x3d"'+c[a.idProperty]+'"\x3e'+(a.showId?c[a.labelProperty]+" ("+c[a.idProperty]+")":c[a.labelProperty])+"\x3c/option\x3e",b)})},getSelectedOption:function(b){return b.options[b.selectedIndex].value}}});
+//# sourceMappingURL=DomUtils.js.map
