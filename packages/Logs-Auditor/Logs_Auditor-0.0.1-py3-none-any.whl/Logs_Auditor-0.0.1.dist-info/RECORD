@@ -1,0 +1,11 @@
+Logs_Auditor/__init__.py,sha256=GBmL4ZsL7DnnADp1Cdw4YZ0QzPx3RkbD9xslECrMdSo,305
+Logs_Auditor/config.py,sha256=njPH556tHyRAunIoK_46Z_QuXiMWgQrYsuivOg6mFN0,904
+Logs_Auditor/errorhandler.py,sha256=9l4VolW8pG_f4T-cfeizY2NqZsv1Is1iEtWUFuORmRA,3388
+Logs_Auditor/eswrapper.py,sha256=BIQpkVqhVBSaVDzHlId3G--VLHSZ4fsgg5-7be_Tn30,2792
+Logs_Auditor/kfproducer.py,sha256=XpPkyzpe5aEP8d10mMxk_3ZCWOdJ5qrLI2nlSRdK-Rs,1642
+Logs_Auditor/loghandler.py,sha256=z0SoT24m0X0NVesZe0MarEwn4oIdx-brLktx1BJ9Y6g,7491
+Logs_Auditor-0.0.1.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+Logs_Auditor-0.0.1.dist-info/METADATA,sha256=RInLWNehJK7rIshRwQA6velAHDGdJFk3HnmX3J3pM88,1041
+Logs_Auditor-0.0.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+Logs_Auditor-0.0.1.dist-info/top_level.txt,sha256=TbTiFAxQUxC2Fnu32DGvxXuwXup5I6qXEr9UbHLpFAQ,13
+Logs_Auditor-0.0.1.dist-info/RECORD,,
