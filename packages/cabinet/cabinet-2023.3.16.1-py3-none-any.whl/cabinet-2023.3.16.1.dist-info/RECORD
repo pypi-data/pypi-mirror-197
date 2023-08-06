@@ -1,0 +1,10 @@
+cabinet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cabinet/__main__.py,sha256=FzAR5mCCy2MQcwTM_wfgbGK72lIVSxqbo7zaqkC-ksA,68
+cabinet/cabinet.py,sha256=ZuYJJ-sNbtraFC9eIUQoLP6xen5ZWFy0MIKOGFEWGlk,13397
+cabinet/mail.py,sha256=5pFiVEIsOIkYeHHJiLAIZE-Io-HbqMvwvXk8bfiTHyA,2533
+cabinet-2023.3.16.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cabinet-2023.3.16.1.dist-info/METADATA,sha256=pzTLcdRdrvcK3YseHfwheT9YZzw9TUrf0OlHVTS7kCU,4388
+cabinet-2023.3.16.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+cabinet-2023.3.16.1.dist-info/entry_points.txt,sha256=4ek_aZEGrDrdfgURyvJx8ye_2K6XCTIER06tYWnLeZU,49
+cabinet-2023.3.16.1.dist-info/top_level.txt,sha256=hul6s0MCRwKTSO_GD3iZM_WI-cAVvz7jUDgVW2DBUKE,8
+cabinet-2023.3.16.1.dist-info/RECORD,,
