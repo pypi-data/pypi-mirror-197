@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyjamf
+Version: 0.1.0
+Summary: PyJamf Module
+Author: michaeldcanady
+Requires-Python: >3.8.0
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: autopep8==2.0.1
+Requires-Dist: certifi==2022.12.7
+Requires-Dist: charset-normalizer==3.0.1
+Requires-Dist: idna==3.4
+Requires-Dist: pycodestyle==2.10.0
+Requires-Dist: pyrestsdk==0.4.0
+Requires-Dist: requests==2.28.2
+Requires-Dist: StrEnum==0.4.9
+Requires-Dist: tomli==2.0.1
+Requires-Dist: urllib3==1.26.14
+Project-URL: homepage, https://github.com/michaeldcanady/pyjamf#readme
+Project-URL: repository, https://github.com/michaeldcanady/pyjamf
+
+# Py JAMF API Wrapper
