@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "kevastro"
+version = "0.2.1"
+description = "Helper functions for astronomy"
+authors = ["Evgeny Klunko <eklunko@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.21"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+pylint = "^2.17.0"
+pytest = "^7.2.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.format]
+max-line-length = 120
+
+[tool.pylint."messages control"]
+disable = [
+  "C0114",  # missing-module-docstring
+  "C0116",  # missing-function-docstring
+  "R0903",  # too-few-public-methods (for sqlalchemy tables and pydantic classes)
+  "R0801",  # Similar lines in 2 files
+  "C0115",  # missing-class-docstring (for api routes)
+  "C0103",  # invalid-name (for pydatic settings)
+  "W1203",  # logging-fstring-interpolation (Use lazy % or % formatting in logging functions)"
+]

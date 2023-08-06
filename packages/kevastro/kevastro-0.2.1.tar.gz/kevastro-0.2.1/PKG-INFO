@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: kevastro
+Version: 0.2.1
+Summary: Helper functions for astronomy
+Author: Evgeny Klunko
+Author-email: eklunko@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: numpy (>=1.21,<2.0)
+Description-Content-Type: text/markdown
+
+## Steps to release a new package version
+* Run tests, linter, formatter, ...: `poetry run pytest (pylint, black, ...)`
+* Bump project's version: `poetry version ...`
+* Build: `poetry build`
+* Publish: `poetry publish`
+
