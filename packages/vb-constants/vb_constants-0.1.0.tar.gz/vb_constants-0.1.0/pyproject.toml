@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "vb-constants"
+version = "0.1.0"
+description = "Constants of physics."
+authors = ["vaibhavblayer <vaibhavblayer@gmail.com>"]
+readme = "README.md"
+packages = [{include = "vb_constants"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
