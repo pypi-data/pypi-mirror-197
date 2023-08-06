@@ -1,0 +1,3 @@
+numpy
+pandas
+karray>=0.2.1
