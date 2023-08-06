@@ -1,0 +1,3 @@
+[console_scripts]
+lgraph_cypher = lgraph_shell.lgraph_cypher:start
+
