@@ -1,0 +1,15 @@
+2023-03-16 17:51:58,230 - daily_scrapper.py - INFO - SEARCH URL: https://www.autoscout24.com/lst/audi?adage=1&pricefrom=2000&priceto=5000
+2023-03-16 17:52:00,076 - daily_scrapper.py - INFO - Pages: 5 Found
+2023-03-16 17:52:00,080 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-16 17:52:50,062 - scrapper.py - ERROR - error HTTPSConnectionPool(host='www.autoscout24.com', port=443): Max retries exceeded with url: /lst/audi?adage=1&pricefrom=2000&priceto=5000&page=5 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2023-03-16 18:02:11,934 - daily_scrapper.py - INFO - SEARCH URL: https://www.autoscout24.com/lst/audi?adage=1&pricefrom=2000&priceto=5000
+2023-03-16 18:02:12,749 - daily_scrapper.py - INFO - Pages: 5 Found
+2023-03-16 18:02:12,752 - botocore.credentials - INFO - Found credentials in shared credentials file: ~/.aws/credentials
+2023-03-16 18:03:02,449 - scrapper.py - ERROR - error HTTPSConnectionPool(host='www.autoscout24.com', port=443): Max retries exceeded with url: /lst/audi?adage=1&pricefrom=2000&priceto=5000&page=2 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 503 Service Unavailable')))
+2023-03-16 18:03:02,826 - scrapper.py - ERROR - error HTTPSConnectionPool(host='www.autoscout24.com', port=443): Max retries exceeded with url: /lst/audi?adage=1&pricefrom=2000&priceto=5000&page=2 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2023-03-16 18:03:10,026 - scrapper.py - ERROR - error HTTPSConnectionPool(host='www.autoscout24.com', port=443): Max retries exceeded with url: /lst/audi?adage=1&pricefrom=2000&priceto=5000&page=3 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106d60670>, 'Connection to 201.229.250.21 timed out. (connect timeout=5)'))
+2023-03-16 18:03:16,659 - scrapper.py - ERROR - error HTTPSConnectionPool(host='www.autoscout24.com', port=443): Max retries exceeded with url: /lst/audi?adage=1&pricefrom=2000&priceto=5000&page=4 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x106e6f340>, 'Connection to 103.118.175.154 timed out. (connect timeout=5)'))
+2023-03-16 18:03:21,130 - scrapper.py - INFO - Content For: https://www.autoscout24.com/lst/audi?adage=1&pricefrom=2000&priceto=5000 Extracted!
+2023-03-16 18:03:21,133 - scrapper.py - INFO - Articles Ids Successfully Scrapped!
+2023-03-16 18:03:21,562 - daily_scrapper.py - INFO - SEARCH URL: https://www.autoscout24.com/lst/audi?adage=1&pricefrom=5001&priceto=10000
+2023-03-16 18:03:23,372 - daily_scrapper.py - INFO - Pages: 13 Found
