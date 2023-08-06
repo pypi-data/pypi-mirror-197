@@ -1,0 +1,16 @@
+numpy
+numba
+scipy
+healpy
+fitsio
+mpi4py
+
+[develop]
+build
+twine
+bump2version
+pytest
+flake8
+sphinx-argparse
+sphinx
+sphinx-rtd-theme

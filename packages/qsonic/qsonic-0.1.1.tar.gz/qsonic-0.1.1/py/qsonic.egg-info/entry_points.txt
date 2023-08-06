@@ -1,0 +1,2 @@
+[console_scripts]
+qsonic-fit = qsonic.scripts.qsonic_fit:main
