@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: palonso_sales
+Version: 0.0.1
+Summary: My customized ORM on Sales
+Project-URL: Homepage, https://github.com/Palons0/sales
+Project-URL: Bug Tracker, https://github.com/Palons0/sales/issues
+Author-email: palonso <pablo.alonso@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
