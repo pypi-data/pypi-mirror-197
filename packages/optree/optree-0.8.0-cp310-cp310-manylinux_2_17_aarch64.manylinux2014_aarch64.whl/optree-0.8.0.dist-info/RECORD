@@ -1,0 +1,14 @@
+optree/utils.py,sha256=QCX22w9QPbH2QFS-d4A8cO7AjqLdD3tXeF30xzZBUhI,3002
+optree/_C.cpython-310-aarch64-linux-gnu.so,sha256=BXkyZEH-EJ9hz-S57AuWSRzVd-JcYIIsBLzIjluqR0o,594616
+optree/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optree/ops.py,sha256=XumYlrtVA5hSczo-s3Wg1uGKwYPKpnFwUKJN6a3pT8c,72391
+optree/version.py,sha256=1yJ16OfjS9MlDRZjEJbEw5V2S7z3pk6rl4fmuFwm38k,1768
+optree/typing.py,sha256=kvN6NiUSK6mN9iDZzikW1exDbqPknRc7BsuONxwTF1g,11472
+optree/_C.pyi,sha256=Zt6CcBjmsmKL3zJ3QUrKHVsHIs9tb5LFcx8LRrj64qM,3610
+optree/__init__.py,sha256=I5wrTJ9kegfq4mCRDPNqKv-2OQp91VLTu-3YSZ1awS8,3642
+optree/registry.py,sha256=Y0yC_RMZ-IeizrOiL2983wTMWaJ9p-j7_dA_T6NzSHs,21721
+optree-0.8.0.dist-info/RECORD,,
+optree-0.8.0.dist-info/LICENSE,sha256=hu8j9Tg_2lDSbi7sYfaMD7InGdAkOkShVWw4BswqOdM,11370
+optree-0.8.0.dist-info/WHEEL,sha256=3AHslvWgUfMTlQQ8cD8Y_NJI60eRP-kac0ENn0XDVG4,154
+optree-0.8.0.dist-info/METADATA,sha256=-k2a7z8XDSgrkisu3TmjCjHvA9-tLPFVMK4xsxn9210,42230
+optree-0.8.0.dist-info/top_level.txt,sha256=wxgWsTkpSlcz3dX9fMJb8ShwAlFdBUpvrlMRYE31_Po,7
