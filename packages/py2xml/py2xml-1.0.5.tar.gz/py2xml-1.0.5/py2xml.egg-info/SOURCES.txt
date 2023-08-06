@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+setup.py
+py2xml/__init__.py
+py2xml/decorator.py
+py2xml/element.py
+py2xml/util.py
+py2xml.egg-info/PKG-INFO
+py2xml.egg-info/SOURCES.txt
+py2xml.egg-info/dependency_links.txt
+py2xml.egg-info/top_level.txt
