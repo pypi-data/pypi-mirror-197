@@ -1,0 +1,9 @@
+consortia_commons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+consortia_commons/file/__init__.py,sha256=y9RQlKy3icqqiyI5uTTX_ZA6xZAaA90Lr27WzA4EiAg,6893
+consortia_commons/rest/__init__.py,sha256=obWvFI9uc5p_87OcCCW22hst-GPUBAs8RJv1ohL18wg,1761
+consortia_commons/string/__init__.py,sha256=H8k64tjZDTj8wnFUD9AQlaG5hYiJt_G9bvAA4iMSAxs,2142
+consortia_commons/ubkg/__init__.py,sha256=scALyifMKDV52qKAaJSLP-tQGj9vLid-nFWxyOhFb90,2102
+consortia_commons-1.0.0.dist-info/METADATA,sha256=7QkkBAvTzAI8l2lr-1CSm6Wz86vWIJ1RWKlWHQiCpHA,1303
+consortia_commons-1.0.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+consortia_commons-1.0.0.dist-info/top_level.txt,sha256=bG6ha9m47ScsBCpbTjSg4m59jCCkmaKcdo6Ntm9RQL8,18
+consortia_commons-1.0.0.dist-info/RECORD,,
