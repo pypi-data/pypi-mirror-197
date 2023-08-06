@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: aib-test
+Version: 0.2.6
+Home-page: 
+Author: 
+Author-email: 
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: ray (==2.2.0)
+Requires-Dist: scikit-learn (==1.2.1)
+Requires-Dist: xgboost (==1.7.3)
+Requires-Dist: mysql-connector-python (==8.0.32)
+Requires-Dist: dill (==0.3.6)
+Requires-Dist: ipython (==8.8.0)
+Requires-Dist: pydantic (==1.10.4)
+Requires-Dist: pandas (==1.5.2)
+Requires-Dist: SQLAlchemy (==1.4.46)
+Requires-Dist: imbalanced-learn (==0.10.1)
+Requires-Dist: pyarrow (==7.0.0)
+
