@@ -1,0 +1,8 @@
+lightning>=2.0.0
+
+[test]
+codecov>=2.1
+coverage>=5.0
+mypy==1.0.1
+pytest-cov
+pytest>=6.0
