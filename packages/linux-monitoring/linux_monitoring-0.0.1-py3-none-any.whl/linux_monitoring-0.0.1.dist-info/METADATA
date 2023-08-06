@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: linux-monitoring
+Version: 0.0.1
+Summary: Generates graphical reports for Linux metrics
+Author-email: "dheeraj.banodha" <dheeraj.banodha@impetus.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
