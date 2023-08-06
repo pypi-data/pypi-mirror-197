@@ -1,0 +1,117 @@
+TAG,Descrição,PL,PH
+P62_ST-5140100A,P-62: TGA - GG velocidade de rotação,6750,10000
+P62_PDIT-5140124A,P-62: TGA - Pressão diferencial exaustão PT,0,30
+P62_PIT-5140111A,P-62: TGA - Diesel pressão manifold primário,35,380
+P62_PIT-5140112A,P-62: TGA - Diesel pressão manifold secundário,35,380
+P62_TE-5140102A,P-62: TGA - Diesel temperatura manifold primário,80,160
+P62_TE-5140103A,P-62: TGA - Diesel temperatura manifold secundário,80,160
+P62_PIT-5140120A,P-62: TGA - Pressão sucção P2,14,15
+P62_PIT-5140123A,P-62: TGA - Pressão exaustão GG P48,15,60
+P62_PT-5140121A,P-62: TGA - Pressão de descarga PS3 ,55,300
+P62_TE-5140105A,P-62: TGA - Temperatura sucção T2 ,70,95
+P62_TE-5140106A,P-62: TGA - Temperatura de descarga T3 ,400,900
+P62_TE-5140107A,P-62: TGA - Temperatura exaustão GG T48,670,1580
+P62_TE-5140116A,P-62: TGA - Temperatura exaustão PT,600,1020
+P62_TGA-SPREAD,P-62: TGA - Temperatura exaustão GG Spread,50,200
+P62_VT-5140100A,P-62: TGA - GG vibração,3,60
+P62_ET-5147001A,P-62: TENSÃO DO TG-A,13,14
+P62_JT-5147001A,P-62: POTÊNCIA DO TG-A,1,25
+P62_TE-5140135A,P-62: TGA - Gearbox temperatura 1 do mancal DE do eixo de baixa,130,190
+P62_TE-5140137A,P-62: TGA - Gearbox temperatura 1 do mancal NDE do eixo de alta ,130,190
+P62_TE-5140139A,P-62: TGA - Gearbox temperatura 1 do mancal NDE do eixo de baixa,130,190
+P62_TE-5140141A,P-62: TGA - Gearbox temperatura 1 do mancal DE do eixo de alta,130,190
+P62_TE-5140143A,P-62: TGA - Gearbox temperatura 1 do mancal de escora ativo,130,190
+P62_VE-5140102A,P-62: TGA - Gerador acelerômetro carcaça NDE,1,2.5
+P62_VE-5140104A,P-62: TGA - Gearbox acelerômetro carcaça LSS,1,5
+P62_VE-5140105A,P-62: TGA - Gearbox acelerômetro carcaça HSS,1,5
+P62_XT-5140108-XA,P-62: TGA - Gerador vibração radial X NDE no mancal ,20,50
+P62_XT-5140108-YA,P-62: TGA - Gerador vibração radial Y NDE no mancal,20,50
+P62_XT-5140109-XA,P-62: TGA - Gerador vibração radial X DE no mancal,20,50
+P62_XT-5140109-YA,P-62: TGA - Gerador vibração radial Y DE no mancal,20,50
+P62_XT-5140110-XA,P-62: TGA - Gearbox vibração radial X DE do eixo de baixa,10,25
+P62_XT-5140110-YA,P-62: TGA - Gearbox vibração radial Y DE do eixo de baixa,10,25
+P62_XT-5140111-XA,P-62: TGA - Gearbox vibração radial X NDE do eixo de alta,5,25
+P62_XT-5140111-YA,P-62: TGA - Gearbox vibração radial Y NDE do eixo de alta,5,25
+P62_XT-5140112-XA,P-62: TGA - Gearbox vibração radial X NDE do eixo de baixa,10,25
+P62_XT-5140112-YA,P-62: TGA - Gearbox vibração radial Y NDE do eixo de baixa,10,25
+P62_XT-5140113-XA,P-62: TGA - Gearbox vibração radial X DE do eixo de alta,5,25
+P62_XT-5140113-YA,P-62: TGA - Gearbox vibração radial Y DE do eixo de alta,5,25
+P62_ZT-5140101-1A,P-62: TGA - Gearbox deslocamento axial 1 LSS,-0.4,0.4
+P62_ZT-5140101-2A,P-62: TGA - Gearbox deslocamento axial 2 LSS,-0.4,0.4
+P62_SE-5140101A,P-62: TGA - PT velocidade de rotação,3400,6200
+P62_TE-5140112-1A,P-62: TGA - Temperatura PT thrust journal bearing 1,130,200
+P62_TE-5140113-1A,P-62: TGA - Temperatura PT thrust bearing inactive side ,130,180
+P62_TE-5140114-1A,P-62: TGA - Temperatura PT thrust bearing active side,130,200
+P62_TE-5140115-1A,P-62: TGA - Temperatura PT thrust journal bearing 2,130,200
+P62_XT-5140106-XA,P-62: TGA - Radial vib 1 mancal 1 PT ,5,20
+P62_XT-5140106-YA,P-62: TGA - Radial vib 2 mancal 1 PT ,5,20
+P62_XT-5140107-XA,P-62: TGA - Radial vib 1 mancal 2 PT ,20,50
+P62_XT-5140107-YA,P-62: TGA - Radial vib 2 mancal 2 PT ,20,50
+P62_ZT-5140100-1A,P-62: TGA - Desl axial 1 PT,-0.5,0.5
+P62_ZT-5140100-2A,P-62: TGA - Desl axial 2 PT,-0.5,0.5
+P62_PDIT-5140163A,P-62: TGA - Pressão diferencial filtro ar de combustão,0.2,2.5
+P62_PDIT-5140164A,P-62: TGA - Pressão diferencial filtro ar de entrada Turbina,0.2,3
+P62_PDIT-5140165A,P-62: TGA - Pressão diferencial pré-filtro ar de entrada Turbina,0.2,1
+P62_FT-5140172A,P-62: TGA - Gás combustível vazão,3000,6000
+P62_LIT-5140101A,P-62: TGA - Gás combustível nível scrubber A1,0,25
+P62_LIT-5140102A,P-62: TGA - Gás combustível nível scrubber A2,0,25
+P62_PIT-5140103A,P-62: TGA - Gás combustível pressão,500,650
+P62_PIT-5140104A,P-62: TGA - Gás combustível pressão a montante da válvula metering ,550,650
+P62_PIT-5140105A,P-62: TGA - Gás combustível pressão a jusante da válvula metering ,35,380
+P62_TIT-5140100A,P-62: TGA - Gás combustível temperatura,130,175
+P62_PIT-5140150A,P-62: TGA - Óleo sintético pressão scavenge,25,65
+P62_PIT-5140151A,P-62: TGA - Óleo sintético pressão,25,100
+P62_TE-5140156A,P-62: TGA - Óleo sintético temperatura,120,150
+P62_FIT-5140139A,P-62: TGA - Óleo mineral vazão a jusante do filtro ,1000,1280
+P62_PIT-5140131A,P-62: TGA - Óleo mineral pressão de header,20,30
+P62_PIT-5140138A,P-62: TGA - Óleo mineral pressão de overhead,14,20
+P62_PIT-5140141A,P-62: TGA - Óleo mineral pressão de descarga da bomba de emergência,2,7
+P62_TIT-5140151A,P-62: TGA - Óleo mineral temperatura de header,120,145
+P62_TIT-5135013,P-62: TEMPERATURA (°C),65,100
+P62_TE-5140107-1A,P-62: TGA - Temperatura exaustão GG T48-A,500,1800
+P62_TE-5140107-2A,P-62: TGA - Temperatura exaustão GG T48-B,500,1800
+P62_TE-5140107-3A,P-62: TGA - Temperatura exaustão GG T48-C,500,1800
+P62_TE-5140107-4A,P-62: TGA - Temperatura exaustão GG T48-D,500,1800
+P62_TE-5140107-5A,P-62: TGA - Temperatura exaustão GG T48-E,500,1800
+P62_TE-5140107-6A,P-62: TGA - Temperatura exaustão GG T48-F,500,1800
+P62_TE-5140107-7A,P-62: TGA - Temperatura exaustão GG T48-G,500,1800
+P62_TE-5140107-8A,P-62: TGA - Temperatura exaustão GG T48-H,500,1800
+P62_ZT-5140105-1A,P-62: TGA - VSV sensor A,6,98
+P62_TE-5140122A,P-62: TGA - Gerador temperatura do ar quente ,100,200
+P62_TE-5140124-1A,P-62: TGA - Gerador temperatura NDE do mancal radial,100,200
+P62_TE-5140125-1A,P-62: TGA - Gerador temperatura DE do mancal radial,100,200
+P62_TE-5140126A,P-62: TGA - Gerador temperatura 1 do enrolamento U do estator,100,200
+P62_TE-5140129A,P-62: TGA - Gerador temperatura 1 do enrolamento V do estator,100,200
+P62_TE-5140132A,P-62: TGA - Gerador temperatura 1 do enrolamento W do estator,100,200
+P62_TE-5140136A,P-62: TGA - Gearbox temperatura 2 do mancal DE do eixo de baixa,100,200
+P62_TE-5140138A,P-62: TGA - Gearbox temperatura 2 do mancal NDE do eixo de alta ,100,200
+P62_TE-5140140A,P-62: TGA - Gearbox temperatura 2 do mancal NDE do eixo de baixa,100,200
+P62_TE-5140142A,P-62: TGA - Gearbox temperatura 2 do mancal DE do eixo de alta,100,200
+P62_TE-5140108-1A,P-62: TGA - Temperatura PT 1º estágio wheelspace FI ,300,500
+P62_TE-5140109-1A,P-62: TGA - Temperatura PT 1º estágio wheelspace AI ,400,600
+P62_TE-5140110-1A,P-62: TGA - Temperatura PT 2º estágio wheelspace FI ,500,700
+P62_TE-5140111-1A,P-62: TGA - Temperatura PT 2º estágio wheelspace AI ,500,700
+P62_TE-5140112-3A,P-62: TGA - Temperatura PT thrust journal bearing 1 ,130,200
+P62_TE-5140115-3A,P-62: TGA - Temperatura PT thrust journal bearing 2 ,130,200
+P62_TT-5140162A,P-62: TGA - Temperatura do Hood,120,185
+P62_TE-5140157A,P-62: TGA - Óleo sintético temperatura AGB,130,198
+P62_TE-5140158A,P-62: TGA - Óleo sintético temperatura A-Sump,130,217
+P62_TE-5140159A,P-62: TGA - Óleo sintético temperatura B-Sump,130,257
+P62_TE-5140160A,P-62: TGA - Óleo sintético temperatura C-Sump,130,248
+P62_TIT-5135012A,P-62: P-5135002 FUEL GAS OUTLET TEMPERATURE,70,100
+P62_ZT-5140105-2A,P-62: TGA - VSV sensor B ,6,98
+P62_TE-5140121A,P-62: TGA - Gerador temperatura do ar de resfriamento NDE,85,110
+P62_TE-5140123A,P-62: TGA - Gerador temperatura do ar de resfriamento  DE,85,120
+P62_TE-5140127A,P-62: TGA - Gerador temperatura 2 do enrolamento U do estator,100,200
+P62_TE-5140130A,P-62: TGA - Gerador temperatura 2 do enrolamento V do estator,100,200
+P62_TE-5140133A,P-62: TGA - Gerador temperatura 2 do enrolamento W do estator,100,200
+P62_TE-5140146A,P-62: TGA - Gearbox temperatura 2 do mancal de escora não ativo,130,190
+P62_TE-5140108-2A,P-62: TGA - Temperatura PT 1º estágio wheelspace FI ,300,500
+P62_TE-5140109-2A,P-62: TGA - Temperatura PT 1º estágio wheelspace AI ,400,600
+P62_TE-5140110-2A,P-62: TGA - Temperatura PT 2º estágio wheelspace FI ,500,700
+P62_TE-5140111-2A,P-62: TGA - Temperatura PT 2º estágio wheelspace AI ,500,700
+P62_TE-5140114-3A,P-62: TGA - Temperatura PT thrust bearing active side,130,200
+P62_TE-5140113-3A,P-62: TGA - Temperatura PT thrust bearing inactive side,130,180
+P62_TIT-5135011,P-62: V-5135001 INLET TEMPERATURE,30,50
+P62_TIT-5135012B,P-62: P-5135002 FUEL GAS INLET TEMPERATURE,30,50
+P62_FCV-5140105A_ACT,P-62: TGA - Gás combustível posição válvula metering,10,100

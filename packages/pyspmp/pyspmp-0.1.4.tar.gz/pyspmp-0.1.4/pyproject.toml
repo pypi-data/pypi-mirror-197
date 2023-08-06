@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "pyspmp"
+version = "0.1.4"
+description = "Busca e pré seleção de períodos para modelos de monitoramento e predição de máquinas e equipamentos"
+authors = ["Leandro Ribeiro de Castro <lr.castro@yahoo.com.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+isort = "^5.12.0"
+pre-commit = "^3.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[settings]
+known_third_party = ["pandas", "warnings", "os", "datetime"]
+[tool.black]
+line-length = 120
+[tool.isort]
+profile = "black"
