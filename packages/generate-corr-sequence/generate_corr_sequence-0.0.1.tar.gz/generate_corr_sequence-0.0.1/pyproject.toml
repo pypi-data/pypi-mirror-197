@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "generate_corr_sequence"
+version = "0.0.1"
+description = "Generate correlated random samples"
+readme = "README.rst"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+keywords = ["Simulation", "Random phenomena", "Correlated samples"]
+authors = [
+  {name="Dima Bykhovsky"},
+  {name="Netanel Tochilovsky"},
+  {name="Alexander Rudyak"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "numpy",
+  "scipy",
+  "statsmodels.api",
+  "matplotlib.pyplot",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/bykhov/generate_corr_sequence"
