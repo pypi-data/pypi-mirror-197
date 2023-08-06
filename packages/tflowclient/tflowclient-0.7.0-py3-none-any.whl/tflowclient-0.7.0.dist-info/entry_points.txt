@@ -1,0 +1,4 @@
+[console_scripts]
+tflowclient_cdp = tflowclient.entrypoints.cdp:main
+tflowclient_demo = tflowclient.entrypoints.demo:main
+tflowclient_dumppalette = tflowclient.entrypoints.dumppalette:main
