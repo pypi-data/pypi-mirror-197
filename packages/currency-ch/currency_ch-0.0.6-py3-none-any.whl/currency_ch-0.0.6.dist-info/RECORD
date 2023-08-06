@@ -1,0 +1,9 @@
+currency/__init__.py,sha256=b3OXBlo4za0TUnDgHqsgXUNoie8lKkBUpHjWo2FTHrI,27
+currency/currency.csv,sha256=ercW0INDiaoO9DysOweV-fNKYxwkn1XIZXoOnaLC4uo,3210
+currency/functions.py,sha256=DEy1p2otoFmCdwlUB7G7fQ1-HIfwe4cFU1aW1TPcXHc,228
+currency/main.py,sha256=Cf9I3E37rKMQSoc-TD6hNAIt4M3ldam7y8JLYKoj5GI,1118
+currency_ch-0.0.6.dist-info/LICENSE,sha256=bSdIc1J0RKNzrm1owPeJv7Vsqmk6-781XYMcXPK0q5Q,1085
+currency_ch-0.0.6.dist-info/METADATA,sha256=gNnEMjEtvqRYH8g1XD0stNl8kSUEAvbKrAs6i642c-Y,1851
+currency_ch-0.0.6.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+currency_ch-0.0.6.dist-info/top_level.txt,sha256=qmulHrgX6931dm__7-oUPrvRZYwkOm1vP41hLG9yVJ0,9
+currency_ch-0.0.6.dist-info/RECORD,,
