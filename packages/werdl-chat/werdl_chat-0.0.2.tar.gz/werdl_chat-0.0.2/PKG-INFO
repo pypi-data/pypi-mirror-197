@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: werdl_chat
+Version: 0.0.2
+Summary: A funny chatbot
+Project-URL: Homepage, https://github.com/werdl/chat
+Project-URL: Bug Tracker, https://github.com/werdl/chat/issues
+Author-email: werdl <werdl_is_cool@outlook.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+## A basic chatbot
+### Things it can do
+- Do maths problems
+- Search google for questions
+- convert units
+- rate movies
+- ask how you are
+- greet you
+### Ways to access
+- Web interface (flask)
+- CLI (vanilla Python)
+### Known Limitations
+- advanced maths operations don't work
+- BODMAS/BIDMAS not always applied
+- Google scraping a bit vunerable
+### Install (OS agnostic)
+##### [werdl.onrender.com](werdl.onrender.com)
+#### Reqs
+- Python
+- requirements.txt
+```bash
+pip install werdl-chat
+```
+### Get chatting
+- New file
+```python
+from werdl-chat import *
+chat()
+```
+

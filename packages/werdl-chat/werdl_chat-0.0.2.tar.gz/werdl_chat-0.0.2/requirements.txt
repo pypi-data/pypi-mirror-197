@@ -1,0 +1,8 @@
+bs4
+requests
+lxml
+textblob
+imdbpy
+semantic3
+clrprint
+mathparse
