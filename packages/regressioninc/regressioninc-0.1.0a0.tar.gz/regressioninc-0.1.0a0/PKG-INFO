@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: regressioninc
+Version: 0.1.0a0
+Summary: A package for doing regression in the complex domain
+Author: nss350
+Author-email: nss350@gmail.com
+Requires-Python: >=3.8,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: loguru (>=0.6.0)
+Requires-Dist: matplotlib (>=3.6.1)
+Requires-Dist: numpy (>=1.23.3)
+Requires-Dist: pydantic (>=1.10.2)
+Requires-Dist: scikit-learn (>=1.1.2)
+Requires-Dist: scipy (>=1.9.1)
+Requires-Dist: statsmodels (>=0.13.2)
+Description-Content-Type: text/markdown
+
+# RegressionInC
+
+A package focussing on regression for complex-valued variables
+
+## Terminology
+
+y = X * coef
+
+- y are called the observations
+- X are the predictors
+- coef are the coefficients
+
+Other formulations and terminology include
+
+### Fitting
+
+When fitting the linear problem, the aim is to:
+
+- Find the coefficients, coef, given observations y and predictors X
+
+### Predicting
+
+When predicting the linear problem, the aim is to:
+
+- Calculate new observations, y, given predictors X and coefficients coef
