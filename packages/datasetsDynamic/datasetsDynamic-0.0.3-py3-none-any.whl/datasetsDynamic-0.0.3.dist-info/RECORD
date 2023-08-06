@@ -1,0 +1,13 @@
+datasetsDynamic/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+datasetsDynamic/_modidx.py,sha256=YEor1mu386wEVFrAyjmSdjSwvmzcMylUvlv1t7NsAPo,1807
+datasetsDynamic/loadDataBakery.py,sha256=EUIoD6us4oFGJG4FKMey7TM14JC8EvBGxYpLCEXM0C0,9530
+datasetsDynamic/loadDataYaz.py,sha256=HsqDC4yk_cnRAQasbHEWfVnWWgsJaf7PL8bthSl_oYc,5601
+datasetsDynamic/utils.py,sha256=P7ZYgJZGSah8-UM--E0uvcdrIh_vn0XCxBTyfWegcPo,3864
+datasetsDynamic/datasets/dataBakery_unprocessed.csv,sha256=iGb_porKo4_fpEq2K8KubgRzQB655VnwkRn0603Qph4,8512048
+datasetsDynamic/datasets/dataYaz_unprocessed.csv,sha256=NBBRdj1iT2vaXp0joxxuv7EkRrmy0fhrQUqP6XfxjJg,44161
+datasetsDynamic-0.0.3.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+datasetsDynamic-0.0.3.dist-info/METADATA,sha256=i9XYGInL37d3Ne4xrb2ggbtyRN945A47mO_gUxdpTKg,2965
+datasetsDynamic-0.0.3.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+datasetsDynamic-0.0.3.dist-info/entry_points.txt,sha256=gUoc3HPZrDRwssC7GSIc3YPD6Y5N3YYl8Z5Bgurzy5E,52
+datasetsDynamic-0.0.3.dist-info/top_level.txt,sha256=439fU75TSbmz4rBj4T7vlUT8vCIzSTywouVNitWgtqQ,16
+datasetsDynamic-0.0.3.dist-info/RECORD,,
