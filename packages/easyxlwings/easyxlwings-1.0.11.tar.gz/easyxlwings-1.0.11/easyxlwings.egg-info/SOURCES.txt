@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+easyxlwings/__init__.py
+easyxlwings/__main__.py
+easyxlwings/excel2json.py
+easyxlwings/utils.py
+easyxlwings.egg-info/PKG-INFO
+easyxlwings.egg-info/SOURCES.txt
+easyxlwings.egg-info/dependency_links.txt
+easyxlwings.egg-info/requires.txt
+easyxlwings.egg-info/top_level.txt
