@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+fluent.syntax.egg-info/PKG-INFO
+fluent.syntax.egg-info/SOURCES.txt
+fluent.syntax.egg-info/dependency_links.txt
+fluent.syntax.egg-info/requires.txt
+fluent.syntax.egg-info/top_level.txt
+fluent/syntax/__init__.py
+fluent/syntax/ast.py
+fluent/syntax/errors.py
+fluent/syntax/parser.py
+fluent/syntax/py.typed
+fluent/syntax/serializer.py
+fluent/syntax/stream.py
+fluent/syntax/visitor.py

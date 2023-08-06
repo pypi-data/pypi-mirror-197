@@ -1,0 +1,1 @@
+typing-extensions<5,>=3.7
