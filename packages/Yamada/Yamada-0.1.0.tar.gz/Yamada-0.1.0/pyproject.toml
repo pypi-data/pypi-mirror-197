@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"] 
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Yamada"
+version = "0.1.0"
+authors = [
+  { name="Chad Peterson", email="cp44@illinois.edu" },
+]
+
+description = "Calculate the Yamada polynomial of spatial topologies."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+"networkx~=2.8.5", 
+"matplotlib==3.5.3", 
+"numpy<=1.22.4",
+"pytest",
+"sphinx",
+"nbsphinx",
+"cypari~=2.4.1",
+"sympy",
+"jupyter",
+"nbconvert",
+]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".","tests/",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Chad-Peterson/Yamada"
+"Bug Tracker" = "https://github.com/Chad-Peterson/Yamada/issues"
