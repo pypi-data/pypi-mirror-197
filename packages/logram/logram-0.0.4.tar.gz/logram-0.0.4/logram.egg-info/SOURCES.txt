@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+logram/__init__.py
+logram/handlers.py
+logram.egg-info/PKG-INFO
+logram.egg-info/SOURCES.txt
+logram.egg-info/dependency_links.txt
+logram.egg-info/requires.txt
+logram.egg-info/top_level.txt
