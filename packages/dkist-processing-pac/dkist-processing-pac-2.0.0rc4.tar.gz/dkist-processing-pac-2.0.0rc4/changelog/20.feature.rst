@@ -1,0 +1,2 @@
+Optional argument ("suppress_local_starting_values") to `PolcalFitter` that drastically reduces the logging output on
+data with a large number of points to be fit.
