@@ -1,0 +1,17 @@
+volcenginesdkautoscaling
+volcenginesdkcen
+volcenginesdkclb
+volcenginesdkcore
+volcenginesdkcr
+volcenginesdkecs
+volcenginesdkexamples
+volcenginesdkmongodb
+volcenginesdknatgateway
+volcenginesdkrdsmysql
+volcenginesdkrdsmysqlv2
+volcenginesdkredis
+volcenginesdkstorageebs
+volcenginesdkvke
+volcenginesdkvolcobserve
+volcenginesdkvpc
+volcenginesdkvpn
