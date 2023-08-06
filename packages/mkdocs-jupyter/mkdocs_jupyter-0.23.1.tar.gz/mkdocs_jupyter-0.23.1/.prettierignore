@@ -1,0 +1,4 @@
+.cache
+public
+mkdocs_jupyter/
+*.html

@@ -1,0 +1,130 @@
+[project]
+name = "mkdocs-jupyter"
+description = "Use Jupyter in mkdocs websites"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "Apache-2.0"
+keywords = ["mkdocs", "jupyter", "jupyterlab", "notebooks", "documentation"]
+authors = [
+  { name = "Daniel Rodriguez", email = "daniel@danielfrg.com" },
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "nbconvert>=7.2.9,<8",
+  "mkdocs>=1.4.0,<2",
+  "mkdocs-material>9.0.0",
+  "jupytext>1.13.8,<2",
+  "Pygments>2.12.0",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/danielfrg/mkdocs-jupyter#readme"
+Issues = "https://github.com/danielfrg/mkdocs-jupyter/issues"
+Source = "https://github.com/danielfrg/mkdocs-jupyter"
+
+[project.entry-points."mkdocs.plugins"]
+mkdocs-jupyter = "mkdocs_jupyter.plugin:Plugin"
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+  "pytest-cov",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+artifacts = [
+  "mkdocs_jupyter/**"
+]
+exclude = [
+  ".github", "demo",
+]
+
+[tool.hatch.version]
+path = "mkdocs_jupyter/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "black",
+  "coverage[toml]",
+  "isort",
+  "jupyterlab",
+  "flake8",
+  "pylint",
+  "twine",
+  "ipykernel",
+  "pymdown-extensions",
+]
+
+[tool.hatch.envs.default.scripts]
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=adsctl --cov=tests {args}"
+no-cov = "cov --no-cov {args}"
+
+[[tool.hatch.envs.test.matrix]]
+python = ["37", "38", "39", "310", "311"]
+
+[tool.pytest.ini_options]
+testpaths = ["mkdocs_jupyter/tests"]
+addopts = [
+  "-s",
+  "-vv",
+  "--ignore=dist",
+  "--ignore=site-packages",
+  # "--strict-markers",
+  "--cov=mkdocs_jupyter",
+  "--cov-report=term",
+  "--cov-config=pyproject.toml",
+]
+xfail_strict = true
+
+[tool.coverage.run]
+branch = true
+parallel = true
+omit = ["adsctl/__about__.py"]
+
+[tool.coverage.report]
+show_missing = true
+ignore_errors = false
+
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+  "pragma: no cover",
+  "raise NotImplementedError",
+]
+omit = ["mkdocs_jupyter/tests/*"]
+
+[tool.coverage.paths]
+source = ["mkdocs_jupyter", ".venv/lib/python*/site-packages/mkdocs_jupyter"]
+
+[tool.black]
+line_length = 79
+skip_string_normalization = true
+
+[tool.isort]
+ensure_newline_before_comments = true
+line_length = 79
+multi_line_output = 3
+include_trailing_comma = true
+profile = "black"
+
+[tool.pydocstyle]
+add_ignore = ["D100", "D101", "D102", "D103", "D104", "D105"]
+convention = "numpy"
+inherit = false
+match_dir = "mkdocs_jupyter"
