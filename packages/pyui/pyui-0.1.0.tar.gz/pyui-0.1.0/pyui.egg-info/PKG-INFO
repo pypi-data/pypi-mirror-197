@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyui
+Version: 0.1.0
+Summary: A declarative GUI framework for Python using PySDL2.
+Home-page: https://github.com/dcwatson/pyui
+Author: Dan Watson
+Author-email: dcwatson@gmail.com
+License: BSD
+Project-URL: Documentation, https://pyui.net
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: User Interfaces
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## Getting Started
+
+```
+pip install -r requirements.txt
+python -m examples.demo
+```
+
+See [the examples directory](examples) for examples of using PyUI. Here's a [TodoMVC](http://todomvc.com) app:
+
+![PyUI TodoMVC](docs/images/pyui-todomvc.png)
