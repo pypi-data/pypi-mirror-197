@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: glasswool
+Version: 1.0.1
+Summary: Outlier filter
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.10,<3.11
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: conda-lock (>=1.4.0,<2.0.0)
+Requires-Dist: jupyterlab (>=3.6.1,<4.0.0)
+Requires-Dist: matplotlib (>=3.7.1,<4.0.0)
+Requires-Dist: mkdocs (>=1.4.2,<2.0.0)
+Requires-Dist: numba (>=0.56.4,<0.57.0)
+Requires-Dist: pandas (>=1.5.3,<2.0.0)
+Requires-Dist: pytest (>=7.2.2,<8.0.0)
+Description-Content-Type: text/markdown
+
+# glasswool
+
+Outlier filter
+
+[![Pyversions](https://img.shields.io/pypi/pyversions/linkml.svg)](https://pypi.python.org/pypi/linkml)
+[![PyPI](https://img.shields.io/pypi/v/glasswool.svg)](https://pypi.org/project/glasswool)
+![](https://github.com/banditSC86/glasswool/workflows/Build/badge.svg)
+[![Build status](https://github.com/banditSC86/glasswool/actions/workflows/glasswool-main.yml/badge.svg)](https://github.com/banditSC86/glasswool/actions/workflows/glasswool-main.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/banditSC86/glasswool/branch/main/graph/badge.svg?token=WNQNG986UN)](https://codecov.io/gh/banditSC86/glasswool)
+
+
+Recursively filter outliers 
+
+## Installation
+
+```pip install glasswool```
+
+
