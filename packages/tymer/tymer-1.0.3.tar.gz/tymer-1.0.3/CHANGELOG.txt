@@ -1,0 +1,18 @@
+Change Log
+==========
+
+1.0 (2/17/2023)
+-------------------
+- First Release
+
+1.0.1 (2/17/2023)
+-------------------
+- Fixed installation not working
+
+1.0.2 (2/17/2023)
+-------------------
+- Fixed installation not working again
+
+1.0.3 (3/14/2023)
+-------------------
+- When using restart(), user is not forced to insert a new value for the time
