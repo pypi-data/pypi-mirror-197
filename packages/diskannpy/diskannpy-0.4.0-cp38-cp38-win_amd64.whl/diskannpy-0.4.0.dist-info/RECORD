@@ -1,0 +1,9 @@
+dll/CMakeLists.txt,sha256=OwiUs5N4MGAZQdJ9zuCYz_Tzy1HDVWGUZ7c-8zQxnh4,1611
+dll/dllmain.cpp,sha256=Ur8aePX6kNot6GyMOPEGrcvXgY4YHaB8ZTrnOnFBPIY,390
+restapi/search_wrapper.cpp,sha256=u0hI9683vGx6FaEtJ96mIFERdpVTHJg_5vs7OwwKBkM,7160
+restapi/server.cpp,sha256=f6i9IrZgfILaRtHiBqD-hLfGlBx446g-UxuBwbOhWIY,10128
+diskannpy-0.4.0.dist-info/LICENSE,sha256=E0ncvkKzF-JMDW03VlFl_eveV7Nb4MF5j7OJXvMTqB0,1181
+diskannpy-0.4.0.dist-info/METADATA,sha256=C_4jMzcuz5u6S_4Si8FT3gsKUHcvlDKsBxo8GospVrE,291
+diskannpy-0.4.0.dist-info/WHEEL,sha256=b_PH-i_F2xFYDXcROE5vpDbWUcY020I0eLFvEIYA9Pc,100
+diskannpy-0.4.0.dist-info/top_level.txt,sha256=TdynCb9SAMN53vbRS_O5BrTTPyPWtdmjnchZVwR2T14,22
+diskannpy-0.4.0.dist-info/RECORD,,
