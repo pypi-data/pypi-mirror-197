@@ -1,0 +1,2 @@
+[console_scripts]
+e4s-alc = e4s_alc.cli.entry:main
