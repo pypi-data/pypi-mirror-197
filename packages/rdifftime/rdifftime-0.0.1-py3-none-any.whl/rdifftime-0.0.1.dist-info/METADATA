@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: rdifftime
+Version: 0.0.1
+Summary: recursively compare dictrories and report which files are newer
+Home-page: https://github.com/yaroslaff/rdifftime
+Author: Yaroslav Polyakov
+Author-email: yaroslaff@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# rdifftime
+Compare directories recursively and (for files which content differs) report which files are most recenly modified.
+
+rdifftime uses md5 to compare content of files. Better then `diff -qr`.
+
+~~~shell
+$ ./rdifftime /tmp/dir1/ /tmp/dir2/
+/tmp/dir1/x.txt > /tmp/dir2/x.txt
+./dir1only.txt MISS /tmp/dir2/
+./dir2only.txt MISS /tmp/dir1/
+~~~
+In this example x.txt differs, and `/tmp/dir1/x.txt` is newer (mtime is bigger). Files which exists in both directories and has same md5sum are not reported.
+
+Use '-i TEMPLATE' to ignore specific files (full path relative to any of dir is used, not just filename). Example:
+
+~~~
+./rdifftime /tmp/dir1/ /tmp/dir2/ -i .svn/* ./dir1*
+~~~
+
+

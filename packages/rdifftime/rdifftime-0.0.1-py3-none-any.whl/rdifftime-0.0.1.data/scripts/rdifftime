@@ -1,0 +1,75 @@
+#!python
+
+import os
+import argparse
+import hashlib
+import fnmatch
+
+version='0.0.1'
+
+def md5(fname):
+    hash_md5 = hashlib.md5()
+    with open(fname, "rb") as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hash_md5.update(chunk)
+    return hash_md5.hexdigest()
+
+def readdir(path, ignorelist):
+
+    return [ os.path.join(os.path.relpath(dp, path), f) for dp, dn, filenames in os.walk(path) for f in filenames ]
+
+def get_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('DIR1')
+    parser.add_argument('DIR2')
+    parser.add_argument('-i', '--ignore', metavar='GLOB', nargs='+', help='glob for files to ignore, e.g. .svn')
+
+    return parser.parse_args()
+
+
+def compare(dir1, dir2, path):
+    p1 = os.path.realpath(os.path.join(dir1, path))
+    p2 = os.path.realpath(os.path.join(dir2, path))
+
+    if not os.path.exists(p1):
+        print(f"{path} MISS {dir1}")
+        return
+
+    if not os.path.exists(p2):
+        print(f"{path} MISS {dir2}")
+        return
+
+    s1 = md5(p1)
+    s2 = md5(p2)
+    if s1 != s2:
+        if os.path.getmtime(p1) > os.path.getmtime(p2):
+            sign='>'
+        else:
+            sign='<'
+
+        print(f"{p1} {sign} {p2}")
+
+
+
+def main():
+    args = get_args()
+
+    files = set(readdir(args.DIR1, args.ignore) + readdir(args.DIR2, args.ignore))
+
+    def myfilter(path):
+        if not args.ignore:
+            return True
+
+        for pat in args.ignore:
+            if fnmatch.fnmatch(path, pat):
+                return False
+
+        return True
+
+    files = list(filter(myfilter, files))
+
+    for f in files:
+        compare(args.DIR1, args.DIR2, f)
+
+if __name__ == '__main__':
+    main()
