@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pinecone-cli
+Version: 0.5.0
+Summary: pinecone-cli is a command-line client for interacting with the pinecone vector embedding database.
+Home-page: https://github.com/tullytim/pinecone-cli
+Author: Tim Tully
+Author-email: tim@menlovc.com
+License: MIT
+Keywords: pinecone vector vectors embeddings database transformers models
+Requires-Python: >=3
+Requires-Dist: click
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: openai
+Requires-Dist: pinecone-client
+Requires-Dist: pinecone-client[grpc]
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: beautifulsoup4
+Requires-Dist: nltk
+Requires-Dist: sklearn
+Requires-Dist: rich
+Requires-Dist: python-dotenv
+
