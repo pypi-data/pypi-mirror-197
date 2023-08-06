@@ -1,0 +1,2 @@
+[console_scripts]
+cligpt = cligpt.cli:main
