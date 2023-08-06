@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/convopus/__init__.py
+src/convopus/app.py
+src/convopus/app_mt.py
+src/convopus/genconf.py
+src/convopus/main.py
+src/convopus.egg-info/PKG-INFO
+src/convopus.egg-info/SOURCES.txt
+src/convopus.egg-info/dependency_links.txt
+src/convopus.egg-info/entry_points.txt
+src/convopus.egg-info/requires.txt
+src/convopus.egg-info/top_level.txt
+src/ffpb_convopus/__init__.py
+src/ffpb_convopus/ffpb.py
