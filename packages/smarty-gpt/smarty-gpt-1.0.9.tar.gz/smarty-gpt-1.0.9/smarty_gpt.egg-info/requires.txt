@@ -1,0 +1,7 @@
+openai
+requests
+transformers<2.5.0,>=2.4.1
+dill>=0.3.6
+datasets
+nltk
+argparse
