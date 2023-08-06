@@ -1,0 +1,19 @@
+psutil>=5.6.7
+Pygments>=2.2.0
+typeguard<3.0
+
+[:python_version < "3.7"]
+dataclasses>=0.6
+
+[build]
+black
+coverage
+coveralls
+flake8
+isort~=5.1
+mypy==0.991
+ipython
+sphinx
+sphinx-autobuild
+sphinx-kr-theme
+twine
