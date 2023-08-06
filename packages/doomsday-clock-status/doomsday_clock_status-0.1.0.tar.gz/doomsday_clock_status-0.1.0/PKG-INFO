@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: doomsday_clock_status
+Version: 0.1.0
+Summary: A package to get the current doomsday-clock time.
+Home-page: https://github.com/cookie0o/doomsday-clock
+Author: cookie0_o
+Author-email: therealcookie@waifu.club
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+<div align=center>
+  
+  # doomsday-clock v0.1.0
+  
+  **A package to get the current doomsday-clock time.**
+</div>
+
+## +Info and usage:
+go to the wiki on the Github Page.
+
+## +Install:
+**manually**
+- Download project
+- cd in the project dir with the console
+- run: `pip install . --upgrade`
+- your done!
+
+**install with pip**
+- run: `pip install doomsday-clock-status`
+- your done!
+
+
+### author:
+@cookie0o on github
