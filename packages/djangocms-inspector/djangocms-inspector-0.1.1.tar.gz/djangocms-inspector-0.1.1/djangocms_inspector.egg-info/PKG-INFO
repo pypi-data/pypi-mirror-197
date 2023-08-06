@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: djangocms-inspector
+Version: 0.1.1
+Summary: A set of tools to inspect a DjangoCMS project
+Home-page: https://github.com/sveetch/djangocms-inspector
+Author: David Thenon
+Author-email: sveetch@gmail.com
+License: MIT
+Project-URL: Source Code, https://github.com/sveetch/djangocms-inspector
+Project-URL: Issue Tracker, https://github.com/sveetch/djangocms-inspector/issues
+Project-URL: Changelog, https://djangocms-inspector.readthedocs.io/en/latest/history.html
+Project-URL: Documentation, https://djangocms-inspector.readthedocs.io/
+Keywords: Python Django
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.2
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 4.1
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Provides-Extra: quality
+Provides-Extra: doc
+Provides-Extra: release
+License-File: LICENCE.txt
+
+.. _Python: https://www.python.org/
+.. _Django: https://www.djangoproject.com/
+
+===================
+DjangoCMS Inspector
+===================
+
+A set of tools to inspect a DjangoCMS project.
+
+
+Dependancies
+************
+
+* `Python`_>=3.8;
+* `Django`_>=3.2,<4.2;
+
+
+Links
+*****
+
+* Read the documentation on `Read the docs <https://djangocms-inspector.readthedocs.io/>`_;
+* Download its `PyPi package <https://pypi.python.org/pypi/djangocms-inspector>`_;
+* Clone it on its `Github repository <https://github.com/sveetch/djangocms-inspector>`_;
