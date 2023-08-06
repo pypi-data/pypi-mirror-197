@@ -1,0 +1,9 @@
+README.md
+license.txt
+setup.py
+ljprepare/__init__.py
+ljprepare/add_num.py
+ljprepare.egg-info/PKG-INFO
+ljprepare.egg-info/SOURCES.txt
+ljprepare.egg-info/dependency_links.txt
+ljprepare.egg-info/top_level.txt
