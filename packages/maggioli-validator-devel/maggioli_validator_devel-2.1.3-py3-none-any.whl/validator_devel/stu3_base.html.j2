@@ -1,0 +1,39 @@
+<html lang="it" dir="ltr" class="js ngdialog-open">
+  <head>
+      <meta charset="utf-8">
+      <meta name="MobileOptimized" content="width">
+      <meta name="HandheldFriendly" content="true">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{ urn }}</title>
+      <link rel="stylesheet" href="/module/stu3/validator/css/modulo.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="/module/stu3/validator/libraries.js"></script>
+      <script src="/module/stu3/validator/validator.js"></script>
+      <link rel="stylesheet" media="all" href="https://storage.googleapis.com/maggioli-stu-theme-public-prod/da2ee653/css/build/vendor.css">
+      <link rel="stylesheet" media="all" href="https://storage.googleapis.com/maggioli-stu-theme-public-prod/da2ee653/css/fonts.css">
+      <link rel="stylesheet" media="all" href="https://storage.googleapis.com/maggioli-stu-theme-public-prod/da2ee653/css/build/font-awesome/css/all.min.css">
+      <link rel="stylesheet" media="all" href="https://storage.googleapis.com/maggioli-stu-theme-public-prod/da2ee653/css/build/build_red.css">
+  </head>
+  <body class="user-logged-in path-modulo Sportello-telematico enhanced ngdialog-open" style="padding-top: 190.859px;">
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+        <header class="Header Headroom--fixed js-Headroom u-hiddenPrint Headroom Headroom--not-bottom Headroom--top Headroom--pinned" role="banner" style="position: fixed; top: 0px;">
+            <div class="Header-banner" style="height: 78.55px"></div>
+            <div class="Header-navbar Grid Grid--alignMiddle" style="height: 176.59px"></div>
+        </header>
+      </div>
+      <div id="ngdialog1" class="ngdialog ngdialog-theme-modulo ngdialog-module-container ng-scope" role="alertdialog">
+        <div class="ngdialog-overlay"></div>
+        <div class="ngdialog-content" role="document">
+            <div ng-controller="DraftController" class="ng-scope">
+              <div class="module-container">
+                  <div id="modulo-html-dialog">
+                    <form id="modulo" accept-charset="utf-8" method="post" autocomplete="off" class="ng-pristine ng-valid">
+                      {{ module | safe }}
+                    </form>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </body>
+</html>
