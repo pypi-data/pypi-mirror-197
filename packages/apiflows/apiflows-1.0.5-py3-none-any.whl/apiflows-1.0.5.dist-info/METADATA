@@ -1,0 +1,149 @@
+Metadata-Version: 2.1
+Name: apiflows
+Version: 1.0.5
+Summary: A yaml data-drive HTTP API testing tools.
+Author-email: Allen <aiddroid@gmail.com>
+Project-URL: Homepage, https://github.com/aiddroid/apiflows
+Project-URL: Bug Tracker, https://github.com/aiddroid/apiflows
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+### apiflows testing
+- A yaml data-drive HTTP API testing tools.
+
+### usage
+```
+pip3 install apiflows
+python3 -m apiflows [-c config.py]  -t testcases/github.yaml
+```
+
+### configuration(config.py)
+```
+#!/bin/env python3
+
+import uuid
+import logging
+
+# common headers
+HEADERS = {
+    'content-type': 'application/json',
+    'x-token': '1234',
+}
+
+# common extracts
+EXTRACTS = {
+    'USERNAME':'allen'
+}
+
+def pre_testing():
+    """
+    pre testing
+    """
+    logging.debug("pre_testing()...")
+    HEADERS['x-apiflows-id'] = str(uuid.uuid4())
+
+def pre_request(apicase):
+    """
+    pre request
+    """
+    # TODO here
+    logging.debug("pre_request()...")
+    apicase.set_header("mycookie", "PHPSESSIONID=apiflows")
+    return apicase
+
+def do_request(apicase):
+    logging.debug("do_request()...")
+    apicase.do_request()
+    return apicase
+
+def parse_response(apicase):
+    """
+    parse HTTP response
+    """
+    logging.debug("parse_response()...")
+    code = apicase.parse_status_code()
+    headers = apicase.parse_response_headers()
+    body = apicase.parse_response_body()
+    return {'code': code, 'headers': headers, 'body': body}
+
+def post_request(apicase):
+    """
+    post request
+    """
+    # TODO
+    logging.debug("post_request()...")
+    response = apicase.get_response()
+    if response is not None:
+        logging.debug("    RESPONSE: " + response.text)
+    
+    return apicase
+
+def post_testing():
+    """
+    post testing
+    """
+    # TODO
+    logging.debug("post_testing()...")
+```
+
+### testcase example(github.yaml)
+```
+---
+apicases:
+- name: 获取GitHub API列表(Get Github API list)
+  url: https://api.github.com
+  method: GET
+  headers:
+    x-token: 5678
+  data: '{"username":"apiflows"}'
+  extracts:
+    RATE_LIMIT_URL: $.rate_limit_url
+    PUBLIC_GISTS_URL: $.public_gists_url
+    ENCODING:
+      in: headers
+      exp: "$.Content-Encoding"
+  assertions:
+  - exp1: "$.hub_url"
+    comparator: neq
+    exp2: ""
+  - exp1: "{{ENCODING}}"
+    comparator: eq
+    exp2: gzip
+  - exp1: "{{RATE_LIMIT_URL}}"
+    comparator: contains
+    exp2: https
+  - exp1: "{{PUBLIC_GISTS_URL}}"
+    comparator: match
+    exp2: (https:\/\/)
+```
+
+### comparators
+- eq
+- neq
+- contains
+- match
+
+### test result
+```
+0:testcases/github.yaml
+[获取GitHub API列表(Get Github API list)]: https://api.github.com/?username=allen
+	EXTRACTOR:
+		EXTRACT [RATE_LIMIT_URL]=https://api.github.com/rate_limit
+		EXTRACT [PUBLIC_GISTS_URL]=https://api.github.com/gists/public
+		EXTRACT [ENCODING]=gzip
+	ASSERTIONS:
+		$.hub_url = https://api.github.com/hub [neq] 
+		{{ENCODING}} = gzip [eq] gzip
+		{{RATE_LIMIT_URL}} = https://api.github.com/rate_limit [contains] https
+		{{PUBLIC_GISTS_URL}} = https://api.github.com/gists/public [match] (https:\/\/)
+```
+
+
+### for development
+```
+python3 -m build
+twine upload dist/* 
+```
