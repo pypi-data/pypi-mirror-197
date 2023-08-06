@@ -1,0 +1,2 @@
+[console_scripts]
+copro_runner = copro.scripts.copro_runner:cli
