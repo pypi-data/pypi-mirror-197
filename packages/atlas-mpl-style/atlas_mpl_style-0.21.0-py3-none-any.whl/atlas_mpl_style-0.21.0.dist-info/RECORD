@@ -1,0 +1,11 @@
+atlas_mpl_style/__init__.py,sha256=B_hU9KW-gyIYmE5bWivTkM0G4JabIJe1M2sR1pz8oec,9326
+atlas_mpl_style/_utils.py,sha256=qH-7XHQ034oRARPLwHQGOi7WNIeuKla0wKOiwdBbseQ,7712
+atlas_mpl_style/plot.py,sha256=hqLDeNGl65CIcVx2Z3befSEpej-awtUnmRNu7JmAmRQ,35681
+atlas_mpl_style/stats.py,sha256=y6Gtdw52y1s56vtBqr4RTleCOEAfKhO0ELiO_cT5UFg,9919
+atlas_mpl_style/uhi.py,sha256=kjiRGeJ_oJfKMMZiKp7dedNVz633Q98T-PBDEm2Pui8,10242
+atlas_mpl_style/utils.py,sha256=sygUY7bfQsAQPhzuL6A7W5eNNOoRbsISzB8yhHdCsIg,1067
+atlas_mpl_style-0.21.0.dist-info/LICENSE.md,sha256=zFRw_u1mGSOH8GrpOu0L1P765aX9fB5UpKz06mTxAos,34893
+atlas_mpl_style-0.21.0.dist-info/METADATA,sha256=CzTYg7rtcUNAu5xZuyPpJTeutW_AjsXE18U4KY7NDHs,5692
+atlas_mpl_style-0.21.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+atlas_mpl_style-0.21.0.dist-info/top_level.txt,sha256=ght2ntUKZQbemLhSmZHbszjGeDECrPHOCM6rSKcRC6M,16
+atlas_mpl_style-0.21.0.dist-info/RECORD,,
