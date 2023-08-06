@@ -1,0 +1,5 @@
+
+# Ignore files and directories containing:
+*.ipynb_checkpoints*
+*__pycache__*
+
