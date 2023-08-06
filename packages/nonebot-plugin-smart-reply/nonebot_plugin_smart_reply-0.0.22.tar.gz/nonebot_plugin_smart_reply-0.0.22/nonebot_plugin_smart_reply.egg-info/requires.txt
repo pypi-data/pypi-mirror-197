@@ -1,0 +1,8 @@
+EdgeGPT
+openai
+ujson
+httpx
+loguru
+pillow
+nonebot2
+nonebot-adapter-onebot
