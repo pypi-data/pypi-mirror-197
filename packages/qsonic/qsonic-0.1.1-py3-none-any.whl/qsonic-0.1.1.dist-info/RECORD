@@ -1,0 +1,15 @@
+qsonic/__init__.py,sha256=6jrhbrZ-fMxfEbHXKJ-L9ou_-Jdr-nbyDsLeB9NEIy0,92
+qsonic/catalog.py,sha256=XoWaGmnof5QWcRiie8CmfctXJ5JM9_d1MRsadja47WU,9922
+qsonic/io.py,sha256=RuKxLfYblj9fV9PjGLOItJjIHZ36YSIyoPO02oMO_uc,12767
+qsonic/masks.py,sha256=4gd7nat0m6RkGY8GnUj5vAMGpD62RWt2-yInY0oK1Nc,13478
+qsonic/mathtools.py,sha256=gau0U12hZaJ_TK0d1ESpzPzvK1-60IpHBudmtKB-G2I,4534
+qsonic/mpi_utils.py,sha256=gdcLJaqiwiW1KAldJ4aDUUCs0Sw2VPO7J5nWLR-RHbo,3227
+qsonic/picca_continuum.py,sha256=4dta6CJdePb4nI_NvTLm3JWXQYbbKfLaa3cgw7SisvU,32092
+qsonic/spectrum.py,sha256=jl8tsbivTBrgkqiISzzGWER3mkVwA0HzLYkwLTFTkCg,17829
+qsonic/scripts/qsonic_fit.py,sha256=HwLmo1M9_ne8aAJvK8nZ4a7Fy4fLomVMozQ_S7Gdqtk,8054
+qsonic-0.1.1.dist-info/LICENSE,sha256=n6dzP_t84h83KbhGu1vcP8zmzWNc6e0jyf6pl8XjbPc,1064
+qsonic-0.1.1.dist-info/METADATA,sha256=mLr2Ko07Bn1aWyWCzIalQ9Na96L9nhkPLmVOQrX8fBw,3797
+qsonic-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+qsonic-0.1.1.dist-info/entry_points.txt,sha256=lw1f5rE34nTnsAntdIBlj_f4vzE3d5QfGz-XQ6m9TbE,62
+qsonic-0.1.1.dist-info/top_level.txt,sha256=kG1xTdAbWuZLGR1P-2yuMJJBSOcJeUFbhqtMOiSEe78,7
+qsonic-0.1.1.dist-info/RECORD,,

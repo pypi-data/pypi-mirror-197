@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: qsonic
+Version: 0.1.1
+Summary: Quasar continuum fitter for DESI
+Author: Naim Goksel Karacayli
+Author-email: ngokselk@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/p-slash/qsonic/issues
+Project-URL: Documentation, http://qsonic.readthedocs.io/
+Project-URL: Source, https://github.com/p-slash/qsonic
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: numba
+Requires-Dist: scipy
+Requires-Dist: healpy
+Requires-Dist: fitsio
+Requires-Dist: mpi4py
+Provides-Extra: develop
+Requires-Dist: build ; extra == 'develop'
+Requires-Dist: twine ; extra == 'develop'
+Requires-Dist: bump2version ; extra == 'develop'
+Requires-Dist: pytest ; extra == 'develop'
+Requires-Dist: flake8 ; extra == 'develop'
+Requires-Dist: sphinx-argparse ; extra == 'develop'
+Requires-Dist: sphinx ; extra == 'develop'
+Requires-Dist: sphinx-rtd-theme ; extra == 'develop'
+
+========
+QSOnic
+========
+
+.. image:: https://github.com/p-slash/qsonic/actions/workflows/main.yml/badge.svg
+    :target: https://github.com/p-slash/qsonic/actions/workflows/main.yml
+    :alt: Tests Status
+
+.. image:: https://readthedocs.org/projects/qsonic/badge/?version=latest
+    :target: https://qsonic.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+*Lightining-fast continuum fitting*
+
+**QSOnic** is an MPI-parallelized, highly optimized quasar continuum fitting package for DESI built on the same algorithm as `picca <https://github.com/igmhub/picca>`_, but *faster*. It also provides an efficient API to read DESI quasar spectra.
+
+The key differences
+-------------------
+- Coadding of spectrograph arms is optional and performed after continuum fitting.
+- Continuum is multiplied by a fiducial mean flux when provided.
+- You can pass fiducial var_lss (column ``VAR``) and mean flux (column ``MEANFLUX``) for observed wavelength ``LAMBDA`` in ``STATS`` extention of a FITS file. Wavelength should be linearly and equally spaced. This is the same format as rawio output from picca.
+- If no fiducial is passed, we fit only for var_lss (no eta fitting currently).
+- Internal weights for continuum fitting and coadding are based on smoothed ``IVAR``, but output ``WEIGHT`` is **not** smoothed.
+- Chi2 information as well as best fits are saved in continuum_chi2_catalog.fits. Chi2 is calculated using smooth ivar and var_lss, and does not subtract sum of ln(weights).
+
+Similarities
+------------
++ Delta files are the same. `CONT` column is mean flux times continuum even when fiducial mean flux is passed.
++ ``MEANSNR`` in header file and chi2 catalog is average of flux times square root of positive ivar values. Header values are per arm, but catalog values are the average over all arms.
+
+Copyright (c) 2022 Naim Goksel Karacayli
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
