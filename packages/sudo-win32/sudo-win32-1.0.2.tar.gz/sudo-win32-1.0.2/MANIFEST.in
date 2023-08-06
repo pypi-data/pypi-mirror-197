@@ -1,0 +1,3 @@
+include pyproject.toml
+include requirements.testing.txt
+include src/sudo_win32/paexec.exe
