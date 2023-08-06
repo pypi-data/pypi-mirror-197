@@ -1,0 +1,15 @@
+mellon/__init__.py,sha256=F7i2KJn9AIKIFWfu8LM7Sq3p2YIA3zXDiV-Fgg47TmY,826
+mellon/base_cov.py,sha256=EELkcxgW4Xt-pqmSk-cW4agOXdZE_hFX_ND3J9w0_JU,1950
+mellon/conditional.py,sha256=smWLyLgGEzplggH5P93Z0AIwxUT5NP_YqNTuycJLb6Y,6154
+mellon/cov.py,sha256=F-pCCb5dpn0zg6BBTLipqCaPxrcr_C4cadmZci-VCpo,2481
+mellon/decomposition.py,sha256=2pw02fMwh2RPERzYbzNMxEoKv5PuVOyP8JthSk_6c2Y,8462
+mellon/derivatives.py,sha256=Bf46tTdNgr0g2cPIVDxCQTLXAJydoaE9PdoG1VhHNPo,2389
+mellon/inference.py,sha256=7pjs4ToA7O24FcPYjfYBKX_2iiaP6eON_LW91tgXdhE,9799
+mellon/model.py,sha256=9t2WiVAwvaXnWcHyc12hRTS3aCiGkxr3vZvE1_bAZCs,37254
+mellon/parameters.py,sha256=v_duvP_vMfXlv9Fqvzq9j6kvUyC9gmAKX03MuocTORo,6882
+mellon/util.py,sha256=o0T6Zjnp0nE-F9UmIIDeSQuG7V4bh5oSBcUBucIIRjA,3486
+mellon-1.1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+mellon-1.1.0.dist-info/METADATA,sha256=0JOmAR-Pt5IT0MgPcG0mwWpGQPuAe77NwawZGe8S17c,1377
+mellon-1.1.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+mellon-1.1.0.dist-info/top_level.txt,sha256=Do0xReATSVDYOpZjpDnocrEDxgSAELC7jyIbpMh54kI,7
+mellon-1.1.0.dist-info/RECORD,,
