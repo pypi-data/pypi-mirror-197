@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: usb-wire
+Version: 1.0.1
+Summary: Wire has been created to make relation between a usb device and a Python script.
+Author: mb_craft
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.10
+
+UNKNOWN
+
