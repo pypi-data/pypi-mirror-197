@@ -1,0 +1,11 @@
+aflight/__init__.py,sha256=8bdCZsyV8mI9KWQyODoWPMSJQYl_mkKR5pgcRpgSnkw,104
+aflight/__main__.py,sha256=jPY5MIeoVvrypdm_xXvojOFLQflpOt2oKn0MUi36NnM,3111
+aflight/app.py,sha256=nWGV3NgN0KkqgPadaZqGfWymi3_Z1N3NBIY1zg4Q_Zc,4353
+aflight/client.py,sha256=aLLMRrVUZHj5oKT49csx5aRypyxkBYvFemjMU-GkSPQ,1867
+aflight/logging.py,sha256=o8kvU4Qup95gjleKaHIDx7dRZmrjJE8wrpn17AyKaKU,1851
+aflight-0.2.0.dist-info/LICENSE,sha256=ZP4-lEe5hlBZKrfGGzpXqTTlWZNq8zO8RrGDpcUY-UY,1066
+aflight-0.2.0.dist-info/METADATA,sha256=oLv2mkrUKnuS-Mg7SopsbTeg6JyJPSUnOla-rG_TqqI,1087
+aflight-0.2.0.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+aflight-0.2.0.dist-info/entry_points.txt,sha256=Um3wNOYkCZjSH10MNqFzckaWAiu_Xc_jzV0h1WaCqnw,50
+aflight-0.2.0.dist-info/top_level.txt,sha256=KaM89l-1v9QMz-ABse_bYGTeaboJd3uyq13law2EpN4,8
+aflight-0.2.0.dist-info/RECORD,,
