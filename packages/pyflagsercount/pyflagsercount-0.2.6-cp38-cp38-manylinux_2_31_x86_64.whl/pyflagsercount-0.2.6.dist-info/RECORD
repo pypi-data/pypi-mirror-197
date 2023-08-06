@@ -1,0 +1,16 @@
+pyflagsercount/__init__.py,sha256=dVD_OEQH35msZi7cCQFOgdwfazdJoysIk5Vh4afScRw,120
+pyflagsercount/flagser_functions.py,sha256=lmO2_bwxMJ7Ia-9q3XPegAsWf2IRMfTpbP-5Hk58RuM,3903
+pyflagsercount/include/argparser.h,sha256=xdseQpNoI-DuiFbQi68lyiDSALt14WdaLOqZ4IoddEI,15175
+pyflagsercount/include/cnpy.h,sha256=ER23uVawpHbPd0tPLQOi2CifuJD9IfvkawFat1sWMIQ,5293
+pyflagsercount/include/definitions.h,sha256=Iee0ry3HFyFXzead6RdUx8VbbjG6MBLIbbuNeR15reY,1480
+pyflagsercount/include/directed_flag_complex.h,sha256=IqKsvVhHjRtZRe6NA7cVKTEvZZoNUSXaubgsKwWz0_c,12699
+pyflagsercount/include/directed_graph.h,sha256=aku4xCHJkZXWiVIMge-ZBUqtiZ2PbiL4mVTG40MJwd8,4619
+pyflagsercount/include/input.h,sha256=fbNq0nQK9_gEmmVDS10_gxmB7XaMLoKi6aHM0xKTdFM,5066
+pyflagsercount/src/flagser-count-individ.cpp,sha256=qE6NVrQJSAioCfyjmESq_GUNBoClDcMcEN-4rdPUaJQ,5178
+pyflagsercount/src/flagser-count.cpp,sha256=T6NmLmYXrq_QbG0zES7vYFEfU5mCa3daDRMMrMAAr6E,4687
+pyflagsercount/src/flagser_count_bindings.cpp,sha256=iYSBGiDMWAjT7fkG4rCx-EtWIwMO11PHtADMJXFRGUE,5556
+pycount.cpython-38-x86_64-linux-gnu.so,sha256=CBjDQtuShpG6SFQaLoqAk5eAyXo3db6OSoyufhvC6CI,508616
+pybind11_extension.cpython-38-x86_64-linux-gnu.so,sha256=aQ00dP4Eb6UbMoAaWkBpgFQTNC4i58oDPpdsCtc4O9o,512656
+pyflagsercount-0.2.6.dist-info/METADATA,sha256=gs6qCGAANCS38P9zOnsFCS3Mxdhy_AIkdtQ-Z-1QS5k,1369
+pyflagsercount-0.2.6.dist-info/WHEEL,sha256=MxgaAnnzIakd_lpZ0J0GVFtjJ6CxAkAb-Zo9RvAVsWA,108
+pyflagsercount-0.2.6.dist-info/RECORD,,
