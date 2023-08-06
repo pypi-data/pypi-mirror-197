@@ -1,0 +1,12 @@
+devi/__init__.py,sha256=5ovib79iM2MA8rJ8Q2XJFCV26cGHFVqxGLgSQVzo0S0,167
+devi/__main__.py,sha256=C9q18eyq2zuEqaNUiRTwXXzcKlmhnlnB7FVN6V-S4tI,1199
+devi/cli.py,sha256=T_bmUhmRhdNWd6Y3S-emDTAkZlWSPbhLdRu-s9FXbzM,1048
+devi/config.py,sha256=o7HiBHWOxh0M_kauz10WJ1Jlyokno06S4srXB6alkTw,3737
+devi/log.py,sha256=MIhpekmP-BqINj_O_l8nQvKLdYGsGFTcTg-OXTcsTzE,2525
+devi/toml_parser.py,sha256=Hel0jYmATV-A5H6bRef8AppPjdegganw-C1qsCbxuEA,277
+devi/utils.py,sha256=4qpCRtUZUH5Z9iibif73Uw9NKT1vvtMPYeJK22Me-8A,2643
+devi_cli-0.1.1.dist-info/LICENSE,sha256=wEFbVbd2fOVPCsLL2XqH1-W_I2Ls_nHN_xOl8B-q68U,1061
+devi_cli-0.1.1.dist-info/METADATA,sha256=SwSr7LcrQp-iS53qoQYNHTDVTykGgSg9u0CM1G0eVeY,155
+devi_cli-0.1.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+devi_cli-0.1.1.dist-info/top_level.txt,sha256=dMg0A9KpqzPXp8oPkaZNoRzffjqFDDJ1ALjtVXdYPOI,5
+devi_cli-0.1.1.dist-info/RECORD,,
