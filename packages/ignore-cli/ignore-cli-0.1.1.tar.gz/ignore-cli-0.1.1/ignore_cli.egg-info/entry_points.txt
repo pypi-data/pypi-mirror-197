@@ -1,0 +1,3 @@
+[console_scripts]
+ignore = ignore.cli:main
+
