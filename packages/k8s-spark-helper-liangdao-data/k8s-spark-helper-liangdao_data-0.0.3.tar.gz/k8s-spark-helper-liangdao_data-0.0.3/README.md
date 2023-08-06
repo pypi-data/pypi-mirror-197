@@ -1,0 +1,28 @@
+###spark-helper
+
+####在k8s集群中调用spark (https://github.com/GoogleCloudPlatform/spark-on-k8s-operator)
+
+Author: yuchao.li@liangdao.ai
+Created: 2023.3.9
+
+```
+Usage:
+    s3_config = {'endpoint': 'http://minio.minio-tenant',
+                'access': 'xxx',
+                'secret': 'xxx'}
+
+    set_config(image='pyspark:driver-3.3.1',
+               namespace='spark-operator',
+               service_account='sparkoperator',
+               s3_config = s3_config )
+
+    start_spark('hello-world-spark',
+                's3a://airflow-dags/spark/pyspark_helloworld.py',
+                False)
+```
+
+####配置优先级：
+    从高到低
+    set_config 设置的配置
+    auto_load_config 自动加载的环境变量配置
+
