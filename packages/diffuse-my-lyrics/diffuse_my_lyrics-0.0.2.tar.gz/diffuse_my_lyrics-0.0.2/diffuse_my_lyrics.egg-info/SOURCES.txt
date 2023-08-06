@@ -1,0 +1,10 @@
+README.md
+setup.py
+diffuse_my_lyrics/__init__.py
+diffuse_my_lyrics/lyrics_to_images.py
+diffuse_my_lyrics/utils.py
+diffuse_my_lyrics.egg-info/PKG-INFO
+diffuse_my_lyrics.egg-info/SOURCES.txt
+diffuse_my_lyrics.egg-info/dependency_links.txt
+diffuse_my_lyrics.egg-info/requires.txt
+diffuse_my_lyrics.egg-info/top_level.txt
