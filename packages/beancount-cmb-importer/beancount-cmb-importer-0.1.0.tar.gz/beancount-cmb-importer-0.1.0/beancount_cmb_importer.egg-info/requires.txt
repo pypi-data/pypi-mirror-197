@@ -1,0 +1,14 @@
+pdfplumber==0.8.0
+beancount==2.3.4
+
+[dev]
+
+[test]
+coverage
+pycodestyle
+pyflakes
+pylint
+flake8
+mypy
+pytest
+python-coveralls
