@@ -1,0 +1,12 @@
+langchain_prefect/__init__.py,sha256=jMVE6eKegndV9O0lmGwPddirpw8Rn7Pdlqw5tyj2c4w,73
+langchain_prefect/_version.py,sha256=2jUW4ZCShzXO8b9RVnVGZKJvBE-OyUeImMeHaNxolqM,497
+langchain_prefect/loaders.py,sha256=obwdDIvzmC_mflBb_bXntN4-K1nv3dcY_ECWKshWR2U,5296
+langchain_prefect/plugins.py,sha256=vxu_zUXXAJdUFqvJ2isq7bPjsDqPclTvdU2v7h1HM1c,5402
+langchain_prefect/types.py,sha256=Zul_on-E6WyTvqZHQKl0FL_fq9vvMURi4K1ocDpJ0WA,723
+langchain_prefect/utilities.py,sha256=P6kYdd8c747_Py4R7TJgDXdj0JnhZJI2G9FLuXnKn8I,3541
+langchain_prefect-0.0.2.dist-info/LICENSE,sha256=tLKlrmr0sOnPybm5TUmA2SBT-cYajF3kILQME85pqpQ,11356
+langchain_prefect-0.0.2.dist-info/METADATA,sha256=AMGniK6N74STh6FZuA573Gph-6B-mFrEYTKisYC_H9Q,6958
+langchain_prefect-0.0.2.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+langchain_prefect-0.0.2.dist-info/entry_points.txt,sha256=OVnbg9eVF-4iIMrGfmnWicU2uh8zRPQNU6x_Mib2HoQ,60
+langchain_prefect-0.0.2.dist-info/top_level.txt,sha256=NLRGDrTV5NgyLRY2400wUZnSRuuPFk-qrMOzNfOHSBQ,18
+langchain_prefect-0.0.2.dist-info/RECORD,,
