@@ -1,0 +1,15 @@
+generic_connection_pool/__init__.py,sha256=oJtk8UfSfjjIiQJHPTJQ9dZFrlU3gJjNneAYn3ul6Ek,44
+generic_connection_pool/asyncio.py,sha256=5ZeitquI-KeT58Q6QciffwDCRjEkzOnKyyekauu3Q_A,15845
+generic_connection_pool/common.py,sha256=gHtQWewbZjLeHPeWn_T1TsDWXMcGtJGqPQb8nDRHXhw,12560
+generic_connection_pool/contrib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generic_connection_pool/contrib/psycopg2.py,sha256=FGwBjbMdDZLewsgSKAJWblx2EknJmmfa4wJeoln0AII,1769
+generic_connection_pool/contrib/socket.py,sha256=eqMk1eJCgxTP6l4vAlFy9y-bNvGRIDRX96BL6h0NS88,2296
+generic_connection_pool/contrib/socket_async.py,sha256=G1sdKf2wDrGKBfnssw5Aw5EqeONWK9faSv_ZNDa6uRU,2268
+generic_connection_pool/exceptions.py,sha256=WHUqsmkL-Wtks5oax4K7rQHu50Dk9Rwq401TGKlRxWQ,171
+generic_connection_pool/heap.py,sha256=TqLiy5ZkVsN-EXYVGKRcqHXvNh3ANJKk-n75GfuKOLc,4810
+generic_connection_pool/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generic_connection_pool/threding.py,sha256=848ZYUs05OVDD8QDZGXS7FesuoIwx7hpaVRcvZQn3zw,15389
+generic_connection_pool-0.1.1.dist-info/LICENSE,sha256=awOCsWJ58m_2kBQwBUGWejVqZm6wuRtCL2hi9rfa0X4,1211
+generic_connection_pool-0.1.1.dist-info/METADATA,sha256=zKHhZ0Unk6iLdpnhnhwfBEk91wM-sY0TZ88dHGZFemE,8767
+generic_connection_pool-0.1.1.dist-info/WHEEL,sha256=kLuE8m1WYU0Ig0_YEGrXyTtiJvKPpLpDEiChiNyei5Y,88
+generic_connection_pool-0.1.1.dist-info/RECORD,,
