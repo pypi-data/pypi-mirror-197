@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/p3droslo/__init__.py
+src/p3droslo/model.py
+src/p3droslo/observation.py
+src/p3droslo.egg-info/PKG-INFO
+src/p3droslo.egg-info/SOURCES.txt
+src/p3droslo.egg-info/dependency_links.txt
+src/p3droslo.egg-info/requires.txt
+src/p3droslo.egg-info/top_level.txt
+tests/test_observation.py
