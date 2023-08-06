@@ -1,0 +1,99 @@
+# This toml file is written so that every '' value gets converted to None
+
+# DEFAULTS
+convert_trajectories_to_csv_and_json = false
+frames_per_episode = 500
+knowledge_transfer_folder = ''
+background_subtraction_stat = "median"       # one of ("median", "mean", "max", "min")
+number_of_frames_for_background = 50
+number_of_parallel_workers = 0
+data_policy = "all"
+output_dir = ''
+identification_image_size = -1
+identity_transfer = false
+resolution_reduction = 1.0
+tracking_intervals = ''
+use_bkg = false
+check_segmentation = false
+track_wo_identities = false
+roi_list = ''
+protocol3_action = 'ask'                     # one of ("ask", "abort" or "continue")
+# Set None to use the default mode of the system.
+# (see segmentation.py module for details)
+##################################################
+# Data storage advanced parameters
+##################################################
+# 'all': saves all the data as it is generated from tracking
+# 'trajectories': saves only the trajectories
+# 'validation': saves the information needed to validate the video
+# 'knowledge_transfer': saves the information needed to perfom identity_transfer
+# to another video
+# 'idmatcher.ai': saves the information needed to perform identity_matching
+# between videos
+
+# Crossing detector advanced parameters
+SIGMA_GAUSSIAN_BLURRING = ''
+
+# Set None to use the default mode of the system.
+# (see segmentation.py module for details)
+MODEL_AREA_SD_TOLERANCE = 4
+MINIMUM_NUMBER_OF_CROSSINGS_TO_TRAIN_CROSSING_DETECTOR = 10
+
+MAX_IMAGES_PER_CLASS_CROSSING_DETECTOR = 3000
+LEARNING_RATE_DCD = 0.001
+KEEP_PROB_DCD = 1.0
+BATCH_SIZE_DCD = 50
+BATCH_SIZE_PREDICTIONS_DCD = 100
+LEARNING_PERCENTAGE_DIFFERENCE_1_DCD = 0.005
+LEARNING_PERCENTAGE_DIFFERENCE_2_DCD = 0.005
+OVERFITTING_COUNTER_THRESHOLD_DCD = 5
+MAXIMUM_NUMBER_OF_EPOCHS_DCD = 30
+# Tracker with identities
+MINIMUM_NUMBER_OF_FRAMES_TO_BE_A_CANDIDATE_FOR_ACCUMULATION = 3
+LAYERS_TO_OPTIMISE_ACCUMULATION = ''                            # 'fully-connected1','fully_connected_pre_softmax'
+
+AVAILABLE_VIDEO_EXTENSION = [
+    ".avi",
+    ".AVI",
+    ".mp4",
+    ".MP4",
+    ".mpg",
+    ".MPG",
+    ".mov",
+    ".MOV",
+]
+LAYERS_TO_OPTIMISE_PRETRAINING = ''
+LEARNING_RATE_IDCNN_ACCUMULATION = 0.005
+VALIDATION_PROPORTION = 0.1
+BATCH_SIZE_IDCNN = 50
+BATCH_SIZE_PREDICTIONS_IDCNN = 500
+LEARNING_PERCENTAGE_DIFFERENCE_1_IDCNN = 0.005
+LEARNING_PERCENTAGE_DIFFERENCE_2_IDCNN = 0.005
+
+OVERFITTING_COUNTER_THRESHOLD_IDCNN = 5
+OVERFITTING_COUNTER_THRESHOLD_IDCNN_FIRST_ACCUM = 10
+
+MAXIMUM_NUMBER_OF_EPOCHS_IDCNN = 10000
+
+
+IDCNN_NETWORK_NAME = "idCNN"                  # "idCNN_adaptive"
+THRESHOLD_EARLY_STOP_ACCUMULATION = 0.9995
+THRESHOLD_ACCEPTABLE_ACCUMULATION = 0.9
+MAXIMUM_NUMBER_OF_PARACHUTE_ACCUMULATIONS = 3
+
+MAXIMAL_IMAGES_PER_ANIMAL = 3000
+
+RATIO_OLD = 0.6
+RATIO_NEW = 0.4
+CERTAINTY_THRESHOLD = 0.1
+MAX_RATIO_OF_PRETRAINED_IMAGES = 0.95
+
+MINIMUM_RATIO_OF_IMAGES_ACCUMULATED_GLOBALLY_TO_START_PARTIAL_ACCUMULATION = 0.5
+###############################################################################
+# Post processing advanced parameters
+###############################################################################
+FIXED_IDENTITY_THRESHOLD = 0.9
+VEL_PERCENTILE = 99
+################################################
+# After tracking advanced parameters
+################################################
