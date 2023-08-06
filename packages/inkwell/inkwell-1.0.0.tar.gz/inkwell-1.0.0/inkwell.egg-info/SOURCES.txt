@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+inkwell/__init__.py
+inkwell.egg-info/PKG-INFO
+inkwell.egg-info/SOURCES.txt
+inkwell.egg-info/dependency_links.txt
+inkwell.egg-info/requires.txt
+inkwell.egg-info/top_level.txt
