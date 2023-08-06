@@ -1,0 +1,5 @@
+[console_scripts]
+intelmq.bots.experts.certbund_contact.expert = intelmq.bots.experts.certbund_contact.expert:BOT.run
+intelmq.bots.experts.certbund_rules.expert = intelmq.bots.experts.certbund_rules.expert:BOT.run
+ripe_diff = intelmq_certbund_contact.ripe.ripe_diff:main
+ripe_import = intelmq_certbund_contact.ripe.ripe_import:main
