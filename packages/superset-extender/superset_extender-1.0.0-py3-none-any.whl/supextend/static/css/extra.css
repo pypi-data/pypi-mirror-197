@@ -1,0 +1,83 @@
+label {
+    font-size: 14px;
+}
+
+.navbar-expand {
+    height: 53px;
+}
+
+.navbar-title {
+    height: 60px;
+}
+
+a {
+	outline: none;
+}
+
+.navbar-container {
+	text-align: center;
+}
+
+.navbar-container ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar-container ul li {
+	display: inline-block;
+}
+
+.navbar-container ul li a {
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+	padding: 14px 0 14px 0;
+	transition: color 0.5s;
+}
+
+.navbar-container ul li .underline {
+	height: 3px;
+	background-color: #0eaccd;
+	width: 0%;
+	transition: width 0.3s, background-color 0.5s;
+	margin: 0 auto;
+}
+
+.navbar-container ul li.active-link .underline {
+	width: 100%;
+	background-color: #0eaccd;
+}
+
+.navbar-container ul li:hover .underline {
+	background-color: #0eaccd;
+	width: 100%;
+}
+
+.navbar-container ul li:hover a {
+    color: #0eaccd;
+}
+
+.navbar-container ul li:active a {
+	transition: none;
+	color: rgba(255,255,255,0.76);
+}
+
+.navbar-container ul li:active .underline {
+	transition: none;
+	background-color: rgba(255,255,255,0.76);
+}
+.table thead tr th {
+    border-bottom: 1px;
+    border-top: 0px;
+}
+
+.page-item.active .page-link {
+    background-color: #0086a0;
+    border-color: #0086a0;
+
+a.page-link {
+    color: #0086a0;
+}
