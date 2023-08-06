@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sabemos"
+dynamic = ["version"]
+description = "A cloud-native self-hosting-friendly Q&A application"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["questions", "answers", "knowledge base"]
+authors = [
+  {name = "Rainer Schwarzbach", email = "undisclosed@example.com"},
+]
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Environment :: Web Environment",
+  "Framework :: Flask",
+  "Intended Audience :: End Users/Desktop",
+  "Intended Audience :: System Administrators",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3 :: Only",
+  "Natural Language :: English",
+  "Topic :: Documentation",
+  "Topic :: Office/Business :: Groupware",
+]
+
+dependencies = [
+  "Flask",
+  "oic",
+  "PyYaml",
+  "SQLAlchemy",
+]
+
+[project.urls]
+homepage = "https://gitlab.com/blackstream-x/sabemos"
+documentation = "https://blackstream-x.gitlab.io/sabemos"
+repository = "https://gitlab.com/blackstream-x/sabemos.git"
+"Bug Tracker" = "https://gitlab.com/blackstream-x/sabemos/-/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "sabemos.__version__"}
