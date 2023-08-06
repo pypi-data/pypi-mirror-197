@@ -1,0 +1,2 @@
+python-sonarqube-api
+factory-boy
