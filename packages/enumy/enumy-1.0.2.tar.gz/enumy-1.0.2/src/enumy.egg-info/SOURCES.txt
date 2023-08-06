@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/enumy/__init__.py
+src/enumy/enum.py
+src/enumy.egg-info/PKG-INFO
+src/enumy.egg-info/SOURCES.txt
+src/enumy.egg-info/dependency_links.txt
+src/enumy.egg-info/top_level.txt
