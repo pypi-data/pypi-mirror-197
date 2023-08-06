@@ -1,0 +1,5 @@
+fastapi_htmx/__init__.py,sha256=3Z1mzONN4wVvKCMJBev9Ishw5RihdGdGtiVBmcGScqU,129
+fastapi_htmx/htmx.py,sha256=Ez8SZsy06sXYGWLy0wb--GtChh_TEX3nk8NB4Ix5PJo,4259
+fastapi_htmx-0.1.0.dist-info/METADATA,sha256=G0v7OIuY3WiW-SxyMvNvz4-rIrf6ggpcVfqTXO09BRA,8981
+fastapi_htmx-0.1.0.dist-info/WHEEL,sha256=vVCvjcmxuUltf8cYhJ0sJMRDLr1XsPuxEId8YDzbyCY,88
+fastapi_htmx-0.1.0.dist-info/RECORD,,
