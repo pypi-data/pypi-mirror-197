@@ -1,0 +1,9 @@
+-r nox-requirements.in
+
+flit
+invoke
+pytest-cov
+nox
+pip-tools
+pre-commit
+typing-extensions
