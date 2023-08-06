@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+crypto_cr.egg-info/PKG-INFO
+crypto_cr.egg-info/SOURCES.txt
+crypto_cr.egg-info/dependency_links.txt
+crypto_cr.egg-info/requires.txt
+crypto_cr.egg-info/top_level.txt
